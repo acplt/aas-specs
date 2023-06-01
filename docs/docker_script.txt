@@ -1,0 +1,4 @@
+
+docker run -v /Users/supreetsharma/Documents/hiwi/aas-specs/docs:/project -it pandoc/core
+
+docker run -v /Users/supreetsharma/Documents/hiwi/aas-specs:/project -it pandoc/core sh -c "pandoc /project/doc/AASiD_1_Metamodel/DetailsOfTheAssetAdministrationShell_Part1a_V3.0_final_altesLayout_lastFindings.docx -f docx -t asciidoctor --wrap=none --markdown-headings=atx --extract-media=extracted-media -o /project/output_directoryAASiD_1_Metamodel_V3_0.adoc"

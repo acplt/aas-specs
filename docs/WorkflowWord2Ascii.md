@@ -12,15 +12,15 @@ The command converts a Microsoft Word document to an AsciiDoc file format with e
 
 `pip install pillow`
 
-Once you have Pillow installed, you can use the following Python code to convert an EMF file to PNG: 
+Once you have Pillow installed, you can use the following Python code to convert an EMF file to PNG and change all occurrences to emf file in adoc file to png file: 
 
 `scripts/convert_emf_images.py`
 
 ## 3. Fix bugs
 
 1. Remove such texts from table titles: "[#_Toc125537806 .anchor]####Table 31"
-   2. Use the regex to delete it: `\[#_Toc\d* \.anchor]####Table \d* `
-   3. Use the regex to delete it: `\[#_Ref\d* \.anchor]####Table \d* `
+   2. Use the regex to delete it: `\[#_Toc\d* \.anchor]####Table \d*`
+   3. Use the regex to delete it: `\[#_Ref\d* \.anchor]####Table \d*`
 2. Remove such texts from image definitions:
    2. Use the regex to delete it: `\[\#_Ref\d* \.anchor\]\#\#`
    3. Use the regex to delete it: `\[\#_Toc\d* \.anchor\]\#\#`
