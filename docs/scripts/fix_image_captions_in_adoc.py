@@ -17,7 +17,7 @@ def move_caption_to_beginning(adoc_file):
             caption = match[1]
 
             # Move the caption to the beginning of the figure tag
-            modified_figure_tag = f'.{caption}{figure_tag}'
+            modified_figure_tag = f'.{caption}{figure_tag}\n'
             old_figure_tag = f'{figure_tag}{caption}'
 
             # Replace the original figure tag with the modified one

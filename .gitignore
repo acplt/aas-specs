@@ -1,2 +1,4 @@
 .idea/
 deleteme*.py
+~*.docx
+.DS_Store
