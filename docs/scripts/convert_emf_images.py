@@ -27,13 +27,3 @@ def replace_emf_with_png(adoc_file):
 
     with open(adoc_file, 'w') as file:
         file.write(modified_content)
-
-
-directory = "../AASiD_1_Metamodel"
-
-IMAGES_TO_CONVERT = read_emf_images(directory + "/extracted-media/media")
-# for image in IMAGES_TO_CONVERT:
-#     convert_emf_to_png(image, image.replace(".emf", ".png"))
-
-# replace all occurances of emf with png
-replace_emf_with_png(directory + "/AASiD_1_Metamodel_V3_0.adoc")

@@ -40,9 +40,3 @@ def add_link_to_biblio(adoc_file, keys):
 
     with open(adoc_file, 'w') as file:
         file.write(content)
-
-
-directory = "../AASiD_1_Metamodel"
-
-keys = add_anchor_to_biblio(directory + "/AASiD_1_Metamodel_V3_0.adoc")
-add_link_to_biblio(directory + "/AASiD_1_Metamodel_V3_0.adoc", keys)

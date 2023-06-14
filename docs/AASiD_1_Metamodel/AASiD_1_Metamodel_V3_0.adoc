@@ -44,6 +44,8 @@ January 2023
 
 Plattform Industrie 4.0; Anna Salari, designed by freepik (Title)
 
+Table of Contents
+
 == Preamble
 
 === Editorial Notes
@@ -144,8 +146,7 @@ application
 
 software functional element specific to the solution of a problem in industrial-process measurement and control
 
-[.note-block]
-Note 1 to entry: an application can be distributed among resources and may communicate with other applications.
+NOTE: 1 : to entry: an application can be distributed among resources and may communicate with other applications.
 
 [SOURCE: IEC TR 62390:2005-01, 3.1.2]
 
@@ -153,17 +154,13 @@ asset
 
 physical, digital, or intangible entity that has value to an individual, an organization, or a government
 
-[.note-block]
-Note 1 to entry: an asset can be single entity, a collection of entities, an assembly of entities, or a composition of entities.
+NOTE: 1 : to entry: an asset can be single entity, a collection of entities, an assembly of entities, or a composition of entities.
 
-[.note-block]
-EXAMPLE 1: examples for physical entities are equipment, raw material, parts components and pieces, supplies, consumables, physical products, and waste.
+NOTE: Example 1: examples for physical entities are equipment, raw material, parts components and pieces, supplies, consumables, physical products, and waste.
 
-[.note-block]
-EXAMPLE 2: examples for digital assets are process definitions, business procedures, or actual states.
+NOTE: Example 2: examples for digital assets are process definitions, business procedures, or actual states.
 
-[.note-block]
-EXAMPLE 3: a software license is an example of an intangible asset.
+NOTE: Example 3: a software license is an example of an intangible asset.
 
 [SOURCE: IEC 63278-1, based on IEV 741-01-04, editorial changes]
 
@@ -177,8 +174,7 @@ Asset Administration Shell (AAS)
 
 standardized digital representation of an asset
 
-[.note-block]
-Note 1 to entry: Asset Administration Shell and Administration Shell are used synonymously.
+NOTE: 1 : to entry: asset administration shell and administration shell are used synonymously.
 
 [SOURCE: IEC 63278-1, note added]
 
@@ -192,14 +188,11 @@ capability
 
 implementation-independent potential of an Industrie 4.0 component to achieve an effect within a domain
 
-[.note-block]
-Note 1 to entry: capabilities can be orchestrated and structured hierarchically.
+NOTE: 1 : to entry: capabilities can be orchestrated and structured hierarchically.
 
-[.note-block]
-Note 2 to entry: capabilities can be made executable via services.
+NOTE: 2 : to entry: capabilities can be made executable via services.
 
-[.note-block]
-Note 3 to entry: the impact manifests itself in a measurable effect within the physical world.
+NOTE: 3 : to entry: the impact manifests itself in a measurable effect within the physical world.
 
 [SOURCE: Glossary Industrie 4.0, minor changes]
 
@@ -225,14 +218,11 @@ digital representation
 
 information and services representing an entity from a given viewpoint
 
-[.note-block]
-EXAMPLE 1: examples of information are properties (e.g. maximum temperature), actual parameters (e.g. actual velocity), events (e.g. notification of status change), schematics (electrical), and visualization information (2D and 3D drawings).
+NOTE: Example 1: examples of information are properties (e.g. maximum temperature), actual parameters (e.g. actual velocity), events (e.g. notification of status change), schematics (electrical), and visualization information (2d and 3d drawings).
 
-[.note-block]
-EXAMPLE 2: examples of services are providing the history of the configuration data, providing the actual velocity, and providing a simulation.
+NOTE: Example 2: examples of services are providing the history of the configuration data, providing the actual velocity, and providing a simulation.
 
-[.note-block]
-EXAMPLE 3: examples of viewpoints are mechanical, electrical, or commercial characteristics.
+NOTE: Example 3: examples of viewpoints are mechanical, electrical, or commercial characteristics.
 
 [SOURCE: IEC 63278-1, editorial changes]
 
@@ -240,8 +230,7 @@ digital twin
 
 _digital representation_, sufficient to meet the requirements of a set of use cases
 
-[.note-block]
-Note 1 to entry: in this context, the entity in the definition of digital representation is typically an asset.
+NOTE: 1 : to entry: in this context, the entity in the definition of digital representation is typically an asset.
 
 [SOURCE: IIC Vocabulary IIC:IIVOC:V2.3:20201025, adapted (an asset, process, or system was changed to an asset)]
 
@@ -255,8 +244,7 @@ identifier (ID)
 
 identity information that unambiguously distinguishes one entity from another one in a given domain
 
-[.note-block]
-Note 1 to entry: there are specific identifiers, e.g. UUID Universal unique identifier, IEC 15418 (GS1).
+NOTE: 1 : to entry: there are specific identifiers, e.g. uuid universal unique identifier, iec 15418 (gs1).
 
 [SOURCE: Glossary Industrie 4.0]
 
@@ -264,11 +252,9 @@ instance
 
 concrete, clearly identifiable component of a certain _type_
 
-[.note-block]
-Note 1 to entry: an individual entity of a type, for example a device, is obtained by defining specific property values.
+NOTE: 1 : to entry: an individual entity of a type, for example a device, is obtained by defining specific property values.
 
-[.note-block]
-Note 2 to entry: in an object-oriented view, an instance denotes an object of a class (of a type).
+NOTE: 2 : to entry: in an object-oriented view, an instance denotes an object of a class (of a type).
 
 [SOURCE: IEC 62890:2016, 3.1.16 65/617/CDV, editorial changes]
 
@@ -276,8 +262,7 @@ instance asset
 
 specific _asset_ that is uniquely identifiable
 
-[.note-block]
-EXAMPLE 1: examples of instance assets are material, a product, a part, a device, a machine, software, a control system, a production system.
+NOTE: Example 1: examples of instance assets are material, a product, a part, a device, a machine, software, a control system, a production system.
 
 [SOURCE: IEC 63278-1, editorial changes]
 
@@ -285,11 +270,9 @@ operation
 
 executable realization of a function
 
-[.note-block]
-Note 1 to entry: the term method is synonymous to operation.
+NOTE: 1 : to entry: the term method is synonymous to operation.
 
-[.note-block]
-Note 2 to entry: an operation has a name and a list of parameters [ISO 19119:2005, 4.1.3].
+NOTE: 2 : to entry: an operation has a name and a list of parameters [iso 19119:2005, 4.1.3].
 
 [SOURCE: Glossary Industrie 4.0, editorial changes]
 
@@ -303,29 +286,21 @@ property
 
 defined characteristic suitable for the description and differentiation of products or components
 
-[.note-block]
-Note 1 to entry: the concept of type and instance applies to properties.
+NOTE: 1 : to entry: the concept of type and instance applies to properties.
 
-[.note-block]
-Note 2 to entry: this definition applies to properties as described in IEC 61360/ ISO 13584-42.
+NOTE: 2 : to entry: this definition applies to properties as described in iec 61360/ iso 13584-42.
 
-[.note-block]
-Note 3 to entry: the property types are defined in dictionaries (like IEC component data dictionary or ECLASS), they do not have a value. The property type is also called data element type in some standards.
+NOTE: 3 : to entry: the property types are defined in dictionaries (like iec component data dictionary or eclass), they do not have a value. the property type is also called data element type in some standards.
 
-[.note-block]
-Note 4 to entry: the property instances have a value and are provided by the manufacturers. A property instance is also called property-value pair in certain standards.
+NOTE: 4 : to entry: the property instances have a value and are provided by the manufacturers. a property instance is also called property-value pair in certain standards.
 
-[.note-block]
-Note 5 to entry: properties include nominal value, actual value, runtime variables, measurement values, etc.
+NOTE: 5 : to entry: properties include nominal value, actual value, runtime variables, measurement values, etc.
 
-[.note-block]
-Note 6 to entry: a property describes one characteristic of a given object.
+NOTE: 6 : to entry: a property describes one characteristic of a given object.
 
-[.note-block]
-Note 7 to entry: a property can have attributes such as code, version, and revision.
+NOTE: 7 : to entry: a property can have attributes such as code, version, and revision.
 
-[.note-block]
-Note 8 to entry: the specification of a property can include predefined choices of values.
+NOTE: 8 : to entry: the specification of a property can include predefined choices of values.
 
 [SOURCE: according to ISO/IEC Guide 77-2] as well as [SOURCE: according to Glossary Industrie 4.0]
 
@@ -333,8 +308,7 @@ qualifier
 
 well-defined element associated with a _property_ instance or _submodel element_, restricting the value statement to a certain period of time or use case
 
-[.note-block]
-Note 1 to entry: qualifiers can have associated values.
+NOTE: 1 : to entry: qualifiers can have associated values.
 
 [SOURCE: according to IEC 62569-1]
 
@@ -342,8 +316,7 @@ service
 
 Demarcated scope of functionality which is offered by an https://www.plattform-i40.de/PI40/Redaktion/EN/Glossary/E/entity_glossary.html[entity] or organization via https://www.plattform-i40.de/PI40/Redaktion/EN/Glossary/I/interface_glossary.html[interfaces]
 
-[.note-block]
-Note 1 to entry: one or multiple operations can be assigned to one service.
+NOTE: 1 : to entry: one or multiple operations can be assigned to one service.
 
 [SOURCE: Glossary Industrie 4.0]
 
@@ -351,11 +324,9 @@ smart manufacturing
 
 manufacturing that improves its performance aspects with integrated and intelligent use of processes and resources in cyber, physical and human spheres to create and deliver products and services, which also collaborates with other domains within enterprises' value chains
 
-[.note-block]
-Note 1 to entry: performance aspects include agility, efficiency, safety, security, sustainability, or any other performance indicators identified by the enterprise.
+NOTE: 1 : to entry: performance aspects include agility, efficiency, safety, security, sustainability, or any other performance indicators identified by the enterprise.
 
-[.note-block]
-Note 2 to entry: in addition to manufacturing, other enterprise domains can include engineering, logistics, marketing, procurement, sales, or any other domains identified by the enterprise.
+NOTE: 2 : to entry: in addition to manufacturing, other enterprise domains can include engineering, logistics, marketing, procurement, sales, or any other domains identified by the enterprise.
 
 [SOURCE: IEC TR 63283-1:2022 ED1]
 
@@ -375,8 +346,7 @@ Submodel template
 
 container of Submodel template elements defining a hierarchical structure consisting of Submodel template elements
 
-[.note-block]
-Note 1 to entry: a Submodel template is a specific kind of concept.
+NOTE: 1 : to entry: a submodel template is a specific kind of concept.
 
 [SOURCE: IEC 63278-1]
 
@@ -384,8 +354,7 @@ Submodel template element
 
 elements in a Submodel template
 
-[.note-block]
-Note 1 to entry: a Submodel template element is a specific kind of concept.
+NOTE: 1 : to entry: a submodel template element is a specific kind of concept.
 
 [SOURCE: IEC 63278-1]
 
@@ -399,8 +368,7 @@ technical functionality
 
 functionality of the _Administration Shell_ that is exposed by an application programming interface (API) and that is creating added value to the respective _assets(s)_
 
-[.note-block]
-Note 1 to entry: can consist of single elements, which are also known as functions, operations, methods, skills.
+NOTE: 1 : to entry: can consist of single elements, which are also known as functions, operations, methods, skills.
 
 [SOURCE: according to link:#bib_18[[18\]]]
 
@@ -408,8 +376,7 @@ template
 
 specification of the common features of an object in sufficient detail that such object can be instantiated using it
 
-[.note-block]
-Note 1 to entry: object can be anything that has a type.
+NOTE: 1 : to entry: object can be anything that has a type.
 
 [SOURCE: according to ISO/IEC 10746-2]
 
@@ -423,8 +390,7 @@ type asset
 
 (abstract) representation of a set of instance assets with common characteristics and features
 
-[.note-block]
-Note 1 to entry: the set of instance assets may exist or may not exist.
+NOTE: 1 : to entry: the set of instance assets may exist or may not exist.
 
 Examples of type assets are type of material, a product type, a type of a part, a device type, a machine type, a type of software, a type of control system, a type of production system.
 
@@ -438,7 +404,7 @@ software _entity_ that may take different values, one at a time
 
 ===  Abbreviations Used in this Document
 
-. Life Cycle Phases and Roles of Type and Instance Assets
+.[#_Ref529024261 .anchor]####Table 1 Life Cycle Phases and Roles of Type and Instance Assets
 [width="100%",cols="21%,79%",options="header",]
 |===
 |Abbreviation |Description
@@ -485,7 +451,7 @@ software _entity_ that may take different values, one at a time
 
 The following abbreviations are not used in the document but may be used as abbreviations for the elements in the metamodel defined in this document.
 
-. Elements with Allowed Identifying Values
+.[#_Ref89794569 .anchor]####Table 2 Elements with Allowed Identifying Values
 [width="100%",cols="33%,67%",options="header",]
 |===
 |Abbreviation |Description
@@ -538,7 +504,7 @@ This document specifies a technology-neutral specification of the information me
 
 Figure 2 shows the different ways of exchanging information Asset Administration Shells. This part of the "Asset Administration Shell in Detail" series is the basis for all of these types of information exchange.
 
-##Figure 2 Types of Information Exchange via Asset Administration Shells
+[#_Ref55938616 .anchor]####Figure 2 Types of Information Exchange via Asset Administration Shells
 
 .
 image:extracted-media/media/image6.png[extracted-media/media/image6,width=586,height=424]
@@ -573,14 +539,13 @@ Industry 4.0 utilizes an extended understanding of assets, comprising elements s
 
 The RAMI4.0 model link:#bib_3[[3\]] defines a generalized life cycle concept derived from IEC 62890. The basic idea is to distinguish between possible types and instances for all assets within Industry 4.0. This makes it possible to apply the type/instance distinction for all elements such as material type/material instance, product type/product instance, machine type/ machine instance, etc. Business-related information is handled on the 'business' layer of the RAMI4.0 model. The business layer also covers order details and workflows, again for both type and instance assets.
 
-[.note-block]
-Note: to distinguish asset 'type' and asset 'instance', the term 'asset kind' is used in this document. The three different relationship classes between assets, especially type assets and instance assets, explained below show why the distinction is so important. The attribute "derivedFrom" in the metamodel is used to explicitly state a relationship between assets that are being derived from one another. Other relationships are not explicitly supported by the metamodel of the Asset Administration Shell, but they can be modelled via the "RelationshipElement" submodel element type.
+NOTE: To distinguish asset 'type' and asset 'instance', the term 'asset kind' is used in this document. the three different relationship classes between assets, especially type assets and instance assets, explained below show why the distinction is so important. the attribute "derivedfrom" in the metamodel is used to explicitly state a relationship between assets that are being derived from one another. other relationships are not explicitly supported by the metamodel of the asset administration shell, but they can be modelled via the "relationshipelement" submodel element type.
 
 Table 1 gives an overview of the different life cycle phases and the role of type assets and instance assets as well as their relationship in these phases.
 
 This important relationship should be maintained throughout the life of the instance assets. It makes it possible to forward updates from the type assets to the instance assets, either automatically or on demand.
 
-. Directions of Events
+.[#_Ref113740569 .anchor]####Table 3 Directions of Events
 [width="100%",cols="20%,22%,58%",]
 |===
 |*Asset Kind* |*Life Cycle Phase* |*Description*
@@ -600,15 +565,13 @@ The second class of relationships are feedback loops/information within the life
 
 The third class of relationships are feedforward/information exchange with assets of other asset classes. For example, sourcing information from business assets can influence design aspects of products; or the design of the products affects the design of the manufacturing line.
 
-[.note-block]
-Note: the NIST model link:#bib_49[[49\]] provides an illustration of the second/third class of relationships.
+NOTE: The nist model link:#bib_49[[49\]] provides an illustration of the second/third class of relationships.
 
 A fourth class of relationships consists between assets of different hierarchy levels. For example, these could be the (dynamic) relationships between manufacturing stations and currently produced products. They could be also the decomposition of production systems in physical, functional, or safety hierarchies. In this class of relationships, automation equipment is seen as a complex, interrelated graph of automation devices and products, performing intelligent production and self-learning/optimization tasks.
 
 Details and examples for composite I4.0 Components can be found in link:#bib_12[[12\]]. A composite I4.0 Component is the combination of a complex asset and its Asset Administration Shell. The hierarchy, typically a Bill of Material (BOM) but also any other relationship between different assets, can be represented in one of its submodels.
 
-[.note-block]
-Note: for submodels representing the Bill of Material of a complex asset, the metamodel not only provides the possibility to define relationships (via the submodel element "RelationshipElement", see above), it also explicitly supports the representation of another asset (via the submodel element "Entity"). The term "Entity" is chosen as superordinate concept in this context and refers to either an asset or another item that is not an asset but may be part of a more complex item or asset.
+NOTE: For submodels representing the bill of material of a complex asset, the metamodel not only provides the possibility to define relationships (via the submodel element "relationshipelement", see above), it also explicitly supports the representation of another asset (via the submodel element "entity"). the term "entity" is chosen as superordinate concept in this context and refers to either an asset or another item that is not an asset but may be part of a more complex item or asset.
 
 ====  Asset Administration Shells Representing Type Assets and Instance Assets
 
@@ -616,46 +579,36 @@ An Asset Administration Shell either represents a type asset or an instance asse
 
 Figure 3 gives an example of how to handle type assets and their derived instance assets. The attribute "assetKind" indicates whether the Asset Administration Shell (denoted by the ": AAS" UML notation for a class instance) represents a type asset or an instance asset. Additionally, attributes are added to show that the attributes of type asset and instance assets typically differ from each other.
 
-.*Figure 3 Example: Asset Administration Shells for Type and Instance Assets*
+[#_Ref113738378 .anchor]##.*Figure 3 Example: Asset Administration Shells for Type and Instance Assets*
 image:extracted-media/media/image7.png[extracted-media/media/image7,width=560,height=204]
 
-[.note-block]
-Note 1: the example is simplified for ease of understanding and only roughly complies with the metamodel as specified in Clause 5. The ID handling is simplified as well: the names of the classes correspond to the unique global identifier of the Asset Administration Shells.
+NOTE: 1 : the example is simplified for ease of understanding and only roughly complies with the metamodel as specified in clause 5. the id handling is simplified as well: the names of the classes correspond to the unique global identifier of the asset administration shells.
 
-[.note-block]
-Note 2: in the context of Plattform Industrie 4.0, types and instances typically refer to "type assets" and "instance assets". When referring to types or instances of an Asset Administration Shell, this is explicitly denoted as "Asset Administration Shell types" and "Asset Administration Shell instances" to not mix them up. Asset Administration Shell types are synonymously used with the term "Asset Administration Shell template".
+NOTE: 2 : in the context of plattform industrie 4.0, types and instances typically refer to "type assets" and "instance assets". when referring to types or instances of an asset administration shell, this is explicitly denoted as "asset administration shell types" and "asset administration shell instances" to not mix them up. asset administration shell types are synonymously used with the term "asset administration shell template".
 
-[.note-block]
-Note 3: please refer to Clause 2 for the IEC definition of types and instances. Within the scope of this document, there is no full equivalency between these definitions and the type/instance concepts of object-oriented programming (OO).
+NOTE: 3 : please refer to clause 2 for the iec definition of types and instances. within the scope of this document, there is no full equivalency between these definitions and the type/instance concepts of object-oriented programming (oo).
 
 There shall be a concrete type asset of a temperature sensor and two uniquely identifiable physical temperature sensors of this type. The intention is to provide a separate Asset Administration Shell for the type asset as well as for every single instance asset.
 
 In the example, the first sensor has the unique ID "0215551AAA_T1" and the second sensor has the unique ID "0215551AAA_T2". "0215551AAA_T1" and "0215551AAA_T2" are the global asset IDs of the two assets, i.e. sensors. The Asset Administration Shell for the first sensor has the unique URI "http://T1.com" and the Asset Administration Shell for the second sensor has the unique URI "http://T2.com". The asset kind of both is "Instance". The example shows that the measured temperature at operation time of the two sensors is different: for T1 it is 60 °C, for T2 it is 100 °C. For the time-being we ignore the relationship "derivedFrom" of the two Asset Administration Shells "http://T1.com " and "http://T2.com" with Asset Administration Shell "http://T0215551AA.com".
 
-[.note-block]
-Note: even though the HTTP scheme is used for the identifier, please be aware that these identifiers are logical ones. Identifiers do not have to be URLs. At the same time, URLs used as identifiers do not have to refer to accessible content.
+NOTE: Even though the http scheme is used for the identifier, please be aware that these identifiers are logical ones. identifiers do not have to be urls. at the same time, urls used as identifiers do not have to refer to accessible content.
 
-[.note-block]
-Note: the physical unit can be obtained by the semantic reference of the element "measuredTemperature". This is not shown in the example for simplicity reasons.
+NOTE: The physical unit can be obtained by the semantic reference of the element "measuredtemperature". this is not shown in the example for simplicity reasons.
 
 These two instance assets share a lot of information on the type asset (in this example a sensor type), for which an own Asset Administration Shell is created. The unique ID for this Asset Administration Shell is "http://T0215551AA.com", the unique ID of the sensor type is "0215551AA". The asset kind is "Type" and not "Instance". The information shared by all instances of this temperature sensor type is the product class (="Component"), the manufacturer (="ExampleManufacturer"), the English Description (=”precise and fast temperature measurement"), and the value range ("-40 °C / 140 °C").
 
 Now the two Asset Administration Shells of the two instance assets may refer to the Asset Administration Shell of the type asset "0215551AA" using the relationship attribute "derivedFrom".
 
-[.note-block]
-Note 1: in the UML sense, "attribute" refers to the property or characteristic of a class (instance).
+NOTE: 1 : in the uml sense, "attribute" refers to the property or characteristic of a class (instance).
 
-[.note-block]
-Note 2: if a specific type asset exists, it typically exists in time before the respective instance assets.
+NOTE: 2 : if a specific type asset exists, it typically exists in time before the respective instance assets.
 
-[.note-block]
-Note 3: the term Asset Administration Shell is used synonymously with the term Asset Administration Shell instance. An Asset Administration Shell may be realized based on an Asset Administration Shell type. Asset Administration Shell types are out of the scope of this document.
+NOTE: 3 : the term asset administration shell is used synonymously with the term asset administration shell instance. an asset administration shell may be realized based on an asset administration shell type. asset administration shell types are out of the scope of this document.
 
-[.note-block]
-Note 4: in public standardization, the Asset Administration Shell types might be standardized. However, it is much more important to standardize the property types (called property definitions or concept descriptions) or other submodel element types as well as complete submodel types because these can be reused in different Asset Administration Shells.
+NOTE: 4 : in public standardization, the asset administration shell types might be standardized. however, it is much more important to standardize the property types (called property definitions or concept descriptions) or other submodel element types as well as complete submodel types because these can be reused in different asset administration shells.
 
-[.note-block]
-Note 5: in the domain of the Internet of Things (IoT), instance assets are typically denoted as "Things" whereas type assets are denoted as "Product".
+NOTE: 5 : in the domain of the internet of things (iot), instance assets are typically denoted as "things" whereas type assets are denoted as "product".
 
 ====  Asset Administration Shell Types and Instances
 
@@ -663,19 +616,15 @@ In the previous clause, type assets and instance assets were explained. The obvi
 
 This is the purpose of this document: the definition of a metamodel that defines which attributes are mandatory and which are optional for all Asset Administration Shells. The Plattform Industrie 4.0 metamodel for Asset Administration Shells is defined in Clause 5.
 
-[.note-block]
-Note 1: the metamodel of the Asset Administration Shell is suitable for type assets or instance assets. An alternative approach could have been to define two metamodels, one for type assets and one for instance assets. However, the large set of similarities led to the decision of only one metamodel.
+NOTE: 1 : the metamodel of the asset administration shell is suitable for type assets or instance assets. an alternative approach could have been to define two metamodels, one for type assets and one for instance assets. however, the large set of similarities led to the decision of only one metamodel.
 
-[.note-block]
-Note 2: the metamodel itself does not require the existence of mandatory submodels. This is another step of standardization similar to the standardization of submodels of the Asset Administration Shell type level.
+NOTE: 2 : the metamodel itself does not require the existence of mandatory submodels. this is another step of standardization similar to the standardization of submodels of the asset administration shell type level.
 
-[.note-block]
-Note 3: an Asset Administration Shell type shall be realized based on the metamodel of an Asset Administration Shell as defined in this document. This metamodel is referred to as "Asset Administration Shell Metamodel".
+NOTE: 3 : an asset administration shell type shall be realized based on the metamodel of an asset administration shell as defined in this document. this metamodel is referred to as "asset administration shell metamodel".
 
-[.note-block]
-Note 4: it is not mandatory to define an Asset Administration Shell type before defining an Asset Administration Shell (instance). An Asset Administration Shell instance that does not realize an Asset Administration Shell type shall be realized based on the metamodel of an Asset Administration Shell as defined in this document.
+NOTE: 4 : it is not mandatory to define an asset administration shell type before defining an asset administration shell (instance). an asset administration shell instance that does not realize an asset administration shell type shall be realized based on the metamodel of an asset administration shell as defined in this document.
 
-.Figure 4 Example: Asset Administration Shell, Asset Administration Shell Types and Instances
+[#_Ref119169608 .anchor]##.Figure 4 Example: Asset Administration Shell, Asset Administration Shell Types and Instances
 image:extracted-media/media/image8.png[extracted-media/media/image8,width=623,height=386]
 
 === Identification of Elements
@@ -698,7 +647,7 @@ Identification will take place for two purposes
 
 In the domain of smart manufacturing, the assets need to be uniquely identified worldwide link:#bib_4[[4\]] link:#bib_20[[20\]] by the means of identifiers (IDs). The Administration Shell also has a unique ID (see Figure 5).
 
-##Figure 5 Unique Identifier for Administration Shell and Asset (Modified Figure from link:#bib_4[[4\]])
+[#_Ref117710051 .anchor]####Figure 5 Unique Identifier for Administration Shell and Asset (Modified Figure from link:#bib_4[[4\]])
 
 .
 image:extracted-media/media/image9.png[extracted-media/media/image9,width=576,height=382]
@@ -734,7 +683,7 @@ Not every identifier is applicable for every element of the UML model representi
 
 See 0 0 and 0 for more information on how to create new identifiers and best practices for creating URI identifiers.
 
-. Types of Events
+.[#_Ref113740165 .anchor]####Table 4 Types of Events
 [width="100%",cols="21%,17%,22%,40%",options="header",]
 |===
 |Elements with identifying values |Attribute |Allowed identifiers (recommended or typical) |Remarks
@@ -846,7 +795,7 @@ The Administration Shell fosters the use of worldwide unique identifiers to a la
 
 In an application featuring a resource-oriented architecture (ROA), a worldwide unique resource locator (URL) might be composed of a series of segments, which do not need to be globally unique, see Figure 6.
 
-.Figure 6 Motivation of Exemplary Identifiers and idShort
+[#_Ref115205350 .anchor]##.Figure 6 Motivation of Exemplary Identifiers and idShort
 image:extracted-media/media/image10.png[extracted-media/media/image10,width=666,height=302]
 
 To allow such efficient addressing by the chaining of elements by an API of an Administration Shell, _idShort_ is provided for a set of classes of the metamodel. It inherits from the abstract class _Referable_, in order to refer to such dependent elements (see 5.1).
@@ -874,20 +823,17 @@ With intelligent matching, different versions of a concept definition may be mat
 Example: property with idShort "ManufacturerName" + semanticId 0173-1#02-AAO677#002 and Property with idShort "Herstellername" + semanticId 0173-1#02-AAO677#003 have equal semantics.
 
 ____
-[.note-block]
-Note: to compare two semantic IDs, knowledge about versioning needs to be available. In the example above, two IRDIs from ECLASS are compared. ECLASS rules ensure that the semantics is always backward compatible for new versions; a new IRDI would be created for breaking changes.
+NOTE: To compare two semantic ids, knowledge about versioning needs to be available. in the example above, two irdis from eclass are compared. eclass rules ensure that the semantics is always backward compatible for new versions; a new irdi would be created for breaking changes.
 ____
 
 * Consider Semantic Mappings
 +
 Existing semantic mapping information can be considered for intelligent matching. Semantic mappings may exist within one and the same dictionary, but also between different dictionaries and ontologies.
 +
-Example: 0112/2///61360_4#AAE530 for nominal capacity of a battery in dictionary IEC CDD and 0173-1#02-AAI048#004 in ECLASS have equal semanticsfootnote:[[.note-block]
-Note: this example does not represent an existing semantic mapping; it is only a candidate.] footnote:[Semantic mapping files are also used in ECLASS between ECLASS Classic and ECLASS Advanced: https://eclass.eu/support/technical-specification/data-model/basic-advanced-mapping] footnote:[This is the format used for semantic mapping in ECLASS: https://eclass.eu/fileadmin/Redaktion/pdf-Dateien/Wiki/ECLASSXML_3.0/ECLASS_XML/mapping.xsd].
+Example: 0112/2///61360_4#AAE530 for nominal capacity of a battery in dictionary IEC CDD and 0173-1#02-AAI048#004 in ECLASS have equal semanticsfootnote:[NOTE: This example does not represent an existing semantic mapping; it is only a candidate.] footnote:[Semantic mapping files are also used in ECLASS between ECLASS Classic and ECLASS Advanced: https://eclass.eu/support/technical-specification/data-model/basic-advanced-mapping] footnote:[This is the format used for semantic mapping in ECLASS: https://eclass.eu/fileadmin/Redaktion/pdf-Dateien/Wiki/ECLASSXML_3.0/ECLASS_XML/mapping.xsd].
 
 ____
-[.note-block]
-Note: this example does not represent an existing semantic mapping; it is only a candidate.
+NOTE: This example does not represent an existing semantic mapping; it is only a candidate.
 ____
 
 * Consider Domain Knowledge
@@ -906,20 +852,16 @@ Exact matching of two references
 
 An external reference A matches an external reference B if all values of all keys are identical.
 
-[.note-block]
-Note: it is unlikely that a fragment value is identical to a global reference value; it will reference something different.
+NOTE: It is unlikely that a fragment value is identical to a global reference value; it will reference something different.
 
 A model reference A matches a model reference B if all values of all keys are identical. +
-[.note-block]
-Note: the key type can be ignored since the fragment keys are always unique (e.g. all idShorts of submodel elements in a submodel or all submodel elements in a submodel element list or collection).
+NOTE: The key type can be ignored since the fragment keys are always unique (e.g. all idshorts of submodel elements in a submodel or all submodel elements in a submodel element list or collection).
 
 An external reference A matches a model reference B and vice versa if all values of all keys are identical.
 
-[.note-block]
-Note: since identifiables of the Asset Administration Shell are globally unique, model references are special cases of global references. The only difference is the handling of key types that are predefined for Asset Administration Shell elements. Other key types could be predefined, e.g. for IRDI paths etc. However, so far only generic key types are supported.
+NOTE: Since identifiables of the asset administration shell are globally unique, model references are special cases of global references. the only difference is the handling of key types that are predefined for asset administration shell elements. other key types could be predefined, e.g. for irdi paths etc. however, so far only generic key types are supported.
 
-[.note-block]
-Note: if the key types are not identical although all key values follow the correct order of the key chain, then at least one of the references is buggy and a warning should be issued.
+NOTE: If the key types are not identical although all key values follow the correct order of the key chain, then at least one of the references is buggy and a warning should be issued.
 
 The definition of XML Schemafootnote:[https://www.w3.org/TR/xmlschema-2/#terminology] is used for matching
 
@@ -976,8 +918,7 @@ is identical to
 
 It is in the interest of Industry 4.0 for as many submodels as possible, including free and proprietary submodels, to be formed (see link:#bib_4[[4\]], "Free property sets"). A submodel can be formed at any time for a specific Administration Shell of an asset. The provider of the Administration Shell can form in-house identifiers for the type and instance of the submodel in line with Clause 4.3. All I4.0 systems are called on to ignore submodels and properties that are not individually known. Hence, it is always possible to deposit proprietary – e.g. manufacturer-specific or user-specific – information, submodels, or properties in an Administration Shell.
 
-[.note-block]
-Note: it is the intention of the Administration Shell to include proprietary information, e.g. to link to company-wide identification schemes or information required for company-wide data processing. This way, a single infrastructure can be used to transport standardized and proprietary information at the same time. New information elements can also be conveyed and introduced (and standardized at a later stage).
+NOTE: It is the intention of the administration shell to include proprietary information, e.g. to link to company-wide identification schemes or information required for company-wide data processing. this way, a single infrastructure can be used to transport standardized and proprietary information at the same time. new information elements can also be conveyed and introduced (and standardized at a later stage).
 
 ==== Creating a Submodel Instance Based on an Existing Submodel Template
 
@@ -995,8 +936,7 @@ The only thing that cannot be defined in the template itself is the unique ID of
 
 Events are a very versatile mechanism of the Asset Administration Shell. The following subclauses describe some use cases for events. They summarize different types of events to depict requirements, introduce a _SubmodelElement_ “_Event_" to enable declaration of events of an Asset Administration Shell. Further, the general format of event messages is specified.
 
-[.note-block]
-Note: the concept of event is still in the experimental phase. Please be aware that backward compatibility cannot be ensured for future versions of the metamodel.
+NOTE: The concept of event is still in the experimental phase. please be aware that backward compatibility cannot be ensured for future versions of the metamodel.
 
 ====  Brief Use Cases for Events Used in Asset Administration Shells
 
@@ -1005,24 +945,24 @@ Event use cases are briefly outlined in the following (see also Figure 7):
 * An integrator has purchased a device. Later in time, the supplier of the device provides a new firmware. The integrator wants to detect the offer of a new firmware and wants to update the firmware after evaluating its suitability ("forward events"). A dependent Asset Administration Shell ("D4") detects events from a parent or type Asset Administration Shell ("D1"), which is described by the _derivedFrom_ relation. An illustration of the use case is given in Figure 7.
 * An integrator/operator operates a motor purchased from a supplier. During operation, condition monitoring incidents occur. Both parties agree on a business model providing availability. The supplier wants to monitor device statuses which are located further in the value chain ("reverse events"). An illustration of the use case is given in Figure 7.
 
-.Figure 7 Forward and Reverse Events
+[#_Ref117710652 .anchor]##.Figure 7 Forward and Reverse Events
 image:extracted-media/media/image11.png[extracted-media/media/image11,width=583,height=433]
 
 * An operator is operating a certain I4.0 component over time. Changes that occasionally occur to these I4.0 components from different systems shall be tracked for documentation and auditing purposes. This can be achieved by recording events over time. An illustration of the use case is given in Figure 8.
 
-.Figure 8 Tracking of Changes via Events
+[#_Toc125537831 .anchor]##.Figure 8 Tracking of Changes via Events
 image:extracted-media/media/image12.png[extracted-media/media/image12,width=524,height=288]
 
 * An operator is operating different I4.0 components, which are deployed to manufacturer clouds. The operator wants to integrate data from these components, according to DIN SPEC 92222. For this purpose, information needs to be forwarded to the operator cloud ("value push"). An illustration of the use case is given in Figure 9.
 
-.Figure 9 Value Push Events Across Clouds
+[#_Ref117710785 .anchor]##.Figure 9 Value Push Events Across Clouds
 image:extracted-media/media/image13.png[extracted-media/media/image13,width=475,height=265]
 
 ====  Input and Output Directions of Events
 
 We can distinguish between incoming and outgoing events. See Table 3 for more information on the event directions.
 
-. Event Scopes
+.[#_Ref113740928 .anchor]####Table 5 Event Scopes
 [width="100%",cols="32%,68%",options="header",]
 |===
 |Direction |Description
@@ -1034,7 +974,7 @@ We can distinguish between incoming and outgoing events. See Table 3 for more in
 
 The uses cases described in Clause 4.6.2 need different types of events. Each event type is identified by a _semanticId_ and features a specialized payload. Table 4 gives an overview of types of events. The possible directions of an event are described in Clause 4.6.3.
 
-. Categoriesfootnote:[Note: categories of referables are deprecated.] for Elements with Value
+.[#_Ref119510045 .anchor]####Table 6 Categoriesfootnote:[Note: categories of referables are deprecated.] for Elements with Value
 [width="100%",cols="26%,12%,62%",options="header",]
 |===
 |Group |Direction |Motivation / Conditions
@@ -1078,7 +1018,7 @@ Custom event types can be defined by using a proprietary, but worldwide unique, 
 
 Events can be stated with an _observableReference_ to the _Referables_ of Asset Administration Shell, __Submodel__s, and _SubmodelElements._ These _Referables_ define the scope of the events, which are to be received or sent. Table 5 describes the different scopes of an event.
 
-. Simple Data Types Used in Metamodel
+.[#_Ref113744580 .anchor]####Table 7 Simple Data Types Used in Metamodel
 [width="100%",cols="32%,68%",options="header",]
 |===
 |Event attached to ... |Scope
@@ -1098,8 +1038,7 @@ An overview of the metamodel of the Asset Administration Shell is given in Subcl
 
 The legend of the UML diagrams and the table specification of the classes is explained in Annex D and Annex E. Readers familiar with UML may skip the first clause in Annex E. It is however recommended to have a look at the specifics used in this modelling, especially those on dealing with model references.
 
-[.note-block]
-Note: an xmi representation of the UML model can be found in the repository "aas-specs" in the github project admin-shell-io *link:#bib_51[[51\]]*: https://github.com/admin-shell-io/aas-specs/tree/master/schemas/xmi
+NOTE: An xmi representation of the uml model can be found in the repository "aas-specs" in the github project admin-shell-io *link:#bib_51[[51\]]*: https://github.com/admin-shell-io/aas-specs/tree/master/schemas/xmi
 
 === Overview Metamodel of the Asset Administration Shell
 
@@ -1109,12 +1048,11 @@ Figure 10 shows the main classes to describe a single Asset Administration Shell
 
 An Asset Administration Shell represents exactly one asset (_AssetAdministrationShell/assetInformation_). Type assets and instance assets are distinguished by the attribute "_AssetInformation/assetKind_". See Clause 5.3.4 for details.
 
-[.note-block]
-Note: the UML modelling uses so-called abstract classes for denoting reused concepts like "HasSemantics", "Qualifiable" etc.
+NOTE: The uml modelling uses so-called abstract classes for denoting reused concepts like "hassemantics", "qualifiable" etc.
 
 In case of an Asset Administration Shell of an instance asset, a reference to the Asset Administration Shell representing the corresponding type asset or another instance asset it was derived from may be added (_AssetAdministrationShell/derivedFrom_). The same holds true for the Asset Administration Shell of an type asset. Types can also be derived from other types.
 
-.Figure 10 Overview Metamodel of the Asset Administration Shell
+[#_Ref91706486 .anchor]##.Figure 10 Overview Metamodel of the Asset Administration Shell
 image:extracted-media/media/image14.png[extracted-media/media/image14,width=623,height=673]
 
 An asset may typically be represented by several different identification properties like the serial number, the manufacturer part ID or the different customer part IDs, its RFID code, etc. Such external identifiers are defined as specific asset IDs, each characterized by a user-defined name, a value, and the user domain (tenant, subject in Attribute Based Access Control; _AssetInformation/specificAssetId_). See Clause 5.3.4 for details. Additionally, a global asset identifier should be assigned to the asset (_AssetInformation/globalAssetId_) in the production and operation phase.
@@ -1129,8 +1067,7 @@ Every submodel element needs a semantic definition _(semanticId_ in _HasSemantic
 
 A concept description may be derived from another property definition of an external standard or another concept description (_ConceptDescription/isCaseOf_). _isCaseOf_ is a more formal definition of _sourceOfDefinition_, which is just text.
 
-[.note-block]
-Note: in this case, most of the attributes are redundant because they are defined in the external standard. Attributes for information like _preferredName_, _unit_ etc. are added to increase usability. Consistency w.r.t. the referenced submodel element definitions should be ensured by corresponding tooling.
+NOTE: In this case, most of the attributes are redundant because they are defined in the external standard. attributes for information like _preferredname_, _unit_ etc. are added to increase usability. consistency w.r.t. the referenced submodel element definitions should be ensured by corresponding tooling.
 
 If a concept description is not just a copy or refinement of an external standard, the provider of the Asset Administration Shell using this concept description shall be aware that an interoperability with other Asset Administration Shells cannot be ensured.
 
@@ -1142,15 +1079,14 @@ Besides submodel elements including properties and concept descriptions, other i
 
 Figure 12 gives a complete overview of all elements defined in the metamodel and specified in Clause 5.3. The UML packages reflect the structure of Clause 5.3. The elements of package "Core" are specified as first class citizens in Clause 5.3, except for their imported packages: the elements of package "SubmodelElements" are specified in Clause 5.3.6. Elements of package "Common" are specified in Clause 5.3.2. The elements of package "Reference" are specified in Clause 5.3.10. Elements from package "Types" are specified in Clause 5.3.11. The only package that is not listed is "Data Specifications (Templates)" because data specifications are handled differently. Data specification templates are explained in Clause 6.
 
-[.note-block]
-Note: the abstract classes are numbered h0_, h1_, etc. (e.g. h1_Referable); their aliases however are defined without this prefix. The reason for this naming is that no order for inherited classes can be defined in the tooling used for UML modelling (Enterprise Architect), since they are ordered alphabetically. The order is important for some serializations (e.g. for XML).
+NOTE: The abstract classes are numbered h0_, h1_, etc. (e.g. h1_referable); their aliases however are defined without this prefix. the reason for this naming is that no order for inherited classes can be defined in the tooling used for uml modelling (enterprise architect), since they are ordered alphabetically. the order is important for some serializations (e.g. for xml).
 
 Figure 11 shows the so-called environment. The environment’s purpose is to list all Asset Administration Shells, all submodels, and all concept descriptions – in other word, all identifiables within an ecosystem.
 
 .
 image:extracted-media/media/image15.png[extracted-media/media/image15,width=436,height=196]
 
-. Figure 12 Metamodel Package Overview
+[#_Ref91706526 .anchor]##. Figure 12 Metamodel Package Overview
 image:extracted-media/media/image16.png[extracted-media/media/image16,width=623,height=455]
 
 === Metamodel Specification Details: Designators
@@ -1173,7 +1109,7 @@ This clause specifies the abstract classes that represent commonly used attribut
 
 ===== Administrative Information Attributes
 
-.Figure 13 Metamodel of Administrative Information
+[#_Toc125537836 .anchor]##.Figure 13 Metamodel of Administrative Information
 image:extracted-media/media/image17.png[extracted-media/media/image17,width=144,height=120]
 
 Every identifiable may contain administrative information. Administrative information includes, for example,
@@ -1191,19 +1127,15 @@ For more information on the concept of subject, see Attribute Based Access Contr
 
 _AdministrativeInformation_ allows the usage of templates (_HasDataSpecification_). Data specifications are defined in separate documents.
 
-[.note-block]
-Note 1: two submodels with the same semanticId but different administrative information shall have different IDs (_Submodel/id_), since they denote that the submodel is not backward compatible or has some other major administrative changes. The _idShort_ typically does not change. The same applies to other identifiables (_Identifiable/id_). Otherwise, the ID of a submodel would not be sufficient to identify the data or service provided by the submodel.
+NOTE: 1 : two submodels with the same semanticid but different administrative information shall have different ids (_submodel/id_), since they denote that the submodel is not backward compatible or has some other major administrative changes. the _idshort_ typically does not change. the same applies to other identifiables (_identifiable/id_). otherwise, the id of a submodel would not be sufficient to identify the data or service provided by the submodel.
 
-[.note-block]
-Note 2: since submodels with different versions shall have different identifiers, it is possible that an Asset Administration Shell has two submodels with the same _semanticId_ but different versions, i.e. different administrative metainformation.
+NOTE: 2 : since submodels with different versions shall have different identifiers, it is possible that an asset administration shell has two submodels with the same _semanticid_ but different versions, i.e. different administrative metainformation.
 
-[.note-block]
-Note 3: some of the administrative information like the version number might need to be part of the identification. This is similar to the handling of identifiers for concept descriptions using IRDIs. In ECLASS, the IRDI 0173-1#02-AO677#002 contains the version information #002.
+NOTE: 3 : some of the administrative information like the version number might need to be part of the identification. this is similar to the handling of identifiers for concept descriptions using irdis. in eclass, the irdi 0173-1#02-ao677#002 contains the version information #002.
 
-[.note-block]
-Note 4: the process of versioning or adding other administrative information to elements is done by external version or configuration management software and not by the Asset Administration Shell itself.
+NOTE: 4 : the process of versioning or adding other administrative information to elements is done by external version or configuration management software and not by the asset administration shell itself.
 
-. Primitive Data Types Used in Metamodel
+.[#_Ref13424257 .anchor]####Table 8 Primitive Data Types Used in Metamodel
 [width="100%",cols="19%,51%,15%,15%",options="header",]
 |===
 |Class: |AdministrativeInformation | |
@@ -1225,24 +1157,21 @@ Administrative metainformation for an element like version information
 |templateId a|
 Identifier of the template that guided the creation of the element
 
-[.note-block]
-Note 1: in case of a submodel, the template ID is the identifier of the submodel template that guided the creation of the submodel.
+NOTE: 1 : in case of a submodel, the template id is the identifier of the submodel template that guided the creation of the submodel.
 
-[.note-block]
-Note 2: the submodel template ID is not relevant for validation. Here, the _Submodel/semanticId_ shall be used.
+NOTE: 2 : the submodel template id is not relevant for validation. here, the _submodel/semanticid_ shall be used.
 
-[.note-block]
-Note 3: usage of the template ID is not restricted to submodel instances. The creation of submodel templates can also be guided by another submodel template.
+NOTE: 3 : usage of the template id is not restricted to submodel instances. the creation of submodel templates can also be guided by another submodel template.
 
 |Identifier |0..1
 |===
 
 ===== Has Data Specification Attributes
 
-. Figure 14 Metamodel of HasDataSpecification
+[#_Toc125537837 .anchor]##. Figure 14 Metamodel of HasDataSpecification
 image:extracted-media/media/image18.png[extracted-media/media/image18,width=176,height=80]
 
-. Data Types with Examplesfootnote:[See list of RDF-compatible XSD types with short description https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes. Examples from https://openmanufacturingplatform.github.io/sds-bamm-aspect-meta-model/bamm-specification/v1.0.0/datatypes.html]
+.[#_Ref103588202 .anchor]####Table 9 Data Types with Examplesfootnote:[See list of RDF-compatible XSD types with short description https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes. Examples from https://openmanufacturingplatform.github.io/sds-bamm-aspect-meta-model/bamm-specification/v1.0.0/datatypes.html]
 [width="100%",cols="27%,40%,18%,15%,",options="header",]
 |===
 |Class: |HasDataSpecification &lt;&lt; abstract &gt;&gt; | | |
@@ -1252,8 +1181,7 @@ image:extracted-media/media/image18.png[extracted-media/media/image18,width=176,
 |dataSpecification a|
 External reference to the data specification template used by the element
 
-[.note-block]
-Note: this is an external reference.
+NOTE: This is an external reference.
 
 |Reference |0..* |
 |===
@@ -1263,18 +1191,16 @@ For more details on data specifications, please see Clause 6.
 ===== . Has Extensions Attributes
 image:extracted-media/media/image19.png[extracted-media/media/image19,width=502,height=260]
 
-. Distinction of Different Data Formats for the Asset Administration Shell
+.[#_Ref89794948 .anchor]####Table 10 Distinction of Different Data Formats for the Asset Administration Shell
 [width="100%",cols="28%,33%,24%,15%",options="header",]
 |===
 |Class: |HasExtensions &lt;&lt; abstract &gt;&gt; | |
 |Explanation: a|
 Element that can be extended by proprietary extensions
 
-[.note-block]
-Note 1: see Clause 5.3.12.4 for constraints related to extensions.
+NOTE: 1 : see clause 5.3.12.4 for constraints related to extensions.
 
-[.note-block]
-Note 2: extensions are proprietary, i.e. they do not support global interoperability.
+NOTE: 2 : extensions are proprietary, i.e. they do not support global interoperability.
 
 | |
 |Inherits from: |- | |
@@ -1282,7 +1208,7 @@ Note 2: extensions are proprietary, i.e. they do not support global interoperabi
 |extension |An extension of the element. |Extension |0..*
 |===
 
-. Proposed Structure for URIs
+.[#_Ref89794706 .anchor]####Table 11 Proposed Structure for URIs
 [width="100%",cols="24%,32%,32%,12%",options="header",]
 |===
 |Class: |Extension | |
@@ -1302,10 +1228,10 @@ Default: xs:string
 
 ===== Has Kind Attributes
 
-.Figure 16 Metamodel of HasKind
+[#_Toc125537839 .anchor]##.Figure 16 Metamodel of HasKind
 image:extracted-media/media/image20.png[extracted-media/media/image20,width=338,height=94]
 
-. Example URN and URL-based Identifiers of the Asset Administration Shell
+.[#_Ref529026581 .anchor]####Table 12 Example URN and URL-based Identifiers of the Asset Administration Shell
 [width="100%",cols="18%,49%,19%,14%",options="header",]
 |===
 |Class: |HasKind | |
@@ -1327,7 +1253,7 @@ Default Value = _Instance_
 
 The kind enumeration is used to denote whether an element is of kind _Template_ or _Instance_. It is used to distinguish between submodels and submodel templates.
 
-. Changes
+.[#_Toc125537788 .anchor]####Table 13 Changes
 [width="100%",cols="31%,69%",options="header",]
 |===
 |Enumeration: |ModellingKind
@@ -1340,12 +1266,12 @@ The kind enumeration is used to denote whether an element is of kind _Template_ 
 
 ===== Has Semantics Attributes
 
-.Figure 17 Metamodel of Semantic References (HasSemantics)
+[#_Toc125537840 .anchor]##.Figure 17 Metamodel of Semantic References (HasSemantics)
 image:extracted-media/media/image21.png[extracted-media/media/image21,width=232,height=93]
 
 For matching algorithm, see Clause 4.4.1.
 
-. New Elements in Metamodel
+.[#_Toc125537789 .anchor]####Table 14 New Elements in Metamodel
 [width="100%",cols="27%,42%,20%,11%",options="header",]
 |===
 |Class: |HasSemantics &lt;&lt; abstract &gt;&gt; | |
@@ -1360,22 +1286,20 @@ Element that can have a semantic definition plus some supplemental semantic defi
 |semanticId a|
 Identifier of the semantic definition of the element called semantic ID or also main semantic ID of the element
 
-[.note-block]
-Note: it is recommended to use an external reference.
+NOTE: It is recommended to use an external reference.
 
 |Reference |0..1
 |supplementalSemanticId a|
 Identifier of a supplemental semantic definition of the element called supplemental semantic ID of the element
 
-[.note-block]
-Note: it is recommended to use an external reference.
+NOTE: It is recommended to use an external reference.
 
 |Reference |0..*
 |===
 
 ===== Identifiable Attributes
 
-.Figure 18 Metamodel of Identifiables
+[#_Toc125537841 .anchor]##.Figure 18 Metamodel of Identifiables
 image:extracted-media/media/image22.png[extracted-media/media/image22,width=408,height=258]
 
 An identifiable element is a referable with a globally unique identifier (_Identifier_). Only the global ID (_Identifiable/id_) shall be used to reference an identifiable, because the _idShort_ is not unique for an identifiable. Identifiables may have administrative information like version, etc.
@@ -1386,15 +1310,14 @@ Information about identification can be found in Clause 4.3. See Clause 4.3.4 fo
 
 See Clause 4.3.4 for information about which identifier types are supported.
 
-. New, Changed or Removed Constraints
+.[#_Toc125537790 .anchor]####Table 15 New, Changed or Removed Constraints
 [width="100%",cols="18%,45%,26%,11%",options="header",]
 |===
 |Class: |Identifiable &lt;&lt; abstract &gt;&gt; | |
 |Explanation: a|
 An element that has a globally unique identifier
 
-[.note-block]
-Note: see Clause 5.3.12.2 for constraints related to identifiables.
+NOTE: See clause 5.3.12.2 for constraints related to identifiables.
 
 | |
 |Inherits from: |Referable | |
@@ -1402,8 +1325,7 @@ Note: see Clause 5.3.12.2 for constraints related to identifiables.
 |administration a|
 Administrative information of an identifiable element
 
-[.note-block]
-Note: some of the administrative information like the version number might need to be part of the identification.
+NOTE: Some of the administrative information like the version number might need to be part of the identification.
 
 |AdministrativeInformation |0..1
 |id |The globally unique identification of the element |Identifier |1
@@ -1411,18 +1333,17 @@ Note: some of the administrative information like the version number might need 
 
 ===== Qualifiable Attributes
 
-.Figure 19 Metamodel of Qualifiables
+[#_Toc125537842 .anchor]##.Figure 19 Metamodel of Qualifiables
 image:extracted-media/media/image23.png[extracted-media/media/image23,width=418,height=148]
 
-. Changes
+.[#_Toc125537791 .anchor]####Table 16 Changes
 [width="100%",cols="17%,50%,19%,14%",options="header",]
 |===
 |Class: |Qualifiable &lt;&lt; abstract &gt;&gt; | |
 |Explanation: a|
 A qualifiable element may be further qualified by one or more qualifiers.
 
-[.note-block]
-Note: see Clause 5.3.12.3 for constraints related to qualifiables.
+NOTE: See clause 5.3.12.3 for constraints related to qualifiables.
 
 | |
 |Inherits from: |-- | |
@@ -1432,14 +1353,14 @@ Note: see Clause 5.3.12.3 for constraints related to qualifiables.
 
 ===== Qualifier Attributes
 
-.Figure 20 Metamodel of Qualifiers
+[#_Toc125537843 .anchor]##.Figure 20 Metamodel of Qualifiers
 image:extracted-media/media/image24.png[extracted-media/media/image24,width=385,height=148]
 
 Qualifiers may be defined for qualifiable elements.
 
 There are standardized qualifiers defined in IEC CDD, IEC61360-4 – IEC/SC 3D. A level qualifier defining the level type minimal, maximal, typical, and nominal value is specified in IEC 62569-1. In DIN SPEC 92000, qualifier types like e.g. expression semantics and expression logic are defined.
 
-. New Elements in Metamodel
+.[#_Toc125537792 .anchor]####Table 17 New Elements in Metamodel
 [width="100%",cols="20%,51%,18%,11%",options="header",]
 |===
 |Class: |Qualifier | |
@@ -1469,15 +1390,14 @@ Default: ConceptQualifier
 |valueId a|
 Reference to the global unique ID of a coded value
 
-[.note-block]
-Note: it is recommended to use an external reference.
+NOTE: It is recommended to use an external reference.
 
 |Reference |0..1
 |===
 
 It is recommended to add a _semanticId_ for the concept of the _Qualifier_. _Qualifier/type_ is the preferred name of the concept of the qualifier or its short name.
 
-. New, Changed or Removed Constraints
+.[#_Toc125537793 .anchor]####Table 18 New, Changed or Removed Constraints
 [width="100%",cols="30%,70%",options="header",]
 |===
 |Enumeration: |QualifierKind
@@ -1493,8 +1413,7 @@ Value qualifiers are only applicable to elements with __kind__="_Instance"._
 |TemplateQualifier a|
 Qualifies the elements within a specific submodel on concept level; the corresponding qualifier value is static.
 
-[.note-block]
-Note: template qualifiers are only applicable to elements with kind="Template". See constraint AASd-129.
+NOTE: Template qualifiers are only applicable to elements with kind="template". see constraint aasd-129.
 
 |===
 
@@ -1507,7 +1426,7 @@ image:extracted-media/media/image25.png[extracted-media/media/image25,width=259,
 
 ===== Referable Attributes
 
-. Figure 22 Metamodel of Referables
+[#_Toc125537845 .anchor]##. Figure 22 Metamodel of Referables
 image:extracted-media/media/image26.png[extracted-media/media/image26,width=222,height=151]
 
 The metamodel differentiates between elements that are identifiable, referable, or none of both. The latter means they are neither inheriting from _Referable_ nor from _Identifiable_, which applies e.g. to __Qualifier__s.
@@ -1518,15 +1437,14 @@ Not every element of the metamodel is referable. There are elements that are jus
 
 The __idShor__t shall be unique in its name space for non-identifiable referables (see [.underline]#Constraint AASd-022)#. A name space is defined as follows in this context: the parent element(s), which an element is part of and that is either referable or identifiable, is the name space of the element. Examples: a submodel is the name space for the properties directly contained in it; the name space of a submodel element contained in a submodel element collection is the submodel element collection.
 
-. Changes w/o Security
+.[#_Toc125537794 .anchor]####Table 19 Changes w/o Security
 [width="100%",cols="19%,46%,26%,9%",options="header",]
 |===
 |Class: |Referable &lt;&lt; abstract &gt;&gt; | |
 |Explanation: a|
 Note1 : an element that is referable by its idShort. This ID is not globally unique. This ID is unique within the name space of the element.
 
-[.note-block]
-Note 2: see Clause 5.3.12.2 for constraints related to referables.
+NOTE: 2 : see clause 5.3.12.2 for constraints related to referables.
 
 [.underline]#Constraint AASd-002:# _idShort_ of __Referable__s shall only feature letters, digits, underscore ("_"); starting mandatory with a letter, i.e. [a-zA-Z][a-zA-Z0-9_]*.
 
@@ -1536,15 +1454,13 @@ Note 2: see Clause 5.3.12.2 for constraints related to referables.
 |category &lt;&lt; Deprecated &gt;&gt; a|
 The category is a value that gives further meta information w.r.t. the class of the element. It affects the expected existence of attributes and the applicability of constraints.
 
-[.note-block]
-Note: The category is not identical to the semantic definition (_HasSemantics_) of an element. The category could e.g. denote that the element is a measurement value, whereas the semantic definition of the element would denote that it is the measured temperature.
+NOTE: The category is not identical to the semantic definition (_hassemantics_) of an element. the category could e.g. denote that the element is a measurement value, whereas the semantic definition of the element would denote that it is the measured temperature.
 
 |NameType |0..1
 |idShort a|
 In case of identifiables, this attribute is a short name of the element. In case of a referable, this ID is an identifying string of the element within its name space.
 
-[.note-block]
-Note: if the element is a property and the property has a semantic definition (_HasSemantics/semanticId_) conformant to IEC61360, the _idShort_ is typically identical to the short name in English, if available.
+NOTE: If the element is a property and the property has a semantic definition (_hassemantics/semanticid_) conformant to iec61360, the _idshort_ is typically identical to the short name in english, if available.
 
 |NameType |0..1
 |displayName |Display name; can be provided in several languages |MultiLanguageNameType |0..1
@@ -1562,10 +1478,9 @@ Additional information can be provided, e.g. if the element is qualified and whi
 
 Predefined categories are described in Table 6.
 
-[.note-block]
-Note: categories are deprecated and should no longer be used.
+NOTE: Categories are deprecated and should no longer be used.
 
-. New Elements in Metamodel w/o Security
+.[#_Toc125537795 .anchor]####Table 20 New Elements in Metamodel w/o Security
 [width="100%",cols="18%,28%,54%",options="header",]
 |===
 |Category: |Applicable to, Examples: |Explanation:
@@ -1603,14 +1518,14 @@ SubmodelElementList
 
 ==== Asset Administration Shell Attributes
 
-. Figure 23 Metamodel of an AssetAdministrationShell
+[#_Toc125537846 .anchor]##. Figure 23 Metamodel of an AssetAdministrationShell
 image:extracted-media/media/image27.png[extracted-media/media/image27,width=375,height=406]
 
 An Administration Shell is uniquely identifiable since it inherits from _Identifiable_.
 
 The _derivedFrom_ attribute is used to establish a relationship between two Asset Administration Shells that are derived from each other. For more detailed information on the _derivedFrom_ concept, see Clause 4.2.
 
-. New, Changed or Removed Constraints w/o Security
+.[#_Toc125537796 .anchor]####Table 21 New, Changed or Removed Constraints w/o Security
 [width="100%",cols="20%,28%,43%,9%",options="header",]
 |===
 |Class: |AssetAdministrationShell | |
@@ -1633,10 +1548,10 @@ Temporarily, no submodel might be assigned to the Asset Administration Shell.
 
 ====  Asset Information Attributes
 
-. Figure 24 Metamodel of Asset Information
+[#_Toc125537847 .anchor]##. Figure 24 Metamodel of Asset Information
 image:extracted-media/media/image28.png[extracted-media/media/image28,width=442,height=242]
 
-. Changes w.r.t. Data Specification IEC61360
+.[#_Toc125537797 .anchor]####Table 22 Changes w.r.t. Data Specification IEC61360
 [width="100%",cols="21%,50%,21%,8%",options="header",]
 |===
 |Class: |AssetInformation | |
@@ -1649,8 +1564,7 @@ The asset has a globally unique identifier, plus – if needed – additional do
 
 [.underline]#Constraint AASd-131:# The _globalAssetId_ or at least one _specificAssetId_ shall be defined for _AssetInformation_.
 
-[.note-block]
-Note: see Clause 5.3.12.5 for constraints related to asset information.
+NOTE: See clause 5.3.12.5 for constraints related to asset information.
 
 | |
 |Inherits from: |-- | |
@@ -1666,10 +1580,9 @@ This attribute is required as soon as the Asset Administration Shell is exchange
 |defaultThumbnail |Thumbnail of the asset represented by the Asset Administration Shell; used as default. |Resource |0..1
 |===
 
-[.note-block]
-Note: besides this asset information, there still might be an identification submodel with further information. Specific asset IDs mainly serve the purpose of supporting discovery of Asset Administration Shells for an asset.
+NOTE: Besides this asset information, there still might be an identification submodel with further information. specific asset ids mainly serve the purpose of supporting discovery of asset administration shells for an asset.
 
-. New Elements in Metamodel DataSpecification IEC61360
+.[#_Toc125537798 .anchor]####Table 23 New Elements in Metamodel DataSpecification IEC61360
 [width="100%",cols="21%,46%,23%,10%",options="header",]
 |===
 |Class: |Resource | |
@@ -1690,7 +1603,7 @@ The content type states which file extensions the file can have.
 |ContentType |0..1
 |===
 
-. New, Changed or Removed Constraints Data Specification IEC61360
+.[#_Toc125537799 .anchor]####Table 24 New, Changed or Removed Constraints Data Specification IEC61360
 [width="100%",cols="30%,70%",options="header",]
 |===
 |Enumeration: |AssetKind
@@ -1704,7 +1617,7 @@ The content type states which file extensions the file can have.
 
 For more information on types and instances, see Clause 4.2.
 
-. Changes w.r.t. Security
+.[#_Toc125537800 .anchor]####Table 25 Changes w.r.t. Security
 [width="100%",cols="24%,46%,18%,12%",options="header",]
 |===
 |Class: |SpecificAssetId | |
@@ -1721,33 +1634,29 @@ A specific asset ID describes a generic supplementary identifying attribute of t
 |externalSubjectId a|
 The unique ID of the (external) subject the specific asset ID _value_ belongs to or has meaning to
 
-[.note-block]
-Note: this is an external reference.
+NOTE: This is an external reference.
 
 |Reference |0..1
 |===
 
-[.note-block]
-Note 1: names for specificAssetIds do not need to be unique.
+NOTE: 1 : names for specificassetids do not need to be unique.
 
-[.note-block]
-Note 2: semanticIds for the single specificAssetIds do not need to be unique.
+NOTE: 2 : semanticids for the single specificassetids do not need to be unique.
 
 For more information on the concept of subject, see Attribute Based Access Control (ABAC) link:#bib_49[[49\]]. The assumption is that every subject has a unique identifier.
 
 ==== Submodel Attributes
 
-. Figure 25 Metamodel of Submodel
+[#_Toc125537848 .anchor]##. Figure 25 Metamodel of Submodel
 image:extracted-media/media/image29.png[extracted-media/media/image29,width=470,height=139]
 
 Adding a _semanticId_ for a submodel is recommended (see Table 2).
 
 If the submodel is of _kind=Template_ (modelling kind as inherited by _HasKind_), the submodel elements within the submodel are presenting submodel element templates. If the submodel is of _kind=Instance_, its submodel elements represent submodel element instances.
 
-[.note-block]
-Note: validators shall handle a submodel like _SubmodelElementCollection/submodelElements_ and not like a _SubmodelElementList/value_. The difference is that a submodel is identifiable and a predefined unit of information within the Asset Administration Shell.
+NOTE: Validators shall handle a submodel like _submodelelementcollection/submodelelements_ and not like a _submodelelementlist/value_. the difference is that a submodel is identifiable and a predefined unit of information within the asset administration shell.
 
-. New Elements in Metamodel Security
+.[#_Toc125537801 .anchor]####Table 26 New Elements in Metamodel Security
 [width="100%",cols="25%,46%,19%,10%",options="header",]
 |===
 |Class: |Submodel | |
@@ -1764,7 +1673,7 @@ A submodel is used to structure the digital representation and technical functio
 
 ==== Submodel Element Attributes
 
-. Figure 26 Metamodel of Submodel Element
+[#_Toc125537849 .anchor]##. Figure 26 Metamodel of Submodel Element
 image:extracted-media/media/image30.png[extracted-media/media/image30,width=207,height=139]
 
 Submodel elements are qualifiable elements, i.e. one or more qualifiers may be defined for each of them.
@@ -1773,7 +1682,7 @@ It is recommended to add a _semanticId_ to a _SubmodelElement._
 
 Submodel elements may also have defined data specification templates. A template might be defined to mirror some of the attributes like _preferredName_ and _unit_ of a property concept definition if there is no corresponding concept description available. Otherwise, there is only the property definition referenced by _semanticId_ available for the property; the attributes must be looked up online in a different way and are not available offline.
 
-. New, Changed or Removed Constraints Security
+.[#_Toc125537802 .anchor]####Table 27 New, Changed or Removed Constraints Security
 [width="100%",cols="18%,52%,12%,18%",options="header",]
 |===
 |Class: |SubmodelElement &lt;&lt; abstract &gt;&gt; | |
@@ -1784,7 +1693,7 @@ Submodel elements may also have defined data specification templates. A template
 
 ==== Overview of Submodel Element Types
 
-.Figure 27 Metamodel Overview for Submodel Element Subtypes
+[#_Ref24442249 .anchor]##.Figure 27 Metamodel Overview for Submodel Element Subtypes
 image:extracted-media/media/image31.png[extracted-media/media/image31,width=623,height=236]
 
 Submodel elements include data properties as well as operations, events and other elements needed to describe a model for an asset (seeFigure 27).
@@ -1795,12 +1704,12 @@ All submodel elements including abstract classes like data elements are specifie
 
 =====  Annotated Relationship Element Attributes
 
-.Figure 28 Metamodel of Annotated Relationship Elements
+[#_Toc125537851 .anchor]##.Figure 28 Metamodel of Annotated Relationship Elements
 image:extracted-media/media/image32.png[extracted-media/media/image32,width=200,height=177]
 
 An annotated relationship is a relationship similar to a ternary association in UML. The semantics of the relationship is defined via the _semanticId_ of the _RelationshipElement_. If this semantic definition requires additional information not contained in the _first_ or _second_ object referenced via the relationship, this information needs to be stored as annotation.
 
-. Changes w/o Security
+.[#_Toc125537803 .anchor]####Table 28 Changes w/o Security
 [width="100%",cols="18%,49%,18%,15%",options="header",]
 |===
 |Class: |AnnotatedRelationshipElement | |
@@ -1813,7 +1722,7 @@ An annotated relationship is a relationship similar to a ternary association in 
 ===== .Basic Event Element Attributes
 image:extracted-media/media/image33.png[extracted-media/media/image33,width=378,height=225]
 
-. New Elements in Metamodel w/o Security
+.[#_Toc125537804 .anchor]####Table 29 New Elements in Metamodel w/o Security
 [width="100%",cols="19%,43%,28%,10%",options="header",]
 |===
 |Class: |BasicEventElement &lt;&lt; Experimental &gt;&gt; | |
@@ -1837,8 +1746,7 @@ Can be \{ On, Off }
 |messageBroker a|
 Information about which outer message infrastructure shall handle messages for the _EventElement_; refers to a _Submodel,_ _SubmodelElementList_, _SubmodelElementCollection_ or _Entity_, which contains __DataElement__s describing the proprietary specification for the message broker
 
-[.note-block]
-Note: this proprietary specification could be standardized by using respective submodels for different message infrastructure, e.g. OPC UA, MQTT or AMQP.
+NOTE: This proprietary specification could be standardized by using respective submodels for different message infrastructure, e.g. opc ua, mqtt or amqp.
 
 |ModelReference<Referable> |0..1
 |lastUpdate |Timestamp in UTC, when the last event was received (input direction) or sent (output direction) |dateTime |0..1
@@ -1860,7 +1768,7 @@ Might not be specified, i.e. if there is no maximum interval.
 |duration |0..1
 |===
 
-. New, Changed or Removed Constraints w/o Security
+.[#_Toc125537805 .anchor]####Table 30 New, Changed or Removed Constraints w/o Security
 [width="100%",cols="30%,70%",options="header",]
 |===
 |Enumeration: |Direction &lt;&lt; Experimental &gt;&gt;
@@ -1871,7 +1779,7 @@ Might not be specified, i.e. if there is no maximum interval.
 |output |Output direction
 |===
 
-. Changes w.r.t. Data Specification IEC61360
+.[#_Toc125537806 .anchor]####Table 31 Changes w.r.t. Data Specification IEC61360
 [width="100%",cols="30%,70%",options="header",]
 |===
 |Enumeration: |StateOfEvent &lt;&lt; Experimental &gt;&gt;
@@ -1886,13 +1794,12 @@ Events sent or received by an Asset Administration Shell always comply with a ge
 
 The payload of such an event is specified below.
 
-[.note-block]
-Note: the payload is not part of the information model as exchanged via the AASX package format but used in re-active Asset Administration Shells.
+NOTE: The payload is not part of the information model as exchanged via the aasx package format but used in re-active asset administration shells.
 
 .
 image:extracted-media/media/image34.png[extracted-media/media/image34,width=226,height=173]
 
-. New Elements in Metamodel DataSpecification IEC61360
+.[#_Toc125537807 .anchor]####Table 32 New Elements in Metamodel DataSpecification IEC61360
 [width="100%",cols="24%,35%,32%,9%",options="header",]
 |===
 |Class: |EventPayload &lt;&lt; Experimental &gt;&gt; | |
@@ -1903,24 +1810,21 @@ image:extracted-media/media/image34.png[extracted-media/media/image34,width=226,
 |sourceSemanticId a|
 semanticId of the source event element, if available
 
-[.note-block]
-Note: it is recommended to use a global reference.
+NOTE: It is recommended to use a global reference.
 
 |Reference |0..1
 |observableReference |Reference to the referable, which defines the scope of the event. |ModelReference<Referable> |1
 |observableSemanticId a|
 semanticId of the referable, which defines the scope of the event, if available.
 
-[.note-block]
-Note: it is recommended to use an external reference.
+NOTE: It is recommended to use an external reference.
 
 |Reference |0..1
 |topic |Information for the outer message infrastructure to schedule the event for the respective communication channel |MessageTopicType |0..1
 |subjectId a|
 Subject, who/which initiated the creation
 
-[.note-block]
-Note: this is an external reference.
+NOTE: This is an external reference.
 
 |Reference |0..1
 |timestamp |Timestamp in UTC, when this event was triggered |dateTime |1
@@ -1931,12 +1835,12 @@ For more information on the concept of subject, see Attribute Based Access Contr
 
 =====  Blob Attributes
 
-. Figure 31 Metamodel of Blobs
+[#_Toc125537854 .anchor]##. Figure 31 Metamodel of Blobs
 image:extracted-media/media/image36.png[extracted-media/media/image36,width=146,height=93]
 
 For information on content type, see Clause 5.3.7.9 on submodel element "File".
 
-. New, Changed or Removed Constraints Data Specification IEC61360
+.[#_Toc125537808 .anchor]####Table 33 New, Changed or Removed Constraints Data Specification IEC61360
 [width="100%",cols="18%,55%,15%,12%",options="header",]
 |===
 |Class: |Blob | |
@@ -1946,8 +1850,7 @@ For information on content type, see Clause 5.3.7.9 on submodel element "File".
 |value a|
 The value of the blob instance of a blob data element
 
-[.note-block]
-Note: in contrast to the file property, the file content is stored directly as value in the Blob data element.
+NOTE: In contrast to the file property, the file content is stored directly as value in the blob data element.
 
 |BlobType |0..1
 |contentType a|
@@ -1964,13 +1867,12 @@ The allowed values are defined as in RFC2046.
 
 ===== Capability Attributes
 
-. Figure 32 Metamodel of Capabilities
+[#_Toc125537855 .anchor]##. Figure 32 Metamodel of Capabilities
 image:extracted-media/media/image37.png[extracted-media/media/image37,width=113,height=80]
 
-[.note-block]
-Note: the _semanticId_ of a capability is typically an ontology, which enables reasoning on capabilities. For information and examples on how to apply the concept of capability and how to map it to one or more skills implementing the capability, please refer to link:#bib_27[[27\]]. The mapping is done via a relationship element with the corresponding semantics. A skill is typically a property or an operation. In more complex cases, the mapping can also be a collection or a complete submodel.
+NOTE: The _semanticid_ of a capability is typically an ontology, which enables reasoning on capabilities. for information and examples on how to apply the concept of capability and how to map it to one or more skills implementing the capability, please refer to link:#bib_27[[27\]]. the mapping is done via a relationship element with the corresponding semantics. a skill is typically a property or an operation. in more complex cases, the mapping can also be a collection or a complete submodel.
 
-. Changes w.r.t. Security
+.[#_Toc125537809 .anchor]####Table 34 Changes w.r.t. Security
 [width="100%",cols="18%,53%,15%,14%",options="header",]
 |===
 |Class: |Capability | |
@@ -1981,7 +1883,7 @@ Note: the _semanticId_ of a capability is typically an ontology, which enables r
 
 ===== Data Element and Overview of Data Element Types
 
-. Figure 33 Metamodel of Data Elements
+[#_Ref49791209 .anchor]##. Figure 33 Metamodel of Data Elements
 image:extracted-media/media/image38.png[extracted-media/media/image38,width=623,height=235]
 
 A data element is a submodel element that is not further composed of other submodel elements.
@@ -1990,7 +1892,7 @@ A data element is a submodel element that has a value or a predefined number of 
 
 The type of value differs for different subtypes of data elements. Data elements include properties, file handling, and reference elements, see Figure 33.
 
-. New Elements in Metamodel Security
+.[#_Toc125537810 .anchor]####Table 35 New Elements in Metamodel Security
 [width="99%",cols="17%,55%,14%,14%",options="header",]
 |===
 |Class: |DataElement &lt;&lt; abstract &gt;&gt; | |
@@ -2001,8 +1903,7 @@ A data element is a submodel element that has a value. The type of value differs
 
 [.underline]#Constraint AASd-090#: for data elements, _category_ (inherited by _Referable_) shall be one of the following values: CONSTANT, PARAMETER or VARIABLE. Default: VARIABLE
 
-[.note-block]
-Note: categories are deprecated and should no longer be used.
+NOTE: Categories are deprecated and should no longer be used.
 
 | |
 |Inherits from: |SubmodelElement | |
@@ -2011,12 +1912,12 @@ Note: categories are deprecated and should no longer be used.
 
 =====  Entity Attributes
 
-.Figure 34 Metamodel of Entities
+[#_Toc125537857 .anchor]##.Figure 34 Metamodel of Entities
 image:extracted-media/media/image39.png[extracted-media/media/image39,width=376,height=120]
 
 The entity submodel element is designed to be used in submodels defining the relationship between the parts of the composite asset it is composed of (e.g. bill of material). These parts are called entities. Not all entities have a global asset ID.
 
-. New, Changed or Removed Constraints Security
+.[#_Toc125537811 .anchor]####Table 36 New, Changed or Removed Constraints Security
 [width="100%",cols="22%,49%,21%,8%",options="header",]
 |===
 |Class: |Entity | |
@@ -2034,7 +1935,7 @@ An entity is a submodel element that is used to model entities.
 |specificAssetId |Reference to a specific asset ID representing a supplementary identifier of the asset represented by the Asset Administration Shell |SpecificAssetId |0..*
 |===
 
-. Changes w.r.t. V2.0 w/o Security
+.[#_Toc125537812 .anchor]####Table 37 Changes w.r.t. V2.0 w/o Security
 [width="100%",cols="30%,70%",options="header",]
 |===
 |Enumeration: |EntityType
@@ -2051,10 +1952,10 @@ The asset of an I4.0 Component is a self-managed entity per definition.
 
 =====  Event Attributes
 
-.Figure 35 Metamodel of Events
+[#_Toc125537858 .anchor]##.Figure 35 Metamodel of Events
 image:extracted-media/media/image40.png[extracted-media/media/image40,width=168,height=82]
 
-. New Elements in Metamodel V3.0RC01 w/o Security
+.[#_Toc125537813 .anchor]####Table 38 New Elements in Metamodel V3.0RC01 w/o Security
 [width="99%",cols="19%,50%,17%,14%",options="header",]
 |===
 |Class: |EventElement &lt;&lt; abstract &gt;&gt; &lt;&lt; Experimental &gt;&gt; | |
@@ -2065,15 +1966,14 @@ image:extracted-media/media/image40.png[extracted-media/media/image40,width=168,
 
 =====  File Attributes
 
-.Figure 36 Metamodel of File Submodel Element
+[#_Toc125537859 .anchor]##.Figure 36 Metamodel of File Submodel Element
 image:extracted-media/media/image41.png[extracted-media/media/image41,width=146,height=93]
 
 A media type (also MIME type and content type) is a two-part identifier for file formats and format contents transmitted via the Internet. The Internet Assigned Numbers Authority (IANA) is the official authority for the standardization and publication of these classifications.
 
-[.note-block]
-Note: for information on handling supplementary external files in exchanging Asset Administration Shell specification in AASX package format see also Part 1b of the series "Details of the Asset Administration Shell". An absolute path is used in case the file exists independently of the Asset Administration Shell. A relative path, relative to the package root, should be used if the file is part of a serialized package of the Asset Administration Shell.
+NOTE: For information on handling supplementary external files in exchanging asset administration shell specification in aasx package format see also part 1b of the series "details of the asset administration shell". an absolute path is used in case the file exists independently of the asset administration shell. a relative path, relative to the package root, should be used if the file is part of a serialized package of the asset administration shell.
 
-. New, Changed or Removed Constraints w/o Security
+.[#_Toc125537814 .anchor]####Table 39 New, Changed or Removed Constraints w/o Security
 [width="100%",cols="18%,49%,18%,15%",options="header",]
 |===
 |Class: |File | |
@@ -2091,10 +1991,10 @@ The path can be absolute or relative.
 
 ===== Multi Language Property Attributes
 
-. Figure 37 Metamodel of Multi Language Properties
+[#_Toc125537860 .anchor]##. Figure 37 Metamodel of Multi Language Properties
 image:extracted-media/media/image42.png[extracted-media/media/image42,width=207,height=93]
 
-. New, Changed or Removed Constraints Security
+.[#_Toc125537815 .anchor]####Table 40 New, Changed or Removed Constraints Security
 [width="99%",cols="19%,50%,21%,10%",options="header",]
 |===
 |Class: |MultiLanguageProperty | |
@@ -2110,18 +2010,17 @@ A property is a data element that has a multi-language value.
 |valueId a|
 Reference to the global unique ID of a coded value.
 
-[.note-block]
-Note: it is recommended to use an external reference.
+NOTE: It is recommended to use an external reference.
 
 |Reference |0..1
 |===
 
 ===== Operation Attributes
 
-.Figure 38 Metamodel of Operations
+[#_Toc125537861 .anchor]##.Figure 38 Metamodel of Operations
 image:extracted-media/media/image43.png[extracted-media/media/image43,width=375,height=106]
 
-. Changes w.r.t. V2.0.1 w/o Security
+.[#_Toc125537816 .anchor]####Table 41 Changes w.r.t. V2.0.1 w/o Security
 [width="100%",cols="19%,44%,25%,12%",options="header",]
 |===
 |Class: |Operation | |
@@ -2138,7 +2037,7 @@ An operation is a submodel element with input and output variables.
 |inoutputVariable |Parameter that is input and output of the operation |OperationVariable |0..*
 |===
 
-.Table 42 New, Changed or Removed Constraints w/o Security
+.[#_Toc125537817 .anchor]####Table Table 42 New, Changed or Removed Constraints w/o Security
 [width="99%",cols="23%,39%,28%,10%",options="header",]
 |===
 |Class: |OperationVariable | |
@@ -2148,21 +2047,18 @@ An operation is a submodel element with input and output variables.
 |value |Describes an argument or result of an operation via a submodel element |SubmodelElement |1
 |===
 
-[.note-block]
-Note 1: operations typically specify the behavior of a component in terms of procedures. Hence, operations enable the specification of services with procedure-based interactions [23].
+NOTE: 1 : operations typically specify the behavior of a component in terms of procedures. hence, operations enable the specification of services with procedure-based interactions [23].
 
-[.note-block]
-Note 2: OperationVariable is introduced as separate class to enable future extensions, e.g. for adding a default value or cardinality (option/mandatory).
+NOTE: 2 : operationvariable is introduced as separate class to enable future extensions, e.g. for adding a default value or cardinality (option/mandatory).
 
-[.note-block]
-Note 3: even if the submodel element as the value of an input and an output variable have the same idShort, this does not mean that they are identical or mapped to the same variable since OperationVariables are no referables. The same applies to two input variables or an input variable and an inoutputVariable a.s.o.
+NOTE: 3 : even if the submodel element as the value of an input and an output variable have the same idshort, this does not mean that they are identical or mapped to the same variable since operationvariables are no referables. the same applies to two input variables or an input variable and an inoutputvariable a.s.o.
 
 ===== Property Attributes
 
-.Figure 39 Metamodel of Properties
+[#_Toc125537862 .anchor]##.Figure 39 Metamodel of Properties
 image:extracted-media/media/image44.png[extracted-media/media/image44,width=186,height=106]
 
-. New, Changed or Removed Constraints w/o Security
+.[#_Toc125537818 .anchor]####Table 43 New, Changed or Removed Constraints w/o Security
 [width="100%",cols="17%,51%,23%,9%",options="header",]
 |===
 |Class: |Property | |
@@ -2179,18 +2075,17 @@ A property is a data element that has a single value.
 |valueId a|
 Reference to the global unique ID of a coded value
 
-[.note-block]
-Note: it is recommended to use an external reference.
+NOTE: It is recommended to use an external reference.
 
 |Reference |0..1
 |===
 
 ===== Range Attributes
 
-.Figure 40 Metamodel of Ranges
+[#_Toc125537863 .anchor]##.Figure 40 Metamodel of Ranges
 image:extracted-media/media/image45.png[extracted-media/media/image45,width=167,height=122]
 
-. Changes w.r.t. V1.0 w/o Security
+.[#_Toc125537819 .anchor]####Table 44 Changes w.r.t. V1.0 w/o Security
 [width="100%",cols="18%,44%,21%,17%",options="header",]
 |===
 |Class: |Range &lt;&lt; Experimental &gt;&gt; | |
@@ -2214,10 +2109,10 @@ If the max value is missing, the value is assumed to be positive infinite.
 
 ===== Reference Element Attributes
 
-.Figure 41 Metamodel of Reference Elements
+[#_Toc125537864 .anchor]##.Figure 41 Metamodel of Reference Elements
 image:extracted-media/media/image46.png[extracted-media/media/image46,width=146,height=95]
 
-. New Elements in Metamodel V1.0 w/o Security
+.[#_Toc125537820 .anchor]####Table 45 New Elements in Metamodel V1.0 w/o Security
 [width="100%",cols="18%,53%,14%,15%",options="header",]
 |===
 |Class: |ReferenceElement | |
@@ -2231,12 +2126,12 @@ For more information on references, see Clause 5.3.9.
 
 ===== Relationship Element Attributes
 
-.Figure 42 Metamodel of Relationship Elements
+[#_Toc125537865 .anchor]##.Figure 42 Metamodel of Relationship Elements
 image:extracted-media/media/image47.png[extracted-media/media/image47,width=132,height=93]
 
 .
 
-. New, Changed or Removed Constraints w/o Security
+.[#_Toc125537821 .anchor]####Table 46 New, Changed or Removed Constraints w/o Security
 [width="100%",cols="15%,59%,19%,7%",options="header",]
 |===
 |Class: |RelationshipElement | |
@@ -2249,20 +2144,18 @@ image:extracted-media/media/image47.png[extracted-media/media/image47,width=132,
 
 ===== Submodel Element Collection Attributes
 
-.Figure 43 Metamodel of Submodel Element Collections
+[#_Toc125537866 .anchor]##.Figure 43 Metamodel of Submodel Element Collections
 image:extracted-media/media/image48.png[extracted-media/media/image48,width=182,height=228]
 
 Submodel Element Collections are used for complex elements with a typically fixed set of properties with unique names. This set of properties is typically predefined by the semantic definition (referenced via _semanticId_) of the submodel element collection. Each property within the collection itself should have clearly defined semantics.
 
-[.note-block]
-Note: the different elements of a submodel element collection do not have to have different __semanticId__s. However, in these cases the usage of a _SubmodelElementList_ should be considered.
+NOTE: The different elements of a submodel element collection do not have to have different __semanticid__s. however, in these cases the usage of a _submodelelementlist_ should be considered.
 
 Example: a single document has a predefined set of properties like title, version, author, etc. They logically belong to a document. So a single document is represented by a _SubmodelElementCollection_. An asset usually has many different documents available like operating instructions, safety instructions, etc. The set of all documents is represented by a _SubmodelElementList_ (see Clause _5.3.7.17)_. In this case, we have a _SubmodelElementList_ of __SubmodelElementCollection__s.
 
-[.note-block]
-Note: the elements within a submodel element collection are not ordered. Every element has a unique ID (its "idShort"). However, it is recommended to adhere to the order defined in the submodel template.
+NOTE: The elements within a submodel element collection are not ordered. every element has a unique id (its "idshort"). however, it is recommended to adhere to the order defined in the submodel template.
 
-. Changes Metamodel w.r.t. V1.0 Security
+.[#_Toc125537822 .anchor]####Table 47 Changes Metamodel w.r.t. V1.0 Security
 [width="99%",cols="17%,44%,25%,14%",options="header",]
 |===
 |Class: |SubmodelElementCollection | |
@@ -2274,13 +2167,12 @@ Note: the elements within a submodel element collection are not ordered. Every e
 
 ===== Submodel Element List Attributes
 
-.Figure 44 Metamodel of Submodel Element Lists
+[#_Toc125537867 .anchor]##.Figure 44 Metamodel of Submodel Element Lists
 image:extracted-media/media/image49.png[extracted-media/media/image49,width=259,height=314]
 
 Submodel element lists are used for sets (i.e. unordered collections without duplicates), ordered lists (i.e. ordered collections that may contain duplicates), bags (i.e. unordered collections that may contain duplicates), and ordered sets (i.e. ordered collections without duplicates).
 
-[.note-block]
-Note: there is no _idShort_ for submodel elements in lists (see Constraint AASd-120).
+NOTE: There is no _idshort_ for submodel elements in lists (see constraint aasd-120).
 
 Submodel element lists are also used to create multi-dimensional arrays. A two-dimensional array listlink:#bib_3[[3\]]link:#bib_5[[5\]] with _Property_ values would be realized like follows: the first submodel element list would contain three _SubmodelElementList_ elements. Each of these three _SubmodelElementLists_ would contain 5 single _Property_ elements. The _semanticId_ of the contained properties would be the same for all lists in the first list, i.e. _semanticIdListElement_ would be identical for all three lists contained in the first list. The _semanticId_ of the three contained lists would differ depending on the dimension it represents. In case of complex values in the array, a _SubmodelElementCollection_ would be used as values in the leaf lists.
 
@@ -2288,15 +2180,14 @@ Similarly, a table with three columns can be represented. In this case a _Submod
 
 Matching strategies for semantic IDs are explained in Clause 4.4.1.
 
-. New Elements in Metamodel w.r.t. Security
+.[#_Toc125537823 .anchor]####Table 48 New Elements in Metamodel w.r.t. Security
 [width="100%",cols="31%,39%,20%,10%",options="header",]
 |===
 |Class: |SubmodelElementList | |
 |Explanation: a|
 A submodel element list is an ordered list of submodel elements.
 
-[.note-block]
-Note: the list is ordered although the ordering might not be relevant (see attribute "orderRelevant".)
+NOTE: The list is ordered although the ordering might not be relevant (see attribute "orderrelevant".)
 
 The numbering starts with Zero (0).
 
@@ -2323,8 +2214,7 @@ Default: True
 |semanticIdListElement a|
 Semantic ID which the submodel elements contained in the list match
 
-[.note-block]
-Note: it is recommended to use an external reference.
+NOTE: It is recommended to use an external reference.
 
 |Reference |0..1
 |typeValueListElement |The submodel element type of the submodel elements contained in the list |AasSubmodelElements |1
@@ -2333,7 +2223,7 @@ Note: it is recommended to use an external reference.
 
 ==== Concept Description Attributes
 
-.Figure 45 Metamodel of Concept Descriptions
+[#_Toc125537868 .anchor]##.Figure 45 Metamodel of Concept Descriptions
 image:extracted-media/media/image50.png[extracted-media/media/image50,width=186,height=92]
 
 [width="100%",cols="18%,57%,17%,8%",options="header",]
@@ -2350,11 +2240,9 @@ The description of the concept should follow a standardized schema (realized as 
 |isCaseOf a|
 Reference to an external definition the concept is compatible to or was derived from
 
-[.note-block]
-Note: it is recommended to use an external reference, i.e. _Reference/type = ExternalReference_.
+NOTE: It is recommended to use an external reference, i.e. _reference/type = externalreference_.
 
-[.note-block]
-Note: compare with is-case-of relationship in ISO 13584-32 & IEC EN 61360
+NOTE: Compare with is-case-of relationship in iso 13584-32 & iec en 61360
 
 |Reference |0..*
 |===
@@ -2366,8 +2254,7 @@ See Clause 5.3.11.3 for predefined data specification templates.
 ==== .Environment
 image:extracted-media/media/image51.png[extracted-media/media/image51,width=420,height=189]
 
-[.note-block]
-Note: _Environment_ is not an identifiable or referable element. It is introduced to enable file transfer as well as serialization.
+NOTE: _environment_ is not an identifiable or referable element. it is introduced to enable file transfer as well as serialization.
 
 [width="100%",cols="26%,40%,25%,9%",options="header",]
 |===
@@ -2388,12 +2275,11 @@ To date, two kinds of references are distinguished: references to external objec
 
 An external reference is a unique identifier. The identifier can be a concatenation of different identifiers, representing e.g. an IRDI path.
 
-[.note-block]
-Note: references should not be mixed up with locators. Even URLs can be used as identifiers and do not necessarily describe a resource that can be accessed.
+NOTE: References should not be mixed up with locators. even urls can be used as identifiers and do not necessarily describe a resource that can be accessed.
 
 ===== Reference Attributes
 
-.Figure 47 Metamodel of Reference
+[#_Toc125537870 .anchor]##.Figure 47 Metamodel of Reference
 image:extracted-media/media/image52.png[extracted-media/media/image52,width=358,height=207]
 
 See Clause 4.4.2 for reference matching.
@@ -2420,11 +2306,9 @@ Denotes whether reference is an external reference or a model reference
 |referredSemanticId a|
 Expected semantic ID of the referenced model element (_Reference/type=ModelReference_); there typically is no semantic ID for for the referenced object of external references _(Reference/Type=ExternalReference)_.
 
-[.note-block]
-Note 1: if Reference/referredSemanticId is defined, the semanticId of the model element referenced should have a matching semantic ID. If this is not the case, a validator should raise a warning.
+NOTE: 1 : if reference/referredsemanticid is defined, the semanticid of the model element referenced should have a matching semantic id. if this is not the case, a validator should raise a warning.
 
-[.note-block]
-Note 2: it is recommended to use an external reference for the semantic ID expected from the referenced model element.
+NOTE: 2 : it is recommended to use an external reference for the semantic id expected from the referenced model element.
 
 |Reference |0..1
 |key &lt;&lt; ordered &gt;&gt; |Unique reference in its name space |Key |1..*
@@ -2447,10 +2331,10 @@ Keys are used to define references (_Reference_).
 
 Figure 49 presents a logical model of key types. These logical enumerations are used to formulate constraints.
 
-.Figure 49 Logical Model for Keys of References (non-normative)
+[#_Ref103183599 .anchor]##.Figure 49 Logical Model for Keys of References (non-normative)
 image:extracted-media/media/image54.png[extracted-media/media/image54,width=623,height=521]
 
-.Figure 50 Metamodel of KeyTypes Enumeration
+[#_Toc125537873 .anchor]##.Figure 50 Metamodel of KeyTypes Enumeration
 image:extracted-media/media/image55.png[extracted-media/media/image55,width=164,height=386]
 
 .
@@ -2492,15 +2376,13 @@ An example for using a _FragmentId_ as type of a key is a reference to an elemen
 |DataElement a|
 Data Element
 
-[.note-block]
-Note: data elements are abstract, i.e. if a key uses "DataElement", the reference may be a property, file, etc.
+NOTE: Data elements are abstract, i.e. if a key uses "dataelement", the reference may be a property, file, etc.
 
 |Entity |Entity
 |EventElement a|
 Event
 
-[.note-block]
-Note: event element is abstract.
+NOTE: Event element is abstract.
 
 |File |File
 |FragmentReference |Bookmark or a similar local identifier of a subordinate part of a primary resource
@@ -2508,8 +2390,7 @@ Note: event element is abstract.
 |Identifiable a|
 Identifiable
 
-[.note-block]
-Note: identifiable is abstract, i.e. if a key uses "Identifiable" the reference may be an Asset Administration Shell, a submodel or a concept description.
+NOTE: Identifiable is abstract, i.e. if a key uses "identifiable" the reference may be an asset administration shell, a submodel or a concept description.
 
 |MultiLanguageProperty |Property with a value that can be provided in multiple languages
 |Operation |Operation
@@ -2518,8 +2399,7 @@ Note: identifiable is abstract, i.e. if a key uses "Identifiable" the reference 
 |Referable a|
 Referable
 
-[.note-block]
-Note: referables are abstract, i.e. if a key uses "Referable", the reference may be an Asset Administration Shell, a property, etc.
+NOTE: Referables are abstract, i.e. if a key uses "referable", the reference may be an asset administration shell, a property, etc.
 
 |ReferenceElement |Reference
 |RelationshipElement |Relationship
@@ -2527,8 +2407,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 |SubmodelElement a|
 Submodel element
 
-[.note-block]
-Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the reference may be a property, a submodel element list, an operation, etc.
+NOTE: Submodel elements are abstract, i.e. if a key uses "submodelelement", the reference may be a property, a submodel element list, an operation, etc.
 
 |SubmodelElementCollection |Struct of submodel elements
 |SubmodelElementList |List of submodel elements
@@ -2540,8 +2419,7 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |Explanation: a|
 Enumeration of different fragment key value types within a key
 
-[.note-block]
-Note: not used as type but in constraints.
+NOTE: Not used as type but in constraints.
 
 |Set of: |AASReferableNonIdentifiables, GenericFragmentKeys
 |Literal |Explanation
@@ -2552,15 +2430,13 @@ Note: not used as type but in constraints.
 |DataElement a|
 Data element
 
-[.note-block]
-Note: data elements are abstract, i.e. if a key uses "DataElement", the reference may be a property, a file, etc.
+NOTE: Data elements are abstract, i.e. if a key uses "dataelement", the reference may be a property, a file, etc.
 
 |Entity |Entity
 |EventElement a|
 Event
 
-[.note-block]
-Note: event elements are abstract.
+NOTE: Event elements are abstract.
 
 |File |File
 |FragmentReference |Bookmark or a similar local identifier of a subordinate part of a primary resource
@@ -2573,8 +2449,7 @@ Note: event elements are abstract.
 |SubmodelElement a|
 Submodel element
 
-[.note-block]
-Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the reference may be a property, a submodel element list, an operation, etc.
+NOTE: Submodel elements are abstract, i.e. if a key uses "submodelelement", the reference may be a property, a submodel element list, an operation, etc.
 
 |SubmodelElementCollection |Struct of submodel elements
 |SubmodelElementList |List of submodel elements
@@ -2586,8 +2461,7 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |Explanation: a|
 Enumeration of different key value types within a key
 
-[.note-block]
-Note: not used as type but in constraints.
+NOTE: Not used as type but in constraints.
 
 |Set of: |AasIdentifiables, GenericGloballyIdentifiables
 |Literal |Explanation
@@ -2597,8 +2471,7 @@ Note: not used as type but in constraints.
 |Identifiable a|
 Identifiable
 
-[.note-block]
-Note: identifiables are abstract, i.e. if a key uses "Identifiable", the reference may be an Asset Administration Shell, a submodel, or a concept description.
+NOTE: Identifiables are abstract, i.e. if a key uses "identifiable", the reference may be an asset administration shell, a submodel, or a concept description.
 
 |Submodel |Submodel
 |===
@@ -2609,8 +2482,7 @@ Note: identifiables are abstract, i.e. if a key uses "Identifiable", the referen
 |Explanation: a|
 Enumeration of different fragment key value types within a key
 
-[.note-block]
-Note: not used as type but in constraints.
+NOTE: Not used as type but in constraints.
 
 |Set of: |AasSubmodelElements
 |Literal |Explanation
@@ -2621,15 +2493,13 @@ Note: not used as type but in constraints.
 |DataElement a|
 Data element
 
-[.note-block]
-Note: data elements are abstract, i.e. if a key uses "DataElement", the reference may be a property, a file, etc.
+NOTE: Data elements are abstract, i.e. if a key uses "dataelement", the reference may be a property, a file, etc.
 
 |Entity |Entity
 |EventElement a|
 Event
 
-[.note-block]
-Note: event elements are abstract.
+NOTE: Event elements are abstract.
 
 |File |File
 |MultiLanguageProperty |Property with a value that can be provided in multiple languages
@@ -2641,8 +2511,7 @@ Note: event elements are abstract.
 |SubmodelElement a|
 Submodel element
 
-[.note-block]
-Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the reference may be a property, a SubmodelElementList, an operation, etc.
+NOTE: Submodel elements are abstract, i.e. if a key uses "submodelelement", the reference may be a property, a submodelelementlist, an operation, etc.
 
 |SubmodelElementCollection |Struct of submodel elements
 |SubmodelElementList |List of submodel elements
@@ -2661,16 +2530,14 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |DataElement a|
 Data element
 
-[.note-block]
-Note: data elements are abstract, i.e. if a key uses "DataElement", the reference may be a property, a file, etc.
+NOTE: Data elements are abstract, i.e. if a key uses "dataelement", the reference may be a property, a file, etc.
 
 |
 |Entity |Entity |
 |EventElement a|
 Event
 
-[.note-block]
-Note: event elements are abstract.
+NOTE: Event elements are abstract.
 
 |
 |File |File |
@@ -2683,8 +2550,7 @@ Note: event elements are abstract.
 |SubmodelElement a|
 Submodel element
 
-[.note-block]
-Note: Submodel elements are abstract, i.e. if a key uses "SubmodelElement", the reference may be a property, a SubmodelElementList, an operation, etc.
+NOTE: Submodel elements are abstract, i.e. if a key uses "submodelelement", the reference may be a property, a submodelelementlist, an operation, etc.
 
 |
 |SubmodelElementCollection |Struct of submodel elements |
@@ -2697,8 +2563,7 @@ Note: Submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |Explanation: a|
 Enumeration of referables
 
-[.note-block]
-Note: not used as type but in constraints.
+NOTE: Not used as type but in constraints.
 
 |Set of: |AasReferableNonIdentifiables, AasIdentifiables
 |Literal |Explanation
@@ -2707,8 +2572,7 @@ Note: not used as type but in constraints.
 |Identifiable a|
 Identifiable
 
-[.note-block]
-Note: Identifiables are abstract, i.e. if a key uses "Identifiable", the reference may be an Asset Administration Shell, a submodel, or a concept description.
+NOTE: Identifiables are abstract, i.e. if a key uses "identifiable", the reference may be an asset administration shell, a submodel, or a concept description.
 
 |Submodel |Submodel
 |AnnotatedRelationshipElement |Annotated relationship element
@@ -2718,15 +2582,13 @@ Note: Identifiables are abstract, i.e. if a key uses "Identifiable", the referen
 |DataElement a|
 Data element
 
-[.note-block]
-Note: data elements are abstract, i.e. if a key uses "DataElement", the reference may be a property, a file, etc.
+NOTE: Data elements are abstract, i.e. if a key uses "dataelement", the reference may be a property, a file, etc.
 
 |Entity |Entity
 |EventElement a|
 Event
 
-[.note-block]
-Note: event elements are abstract.
+NOTE: Event elements are abstract.
 
 |File |File
 |MultiLanguageProperty |Property with a value that can be provided in multiple languages
@@ -2735,8 +2597,7 @@ Note: event elements are abstract.
 |Referable a|
 Referable
 
-[.note-block]
-Note: referables are abstract, i.e. if a key uses "Referable", the reference may be an Asset Administration Shell, a property, etc.
+NOTE: Referables are abstract, i.e. if a key uses "referable", the reference may be an asset administration shell, a property, etc.
 
 |Range |Range with min and max
 |ReferenceElement |Reference
@@ -2744,8 +2605,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 |SubmodelElement a|
 Submodel element
 
-[.note-block]
-Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the reference may be a property, a submodel element list, an operation, etc.
+NOTE: Submodel elements are abstract, i.e. if a key uses "submodelelement", the reference may be a property, a submodel element list, an operation, etc.
 
 |SubmodelElementCollection |Struct of submodel elements
 |SubmodelElementList |List of submodel elements
@@ -2757,8 +2617,7 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |Explanation: a|
 Enumeration of different fragment key value types within a key
 
-[.note-block]
-Note: not used as type but in constraints.
+NOTE: Not used as type but in constraints.
 
 |Set of: |--
 |Literal |Explanation
@@ -2771,8 +2630,7 @@ Note: not used as type but in constraints.
 |Explanation: a|
 Enumeration of different key value types within a key
 
-[.note-block]
-Note: not used as type but in constraints.
+NOTE: Not used as type but in constraints.
 
 |Set of: |--
 |Literal |Explanation
@@ -2781,8 +2639,7 @@ Note: not used as type but in constraints.
 |Identifiable a|
 Identifiable
 
-[.note-block]
-Note: Identifiables are abstract, i.e. if a key uses "Identifiable", the reference may be an Asset Administration Shell, a submodel, or a concept description.
+NOTE: Identifiables are abstract, i.e. if a key uses "identifiable", the reference may be an asset administration shell, a submodel, or a concept description.
 
 |Submodel |Submodel
 |===
@@ -2808,15 +2665,13 @@ Note: Identifiables are abstract, i.e. if a key uses "Identifiable", the referen
 
 [.underline]#Constraint AASd-125:# For model references, i.e. __Reference__s with _Reference/type_ = _ModelReference_ with more than one key in _Reference/keys,_ the value of _Key/type_ of each of the keys following the first key of _Reference/keys_ shall be one of _FragmentKeys_.
 
-[.note-block]
-Note: constraint AASd-125 ensures that the shortest path is used.
+NOTE: Constraint aasd-125 ensures that the shortest path is used.
 
 [.underline]#Constraint AASd-126:# For model references, i.e. __Reference__s with _Reference/type = ModelReference_ with more than one key in _Reference/keys,_ the value of _Key/type_ of the last _Key_ in the reference key chain may be one of _GenericFragmentKeys_ or no key at all shall have a value out of _GenericFragmentKeys._
 
 [.underline]#Constraint AASd-127:# For model references, i.e. __Reference__s with _Reference/type = ModelReference_ with more than one key in _Reference/keys,_ a key with _Key/type_ _FragmentReference_ shall be preceded by a key with _Key/type_ _File_ or _Blob_. All other Asset Administration Shell fragments, i.e. _Key/type_ values out of _AasSubmodelElements,_ do not support fragments__.__
 
-[.note-block]
-Note: which kind of fragments are supported depends on the content type and the specification of allowed fragment
+NOTE: Which kind of fragments are supported depends on the content type and the specification of allowed fragment
 
 identifiers for the corresponding resource referenced.
 
@@ -2836,8 +2691,7 @@ identifiers for the corresponding resource referenced.
 
 *_(GlobalReference)https://example.com/specification.html (FragmentReference)Hints_*
 
-[.note-block]
-Note: (GlobalReference)https://example.com/specification.html (FragmentReference)Hints represents the path with fragment identifier https://example.com/specification.html#Hints
+NOTE: (globalreference)https://example.com/specification.html (fragmentreference)hints represents the path with fragment identifier https://example.com/specification.html#hints
 
 [.underline]#Examples for valid model references:#
 
@@ -2853,13 +2707,11 @@ Note: (GlobalReference)https://example.com/specification.html (FragmentReference
 
 *_(Submodel)https://example.com/aas/1/1/1234859590, (SubmodelElementCollection)Manual, (MultiLanguageProperty)Title_*
 
-[.note-block]
-Note: "(SubmodelElementCollection)0, (MultiLanguageProperty)Title" may be identical to "(SubmodelElementCollection)Manual, (MultiLanguageProperty)Title" semantically and content-wise. The difference is that more than one document is allowed in the first submodels and thus a submodel element list is defined: elements in a list are numbered. However, it is also possible to define a display name in this case. The display name of the SubmodelElementCollection should be the same in both bases, e.g. "Users Manual".
+NOTE: "(submodelelementcollection)0, (multilanguageproperty)title" may be identical to "(submodelelementcollection)manual, (multilanguageproperty)title" semantically and content-wise. the difference is that more than one document is allowed in the first submodels and thus a submodel element list is defined: elements in a list are numbered. however, it is also possible to define a display name in this case. the display name of the submodelelementcollection should be the same in both bases, e.g. "users manual".
 
 *_(Submodel)https://example.com/aas/1/1/1234859590, (File)Specification, (FragmentReference)Hints_*
 
-[.note-block]
-Note: assuming the file has the value using the absolute path https://example.com/specification.html (and not a relative path), the first reference points to the same information as the global reference (GlobalReference)https://example.com/specification.html, (FragmentReference)Hints__.__
+NOTE: Assuming the file has the value using the absolute path https://example.com/specification.html (and not a relative path), the first reference points to the same information as the global reference (globalreference)https://example.com/specification.html, (fragmentreference)hints__.__
 
 *_(Submodel)https://example.com/aas/1/1/1234859590, (Blob)Specification, (FragmentReference)Hints_*
 
@@ -2903,8 +2755,7 @@ In addition to these types, there is a special handling of data elements with va
 
 Table 8 lists the Primitives used in the metamodel. Primitive data types start with a capital letter.
 
-[.note-block]
-Note: see Clause 5.3.12.6 for constraints on types.
+NOTE: See clause 5.3.12.6 for constraints on types.
 
 [width="100%",cols="22%,30%,48%",options="header",]
 |===
@@ -2926,8 +2777,7 @@ MZ_________ÿÿ__¸_______@___________________________________€_____º__´ �
 |ContentType a|
 _String_ with max 100 and min 1 characters
 
-[.note-block]
-Note: any content type as in RFC2046.
+NOTE: Any content type as in rfc2046.
 
 A media type (also MIME type and content type) […] is a two-part identifier for file formats and format contents transmitted on the Internet. The Internet Assigned Numbers Authority (IANA) is the official authority for the standardization and publication of these classifications. Media types were originally defined in Request for Comments 2045 in November 1996 as a part of MIME specification, for denoting type of email message content and attachments.footnote:[Wikipedia.org, date: 2018-04-09]
 
@@ -2945,11 +2795,9 @@ https://cust/123456
 |LangStringSet a|
 _Array of elements of type langString_
 
-[.note-block]
-Note 1: langString is a RDF data type.
+NOTE: 1 : langstring is a rdf data type.
 
-[.note-block]
-Note 2: a langString is a string value tagged with a language code.
+NOTE: 2 : a langstring is a string value tagged with a language code.
 
 Realization depends on the serialization rules for a technology.
 
@@ -3005,8 +2853,7 @@ Each string within langString has a max of 1,023 and min of 1 characters.
 |PathType a|
 _Identifier_
 
-[.note-block]
-Note: for any string conformant to RFC8089footnote:[https://datatracker.ietf.org/doc/html/rfc8089], the "file" URI scheme (for relative and absolute file paths) applies.
+NOTE: For any string conformant to rfc8089footnote:[https://datatracker.ietf.org/doc/html/rfc8089], the "file" uri scheme (for relative and absolute file paths) applies.
 
 a|
 ./Specification.pdf
@@ -3039,15 +2886,13 @@ Enumerations are primitive data types. Most of the enumerations are defined in t
 
 The predefined types used to define the type of values of properties and other values use the names and the semantics of XML Schema Definition (XSD)footnote:[see https://www.w3.org/XML/Schema, https://www.w3.org/TR/xmlschema-2/#built-in-primitive-datatypes]. Additionally, the type "langString" with the semantics as defined in the Resource Description Framework (RDF)footnote:[see: https://www.w3.org/TR/rdf11-concepts/] is used. "langString" is a string value tagged with a language code.
 
-[.note-block]
-Note 1: RDFfootnote:[See https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes] recommends to not use the following xsd data types. That is why they are excluded from the allowed data types.
+NOTE: 1 : rdffootnote:[see https://www.w3.org/tr/rdf11-concepts/#xsd-datatypes] recommends to not use the following xsd data types. that is why they are excluded from the allowed data types.
 
 * XSD BuildIn List types are not supported (ENTITIES, IDREFS and NMTOKENS).
 * XSD string BuildIn types are not supported (normalizedString, token, language, NCName, ENTITY, ID, IDREF).
 * The following XSD primitive types are not supported: NOTATION, QName.
 
-[.note-block]
-Note 2: the following RDF types are not supported: HTML and XMLLiteral.
+NOTE: 2 : the following rdf types are not supported: html and xmlliteral.
 
 .
 image:extracted-media/media/image57.png[extracted-media/media/image57,width=137,height=466]image:extracted-media/media/image58.png[extracted-media/media/image58,width=110,height=80]
@@ -3242,8 +3087,7 @@ https://customer.com/demo/aas/1/1/1234859590
 
 "Hallo"@de
 
-[.note-block]
-Note: this is written in RDF/Turtle syntax, @end and ²de are the language tags.
+NOTE: This is written in rdf/turtle syntax, @end and ²de are the language tags.
 
 |===
 
@@ -3322,7 +3166,7 @@ For more details see https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes
 
 RDF requires IETF BCP 47footnote:[see https://tools.ietf.org/rfc/bcp/bcp47.txt] language tags. Simple two-letter language tags for locales like "de" conformant to ISO 639-1 are allowed, as well as language tags plus extension like "de-DE" for country code, dialect, etc. like in "en-US" for English (United States) or "en-GB" for English (United Kingdom). IETF language tags are referencing ISO 639, ISO 3166 and ISO 15924.
 
-##Figure 54 Built-In Types of XML Schema Definition 1.0 (XSD)footnote:[Source: https://www.w3.org/TR/xmlschema-2/#built-in-primitive-datatypes]
+[#_Ref114864132 .anchor]####Figure 54 Built-In Types of XML Schema Definition 1.0 (XSD)footnote:[Source: https://www.w3.org/TR/xmlschema-2/#built-in-primitive-datatypes]
 
 .
 image:extracted-media/media/image59.png[extracted-media/media/image59,width=642,height=714]
@@ -3339,15 +3183,13 @@ In contrast, a class invariant is a constraint that must be true for all instanc
 
 [.underline]#Constraint AASd-117:# _idShort_ of non-identifiable __Referable__s not being a direct child of a _SubmodelElementList_ shall be specified.
 
-[.note-block]
-Note: in other words (AASd-117), __idShor__t is mandatory for all __Referable__s except for referables being direct childs of __SubmodelElementList__s and for all __Identifiable__s.
+NOTE: In other words (aasd-117), __idshor__t is mandatory for all __referable__s except for referables being direct childs of __submodelelementlist__s and for all __identifiable__s.
 
 [.underline]#Constraint AASd-120:# _idShort_ of submodel elements being a direct child of a _SubmodelElementList_ shall not be specified.
 
 [.underline]#Constraint AASd-022:# _idShort_ of non-identifiable referables within the same name space shall be unique (case-sensitive).
 
-[.note-block]
-Note: AASd-022 also means that __idShort__s of referables shall be matched sensitive to the case.
+NOTE: Aasd-022 also means that __idshort__s of referables shall be matched sensitive to the case.
 
 ===== Constraints for Qualifiers
 
@@ -3365,8 +3207,7 @@ Note: AASd-022 also means that __idShort__s of referables shall be matched sensi
 
 [.underline]#Constraint AASd-116:# "_globalAssetId_" (case-insensitive) is a reserved key. If used as value for _SpecificAssetId/name,_ _SpecificAssetId/value_ shall be identical to _AssetInformation/globalAssetId_.
 
-[.note-block]
-Note: AASd-116 is important to enable a generic search across global and specific asset IDs.
+NOTE: Aasd-116 is important to enable a generic search across global and specific asset ids.
 
 ===== Constraints for Types
 
@@ -3387,11 +3228,10 @@ The template introduced to describe the concept of a property, a value list, or 
 
 ==== Data Specification Template Attributes
 
-.Figure 56 Data Specification Templates
+[#_Toc125537879 .anchor]##.Figure 56 Data Specification Templates
 image:extracted-media/media/image61.png[extracted-media/media/image61,width=259,height=208]
 
-[.note-block]
-Note: the data specification templates do not belong to the metamodel of the Asset Administration Shell. In serializations that choose specific templates, the corresponding data specification content may be directly incorporated.
+NOTE: The data specification templates do not belong to the metamodel of the asset administration shell. in serializations that choose specific templates, the corresponding data specification content may be directly incorporated.
 
 It is required that a data specification template has a global unique ID so that it can be referenced via _HasDataSpecification/dataSpecification_.
 
@@ -3406,8 +3246,7 @@ A template consists of the _DataSpecificationContent_ containing the additional 
 |administration a|
 Administrative information of an identifiable element
 
-[.note-block]
-Note: some of the administrative information like the version number might need to be part of the identification.
+NOTE: Some of the administrative information like the version number might need to be part of the identification.
 
 |AdministrativeInformation |0..1
 |id |The globally unique identification of the element |Identifier |1
@@ -3440,11 +3279,10 @@ This document specifies the Asset Administration Shell in a technology-neutral f
 |OPC UA Information models |Access to all information of the administration data and sharing of live data within production operations; access for higher-level factory systems to this information
 |===
 
-.Figure 57 Graphic View on Exchange Data Formats for the Asset Administration Shellfootnote:[Only data formats considered in this document so far are mentioned in the figure.]
+[#_Ref89795014 .anchor]##.Figure 57 Graphic View on Exchange Data Formats for the Asset Administration Shellfootnote:[Only data formats considered in this document so far are mentioned in the figure.]
 image:extracted-media/media/image62.png[extracted-media/media/image62,width=642,height=364]
 
-[.note-block]
-Note: the mapping specifications and schemata themselves are not part of the specification any longer but maintained open source. This eases usage of the specification and the different formats in open-source code projects.
+NOTE: The mapping specifications and schemata themselves are not part of the specification any longer but maintained open source. this eases usage of the specification and the different formats in open-source code projects.
 
 ===  General Rules
 
@@ -3477,11 +3315,9 @@ _ value of AAS:Reference/referredSemanticId*
 *_<KeyValue> ::=_ value of AAS:Key/value*
 ____
 
-[.note-block]
-Note 1: an IRI may also contain special symbols like "(", "," and "[". A blank is added before the new key or value to distinguish beginning and end of a new key.
+NOTE: 1 : an iri may also contain special symbols like "(", "," and "[". a blank is added before the new key or value to distinguish beginning and end of a new key.
 
-[.note-block]
-Note 2: _ReferenceType_ is optional. It is clear from the first key in the key chain whether the reference is a global or a model reference. The examples in this document therefore do not use this prefix.
+NOTE: 2 : _referencetype_ is optional. it is clear from the first key in the key chain whether the reference is a global or a model reference. the examples in this document therefore do not use this prefix.
 
 [.underline]#Valid Examples:#
 
@@ -3619,8 +3455,7 @@ This also applies to values of enumerations:
 
 In case of an attribute with a cardinality greater than 1, no further attributes or enumeration values can be added.
 
-[.note-block]
-Note: although the attribute name in UML is always singular, the attribute name is annotated by the plural "s" if the cardinality is > 1.
+NOTE: Although the attribute name in uml is always singular, the attribute name is annotated by the plural "s" if the cardinality is > 1.
 
 [.underline]#Valid examples#:
 
@@ -3666,7 +3501,7 @@ Consequently, some serializations or mappings support exactly the data descripti
 
 In the case of restricted use of data specifications, we speak of "embedded data specifications". Figure 58 explains the realization: instead of a set of external global references to externally defined data specifications, a set of pairs consisting of an external global reference to a data specification and the data specification content itself are directly "embedded". Here, the data specification content belongs to the schema, while the data specification including its content are not part of the schema in the general concept. This is similar to the concept of _semanticIds_: either it is an external global reference to an external concept dictionary, or it is a reference to a concept description within the schema. However, there is only one reference allowed for _semanticId_, whereas a set of data specification references is permitted for data specifications.
 
-. Figure 58 Realization of Embedded Data Specifications
+[#_Ref56188529 .anchor]##. Figure 58 Realization of Embedded Data Specifications
 image:extracted-media/media/image63.png[extracted-media/media/image63,width=623,height=589]
 
 ===  XML
@@ -3675,14 +3510,11 @@ The metamodel of an Asset Administration Shell needs to be serialized for import
 
 eXtensible Markup Language (XMLfootnote:[see: https://www.w3.org/TR/2008/REC-xml-20081126/]) is very well suited to derive information from an IT system, e.g. to process it manually and then feed it into another IT system. It meets the needs of the information sharing scenario defined in the leading picture in Clause 4.1. XML provides the possibilities of scheme definitions, which can be used to syntactically validate the represented information in each step.
 
-[.note-block]
-Note 1: the xml schema (.xsd files) is maintained in the repository "aas-specs" of the github project admin-shell-io link:#bib_51[[51\]]: aas-specs-3.0\schemas\xml
+NOTE: 1 : the xml schema (.xsd files) is maintained in the repository "aas-specs" of the github project admin-shell-io link:#bib_51[[51\]]: aas-specs-3.0\schemas\xml
 
-[.note-block]
-Note 2: the mapping rules of how to derive the xml schema from the technology-neutral metamodel as defined in this specification can be found here: aas-specs-3.0\schemas\xml\Readme.md#xml-mappingrules
+NOTE: 2 : the mapping rules of how to derive the xml schema from the technology-neutral metamodel as defined in this specification can be found here: aas-specs-3.0\schemas\xml\readme.md#xml-mappingrules
 
-[.note-block]
-Note 3: example files can be found here: aas-specs-3.0\schemas\xml\examples
+NOTE: 3 : example files can be found here: aas-specs-3.0\schemas\xml\examples
 
 ===  JSON
 
@@ -3690,14 +3522,11 @@ JSONfootnote:[see: https://tools.ietf.org/html/rfc8259 or https://www.ecma-inter
 
 Additionally, JSON format is used to describe the payload in the http/REST API for active Asset Administration Shells link:#bib_37[[37\]].
 
-[.note-block]
-Note 1: the JSON schema (.json files) is maintained in the repository "aas-specs" of the github project admin-shell-io link:#bib_51[[51\]]: aas-specs-3.0\schemas\json
+NOTE: 1 : the json schema (.json files) is maintained in the repository "aas-specs" of the github project admin-shell-io link:#bib_51[[51\]]: aas-specs-3.0\schemas\json
 
-[.note-block]
-Note 2: the mapping rules of how to derive the JSON schema from the technology-neutral metamodel as defined in this specification can be found here: aas-specs-3.0\schemas\json\Readme.md#json-mappingrules
+NOTE: 2 : the mapping rules of how to derive the json schema from the technology-neutral metamodel as defined in this specification can be found here: aas-specs-3.0\schemas\json\readme.md#json-mappingrules
 
-[.note-block]
-Note 3: example files can be found here: aas-specs-3.0\schemas\json\examples
+NOTE: 3 : example files can be found here: aas-specs-3.0\schemas\json\examples
 
 ===  RDF
 
@@ -3709,14 +3538,11 @@ In addition, RDF is the basis of a wide range of logical inference and reasoning
 
 Combining both features, the RDF mapping of the Asset Administration Shell can provide the basis for complex queries and requests. SPARQL, the standard query language for the Semantic Web, can combine reasoning features with the integration of external data sources. In order to benefit of these abilities, the Asset Administration Shell requires a clear scheme of its RDF representation.
 
-[.note-block]
-Note 1: the RDF scheme/OWL files (.ttl files) are maintained in the repository "aas-specs" of the github project admin-shell-io *link:#bib_51[[51\]]*: aas-specs-3.0\schemas\rdf
+NOTE: 1 : the rdf scheme/owl files (.ttl files) are maintained in the repository "aas-specs" of the github project admin-shell-io *link:#bib_51[[51\]]*: aas-specs-3.0\schemas\rdf
 
-[.note-block]
-Note 2: the mapping rules of how to derive the RDF schema from the technology-neutral metamodel as defined in this specification can be found here: aas-specs-3.0\schemas\rdf\Readme.md#rdf-mappingrules
+NOTE: 2 : the mapping rules of how to derive the rdf schema from the technology-neutral metamodel as defined in this specification can be found here: aas-specs-3.0\schemas\rdf\readme.md#rdf-mappingrules
 
-[.note-block]
-Note 3: example files can be found here: aas-specs-3.0\schemas\rdf\examples
+NOTE: 3 : example files can be found here: aas-specs-3.0\schemas\rdf\examples
 
 ===  AutomationML
 
@@ -3732,11 +3558,9 @@ One of the goals is to ensure that the AutomationML model of the Asset Administr
 
 link:#bib_28[[28\]] is the AutomationML application recommendation for the Asset Administration Shell (AR AAS).
 
-[.note-block]
-Note 1: the mapping of the Asset Administration Shell to AutomationML is carried out in a joint working group between AutomationML e.V. and Plattform Industrie 4.0.
+NOTE: 1 : the mapping of the asset administration shell to automationml is carried out in a joint working group between automationml e.v. and plattform industrie 4.0.
 
-[.note-block]
-Note 2: the resulting application recommendation (AR 004E) "Asset Administration Shell (AAS) Representation" link:#bib_28[[28\]] can be found here: https://www.automationml.org/download-archive/, together with .aml files
+NOTE: 2 : the resulting application recommendation (ar 004e) "asset administration shell (aas) representation" link:#bib_28[[28\]] can be found here: https://www.automationml.org/download-archive/, together with .aml files
 
 ===  OPC UA
 
@@ -3744,8 +3568,7 @@ OPC UA is suited for the operating phase of Asset Administration Shellsfootnote:
 
 Note1 : the mapping to the OPC UA are carried out in a joint working groupfootnote:[see: https://opcfoundation.org/collaboration/i4aas/] "I4AAS" between OPC Foundation, ZVEI and VDMA (https://opcfoundation.org/markets-collaboration/I4AAS/ link:#bib_30[[30\]].
 
-[.note-block]
-Note 2: the different versions of the OPC UA Companion Specification for I4AAS can be found here: https://reference.opcfoundation.org/%3cversion%3e/I4AAS/%3cversion%3e/docs/[https://reference.opcfoundation.org/<version>/I4AAS/<version>/docs/], e.g. https://reference.opcfoundation.org/v104/I4AAS/v100/docs/ for release 1.00 link:#bib_41[[41\]].
+NOTE: 2 : the different versions of the opc ua companion specification for i4aas can be found here: https://reference.opcfoundation.org/%3cversion%3e/i4aas/%3cversion%3e/docs/[https://reference.opcfoundation.org/<version>/i4aas/<version>/docs/], e.g. https://reference.opcfoundation.org/v104/i4aas/v100/docs/ for release 1.00 link:#bib_41[[41\]].
 
 == Summary and Outlook
 
@@ -3788,14 +3611,11 @@ The following documents were used to identify requirements and concepts for the 
 * security of the Administration Shell link:#bib_15[[15\]],
 * relationships between I4.0 components – composite components and smart production link:#bib_13[[13\]].
 
-[.note-block]
-Note 1: the global Plattform Industrie 4.0 glossary can be found at: https://www.plattform-i40.de/PI40/Navigation/EN/Industrie40/Glossary/glossary.html
+NOTE: 1 : the global plattform industrie 4.0 glossary can be found at: https://www.plattform-i40.de/pi40/navigation/en/industrie40/glossary/glossary.html
 
-[.note-block]
-Note 2: the online library of the Plattform Industrie 4.0 can be found at: https://www.plattform-i40.de/PI40/Navigation/EN/Downloads-News/downloads-news.html
+NOTE: 2 : the online library of the plattform industrie 4.0 can be found at: https://www.plattform-i40.de/pi40/navigation/en/downloads-news/downloads-news.html
 
-[.note-block]
-Note 3: the online library of the Industrial Digital Twin Association can be found at: https://industrialdigitaltwin.org/en/content-hub/downloads
+NOTE: 3 : the online library of the industrial digital twin association can be found at: https://industrialdigitaltwin.org/en/content-hub/downloads
 
 ==== Basic Concepts for Industry 4.0
 
@@ -3807,7 +3627,7 @@ Assets shall have a logical representation in the "information world", e.g. mana
 
 As far as the large variety of assets in Industry 4.0 are concerned, the Asset Administration Shell allows these assets to be handled in the same manner within the information world. This reduces complexity and allows for scalability. Additional motivation can be found in link:#bib_2[[2\]] link:#bib_4[[4\]] link:#bib_7[[7\]] link:#bib_8[[8\]].
 
-.Figure 59 Important Concepts of Industry 4.0 attached to the Asset link:#bib_2[[2\]] link:#bib_21[[21\]]
+[#_Toc125537882 .anchor]##.Figure 59 Important Concepts of Industry 4.0 attached to the Asset link:#bib_2[[2\]] link:#bib_21[[21\]]
 image:extracted-media/media/image64.png[extracted-media/media/image64,width=620,height=403]
 
 ==== The Concept of Properties
@@ -3816,15 +3636,14 @@ According to link:#bib_20[[20\]], the "IEC 61360 series provides a framework and
 
 Standardized data elements are an example for such properties. The definitions can be found in a range of repositories, such as IEC CDD (common data dictionary) or ECLASS. The definition of a property (aka standardized data element type, property type) associates a worldwide unique identifier with a definition, which is a set of well-defined attributes. Relevant attributes for the Administration Shell are, amongst others, the preferred name, the symbol, the unit of measure, and a human-readable textual definition of the property.
 
-##Figure 60 Exemplary Definition of a Property in the IEC CDD
+[#_Toc125537883 .anchor]####Figure 60 Exemplary Definition of a Property in the IEC CDD
 
 .
 image:extracted-media/media/image65.png[extracted-media/media/image65,width=618,height=370]
 
 The instantiation of such a definition (just 'property', property instance) typically associates a value to the property. This mechanism makes it possible to convey semantically well-defined information to the Administration Shell.
 
-[.note-block]
-Note: Industry 4.0 and smart manufacturing in general will require many properties, which are beyond the current scope of IEC CDD, ECLASS, or other repositories. It is expected that these sets of properties will be introduced, as more and more domains are modelled and standardized (see next clause).
+NOTE: Industry 4.0 and smart manufacturing in general will require many properties, which are beyond the current scope of iec cdd, eclass, or other repositories. it is expected that these sets of properties will be introduced, as more and more domains are modelled and standardized (see next clause).
 
 ==== The Concept of Submodels
 
@@ -3832,7 +3651,7 @@ Note: Industry 4.0 and smart manufacturing in general will require many properti
 
 As the figure shows, information from many different domains can be associated with a respective asset, and many different properties are required to be represented in Administration Shells of future I4.0 components. The architectural principle "separation of concerns" is supported by submodels.
 
-##Figure 61 Examples of Different Domains Providing Properties for Submodels of the Administration Shell
+[#_Toc125537884 .anchor]####Figure 61 Examples of Different Domains Providing Properties for Submodels of the Administration Shell
 
 .
 image:extracted-media/media/image66.png[extracted-media/media/image66,width=544,height=386]
@@ -3841,14 +3660,13 @@ The Administration Shell is made up of a series of submodels link:#bib_4[[4\]]. 
 
 From an interoperability perspective, the goal is to standardize only a single submodel for each aspect/ technical domain. For example, it will be possible to find a drilling machine by searching for an Administration Shell containing a submodel "Drilling" with appropriate properties. Certain properties can then be assumed to exist for communication between different I4.0 components. In our example, a second submodel "energy efficiency" could make sure the drilling machine is able to cut its electricity consumption when out of operation.
 
-[.note-block]
-Note: a side benefit of the Administration Shell will be to simplify the update of properties from product design (and in particular system design) tools, update properties from real data collected in the instances of assets, improve traceability of assets along the life cycle, and help certify assets from data.
+NOTE: A side benefit of the administration shell will be to simplify the update of properties from product design (and in particular system design) tools, update properties from real data collected in the instances of assets, improve traceability of assets along the life cycle, and help certify assets from data.
 
 ==== Basic Structure of the Asset Administration Shell
 
 The document on the structure of the Asset Administration Shell link:#bib_4[[4\]] link:#bib_19[[19\]] presents a rough, logical view of the Asset Administration Shell’s structure. The Asset Administration Shell – shown in blue in the following figure – comprises different sets of information. Both the asset and the Administration Shell are identified by a globally unique identifier. It comprises a number of submodels, which characterize the Asset Administration Shell.
 
-##Figure 62 Basic Structure of the Asset Administration Shell
+[#_Toc125537885 .anchor]####Figure 62 Basic Structure of the Asset Administration Shell
 
 .
 image:extracted-media/media/image67.png[extracted-media/media/image67,width=642,height=444]
@@ -3941,8 +3759,7 @@ https://www.zvei.de/SG2/aas/1/1/demo11232322/maxtemp#0002
 
 |===
 
-[.note-block]
-Note: the last row of Table 12 is only used for completion; the metamodel does not foresee own unique identifiers for property/parameter/status instances.
+NOTE: The last row of table 12 is only used for completion; the metamodel does not foresee own unique identifiers for property/parameter/status instances.
 
 === Annex B. Requirements
 
@@ -3992,8 +3809,7 @@ The following requirements are taken from the document "The Structure of the Adm
 
 Trilateral perspectives from France, Italy and Germany" link:#bib_19[[19\]]. They are marked "tAAS".
 
-[.note-block]
-Note: the term "property" was used in a very broad sense in previous publications of Plattform Industrie 4.0. The metamodel in this document distinguishes between properties in a more classical sense such as data elements like "maximum temperature" and other submodel elements like operations, events, etc.
+NOTE: The term "property" was used in a very broad sense in previous publications of plattform industrie 4.0. the metamodel in this document distinguishes between properties in a more classical sense such as data elements like "maximum temperature" and other submodel elements like operations, events, etc.
 
 [width="100%",cols="16%,30%,54%",options="header",]
 |===
@@ -4087,8 +3903,7 @@ _AssetAdministrationShell/submodels_
 
 All submodels provide information related to the asset presented by the Asset Administration Shell.
 
-[.note-block]
-Note: an Asset Administration Shell represents exactly one asset. In case of a composite Asset Administration Shell, it implicitly represents several assets (see also tAAS-#5).
+NOTE: An asset administration shell represents exactly one asset. in case of a composite asset administration shell, it implicitly represents several assets (see also taas-#5).
 
 |tAAS-#11 |The information and functionality in the Administration Shell is accessible by means of a standardized application programming interface (API). |Covered in Part 2 of this document series link:#bib_37[[37\]]
 |tAAS-#12 |The Administration Shell has a unique ID. a|
@@ -4108,8 +3923,7 @@ _AssetInformation/globalAssetId_
 
 The only assumption is that the industrial facility also has a globally unique ID that can be used as value of the _globalAssetId_.
 
-[.note-block]
-Note: see also composite Asset Administration Shell (tAAS-#5) that allows the modelling of complex assets consisting of other assets that are represented by an Asset Administration Shell each.
+NOTE: See also composite asset administration shell (taas-#5) that allows the modelling of complex assets consisting of other assets that are represented by an asset administration shell each.
 
 |tAAS-#15 |Types and instances must be identified as such. a|
 __AssetInformation/assetKind (__values: _Type or Instance)_
@@ -4159,16 +3973,14 @@ A reliable minimum number of properties is defined by the metamodel itself. They
 
 _HasKind_ _(with kind=Template) for Submodel_ enables the definition of submodel (element) templates. These templates define the structure and the semantics of a submodel instance (via _semanticId_).
 
-[.note-block]
-Note: the term property within the metamodel has special semantics and shall not be confused with the implicitly available attributes of the different classes. Although these attributes might also be based on existing standards, they are no properties in the sense that a semantic reference can be added to define semantics externally. Semantics are defined for the metamodel itself in the class tables within this document.
+NOTE: The term property within the metamodel has special semantics and shall not be confused with the implicitly available attributes of the different classes. although these attributes might also be based on existing standards, they are no properties in the sense that a semantic reference can be added to define semantics externally. semantics are defined for the metamodel itself in the class tables within this document.
 
 |tAAS-#19 |The properties and other elements of information in the Administration Shell must be suitable for types and instances. a|
 _HasKind_ (with _kind=Template_ or _kind=Instance_) for _Submodel_
 
 All elements inheriting from _HasKind_ can distinguish between types (_kind=Template_) and instances (_kind=Instance_). This is especially true for _SubmodelElement_ and _Submodel_.
 
-[.note-block]
-Note: submodels of _kind=Template_ do not describe an asset of _kind=Type_.
+NOTE: Submodels of _kind=template_ do not describe an asset of _kind=type_.
 
 |tAAS-#20 |There must be a capability of hierarchical and countable structuring of the properties. a|
 _SubmodelElementList_
@@ -4190,8 +4002,7 @@ _OperationVariable_ in _Operation_
 
 A reference element can either reference any other element that is referable (i.e. inheriting from _Referable_) within the same or another Asset Administration Shell, or it can reference entities completely outside any Asset Administration Shell via its global ID.
 
-[.note-block]
-Note: it is not always necessary to use a reference property for referencing elements within the same Asset Administration Shell. Depending on the context, submodel element collections, relations, etc. might be more suitable.
+NOTE: It is not always necessary to use a reference property for referencing elements within the same asset administration shell. depending on the context, submodel element collections, relations, etc. might be more suitable.
 
 Other elements are also referenced or used as input or output argument via _OperationVariable_ within __operation__s.
 
@@ -4296,8 +4107,7 @@ The following kinds of _Types_ are distinguished:
 
 * _Card._ is the cardinality (or multiplicity) defining the lower and upper bound of the number of instances of the member element. "*" denotes an arbitrary infinite number of elements of the corresponding Type. "0..1" means optional. "0..*" or "0..3" etc. means that the list may be either not available (null object) or empty.
 
-[.note-block]
-Note: attributes having a default value are always considered to be optional; there is always a value for the attribute because the default value is used for initialization in this case.
+NOTE: Attributes having a default value are always considered to be optional; there is always a value for the attribute because the default value is used for initialization in this case.
 
 [.underline]#Examples for valid model references#
 
@@ -4361,8 +4171,7 @@ Template for Primitive:
 
 Constraints are prefixed with *AASd-* followed by a three-digit number. The "d" in "AASd-" was motivated by "in Detail". The numbering of constraints is unique within namespace AASd; a number of a constraint that was removed will not be used again.
 
-[.note-block]
-Note: in the Annex listing the metamodel changes, constraints with prefix AASs- or AASc- are also listed. These are security or data specification constraints, and are now part of the split document parts.
+NOTE: In the annex listing the metamodel changes, constraints with prefix aass- or aasc- are also listed. these are security or data specification constraints, and are now part of the split document parts.
 
 === Annex E. Legend for UML Modelling
 
@@ -4372,12 +4181,12 @@ This annex explains the UML elements used in this specification. For more inform
 
 Figure 63 shows a class with name "Class1" and an attribute with name "attr" of type _Class2_. Attributes are owned by the class. Some of these attributes may represents the end of binary associations, see also Figure 70. In this case, the instance of _Class2_ is navigable via the instance of the owning class _Class1_.footnote:[„Navigability notation was often used in the past according to an informal convention, whereby non-navigable ends were assumed to be owned by the Association whereas navigable ends were assumed to be owned by the Classifier at the opposite end. This convention is now deprecated. Aggregation type, navigability, and end ownership are separate concepts, each with their own explicit notation. Association ends owned by classes are always navigable, while those owned by associations may be navigable or not. link:#bib_35[[35\]]”]
 
-.Figure 63 Class
+[#_Ref55938882 .anchor]##.Figure 63 Class
 image:extracted-media/media/image68.png[extracted-media/media/image68,width=86,height=80]
 
 Figure 64 shows that _Class4_ inherits all member elements from _Class3_. Or in other word, _Class3_ is a generalization of _Class4, Class4_ is a specialization of _Class3_. This means that each instance of _Class4_ is also an instance of _Class3_. An instance of _Class4_ has the attributes _attr1_ and _attr2,_ whereas instances of _Class3_ only have the attribute _attr1_.
 
-.Figure 64 Inheritance/Generalization
+[#_Ref54602410 .anchor]##.Figure 64 Inheritance/Generalization
 image:extracted-media/media/image69.png[extracted-media/media/image69,width=100,height=193]
 
 Figure 65 defines the required and allowed multiplicity/cardinality within an association between instances of _Class1_ and _Class2_. In this example, an instance of _Class2_ is always related to exactly one instance of _Class1_. An instance of _Class1_ is either related to none, one, or more (unlimited, i.e. no constraint on the upper bound) instances of _Class2_. The relationship can change over time.
@@ -4392,82 +4201,82 @@ where <lower-bound> is a value specification of type Integer - i.e. 0, 1, 2, …
 
 The default is 1 for lower-bound and upper-bound.
 
-.Figure 65 Multiplicity
+[#_Ref36935416 .anchor]##.Figure 65 Multiplicity
 image:extracted-media/media/image70.png[extracted-media/media/image70,width=200,height=80]
 
 A multiplicity element represents a collection of values. The default is a set, i.e. it is not ordered and the elements within the collection are unique and contain no duplicates. Figure 66 shows an ordered collection: the instances of _Class2_ related to an instance of _Class1_. The stereotype &lt;&lt; ordered &gt;&gt; is used to denote that the relationship is ordered.
 
-.Figure 66 Ordered Multiplicity
+[#_Ref36936280 .anchor]##.Figure 66 Ordered Multiplicity
 image:extracted-media/media/image71.png[extracted-media/media/image71,width=233,height=80]
 
 Figure 67 shows that the member ends of an association can be named as well, i.e. an instance of _Class1_ can be in relationship "relation" to an instance of _Class2_. Vice versa, the instance of _Class2_ is in relationship "reverseRelation" to the instance of _Class1_.
 
-.Figure 67 Association
+[#_Ref36936689 .anchor]##.Figure 67 Association
 image:extracted-media/media/image71.png[extracted-media/media/image71,width=233,height=80]
 
 Figure 68 shows a composition, also called a composite aggregation. A composition is a binary association, grouping a set of instances. The individuals in the set are typed as specified by _Class2_. The multiplicity of instances of _Class2_ to _Class1_ is always 1 (i.e. upper-bound and lower-bound have value "1"). One instance of _Class2_ belongs to exactly one instance of _Class1_. There is no instance of _Class2_ without a relationship to an instance of _Class1_. Figure 69 shows the composition using an association relationship with a filled diamond as composition adornment.
 
-.Figure 68 Composition (Composite Aggregation)
+[#_Ref56445695 .anchor]##.Figure 68 Composition (Composite Aggregation)
 image:extracted-media/media/image72.png[extracted-media/media/image72,width=200,height=80]
 
 Figure 69 shows an aggregation. An aggregation is a binary association. In contrast to a composition, an instance of _Class2_ can be shared by several instances of _Class1_. Figure 69 shows the shared aggregation using an association relationship with a hallow diamond as aggregation adornment.
 
-.Figure 69 Aggregation
+[#_Ref36937253 .anchor]##.Figure 69 Aggregation
 image:extracted-media/media/image73.png[extracted-media/media/image73,width=200,height=80]
 
 Figure 70 illustrates that the attribute notation can be used for an association end owned by a class. In this example, the attribute name is "attr" and the elements of this attribute are typed with _Class2._ The multiplicity, here "0..*", is added in square brackets. If the aggregation is ordered, it is added in curly brackets like in this example.
 
-.Figure 70 Navigable Attribute Notation for Associations
+[#_Ref37000883 .anchor]##.Figure 70 Navigable Attribute Notation for Associations
 image:extracted-media/media/image74.png[extracted-media/media/image74,width=163,height=80]
 
 Figure 71 shows a class with three attributes with primitive types and default values. When a property with a default value is instantiated in the absence of a specific setting for the property, the default value is evaluated to provide the initial values of the property.
 
-.Figure 71 Default Value
+[#_Ref66219196 .anchor]##.Figure 71 Default Value
 image:extracted-media/media/image75.png[extracted-media/media/image75,width=91,height=80]
 
 Figure 72 shows that there is a dependency relationship between _Class1_ and _Class2_. In this case, the dependency means that _Class1_ depends on _Class2_ because the type of attribute _attr_ depends on the specification of class _Class2._ A dependency is depicted as dashed arrow between two model elements.
 
-.Figure 72 Dependency
+[#_Ref36937918 .anchor]##.Figure 72 Dependency
 image:extracted-media/media/image76.png[extracted-media/media/image76,width=206,height=80]
 
 Figure 73 shows an abstract class. It uses the stereotype &lt;&lt; abstract &gt;&gt;. There are no instances of abstract classes. They are typically used for specific member elements that are inherited by non-abstract classes.
 
-.Figure 73 Abstract Class
+[#_Ref56445747 .anchor]##.Figure 73 Abstract Class
 image:extracted-media/media/image77.png[extracted-media/media/image77,width=86,height=80]
 
 Figure 74 shows a package named "Package2". A package is a namespace for its members. In this example, the member belonging to _Package2_ is class _Class2_.
 
-.Figure 74 Package
+[#_Ref36938237 .anchor]##.Figure 74 Package
 image:extracted-media/media/image78.png[extracted-media/media/image78,width=106,height=80]
 
 Figure 75 shows that all elements in _Package2_ are imported into the namespace defined by _Package1_. This is a special dependency relationship between the two packages with stereotype &lt;&lt; import &gt;&gt;.
 
-.Figure 75 Imported Package
+[#_Ref36938632 .anchor]##.Figure 75 Imported Package
 image:extracted-media/media/image79.png[extracted-media/media/image79,width=256,height=86]
 
 Figure 76 shows an enumeration with the name "Enumeration1". An enumeration is a data type with its values enumerated as literals. It contains two literal values, "a" and "b". It is a class with stereotype &lt;&lt; enumeration &gt;&gt;. The literals owned by the enumeration are ordered.
 
-.Figure 76 Enumerationfootnote:[In Enterprise Architect, the single enumeration values also have a stereotype &lt;&lt; enum &gt;&gt; each.]
+[#_Ref36939673 .anchor]##.Figure 76 Enumerationfootnote:[In Enterprise Architect, the single enumeration values also have a stereotype &lt;&lt; enum &gt;&gt; each.]
 image:extracted-media/media/image80.png[extracted-media/media/image80,width=119,height=93]
 
 Figure 77 shows the definition of the data type with the name "DataType1". A data type has instances that are identified only by their value. It is a class with stereotype &lt;&lt; dataType &gt;&gt;.
 
-.Figure 77 Data Type
+[#_Ref36940247 .anchor]##.Figure 77 Data Type
 image:extracted-media/media/image81.png[extracted-media/media/image81,width=86,height=73]
 
 Figure 78 shows a primitive data type with the name "int". Primitive data types are predefined data types, without any substructure. The primitive data types are defined outside UML.
 
-.Figure 78 Primitive Data Type
+[#_Ref36940498 .anchor]##.Figure 78 Primitive Data Type
 image:extracted-media/media/image82.png[extracted-media/media/image82,width=86,height=73]
 
 Figure 79 shows how a note can be attached to an element, in this example to class "Class1".
 
-.Figure 79 Note
+[#_Ref36995742 .anchor]##.Figure 79 Note
 image:extracted-media/media/image83.png[extracted-media/media/image83,width=200,height=80]
 
 Figure 80 shows how a constraint is attached to an element, in this example to class "Class1".
 
-.Figure 80 Constraint
+[#_Ref36995796 .anchor]##.Figure 80 Constraint
 image:extracted-media/media/image84.png[extracted-media/media/image84,width=213,height=80]
 
 ==== UML Naming Rules
@@ -4484,8 +4293,7 @@ The following rules are used for naming of classes, attributes etc.:
 
 In UML, the convention is to name associations and aggregations in singular form. The multiplicity is to be taken into account to decide on whether there are none, a single, or several elements in the corresponding association or aggregation.
 
-[.note-block]
-Note: a plural form of the name of attributes with cardinality >=1 may be needed in some serializations (e.g. in JSON). In this case, it is recommended to add an "s". In case of resulting incorrect English (e.g. isCaseOf isCaseOfs), it must be decided whether or not to support such exceptions.
+NOTE: A plural form of the name of attributes with cardinality >=1 may be needed in some serializations (e.g. in json). in this case, it is recommended to add an "s". in case of resulting incorrect english (e.g. iscaseof iscaseofs), it must be decided whether or not to support such exceptions.
 
 ==== Templates, Inheritance, Qualifiers, and Categories
 
@@ -4497,8 +4305,7 @@ Extensions can be used to add proprietary and/or temporary information to an ele
 
 In contrast to extensions, templates aim at enabling interoperability between the partners that agree on the template. A template defines a set of attributes, each of them with clear semantics. This set of attributes corresponds to a (sub-)schema. Templates should only be used if different instances of the class follow different schemas and the templates for the schemas are not known at design time of the metamodel. Templates might also be used if the overall metamodel is not yet stable enough or a tool supports templates but not (yet) the complete metamodel. Typically, all instances of a specific class with the same category provide the same attribute values conformant to the template. In contrast to extensions, the attributes in the template have speaking names.
 
-[.note-block]
-Note: categories are deprecated and should no longer be used.
+NOTE: Categories are deprecated and should no longer be used.
 
 However, when using non-standardized proprietary data specification templates, interoperability cannot be ensured and thus should be avoided whenever possible.
 
@@ -4506,8 +4313,7 @@ In case all instances of a class follow the same schema, inheritance and/or cate
 
 Categories can be used if all instances of a class follow the same schema but have different constraints depending on their category. Such a constraint might specify that an optional attribute is mandatory for this category (like the unit that is mandatory for properties representing physical values). Realizing the same via inheritance would lead to multiple inheritance – a state that is to be avoidedfootnote:[Exception: multiple inheritance is used in this specification, but only in case of inheriting from abstract classes.].
 
-[.note-block]
-Note: categories are deprecated and should no longer be used.
+NOTE: Categories are deprecated and should no longer be used.
 
 Qualifiers are used if the structure and the semantics of the element is the same independent of its qualifiers. Only the quality or the meaning of the value for the element differs.
 
@@ -4527,7 +4333,7 @@ It is assumed that only the end member of the association is navigable per defau
 
 _Class2_ instance only exists if the parent object of type _Class1_ exists.
 
-.Figure 81 Graphical Representations of Composite Aggregation/Composition
+[#_Ref36999936 .anchor]##.Figure 81 Graphical Representations of Composite Aggregation/Composition
 image:extracted-media/media/image85.png[extracted-media/media/image85,width=410,height=205]
 
 Figure 82 shows different representations of a shared aggregation: a _Class2_ instance can exist independently of a _Class1_ instance; it only references the instances of _Class2_. Now an attribute with the same semantics is defined In Variant B. The reference is denoted by a star added after the type of the attribute.
@@ -4536,20 +4342,19 @@ It is assumed that only the end member of the aggregation association is navigab
 
 A specialty in Figure 82 is that the aggregated instances are referables in the sense of the Asset Administration Shell metamodel (i.e. they inherit from the predefined abstract class "Referable"). This is why Variant B is identical to Variant A. This would not be the case for non-referable elements in the metamodel. The structure of a reference to a model element of the Asset Administration Shell is explicitly defined. A model reference consists of an ordered list of keys. The last key in the key chain shall reference an instance of type _Class2_ (i.e. Reference/type equal to "Class2").
 
-.Figure 82 Graphical Representation of Shared Aggregation
+[#_Ref37014356 .anchor]##.Figure 82 Graphical Representation of Shared Aggregation
 image:extracted-media/media/image86.png[extracted-media/media/image86,width=368,height=220]
 
 Figure 83 show different graphical representations of generalization. Variant A is the classical graphical representation as defined in link:#bib_35[[35\]]. Variant B is a short form, if _Class1_ is not on the same diagram. The name of the class that _Class3_ is inheriting from is depicted in the upper right corner.
 
 Variant C not only shows which class Class3 instances are inheriting from, but also what they are inheriting. This is depicted by the class name it is inheriting from, followed by "::" and then the list of all inherited elements – here attribute _class2_. Typically, the inherited elements are not shown.
 
-.Figure 83 Graphical Representation of Generalization/Inheritance
+[#_Ref37015321 .anchor]##.Figure 83 Graphical Representation of Generalization/Inheritance
 image:extracted-media/media/image87.png[extracted-media/media/image87,width=386,height=206]
 
 Figure 84 depicts different graphical notations for enumerations in combination with inheritance. In Variant A, "Enumeration1" additionally contains the literals as defined by "Enumeration2".
 
-.[.note-block]
-Note: the direction of inheritance is opposite to the one for class inheritance. This can be seen in Variant C that defines the same enumerations but without inheritance. In Variant B, another graphical notation visualizes which literals are inherited by which enumeration. Since the literals within an enumeration are ordered, the order of classes it is inheriting from is important.
+.NOTE: The direction of inheritance is opposite to the one for class inheritance. this can be seen in variant c that defines the same enumerations but without inheritance. in variant b, another graphical notation visualizes which literals are inherited by which enumeration. since the literals within an enumeration are ordered, the order of classes it is inheriting from is important.
 image:extracted-media/media/image88.png[extracted-media/media/image88,width=339,height=160]
 
 .Figure 87 shows an experimental class, marked by the stereotype "Experimental".
@@ -4573,8 +4378,7 @@ The following modelling elements in the Asset Administration Shell metamodel can
 * _RelationshipElement,_ used to describe relationships between assets and other elements,
 * _Submodel,_ where a complex asset is composed out of other entities and assets, which are specified in a bill of material together with their relationship to each other.
 
-[.note-block]
-Note: the submodel template defining the structure of such a bill of material is not predefined by the Asset Administration Shell metamodel. However, _Entity_ elements were designed for the purpose of building bills of material.
+NOTE: The submodel template defining the structure of such a bill of material is not predefined by the asset administration shell metamodel. however, _entity_ elements were designed for the purpose of building bills of material.
 
 * Not every entity (_Entity_) that is part of the bill of material of an asset necessarily has its own Asset Administration Shell. As described in link:#bib_13[[13\]], self-managed entities are distinguished from co-managed entities (_Entity/entityType_).
 [arabic]
@@ -4583,17 +4387,16 @@ Note: the submodel template defining the structure of such a bill of material is
 
 Figure 88 shows an extract of the metamodel containing the most important elements to describe composite I4.0 Components.
 
-.Figure 88 Extract From Metamodel for Composite I4.0 Components
+[#_Ref120119373 .anchor]##.Figure 88 Extract From Metamodel for Composite I4.0 Components
 image:extracted-media/media/image92.png[extracted-media/media/image92,width=595,height=522]
 
 === Annex G. Metamodel UML with Inherited Attributes
 
 In this annex, some UML diagrams are shown together with all attributes inherited for a better overview.
 
-[.note-block]
-Note: abstract classes are numbered h0_, h1_ etc. Their aliases however are defined without this prefix. The reason for this naming is that no order for inherited classes can be defined in the tooling used for UML modelling (Enterprise Architect); they are ordered alphabetically.
+NOTE: Abstract classes are numbered h0_, h1_ etc. their aliases however are defined without this prefix. the reason for this naming is that no order for inherited classes can be defined in the tooling used for uml modelling (enterprise architect); they are ordered alphabetically.
 
-.Figure 89 Selected Classes of Metamodel with Inherited Attributes
+[#_Ref36938064 .anchor]##.Figure 89 Selected Classes of Metamodel with Inherited Attributes
 image:extracted-media/media/image93.png[extracted-media/media/image93,width=623,height=612]
 
 .
@@ -4620,8 +4423,7 @@ Three tables are introduced to explain the changes:
 
 If there are no changes the corresponding tables are obmitted.
 
-[.note-block]
-Note: before V3.0, the security metamodel and the predefined data specifications were also part of this document. Therefore, security metamodel changes were listed using the three subclauses as described above.
+NOTE: Before v3.0, the security metamodel and the predefined data specifications were also part of this document. therefore, security metamodel changes were listed using the three subclauses as described above.
 
 ==== Changes V3.0 vs. V2.0.1
 
@@ -4698,9 +4500,7 @@ Smaller changes:
 |X |AssetAdministrationShell/conceptDictionaries |Removed
 |X |AssetAdministrationShell/security |Removed +
  +
-[.note-block]
-[.note-block]
-Note: Security is still part of the Asset Administration Shell, but the Asset Administration Shell and its elements are referenced from Security.
+NOTE: Security is still part of the asset administration shell, but the asset administration shell and its elements are referenced from security.
 | x |AssetAdministrationShell/view |Removed, Views no longer supported
 |  |AssetKind/Instance |Updated description of value "Instance" of enumeration "AssetKind" conformant to IEC 63278-1
 |  |AssetKind/Type |Updated description of value "Type" of enumeration "AssetKind" conformant to IEC 63278-1
@@ -5205,8 +5005,7 @@ Constraint AASd-051: A _ConceptDescription_ shall have one of the following cate
 
 ==== Metamodel Changes V3.0RC02 vs. V2.0.1 w/o Security Part
 
-[.note-block]
-Note: if you already implemented the changes made in V3.0RC01, please refer to the corresponding clause in the this annex. This annex is for readers familiar with V2.0.x only.
+NOTE: If you already implemented the changes made in v3.0rc01, please refer to the corresponding clause in the this annex. this annex is for readers familiar with v2.0.x only.
 
 Major changes:
 
@@ -5239,8 +5038,7 @@ Bugfixes:
 * bugfix specification of ValueList and ValueReferencePairType, no data types, normal classes
 * bugfix table specifications w.r.t. kind of attribute (from aggr to attr – column kind was removed, see above)
 * bugfix data type specification LangStringSet (no diagram and table any longer)
-* bugfix enumeration ReferableElements, no ConceptDictionary any longer + new elements like new submodel elements SubmodelElementList added. [.note-block]
-Note: ReferableElements was substituted by AasSubmodelElements and Aas Identifiables.
+* bugfix enumeration ReferableElements, no ConceptDictionary any longer + new elements like new submodel elements SubmodelElementList added. NOTE: Referableelements was substituted by aassubmodelelements and aas identifiables.
 * Entity/globalAssetId diagram (table was correct): Type change from reference of Reference* to Reference
 
 [width="100%",cols="7%,43%,50%",options="header",]
@@ -5255,9 +5053,7 @@ Note: ReferableElements was substituted by AasSubmodelElements and Aas Identifia
 |x |AssetAdministrationShell/security a|
 Removed
 
-[.note-block]
-[.note-block]
-Note: Security is still part of the Asset Administration Shell, but the Asset Administration Shell and its elements are referenced from Security.
+NOTE: Security is still part of the asset administration shell, but the asset administration shell and its elements are referenced from security.
 
 |  |AssetAdministrationShell/view |Removed, views no longer supported
 |x |BasicEvent |Renamed to BasicEventElement
@@ -5298,8 +5094,7 @@ Before struct class with two attributes: id and idType; now string data type onl
 |(x) |KeyElements a|
 Renamed to KeyTypes
 
-[.note-block]
-Note: the elements remain, except for new SubmodelElementList and renamed submodel elements Event and BasicEvent to EventElement and BasicEventElement
+NOTE: The elements remain, except for new submodelelementlist and renamed submodel elements event and basicevent to eventelement and basiceventelement
 
 | |KeyType |Enumeration removed because no Key/idType any longer
 | |LocalKeyType |Enumeration removed because no Key/idType any longer
@@ -5671,8 +5466,7 @@ Bugfixes:
 |x |AssetAdministrationShell/security a|
 Removed
 
-[.note-block]
-Note: Security is still part of the Asset Administration Shell, but the Asset Administration Shell and its elements are referenced from Security
+NOTE: Security is still part of the asset administration shell, but the asset administration shell and its elements are referenced from security
 
 |  |AssetAdministrationShell/view |Removed, views not longer supported
 |x |AssetInformation/billOfMaterial |Removed
@@ -5712,8 +5506,7 @@ Before struct class with two attributes: id and idType; now string data type onl
 |(x) |KeyElements a|
 Renamed to KeyTypes
 
-[.note-block]
-Note: the elements remain, except for new SubmodelElementList and renamed submodel elements Event and BasicEvent to EventElement and BasicEventElement
+NOTE: The elements remain, except for new submodelelementlist and renamed submodel elements event and basicevent to eventelement and basiceventelement
 
 | |KeyType |Enumeration removed because no Key/idType any longer
 | |LocalKeyType |Enumeration removed because no Key/idType any longer
@@ -6475,204 +6268,154 @@ externalInformationPoint renamed to externalInformationPoints
 === Annex I. Bibliography
 
 [#bib_1]
-[#bib_1]
 [1] "Recommendations for implementing the strategic initiative INDUSTRIE 4.0", acatech, April 2013. [Online]. Available: https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/
 
-[#bib_2]
 [#bib_2]
 [2] "Implementation Strategy Industrie 4.0: Report on the results of the Industrie 4.0 Platform"; BITKOM e.V. / VDMA e.V., /ZVEI e.V., April 2015. [Online]. Available: https://www.bitkom.org/noindex/Publikationen/2016/Sonstiges/Implementation-Strategy-Industrie-40/2016-01-Implementation-Strategy-Industrie40.pdf
 
 [#bib_3]
-[#bib_3]
 [3] DIN SPEC 91345:2016-04 "Referenzarchitekturmodell Industrie 4.0 (RAMI4.0) / Reference Architecture Model Industrie 4.0 (RAMI4.0) / Modèle de reference de l’architecture de l’industrie 4.0 (RAMI4.0)", ICS 03.100.01; 25.040.01; 35.240.50, April 2016. [Online]. Available: https://www.beuth.de/en/technical-rule/din-spec-91345-en/250940128
 
-[#bib_4]
 [#bib_4]
 [4] "Structure of the Administration Shell, continuation of the development of the reference model for the Industrie 4.0 component", Plattform Industrie 4.0, Working Paper, April 2016. [Online]. Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/structure-of-the-administration-shell.html
 
 [#bib_5]
-[#bib_5]
 [5] "Which criteria do Industrie 4.0 products need to fulfil? Guideline 2020", Federal Ministry for Economic Affairs and Energy (BMWi), July 2020. [Online]. Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/criteria-industrie-40-products_2020.html
 
-[#bib_6]
 [#bib_6]
 [6] (German) "Beispiele zur Verwaltungsschale der Industrie 4.0-Komponente – Basisteil"; ZVEI e.V., Whitepaper, November 2016. [Online]. Available: https://www.zvei.org/presse-medien/publikationen/beispiele-zur-verwaltungsschale-der-industrie-40-komponente-basisteil/
 
 [#bib_7]
-[#bib_7]
 [7] "Aspects of the research roadmap in application scenarios", Plattform Industrie 4.0, working paper, April 2016. [Online]. Available: http://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/aspects-of-the-research-roadmap.html
 
-[#bib_8]
 [#bib_8]
 [8] (German) "Fortschreibung der Anwendungsszenarien der Plattform Industrie 4.0"; Plattform Industrie 4.0, Ergebnispapier, October 2016. [Online]. Available: https://www.plattform-i40.de/I40/Redaktion/DE/Downloads/Publikation/fortschreibung-anwendungsszenarien.html
 
 [#bib_9]
-[#bib_9]
 [9] "Security in RAMI4.0", Plattform Industrie 4.0, Berlin, technical overview, April 2016. [Online]. Available: http://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/security-rami40-en.html
 
-[#bib_10]
 [#bib_10]
 [10] "Die Deutsche Normungs-Roadmap Industrie 4.0 / The German standardization roadmap Industrie 4.0", DKE Deutsche Kommission Elektrotechnik, Elektronik Informationstechnik im DIN und VDE, Version 2.0, 2015. [Online]. Available: http://www.din.de/de/forschung-und-innovation/industrie4-0/roadmap-industrie40-62178
 
 [#bib_11]
-[#bib_11]
 [11] "Weiterentwicklung des Interaktionsmodells für Industrie 4.0-Komponenten", Plattform Industrie 4.0, discussion paper, November 2016. [Online]. Available: https://www.plattform-i40.de/I40/Redaktion/DE/Downloads/Publikation/interaktionsmodell-i40-komponenten-it-gipfel.html
 
-[#bib_12]
 [#bib_12]
 [12] "Definition of terms relating to Industrie 4.0", Fraunhofer IOSB and VDI/VDE-GMA Fachausschuss 7.21. Accessed: 2020-11-14. [Online]. Availablefile:///C:\Users\Torben\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\V9OOP350\%20http\i40.iosb.fraunhofer.de\_search%3fpatterns=FA7.21%20Begriffe[: http://i40.iosb.fraunhofer.de/_search?patterns=FA7.21%20Begriffe]
 
 [#bib_13]
-[#bib_13]
 [13] "Relationships between I4.0 Components – Composite Components and Smart Production", Plattform Industrie 4.0, Berlin, working paper, June 2017. [Online]. Available: https://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/hm-2018-relationship.html
 
-[#bib_14]
 [#bib_14]
 [14] "Industrie 4.0 Plug-and-Produce for Adaptable Factories"; Plattform Industrie 4.0, Berlin, working paper, June 2017. [Online]. Available: http://www.plattform-i40.de/I40/Redaktion/DE/Downloads/Publikation/Industrie-40-%20Plug-and-Produce.html
 
 [#bib_15]
-[#bib_15]
 [15] "Security der Verwaltungsschale / Security of the Administration Shell", Plattform Industrie 4.0, Berlin, working paper, April 2017. [Online]. Available: http://www.plattform-i40.de/I40/Redaktion/DE/Downloads/Publikation/security-der-verwaltungsschale.html
 
-[#bib_16]
 [#bib_16]
 [16] DIN SPEC 92000:2019-09 "Data Exchange on the Base of Property Value Statements (PVSX)", 2019 September.
 
 [#bib_17]
-[#bib_17]
 [17] "(German) Verwaltungsschale in der Praxis. Wie definiere ich Teilmodelle, beispielhafte Teilmodelle und Interaktion zwischen Verwaltungsschalen", Version 1.0, April 2019, Plattform Industrie 4.0 in Kooperation mit VDI/VDE-GMA Fachausschuss 7.20, Federal Ministry for Economic Affairs and Energy (BMWi), Available: https://www.plattform-i40.de/PI40/Redaktion/DE/Downloads/Publikation/2019-verwaltungsschale-in-der-praxis.html
 
-[#bib_18]
 [#bib_18]
 [18] (German) "I4.0-Sprache. Vokabular, Nachrichtenstruktur und semantische Interaktionsprotokolle der I4.0-Sprache", Plattform Industrie 4.0 in Kooperation mit VDI/VDE-GMA Fachausschuss 7.20, April 2018. [Online]. Available: https://www.plattform-i40.de/I40/Redaktion/DE/Downloads/Publikation/hm-2018-sprache.html
 
 [#bib_19]
-[#bib_19]
 [19] "The Structure of the Administration Shell: TRILATERAL PERSPECTIVES from France, Italy and Germany", March 2018, [Online]. Available: https://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/hm-2018-trilaterale-coop.html
 
-[#bib_20]
 [#bib_20]
 [20] "Industrial automation systems and integration — Exchange of characteristic data — Part 10: Characteristic data exchange format", Technical Specification ISO/TS 29002-10:2009(E), 2009
 
 [#bib_21]
-[#bib_21]
 [21] "Smart Manufacturing - Reference Architecture Model Industry 4.0 (RAMI4.0)", IEC PAS 63088, International Electrotechnical Commission (IEC), 2017
 
-[#bib_22]
 [#bib_22]
 [22] "System.IO.Packaging Namespace", MSDN, Accessed: 2019-01-26 [Online]. Available: https://msdn.microsoft.com/en-us/library/system.io.packaging(v=vs.110).aspx
 
 23] DIN SPEC 16593-1 "Reference Model for Industrie 4.0 Service Architectures – Part 1: Basic Concepts of an Interaction-based Architecture", Beuth-Verlag: Berlin, Germany, 2018. [Online]. Available: https://www.beuth.de/en/technical-rule/din-spec-16593-1/287632675
 
 [#bib_24]
-[#bib_24]
 [24] ISO 13854-42 "Standard data element types with associated classification scheme – Part 1: Definitions – Principles and methods" Edition 4.0, 2017-07
 
-[#bib_25]
 [#bib_25]
 [25] IEC 61360-1 "Standard data element types with associated classification scheme – Part 1: Definitions – Principles and methods", Edition 4.0, 2017-07
 
 [#bib_26]
-[#bib_26]
 [26] ISO/TS 29002-10:2009(E) "Industrial automation systems and integration — Exchange of characteristic data — Part 10: Characteristic data exchange format", First edition 2009-12-01
 
-[#bib_27]
 [#bib_27]
 [27] A. Bayha, J. Bock, B. Boss, C. Diedrich, S. Malakuti "Describing Capabilities of Industrie 4.0 Components". Nov. 2020. Plattform Industrie 4.0. [Online] Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/Capabilities_Industrie40_Components.html
 
 [#bib_28]
-[#bib_28]
 [28] AutomationML Association: "Application Recommendations: Asset Administration Shell Representation (AR 004E)", Version 1.0.0, 20.11.2019, [Online]. Available: https://www.automationml.org/o.red.c/dateien.html
 
-[#bib_29]
 [#bib_29]
 [29] H. Knublauch, D. Knotokostas "Shapes Constraint Language (SHACL)" W3C Recommendation, 2017, [Online]. Available: https://www.w3.org/TR/shacl/
 
 [#bib_30]
-[#bib_30]
 [30] "I4AAS – Industrie 4.09 Asset Administration Shell". June 2021. [Online] Available: https://opcfoundation.org/markets-collaboration/I4AAS/
 
-[#bib_31]
 [#bib_31]
 [31] DIN SPEC 91406:2019 "Automatische Identifikation von physischen Objekten und Informationen zum physischen Objekt in IT-Systemen, insbesondere IoT-Systemen/Automatic identification of physical objects and information on physical objects in IT systems, particularly IoT systems". December 2019
 
 [#bib_32]
-[#bib_32]
 [32] F. Manola, E. Miller "RDF 1.1 Primer" W3C Recommendation, 2014, [Online]. Available: https://www.w3.org/TR/rdf11-primer/%20[https://www.w3.org/TR/rdf11-primer/]
 
-[#bib_33]
 [#bib_33]
 [33] T. R. Gruber "A translation approach to portable ontology specifications." Knowledge acquisition 5.2 (1993): 199-220. [Online]. Available: https://tomgruber.org/writing/ontolingua-kaj-1993.htm
 
 [#bib_34]
-[#bib_34]
 [34] "The Industrial Internet of Things Vocabulary". Technical Report. Version 2.3. October 10, 2020. Industrial Internet Consortium. IIC:IIVOC:V2.3:20201025 [Online] Available: https://www.iiconsortium.org/vocab/
 
-[#bib_35]
 [#bib_35]
 [35] "OMG Unified Modelling Language (OMG UML)". Formal/2017-12-05. Version 2.5.1. December 2018. [Online] Available: file:///C:\Users\Torben\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\V9OOP350\https\www.omg.org\spec\UML\[www.omg.org/spec/UML/]
 
 [#bib_36]
-[#bib_36]
 [36] T. Preston-Werner "Semantic Versioning". Version 2.0.0. Accessed: 2020-11-13. [Online] Available: https://semver.org/spec/v2.0.0.html
 
-[#bib_37]
 [#bib_37]
 [37] "Details of the Asset Administration Shell – Interoperability at Runtime – Exchanging Information via Application Programming Interfaces". See link:#bib_46[[46\]].
 
 [#bib_38]
-[#bib_38]
 [38] "Asset Administration Shell. Reading Guide". Plattform Industrie 4.0 in cooperation with IDTA. November 2020. See link:#bib_46[[46\]].
 
-[#bib_39]
 [#bib_39]
 [39] "Submodel Templates of the Asset Administration Shell - Generic Frame for Technical Data for Industrial Equipment in Manufacturing", Version 1.1, Nov. 2020, Plattform Industrie 4.0 [Online] Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/Submodel_templates-Asset_Administration_Shell-Technical_Data.html
 
 [#bib_40]
-[#bib_40]
 [40] "Submodel Templates of the Asset Administration Shell - ZVEI Digital Nameplate for industrial equipment", Version 1.0, Nov. 2020, Plattform Industrie 4.0 [Online] Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/Submodel_templates-Asset_Administration_Shell-digital_nameplate.html
 
-[#bib_41]
 [#bib_41]
 [41] OPC 30270: OPC UA for Asset Administration Shell (AAS). 2021-06-04. [Online]. Available: https://reference.opcfoundation.org/v104/I4AAS/v100/docs/
 
 [#bib_42]
-[#bib_42]
 [42] OPC Unified Architecture Specification. Part 5 Information Model. [Online]. Available: https://opcfoundation.org/developer-tools/specifications-unified-architecture
 
-[#bib_43]
 [#bib_43]
 [43] OPC UA Information Models. [Online]. Available: https://opcfoundation.org/developer-tools/specifications-opc-ua-information-models
 
 [#bib_44]
-[#bib_44]
 [44] IEC 63278-1 "Asset Administration Shell for industrial applications – Part 1: Asset Administration Shell structure". 95/925/CDV
 
-[#bib_45]
 [#bib_45]
 [45] "Registered AAS Submodel Templates". Industrial Digital Twin Association. Available: https://industrialdigitaltwin.org/en/content-hub/submodels
 
 [#bib_46]
-[#bib_46]
 [46] "Asset Administration Shell Specifications – Quicklinks to Different Versions & Reading Guide". [Online]. Available: https://www.plattform-i40.de/IP/Redaktion/EN/Standardartikel/specification-administrationshell.html
 
-[#bib_47]
 [#bib_47]
 [47] (German) "I4.0-Sprache. Vokabular, Nachrichtenstruktur und semantische Interaktionsprotokolle der I4.0-Sprache", Discussion Paper. Plattform Industrie 4.0 [Online] Available: https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/hm-2018-sprache.html
 
 [#bib_48]
-[#bib_48]
 [48] "How to create a submodel template specification". Industrial Digital Twin Association. Not yet published.
 
-[#bib_49]
 [#bib_49]
 [49] Vincent Hu, David Ferraiolo, Rick Kuhn, Adam Schnitzer, Kenneth Sandlin, Robert Miller and Karen Scarfone, "Guide to Attribute Based Access Control (ABAC) Definition and Considerations", NIST Special Publication 800-162, Jan. 2014. [Online]. Available: http://dx.doi.org/10.6028/NIST.SP.800-162
 
 [#bib_50]
-[#bib_50]
 [50] "Secure Download Service", Discussion Paper. Oct. 2020, Plattform Industrie 4.0 [Online] Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/secure_downloadservice.html
 
-[#bib_51]
 [#bib_51]
 [51] "AAS Repository. Repository for Information and Code for the Asset Administration Shell". https://github.com/admin-shell-io
 

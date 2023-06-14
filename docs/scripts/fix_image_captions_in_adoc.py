@@ -14,7 +14,7 @@ def move_caption_to_beginning(adoc_file):
         # Iterate over the matches and modify the figure tags
         for match in matches:
             figure_tag = match[0]
-            caption = match[1]
+            caption: str = match[1]
 
             # Move the caption to the beginning of the figure tag
             modified_figure_tag = f'.{caption}{figure_tag}\n'
@@ -23,12 +23,6 @@ def move_caption_to_beginning(adoc_file):
             # Replace the original figure tag with the modified one
             content = content.replace(old_figure_tag, modified_figure_tag)
 
-
     # Write the modified content back to the ADoc file
     with open(adoc_file, 'w') as file:
         file.write(content)
-
-
-directory = "../AASiD_1_Metamodel"
-
-move_caption_to_beginning(directory + "/AASiD_1_Metamodel_V3_0.adoc")

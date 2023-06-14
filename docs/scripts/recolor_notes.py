@@ -7,20 +7,17 @@ def recolor_notes(adoc_file):
 
     matches = set()
 
-    notes_patterns = [r'(?<!foot)(?<!\[)Note:.*', r'Note\s+\d+.*', r'EXAMPLE\s+\d+:']
+    notes_patterns = [r'(?<!foot)(?<!\[)Note:.*', r'Note\s+\d+.*', r'EXAMPLE\s+\d+:.*']
 
     for pattern in notes_patterns:
         matches.update(re.findall(pattern, content))
 
     # Iterate over the matches and modify the figure tags
     for match in matches:
-        old_notes = match
-        content = content.replace(old_notes, f'[.note-block]\n{match}')
+        old_note = match
+        match = re.sub(r'Note:|Note\s+(\d+)(:*)', lambda m: '' if m.group(1) is None else m.group(1)+" :", match)
+        match = match.strip().capitalize()
+        content = content.replace(old_note, f'NOTE: {match}')
 
     with open(adoc_file, 'w') as file:
         file.write(content)
-
-
-directory = "../AASiD_1_Metamodel"
-
-keys = recolor_notes(directory + "/AASiD_1_Metamodel_V3_0.adoc")
