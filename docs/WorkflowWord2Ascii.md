@@ -49,5 +49,5 @@ Once you have Pillow installed, you can use the following Python code to convert
    7. Replace footnotes with direct URLs where needed 
 
 ## 3. Create HTML from asciidoc with Table-of-Contents
-`asciidoctor -a toc=left -a stylesheet=style.css output.adoc`
+`asciidoctor -a toc=left -a stylesheet=style.css AASiD_1_Metamodel_V3_0.adoc`
 
