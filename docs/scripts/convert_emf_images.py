@@ -20,10 +20,10 @@ def read_emf_images(folder_path):
 
 
 def replace_emf_with_png(adoc_file):
-    with open(adoc_file, 'r') as file:
+    with open(adoc_file, 'r', encoding="utf-8") as file:
         content = file.read()
 
     modified_content = content.replace('.emf', '.png')
 
-    with open(adoc_file, 'w') as file:
+    with open(adoc_file, 'w', encoding="utf-8") as file:
         file.write(modified_content)

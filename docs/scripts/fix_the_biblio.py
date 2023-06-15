@@ -2,7 +2,7 @@ import re
 
 
 def add_anchor_to_biblio(adoc_file):
-    with open(adoc_file, 'r') as file:
+    with open(adoc_file, 'r', encoding="utf-8") as file:
         content = file.read()
 
     biblio_patterns = [r'\[(\d+)\]\s+([A-Z]+[^\[]+\[Online\])',
@@ -24,13 +24,13 @@ def add_anchor_to_biblio(adoc_file):
 
         content = content.replace(old_figure_tag, modified_figure_tag)
 
-    with open(adoc_file, 'w') as file:
+    with open(adoc_file, 'w', encoding="utf-8") as file:
         file.write(content)
 
     return matches.keys()
 
 def add_link_to_biblio(adoc_file, keys):
-    with open(adoc_file, 'r') as file:
+    with open(adoc_file, 'r', encoding="utf-8") as file:
         content = file.read()
 
     for key in keys:
@@ -38,5 +38,5 @@ def add_link_to_biblio(adoc_file, keys):
         in_link_patterns = in_link_patterns.format(key=key)
         content = re.sub(in_link_patterns, f'link:#bib_{key}[[{key}\]]' ,content)
 
-    with open(adoc_file, 'w') as file:
+    with open(adoc_file, 'w', encoding="utf-8") as file:
         file.write(content)

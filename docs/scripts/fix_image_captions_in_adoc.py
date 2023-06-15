@@ -2,7 +2,7 @@ import re
 
 
 def move_caption_to_beginning(adoc_file):
-    with open(adoc_file, 'r') as file:
+    with open(adoc_file, 'r', encoding="utf-8") as file:
         content = file.read()
 
         # Define the regular expression pattern to match figure tags with specific captions
@@ -24,5 +24,5 @@ def move_caption_to_beginning(adoc_file):
             content = content.replace(old_figure_tag, modified_figure_tag)
 
     # Write the modified content back to the ADoc file
-    with open(adoc_file, 'w') as file:
+    with open(adoc_file, 'w', encoding="utf-8") as file:
         file.write(content)
