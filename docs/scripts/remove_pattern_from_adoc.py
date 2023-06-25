@@ -11,8 +11,8 @@ def remove_text_matching_regex(adoc_file):
 
     for regex in REGULAR_EXP_LIST:
         # Remove occurrences of the specified regular expression
-        modified_content = re.sub(regex, '', content)
+        content = re.sub(regex, '', content)
 
     # Write the modified content back to the ADoc file
     with open(adoc_file, 'w', encoding="utf-8") as file:
-        file.write(modified_content)
+        file.write(content)

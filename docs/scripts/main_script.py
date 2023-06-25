@@ -6,6 +6,7 @@ from fix_angular_brackets import escape_double_angular_brackets
 from recolor_notes import recolor_notes
 from fix_the_biblio import add_anchor_to_biblio, add_link_to_biblio
 from fix_image_captions_in_adoc import move_caption_to_beginning
+from fixquotesonkeywords import replace_qoutes_on_keyword
 
 file_name = "/AASiD_1_Metamodel_V3_0.adoc"
 directory = "../AASiD_1_Metamodel"
@@ -41,3 +42,6 @@ add_link_to_biblio(directory + file_name, keys)
 
 # 7 Fix the image captions
 move_caption_to_beginning(directory + file_name)
+
+# 8 Fix the Quotes on keyboard
+replace_qoutes_on_keyword(directory + file_name)
