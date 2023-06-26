@@ -5,14 +5,8 @@ REGULAR_EXP_LIST = [r'Table of Contents\n\n(.*?)(?=\n\n==)', r'\[#_Toc\d* \.anch
                     r'\[\#_Ref\d* \.anchor\](?:\#{2,4})', r'\[\#_Toc\d* \.anchor\](?:\#{2,4})', r'\{empty\}']
 
 
-def remove_text_matching_regex(adoc_file):
-    with open(adoc_file, 'r', encoding="utf-8") as file:
-        content = file.read()
-
+def remove_text_matching_regex(content):
     for regex in REGULAR_EXP_LIST:
         # Remove occurrences of the specified regular expression
         content = re.sub(regex, '', content)
-
-    # Write the modified content back to the ADoc file
-    with open(adoc_file, 'w', encoding="utf-8") as file:
-        file.write(content)
+    return content

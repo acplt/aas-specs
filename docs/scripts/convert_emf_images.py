@@ -19,11 +19,5 @@ def read_emf_images(folder_path):
     return file_list
 
 
-def replace_emf_with_png(adoc_file):
-    with open(adoc_file, 'r', encoding="utf-8") as file:
-        content = file.read()
-
-    modified_content = content.replace('.emf', '.png')
-
-    with open(adoc_file, 'w', encoding="utf-8") as file:
-        file.write(modified_content)
+def replace_emf_with_png(content):
+    return content.replace('.emf', '.png')

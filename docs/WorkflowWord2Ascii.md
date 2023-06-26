@@ -8,45 +8,20 @@ The command converts a Microsoft Word document to an AsciiDoc file format with e
 
 `pandoc DetailsOfTheAssetAdministrationShell_Part1a_V3.0_final_altesLayout_lastFindings.docx -f docx -t asciidoctor --wrap=none --markdown-headings=atx --extract-media=extracted-media -o AASiD_1_Metamodel_V3_0.adoc`
 
-## 2. Convert all emf-images in extracted-media to png
+## 2. Install all dependencies by running,
 
-`pip install pillow`
-
-Once you have Pillow installed, you can use the following Python code to convert an EMF file to PNG and change all occurrences to emf file in adoc file to png file: 
-
-`scripts/convert_emf_images.py`
+`pip install -r requirements.txt`
 
 ## 3. Fix bugs
-
-1. Remove such texts from table titles: "[#_Toc125537806 .anchor]####Table 31"
-   2. Use the regex to delete it: `\[#_Toc\d* \.anchor]####Table \d*`
-   3. Use the regex to delete it: `\[#_Ref\d* \.anchor]####Table \d*`
-2. Remove such texts from image definitions:
-   2. Use the regex to delete it: `\[\#_Ref\d* \.anchor\]\#\#`
-   3. Use the regex to delete it: `\[\#_Toc\d* \.anchor\]\#\#`
-3. Place image names ahead of the image:
-   4. Search for: `\]Figure \d*`
-   5. Choose all
-   6. Press <-
-   6. Press ->
-   7. Press shift+ende
-   8. ctrl+c
-   9. Press Pos 1
-   10. Press enter
-   11. Press up
-   12. ctrl+v
-   13. Search for: `\]Figure \d*`
-   5. Choose all
-   6. Press <-
-   6. Press ->
-   7. Press shift+ende
-   8. delete
-   4. The same for: `\] Figure \d*`
-4. TODO describe: Fix all references
-5. TODO describe: Handle notes in blue boxes appropriately
-5. TODO describe: Replace "" with `` where needed
-6. TODO describe: Handle footnotes appropriately
-   7. Replace footnotes with direct URLs where needed 
+1. Run the main_script.py in scripts directory. The main script does has following steps:
+   1. Removes table of index from asciidoc file, we just provide start and endline to the function remove_lines_between().
+   2. Convert all the images from emf to png and also their occurrence in the the asciidoc.
+   3. Remove certain commonly occurring expressions(defined as regular expression in code) in asciidoc, for instance links, references from docx to asciidoc conversion.
+   4. Escaping angular brackets, as it is read as a keyword in asciidoc.
+   5. Recolor notes, examples in asciidoc so they are highlighted from rest of the text.
+   6. Create anchor for bibliography and link the references to them in the document.
+   7. Fixing the image captions, by moving text before image tags, and also converting associated text to captions as per asciidoc formatting.
+   8. Replacing class names enclosed in double qoutes with `.
 
 ## 3. Create HTML from asciidoc with Table-of-Contents
 `asciidoctor -a toc=left -a stylesheet=style.css AASiD_1_Metamodel_V3_0.adoc`

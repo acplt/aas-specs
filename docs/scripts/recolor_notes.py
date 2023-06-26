@@ -1,10 +1,7 @@
 import re
 
 
-def recolor_notes(adoc_file):
-    with open(adoc_file, 'r', encoding="utf-8") as file:
-        content = file.read()
-
+def recolor_notes(content):
     matches = set()
 
     notes_patterns = [r'(?<!foot)(?<!\[)Note:.*', r'Note\s+\d+.*', r'EXAMPLE\s+\d+:.*']
@@ -17,7 +14,6 @@ def recolor_notes(adoc_file):
         old_note = match
         # match = re.sub(r'Note:|Note\s+(\d+)(:*)', lambda m: '' if m.group(1) is None else m.group(1)+" :", match)
         match = match.strip().capitalize()
-        content = content.replace(old_note, f'====\n{match}\n====')
+        content = content.replace(old_note, f'\n====\n{match}\n====\n')
 
-    with open(adoc_file, 'w', encoding="utf-8") as file:
-        file.write(content)
+    return content
