@@ -50,4 +50,5 @@ for i in range(len(files)):
     # 8 Fix the Quotes on keyword
     content = replace_quotes_on_keyword(content)
 
+    # Writing all the edited content back to the file
     utils.write_file(filepath, content)
