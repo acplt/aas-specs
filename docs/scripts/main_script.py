@@ -7,6 +7,7 @@ from recolor_notes import recolor_notes
 from fix_the_biblio import add_anchor_to_biblio, add_link_to_biblio
 from fix_image_captions_in_adoc import move_caption_to_beginning
 from fixquotesonkeywords import replace_quotes_on_keyword
+from fix_square_bracket import escape_square_brackets
 import util.helper_func as utils
 
 files = [("../AASiD_1_Metamodel","/AASiD_1_Metamodel_V3_0.adoc")]
@@ -49,6 +50,9 @@ for i in range(len(files)):
 
     # 8 Fix the Quotes on keyword
     content = replace_quotes_on_keyword(content)
+
+    # 9 Escape Square Brackets
+    content = escape_square_brackets(content)
 
     # Writing all the edited content back to the file
     utils.write_file(filepath, content)

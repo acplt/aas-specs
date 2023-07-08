@@ -4,7 +4,7 @@ import re
 def recolor_notes(content):
     matches = set()
 
-    notes_patterns = [r'(?<!foot)(?<!\[)Note:.*', r'Note\s+\d+.*', r'EXAMPLE\s+\d+:.*']
+    notes_patterns = [r'(?<!foot)(?<!\[)Note:.*', r'Note\s+\d+.*', r'EXAMPLE\s+\d+:.*', r'Please note:.*']
 
     for pattern in notes_patterns:
         matches.update(re.findall(pattern, content))

@@ -738,7 +738,7 @@ _digital representation_, sufficient to meet the requirements of a set of use ca
 
 Note 1 to entry: in this context, the entity in the definition of digital representation is typically an asset.
 
-{empty}[SOURCE: IIC Vocabulary IIC:IIVOC:V2.3:20201025, adapted (an asset, process, or system was changed to an asset)]
+{empty}[SOURCE: IIC Vocabulary IIC:IIVOC:V2.3:20201025, adapted (an asset, process, or system was changed to aacn asset)]
 
 explicit value
 
