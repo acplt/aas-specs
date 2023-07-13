@@ -5262,7 +5262,7 @@ Smaller changes:
 === Metamodel Changes V3.0 VS. V2.0.1
 
 .Changes
-[cols="10%,42%,48%",options="header",]
+[cols="5%,42%,48%",options="header",]
 |===
 |*Nc* |*V3.0 Change w.r.t. V2.0.1* |*Comment*
 | |anySimpleTypeDef |Type removed, was no longer used in any class definition, was mentioned in text only.
@@ -5369,7 +5369,7 @@ Now part of AasSubmodelElements
 |===
 
 .New Elements in Metamodel
-[cols="8%,41%,51%",options="header",]
+[cols="5%,41%,51%",options="header",]
 |===
 | |*New Elements V3.0 vs V2.0.1* |*Comment*
 |  |AasIdentifiables |New enumeration used for References, includes abstract Identifiable +
@@ -5478,7 +5478,7 @@ New submodel element SubmodelElementList added, renamed submodel elements Event 
 |===
 
 .New, Changed or Removed Constraints
-[cols="6%,10%,15%,69%",options="header",]
+[cols="5%,10%,15%,69%",options="header",]
 |===
 |*Nc* |*V3.0 vs. V2.0.1* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASd-001 |Removed a|
@@ -5627,7 +5627,7 @@ Smaller changes
 === Metamodel Changes V3.0 vs. V3.0RC02
 
 .Changes
-[cols="7%,32%,61%",options="header",]
+[cols="5%,32%,61%",options="header",]
 |===
 |*nc* |*V3.0 Change w.r.t. V3.0RC02* |*Comment*
 | |AdministrativeInformation |Stereotype \<<dataType>> removed
@@ -5689,7 +5689,7 @@ Text how to select a suitable display name removed; now explained in Table 2
 |===
 
 .New Elements in Metamodel
-[cols="8%,43%,49%",options="header",]
+[cols="5%,43%,49%",options="header",]
 |===
 |*nc* |*V3.0 vs. V3.0RC02 New Elements* |*Comment*
 | |AdministrativeInformation/creator |New optional attribute
@@ -5709,7 +5709,7 @@ Text how to select a suitable display name removed; now explained in Table 2
 |===
 
 .New, Changed or Removed Constraints
-[cols="7%,12%,15%,66%",options="header",]
+[cols="5%,12%,15%,66%",options="header",]
 |===
 |*Nc* |*V3.0 vs. V3.0RC02* |*New, Update, Removed, Reformulated* |*Comment*
 | | |EDITORIAL a|
@@ -5832,7 +5832,7 @@ Note: ReferableElements was substituted by AasSubmodelElements and Aas Identifia
 * Entity/globalAssetId diagram (table was correct): Type change from reference of Reference* to Reference
 
 .Changes w/o Security
-[cols="7%,43%,50%",options="header",]
+[cols="5%,43%,50%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V2.0.1* |*Comment*
 | |AdministrativeInformation |Bugfix: Stereotype "DataType" added
@@ -6028,7 +6028,7 @@ See Attribute Based Access Control (ABAC) for subject concept
 |===
 
 .New, Changed or Removed Constraints w/o Security
-[cols="6%,11%,14%,69%",options="header",]
+[cols="5%,11%,14%,69%",options="header",]
 |===
 |*Nc* |*V3.0RC02 vs. V2.0.1* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASd-001 |Removed a|
@@ -6108,7 +6108,7 @@ Constraint AASD-120: idShort of submodel elements within a SubmodelElementList s
 === Metamodel Changes V3.0RC02 vs. V2.0.1 – Data Specification IEC61360
 
 .Changes w.r.t. Data Specification IEC61360
-[cols="11%,46%,43%",options="header",]
+[cols="5%,46%,43%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V2.0.1* |*Comment*
 | |DataSpecification a|
@@ -6131,7 +6131,7 @@ See separate entries for individual changes.
 |===
 
 .New Elements in Metamodel DataSpecification IEC61360
-[cols="11%,44%,45%",options="header",]
+[cols="5%,44%,45%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V2.0.1* |*Comment*
 | |DataSpecification/administration |Was inherited before by Identifiable
@@ -6145,7 +6145,7 @@ See separate entries for individual changes.
 |===
 
 .New, Changed or Removed Constraints Data Specification IEC61360
-[cols="9%,14%,14%,63%",options="header",]
+[cols="5%,14%,14%,63%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V2.0.1* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASc-002 |New a|
@@ -6171,7 +6171,7 @@ Changes:
 * Removed: Certificate Handling not part of information model but of server infrastructure hosting the Asset Administration Shells
 
 .Changes w.r.t. Security
-[cols="11%,46%,43%",options="header",]
+[cols="5%,46%,43%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V2.0.1* |*Comment*
 |x |AccessControlPolicyPoints/policyAdministrationoint |Type changed from PolicyAdministrationPoint to AccessControl
@@ -6196,14 +6196,14 @@ No longer inherits from Qualifiable
 |===
 
 .New Elements in Metamodel Security
-[cols="11%,44%,45%",options="header",]
+[cols="5%,44%,45%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V2.0.1* |*Comment*
 | |AccessPermissionRule/constraint |Substitute for inherited attributes from Qualifiable
 |===
 
 .New, Changed or Removed Constraints Security
-[cols="9%,14%,14%,63%",options="header",]
+[cols="5%,14%,14%,63%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V2.0.1* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASd-015 |Removed |Renamed to AASs-015 (see NEW)
@@ -6264,7 +6264,7 @@ Bugfixes:
 * Entity/globalAssetId diagram (table was correct): Type change from reference of Reference to Reference (from Reference* to Reference)
 
 .Changes w/o Security
-[cols="4%,45%,51%",options="header",]
+[cols="5%,45%,51%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V3.0RC01* |*Comment*
 | |AdministrativeInformation |Bugfix: Stereotype "DataType" added
@@ -6361,7 +6361,7 @@ Now part of AasSubmodelElements
 |===
 
 .New Elements in Metamodel w/o Security
-[cols="4%,45%,51%",options="header",]
+[cols="5%,45%,51%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V2.0RC01 New Elements* |*Comment*
 | |AasSubmodelElements a|
@@ -6437,7 +6437,7 @@ New submodel element SubmodelElementList added, renamed submodel elements Event 
 |===
 
 .New, Changed or Removed Constraints w/o Security
-[cols="8%,12%,15%,65%",options="header",]
+[cols="5%,12%,15%,65%",options="header",]
 |===
 |*Nc* |*V3.0RC02 vs. V3.0RC01* |*New, Update, Removed, Reformulated* |*Comment*
 |footnote:[Every model valid for V3.0RC02 is still valid in V3.0RC01, however there might be implementations that need to be changed if they assumed that the user can type case-insensitive names and get all elements that match the name in an case-insensitive way.] |AASd-003 |Update a|
@@ -6640,7 +6640,7 @@ Constraint AASD-120: idShort of submodel elements within a SubmodelElementList s
 === Metamodel Changes V3.0RC02 vs. V3.0RC01 – Data Specification IEC61360
 
 .Changes w.r.t. Data Specification IEC61360
-[cols="11%,46%,43%",options="header",]
+[cols="5%,46%,43%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V3.0RC01* |*Comment*
 | |DataSpecification a|
@@ -6666,7 +6666,7 @@ See separate entries for individual changes
 |===
 
 .New Elements in Metamodel DataSpecification IEC61360
-[cols="11%,44%,45%",options="header",]
+[cols="5%,44%,45%",options="header",]
 |===
 |*nc* |*V3.0RC02* |*Comment*
 |x |ValueReferencePair/valueId |Type changed from Reference to GlobalReference
@@ -6681,7 +6681,7 @@ See separate entries for individual changes
 |===
 
 .New, Changed or Removed Constraints Data Specification IEC61360
-[cols="9%,14%,14%,63%",options="header",]
+[cols="5%,14%,14%,63%",options="header",]
 |===
 |*nc* |*V3.0RC02* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASc-002 |New a|
@@ -6707,7 +6707,7 @@ Changes:
 * Removed: Certificate Handling not part of information model but of server infrastructure hosting the Asset Administration Shells
 
 .Changes w.r.t. Security
-[cols="11%,46%,43%",options="header",]
+[cols="5%,46%,43%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V3.0RC01* |*Comment*
 |x |AccessControlPolicyPoints/policyAdministrationoint |Type changed from PolicyAdministrationPoint to AccessControl
@@ -6732,14 +6732,14 @@ No longer inherits from qualifiable
 |===
 
 .New Elements in Metamodel Security
-[cols="11%,44%,45%",options="header",]
+[cols="5%,44%,45%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V3.0RC01* |*Comment*
 | |AccessPermissionRule/constraint |Substitute for inherited attributes from Qualifiable
 |===
 
 .New, Changed or Removed Constraints Security
-[cols="9%,14%,14%,63%",options="header",]
+[cols="5%,14%,14%,63%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V3.0RC01* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASs-009 |Removed a|
@@ -6769,7 +6769,7 @@ Major changes:
 * AASX file exchange format:no splitting of an Asset Administration Shell allowed any longer (i.e. relationship type aas-spec-split removed)
 
 .Changes w.r.t. V2.0 w/o Security
-[cols="11%,41%,48%",options="header",]
+[cols="5%,41%,48%",options="header",]
 |===
 |*nc* |*V3.0RC01 Change w.r.t. V2.0.1* |*Comment*
 | |anySimpleTypeDef |Type removed, was not used in any class definition any longer, was mentioned in text only
@@ -6786,7 +6786,7 @@ Major changes:
 |===
 
 .New Elements in Metamodel V3.0RC01 w/o Security
-[cols="11%,46%,43%",options="header",]
+[cols="5%,46%,43%",options="header",]
 |===
 |*nc* |*V3.0RC01 vs. V2.0.1* |*Comment*
 |x |AssetAdministrationShell/assetInformation |Substitute for AssetAdministrationShell/asset (no reference any longer, instead aggregation)
@@ -6801,7 +6801,7 @@ Major changes:
 |===
 
 .New, Changed or Removed Constraints w/o Security
-[cols="9%,13%,14%,64%",options="header",]
+[cols="5%,13%,14%,64%",options="header",]
 |===
 |*nc* |*V3.0RC01* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASd-001 |Removed a|
@@ -6879,7 +6879,7 @@ Major changes:
 * Only bugfixes
 
 .New, Changed or Removed Constraints Security
-[cols="9%,17%,23%,51%",options="header",]
+[cols="5%,17%,23%,51%",options="header",]
 |===
 |*nc* |*V3.0RC01* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASd-010 |Removed |Renamed to AASs-010 (see NEW)
@@ -6907,7 +6907,7 @@ Major changes:
 * Only bugfixes
 
 .Changes w.r.t. V2.0.1 w/o Security
-[cols="11%,44%,45%",options="header",]
+[cols="5%,44%,45%",options="header",]
 |===
 |*nc* |*V2.0.1 Change w.r.t. V2.0* |*Comment*
 | |DataTypeIEC61360/INTEGER_COUNT |Bugfix, was missing
@@ -6919,7 +6919,7 @@ Major changes:
 |===
 
 .New, Changed or Removed Constraints w/o Security
-[cols="9%,11%,23%,57%",options="header",]
+[cols="5%,11%,23%,57%",options="header",]
 |===
 |*nc* |*V2.0.1* |*New, Update, Removed* |*Comment*
 | |AASd-001 |update a|
@@ -6948,7 +6948,7 @@ Major changes:
 * Referencing of fragments within a file etc. now also supported
 
 .Changes w.r.t. V1.0 w/o Security
-[cols="11%,44%,45%",options="header",]
+[cols="5%,44%,45%",options="header",]
 |===
 |*nc* |*V2.0 Change w.r.t. V1.0* |*Comment*
 |(x) footnote:[There was an implicit constraint restricting the values to the values in the enumeration. This is now formalized.] |anySimpleTypeDef a|
@@ -7031,7 +7031,7 @@ Type changed from AnySimpleTypeDef to ValueDataType
 |===
 
 .New, Changed or Removed Constraints w/o Security
-[cols="9%,14%,23%,54%",options="header",]
+[cols="5%,14%,23%,54%",options="header",]
 |===
 |*nc* |*V2.0* |*New, Update, Removed* |*Comment*
 | |AASd-007 |update a|
