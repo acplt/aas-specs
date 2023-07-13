@@ -1,4 +1,4 @@
-from convert_emf_images import read_emf_images
+from convert_emf_images import read_emf_images, convert_emf_to_png
 from remove_lines_between import remove_lines_between
 from convert_emf_images import replace_emf_with_png
 from remove_pattern_from_adoc import remove_text_matching_regex
@@ -17,14 +17,14 @@ for i in range(len(files)):
     content = utils.read_file(filepath)
 
     # 1 Replace the Table of Contents in adoc file
-    content = remove_lines_between(content, start_line=45, end_line=554)
+    content = remove_lines_between(content, start_line=25, end_line=533)
 
     # 2 Convert the images in Asciidoc document
 
     # 2.1 Convert the emf files to png
-    IMAGES_TO_CONVERT = read_emf_images(files[i][0] + "/extracted-media/media")
-    # for image in IMAGES_TO_CONVERT:
-    #     convert_emf_to_png(image, image.replace(".emf", ".png"))
+    IMAGES_TO_CONVERT = read_emf_images(files[i][0] + "/media/media")
+    for image in IMAGES_TO_CONVERT:
+        convert_emf_to_png(image, image.replace(".emf", ".png"))
 
     # 2.2 Replace all occurrences of emf to png in asciidoc file
     content = replace_emf_with_png(content)
@@ -48,11 +48,8 @@ for i in range(len(files)):
     # 7 Fix the image captions
     content = move_caption_to_beginning(content)
 
-    # 8 Fix the Quotes on keyword
-    content = replace_quotes_on_keyword(content)
-
-    # 9 Escape Square Brackets
-    content = escape_square_brackets(content)
+    # # 8 Fix the Quotes on keyword
+    # content = replace_quotes_on_keyword(content)
 
     # Writing all the edited content back to the file
     utils.write_file(filepath, content)
