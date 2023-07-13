@@ -16,7 +16,7 @@ def add_anchor_to_biblio(content):
         biblio_text = f'{matches.get(key)}'
 
         # Move the caption to the beginning of the figure tag
-        modified_figure_tag = f'[#bib_{key}]\n{biblio_tag_mod} {biblio_text}'
+        modified_figure_tag = f'[#bib{key}]\n{biblio_tag_mod} {biblio_text}'
         old_figure_tag = f'{biblio_tag} {biblio_text}'
 
         content = content.replace(old_figure_tag, modified_figure_tag)
@@ -26,7 +26,7 @@ def add_anchor_to_biblio(content):
 
 def add_link_to_biblio(content, keys):
     for key in keys:
-        in_link_patterns = r'(?<!\[#bib_{key}\]\n)\[{key}\]'
+        in_link_patterns = r'(?<!\[#bib{key}\]\n)\[{key}\]'
         in_link_patterns = in_link_patterns.format(key=key)
-        content = re.sub(in_link_patterns, f'link:#bib_{key}[[{key}\]]', content)
+        content = re.sub(in_link_patterns, f'link:#bib{key}[[{key}\]]', content)
     return content

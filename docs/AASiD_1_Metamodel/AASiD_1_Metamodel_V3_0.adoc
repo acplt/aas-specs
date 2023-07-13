@@ -40,7 +40,7 @@ The first version of this document was produced September 2017 to July 2018 by a
 
 For better readability the abbreviation "I4.0" is consistently used for "Industrie 4.0" in compound terms. The term "Industrie 4.0" continues to be used when standing on its own.
 
-This specification is versioned using https://semver.org/spec/v2.0.0.html[Semantic Versioning 2.0.0] (semver) and follows the semver specification [36].
+This specification is versioned using https://semver.org/spec/v2.0.0.html[Semantic Versioning 2.0.0] (semver) and follows the semver specification link:#bib36[[36\]].
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in https://tools.ietf.org/html/bcp14[BCP 14] https://tools.ietf.org/html/rfc2119[RFC2119] https://tools.ietf.org/html/rfc8174[RFC8174]footnote:[https://www.ietf.org/rfc/rfc2119.txt]:
 
@@ -65,7 +65,7 @@ This document focuses on:
 * access control,
 * an introduction to the need of mappings to suitable technologies used in different life cycle phases of a product: XML, JSON, RDF, AutomationML, and OPC UA.
 
-This document presumes some familiarity with the concept of the Asset Administration Shell. Some of the concepts are described in Annex A for convenience sake. The concepts are being standardized as IEC standard IEC 63278 series [44]. The main stakeholders addressed in this document are architects and software developers aiming to implement a digital twin using the Asset Administration Shell in an interoperable way. Additionally, the content can also be used as input for discussions with international standardization organizations and further initiatives. Please consult the continuously updated reading guide [38] for an overview of documents on the Asset Administration Shell. The reading guide gives advice on which documents should be read depending on the role of the reader.
+This document presumes some familiarity with the concept of the Asset Administration Shell. Some of the concepts are described in Annex A for convenience sake. The concepts are being standardized as IEC standard IEC 63278 series link:#bib44[[44\]]. The main stakeholders addressed in this document are architects and software developers aiming to implement a digital twin using the Asset Administration Shell in an interoperable way. Additionally, the content can also be used as input for discussions with international standardization organizations and further initiatives. Please consult the continuously updated reading guide link:#bib38[[38\]] for an overview of documents on the Asset Administration Shell. The reading guide gives advice on which documents should be read depending on the role of the reader.
 
 ===  Structure of the Document
 
@@ -483,7 +483,7 @@ Note 1 to entry: can consist of single elements, which are also known as functio
 ====
 
 
-* [SOURCE: according to [18]]
+* [SOURCE: according to link:#bib18[[18\]]]
 
 template
 
@@ -630,9 +630,9 @@ Figure 2 Types of Information Exchange via Asset Administration Shells
 
 File exchange (1) is described in detail in Part 5 of this document series.
 
-The API (2) based on the information metamodel specified in this document is specified in Part 2 of the document series "Details of the Asset Administration Shell" [37].
+The API (2) based on the information metamodel specified in this document is specified in Part 2 of the document series "Details of the Asset Administration Shell" link:#bib37[[37\]].
 
-The I4.0 language (3) is based on the information metamodel specified in this document [47].
+The I4.0 language (3) is based on the information metamodel specified in this document link:#bib47[[47\]].
 
 == General
 
@@ -656,7 +656,7 @@ Subclause 4.6 discusses aspects of event handling.
 
 Industry 4.0 utilizes an extended understanding of assets, comprising elements such as factories, production systems, equipment, machines, components, produced products and raw materials, business processes and orders, immaterial assets (such as processes, software, documents, plans, intellectual property, standards), services, human personnel, etc..
 
-The RAMI4.0 model [3] defines a generalized life cycle concept derived from IEC 62890. The basic idea is to distinguish between possible types and instances for all assets within Industry 4.0. This makes it possible to apply the type/instance distinction for all elements such as material type/material instance, product type/product instance, machine type/ machine instance, etc. Business-related information is handled on the 'business' layer of the RAMI4.0 model. The business layer also covers order details and workflows, again for both type and instance assets.
+The RAMI4.0 model link:#bib3[[3\]] defines a generalized life cycle concept derived from IEC 62890. The basic idea is to distinguish between possible types and instances for all assets within Industry 4.0. This makes it possible to apply the type/instance distinction for all elements such as material type/material instance, product type/product instance, machine type/ machine instance, etc. Business-related information is handled on the 'business' layer of the RAMI4.0 model. The business layer also covers order details and workflows, again for both type and instance assets.
 
 
 ====
@@ -693,13 +693,13 @@ The third class of relationships are feedforward/information exchange with asset
 
 
 ====
-Note: the NIST model [49] provides an illustration of the second/third class of relationships.
+Note: the NIST model link:#bib49[[49\]] provides an illustration of the second/third class of relationships.
 ====
 
 
 A fourth class of relationships consists between assets of different hierarchy levels. For example, these could be the (dynamic) relationships between manufacturing stations and currently produced products. They could be also the decomposition of production systems in physical, functional, or safety hierarchies. In this class of relationships, automation equipment is seen as a complex, interrelated graph of automation devices and products, performing intelligent production and self-learning/optimization tasks.
 
-Details and examples for composite I4.0 Components can be found in [12]. A composite I4.0 Component is the combination of a complex asset and its Asset Administration Shell. The hierarchy, typically a Bill of Material (BOM) but also any other relationship between different assets, can be represented in one of its submodels.
+Details and examples for composite I4.0 Components can be found in link:#bib12[[12\]]. A composite I4.0 Component is the combination of a complex asset and its Asset Administration Shell. The hierarchy, typically a Bill of Material (BOM) but also any other relationship between different assets, can be represented in one of its submodels.
 
 
 ====
@@ -823,7 +823,7 @@ Figure 4 Example: Asset Administration Shell, Asset Administration Shell Types a
 
 ====  Overview
 
-According to [4], identifiers are needed for the unique identification of many different elements within the domain of smart manufacturing. They are a fundamental element of a formal description of the Administration Shell. Identification is especially required for
+According to link:#bib4[[4\]], identifiers are needed for the unique identification of many different elements within the domain of smart manufacturing. They are a fundamental element of a formal description of the Administration Shell. Identification is especially required for
 
 * Asset Administration Shells,
 * assets,
@@ -837,21 +837,21 @@ Identification will take place for two purposes
 
 ==== Identifiers for Assets and Administration Shells
 
-In the domain of smart manufacturing, the assets need to be uniquely identified worldwide [4] [20] by the means of identifiers (IDs). The Administration Shell also has a unique ID (see Figure 5).
+In the domain of smart manufacturing, the assets need to be uniquely identified worldwide link:#bib4[[4\]] link:#bib20[[20\]] by the means of identifiers (IDs). The Administration Shell also has a unique ID (see Figure 5).
 
 image:media/media/image6.jpeg[media/media/image6,width=424,height=451]
 
-Figure 5 Unique Identifier for Administration Shell and Asset (Modified Figure from [4])
+Figure 5 Unique Identifier for Administration Shell and Asset (Modified Figure from link:#bib4[[4\]])
 
-An Administration Shell represents exactly one asset, with a unique asset ID. In a batch-based production, the batches will become the assets and will be described by a respective Administration Shell. If a set of assets shall be described by an Administration Shell, a unique ID for the composite asset needs to be created [13].
+An Administration Shell represents exactly one asset, with a unique asset ID. In a batch-based production, the batches will become the assets and will be described by a respective Administration Shell. If a set of assets shall be described by an Administration Shell, a unique ID for the composite asset needs to be created link:#bib13[[13\]].
 
-The ID of the asset needs to comply with the restrictions for global identifiers according to [4][20]. If the asset features further identifications like serial numbers and alike, they are not to be confused with the unique global identifiers of the asset itselffootnote:[Such additional asset identifiers are contained in _AssetInformation/specificAssetIds_.].
+The ID of the asset needs to comply with the restrictions for global identifiers according to link:#bib4[[4\]]link:#bib20[[20\]]. If the asset features further identifications like serial numbers and alike, they are not to be confused with the unique global identifiers of the asset itselffootnote:[Such additional asset identifiers are contained in _AssetInformation/specificAssetIds_.].
 
 ====  What Type of Identifiers Exist?
 
-In [4][20], two standard-conforming global identification types are defined:
+In link:#bib4[[4\]]link:#bib20[[20\]], two standard-conforming global identification types are defined:
 
-* *IRDI* – ISO29002-5, ISO IEC 6523 and ISO IEC 11179-6 [20] as an identifier scheme for properties and classifications. They are created in a process of consortium-wise specification or international standardization. To this end, users come together and feed their ideas into the consortia or standardization bodies. Properties in ISO, IEC help to safeguard key commercial interests. Repositories like ECLASS and others make it possible to standardize a relatively large number of identifiers in an appropriately short time.
+* *IRDI* – ISO29002-5, ISO IEC 6523 and ISO IEC 11179-6 link:#bib20[[20\]] as an identifier scheme for properties and classifications. They are created in a process of consortium-wise specification or international standardization. To this end, users come together and feed their ideas into the consortia or standardization bodies. Properties in ISO, IEC help to safeguard key commercial interests. Repositories like ECLASS and others make it possible to standardize a relatively large number of identifiers in an appropriately short time.
 * *IRI* – IRI (Rfc 3987footnote:[https://tools.ietf.org/html/rfc3987]) or URI and URL according to RFC 3986footnote:[https://tools.ietf.org/html/rfc3986] as identification of assets, Administration Shells and other (probably not standardized, but globally unique) properties and classifications.
 
 The following is also permitted:
@@ -866,7 +866,7 @@ Besides the global identifiers, there are also identifiers that are unique only 
 
 Besides absolute URIs there are also relative URIs.
 
-See also DIN SPEC 91406 [31] for further information on identification.
+See also DIN SPEC 91406 link:#bib31[[31\]] for further information on identification.
 
 ====  Which Identifiers for Which Elements?
 
@@ -983,7 +983,7 @@ IRDI, if the defined qualifier type is standardized and has been assigned an IRD
 
 ==== Usage of Short ID for Identifiable Elements
 
-The Administration Shell fosters the use of worldwide unique identifiers to a large degree. However, in some cases, this may lead to inefficiencies. Example: a property, which is part of a submodel, which in turn is part of an Administration Shell, each of which is identified by global identifiers [4].
+The Administration Shell fosters the use of worldwide unique identifiers to a large degree. However, in some cases, this may lead to inefficiencies. Example: a property, which is part of a submodel, which in turn is part of an Administration Shell, each of which is identified by global identifiers link:#bib4[[4\]].
 
 In an application featuring a resource-oriented architecture (ROA), a worldwide unique resource locator (URL) might be composed of a series of segments, which do not need to be globally unique, see Figure 6image:media/media/image7.jpeg[media/media/image7,width=642,height=381].
 
@@ -1132,7 +1132,7 @@ is identical to
 
 ==== Can New or Proprietary Submodels be Formed?
 
-It is in the interest of Industry 4.0 for as many submodels as possible, including free and proprietary submodels, to be formed (see [4], "Free property sets"). A submodel can be formed at any time for a specific Administration Shell of an asset. The provider of the Administration Shell can form in-house identifiers for the type and instance of the submodel in line with Clause 4.3. All I4.0 systems are called on to ignore submodels and properties that are not individually known. Hence, it is always possible to deposit proprietary – e.g. manufacturer-specific or user-specific – information, submodels, or properties in an Administration Shell.
+It is in the interest of Industry 4.0 for as many submodels as possible, including free and proprietary submodels, to be formed (see link:#bib4[[4\]], "Free property sets"). A submodel can be formed at any time for a specific Administration Shell of an asset. The provider of the Administration Shell can form in-house identifiers for the type and instance of the submodel in line with Clause 4.3. All I4.0 systems are called on to ignore submodels and properties that are not individually known. Hence, it is always possible to deposit proprietary – e.g. manufacturer-specific or user-specific – information, submodels, or properties in an Administration Shell.
 
 
 ====
@@ -1144,7 +1144,7 @@ Note: it is the intention of the Administration Shell to include proprietary inf
 
 A public specification of a submodel template (e.g. via publication by Plattform Industrie 4.0) should be available to instantiate an existing submodel template. In special cases, a submodel can also be instantiated from a non-public submodel template, such as a manufacturer specification.
 
-In November 2020, the first two submodel templates for the Asset Administration Shell were published, one for a nameplate [40] and one for generic technical data [39]. Others followed and will follow. Please see [45] for an overview of registered submodel templates.
+In November 2020, the first two submodel templates for the Asset Administration Shell were published, one for a nameplate link:#bib40[[40\]] and one for generic technical data link:#bib39[[39\]]. Others followed and will follow. Please see link:#bib45[[45\]] for an overview of registered submodel templates.
 
 The identifiers of concept definitions to be used as semantic references are already predefined in each submodel template. An instantiation of such a submodel merely requires the creation of properties with a semantic reference to the property definition and an attached value. The same applies to other subtypes of submodel elements.
 
@@ -1272,7 +1272,7 @@ The legend of the UML diagrams and the table specification of the classes is exp
 
 
 ====
-Note: an xmi representation of the UML model can be found in the repository "aas-specs" in the github project admin-shell-io *[51]*: https://github.com/admin-shell-io/aas-specs/tree/master/schemas/xmi
+Note: an xmi representation of the UML model can be found in the repository "aas-specs" in the github project admin-shell-io *link:#bib51[[51\]]*: https://github.com/admin-shell-io/aas-specs/tree/master/schemas/xmi
 ====
 
 
@@ -1375,7 +1375,7 @@ In principle, the version corresponds to the _version_identifier_ according to I
 
 Other attributes of the administrative information like creator refer to ISO 15836-1:2017, the Dublin Core metadata element set.
 
-For more information on the concept of subject, see Attribute Based Access Control (ABAC) [49]. The assumption is that every subject has a unique identifier.
+For more information on the concept of subject, see Attribute Based Access Control (ABAC) link:#bib49[[49\]]. The assumption is that every subject has a unique identifier.
 
 _AdministrativeInformation_ allows the usage of templates (_HasDataSpecification_). Data specifications are defined in separate documents.
 
@@ -1726,7 +1726,7 @@ Example of a _ValueQualifier_: property "temperature" and qualifier "value quali
 Example of a _ConceptQualifier:_ an Asset Administration Shell with two submodels with different IDs but the same semanticId = "Bill of Material". The qualifier could denote the life cycle with qualifier values like "as planned", "as maintained" etc. (see +
 Figure 21).
 
-image:media/media/image22.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=259,height=111]Example of a _TemplateQualifier:_ a submodel element with qualifier value "mandatory" or "optional". This qualification is needed to build a correct submodel instance. For more information see [48].
+image:media/media/image22.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=259,height=111]Example of a _TemplateQualifier:_ a submodel element with qualifier value "mandatory" or "optional". This qualification is needed to build a correct submodel instance. For more information see link:#bib48[[48\]].
 
  +
 Figure 21 Example: Qualifier from IEC CDD
@@ -1988,7 +1988,7 @@ Note 2: semanticIds for the single specificAssetIds do not need to be unique.
 ====
 
 
-For more information on the concept of subject, see Attribute Based Access Control (ABAC) [49]. The assumption is that every subject has a unique identifier.
+For more information on the concept of subject, see Attribute Based Access Control (ABAC) link:#bib49[[49\]]. The assumption is that every subject has a unique identifier.
 
 ==== image:media/media/image26.png[media/media/image26,width=470,height=139]Submodel Attributes
 
@@ -2189,7 +2189,7 @@ Note: this is an external reference.
 |payload |Event-specific payload |BlobType |0..1
 |===
 
-For more information on the concept of subject, see Attribute Based Access Control (ABAC) [49]. The assumption is that every subject has a unique identifier.
+For more information on the concept of subject, see Attribute Based Access Control (ABAC) link:#bib49[[49\]]. The assumption is that every subject has a unique identifier.
 
 ===== image:media/media/image32.png[media/media/image32,width=146,height=93] Blob Attributes
 
@@ -2231,7 +2231,7 @@ Figure 32 Metamodel of Capabilities
 
 
 ====
-Note: the _semanticId_ of a capability is typically an ontology, which enables reasoning on capabilities. For information and examples on how to apply the concept of capability and how to map it to one or more skills implementing the capability, please refer to [27]. The mapping is done via a relationship element with the corresponding semantics. A skill is typically a property or an operation. In more complex cases, the mapping can also be a collection or a complete submodel.
+Note: the _semanticId_ of a capability is typically an ontology, which enables reasoning on capabilities. For information and examples on how to apply the concept of capability and how to map it to one or more skills implementing the capability, please refer to link:#bib27[[27\]]. The mapping is done via a relationship element with the corresponding semantics. A skill is typically a property or an operation. In more complex cases, the mapping can also be a collection or a complete submodel.
 ====
 
 
@@ -2411,7 +2411,7 @@ An operation is a submodel element with input and output variables.
 
 
 ====
-Note 1: operations typically specify the behavior of a component in terms of procedures. Hence, operations enable the specification of services with procedure-based interactions [23].
+Note 1: operations typically specify the behavior of a component in terms of procedures. Hence, operations enable the specification of services with procedure-based interactions link:#bib23[[23\]].
 ====
 
 
@@ -2551,7 +2551,7 @@ Note: there is no _idShort_ for submodel elements in lists (see Constraint AASd-
 ====
 
 
-Submodel element lists are also used to create multi-dimensional arrays. A two-dimensional array list[3][5] with _Property_ values would be realized like follows: the first submodel element list would contain three _SubmodelElementList_ elements. Each of these three _SubmodelElementLists_ would contain 5 single _Property_ elements. The _semanticId_ of the contained properties would be the same for all lists in the first list, i.e. _semanticIdListElement_ would be identical for all three lists contained in the first list. The _semanticId_ of the three contained lists would differ depending on the dimension it represents. In case of complex values in the array, a _SubmodelElementCollection_ would be used as values in the leaf lists.
+Submodel element lists are also used to create multi-dimensional arrays. A two-dimensional array listlink:#bib3[[3\]]link:#bib5[[5\]] with _Property_ values would be realized like follows: the first submodel element list would contain three _SubmodelElementList_ elements. Each of these three _SubmodelElementLists_ would contain 5 single _Property_ elements. The _semanticId_ of the contained properties would be the same for all lists in the first list, i.e. _semanticIdListElement_ would be identical for all three lists contained in the first list. The _semanticId_ of the three contained lists would differ depending on the dimension it represents. In case of complex values in the array, a _SubmodelElementCollection_ would be used as values in the leaf lists.
 
 Similarly, a table with three columns can be represented. In this case a _SubmodelElementCollection_ with three _SubmodelElementLists_ would be contained and the _semanticId_ as well as the _semanticIdListElement_ for the three columns would differ.
 
@@ -3442,7 +3442,7 @@ a|
 "567"
 
 |QualifierType |_NameType_ a|
-"ExpressionSemantic" (as specified in DIN SPEC 92000:2019-09, see [16])
+"ExpressionSemantic" (as specified in DIN SPEC 92000:2019-09, see link:#bib16[[16\]])
 
 "life cycle qual" (as specified in IEC 61360-7 - IEC/SC 3D - Common Data Dictionary (CDD - V2.0015.0004footnote:[https://cdd.iec.ch/cdd/common/iec61360-7.nsf/SearchFrameset?OpenFrameSet])
 
@@ -3884,7 +3884,7 @@ Note: some of the administrative information like the version number might need 
 
 === General
 
-It is crucial for Industry 4.0 applications to share information between different systems throughout the areas covered by the entire RAMI4.0 model [1] [2]. OPC UA is a frequently used format for information models in the domain of production operations, but there is a need for other formats for further areas and the relationships between them.
+It is crucial for Industry 4.0 applications to share information between different systems throughout the areas covered by the entire RAMI4.0 model link:#bib1[[1\]] link:#bib2[[2\]]. OPC UA is a frequently used format for information models in the domain of production operations, but there is a need for other formats for further areas and the relationships between them.
 
 This document specifies the Asset Administration Shell in a technology-neutral format, UML. Different data formats are used or recommended to be used in the different life cycle phases of a productfootnote:[The word “data formats” is used as shortcut and includes the use of conceptual advantages such as information models, schemes, transmission protocols, etc.]. Serializations and mappings of the Asset Administration Shell are provided to cover the complete life cycle of each of these formats. Figure 57.
 
@@ -4147,7 +4147,7 @@ eXtensible Markup Language (XMLfootnote:[see: https://www.w3.org/TR/2008/REC-xml
 
 
 ====
-Note 1: the xml schema (.xsd files) is maintained in the repository "aas-specs" of the github project admin-shell-io [51]: aas-specs-3.0\schemas\xml
+Note 1: the xml schema (.xsd files) is maintained in the repository "aas-specs" of the github project admin-shell-io link:#bib51[[51\]]: aas-specs-3.0\schemas\xml
 ====
 
 
@@ -4167,11 +4167,11 @@ Note 3: example files can be found here: aas-specs-3.0\schemas\xml\examples
 
 JSONfootnote:[see: https://tools.ietf.org/html/rfc8259 or https://www.ecma-international.org/publications/standards/Ecma-404.htm] (JavaScript Object Notation) is a further serialization format that serializes the metamodel of an Asset Administration Shell for import and export scenarios.
 
-Additionally, JSON format is used to describe the payload in the http/REST API for active Asset Administration Shells [37].
+Additionally, JSON format is used to describe the payload in the http/REST API for active Asset Administration Shells link:#bib37[[37\]].
 
 
 ====
-Note 1: the JSON schema (.json files) is maintained in the repository "aas-specs" of the github project admin-shell-io [51]: aas-specs-3.0\schemas\json
+Note 1: the JSON schema (.json files) is maintained in the repository "aas-specs" of the github project admin-shell-io link:#bib51[[51\]]: aas-specs-3.0\schemas\json
 ====
 
 
@@ -4189,7 +4189,7 @@ Note 3: example files can be found here: aas-specs-3.0\schemas\json\examples
 
 ===  RDF
 
-The Resource Description Framework (RDF) [32] is the recommended standard of the W3C to unambiguously model and present semantic data. RDF documents are structured in the form of triples, consisting of subjects, relations, and objects. The resulting model is often interpreted as a graph, with the subject and object elements as the nodes and the relations as the graph edges.
+The Resource Description Framework (RDF) link:#bib32[[32\]] is the recommended standard of the W3C to unambiguously model and present semantic data. RDF documents are structured in the form of triples, consisting of subjects, relations, and objects. The resulting model is often interpreted as a graph, with the subject and object elements as the nodes and the relations as the graph edges.
 
 RDF is closely related to web standards, illustrated by the fact that all elements are encoded using (HTTP-)IRIs. As a common practice, the provision of additional information at the referenced location of an RDF entity directly allows the interlinking of entitiesfootnote:[Note: entity as a generic term and entity as a specific submodel element subtype need tobe distinugished.] based on the web. This process – following links in order to discover related information – is called dereferencing a resource and is supported by any browser or web client. Connecting distributed data sources through the web in the described manner is referred to by the term “Linked Data”. Connecting the available resources and capabilities of linked data with the expressiveness of the Asset Administration Shell is one motivation for the RDF serialization.
 
@@ -4199,7 +4199,7 @@ Combining both features, the RDF mapping of the Asset Administration Shell can p
 
 
 ====
-Note 1: the RDF scheme/OWL files (.ttl files) are maintained in the repository "aas-specs" of the github project admin-shell-io [51]: aas-specs-3.0\schemas\rdf
+Note 1: the RDF scheme/OWL files (.ttl files) are maintained in the repository "aas-specs" of the github project admin-shell-io link:#bib51[[51\]]: aas-specs-3.0\schemas\rdf
 ====
 
 
@@ -4227,7 +4227,7 @@ For the role classes and interface classes that are required for serialization, 
 
 One of the goals is to ensure that the AutomationML model of the Asset Administration Shell can be used as a stand-alone AutomationML model, as well as in combination with existing AutomationML models such as the upcoming AutomationML Component Description. Therefore, the definition of the serialization approach defined in this clause is incorporated with the AutomationML definitions and applies the AutomationML technology definitions available on https://www.automationml.org/o.red.c/dateien.html.
 
-[28] is the AutomationML application recommendation for the Asset Administration Shell (AR AAS).
+link:#bib28[[28\]] is the AutomationML application recommendation for the Asset Administration Shell (AR AAS).
 
 
 ====
@@ -4237,19 +4237,19 @@ Note 1: the mapping of the Asset Administration Shell to AutomationML is carried
 
 
 ====
-Note 2: the resulting application recommendation (AR 004E) "Asset Administration Shell (AAS) Representation" [28] can be found here: https://www.automationml.org/download-archive/, together with .aml files
+Note 2: the resulting application recommendation (AR 004E) "Asset Administration Shell (AAS) Representation" link:#bib28[[28\]] can be found here: https://www.automationml.org/download-archive/, together with .aml files
 ====
 
 
 ===  OPC UA
 
-OPC UA is suited for the operating phase of Asset Administration Shellsfootnote:[OPC UA is used for several purposes in the context of Industry 4.0. In this document, however, the focus is on Asset Administration Shell representation only.] and especially applicable in case of machine-to-machine communication. The information model [42] is the basis for the definition of so-called OPC UA Information Models, or OPC UA Companion Specifications [43].
+OPC UA is suited for the operating phase of Asset Administration Shellsfootnote:[OPC UA is used for several purposes in the context of Industry 4.0. In this document, however, the focus is on Asset Administration Shell representation only.] and especially applicable in case of machine-to-machine communication. The information model link:#bib42[[42\]] is the basis for the definition of so-called OPC UA Information Models, or OPC UA Companion Specifications link:#bib43[[43\]].
 
-Note1 : the mapping to the OPC UA are carried out in a joint working groupfootnote:[see: https://opcfoundation.org/collaboration/i4aas/] "I4AAS" between OPC Foundation, ZVEI and VDMA (https://opcfoundation.org/markets-collaboration/I4AAS/ [30].
+Note1 : the mapping to the OPC UA are carried out in a joint working groupfootnote:[see: https://opcfoundation.org/collaboration/i4aas/] "I4AAS" between OPC Foundation, ZVEI and VDMA (https://opcfoundation.org/markets-collaboration/I4AAS/ link:#bib30[[30\]].
 
 
 ====
-Note 2: the different versions of the OPC UA Companion Specification for I4AAS can be found here: https://reference.opcfoundation.org/%3cversion%3e/I4AAS/%3cversion%3e/docs/[https://reference.opcfoundation.org/<version>/I4AAS/<version>/docs/], e.g. https://reference.opcfoundation.org/v104/I4AAS/v100/docs/ for release 1.00 [41].
+Note 2: the different versions of the OPC UA Companion Specification for I4AAS can be found here: https://reference.opcfoundation.org/%3cversion%3e/I4AAS/%3cversion%3e/docs/[https://reference.opcfoundation.org/<version>/I4AAS/<version>/docs/], e.g. https://reference.opcfoundation.org/v104/I4AAS/v100/docs/ for release 1.00 link:#bib41[[41\]].
 ====
 
 
@@ -4264,7 +4264,7 @@ Several serializations and mappings are offered for the Asset Administration She
 * AutomationML for the engineering phase,
 * OPC UA for the operation phase.
 
-Additional parts of the document series cover (see [37]):
+Additional parts of the document series cover (see link:#bib37[[37\]]):
 
 * interfaces and APIs for accessing the information of Asset Administration Shells (access, modify, query, and execute information and active functionality), Part 2; the payload of these APIs is based on the definitions of the information model in this document, Part 1,
 * predefined data specification templates (Part 3 series), for example for concept descriptions of properties conformant to IEC61360 (Part 3a),
@@ -4282,14 +4282,14 @@ Annex A provides general information about sources of information and relevant c
 
 The following documents were used to identify requirements and concepts for the Administration Shell:
 
-* implementation strategy of Plattform Industrie 4.0 [1][2],
-* aspects of the research roadmap in application scenarios [7],
-* continuation of the application scenarios [8],
-* structure of the Administration Shell [4] [19],
-* examples for the Administration Shell of the Industrie 4.0 Components [6],
-* technical overview "Secure identities" [9],
-* security of the Administration Shell [15],
-* relationships between I4.0 components – composite components and smart production [13].
+* implementation strategy of Plattform Industrie 4.0 link:#bib1[[1\]]link:#bib2[[2\]],
+* aspects of the research roadmap in application scenarios link:#bib7[[7\]],
+* continuation of the application scenarios link:#bib8[[8\]],
+* structure of the Administration Shell link:#bib4[[4\]] link:#bib19[[19\]],
+* examples for the Administration Shell of the Industrie 4.0 Components link:#bib6[[6\]],
+* technical overview "Secure identities" link:#bib9[[9\]],
+* security of the Administration Shell link:#bib15[[15\]],
+* relationships between I4.0 components – composite components and smart production link:#bib13[[13\]].
 
 
 ====
@@ -4311,21 +4311,21 @@ Note 3: the online library of the Industrial Digital Twin Association can be fou
 
 === Basic Concepts for Industry 4.0
 
-Industry 4.0 describes concepts and definitions for the domain of smart manufacturing. For Industry 4.0, the term asset, being any "object which has a value for an organization", is of central importance [2] [21]. Industry 4.0 assets can take almost any form, e.g. a production system, a product, a software installation, intellectual properties, or even human resources.
+Industry 4.0 describes concepts and definitions for the domain of smart manufacturing. For Industry 4.0, the term asset, being any "object which has a value for an organization", is of central importance link:#bib2[[2\]] link:#bib21[[21\]]. Industry 4.0 assets can take almost any form, e.g. a production system, a product, a software installation, intellectual properties, or even human resources.
 
-According to [21], the "reference architecture model Industry 4.0 (RAMI4.0) provides a structured view of the main elements of an asset using a level model consisting of three axes [...]. Complex interrelationships can thus be broken down into smaller, more manageable sections by combining all three axes at each point in the asset’s life to represent each relevant aspect."
+According to link:#bib21[[21\]], the "reference architecture model Industry 4.0 (RAMI4.0) provides a structured view of the main elements of an asset using a level model consisting of three axes [...]. Complex interrelationships can thus be broken down into smaller, more manageable sections by combining all three axes at each point in the asset’s life to represent each relevant aspect."
 
-Assets shall have a logical representation in the "information world", e.g. managed by IT systems. Consequently, an asset needs a precise identification as an entity, shall have a "specific state within its life (at least a type or instance)", shall have communication capabilities, shall be represented by means of information and shall be able to provide technical functionality [21]. This logical representation of an asset is called Administration Shell [4]. The combination of asset and Administration Shell forms the so-called I4.0 component. In international papers [19], the term smart manufacturing replaces the term Industry 4.0.
+Assets shall have a logical representation in the "information world", e.g. managed by IT systems. Consequently, an asset needs a precise identification as an entity, shall have a "specific state within its life (at least a type or instance)", shall have communication capabilities, shall be represented by means of information and shall be able to provide technical functionality link:#bib21[[21\]]. This logical representation of an asset is called Administration Shell link:#bib4[[4\]]. The combination of asset and Administration Shell forms the so-called I4.0 component. In international papers link:#bib19[[19\]], the term smart manufacturing replaces the term Industry 4.0.
 
-As far as the large variety of assets in Industry 4.0 are concerned, the Asset Administration Shell allows these assets to be handled in the same manner within the information world. This reduces complexity and allows for scalability. Additional motivation can be found in [2] [4] [7] [8].
+As far as the large variety of assets in Industry 4.0 are concerned, the Asset Administration Shell allows these assets to be handled in the same manner within the information world. This reduces complexity and allows for scalability. Additional motivation can be found in link:#bib2[[2\]] link:#bib4[[4\]] link:#bib7[[7\]] link:#bib8[[8\]].
 
 image:media/media/image60.jpeg[media/media/image60,width=642,height=473]
 
-Figure 59 Important Concepts of Industry 4.0 attached to the Asset [2] [21]
+Figure 59 Important Concepts of Industry 4.0 attached to the Asset link:#bib2[[2\]] link:#bib21[[21\]]
 
 === The Concept of Properties
 
-According to [20], the "IEC 61360 series provides a framework and an information model for product dictionaries. The concept of product type is represented by 'classes' and the product characteristics are represented by 'properties'".
+According to link:#bib20[[20\]], the "IEC 61360 series provides a framework and an information model for product dictionaries. The concept of product type is represented by 'classes' and the product characteristics are represented by 'properties'".
 
 Standardized data elements are an example for such properties. The definitions can be found in a range of repositories, such as IEC CDD (common data dictionary) or ECLASS. The definition of a property (aka standardized data element type, property type) associates a worldwide unique identifier with a definition, which is a set of well-defined attributes. Relevant attributes for the Administration Shell are, amongst others, the preferred name, the symbol, the unit of measure, and a human-readable textual definition of the property.
 
@@ -4343,7 +4343,7 @@ Note: Industry 4.0 and smart manufacturing in general will require many properti
 
 === The Concept of Submodels
 
-"The Administration Shell is the standardized digital representation of the asset, corner stone of the interoperability between the applications managing the manufacturing systems" [19]. Hence, it should provide a minimal but sufficient description according to the different application scenarios in Industry 4.0 [7] [8]. Many different (international) standards, consortia and manufacturer specifications can already contribute to this description [19].
+"The Administration Shell is the standardized digital representation of the asset, corner stone of the interoperability between the applications managing the manufacturing systems" link:#bib19[[19\]]. Hence, it should provide a minimal but sufficient description according to the different application scenarios in Industry 4.0 link:#bib7[[7\]] link:#bib8[[8\]]. Many different (international) standards, consortia and manufacturer specifications can already contribute to this description link:#bib19[[19\]].
 
 As the figure shows, information from many different domains can be associated with a respective asset, and many different properties are required to be represented in Administration Shells of future I4.0 components. The architectural principle "separation of concerns" is supported by submodels.
 
@@ -4351,7 +4351,7 @@ image:media/media/image62.jpg[media/media/image62,width=642,height=453]
 
 Figure 61 Examples of Different Domains Providing Properties for Submodels of the Administration Shell
 
-The Administration Shell is made up of a series of submodels [4]. These represent different aspects of the asset concerned. For example, they may contain a description relating to safety or security [15] but they could also outline various process capabilities such as drilling or installation [6].
+The Administration Shell is made up of a series of submodels link:#bib4[[4\]]. These represent different aspects of the asset concerned. For example, they may contain a description relating to safety or security link:#bib15[[15\]] but they could also outline various process capabilities such as drilling or installation link:#bib6[[6\]].
 
 From an interoperability perspective, the goal is to standardize only a single submodel for each aspect/ technical domain. For example, it will be possible to find a drilling machine by searching for an Administration Shell containing a submodel "Drilling" with appropriate properties. Certain properties can then be assumed to exist for communication between different I4.0 components. In our example, a second submodel "energy efficiency" could make sure the drilling machine is able to cut its electricity consumption when out of operation.
 
@@ -4363,7 +4363,7 @@ Note: a side benefit of the Administration Shell will be to simplify the update 
 
 === Basic Structure of the Asset Administration Shell
 
-The document on the structure of the Asset Administration Shell [4] [19] presents a rough, logical view of the Asset Administration Shell’s structure. The Asset Administration Shell – shown in blue in the following figure – comprises different sets of information. Both the asset and the Administration Shell are identified by a globally unique identifier. It comprises a number of submodels, which characterize the Asset Administration Shell.
+The document on the structure of the Asset Administration Shell link:#bib4[[4\]] link:#bib19[[19\]] presents a rough, logical view of the Asset Administration Shell’s structure. The Asset Administration Shell – shown in blue in the following figure – comprises different sets of information. Both the asset and the Administration Shell are identified by a globally unique identifier. It comprises a number of submodels, which characterize the Asset Administration Shell.
 
 image:media/media/image63.jpeg[media/media/image63,width=642,height=591]
 
@@ -4375,21 +4375,21 @@ Each submodel contains a structured quantity of properties that can refer to dat
 
 The properties of all the submodels therefore result in a constantly readable key information directory of the Administration Shell and hence of the I4.0 component. To enable binding semantics, Administration Shells, assets, submodels, and properties must all be clearly identified. For identification of these element the following types of global identifiers are allowed: IRDIs (used for example in ISO TS 29002-5, ECLASS and IEC CDD) and IRIs (Internationalized Resource Identifier, used for example in ontologies).
 
-It should be possible to filter elements of the Administration Shell or submodels according to different given views (see example C.4 in [19]). This facilitates different perspectives or use cases to access the Administration Shell's information.
+It should be possible to filter elements of the Administration Shell or submodels according to different given views (see example C.4 in link:#bib19[[19\]]). This facilitates different perspectives or use cases to access the Administration Shell's information.
 
 === How Are New Identifiers Created?
 
 Following the different identification types from Clause 4.3.4, it can be stated that:
 
 [loweralpha]
-. IRDIs are assumed to already exist due to an external specification and standardization process in the creation of a certain Administration Shell. To bring such IRDI identifiers to life, please refer to Clause 5 of this document [4].
+. IRDIs are assumed to already exist due to an external specification and standardization process in the creation of a certain Administration Shell. To bring such IRDI identifiers to life, please refer to Clause 5 of this document link:#bib4[[4\]].
 . URIs and URLs can easily be created by developers when forming a certain Administration Shell. All they need is a valid authenticated URL, for example of the company. They also need to make sure that the domain (e.g. admin-shell.io) appended to the host’s name is reserved in a semantically unique way for these identifiers. This way, each developer can create an arbitrary URI or URL by combining the host name and some chosen path, which only needs to be unique in the developer's organization.
 . Custom identifiers can also be easily formed by developers. They only need to make sure that internal custom identifiers can be clearly distinguished from (a) or (b).
 . Local identifiers can also be created on the fly. They have to be unique within their namespace.
 
 === Best Practice for Creating URI Identifiers
 
-The approach for semantics and interaction for I4.0 components [18] suggests the use of the following structure (see Table 11) for URIsfootnote:[URLs are also URIs], which is slightly modified here. The idea is to always structure URIs following a scheme of different elements. However, this is just a recommendation and by no means mandatory.
+The approach for semantics and interaction for I4.0 components link:#bib18[[18\]] suggests the use of the following structure (see Table 11) for URIsfootnote:[URLs are also URIs], which is slightly modified here. The idea is to always structure URIs following a scheme of different elements. However, this is just a recommendation and by no means mandatory.
 
 Proposed Structure for URIs
 
@@ -4471,7 +4471,7 @@ Note: the last row of Table 12 is only used for completion; the metamodel does n
 
 This annex collects the requirements from various documents that have impact on the specific structure of the Administration Shell. They serve as input for the specific description of the structures of the Administration Shell.
 
-The following requirements are taken from the document "Implementation strategy of Plattform Industrie 4.0" [2]footnote:[Only editorial changes]. They are marked "STRAT". The "Tracking" column validates the requirements by linking to features of the UML metamodel or this document in general.
+The following requirements are taken from the document "Implementation strategy of Plattform Industrie 4.0" link:#bib2[[2\]]footnote:[Only editorial changes]. They are marked "STRAT". The "Tracking" column validates the requirements by linking to features of the UML metamodel or this document in general.
 
 [width="100%",cols="13%,55%,32%",options="header",]
 |===
@@ -4489,7 +4489,7 @@ Common semantic model realized by domain-specific submodels (_HasSemantics_/ _Co
 |STRAT#7 |Depending on the nature of the higher-level systems, it may be necessary for the administration objects to allow for deployment in more than one higher-level IT system. |Metamodel and information representation independent of any deployment scenario
 |STRAT#8 |The Industry 4.0 component, the Administration Shell, its inherent functionality, and the protocols concerned are to be "encapsulation-capable" or "separable" from any field busses in use. |Metamodel and information representation independent of any communication scenario
 |STRAT#9 |The aim of the Industry 4.0 component is to detect non-Industry 4.0-compliant communication relationships leading to or from the object’s Administration Shell and to make them accessible to end-to-end engineering. |Non-Industry 4.0-compliant communication relationships could be modelled and made available by submodels
-|STRAT#10 |It should be possible to logically assign other Industry 4.0 components to one Industry 4.0 component (e.g. an entire machine) to ensure (temporary) nesting. |_References, Entity, RelationshipElements_ (see _Composite components_ [12])
+|STRAT#10 |It should be possible to logically assign other Industry 4.0 components to one Industry 4.0 component (e.g. an entire machine) to ensure (temporary) nesting. |_References, Entity, RelationshipElements_ (see _Composite components_ link:#bib12[[12\]])
 |STRAT#11 |Higher-level systems should be able to access all Industry 4.0 components in a purpose-driven and restricted manner, even when these are (temporarily) logically assigned. |Scope of upcoming part of the document series; not scope of this part
 |STRAT#12 |Characteristics (1) identifiability |Given by _Identifiable_
 |STRAT#13 |Characteristics (2) I4.0-compliant communication |Not scope of part 1
@@ -4513,7 +4513,7 @@ Not scope of this part, security upcoming as Part 4
 
 The following requirements are taken from the document "The Structure of the Administration Shell:
 
-Trilateral perspectives from France, Italy and Germany" [19]. They are marked "tAAS".
+Trilateral perspectives from France, Italy and Germany" link:#bib19[[19\]]. They are marked "tAAS".
 
 
 ====
@@ -4619,7 +4619,7 @@ Note: an Asset Administration Shell represents exactly one asset. In case of a c
 ====
 
 
-|tAAS-#11 |The information and functionality in the Administration Shell is accessible by means of a standardized application programming interface (API). |Covered in Part 2 of this document series [37]
+|tAAS-#11 |The information and functionality in the Administration Shell is accessible by means of a standardized application programming interface (API). |Covered in Part 2 of this document series link:#bib37[[37\]]
 |tAAS-#12 |The Administration Shell has a unique ID. a|
 _AssetAdministrationShell/id_
 
@@ -4923,9 +4923,9 @@ Note: in the Annex listing the metamodel changes, constraints with prefix AASs- 
 
 === OMG UML General
 
-This annex explains the UML elements used in this specification. For more information, please refer to the comprehensive literature available for UML. The formal specification can be found in [35].
+This annex explains the UML elements used in this specification. For more information, please refer to the comprehensive literature available for UML. The formal specification can be found in link:#bib35[[35\]].
 
-image:media/media/image64.png[media/media/image64,width=86,height=80]Figure 63 shows a class with name "Class1" and an attribute with name "attr" of type _Class2_. Attributes are owned by the class. Some of these attributes may represents the end of binary associations, see also Figure 70. In this case, the instance of _Class2_ is navigable via the instance of the owning class _Class1_.footnote:[„Navigability notation was often used in the past according to an informal convention, whereby non-navigable ends were assumed to be owned by the Association whereas navigable ends were assumed to be owned by the Classifier at the opposite end. This convention is now deprecated. Aggregation type, navigability, and end ownership are separate concepts, each with their own explicit notation. Association ends owned by classes are always navigable, while those owned by associations may be navigable or not. [35]”]
+image:media/media/image64.png[media/media/image64,width=86,height=80]Figure 63 shows a class with name "Class1" and an attribute with name "attr" of type _Class2_. Attributes are owned by the class. Some of these attributes may represents the end of binary associations, see also Figure 70. In this case, the instance of _Class2_ is navigable via the instance of the owning class _Class1_.footnote:[„Navigability notation was often used in the past according to an informal convention, whereby non-navigable ends were assumed to be owned by the Association whereas navigable ends were assumed to be owned by the Classifier at the opposite end. This convention is now deprecated. Aggregation type, navigability, and end ownership are separate concepts, each with their own explicit notation. Association ends owned by classes are always navigable, while those owned by associations may be navigable or not. link:#bib35[[35\]]”]
 
 Figure 63 Class
 
@@ -5059,7 +5059,7 @@ Note: categories are deprecated and should no longer be used.
 
 === Notes to Graphical UML Representation
 
-Specific graphical modelling rules, which are used in this specification but not included in this form, are explained below [35].
+Specific graphical modelling rules, which are used in this specification but not included in this form, are explained below link:#bib35[[35\]].
 
 Figure 81 shows different graphical representations of a composition (composite aggregation). In Variant A, a relationship with a filled aggregation diamond is used. In Variant B, an attribute with the same semantics is defined. And in Variant C, the implicitly assumed default name of the attribute in Variant A is explicitly stated. This document uses notation B.
 
@@ -5077,7 +5077,7 @@ image:media/media/image82.png[media/media/image82,width=397,height=224] A specia
 
 Figure 82 Graphical Representation of Shared Aggregation
 
-Figure 83 show different graphical representations of generalization. Variant A is the classical graphical representation as defined in [35]. Variant B is a short form, if _Class1_ is not on the same diagram. The name of the class that _Class3_ is inheriting from is depicted in the upper right corner.
+Figure 83 show different graphical representations of generalization. Variant A is the classical graphical representation as defined in link:#bib35[[35\]]. Variant B is a short form, if _Class1_ is not on the same diagram. The name of the class that _Class3_ is inheriting from is depicted in the upper right corner.
 
 Variant C not only shows which class Class3 instances are inheriting from, but also what they are inheriting. This is depicted by the class name it is inheriting from, followed by "::" and then the list of all inherited elements – here attribute _class2_. Typically, the inherited elements are not shown.
 
@@ -5117,7 +5117,7 @@ Figure 87 Graphical Representation of a Template Class
 
 As described in Clause 4.2.1, there is a class of relationships between assets of different hierarchy levels. In this class of relationships, automation equipment is explained as a complex, interrelated graph of automation devices and products, performing intelligent production and self-learning/optimization tasks.
 
-Details and examples for composite I4.0 Components can be found in [13].
+Details and examples for composite I4.0 Components can be found in link:#bib13[[13\]].
 
 The following modelling elements in the Asset Administration Shell metamodel can be used to realize such composite I4.0 Components:
 
@@ -5130,9 +5130,9 @@ Note: the submodel template defining the structure of such a bill of material is
 ====
 
 
-* Not every entity (_Entity_) that is part of the bill of material of an asset necessarily has its own Asset Administration Shell. As described in [13], self-managed entities are distinguished from co-managed entities (_Entity/entityType_).
+* Not every entity (_Entity_) that is part of the bill of material of an asset necessarily has its own Asset Administration Shell. As described in link:#bib13[[13\]], self-managed entities are distinguished from co-managed entities (_Entity/entityType_).
 [arabic]
-. Self-Managed Entities have their own Asset Administration Shell. This is why a reference to this asset is specified via _Entity/globalAssetId_ or an _Entity/specificAssetId_. Additionally, further property statements (_Entity/statement_) [16] can be added to the asset that are not specified in the Asset Administration Shell of the asset itself, since they are specified in relation to the composite I4.0 Component only.
+. Self-Managed Entities have their own Asset Administration Shell. This is why a reference to this asset is specified via _Entity/globalAssetId_ or an _Entity/specificAssetId_. Additionally, further property statements (_Entity/statement_) link:#bib16[[16\]] can be added to the asset that are not specified in the Asset Administration Shell of the asset itself, since they are specified in relation to the composite I4.0 Component only.
 . There is no separate Asset Administration Shell for co-managed entities. The relationships and property statements of such entities are managed within the Asset Administration Shell of the composite I4.0 Component.
 
 Figure 88 shows an extract of the metamodel containing the most important elements to describe composite I4.0 Components.
@@ -5272,7 +5272,7 @@ Note: Security is still part of the Asset Administration Shell, but the Asset Ad
 |  |AssetKind/Instance |Updated description of value "Instance" of enumeration "AssetKind" conformant to IEC 63278-1
 |  |AssetKind/Type |Updated description of value "Type" of enumeration "AssetKind" conformant to IEC 63278-1
 |X |BasicEvent |Renamed to BasicEventElement and set to \<<Experimental>>
-|file:///C:/__localWork/Asset%20Administration%20Shell%20-%20Verwaltungsschale/Verwaltungsschale%20im%20Detail%20-%20part%201a%20V3.0/Change%202.0%20-%203.0.xlsx#RANGE!#REF![(x)[2]] |BlobType |Primitive changed from "group of bytes" to Base64Binary
+|file:///C:/__localWork/Asset%20Administration%20Shell%20-%20Verwaltungsschale/Verwaltungsschale%20im%20Detail%20-%20part%201a%20V3.0/Change%202.0%20-%203.0.xlsx#RANGE!#REF![(x)link:#bib2[[2\]]] |BlobType |Primitive changed from "group of bytes" to Base64Binary
 |X |ConceptDictionary |Removed
 |X |Constraint |Abstract class removed. Formula now used in Security part only
 |x  |DataSpecification |No longer inherits from Identifiable. However, same attribute names and types
@@ -5354,7 +5354,7 @@ Now part of AasSubmodelElements
 |x |ReferenceTypes/GlobalReference |Renamed to ExternalReference
 |  |RelationshipElement/first |Type changes from model reference Referable to Reference (global or model reference)
 |  |RelationshipElement/second |Type changes from model reference Referable to Reference (global or model reference)
-|file:///C:/__localWork/Asset%20Administration%20Shell%20-%20Verwaltungsschale/Verwaltungsschale%20im%20Detail%20-%20part%201a%20V3.0/Change%202.0%20-%203.0.xlsx#RANGE!B79[x[1]] |SubmodelElement/kind |Removed. SubmodelElement no longer inheritsfrom HasKind
+|file:///C:/__localWork/Asset%20Administration%20Shell%20-%20Verwaltungsschale/Verwaltungsschale%20im%20Detail%20-%20part%201a%20V3.0/Change%202.0%20-%203.0.xlsx#RANGE!B79[xlink:#bib1[[1\]]] |SubmodelElement/kind |Removed. SubmodelElement no longer inheritsfrom HasKind
 |  |ValueDataType |Before as specified via DataTypeDef, now any xsd atomic type as specified via DataTypeDefXsd
 | x |View |Removed
 |===
@@ -7127,104 +7127,155 @@ New Elements in Metamodel w.r.t. Security
 
 == Bibliography
 
+[#bib1]
 [1] "Recommendations for implementing the strategic initiative INDUSTRIE 4.0", acatech, April 2013. [Online]. Available: https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/
 
+[#bib2]
 [2] "Implementation Strategy Industrie 4.0: Report on the results of the Industrie 4.0 Platform"; BITKOM e.V. / VDMA e.V., /ZVEI e.V., April 2015. [Online]. Available: https://www.bitkom.org/noindex/Publikationen/2016/Sonstiges/Implementation-Strategy-Industrie-40/2016-01-Implementation-Strategy-Industrie40.pdf
 
+[#bib3]
 [3] DIN SPEC 91345:2016-04 "Referenzarchitekturmodell Industrie 4.0 (RAMI4.0) / Reference Architecture Model Industrie 4.0 (RAMI4.0) / Modèle de reference de l’architecture de l’industrie 4.0 (RAMI4.0)", ICS 03.100.01; 25.040.01; 35.240.50, April 2016. [Online]. Available: https://www.beuth.de/en/technical-rule/din-spec-91345-en/250940128
 
+[#bib4]
 [4] "Structure of the Administration Shell, continuation of the development of the reference model for the Industrie 4.0 component", Plattform Industrie 4.0, Working Paper, April 2016. [Online]. Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/structure-of-the-administration-shell.html
 
+[#bib5]
 [5] "Which criteria do Industrie 4.0 products need to fulfil? Guideline 2020", Federal Ministry for Economic Affairs and Energy (BMWi), July 2020. [Online]. Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/criteria-industrie-40-products_2020.html
 
+[#bib6]
 [6] (German) "Beispiele zur Verwaltungsschale der Industrie 4.0-Komponente – Basisteil"; ZVEI e.V., Whitepaper, November 2016. [Online]. Available: https://www.zvei.org/presse-medien/publikationen/beispiele-zur-verwaltungsschale-der-industrie-40-komponente-basisteil/
 
+[#bib7]
 [7] "Aspects of the research roadmap in application scenarios", Plattform Industrie 4.0, working paper, April 2016. [Online]. Available: http://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/aspects-of-the-research-roadmap.html
 
+[#bib8]
 [8] (German) "Fortschreibung der Anwendungsszenarien der Plattform Industrie 4.0"; Plattform Industrie 4.0, Ergebnispapier, October 2016. [Online]. Available: https://www.plattform-i40.de/I40/Redaktion/DE/Downloads/Publikation/fortschreibung-anwendungsszenarien.html
 
+[#bib9]
 [9] "Security in RAMI4.0", Plattform Industrie 4.0, Berlin, technical overview, April 2016. [Online]. Available: http://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/security-rami40-en.html
 
+[#bib10]
 [10] "Die Deutsche Normungs-Roadmap Industrie 4.0 / The German standardization roadmap Industrie 4.0", DKE Deutsche Kommission Elektrotechnik, Elektronik Informationstechnik im DIN und VDE, Version 2.0, 2015. [Online]. Available: http://www.din.de/de/forschung-und-innovation/industrie4-0/roadmap-industrie40-62178
 
+[#bib11]
 [11] "Weiterentwicklung des Interaktionsmodells für Industrie 4.0-Komponenten", Plattform Industrie 4.0, discussion paper, November 2016. [Online]. Available: https://www.plattform-i40.de/I40/Redaktion/DE/Downloads/Publikation/interaktionsmodell-i40-komponenten-it-gipfel.html
 
+[#bib12]
 [12] "Definition of terms relating to Industrie 4.0", Fraunhofer IOSB and VDI/VDE-GMA Fachausschuss 7.21. Accessed: 2020-11-14. [Online]. Availablefile:///C:/Users/Torben/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/V9OOP350/%20http/i40.iosb.fraunhofer.de/_search[: http://i40.iosb.fraunhofer.de/_search?patterns=FA7.21%20Begriffe]
 
+[#bib13]
 [13] "Relationships between I4.0 Components – Composite Components and Smart Production", Plattform Industrie 4.0, Berlin, working paper, June 2017. [Online]. Available: https://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/hm-2018-relationship.html
 
+[#bib14]
 [14] "Industrie 4.0 Plug-and-Produce for Adaptable Factories"; Plattform Industrie 4.0, Berlin, working paper, June 2017. [Online]. Available: http://www.plattform-i40.de/I40/Redaktion/DE/Downloads/Publikation/Industrie-40-%20Plug-and-Produce.html
 
+[#bib15]
 [15] "Security der Verwaltungsschale / Security of the Administration Shell", Plattform Industrie 4.0, Berlin, working paper, April 2017. [Online]. Available: http://www.plattform-i40.de/I40/Redaktion/DE/Downloads/Publikation/security-der-verwaltungsschale.html
 
+[#bib16]
 [16] DIN SPEC 92000:2019-09 "Data Exchange on the Base of Property Value Statements (PVSX)", 2019 September.
 
+[#bib17]
 [17] "(German) Verwaltungsschale in der Praxis. Wie definiere ich Teilmodelle, beispielhafte Teilmodelle und Interaktion zwischen Verwaltungsschalen", Version 1.0, April 2019, Plattform Industrie 4.0 in Kooperation mit VDI/VDE-GMA Fachausschuss 7.20, Federal Ministry for Economic Affairs and Energy (BMWi), Available: https://www.plattform-i40.de/PI40/Redaktion/DE/Downloads/Publikation/2019-verwaltungsschale-in-der-praxis.html
 
+[#bib18]
 [18] (German) "I4.0-Sprache. Vokabular, Nachrichtenstruktur und semantische Interaktionsprotokolle der I4.0-Sprache", Plattform Industrie 4.0 in Kooperation mit VDI/VDE-GMA Fachausschuss 7.20, April 2018. [Online]. Available: https://www.plattform-i40.de/I40/Redaktion/DE/Downloads/Publikation/hm-2018-sprache.html
 
+[#bib19]
 [19] "The Structure of the Administration Shell: TRILATERAL PERSPECTIVES from France, Italy and Germany", March 2018, [Online]. Available: https://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/hm-2018-trilaterale-coop.html
 
+[#bib20]
 [20] "Industrial automation systems and integration — Exchange of characteristic data — Part 10: Characteristic data exchange format", Technical Specification ISO/TS 29002-10:2009(E), 2009
 
+[#bib21]
 [21] "Smart Manufacturing - Reference Architecture Model Industry 4.0 (RAMI4.0)", IEC PAS 63088, International Electrotechnical Commission (IEC), 2017
 
+[#bib22]
 [22] "System.IO.Packaging Namespace", MSDN, Accessed: 2019-01-26 [Online]. Available: https://msdn.microsoft.com/en-us/library/system.io.packaging(v=vs.110).aspx
 
+[#bib23]
 [23] DIN SPEC 16593-1 "Reference Model for Industrie 4.0 Service Architectures – Part 1: Basic Concepts of an Interaction-based Architecture", Beuth-Verlag: Berlin, Germany, 2018. [Online]. Available: https://www.beuth.de/en/technical-rule/din-spec-16593-1/287632675
 
+[#bib24]
 [24] ISO 13854-42 "Standard data element types with associated classification scheme – Part 1: Definitions – Principles and methods" Edition 4.0, 2017-07
 
+[#bib25]
 [25] IEC 61360-1 "Standard data element types with associated classification scheme – Part 1: Definitions – Principles and methods", Edition 4.0, 2017-07
 
+[#bib26]
 [26] ISO/TS 29002-10:2009(E) "Industrial automation systems and integration — Exchange of characteristic data — Part 10: Characteristic data exchange format", First edition 2009-12-01
 
+[#bib27]
 [27] A. Bayha, J. Bock, B. Boss, C. Diedrich, S. Malakuti "Describing Capabilities of Industrie 4.0 Components". Nov. 2020. Plattform Industrie 4.0. [Online] Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/Capabilities_Industrie40_Components.html
 
+[#bib28]
 [28] AutomationML Association: "Application Recommendations: Asset Administration Shell Representation (AR 004E)", Version 1.0.0, 20.11.2019, [Online]. Available: https://www.automationml.org/o.red.c/dateien.html
 
+[#bib29]
 [29] H. Knublauch, D. Knotokostas "Shapes Constraint Language (SHACL)" W3C Recommendation, 2017, [Online]. Available: https://www.w3.org/TR/shacl/
 
+[#bib30]
 [30] "I4AAS – Industrie 4.09 Asset Administration Shell". June 2021. [Online] Available: https://opcfoundation.org/markets-collaboration/I4AAS/
 
+[#bib31]
 [31] DIN SPEC 91406:2019 "Automatische Identifikation von physischen Objekten und Informationen zum physischen Objekt in IT-Systemen, insbesondere IoT-Systemen/Automatic identification of physical objects and information on physical objects in IT systems, particularly IoT systems". December 2019
 
+[#bib32]
 [32] F. Manola, E. Miller "RDF 1.1 Primer" W3C Recommendation, 2014, [Online]. Available: https://www.w3.org/TR/rdf11-primer/
 
+[#bib33]
 [33] T. R. Gruber "A translation approach to portable ontology specifications." Knowledge acquisition 5.2 (1993): 199-220. [Online]. Available: https://tomgruber.org/writing/ontolingua-kaj-1993.htm
 
+[#bib34]
 [34] "The Industrial Internet of Things Vocabulary". Technical Report. Version 2.3. October 10, 2020. Industrial Internet Consortium. IIC:IIVOC:V2.3:20201025 [Online] Available: https://www.iiconsortium.org/vocab/
 
+[#bib35]
 [35] "OMG Unified Modelling Language (OMG UML)". Formal/2017-12-05. Version 2.5.1. December 2018. [Online] Available: file:///C:/Users/Torben/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/V9OOP350/https/www.omg.org/spec/UML/[www.omg.org/spec/UML/]
 
+[#bib36]
 [36] T. Preston-Werner "Semantic Versioning". Version 2.0.0. Accessed: 2020-11-13. [Online] Available: https://semver.org/spec/v2.0.0.html
 
-[37] "Details of the Asset Administration Shell – Interoperability at Runtime – Exchanging Information via Application Programming Interfaces". See [46].
+[#bib37]
+[37] "Details of the Asset Administration Shell – Interoperability at Runtime – Exchanging Information via Application Programming Interfaces". See link:#bib46[[46\]].
 
-[38] "Asset Administration Shell. Reading Guide". Plattform Industrie 4.0 in cooperation with IDTA. November 2020. See [46].
+[#bib38]
+[38] "Asset Administration Shell. Reading Guide". Plattform Industrie 4.0 in cooperation with IDTA. November 2020. See link:#bib46[[46\]].
 
+[#bib39]
 [39] "Submodel Templates of the Asset Administration Shell - Generic Frame for Technical Data for Industrial Equipment in Manufacturing", Version 1.1, Nov. 2020, Plattform Industrie 4.0 [Online] Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/Submodel_templates-Asset_Administration_Shell-Technical_Data.html
 
+[#bib40]
 [40] "Submodel Templates of the Asset Administration Shell - ZVEI Digital Nameplate for industrial equipment", Version 1.0, Nov. 2020, Plattform Industrie 4.0 [Online] Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/Submodel_templates-Asset_Administration_Shell-digital_nameplate.html
 
+[#bib41]
 [41] OPC 30270: OPC UA for Asset Administration Shell (AAS). 2021-06-04. [Online]. Available: https://reference.opcfoundation.org/v104/I4AAS/v100/docs/
 
+[#bib42]
 [42] OPC Unified Architecture Specification. Part 5 Information Model. [Online]. Available: https://opcfoundation.org/developer-tools/specifications-unified-architecture
 
+[#bib43]
 [43] OPC UA Information Models. [Online]. Available: https://opcfoundation.org/developer-tools/specifications-opc-ua-information-models
 
+[#bib44]
 [44] IEC 63278-1 "Asset Administration Shell for industrial applications – Part 1: Asset Administration Shell structure". 95/925/CDV
 
+[#bib45]
 [45] "Registered AAS Submodel Templates". Industrial Digital Twin Association. Available: https://industrialdigitaltwin.org/en/content-hub/submodels
 
+[#bib46]
 [46] "Asset Administration Shell Specifications – Quicklinks to Different Versions & Reading Guide". [Online]. Available: https://www.plattform-i40.de/IP/Redaktion/EN/Standardartikel/specification-administrationshell.html
 
+[#bib47]
 [47] (German) "I4.0-Sprache. Vokabular, Nachrichtenstruktur und semantische Interaktionsprotokolle der I4.0-Sprache", Discussion Paper. Plattform Industrie 4.0 [Online] Available: https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/hm-2018-sprache.html
 
+[#bib48]
 [48] "How to create a submodel template specification". Guideline. December 2022. Industrial Digital Twin Association. Available: https://industrialdigitaltwin.org/wp-content/uploads/2022/12/I40-IDTA-WS-Process-How-to-write-a-SMT-FINAL-.pdf
 
+[#bib49]
 [49] Vincent Hu, David Ferraiolo, Rick Kuhn, Adam Schnitzer, Kenneth Sandlin, Robert Miller and Karen Scarfone, "Guide to Attribute Based Access Control (ABAC) Definition and Considerations", NIST Special Publication 800-162, Jan. 2014. [Online]. Available: http://dx.doi.org/10.6028/NIST.SP.800-162
 
+[#bib50]
 [50] "Secure Download Service", Discussion Paper. Oct. 2020, Plattform Industrie 4.0 [Online] Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/secure_downloadservice.html
 
+[#bib51]
 [51] "AAS Repository. Repository for Information and Code for the Asset Administration Shell". https://github.com/admin-shell-io
