@@ -607,6 +607,7 @@ This document specifies the information metamodel of the Asset Administration Sh
 
 The general concept and the structure of the Asset Administration Shell is described in IEC 63278-1 (see Figure 1).
 
+.Figure 1 Asset Administration Shell and Related Roles (Source: IEC 63278-1)
 image:media/media/image2.png[media/media/image2,width=600,height=284]
 
 These are the main specifics and roles defined for the Asset Administration Shell:
@@ -1455,6 +1456,7 @@ For more details on data specifications, please see Clause 6.
 
 ===== Extensions Attributes
 
+.Figure 15 Metamodel of Has Extensions
 image:media/media/image16.png[media/media/image16,width=502,height=260]
 
 [width="100%",cols="28%,33%,24%,15%",options="header",]
@@ -1481,8 +1483,6 @@ Note 2: extensions are proprietary, i.e. they do not support global interoperabi
 |extension |An extension of the element. |Extension |0..*
 |===
 
-image:media/media/image17.png[media/media/image17,width=336,height=104]
-
 [width="100%",cols="24%,32%,32%,12%",options="header",]
 |===
 |Class: |Extension | |
@@ -1500,7 +1500,8 @@ Default: xs:string
 |refersTo |Reference to an element the extension refers to |ModelReference<Referable> |0..*
 |===
 
-Figure 16 Metamodel of HasKind
+.Figure 16 Metamodel of HasKind
+image:media/media/image17.png[media/media/image17,width=336,height=104]
 
 ===== Has Kind Attributes
 
@@ -1716,10 +1717,10 @@ Example of a _ValueQualifier_: property "temperature" and qualifier "value quali
 Example of a _ConceptQualifier:_ an Asset Administration Shell with two submodels with different IDs but the same semanticId = "Bill of Material". The qualifier could denote the life cycle with qualifier values like "as planned", "as maintained" etc. (see +
 Figure 21).
 
-image:media/media/image22.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=259,height=111]Example of a _TemplateQualifier:_ a submodel element with qualifier value "mandatory" or "optional". This qualification is needed to build a correct submodel instance. For more information see link:#bib48[[48\]].
+Example of a _TemplateQualifier:_ a submodel element with qualifier value "mandatory" or "optional". This qualification is needed to build a correct submodel instance. For more information see link:#bib48[[48\]].
 
- +
-Figure 21 Example: Qualifier from IEC CDD
+.Figure 21 Example: Qualifier from IEC CDD
+image:media/media/image22.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=259,height=111]
 
 ===== Referable Attributes
 
@@ -2135,10 +2136,12 @@ Events sent or received by an Asset Administration Shell always comply with a ge
 
 The payload of such an event is specified below.
 
-image:media/media/image31.png[media/media/image31,width=226,height=173]
 ====
 Note: the payload is not part of the information model as exchanged via the AASX package format but used in re-active Asset Administration Shells.
 ====
+
+.Figure 30 Metamodel of Event Payload
+image:media/media/image31.png[media/media/image31,width=226,height=173]
 
 
 [width="100%",cols="23%,39%,29%,9%",options="header",]
@@ -3508,9 +3511,8 @@ image:media/media/image53.png[media/media/image53,width=110,height=91]
 
 The enumeration is derived from Figure 54.
 
+.Figure 53 Data TypeDefXsd Enumeration
 image:media/media/image54.png[media/media/image54,width=137,height=478]Table 9 depicts example values and the value range of the different data types. The left column "Data Type"
-
-Figure 53 Data TypeDefXsd Enumeration
 
 shows the data types which can be used for submodel element values. The data types are defined according to the W3C XML Schema (https://www.w3.org/TR/xmlschema-2/#built-in-datatypes and https://www.w3.org/TR/xmlschema-2/#built-in-derived). "Value Range" further explains the possible range of data values for this data type. The right column shows related examples for values of the corresponding data type.
 
@@ -4788,6 +4790,7 @@ where:
 
 [.underline]#Example:#
 
+____
 *<contact-address> ::= <name> "e-mail addresses:" <e-mail-Addresses>*
 
 *<e-mail-Addresses> ::= \{<e-mail-Address>}**
@@ -4799,15 +4802,18 @@ where:
 *<local-part> ::= characters conformant to local-part in RFC 5322*
 
 *<domain> ::= characters conformant to domain in RFC 5322*
-
 ____
+
 Valid contact addresses:
 
+____
 *Hugo Me e-mail addresses: Hugo@example.com*
 
 *Hugo e-mail addresses: Hugo.Me@text.de*
+____
 
 Invalid contact addresses:
+____
 
 *Hugo*
 
