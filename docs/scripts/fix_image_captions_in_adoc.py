@@ -16,9 +16,6 @@ def move_caption_to_beginning(content):
     # Define the regular expression pattern to match figure tags with specific captions
     pattern = r'(image:\S+\[.*?\])\s+?\n?\n?(Figure.*?\n)'
 
-    # Find all occurrences of the pattern in the content
-    matches = re.findall(pattern, content)
-
     # Replace the original figure tags with the modified ones
     new_content = re.sub(pattern, replacement, content)
     return new_content
