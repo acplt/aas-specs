@@ -1056,7 +1056,7 @@ Note: in this case, most of the attributes are redundant because they are define
 
 If a concept description is not just a copy or refinement of an external standard, the provider of the Asset Administration Shell using this concept description shall be aware that an interoperability with other Asset Administration Shells cannot be ensured.
 
-Data specification templates (_DataSpecification_) can be used to define a named set of additional attributes (besides those predefined by the metamodel) for an element. The data specification template following IEC 61360 is typically used for the concept description of properties, providing e.g. an attribute "preferredName". The _<<template>>_ dependency is used to denote recommended data specification templates. See Clause 5.3.2.2 for details.
+Data specification templates (_DataSpecification_) can be used to define a named set of additional attributes (besides those predefined by the metamodel) for an element. The data specification template following IEC 61360 is typically used for the concept description of properties, providing e.g. an attribute "preferredName". The _\<<template>>_ dependency is used to denote recommended data specification templates. See Clause 5.3.2.2 for details.
 
 Data specification templates like the template for IEC 61360 property definitions (Part 3a) are explicitly predefined and recommended to be used by Plattform Industrie 4.0. See Clause 6 for details. If proprietary templates are used, interoperability with other Asset Administration Shells cannot be ensured.
 
@@ -1155,7 +1155,7 @@ Figure 14 Metamodel of HasDataSpecification
 
 [width="100%",cols="27%,40%,18%,15%,",options="header",]
 |===
-|Class: |HasDataSpecification <<abstract>> | | |
+|Class: |HasDataSpecification \<<abstract>> | | |
 |Explanation: |Element that can be extended by using data specification templates. A data specification template defines a named set of additional attributes an element may or shall have. The data specifications used are explicitly specified with their global ID. | | |
 |Inherits from: |-- | | |
 |Attribute |Explanation |Type |Card. |
@@ -1175,7 +1175,7 @@ image:media/media/image16.png[media/media/image16,width=502,height=260]
 
 [width="100%",cols="28%,33%,24%,15%",options="header",]
 |===
-|Class: |HasExtensions <<abstract>> | |
+|Class: |HasExtensions \<<abstract>> | |
 |Explanation: a|
 Element that can be extended by proprietary extensions
 
@@ -1253,7 +1253,7 @@ For matching algorithm, see Clause 4.4.1.
 
 [width="100%",cols="24%,43%,21%,12%",options="header",]
 |===
-|Class: |HasSemantics <<abstract>> | |
+|Class: |HasSemantics \<<abstract>> | |
 |Explanation: a|
 Element that can have a semantic definition plus some supplemental semantic definitions
 
@@ -1290,7 +1290,7 @@ See Clause 4.3.4 for information about which identifier types are supported.
 
 [width="100%",cols="18%,45%,26%,11%",options="header",]
 |===
-|Class: |Identifiable <<abstract>> | |
+|Class: |Identifiable \<<abstract>> | |
 |Explanation: a|
 An element that has a globally unique identifier
 
@@ -1314,7 +1314,7 @@ image:media/media/image20.png[media/media/image20,width=418,height=148]Figure 19
 
 [width="100%",cols="17%,50%,19%,14%",options="header",]
 |===
-|Class: |Qualifiable <<abstract>> | |
+|Class: |Qualifiable \<<abstract>> | |
 |Explanation: a|
 A qualifiable element may be further qualified by one or more qualifiers.
 
@@ -1351,7 +1351,7 @@ A qualifier is essentially a type-value-pair. Depending on the kind of qualifier
 | |
 |Inherits from: |HasSemantics | |
 |Attribute |Explanation |Type |Card.
-|Kind <<Experimental>> a|
+|Kind \<<Experimental>> a|
 The qualifier kind describes the kind of qualifier that is applied to the element.
 
 Default: ConceptQualifier
@@ -1413,7 +1413,7 @@ The __idShor__t shall be unique in its name space for non-identifiable referable
 
 [width="100%",cols="18%,49%,23%,10%",options="header",]
 |===
-|Class: |Referable <<abstract>> | |
+|Class: |Referable \<<abstract>> | |
 |Explanation: a|
 Note1 : an element that is referable by its idShort. This ID is not globally unique. This ID is unique within the name space of the element.
 
@@ -1424,7 +1424,7 @@ Note 2: see Clause 5.3.12.2 for constraints related to referables.
 | |
 |Inherits from: |HasExtensions | |
 |Attribute |Explanation |Type |Card.
-|category <<Deprecated>> a|
+|category \<<Deprecated>> a|
 The category is a value that gives further meta information w.r.t. the class of the element. It affects the expected existence of attributes and the applicability of constraints.
 
 Note: The category is not identical to the semantic definition (_HasSemantics_) of an element. The category could e.g. denote that the element is a measurement value, whereas the semantic definition of the element would denote that it is the measured temperature.
@@ -1654,7 +1654,7 @@ Submodel elements may also have defined data specification templates. A template
 
 [width="100%",cols="18%,52%,12%,18%",options="header",]
 |===
-|Class: |SubmodelElement <<abstract>> | |
+|Class: |SubmodelElement \<<abstract>> | |
 |Explanation: |A submodel element is an element suitable for the description and differentiation of assets. | |
 |Inherits from: |Referable; HasSemantics; Qualifiable; HasDataSpecification | |
 |Attribute |Explanation |Type |Card.
@@ -1693,7 +1693,7 @@ Figure 29 Metamodel of Basic Event Element
 
 [width="100%",cols="19%,43%,28%,10%",options="header",]
 |===
-|Class: |BasicEventElement <<Experimental>> | |
+|Class: |BasicEventElement \<<Experimental>> | |
 |Explanation: |A basic event element | |
 |Inherits from: |EventElement | |
 |Attribute |Explanation |Type |Card.
@@ -1738,7 +1738,7 @@ Might not be specified, i.e. if there is no maximum interval.
 
 [width="100%",cols="30%,70%",options="header",]
 |===
-|Enumeration: |Direction <<Experimental>>
+|Enumeration: |Direction \<<Experimental>>
 |Explanation: |Direction
 |Set of: |--
 |Literal |Explanation
@@ -1748,7 +1748,7 @@ Might not be specified, i.e. if there is no maximum interval.
 
 [width="100%",cols="30%,70%",options="header",]
 |===
-|Enumeration: |StateOfEvent <<Experimental>>
+|Enumeration: |StateOfEvent \<<Experimental>>
 |Explanation: |State of an event
 |Set of: |--
 |Literal |Explanation
@@ -1764,7 +1764,7 @@ image:media/media/image31.png[media/media/image31,width=226,height=173]Note: the
 
 [width="100%",cols="23%,39%,29%,9%",options="header",]
 |===
-|Class: |EventPayload <<Experimental>> | |
+|Class: |EventPayload \<<Experimental>> | |
 |Explanation: |Defines the necessary information of an event instance sent out or received | |
 |Inherits from: |- | |
 |Attribute |Explanation |Type |Card.
@@ -1851,7 +1851,7 @@ The type of value differs for different subtypes of data elements. Data elements
 
 [width="99%",cols="17%,55%,14%,14%",options="header",]
 |===
-|Class: |DataElement <<abstract>> | |
+|Class: |DataElement \<<abstract>> | |
 |Explanation: a|
 A data element is a submodel element that is not further composed of other submodel elements.
 
@@ -1909,7 +1909,7 @@ Figure 35 Metamodel of Events
 
 [width="99%",cols="19%,50%,17%,14%",options="header",]
 |===
-|Class: |EventElement <<abstract>> <<Experimental>> | |
+|Class: |EventElement \<<abstract>> \<<Experimental>> | |
 |Explanation: |An event element | |
 |Inherits from: |SubmodelElement | |
 |Attribute |Explanation |Type |Card.
@@ -2030,7 +2030,7 @@ image:media/media/image41.png[media/media/image41,width=167,height=117]Figure 40
 
 [width="100%",cols="18%,44%,21%,17%",options="header",]
 |===
-|Class: |Range <<Experimental>> | |
+|Class: |Range \<<Experimental>> | |
 |Explanation: |A range data element is a data element that defines a range with min and max. | |
 |Inherits from: |DataElement | |
 |Attribute |Explanation |Type |Card.
@@ -2242,7 +2242,7 @@ Note 1: if Reference/referredSemanticId is defined, the semanticId of the model 
 Note 2: it is recommended to use an external reference for the semantic ID expected from the referenced model element.
 
 |Reference |0..1
-|key <<ordered>> |Unique reference in its name space |Key |1..*
+|key \<<ordered>> |Unique reference in its name space |Key |1..*
 |===
 
 [width="100%",cols="31%,69%",options="header",]
@@ -3197,7 +3197,7 @@ A template consists of the _DataSpecificationContent_ containing the additional 
 
 [width="100%",cols="25%,38%,25%,12%",options="header",]
 |===
-|Class: |DataSpecification <<Template>> | |
+|Class: |DataSpecification \<<Template>> | |
 |Explanation: |Data specification template | |
 |Inherits from: |-- | |
 |Attribute |Explanation |Type |Card.
@@ -3214,7 +3214,7 @@ Note: some of the administrative information like the version number might need 
 
 [width="100%",cols="25%,38%,25%,12%",options="header",]
 |===
-|Class: |DataSpecificationContent <<Template>><<abstract>> | |
+|Class: |DataSpecificationContent \<<Template>>\<<abstract>> | |
 |Explanation: |Data specification content is part of a data specification template and defines, which additional attributes shall be added to the element instance that references the data specification template and meta information about the template itself. | |
 |Inherits from: |-- | |
 |Attribute |Explanation |Type |Card.
@@ -4038,19 +4038,19 @@ Template for Classes:
 
 [width="100%",cols="36%,29%,23%,12%",options="header",]
 |===
-|Class: |<Class Name> [<<abstract>>] ["<<Experimental>>"] ["<<Deprecated>>"] ["<<Template>>"] | |
+|Class: |<Class Name> [\<<abstract>>] ["\<<Experimental>>"] ["\<<Deprecated>>"] ["\<<Template>>"] | |
 |Explanation: |<Explanatory text> | |
 |Inherits from: |\{<Class Name> ";" }+ \| "-" | |
 |Attribute |Explanation |Type |Card.
-|<attribute or association name> ["<<ordered>>"] ["<<Experimental>>"] ["<<Deprecated>>"] |<Explanatory text> |<Type> |<Card>
+|<attribute or association name> ["\<<ordered>>"] ["\<<Experimental>>"] ["\<<Deprecated>>"] |<Explanatory text> |<Type> |<Card>
 |===
 
 The following stereotypes can be used:
 
-* <<abstract>>: Class cannot be instantiated but serves as superclass for inheriting classes
-* <<Experimental>>: Class is experimental, i.e. usage is only recommended for experimental purposes because non backward compatible changes may occur in future versions
-* <<Deprecated>>: Class is deprecated, i.e. it is recommended to not use the element any longer; it will be removed in a next major version of the model
-* <<Template>>: Class is a template only, i.e. class is not instantiated but used for additional specification purposes (for details see parts 3 of document series)
+* \<<abstract>>: Class cannot be instantiated but serves as superclass for inheriting classes
+* \<<Experimental>>: Class is experimental, i.e. usage is only recommended for experimental purposes because non backward compatible changes may occur in future versions
+* \<<Deprecated>>: Class is deprecated, i.e. it is recommended to not use the element any longer; it will be removed in a next major version of the model
+* \<<Template>>: Class is a template only, i.e. class is not instantiated but used for additional specification purposes (for details see parts 3 of document series)
 * The following kinds of _Types_ are distinguished:
 * _Primitive:_ Type is no object type (class) but a data type; it is just a value
 * _Class:_ Type is an object type (class); it is realized as composite aggregation (composition), and does not exist independent of its parent
@@ -4095,16 +4095,16 @@ Template for Enumerations:
 
 [width="100%",cols="30%,70%",options="header",]
 |===
-|Enumeration: |<Enumeration Name> ["<<Experimental>>"] ["<<Deprecated>>"]
+|Enumeration: |<Enumeration Name> ["\<<Experimental>>"] ["\<<Deprecated>>"]
 |Explanation: |
 |Set of: |\{<Enumeration> ";" }+ \| "-"
 |Literal |Explanation
-|<enumValue1>["<<Experimental>>"] ["<<Deprecated>>"] a|
+|<enumValue1>["\<<Experimental>>"] ["\<<Deprecated>>"] a|
 <Explanatory text>
 
 Value of enumeration
 
-|<enumValue2> ["<<Experimental>>"] ["<<Deprecated>>"] a|
+|<enumValue2> ["\<<Experimental>>"] ["\<<Deprecated>>"] a|
 <Explanatory text>
 
 Value of enumeration, also included in one of the enumerations listed in "Set of:"
@@ -4159,7 +4159,7 @@ The default is 1 for lower-bound and upper-bound.
 
 image:media/media/image66.png[media/media/image66,width=200,height=80]Figure 65 Multiplicity
 
-image:media/media/image67.png[media/media/image67,width=233,height=80]A multiplicity element represents a collection of values. The default is a set, i.e. it is not ordered and the elements within the collection are unique and contain no duplicates. Figure 66 shows an ordered collection: the instances of _Class2_ related to an instance of _Class1_. The stereotype <<ordered>> is used to denote that the relationship is ordered.
+image:media/media/image67.png[media/media/image67,width=233,height=80]A multiplicity element represents a collection of values. The default is a set, i.e. it is not ordered and the elements within the collection are unique and contain no duplicates. Figure 66 shows an ordered collection: the instances of _Class2_ related to an instance of _Class1_. The stereotype \<<ordered>> is used to denote that the relationship is ordered.
 
 Figure 66 Ordered Multiplicity
 
@@ -4187,7 +4187,7 @@ image:media/media/image72.png[media/media/image72,width=206,height=80]Figure 72 
 
 Figure 72 Dependency
 
-image:media/media/image73.png[media/media/image73,width=86,height=80]Figure 73 shows an abstract class. It uses the stereotype <<abstract>>. There are no instances of abstract classes. They are typically used for specific member elements that are inherited by non-abstract classes.
+image:media/media/image73.png[media/media/image73,width=86,height=80]Figure 73 shows an abstract class. It uses the stereotype \<<abstract>>. There are no instances of abstract classes. They are typically used for specific member elements that are inherited by non-abstract classes.
 
 Figure 73 Abstract Class
 
@@ -4195,15 +4195,15 @@ Figure 74 shows a package named "Package2". A package is a namespace for its mem
 
 image:media/media/image74.png[media/media/image74,width=106,height=80]Figure 74 Package
 
-image:media/media/image75.png[media/media/image75,width=256,height=86]Figure 75 shows that all elements in _Package2_ are imported into the namespace defined by _Package1_. This is a special dependency relationship between the two packages with stereotype <<import>>.
+image:media/media/image75.png[media/media/image75,width=256,height=86]Figure 75 shows that all elements in _Package2_ are imported into the namespace defined by _Package1_. This is a special dependency relationship between the two packages with stereotype \<<import>>.
 
 Figure 75 Imported Package
 
-image:media/media/image76.png[media/media/image76,width=119,height=93] Figure 76 shows an enumeration with the name "Enumeration1". An enumeration is a data type with its values enumerated as literals. It contains two literal values, "a" and "b". It is a class with stereotype <<enumeration>>. The literals owned by the enumeration are ordered.
+image:media/media/image76.png[media/media/image76,width=119,height=93] Figure 76 shows an enumeration with the name "Enumeration1". An enumeration is a data type with its values enumerated as literals. It contains two literal values, "a" and "b". It is a class with stereotype \<<enumeration>>. The literals owned by the enumeration are ordered.
 
-Figure 76 Enumerationfootnote:[In Enterprise Architect, the single enumeration values also have a stereotype <<enum>> each.]
+Figure 76 Enumerationfootnote:[In Enterprise Architect, the single enumeration values also have a stereotype \<<enum>> each.]
 
-image:media/media/image77.png[media/media/image77,width=86,height=73]Figure 77 shows the definition of the data type with the name "DataType1". A data type has instances that are identified only by their value. It is a class with stereotype <<dataType>>.
+image:media/media/image77.png[media/media/image77,width=86,height=73]Figure 77 shows the definition of the data type with the name "DataType1". A data type has instances that are identified only by their value. It is a class with stereotype \<<dataType>>.
 
 Figure 77 Data Type
 
@@ -4229,7 +4229,7 @@ The following rules are used for naming of classes, attributes etc.:
 * primitive types start with a capital letter; exception: predefined types of XSD like string,
 * enumerations start with a capital letter,
 * names of member ends of an association start with a capital letter,
-* all stereotypes specific to the Asset Administration Shell specification start with a capital letter, e.g. "<<Deprecated>>"; predefined stereotypes in UML start with a small letter, e.g. "<<abstract>>" or "<<enumeration>>".
+* all stereotypes specific to the Asset Administration Shell specification start with a capital letter, e.g. "\<<Deprecated>>"; predefined stereotypes in UML start with a small letter, e.g. "\<<abstract>>" or "\<<enumeration>>".
 
 In UML, the convention is to name associations and aggregations in singular form. The multiplicity is to be taken into account to decide on whether there are none, a single, or several elements in the corresponding association or aggregation.
 
@@ -4386,8 +4386,8 @@ Major Changes:
 * NEW: hasExtensions introduced
 * CHANGED: In some mappings or serializations, the type "Reference" is converted into a single string. In this case, it is now required (and not only recommended) to use the defined string serialization.
 * CHANGED: Extracted and not part of this specification any longer; mapping rules for different serializations + Schemata + Example in different serializations
-* CHANGED: Referable/category set to <<Deprecated>>
-* NEW: Besides <<Deprecated>>, new stereotype <<Experimental>> introduced
+* CHANGED: Referable/category set to \<<Deprecated>>
+* NEW: Besides \<<Deprecated>>, new stereotype \<<Experimental>> introduced
 * NEW: Qualifier/kind introduced (ValueQualifier, TemplateQualifier, ConceptQualifier)
 * CHANGED: Terms and Definitions updated to be conformant to IEC 63278-1 DRAFT, July 2022 (note: this document contains more terms and definitions than IEC 63278-1 and vice versa: not all terms and definitions from IEC 63278-1 are included). Definition of view removed. Definition of service added from Part 2.
 * CHANGED: Description of ModellingKind
@@ -4443,13 +4443,13 @@ Note: Security is still part of the Asset Administration Shell, but the Asset Ad
 | x |AssetAdministrationShell/view |Removed, Views no longer supported
 |  |AssetKind/Instance |Updated description of value "Instance" of enumeration "AssetKind" conformant to IEC 63278-1
 |  |AssetKind/Type |Updated description of value "Type" of enumeration "AssetKind" conformant to IEC 63278-1
-|X |BasicEvent |Renamed to BasicEventElement and set to <<Experimental>>
+|X |BasicEvent |Renamed to BasicEventElement and set to \<<Experimental>>
 |file:///C:/__localWork/Asset%20Administration%20Shell%20-%20Verwaltungsschale/Verwaltungsschale%20im%20Detail%20-%20part%201a%20V3.0/Change%202.0%20-%203.0.xlsx#RANGE!#REF![(x)[2]] |BlobType |Primitive changed from "group of bytes" to Base64Binary
 |X |ConceptDictionary |Removed
 |X |Constraint |Abstract class removed. Formula now used in Security part only
 |x  |DataSpecification |No longer inherits from Identifiable. However, same attribute names and types
 |x |DataSpecification/description |Type changed from LangStringSet to MultiLanguageTextType, thus adding a length constraint
-| |DataSpecificationContent |Stereotype <<Template>> added
+| |DataSpecificationContent |Stereotype \<<Template>> added
 |(x) |DataTypeDef |Removed and split into DataTypeDefXsd and DataTypeDefRdf. Some types excluded and not supported because now XML Schema 1.0 reference +
  +
 Before: just string allowing any xsd simple type as string +
@@ -4556,7 +4556,7 @@ Before: ReferableElements
 |  |AssetKind/NotApplicable |New enumeration value
 |  |BasicEventElement |Former BasicEvent +
  +
-New <<Experimental>> submodel element for events
+New \<<Experimental>> submodel element for events
 |  |BasicEventElement/direction |Was part of non-normative part before
 |  |BasicEventElement/lastUpdate |Was part of non-normative part before
 |  |BasicEventElement/maxInterval |Was part of non-normative part before +
@@ -4582,7 +4582,7 @@ Maximum length defined: 100 characters
 |  |Entity/specificAssetId |Former Entity/asset was split into globalAssetId and specificAssetId
 |  |Environment |New class for entry point for Asset Administration Shells, submodels and concept descriptions.
 |  |EventElement |Former name: Event +
-Set to <<Experimental>>
+Set to \<<Experimental>>
 |  |EventPayload |New experimental class for event payload +
 Was part of non-normative part before
 |  |EventPayload/observableSemanticId |Was part of non-normative part before
@@ -4758,11 +4758,11 @@ Major changes
 * CHANGED: Type of BlobType changed from "group of bytes" to "base64Binary"
 * NEW: Two new terms introduced: coded value and explicit value
 * REMOVED: Referable/checksum
-* CHANGE: EventElements including all classes introduced for Events set to <<Experimental>>
-* CHANGE: Referable/category set to <<Deprecated>>
+* CHANGE: EventElements including all classes introduced for Events set to \<<Experimental>>
+* CHANGE: Referable/category set to \<<Deprecated>>
 * CHANGE: AdministrativeInformation Class, not data type
-* NEW: New stereotype <<Experimental>> introduced besides <<Deprecated>>
-* CHANGED: Qualifier/kind set to <<Experimental>>
+* NEW: New stereotype \<<Experimental>> introduced besides \<<Deprecated>>
+* CHANGED: Qualifier/kind set to \<<Experimental>>
 * CHANGED: enumeration DataTypeDefXsd for data types for valueType attribute (e..g. in Property) as well as enumeration DataTypeDefRdf (for consistency) + restriction to XML Schema 1.0 (not 1.1.)
 * EDITORIAL (REMOVED): Clause on Tooling and Open Source
 * EDITORIAL: vector graphics
@@ -4796,12 +4796,12 @@ Changes
 [width="100%",cols="7%,32%,61%",options="header",]
 |===
 |*nc* |*V3.0 Change w.r.t. V3.0RC02* |*Comment*
-| |AdministrativeInformation |Stereotype <<dataType>> removed
+| |AdministrativeInformation |Stereotype \<<dataType>> removed
 | |AssetInformation/externalSubjectId |Not mandatory any longer; now optional
 |x |AssetInformation/globalAssetId |Type changed from Reference to Identifier
 | |AssetKind/Type |Updated description of value "Type" of enumeration "AssetKind" conformant to IEC 63278-1
 | |AssetKind/Instance |Updated description of value "Instance" of enumeration "AssetKind" - conformant to IEC 63278-1
-| |BasicEventElement |Set to <<Experimental>>
+| |BasicEventElement |Set to \<<Experimental>>
 |x |BasicEventElement/messageTopic |Type changed from string to MessageTopicType (i.e. length constraint added, maximum 255 characters)
 |x |BasicEventElement/minInterval |Type changed from dateTime to duration
 |x |BasicEventElement/maxInterval |Type changed from dateTime to duration
@@ -4814,12 +4814,12 @@ Changes
 |x |DateTypeDefXsd/dateTimeStamp |Removed since not part of XML Schema 1.0
 |x |DataTypeDefXsd/dayTimeDuration |Removed since not part of XML Schema 1.0
 |x |DataTypeDefXsd/yearMonthDuration |Removed since not part of XML Schema 1.0
-| |Direction |Set to <<Experimental>>
+| |Direction |Set to \<<Experimental>>
 |x |Entity/globalAssetId |Type changed from Reference to Identifier
 |x |Extension/name |Type changed from string to NameType; length constraint added
-| |EventElement |Set to <<Experimental>>
+| |EventElement |Set to \<<Experimental>>
 | |EventElement/duration |Type changed from dateTimeStamp to dateTime
-| |EventPayload |Set to <<Experimental>>
+| |EventPayload |Set to \<<Experimental>>
 | |EventPayload/payload |Type changed from string to BlobType
 | |EventPayload/source |Type changed from ModelReference(Referable) to ModelReference(EventElement)
 | |EventPayload/timestamp |Type changed from dateTimeStamp to dateTime because restriction to types of XML Schema 1.0 that does not contain dateTimeStamp. dateTimeStamp is a derived type of dateTime in XML Schema 1.1
@@ -4830,7 +4830,7 @@ Changes
 |x |MultiLanguageProperty/value |Type changed from LangStringSet to MultiLanguageTextType; length constraint added
 |x |PathType |Same as Identifier; length constraint added
 | |PrimitiveTypes |Removed
-| |Qualifier/kind |Set to <<Experimental>>
+| |Qualifier/kind |Set to \<<Experimental>>
 |x |QualifierType |Type changed from string to NameType; length constraint added
 | |rdfBuildInTypes |Removed
 |x |Referable/category a|
@@ -4847,8 +4847,8 @@ Text how to select a suitable display name removed; now explained in Table 2
 |x |Referable/description |Type changed from string to MultiLanguageTextType; length constraint added
 |x |Referable/idShort |Type changed from string to NameType; length constraint added
 |x |ReferenceTypes/GlobalReference |Renamed to ExternalReference
-| |Resource |Stereotype <<DataType>> removed.
-| |StateOfEvent |Set to <<Experimental>>
+| |Resource |Stereotype \<<DataType>> removed.
+| |StateOfEvent |Set to \<<Experimental>>
 |x |SpecificAssetId/name |Type changed from string to LabelType (a string with length constraint)
 |x |SpecificAssetId/value |Type changed from string to Identifier (because of length constraint)
 |xfootnote:[Since _HasKind/kind_ had the default _Instance,_ this change has no impact if the attribute was omitted for submodel instances.] |SubmodelElement/kind |Removed. SubmodelElement does not inherit from HasKind any longer
@@ -5270,7 +5270,7 @@ Changes w.r.t. Data Specification IEC61360
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V2.0.1* |*Comment*
 | |DataSpecification a|
-Stereotype <<Template>> added + does not inherit from Identifiable any longer because Data Specification are handled in a different way
+Stereotype \<<Template>> added + does not inherit from Identifiable any longer because Data Specification are handled in a different way
 
 Some attributes are added to DataSpecification as new attributes like id, administration and description.(see separate entries)
 
@@ -5279,7 +5279,7 @@ Some attributes are added to DataSpecification as new attributes like id, admini
 | |DataSpecification/idShort |Removed, was inherited before by Identifiable
 |x |DataSpecificationIEC61360/value |Type changed from ValueDataType to string
 | |DataSpecificationIEC61360/valueId |Removed, the valueId is identical to the ID of the concept description
-| |DataSpecificationContent |Stereotype <<Template>> added
+| |DataSpecificationContent |Stereotype \<<Template>> added
 |x |DataTypeIEC61360 |Some new values were added: BLOB, FILE, HTML, IRDI. URL renamed to IRI. +
  +
 See separate entries for individual changes.
@@ -5803,7 +5803,7 @@ Changes w.r.t. Data Specification IEC61360
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V3.0RC01* |*Comment*
 | |DataSpecification a|
-Stereotype <<Template>> added + does not inherit from Identifiable any longer because Data Specification are handled differently
+Stereotype \<<Template>> added + does not inherit from Identifiable any longer because Data Specification are handled differently
 
 Some attributes are added to DataSpecification as new attributes like id, administration and description
 
@@ -5813,7 +5813,7 @@ Some attributes are added to DataSpecification as new attributes like id, admini
 | |DataSpecificationIEC61360/unitId |Type changes from Reference to GlobalReference
 |x |DataSpecificationIEC61360/value |Type changed from ValueDataType to string
 | |DataSpecificationIEC61360/valueId |Removed, the valueId is identical to the ID of the concept description
-| |DataSpecificationContent |Stereotype <<Template>> added
+| |DataSpecificationContent |Stereotype \<<Template>> added
 |x |DataTypeIEC61360 a|
 Some new values were added: BLOB, FILE, HTML, IRDI; URL renamed to IRI
 
