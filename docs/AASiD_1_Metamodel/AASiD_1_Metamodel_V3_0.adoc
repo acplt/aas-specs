@@ -503,7 +503,7 @@ software _entity_ that may take different values, one at a time
 
 ===  Abbreviations Used in this Document
 
-[width="100%",cols="21%,79%",options="header",]
+[cols="21%,79%",options="header",]
 |===
 |*Abbreviation* |*Description*
 |AAS |Asset Administration Shell
@@ -550,7 +550,7 @@ software _entity_ that may take different values, one at a time
 The following abbreviations are not used in the document but may be used as abbreviations for the elements in the metamodel defined in this document.
 
 . Elements with Allowed Identifying Values
-[width="100%",cols="33%,67%",options="header",]
+[cols="33%,67%",options="header",]
 |===
 |*Abbreviation* |*Description*
 |AAS |Asset Administration Shell
@@ -650,7 +650,7 @@ This important relationship should be maintained throughout the life of the inst
 
 
 .Life Cycle Phases and Roles of Type and Instance Assets
-[width="100%",cols="20%,22%,58%",]
+[cols="20%,22%,58%",]
 |===
 |*Asset Kind* |*Life Cycle Phase* |*Description*
 |Type asset |Development |Valid from the ideation/conceptualization to the first prototypes/test. The 'type' of an asset is defined; distinguishing properties and functionalities are defined and implemented. All (internal) design artefacts associated with the type asset are created, such as CAD data, schematics, embedded software.
@@ -850,7 +850,7 @@ Not every identifier is applicable for every element of the UML model representi
 See Annex A for more information on how to create new identifiers and best practices for creating URI identifiers.
 
 .Elements with Allowed Identifying Values
-[width="100%",cols="21%,17%,22%,40%",options="header",]
+[cols="21%,17%,22%,40%",options="header",]
 |===
 |*Elements with identifying values* |*Attribute* |*Allowed identifiers (recommended or typical)* |*Remarks*
 |AssetAdministration­Shell |id |IRI (URL) a|
@@ -1151,7 +1151,7 @@ image:media/media/image10.jpeg[media/media/image10]
 We can distinguish between incoming and outgoing events. See Table 3 for more information on the event directions.
 
 .Directions of Events
-[width="100%",cols="32%,68%",options="header",]
+[cols="32%,68%",options="header",]
 |===
 |*Direction* |*Description*
 |Out |The event is monitoring the _Referable_ it is attached to. An outer message infrastructure, e.g. by OPC UA, MQTT or AMQP, will transport these events to other Asset Administration Shells, further outer systems and users.
@@ -1165,7 +1165,7 @@ The uses cases described in Clause 4.6.2 need different types of events. Each ev
 Table 4 gives an overview of types of events. The possible directions of an event are described in Clause 4.6.3.
 
 .Types of Events
-[width="100%",cols="26%,12%,62%",options="header",]
+[cols="26%,12%,62%",options="header",]
 |===
 |*Group* |*Direction* |*Motivation / Conditions*
 |Structural changes of the Asset Administration Shell |Out a|
@@ -1210,7 +1210,7 @@ Events can be stated with an _observableReference_ to the _Referables_ of Asset 
 Table 5 describes the different scopes of an event.
 
 .Event Scopes
-[width="100%",cols="32%,68%",options="header",]
+[cols="32%,68%",options="header",]
 |===
 |*Event attached to ...* |*Scope*
 |AssetAdministrationShell |This event monitors/represents all logical elements of an Administration Shell, such as _AssetAdministrationShell, AssetInformation, Submodels_.
@@ -1358,7 +1358,7 @@ Note 4: the process of versioning or adding other administrative information to 
 ====
 
 
-[width="100%",cols="19%,51%,15%,15%",options="header",]
+[cols="19%,51%,15%,15%",options="header",]
 |===
 |Class: |AdministrativeInformation | |
 |Explanation: a|
@@ -1401,7 +1401,7 @@ Note 3: usage of the template ID is not restricted to submodel instances. The cr
 .Figure 14 Metamodel of HasDataSpecification
 image:media/media/image15.png[media/media/image15]
 
-[width="100%",cols="27%,40%,18%,15%,",options="header",]
+[cols="27%,40%,18%,15%,",options="header",]
 |===
 |Class: |HasDataSpecification \<<abstract>> | | |
 |Explanation: |Element that can be extended by using data specification templates. A data specification template defines a named set of additional attributes an element may or shall have. The data specifications used are explicitly specified with their global ID. | | |
@@ -1426,7 +1426,7 @@ For more details on data specifications, please see Clause 6.
 .Figure 15 Metamodel of Has Extensions
 image:media/media/image16.png[media/media/image16]
 
-[width="100%",cols="28%,33%,24%,15%",options="header",]
+[cols="28%,33%,24%,15%",options="header",]
 |===
 |Class: |HasExtensions \<<abstract>> | |
 |Explanation: a|
@@ -1450,7 +1450,7 @@ Note 2: extensions are proprietary, i.e. they do not support global interoperabi
 |extension |An extension of the element. |Extension |0..*
 |===
 
-[width="100%",cols="24%,32%,32%,12%",options="header",]
+[cols="24%,32%,32%,12%",options="header",]
 |===
 |Class: |Extension | |
 |Explanation: |Single extension of an element | |
@@ -1472,7 +1472,7 @@ image:media/media/image17.png[media/media/image17]
 
 ===== Has Kind Attributes
 
-[width="100%",cols="18%,49%,19%,14%",options="header",]
+[cols="18%,49%,19%,14%",options="header",]
 |===
 |Class: |HasKind | |
 |Explanation: a|
@@ -1493,7 +1493,7 @@ Default Value = _Instance_
 
 The kind enumeration is used to denote whether an element is of kind _Template_ or _Instance_. It is used to distinguish between submodels and submodel templates.
 
-[width="100%",cols="31%,69%",options="header",]
+[cols="31%,69%",options="header",]
 |===
 |Enumeration: |ModellingKind
 |Explanation: |Enumeration for denoting whether an element is a template or an instance
@@ -1510,7 +1510,7 @@ image:media/media/image18.png[media/media/image18]
 
 For matching algorithm, see Clause 4.4.1.
 
-[width="100%",cols="24%,43%,21%,12%",options="header",]
+[cols="24%,43%,21%,12%",options="header",]
 |===
 |Class: |HasSemantics \<<abstract>> | |
 |Explanation: a|
@@ -1556,7 +1556,7 @@ Information about identification can be found in Clause 4.3. See Clause 4.3.4 fo
 
 See Clause 4.3.4 for information about which identifier types are supported.
 
-[width="100%",cols="18%,45%,26%,11%",options="header",]
+[cols="18%,45%,26%,11%",options="header",]
 |===
 |Class: |Identifiable \<<abstract>> | |
 |Explanation: a|
@@ -1589,7 +1589,7 @@ Note: some of the administrative information like the version number might need 
 .Figure 19 Metamodel of Qualifiables
 image:media/media/image20.png[media/media/image20]
 
-[width="100%",cols="17%,50%,19%,14%",options="header",]
+[cols="17%,50%,19%,14%",options="header",]
 |===
 |Class: |Qualifiable \<<abstract>> | |
 |Explanation: a|
@@ -1616,7 +1616,7 @@ Qualifiers may be defined for qualifiable elements.
 
 There are standardized qualifiers defined in IEC CDD, IEC61360-4 – IEC/SC 3D. A level qualifier defining the level type minimal, maximal, typical, and nominal value is specified in IEC 62569-1. In DIN SPEC 92000, qualifier types like e.g. expression semantics and expression logic are defined.
 
-[width="100%",cols="19%,52%,18%,11%",options="header",]
+[cols="19%,52%,18%,11%",options="header",]
 |===
 |Class: |Qualifier | |
 |Explanation: a|
@@ -1656,7 +1656,7 @@ Note: it is recommended to use an external reference.
 
 It is recommended to add a _semanticId_ for the concept of the _Qualifier_. _Qualifier/type_ is the preferred name of the concept of the qualifier or its short name.
 
-[width="100%",cols="30%,70%",options="header",]
+[cols="30%,70%",options="header",]
 |===
 |Enumeration: |QualifierKind
 |Explanation: |Enumeration for kinds of qualifiers
@@ -1702,7 +1702,7 @@ Not every element of the metamodel is referable. There are elements that are jus
 
 The __idShort__ shall be unique in its name space for non-identifiable referables (see Constraint AASd-022). A name space is defined as follows in this context: the parent element(s), which an element is part of and that is either referable or identifiable, is the name space of the element. Examples: a submodel is the name space for the properties directly contained in it; the name space of a submodel element contained in a submodel element collection is the submodel element collection.
 
-[width="100%",cols="18%,49%,23%,10%",options="header",]
+[cols="18%,49%,23%,10%",options="header",]
 |===
 |Class: |Referable \<<abstract>> | |
 |Explanation: a|
@@ -1761,7 +1761,7 @@ Note: categories are deprecated and should no longer be used.
 
 
 .Categoriesfootnote:[Note: categories of referables are deprecated.] for Elements with Value
-[width="100%",cols="18%,28%,54%",options="header",]
+[cols="18%,28%,54%",options="header",]
 |===
 |Category: |Applicable to, Examples: |Explanation:
 |CONSTANT a|
@@ -1805,7 +1805,7 @@ An Administration Shell is uniquely identifiable since it inherits from _Identif
 
 The _derivedFrom_ attribute is used to establish a relationship between two Asset Administration Shells that are derived from each other. For more detailed information on the _derivedFrom_ concept, see Clause 4.2.
 
-[width="100%",cols="19%,31%,40%,10%",options="header",]
+[cols="19%,31%,40%,10%",options="header",]
 |===
 |Class: |AssetAdministrationShell | |
 |Explanation: |An Asset Administration Shell | |
@@ -1830,7 +1830,7 @@ Temporarily, no submodel might be assigned to the Asset Administration Shell.
 .Figure 24 Metamodel of Asset Information
 image:media/media/image25.png[media/media/image25]
 
-[width="100%",cols="21%,50%,21%,8%",options="header",]
+[cols="21%,50%,21%,8%",options="header",]
 |===
 |Class: |AssetInformation | |
 |Explanation: a|
@@ -1878,7 +1878,7 @@ Note: besides this asset information, there still might be an identification sub
 ====
 
 
-[width="100%",cols="21%,46%,23%,10%",options="header",]
+[cols="21%,46%,23%,10%",options="header",]
 |===
 |Class: |Resource | |
 |Explanation: |Resource represents an address to a file (a locator). The value is a URI that can represent an absolute or relative path. | |
@@ -1898,7 +1898,7 @@ The content type states which file extensions the file can have.
 |ContentType |0..1
 |===
 
-[width="100%",cols="30%,70%",options="header",]
+[cols="30%,70%",options="header",]
 |===
 |Enumeration: |AssetKind
 |Explanation: |Enumeration for denoting whether an asset is a type asset or an instance asset or whether this kind of classification is not applicable
@@ -1911,7 +1911,7 @@ The content type states which file extensions the file can have.
 
 For more information on types and instances, see Clause 4.2.
 
-[width="100%",cols="24%,46%,18%,12%",options="header",]
+[cols="24%,46%,18%,12%",options="header",]
 |===
 |Class: |SpecificAssetId | |
 |Explanation: a|
@@ -1965,7 +1965,7 @@ Note: validators shall handle a submodel like _SubmodelElementCollection/submode
 ====
 
 
-[width="100%",cols="25%,46%,19%,10%",options="header",]
+[cols="25%,46%,19%,10%",options="header",]
 |===
 |Class: |Submodel | |
 |Explanation: a|
@@ -1990,7 +1990,7 @@ It is recommended to add a _semanticId_ to a _SubmodelElement._
 
 Submodel elements may also have defined data specification templates. A template might be defined to mirror some of the attributes like _preferredName_ and _unit_ of a property concept definition if there is no corresponding concept description available. Otherwise, there is only the property definition referenced by _semanticId_ available for the property; the attributes must be looked up online in a different way and are not available offline.
 
-[width="100%",cols="18%,52%,12%,18%",options="header",]
+[cols="18%,52%,12%,18%",options="header",]
 |===
 |Class: |SubmodelElement \<<abstract>> | |
 |Explanation: |A submodel element is an element suitable for the description and differentiation of assets. | |
@@ -2016,7 +2016,7 @@ image:media/media/image29.png[media/media/image29]
 
 An annotated relationship is a relationship similar to a ternary association in UML. The semantics of the relationship is defined via the _semanticId_ of the _RelationshipElement_. If this semantic definition requires additional information not contained in the _first_ or _second_ object referenced via the relationship, this information needs to be stored as annotation.
 
-[width="100%",cols="18%,49%,18%,15%",options="header",]
+[cols="18%,49%,18%,15%",options="header",]
 |===
 |Class: |AnnotatedRelationshipElement | |
 |Explanation: |An annotated relationship element is a relationship element that can be annotated with additional data elements. | |
@@ -2030,7 +2030,7 @@ An annotated relationship is a relationship similar to a ternary association in 
 .Figure 29 Metamodel of Basic Event Element
 image:media/media/image30.png[media/media/image30]
 
-[width="100%",cols="19%,43%,28%,10%",options="header",]
+[cols="19%,43%,28%,10%",options="header",]
 |===
 |Class: |BasicEventElement \<<Experimental>> | |
 |Explanation: |A basic event element | |
@@ -2079,7 +2079,7 @@ Might not be specified, i.e. if there is no maximum interval.
 |duration |0..1
 |===
 
-[width="100%",cols="30%,70%",options="header",]
+[cols="30%,70%",options="header",]
 |===
 |Enumeration: |Direction \<<Experimental>>
 |Explanation: |Direction
@@ -2089,7 +2089,7 @@ Might not be specified, i.e. if there is no maximum interval.
 |output |Output direction
 |===
 
-[width="100%",cols="30%,70%",options="header",]
+[cols="30%,70%",options="header",]
 |===
 |Enumeration: |StateOfEvent \<<Experimental>>
 |Explanation: |State of an event
@@ -2111,7 +2111,7 @@ Note: the payload is not part of the information model as exchanged via the AASX
 image:media/media/image31.png[media/media/image31]
 
 
-[width="100%",cols="23%,39%,29%,9%",options="header",]
+[cols="23%,39%,29%,9%",options="header",]
 |===
 |Class: |EventPayload \<<Experimental>> | |
 |Explanation: |Defines the necessary information of an event instance sent out or received | |
@@ -2163,7 +2163,7 @@ image:media/media/image32.png[media/media/image32]
 
 For information on content type, see Clause 5.3.7.9 on submodel element "File".
 
-[width="100%",cols="18%,55%,15%,12%",options="header",]
+[cols="18%,55%,15%,12%",options="header",]
 |===
 |Class: |Blob | |
 |Explanation: |A Blob is a data element representing a file that is contained in the value attribute with its source code. | |
@@ -2202,7 +2202,7 @@ Note: the _semanticId_ of a capability is typically an ontology, which enables r
 ====
 
 
-[width="100%",cols="18%,53%,15%,14%",options="header",]
+[cols="18%,53%,15%,14%",options="header",]
 |===
 |Class: |Capability | |
 |Explanation: |A capability is the implementation-independent description of the potential of an asset to achieve a certain effect in the physical or virtual world. | |
@@ -2249,7 +2249,7 @@ image:media/media/image35.png[media/media/image35]
 
 The entity submodel element is designed to be used in submodels defining the relationship between the parts of the composite asset it is composed of (e.g. bill of material). These parts are called entities. Not all entities have a global asset ID.
 
-[width="100%",cols="22%,49%,21%,8%",options="header",]
+[cols="22%,49%,21%,8%",options="header",]
 |===
 |Class: |Entity | |
 |Explanation: a|
@@ -2266,7 +2266,7 @@ An entity is a submodel element that is used to model entities.
 |specificAssetId |Reference to a specific asset ID representing a supplementary identifier of the asset represented by the Asset Administration Shell |SpecificAssetId |0..*
 |===
 
-[width="100%",cols="30%,70%",options="header",]
+[cols="30%,70%",options="header",]
 |===
 |Enumeration: |EntityType
 |Explanation: |Enumeration for denoting whether an entity is a self-managed entity or a co-managed entity
@@ -2306,7 +2306,7 @@ Note: for information on handling supplementary external files in exchanging Ass
 ====
 
 
-[width="100%",cols="18%,49%,18%,15%",options="header",]
+[cols="18%,49%,18%,15%",options="header",]
 |===
 |Class: |File | |
 |Explanation: |A file is a data element that represents an address to a file (a locator). The value is a URI that can represent an absolute or relative path. | |
@@ -2357,7 +2357,7 @@ Note: it is recommended to use an external reference.
 .Figure 38 Metamodel of Operations
 image:media/media/image39.png[media/media/image39]
 
-[width="100%",cols="18%,45%,25%,12%",options="header",]
+[cols="18%,45%,25%,12%",options="header",]
 |===
 |Class: |Operation | |
 |Explanation: a|
@@ -2405,7 +2405,7 @@ Note 3: even if the submodel element as the value of an input and an output vari
 .Figure 39 Metamodel of Properties
 image:media/media/image40.png[media/media/image40]
 
-[width="100%",cols="17%,51%,23%,9%",options="header",]
+[cols="17%,51%,23%,9%",options="header",]
 |===
 |Class: |Property | |
 |Explanation: a|
@@ -2435,7 +2435,7 @@ Note: it is recommended to use an external reference.
 .Figure 40 Metamodel of Ranges
 image:media/media/image41.png[media/media/image41]
 
-[width="100%",cols="18%,44%,21%,17%",options="header",]
+[cols="18%,44%,21%,17%",options="header",]
 |===
 |Class: |Range \<<Experimental>> | |
 |Explanation: |A range data element is a data element that defines a range with min and max. | |
@@ -2461,7 +2461,7 @@ If the max value is missing, the value is assumed to be positive infinite.
 .Figure 41 Metamodel of Reference Elements
 image:media/media/image42.png[media/media/image42]
 
-[width="100%",cols="18%,53%,14%,15%",options="header",]
+[cols="18%,53%,14%,15%",options="header",]
 |===
 |Class: |ReferenceElement | |
 |Explanation: |A reference element is a data element that defines a logical reference to another element within the same or another Asset Administration Shell or a reference to an external object or entity. | |
@@ -2477,7 +2477,7 @@ For more information on references, see Clause 5.3.9.
 .Figure 42 Metamodel of Relationship Elements
 image:media/media/image43.png[media/media/image43]
 
-[width="100%",cols="14%,60%,19%,7%",options="header",]
+[cols="14%,60%,19%,7%",options="header",]
 |===
 |Class: |RelationshipElement | |
 |Explanation: |A relationship element is used to define a relationship between two elements being either referable (model reference) or external (external reference). | |
@@ -2536,7 +2536,7 @@ Similarly, a table with three columns can be represented. In this case a _Submod
 
 Matching strategies for semantic IDs are explained in Clause 4.4.1.
 
-[width="100%",cols="31%,39%,20%,10%",options="header",]
+[cols="31%,39%,20%,10%",options="header",]
 |===
 |Class: |SubmodelElementList | |
 |Explanation: a|
@@ -2589,7 +2589,7 @@ Note: it is recommended to use an external reference.
 .Figure 45 Metamodel of Concept Descriptions
 image:media/media/image46.png[media/media/image46]
 
-[width="100%",cols="18%,57%,17%,8%",options="header",]
+[cols="18%,57%,17%,8%",options="header",]
 |===
 |Class: |ConceptDescription | |
 |Explanation: a|
@@ -2633,7 +2633,7 @@ Note: _Environment_ is not an identifiable or referable element. It is introduce
 ====
 
 
-[width="100%",cols="25%,43%,23%,9%",options="header",]
+[cols="25%,43%,23%,9%",options="header",]
 |===
 |Class: |Environment | |
 |Explanation: |Container for the sets of different identifiables | |
@@ -2665,7 +2665,7 @@ image:media/media/image48.png[media/media/image48]
 
 See Clause 4.4.2 for reference matching.
 
-[width="100%",cols="21%,46%,21%,12%",options="header",]
+[cols="21%,46%,21%,12%",options="header",]
 |===
 |Class: |Reference | |
 |Explanation: a|
@@ -2703,7 +2703,7 @@ Note 2: it is recommended to use an external reference for the semantic ID expec
 |key \<<ordered>> |Unique reference in its name space |Key |1..*
 |===
 
-[width="100%",cols="31%,69%",options="header",]
+[cols="31%,69%",options="header",]
 |===
 |Enumeration: |ReferenceTypes
 |Explanation: |Enumeration for denoting whether an element is an external or model reference
@@ -2728,7 +2728,7 @@ image:media/media/image50.png[media/media/image50]
 .Figure 50 Metamodel of KeyTypes Enumeration
 image:media/media/image51.png[media/media/image51]
 
-[width="100%",cols="18%,49%,21%,12%",options="header",]
+[cols="18%,49%,21%,12%",options="header",]
 |===
 |Class: |Key | |
 |Explanation: |A key is a reference to an element by its ID | |
@@ -2752,7 +2752,7 @@ An example for using a _FragmentId_ as type of a key is a reference to an elemen
 .Figure 51 Metamodel of AasSubmodelElements Enumeration
 image:media/media/image52.png[media/media/image52]
 
-[width="100%",cols="31%,69%",options="header",]
+[cols="31%,69%",options="header",]
 |===
 |Enumeration: |KeyTypes
 |Explanation: |Enumeration of different key value types within a key
@@ -2820,7 +2820,7 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |SubmodelElementList |List of submodel elements
 |===
 
-[width="100%",cols="32%,68%",options="header",]
+[cols="32%,68%",options="header",]
 |===
 |Enumeration: |FragmentKeys
 |Explanation: a|
@@ -2878,7 +2878,7 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |SubmodelElementList |List of submodel elements
 |===
 
-[width="100%",cols="31%,69%",options="header",]
+[cols="31%,69%",options="header",]
 |===
 |Enumeration: |GloballyIdentifiables
 |Explanation: a|
@@ -2907,7 +2907,7 @@ Note: identifiables are abstract, i.e. if a key uses "Identifiable", the referen
 |Submodel |Submodel
 |===
 
-[width="100%",cols="32%,68%",options="header",]
+[cols="32%,68%",options="header",]
 |===
 |Enumeration: |AasReferableNonIdentifiables
 |Explanation: a|
@@ -2964,7 +2964,7 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |SubmodelElementList |List of submodel elements
 |===
 
-[width="100%",cols="31%,68%,1%",options="header",]
+[cols="31%,68%,1%",options="header",]
 |===
 |Enumeration: |AasSubmodelElements |
 |Explanation: |Enumeration of different fragment key value types within a key |
@@ -3016,7 +3016,7 @@ Note: Submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |SubmodelElementList |List of submodel elements |
 |===
 
-[width="100%",cols="32%,68%",options="header",]
+[cols="32%,68%",options="header",]
 |===
 |Enumeration: |AasReferables
 |Explanation: a|
@@ -3094,7 +3094,7 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |SubmodelElementList |List of submodel elements
 |===
 
-[width="100%",cols="31%,69%",options="header",]
+[cols="31%,69%",options="header",]
 |===
 |Enumeration: |GenericFragmentKeys
 |Explanation: a|
@@ -3111,7 +3111,7 @@ Note: not used as type but in constraints.
 |FragmentReference |Bookmark or a similar local identifier of a subordinate part of a primary resource
 |===
 
-[width="100%",cols="31%,69%",options="header",]
+[cols="31%,69%",options="header",]
 |===
 |Enumeration: |AasIdentifiables
 |Explanation: a|
@@ -3139,7 +3139,7 @@ Note: Identifiables are abstract, i.e. if a key uses "Identifiable", the referen
 |Submodel |Submodel
 |===
 
-[width="100%",cols="31%,69%",options="header",]
+[cols="31%,69%",options="header",]
 |===
 |Enumeration: |GenericGloballyIdentifiables
 |Explanation: |Enumeration of different key value types within a key
@@ -3254,7 +3254,7 @@ The meaning and format of xsd types is specified in https://www.w3.org/XML/Schem
 See Clause 5.3.12.6 for constraints on types.
 
 .Simple Data Types Used in Metamodel
-[width="100%",cols="10%,19%,38%,33%",options="header",]
+[cols="10%,19%,38%,33%",options="header",]
 |===
 |Source |Basic Data Type |Value Range |Sample Values
 |xsd |string |Character string (but not all Unicode character strings) |"Hello world", "Καλημέρα κόσμε", +
@@ -3288,7 +3288,7 @@ Note: see Clause 5.3.12.6 for constraints on types.
 
 
 .Primitive Data Types Used in Metamodel
-[width="100%",cols="13%,30%,57%",options="header",]
+[cols="13%,30%,57%",options="header",]
 |===
 |*Primitive* |*Definition* |*Value Examples*
 |BlobType a|
@@ -3486,7 +3486,7 @@ Table 9 depicts example values and the value range of the different data type"
 shows the data types which can be used for submodel element values. The data types are defined according to the W3C XML Schema (https://www.w3.org/TR/xmlschema-2/#built-in-datatypes and https://www.w3.org/TR/xmlschema-2/#built-in-derived). "Value Range" further explains the possible range of data values for this data type. The right column shows related examples for values of the corresponding data type.
 
 .Data Types with Examplesfootnote:[See list of RDF-compatible XSD types with short description https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes. Examples from https://openmanufacturingplatform.github.io/sds-bamm-aspect-meta-model/bamm-specification/v1.0.0/datatypes.html]
-[width="100%",cols="15%,22%,24%,39%",options="header",]
+[cols="15%,22%,24%,39%",options="header",]
 |===
 | |Data Type |Value Range |Sample Values
 |Core types |xs:string |Character string (but not all Unicode character strings) a|
@@ -3680,7 +3680,7 @@ Note: this is written in RDF/Turtle syntax, @end and ²de are the language tags.
 
 |===
 
-[width="100%",cols="37%,63%",options="header",]
+[cols="37%,63%",options="header",]
 |===
 |Enumeration: |DataTypeDefXsd
 |Explanation: a|
@@ -3733,7 +3733,7 @@ For more details see https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes
 |xs:unsignedShort |see: https://www.w3.org/TR/xmlschema11-2/#unsignedShort
 |===
 
-[width="100%",cols="29%,71%",options="header",]
+[cols="29%,71%",options="header",]
 |===
 |Enumeration: |DataTypeDefRdf
 |Explanation: |Enumeration listing all RDF types
@@ -3831,7 +3831,7 @@ It is required that a data specification template has a global unique ID so that
 
 A template consists of the _DataSpecificationContent_ containing the additional attributes to be added to the element instance that references the data specification template, as well as meta information about the template itself. These are two separate classes in UML.
 
-[width="100%",cols="25%,38%,25%,12%",options="header",]
+[cols="25%,38%,25%,12%",options="header",]
 |===
 |Class: |DataSpecification \<<Template>> | |
 |Explanation: |Data specification template | |
@@ -3852,7 +3852,7 @@ Note: some of the administrative information like the version number might need 
 |description |Description of how and in which context the data specification template is applicable; can be provided in several languages. |MultiLanguageTextType |0..1
 |===
 
-[width="100%",cols="25%,38%,25%,12%",options="header",]
+[cols="25%,38%,25%,12%",options="header",]
 |===
 |Class: |DataSpecificationContent \<<Template>>\<<abstract>> | |
 |Explanation: |Data specification content is part of a data specification template and defines, which additional attributes shall be added to the element instance that references the data specification template and meta information about the template itself. | |
@@ -3871,7 +3871,7 @@ This document specifies the Asset Administration Shell in a technology-neutral f
 Table 10 explains the main purpose of each of the formats: OPC UA information modelsfootnote:[OPC UA Information Models should not be mixed up with the Client/Server or Pub/Sub Protocol of OPC UA. This would belong to the communication but not to the Asset Administration Shell representation layer.], AutomationML, XML, JSON, and RDF. The different purposes are visualized in Figure 57.
 
 .Distinction of Different Data Formats for the Asset Administration Shell
-[width="100%",cols="21%,79%",options="header",]
+[cols="21%,79%",options="header",]
 |===
 |Data format |Purpose / motivation
 |XML, JSON |Serialization of information for the technical communication between phases
@@ -4382,7 +4382,7 @@ Following the different identification types from Clause 4.3.4, it can be stated
 The approach for semantics and interaction for I4.0 components link:#bib18[[18\]] suggests the use of the following structure (see Table 11) for URIsfootnote:[URLs are also URIs], which is slightly modified here. The idea is to always structure URIs following a scheme of different elements. However, this is just a recommendation and by no means mandatory.
 
 .Proposed Structure for URIs
-[width="100%",cols="23%,64%,13%",options="header",]
+[cols="23%,64%,13%",options="header",]
 |===
 |*Element* |*Description* |*Syntax component*
 |Organization |Legal body, administrative unit, or company issuing the ID |A
@@ -4417,7 +4417,7 @@ In the table, syntax component "A" refers to authority of RFC 3986 (URI) and nam
 Using this scheme, valid URNs and URLs can be both created as URIs. The latter are preferred for Administration Shells, as functionality (such as REST services) can be bound to the identifiers. Examples of such identifiers are given in Table 12.
 
 .Example URN and URL-based Identifiers of the Asset Administration Shell
-[width="100%",cols="27%,73%",options="header",]
+[cols="27%,73%",options="header",]
 |===
 |*Identifier* |*Examples*
 |Administration Shell ID a|
@@ -4461,7 +4461,7 @@ This annex collects the requirements from various documents that have impact on 
 
 The following requirements are taken from the document "Implementation strategy of Plattform Industrie 4.0" link:#bib2[[2\]]footnote:[Only editorial changes]. They are marked "STRAT". The "Tracking" column validates the requirements by linking to features of the UML metamodel or this document in general.
 
-[width="100%",cols="13%,55%,32%",options="header",]
+[cols="13%,55%,32%",options="header",]
 |===
 |*ID* |*Requirement* |*Tracking*
 |STRAT#1 |A network of Industry 4.0 components must be structured to ensure that connections between any end points (Industry 4.0 components) are possible. The Industry 4.0 components and their contents are to follow a common semantic model. a|
@@ -4509,7 +4509,7 @@ Note: the term "property" was used in a very broad sense in previous publication
 ====
 
 
-[width="100%",cols="16%,30%,54%",options="header",]
+[cols="16%,30%,54%",options="header",]
 |===
 |*Source* |*Requirement* |*Tracking*
 |tAAS-#1 |The Administration Shell shall accept properties from different technical domains in mutually distinct submodels that can be version-controlled and maintained independently of each other. a|
@@ -4800,7 +4800,7 @@ For capitalization of titles, rules according to https://capitalizemytitle.com/ 
 
 Template for Classes:
 
-[width="100%",cols="36%,29%,23%,12%",options="header",]
+[cols="36%,29%,23%,12%",options="header",]
 |===
 |Class: |<Class Name> [\<<abstract>>] ["\<<Experimental>>"] ["\<<Deprecated>>"] ["\<<Template>>"] | |
 |Explanation: |<Explanatory text> | |
@@ -4869,7 +4869,7 @@ This would be an invalid reference for "ModelReference<Submodel>"
 
 Template for Enumerations:
 
-[width="100%",cols="30%,70%",options="header",]
+[cols="30%,70%",options="header",]
 |===
 |Enumeration: |<Enumeration Name> ["\<<Experimental>>"] ["\<<Deprecated>>"]
 |Explanation: |
@@ -4895,7 +4895,7 @@ Enumeration values use Camel Case notation and start with a small letter. Howeve
 
 Template for Primitive:
 
-[width="100%",cols="20%,25%,55%",options="header",]
+[cols="20%,25%,55%",options="header",]
 |===
 |*Primitive* |*Explanation* |*Value Examples*
 |<Name of Primitive> |<Explanatory text> |Value examples
@@ -5262,7 +5262,7 @@ Smaller changes:
 === Metamodel Changes V3.0 VS. V2.0.1
 
 .Changes
-[width="100%",cols="10%,42%,48%",options="header",]
+[cols="10%,42%,48%",options="header",]
 |===
 |*Nc* |*V3.0 Change w.r.t. V2.0.1* |*Comment*
 | |anySimpleTypeDef |Type removed, was no longer used in any class definition, was mentioned in text only.
@@ -5369,7 +5369,7 @@ Now part of AasSubmodelElements
 |===
 
 .New Elements in Metamodel
-[width="100%",cols="8%,41%,51%",options="header",]
+[cols="8%,41%,51%",options="header",]
 |===
 | |*New Elements V3.0 vs V2.0.1* |*Comment*
 |  |AasIdentifiables |New enumeration used for References, includes abstract Identifiable +
@@ -5478,7 +5478,7 @@ New submodel element SubmodelElementList added, renamed submodel elements Event 
 |===
 
 .New, Changed or Removed Constraints
-[width="100%",cols="6%,10%,15%,69%",options="header",]
+[cols="6%,10%,15%,69%",options="header",]
 |===
 |*Nc* |*V3.0 vs. V2.0.1* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASd-001 |Removed a|
@@ -5627,7 +5627,7 @@ Smaller changes
 === Metamodel Changes V3.0 vs. V3.0RC02
 
 .Changes
-[width="100%",cols="7%,32%,61%",options="header",]
+[cols="7%,32%,61%",options="header",]
 |===
 |*nc* |*V3.0 Change w.r.t. V3.0RC02* |*Comment*
 | |AdministrativeInformation |Stereotype \<<dataType>> removed
@@ -5689,7 +5689,7 @@ Text how to select a suitable display name removed; now explained in Table 2
 |===
 
 .New Elements in Metamodel
-[width="100%",cols="8%,43%,49%",options="header",]
+[cols="8%,43%,49%",options="header",]
 |===
 |*nc* |*V3.0 vs. V3.0RC02 New Elements* |*Comment*
 | |AdministrativeInformation/creator |New optional attribute
@@ -5709,7 +5709,7 @@ Text how to select a suitable display name removed; now explained in Table 2
 |===
 
 .New, Changed or Removed Constraints
-[width="100%",cols="7%,12%,15%,66%",options="header",]
+[cols="7%,12%,15%,66%",options="header",]
 |===
 |*Nc* |*V3.0 vs. V3.0RC02* |*New, Update, Removed, Reformulated* |*Comment*
 | | |EDITORIAL a|
@@ -5832,7 +5832,7 @@ Note: ReferableElements was substituted by AasSubmodelElements and Aas Identifia
 * Entity/globalAssetId diagram (table was correct): Type change from reference of Reference* to Reference
 
 .Changes w/o Security
-[width="100%",cols="7%,43%,50%",options="header",]
+[cols="7%,43%,50%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V2.0.1* |*Comment*
 | |AdministrativeInformation |Bugfix: Stereotype "DataType" added
@@ -5931,7 +5931,7 @@ Now part of AasSubmodelElements
 |===
 
 .New Elements in Metamodel w/o Security
-[width="100%",cols="5%,59%,36%",options="header",]
+[cols="5%,59%,36%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V2.0.1 New Elements* |*Comment*
 | |AasSubmodelElements a|
@@ -6028,7 +6028,7 @@ See Attribute Based Access Control (ABAC) for subject concept
 |===
 
 .New, Changed or Removed Constraints w/o Security
-[width="100%",cols="6%,11%,14%,69%",options="header",]
+[cols="6%,11%,14%,69%",options="header",]
 |===
 |*Nc* |*V3.0RC02 vs. V2.0.1* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASd-001 |Removed a|
@@ -6108,7 +6108,7 @@ Constraint AASD-120: idShort of submodel elements within a SubmodelElementList s
 === Metamodel Changes V3.0RC02 vs. V2.0.1 – Data Specification IEC61360
 
 .Changes w.r.t. Data Specification IEC61360
-[width="100%",cols="11%,46%,43%",options="header",]
+[cols="11%,46%,43%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V2.0.1* |*Comment*
 | |DataSpecification a|
@@ -6131,7 +6131,7 @@ See separate entries for individual changes.
 |===
 
 .New Elements in Metamodel DataSpecification IEC61360
-[width="100%",cols="11%,44%,45%",options="header",]
+[cols="11%,44%,45%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V2.0.1* |*Comment*
 | |DataSpecification/administration |Was inherited before by Identifiable
@@ -6145,7 +6145,7 @@ See separate entries for individual changes.
 |===
 
 .New, Changed or Removed Constraints Data Specification IEC61360
-[width="100%",cols="9%,14%,14%,63%",options="header",]
+[cols="9%,14%,14%,63%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V2.0.1* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASc-002 |New a|
@@ -6171,7 +6171,7 @@ Changes:
 * Removed: Certificate Handling not part of information model but of server infrastructure hosting the Asset Administration Shells
 
 .Changes w.r.t. Security
-[width="100%",cols="11%,46%,43%",options="header",]
+[cols="11%,46%,43%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V2.0.1* |*Comment*
 |x |AccessControlPolicyPoints/policyAdministrationoint |Type changed from PolicyAdministrationPoint to AccessControl
@@ -6196,14 +6196,14 @@ No longer inherits from Qualifiable
 |===
 
 .New Elements in Metamodel Security
-[width="100%",cols="11%,44%,45%",options="header",]
+[cols="11%,44%,45%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V2.0.1* |*Comment*
 | |AccessPermissionRule/constraint |Substitute for inherited attributes from Qualifiable
 |===
 
 .New, Changed or Removed Constraints Security
-[width="100%",cols="9%,14%,14%,63%",options="header",]
+[cols="9%,14%,14%,63%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V2.0.1* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASd-015 |Removed |Renamed to AASs-015 (see NEW)
@@ -6264,7 +6264,7 @@ Bugfixes:
 * Entity/globalAssetId diagram (table was correct): Type change from reference of Reference to Reference (from Reference* to Reference)
 
 .Changes w/o Security
-[width="100%",cols="4%,45%,51%",options="header",]
+[cols="4%,45%,51%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V3.0RC01* |*Comment*
 | |AdministrativeInformation |Bugfix: Stereotype "DataType" added
@@ -6361,7 +6361,7 @@ Now part of AasSubmodelElements
 |===
 
 .New Elements in Metamodel w/o Security
-[width="100%",cols="4%,45%,51%",options="header",]
+[cols="4%,45%,51%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V2.0RC01 New Elements* |*Comment*
 | |AasSubmodelElements a|
@@ -6437,7 +6437,7 @@ New submodel element SubmodelElementList added, renamed submodel elements Event 
 |===
 
 .New, Changed or Removed Constraints w/o Security
-[width="100%",cols="8%,12%,15%,65%",options="header",]
+[cols="8%,12%,15%,65%",options="header",]
 |===
 |*Nc* |*V3.0RC02 vs. V3.0RC01* |*New, Update, Removed, Reformulated* |*Comment*
 |footnote:[Every model valid for V3.0RC02 is still valid in V3.0RC01, however there might be implementations that need to be changed if they assumed that the user can type case-insensitive names and get all elements that match the name in an case-insensitive way.] |AASd-003 |Update a|
@@ -6640,7 +6640,7 @@ Constraint AASD-120: idShort of submodel elements within a SubmodelElementList s
 === Metamodel Changes V3.0RC02 vs. V3.0RC01 – Data Specification IEC61360
 
 .Changes w.r.t. Data Specification IEC61360
-[width="100%",cols="11%,46%,43%",options="header",]
+[cols="11%,46%,43%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V3.0RC01* |*Comment*
 | |DataSpecification a|
@@ -6666,7 +6666,7 @@ See separate entries for individual changes
 |===
 
 .New Elements in Metamodel DataSpecification IEC61360
-[width="100%",cols="11%,44%,45%",options="header",]
+[cols="11%,44%,45%",options="header",]
 |===
 |*nc* |*V3.0RC02* |*Comment*
 |x |ValueReferencePair/valueId |Type changed from Reference to GlobalReference
@@ -6681,7 +6681,7 @@ See separate entries for individual changes
 |===
 
 .New, Changed or Removed Constraints Data Specification IEC61360
-[width="100%",cols="9%,14%,14%,63%",options="header",]
+[cols="9%,14%,14%,63%",options="header",]
 |===
 |*nc* |*V3.0RC02* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASc-002 |New a|
@@ -6707,7 +6707,7 @@ Changes:
 * Removed: Certificate Handling not part of information model but of server infrastructure hosting the Asset Administration Shells
 
 .Changes w.r.t. Security
-[width="100%",cols="11%,46%,43%",options="header",]
+[cols="11%,46%,43%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V3.0RC01* |*Comment*
 |x |AccessControlPolicyPoints/policyAdministrationoint |Type changed from PolicyAdministrationPoint to AccessControl
@@ -6732,14 +6732,14 @@ No longer inherits from qualifiable
 |===
 
 .New Elements in Metamodel Security
-[width="100%",cols="11%,44%,45%",options="header",]
+[cols="11%,44%,45%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V3.0RC01* |*Comment*
 | |AccessPermissionRule/constraint |Substitute for inherited attributes from Qualifiable
 |===
 
 .New, Changed or Removed Constraints Security
-[width="100%",cols="9%,14%,14%,63%",options="header",]
+[cols="9%,14%,14%,63%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V3.0RC01* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASs-009 |Removed a|
@@ -6769,7 +6769,7 @@ Major changes:
 * AASX file exchange format:no splitting of an Asset Administration Shell allowed any longer (i.e. relationship type aas-spec-split removed)
 
 .Changes w.r.t. V2.0 w/o Security
-[width="100%",cols="11%,41%,48%",options="header",]
+[cols="11%,41%,48%",options="header",]
 |===
 |*nc* |*V3.0RC01 Change w.r.t. V2.0.1* |*Comment*
 | |anySimpleTypeDef |Type removed, was not used in any class definition any longer, was mentioned in text only
@@ -6786,7 +6786,7 @@ Major changes:
 |===
 
 .New Elements in Metamodel V3.0RC01 w/o Security
-[width="100%",cols="11%,46%,43%",options="header",]
+[cols="11%,46%,43%",options="header",]
 |===
 |*nc* |*V3.0RC01 vs. V2.0.1* |*Comment*
 |x |AssetAdministrationShell/assetInformation |Substitute for AssetAdministrationShell/asset (no reference any longer, instead aggregation)
@@ -6801,7 +6801,7 @@ Major changes:
 |===
 
 .New, Changed or Removed Constraints w/o Security
-[width="100%",cols="9%,13%,14%,64%",options="header",]
+[cols="9%,13%,14%,64%",options="header",]
 |===
 |*nc* |*V3.0RC01* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASd-001 |Removed a|
@@ -6879,7 +6879,7 @@ Major changes:
 * Only bugfixes
 
 .New, Changed or Removed Constraints Security
-[width="100%",cols="9%,17%,23%,51%",options="header",]
+[cols="9%,17%,23%,51%",options="header",]
 |===
 |*nc* |*V3.0RC01* |*New, Update, Removed, Reformulated* |*Comment*
 | |AASd-010 |Removed |Renamed to AASs-010 (see NEW)
@@ -6907,7 +6907,7 @@ Major changes:
 * Only bugfixes
 
 .Changes w.r.t. V2.0.1 w/o Security
-[width="100%",cols="11%,44%,45%",options="header",]
+[cols="11%,44%,45%",options="header",]
 |===
 |*nc* |*V2.0.1 Change w.r.t. V2.0* |*Comment*
 | |DataTypeIEC61360/INTEGER_COUNT |Bugfix, was missing
@@ -6919,7 +6919,7 @@ Major changes:
 |===
 
 .New, Changed or Removed Constraints w/o Security
-[width="100%",cols="9%,11%,23%,57%",options="header",]
+[cols="9%,11%,23%,57%",options="header",]
 |===
 |*nc* |*V2.0.1* |*New, Update, Removed* |*Comment*
 | |AASd-001 |update a|
@@ -6948,7 +6948,7 @@ Major changes:
 * Referencing of fragments within a file etc. now also supported
 
 .Changes w.r.t. V1.0 w/o Security
-[width="100%",cols="11%,44%,45%",options="header",]
+[cols="11%,44%,45%",options="header",]
 |===
 |*nc* |*V2.0 Change w.r.t. V1.0* |*Comment*
 |(x) footnote:[There was an implicit constraint restricting the values to the values in the enumeration. This is now formalized.] |anySimpleTypeDef a|
@@ -6994,7 +6994,7 @@ Type changed from AnySimpleTypeDef to ValueDataType
 |===
 
 .New Elements in Metamodel V1.0 w/o Security
-[width="100%",cols="43%,57%",options="header",]
+[cols="43%,57%",options="header",]
 |===
 |*V2.0* |*Comment*
 |AnnotatedRelationshipElement |New submodel element, inheriting from RelationshipElement
@@ -7031,7 +7031,7 @@ Type changed from AnySimpleTypeDef to ValueDataType
 |===
 
 .New, Changed or Removed Constraints w/o Security
-[width="100%",cols="9%,14%,23%,54%",options="header",]
+[cols="9%,14%,23%,54%",options="header",]
 |===
 |*nc* |*V2.0* |*New, Update, Removed* |*Comment*
 | |AASd-007 |update a|
@@ -7060,7 +7060,7 @@ Constraint AASd-025: The data element shall be part of the submodel that is refe
 === Metamodel Changes V2.0 – Security Part
 
 .Changes Metamodel w.r.t. V1.0 Security
-[width="100%",cols="5%,42%,53%",options="header",]
+[cols="5%,42%,53%",options="header",]
 |===
 |*nc* |*V2.0 Change w.r.t. V1.0* |*Comment*
 |x |AccessControl/selectableEnvironmentAttributes |Type changed from Submodel to Submodel*
@@ -7082,7 +7082,7 @@ externalInformationPoint renamed to externalInformationPoints
 |===
 
 .New Elements in Metamodel w.r.t. Security
-[width="100%",cols="52%,48%",options="header",]
+[cols="52%,48%",options="header",]
 |===
 |*V2.0* |*Comment*
 |BlobCertificate |New class inheriting from Certificate
