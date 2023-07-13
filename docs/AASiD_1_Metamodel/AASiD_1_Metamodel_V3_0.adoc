@@ -1,26 +1,4 @@
-image:media/media/image1.png[media/media/image1]
-
-Imprint
-
-*Publisher*
-
-Industrial Digital Twin Association
-
-Lyoner Strasse 18
-
-60528 Frankfurt am Main
-
-Germany
-
-https://www.industrialdigitaltwin.org/
-
-*Status*
-
-April 2023
-
-*Illustrations*
-
-Plattform Industrie 4.0, Publik. Agentur für Kommunikation GmbH, designed by Publik. Agentur für Kommunikation GmbH
+= Specification of the Asset Administration Shell. Part 1: Metamodel
 
 == Preamble
 
