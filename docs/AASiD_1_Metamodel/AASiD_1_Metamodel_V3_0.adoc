@@ -16,7 +16,7 @@ https://www.industrialdigitaltwin.org/
 
 *Status*
 
-March 2023
+April 2023
 
 *Illustrations*
 
@@ -48,7 +48,6 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 * MUST NOT This phrase, or the phrase "SHALL NOT", mean that the definition is an absolute prohibition of the specification.
 * SHOULD This word, or the adjective "RECOMMENDED", mean that there may exist valid reasons in particular circumstances to ignore a particular item, but the full implications must be understood and carefully weighed before choosing a different course.
 * SHOULD NOT This phrase, or the phrase "NOT RECOMMENDED" mean that there may exist valid reasons in particular circumstances when the particular behavior is acceptable or even useful, but the full implications should be understood and the case carefully weighed before implementing any behavior described with this label.
-
 * MAY This word, or the adjective "OPTIONAL", mean that an item is truly optional. One vendor may choose to include the item because a particular marketplace requires it or because the vendor feels that it enhances the product while another vendor may omit the same item. An implementation which does not include a particular option MUST be prepared to interoperate with another implementation which does include the option, though perhaps with reduced functionality. In the same vein an implementation which does include a particular option MUST be prepared to interoperate with another implementation which does not include the option (except, of course, for the feature the option provides.)
 
 ===  Scope of this Document
@@ -571,6 +570,7 @@ software _entity_ that may take different values, one at a time
 
 The following abbreviations are not used in the document but may be used as abbreviations for the elements in the metamodel defined in this document.
 
+. Elements with Allowed Identifying Values
 [width="100%",cols="33%,67%",options="header",]
 |===
 |*Abbreviation* |*Description*
@@ -669,8 +669,7 @@ This important relationship should be maintained throughout the life of the inst
 
 
 
-Table 1 Life Cycle Phases and Roles of Type and Instance Assets
-
+.Life Cycle Phases and Roles of Type and Instance Assets
 [width="100%",cols="20%,22%,58%",]
 |===
 |*Asset Kind* |*Life Cycle Phase* |*Description*
@@ -870,8 +869,7 @@ Not every identifier is applicable for every element of the UML model representi
 
 See Annex A for more information on how to create new identifiers and best practices for creating URI identifiers.
 
-Elements with Allowed Identifying Values
-
+.Elements with Allowed Identifying Values
 [width="100%",cols="21%,17%,22%,40%",options="header",]
 |===
 |*Elements with identifying values* |*Attribute* |*Allowed identifiers (recommended or typical)* |*Remarks*
@@ -1183,8 +1181,7 @@ image:media/media/image10.jpeg[media/media/image10,width=642,height=309]
 
 We can distinguish between incoming and outgoing events. See Table 3 for more information on the event directions.
 
-Directions of Events
-
+.Directions of Events
 [width="100%",cols="32%,68%",options="header",]
 |===
 |*Direction* |*Description*
@@ -1198,8 +1195,7 @@ The uses cases described in Clause 4.6.2 need different types of events. Each ev
 
 Table 4 gives an overview of types of events. The possible directions of an event are described in Clause 4.6.3.
 
-Table 4 Types of Events
-
+.Types of Events
 [width="100%",cols="26%,12%,62%",options="header",]
 |===
 |*Group* |*Direction* |*Motivation / Conditions*
@@ -1244,9 +1240,7 @@ Custom event types can be defined by using a proprietary, but worldwide unique, 
 Events can be stated with an _observableReference_ to the _Referables_ of Asset Administration Shell, __Submodel__s, and _SubmodelElements._ These _Referables_ define the scope of the events, which are to be received or sent. +
 Table 5 describes the different scopes of an event.
 
- +
-Table 5 Event Scopes
-
+.Event Scopes
 [width="100%",cols="32%,68%",options="header",]
 |===
 |*Event attached to ...* |*Scope*
@@ -1794,8 +1788,7 @@ Note: categories are deprecated and should no longer be used.
 ====
 
 
-Categoriesfootnote:[Note: categories of referables are deprecated.] for Elements with Value
-
+.Categoriesfootnote:[Note: categories of referables are deprecated.] for Elements with Value
 [width="100%",cols="18%,28%,54%",options="header",]
 |===
 |Category: |Applicable to, Examples: |Explanation:
@@ -3268,8 +3261,7 @@ The meaning and format of xsd types is specified in https://www.w3.org/XML/Schem
 
 See Clause 5.3.12.6 for constraints on types.
 
-Simple Data Types Used in Metamodel
-
+.Simple Data Types Used in Metamodel
 [width="100%",cols="10%,19%,38%,33%",options="header",]
 |===
 |Source |Basic Data Type |Value Range |Sample Values
@@ -3303,8 +3295,7 @@ Note: see Clause 5.3.12.6 for constraints on types.
 ====
 
 
-Primitive Data Types Used in Metamodel
-
+.Primitive Data Types Used in Metamodel
 [width="100%",cols="13%,30%,57%",options="header",]
 |===
 |*Primitive* |*Definition* |*Value Examples*
@@ -3501,8 +3492,7 @@ Figure 53 Data TypeDefXsd Enumeration
 
 shows the data types which can be used for submodel element values. The data types are defined according to the W3C XML Schema (https://www.w3.org/TR/xmlschema-2/#built-in-datatypes and https://www.w3.org/TR/xmlschema-2/#built-in-derived). "Value Range" further explains the possible range of data values for this data type. The right column shows related examples for values of the corresponding data type.
 
-Data Types with Examplesfootnote:[See list of RDF-compatible XSD types with short description https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes. Examples from https://openmanufacturingplatform.github.io/sds-bamm-aspect-meta-model/bamm-specification/v1.0.0/datatypes.html]
-
+.Data Types with Examplesfootnote:[See list of RDF-compatible XSD types with short description https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes. Examples from https://openmanufacturingplatform.github.io/sds-bamm-aspect-meta-model/bamm-specification/v1.0.0/datatypes.html]
 [width="100%",cols="15%,22%,24%,39%",options="header",]
 |===
 | |Data Type |Value Range |Sample Values
@@ -3886,8 +3876,7 @@ This document specifies the Asset Administration Shell in a technology-neutral f
 
 Table 10 explains the main purpose of each of the formats: OPC UA information modelsfootnote:[OPC UA Information Models should not be mixed up with the Client/Server or Pub/Sub Protocol of OPC UA. This would belong to the communication but not to the Asset Administration Shell representation layer.], AutomationML, XML, JSON, and RDF. The different purposes are visualized in Figure 57.
 
-Distinction of Different Data Formats for the Asset Administration Shell
-
+.Distinction of Different Data Formats for the Asset Administration Shell
 [width="100%",cols="21%,79%",options="header",]
 |===
 |Data format |Purpose / motivation
@@ -4381,8 +4370,7 @@ Following the different identification types from Clause 4.3.4, it can be stated
 
 The approach for semantics and interaction for I4.0 components link:#bib18[[18\]] suggests the use of the following structure (see Table 11) for URIsfootnote:[URLs are also URIs], which is slightly modified here. The idea is to always structure URIs following a scheme of different elements. However, this is just a recommendation and by no means mandatory.
 
-Proposed Structure for URIs
-
+.Proposed Structure for URIs
 [width="100%",cols="23%,64%,13%",options="header",]
 |===
 |*Element* |*Description* |*Syntax component*
@@ -4796,8 +4784,7 @@ For capitalization of titles, rules according to https://capitalizemytitle.com/ 
 
 === Template for Classes
 
-Template for Classes:
-
+.Template for Classes:
 [width="100%",cols="36%,29%,23%,12%",options="header",]
 |===
 |Class: |<Class Name> [\<<abstract>>] ["\<<Experimental>>"] ["\<<Deprecated>>"] ["\<<Template>>"] | |
@@ -4865,8 +4852,7 @@ This would be an invalid reference for "ModelReference<Submodel>"
 
 === Template for Enumerations
 
-Template for Enumerations:
-
+.Template for Enumerations:
 [width="100%",cols="30%,70%",options="header",]
 |===
 |Enumeration: |<Enumeration Name> ["\<<Experimental>>"] ["\<<Deprecated>>"]
@@ -4891,8 +4877,7 @@ Enumeration values use Camel Case notation and start with a small letter. Howeve
 
 === Template for Primitives
 
-Template for Primitive:
-
+.Template for Primitive:
 [width="100%",cols="20%,25%,55%",options="header",]
 |===
 |*Primitive* |*Explanation* |*Value Examples*
