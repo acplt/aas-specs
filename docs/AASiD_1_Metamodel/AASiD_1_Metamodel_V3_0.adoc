@@ -5297,15 +5297,12 @@ Smaller changes:
 |X |Asset |Removed, asset referenced via AssetInformation/globalAssetId only
 |X |AssetAdministrationShell/asset |Removed, substituted by AssetAdministrationShell/assetInformation (but no reference any longer, instead now aggregation)
 |X |AssetAdministrationShell/conceptDictionaries |Removed
-|X |AssetAdministrationShell/security |Removed +
- +
+|X |AssetAdministrationShell/security a|
+
+Removed
 
 ====
-
-====
-Note: Security is still part of the Asset Administration Shell, but the Asset Administration Shell and its elements are referenced from Security
-====
-.
+Note: Security is still part of the Asset Administration Shell, but the Asset Administration Shell and its elements are referenced from Security.
 ====
 
 | x |AssetAdministrationShell/view |Removed, Views no longer supported
@@ -5875,15 +5872,9 @@ Note: ReferableElements was substituted by AasSubmodelElements and Aas Identifia
 |x |AssetAdministrationShell/security a|
 Removed
 
-
 ====
-
+Note: Security is still part of the Asset Administration Shell, but the Asset Administration Shell and its elements are referenced from Security.
 ====
-Note: Security is still part of the Asset Administration Shell, but the Asset Administration Shell and its elements are referenced from Security
-====
-.
-====
-
 
 |  |AssetAdministrationShell/view |Removed, views no longer supported
 |x |BasicEvent |Renamed to BasicEventElement
@@ -6301,7 +6292,7 @@ Bugfixes:
 * Entity/globalAssetId diagram (table was correct): Type change from reference of Reference to Reference (from Reference* to Reference)
 
 .Changes w/o Security
-[width="100%",cols="8%,58%,34%",options="header",]
+[width="100%",cols="4%,45%,51%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V3.0RC01* |*Comment*
 | |AdministrativeInformation |Bugfix: Stereotype "DataType" added
@@ -6398,7 +6389,7 @@ Now part of AasSubmodelElements
 |===
 
 .New Elements in Metamodel w/o Security
-[width="100%",cols="6%,56%,38%",options="header",]
+[width="100%",cols="4%,45%,51%",options="header",]
 |===
 |*nc* |*V3.0RC02 vs. V2.0RC01 New Elements* |*Comment*
 | |AasSubmodelElements a|
