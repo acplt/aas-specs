@@ -13,7 +13,7 @@ def recolor_notes(content):
     for match in matches:
         old_note = match
         # match = re.sub(r'Note:|Note\s+(\d+)(:*)', lambda m: '' if m.group(1) is None else m.group(1)+" :", match)
-        match = match.strip().capitalize()
+        match = match.strip()
         content = content.replace(old_note, f'\n====\n{match}\n====\n')
 
     return content
