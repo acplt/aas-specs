@@ -557,7 +557,7 @@ An Asset Administration Shell either represents a type asset or an instance asse
 
 gives an example of how to handle type assets and their derived instance assets. The attribute "assetKind" indicates whether the Asset Administration Shell (denoted by the ": AAS" UML notation for a class instance) represents a type asset or an instance asset. Additionally, attributes are added to show that the attributes of type asset and instance assets typically differ from each other.
 
-image:media/media/image4.emf[media/media/image4,width=560,height=204]
+image:media/media/image4.png[media/media/image4,width=560,height=204]
 
 [#_Toc126252215 .anchor]####Figure 3 Example: Asset Administration Shells for Type and Instance Assets
 
@@ -603,7 +603,7 @@ Note 3: an Asset Administration Shell type shall be realized based on the metamo
 
 Note 4: it is not mandatory to define an Asset Administration Shell type before defining an Asset Administration Shell (instance). An Asset Administration Shell instance that does not realize an Asset Administration Shell type shall be realized based on the metamodel of an Asset Administration Shell as defined in this document.
 
-image:media/media/image5.emf[media/media/image5,width=623,height=386]
+image:media/media/image5.png[media/media/image5,width=623,height=386]
 
 [#_Toc126252216 .anchor]####Figure 4 Example: Asset Administration Shell, Asset Administration Shell Types and Instances
 
@@ -1036,7 +1036,7 @@ Note: the UML modelling uses so-called abstract classes for denoting reused conc
 
 In case of an Asset Administration Shell of an instance asset, a reference to the Asset Administration Shell representing the corresponding type asset or another instance asset it was derived from may be added (_AssetAdministrationShell/derivedFrom_). The same holds true for the Asset Administration Shell of an type asset. Types can also be derived from other types.
 
-image:media/media/image11.emf[media/media/image11,width=623,height=673]
+image:media/media/image11.png[media/media/image11,width=623,height=673]
 
 [#_Ref113804309 .anchor]####Figure 10 Overview Metamodel of the Asset Administration Shell
 
@@ -1068,11 +1068,11 @@ Note: the abstract classes are numbered h0_, h1_, etc. (e.g. h1_Referable); thei
 
 Figure 11 shows the so-called environment. The environment’s purpose is to list all Asset Administration Shells, all submodels, and all concept descriptions – in other word, all identifiables within an ecosystem.
 
-image:media/media/image12.emf[media/media/image12,width=547,height=227]
+image:media/media/image12.png[media/media/image12,width=547,height=227]
 
 [#_Ref128496917 .anchor]####Figure 11 Metamodel of Environment
 
-image:media/media/image13.emf[media/media/image13,width=623,height=455]
+image:media/media/image13.png[media/media/image13,width=623,height=455]
 
 [#_Ref128751571 .anchor]####Figure 12 Metamodel Package Overview
 
@@ -1096,7 +1096,7 @@ This clause specifies the abstract classes that represent commonly used attribut
 
 ===== Administrative Information Attributes
 
-image:media/media/image14.emf[media/media/image14,width=155,height=120]
+image:media/media/image14.png[media/media/image14,width=155,height=120]
 
 [#_Toc126252225 .anchor]####Figure 13 Metamodel of Administrative Information
 
@@ -1149,7 +1149,7 @@ Note 3: usage of the template ID is not restricted to submodel instances. The cr
 |Identifier |0..1
 |===
 
-===== Has Data Specification Attributesimage:media/media/image15.emf[media/media/image15,width=176,height=80]
+===== Has Data Specification Attributesimage:media/media/image15.png[media/media/image15,width=176,height=80]
 
 [#_Toc126252226 .anchor]####Figure 14 Metamodel of HasDataSpecification
 
@@ -1171,7 +1171,7 @@ For more details on data specifications, please see Clause 6.
 
 ===== Extensions Attributes
 
-image:media/media/image16.emf[media/media/image16,width=502,height=260]
+image:media/media/image16.png[media/media/image16,width=502,height=260]
 
 [width="100%",cols="28%,33%,24%,15%",options="header",]
 |===
@@ -1189,7 +1189,7 @@ Note 2: extensions are proprietary, i.e. they do not support global interoperabi
 |extension |An extension of the element. |Extension |0..*
 |===
 
-image:media/media/image17.emf[media/media/image17,width=336,height=104]
+image:media/media/image17.png[media/media/image17,width=336,height=104]
 
 [width="100%",cols="24%,32%,32%,12%",options="header",]
 |===
@@ -1245,7 +1245,7 @@ The kind enumeration is used to denote whether an element is of kind _Template_ 
 
 ===== Has Semantics Attributes
 
-image:media/media/image18.emf[media/media/image18,width=232,height=93]
+image:media/media/image18.png[media/media/image18,width=232,height=93]
 
 [#_Toc126252229 .anchor]####Figure 17 Metamodel of Semantic References (HasSemantics)
 
@@ -1276,7 +1276,7 @@ Note: it is recommended to use an external reference.
 |Reference |0..*
 |===
 
-===== image:media/media/image19.emf[media/media/image19,width=408,height=258]Identifiable Attributes
+===== image:media/media/image19.png[media/media/image19,width=408,height=258]Identifiable Attributes
 
 [#_Toc126252230 .anchor]####Figure 18 Metamodel of Identifiables
 
@@ -1310,7 +1310,7 @@ Note: some of the administrative information like the version number might need 
 
 ===== Qualifiable Attributes
 
-[#_Toc126252231 .anchor]##image:media/media/image20.emf[media/media/image20,width=418,height=148]Figure 19 Metamodel of Qualifiables
+[#_Toc126252231 .anchor]##image:media/media/image20.png[media/media/image20,width=418,height=148]Figure 19 Metamodel of Qualifiables
 
 [width="100%",cols="17%,50%,19%,14%",options="header",]
 |===
@@ -1326,7 +1326,7 @@ Note: see Clause 5.3.12.3 for constraints related to qualifiables.
 |qualifier |Additional qualification of a qualifiable element |Qualifier |0..*
 |===
 
-===== image:media/media/image21.emf[media/media/image21,width=385,height=148]Qualifier Attributes
+===== image:media/media/image21.png[media/media/image21,width=385,height=148]Qualifier Attributes
 
 [#_Toc126252232 .anchor]####Figure 20 Metamodel of Qualifiers
 
@@ -1399,7 +1399,7 @@ image:media/media/image22.png[Ein Bild, das Text enthält. Automatisch generiert
 [#_Ref128756143 .anchor]## +
 Figure 21 Example: Qualifier from IEC CDD
 
-===== image:media/media/image23.emf[media/media/image23,width=222,height=151]Referable Attributes
+===== image:media/media/image23.png[media/media/image23,width=222,height=151]Referable Attributes
 
 [#_Toc126252234 .anchor]####Figure 22 Metamodel of Referables
 
@@ -1490,7 +1490,7 @@ SubmodelElementList
 |An element with the category VARIABLE is an element that is calculated during runtime, i.e. its value is a runtime value.
 |===
 
-==== image:media/media/image24.emf[media/media/image24,width=530,height=324]Asset Administration Shell Attributes
+==== image:media/media/image24.png[media/media/image24,width=530,height=324]Asset Administration Shell Attributes
 
 [#_Toc126252235 .anchor]####Figure 23 Metamodel of an AssetAdministrationShell
 
@@ -1518,7 +1518,7 @@ Temporarily, no submodel might be assigned to the Asset Administration Shell.
 |ModelReference<Submodel> |0..*
 |===
 
-==== image:media/media/image25.emf[media/media/image25,width=442,height=242]Asset Information Attributes
+==== image:media/media/image25.png[media/media/image25,width=442,height=242]Asset Information Attributes
 
 [#_Toc126252236 .anchor]####Figure 24 Metamodel of Asset Information
 
@@ -1618,7 +1618,7 @@ Note 2: semanticIds for the single specificAssetIds do not need to be unique.
 
 For more information on the concept of subject, see Attribute Based Access Control (ABAC) [49]. The assumption is that every subject has a unique identifier.
 
-==== image:media/media/image26.emf[media/media/image26,width=470,height=139]Submodel Attributes
+==== image:media/media/image26.png[media/media/image26,width=470,height=139]Submodel Attributes
 
 [#_Toc126252237 .anchor]####Figure 25 Metamodel of Submodel
 
@@ -1642,7 +1642,7 @@ A submodel is used to structure the digital representation and technical functio
 |submodelElement |A submodel consists of zero or more submodel elements. |SubmodelElement |0..*
 |===
 
-==== image:media/media/image27.emf[media/media/image27,width=207,height=139]Submodel Element Attributes
+==== image:media/media/image27.png[media/media/image27,width=207,height=139]Submodel Element Attributes
 
 [#_Toc126252238 .anchor]####Figure 26 Metamodel of Submodel Element
 
@@ -1662,7 +1662,7 @@ Submodel elements may also have defined data specification templates. A template
 
 ==== Overview of Submodel Element Types
 
-image:media/media/image28.emf[media/media/image28,width=623,height=236]
+image:media/media/image28.png[media/media/image28,width=623,height=236]
 
 [#_Ref24442249 .anchor]####Figure 27 Metamodel Overview for Submodel Element Subtypes
 
@@ -1672,7 +1672,7 @@ Submodel elements include data properties as well as operations, events and othe
 
 All submodel elements including abstract classes like data elements are specified in alphabetical order.
 
-===== image:media/media/image29.emf[media/media/image29,width=200,height=177]Annotated Relationship Element Attributes
+===== image:media/media/image29.png[media/media/image29,width=200,height=177]Annotated Relationship Element Attributes
 
 [#_Toc126252240 .anchor]####Figure 28 Metamodel of Annotated Relationship Elements
 
@@ -1687,7 +1687,7 @@ An annotated relationship is a relationship similar to a ternary association in 
 |annotation |A data element that represents an annotation that holds for the relationship between the two elements |DataElement |0..*
 |===
 
-===== image:media/media/image30.emf[media/media/image30,width=378,height=232]Basic Event Element Attributes
+===== image:media/media/image30.png[media/media/image30,width=378,height=232]Basic Event Element Attributes
 
 [#_Toc126252241 .anchor]####Figure 29 Metamodel of Basic Event Element
 
@@ -1760,7 +1760,7 @@ Events sent or received by an Asset Administration Shell always comply with a ge
 
 The payload of such an event is specified below.
 
-image:media/media/image31.emf[media/media/image31,width=226,height=173]Note: the payload is not part of the information model as exchanged via the AASX package format but used in re-active Asset Administration Shells.
+image:media/media/image31.png[media/media/image31,width=226,height=173]Note: the payload is not part of the information model as exchanged via the AASX package format but used in re-active Asset Administration Shells.
 
 [width="100%",cols="23%,39%,29%,9%",options="header",]
 |===
@@ -1795,7 +1795,7 @@ Note: this is an external reference.
 
 For more information on the concept of subject, see Attribute Based Access Control (ABAC) [49]. The assumption is that every subject has a unique identifier.
 
-===== image:media/media/image32.emf[media/media/image32,width=146,height=93] Blob Attributes
+===== image:media/media/image32.png[media/media/image32,width=146,height=93] Blob Attributes
 
 [#_Toc126252243 .anchor]####Figure 31 Metamodel of Blobs
 
@@ -1825,7 +1825,7 @@ The allowed values are defined as in RFC2046.
 |ContentType |1
 |===
 
-===== image:media/media/image33.emf[media/media/image33,width=113,height=80]Capability Attributes
+===== image:media/media/image33.png[media/media/image33,width=113,height=80]Capability Attributes
 
 [#_Toc126252244 .anchor]####Figure 32 Metamodel of Capabilities
 
@@ -1839,7 +1839,7 @@ Note: the _semanticId_ of a capability is typically an ontology, which enables r
 |Attribute |Explanation |Type |Card.
 |===
 
-===== image:media/media/image34.emf[media/media/image34,width=623,height=235]Data Element and Overview of Data Element Types
+===== image:media/media/image34.png[media/media/image34,width=623,height=235]Data Element and Overview of Data Element Types
 
 [#_Toc126252245 .anchor]####Figure 33 Metamodel of Data Elements
 
@@ -1866,7 +1866,7 @@ Note: categories are deprecated and should no longer be used.
 |Attribute |Explanation |Type |Card.
 |===
 
-===== Entity Attributesimage:media/media/image35.emf[media/media/image35,width=376,height=120]
+===== Entity Attributesimage:media/media/image35.png[media/media/image35,width=376,height=120]
 
 [#_Toc126252246 .anchor]####Figure 34 Metamodel of Entities
 
@@ -1903,7 +1903,7 @@ The asset of an I4.0 Component is a self-managed entity per definition.
 
 |===
 
-===== Event Attributesimage:media/media/image36.emf[media/media/image36,width=168,height=82]
+===== Event Attributesimage:media/media/image36.png[media/media/image36,width=168,height=82]
 
 [#_Toc129696998 .anchor]####Figure 35 Metamodel of Events
 
@@ -1915,7 +1915,7 @@ The asset of an I4.0 Component is a self-managed entity per definition.
 |Attribute |Explanation |Type |Card.
 |===
 
-===== image:media/media/image37.emf[media/media/image37,width=146,height=93] File Attributes
+===== image:media/media/image37.png[media/media/image37,width=146,height=93] File Attributes
 
 [#_Toc126252248 .anchor]####Figure 36 Metamodel of File Submodel Element
 
@@ -1942,7 +1942,7 @@ The path can be absolute or relative.
 
 [#_Toc126252249 .anchor]##
 
-image:media/media/image38.emf[media/media/image38,width=207,height=93]Figure 37 Metamodel of Multi Language Properties
+image:media/media/image38.png[media/media/image38,width=207,height=93]Figure 37 Metamodel of Multi Language Properties
 
 [width="99%",cols="19%,50%,21%,10%",options="header",]
 |===
@@ -1966,7 +1966,7 @@ Note: it is recommended to use an external reference.
 
 ===== Operation Attributes
 
-[#_Toc126252250 .anchor]##image:media/media/image39.emf[media/media/image39,width=375,height=106]Figure 38 Metamodel of Operations
+[#_Toc126252250 .anchor]##image:media/media/image39.png[media/media/image39,width=375,height=106]Figure 38 Metamodel of Operations
 
 [width="100%",cols="18%,45%,25%,12%",options="header",]
 |===
@@ -1999,7 +1999,7 @@ Note 2: OperationVariable is introduced as separate class to enable future exten
 
 Note 3: even if the submodel element as the value of an input and an output variable have the same idShort, this does not mean that they are identical or mapped to the same variable since OperationVariables are no referables. The same applies to two input variables or an input variable and an inoutputVariable a.s.o.
 
-===== image:media/media/image40.emf[media/media/image40,width=186,height=106]Property Attributes
+===== image:media/media/image40.png[media/media/image40,width=186,height=106]Property Attributes
 
 [#_Toc126252251 .anchor]####Figure 39 Metamodel of Properties
 
@@ -2026,7 +2026,7 @@ Note: it is recommended to use an external reference.
 
 ===== Range Attributes
 
-[#_Toc126252252 .anchor]##image:media/media/image41.emf[media/media/image41,width=167,height=117]Figure 40 Metamodel of Ranges
+[#_Toc126252252 .anchor]##image:media/media/image41.png[media/media/image41,width=167,height=117]Figure 40 Metamodel of Ranges
 
 [width="100%",cols="18%,44%,21%,17%",options="header",]
 |===
@@ -2049,7 +2049,7 @@ If the max value is missing, the value is assumed to be positive infinite.
 |ValueDataType |0..1
 |===
 
-===== image:media/media/image42.emf[media/media/image42,width=146,height=95]Reference Element Attributes
+===== image:media/media/image42.png[media/media/image42,width=146,height=95]Reference Element Attributes
 
 [#_Toc126252253 .anchor]####Figure 41 Metamodel of Reference Elements
 
@@ -2064,7 +2064,7 @@ If the max value is missing, the value is assumed to be positive infinite.
 
 For more information on references, see Clause 5.3.9.
 
-===== image:media/media/image43.emf[media/media/image43,width=132,height=93]Relationship Element Attributes
+===== image:media/media/image43.png[media/media/image43,width=132,height=93]Relationship Element Attributes
 
 [#_Toc126252254 .anchor]####Figure 42 Metamodel of Relationship Elements
 
@@ -2078,7 +2078,7 @@ For more information on references, see Clause 5.3.9.
 |second |Reference to the second element in the relationship taking the role of the object |Reference |1
 |===
 
-===== image:media/media/image44.emf[media/media/image44,width=182,height=228]Submodel Element Collection Attributes
+===== image:media/media/image44.png[media/media/image44,width=182,height=228]Submodel Element Collection Attributes
 
 [#_Toc126252255 .anchor]####Figure 43 Metamodel of Submodel Element Collections
 
@@ -2099,7 +2099,7 @@ Note: the elements within a submodel element collection are not ordered. Every e
 |value |Submodel element contained in the collection |SubmodelElement |0..*
 |===
 
-===== image:media/media/image45.emf[media/media/image45,width=259,height=314]Submodel Element List Attributes
+===== image:media/media/image45.png[media/media/image45,width=259,height=314]Submodel Element List Attributes
 
 [#_Toc126252256 .anchor]####Figure 44 Metamodel of Submodel Element Lists
 
@@ -2153,7 +2153,7 @@ Note: it is recommended to use an external reference.
 |valueTypeListElement |The value type of the submodel element contained in the list |DataTypeDefXsd |0..1
 |===
 
-==== image:media/media/image46.emf[media/media/image46,width=186,height=92]Concept Description Attributes
+==== image:media/media/image46.png[media/media/image46,width=186,height=92]Concept Description Attributes
 
 [#_Toc126252257 .anchor]####Figure 45 Metamodel of Concept Descriptions
 
@@ -2182,7 +2182,7 @@ Different types of submodel elements require different attributes to describe th
 
 See Clause 5.3.11.3 for predefined data specification templates.
 
-==== image:media/media/image47.emf[media/media/image47,width=547,height=227]Environment Attributes
+==== image:media/media/image47.png[media/media/image47,width=547,height=227]Environment Attributes
 
 [#_Toc126252258 .anchor]####Figure 46 Metamodel for Environment
 
@@ -2209,7 +2209,7 @@ An external reference is a unique identifier. The identifier can be a concatenat
 
 Note: references should not be mixed up with locators. Even URLs can be used as identifiers and do not necessarily describe a resource that can be accessed.
 
-===== image:media/media/image48.emf[media/media/image48,width=358,height=207] Reference Attributes
+===== image:media/media/image48.png[media/media/image48,width=358,height=207] Reference Attributes
 
 [#_Toc126252259 .anchor]####Figure 47 Metamodel of Reference
 
@@ -2257,7 +2257,7 @@ Note 2: it is recommended to use an external reference for the semantic ID expec
 
 ===== Key Attributes
 
-image:media/media/image49.emf[media/media/image49,width=338,height=398]
+image:media/media/image49.png[media/media/image49,width=338,height=398]
 
 [#_Toc126252260 .anchor]####Figure 48 Metamodel of Keys
 
@@ -2265,9 +2265,9 @@ Keys are used to define references (_Reference_).
 
 Figure 49 presents a logical model of key types. These logical enumerations are used to formulate constraints.
 
-[#_Ref103183599 .anchor]##image:media/media/image50.emf[media/media/image50,width=623,height=542]Figure 49 Logical Model for Keys of References (non-normative)
+[#_Ref103183599 .anchor]##image:media/media/image50.png[media/media/image50,width=623,height=542]Figure 49 Logical Model for Keys of References (non-normative)
 
-[#_Toc126252262 .anchor]##image:media/media/image51.emf[media/media/image51,width=164,height=398]Figure 50 Metamodel of KeyTypes Enumeration
+[#_Toc126252262 .anchor]##image:media/media/image51.png[media/media/image51,width=164,height=398]Figure 50 Metamodel of KeyTypes Enumeration
 
 [width="100%",cols="18%,49%,21%,12%",options="header",]
 |===
@@ -2290,7 +2290,7 @@ In all other cases, the key references a model element of the same or another As
 
 An example for using a _FragmentId_ as type of a key is a reference to an element within a file that is part of an Asset Administration Shell aasx package.
 
-image:media/media/image52.emf[media/media/image52,width=162,height=304]
+image:media/media/image52.png[media/media/image52,width=162,height=304]
 
 [#_Toc126252263 .anchor]####Figure 51 Metamodel of AasSubmodelElements Enumeration
 
@@ -2857,13 +2857,13 @@ Note 1: RDFfootnote:[See https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes] re
 
 Note 2: the following RDF types are not supported: HTML and XMLLiteral.
 
-image:media/media/image53.emf[media/media/image53,width=110,height=91]
+image:media/media/image53.png[media/media/image53,width=110,height=91]
 
 [#_Toc126252264 .anchor]####Figure 52 DefTypeDefRdf Enumeration
 
 The enumeration is derived from Figure 54.
 
-image:media/media/image54.emf[media/media/image54,width=137,height=478]Table 9 depicts example values and the value range of the different data types. The left column "Data Type"
+image:media/media/image54.png[media/media/image54,width=137,height=478]Table 9 depicts example values and the value range of the different data types. The left column "Data Type"
 
 [#_Toc126252265 .anchor]####Figure 53 Data TypeDefXsd Enumeration
 
@@ -3179,13 +3179,13 @@ A data specification template specifies which additional attributes, which are n
 
 Figure 55 shows the concept of data specification for a predefined data specification conformant to IEC61360footnote:[Since the data specification templates are specified and maintained in separate documents, these templates are considered as examples only, although there is a similarity to existing data specifications.] that, for example, can be used for concept descriptions for single properties.
 
-image:media/media/image56.emf[media/media/image56,width=550,height=398]
+image:media/media/image56.png[media/media/image56,width=550,height=398]
 
 [#_Ref128756450 .anchor]####Figure 55 Core Elements of Using Data Specifications (non-normative)
 
 The template introduced to describe the concept of a property, a value list, or a value is based on IEC 61360. Figure 55 also shows how concept descriptions and the predefined data specification templates are related to each other.
 
-==== image:media/media/image57.emf[media/media/image57,width=259,height=208]Data Specification Template Attributes
+==== image:media/media/image57.png[media/media/image57,width=259,height=208]Data Specification Template Attributes
 
 [#_Toc126252268 .anchor]####Figure 56 Data Specification Templates
 
@@ -3459,7 +3459,7 @@ Consequently, some serializations or mappings support exactly the data descripti
 
 In the case of restricted use of data specifications, we speak of "embedded data specifications". Figure 58 explains the realization: instead of a set of external global references to externally defined data specifications, a set of pairs consisting of an external global reference to a data specification and the data specification content itself are directly "embedded". Here, the data specification content belongs to the schema, while the data specification including its content are not part of the schema in the general concept. This is similar to the concept of _semanticIds_: either it is an external global reference to an external concept dictionary, or it is a reference to a concept description within the schema. However, there is only one reference allowed for _semanticId_, whereas a set of data specification references is permitted for data specifications.
 
-image:media/media/image59.emf[media/media/image59,width=623,height=383]
+image:media/media/image59.png[media/media/image59,width=623,height=383]
 
 [#_Toc126252270 .anchor]####Figure 58 Realization of Embedded Data Specifications
 
@@ -4137,11 +4137,11 @@ Note: in the Annex listing the metamodel changes, constraints with prefix AASs- 
 
 This annex explains the UML elements used in this specification. For more information, please refer to the comprehensive literature available for UML. The formal specification can be found in [35].
 
-image:media/media/image64.emf[media/media/image64,width=86,height=80]Figure 63 shows a class with name "Class1" and an attribute with name "attr" of type _Class2_. Attributes are owned by the class. Some of these attributes may represents the end of binary associations, see also Figure 70. In this case, the instance of _Class2_ is navigable via the instance of the owning class _Class1_.footnote:[„Navigability notation was often used in the past according to an informal convention, whereby non-navigable ends were assumed to be owned by the Association whereas navigable ends were assumed to be owned by the Classifier at the opposite end. This convention is now deprecated. Aggregation type, navigability, and end ownership are separate concepts, each with their own explicit notation. Association ends owned by classes are always navigable, while those owned by associations may be navigable or not. [35]”]
+image:media/media/image64.png[media/media/image64,width=86,height=80]Figure 63 shows a class with name "Class1" and an attribute with name "attr" of type _Class2_. Attributes are owned by the class. Some of these attributes may represents the end of binary associations, see also Figure 70. In this case, the instance of _Class2_ is navigable via the instance of the owning class _Class1_.footnote:[„Navigability notation was often used in the past according to an informal convention, whereby non-navigable ends were assumed to be owned by the Association whereas navigable ends were assumed to be owned by the Classifier at the opposite end. This convention is now deprecated. Aggregation type, navigability, and end ownership are separate concepts, each with their own explicit notation. Association ends owned by classes are always navigable, while those owned by associations may be navigable or not. [35]”]
 
 [#_Ref55938882 .anchor]####Figure 63 Class
 
-image:media/media/image65.emf[media/media/image65,width=100,height=193]Figure 64 shows that _Class4_ inherits all member elements from _Class3_. Or in other word, _Class3_ is a generalization of _Class4, Class4_ is a specialization of _Class3_. This means that each instance of _Class4_ is also an instance of _Class3_. An instance of _Class4_ has the attributes _attr1_ and _attr2,_ whereas instances of _Class3_ only have the attribute _attr1_.
+image:media/media/image65.png[media/media/image65,width=100,height=193]Figure 64 shows that _Class4_ inherits all member elements from _Class3_. Or in other word, _Class3_ is a generalization of _Class4, Class4_ is a specialization of _Class3_. This means that each instance of _Class4_ is also an instance of _Class3_. An instance of _Class4_ has the attributes _attr1_ and _attr2,_ whereas instances of _Class3_ only have the attribute _attr1_.
 
 [#_Ref54602410 .anchor]####Figure 64 Inheritance/Generalization
 
@@ -4157,65 +4157,65 @@ where <lower-bound> is a value specification of type Integer - i.e. 0, 1, 2, …
 
 The default is 1 for lower-bound and upper-bound.
 
-[#_Ref36935416 .anchor]##image:media/media/image66.emf[media/media/image66,width=200,height=80]Figure 65 Multiplicity
+[#_Ref36935416 .anchor]##image:media/media/image66.png[media/media/image66,width=200,height=80]Figure 65 Multiplicity
 
-image:media/media/image67.emf[media/media/image67,width=233,height=80]A multiplicity element represents a collection of values. The default is a set, i.e. it is not ordered and the elements within the collection are unique and contain no duplicates. Figure 66 shows an ordered collection: the instances of _Class2_ related to an instance of _Class1_. The stereotype <<ordered>> is used to denote that the relationship is ordered.
+image:media/media/image67.png[media/media/image67,width=233,height=80]A multiplicity element represents a collection of values. The default is a set, i.e. it is not ordered and the elements within the collection are unique and contain no duplicates. Figure 66 shows an ordered collection: the instances of _Class2_ related to an instance of _Class1_. The stereotype <<ordered>> is used to denote that the relationship is ordered.
 
 [#_Ref36936280 .anchor]####Figure 66 Ordered Multiplicity
 
-image:media/media/image67.emf[media/media/image67,width=233,height=80]Figure 67 shows that the member ends of an association can be named as well, i.e. an instance of _Class1_ can be in relationship "relation" to an instance of _Class2_. Vice versa, the instance of _Class2_ is in relationship "reverseRelation" to the instance of _Class1_.
+image:media/media/image67.png[media/media/image67,width=233,height=80]Figure 67 shows that the member ends of an association can be named as well, i.e. an instance of _Class1_ can be in relationship "relation" to an instance of _Class2_. Vice versa, the instance of _Class2_ is in relationship "reverseRelation" to the instance of _Class1_.
 
 [#_Ref36936689 .anchor]####Figure 67 Association
 
-image:media/media/image68.emf[media/media/image68,width=200,height=80]Figure 68 shows a composition, also called a composite aggregation. A composition is a binary association, grouping a set of instances. The individuals in the set are typed as specified by _Class2_. The multiplicity of instances of _Class2_ to _Class1_ is always 1 (i.e. upper-bound and lower-bound have value "1"). One instance of _Class2_ belongs to exactly one instance of _Class1_. There is no instance of _Class2_ without a relationship to an instance of _Class1_. Figure 69 shows the composition using an association relationship with a filled diamond as composition adornment.
+image:media/media/image68.png[media/media/image68,width=200,height=80]Figure 68 shows a composition, also called a composite aggregation. A composition is a binary association, grouping a set of instances. The individuals in the set are typed as specified by _Class2_. The multiplicity of instances of _Class2_ to _Class1_ is always 1 (i.e. upper-bound and lower-bound have value "1"). One instance of _Class2_ belongs to exactly one instance of _Class1_. There is no instance of _Class2_ without a relationship to an instance of _Class1_. Figure 69 shows the composition using an association relationship with a filled diamond as composition adornment.
 
 [#_Ref56445695 .anchor]####Figure 68 Composition (Composite Aggregation)
 
 Figure 69 shows an aggregation. An aggregation is a binary association. In contrast to a composition, an instance of _Class2_ can be shared by several instances of _Class1_. Figure 69 shows the shared aggregation using an association relationship with a hallow diamond as aggregation adornment.
 
-[#_Ref36937253 .anchor]##image:media/media/image69.emf[media/media/image69,width=200,height=80]Figure 69 Aggregation
+[#_Ref36937253 .anchor]##image:media/media/image69.png[media/media/image69,width=200,height=80]Figure 69 Aggregation
 
-image:media/media/image70.emf[media/media/image70,width=163,height=80]Figure 70 illustrates that the attribute notation can be used for an association end owned by a class. In this example, the attribute name is "attr" and the elements of this attribute are typed with _Class2._ The multiplicity, here "0..*", is added in square brackets. If the aggregation is ordered, it is added in curly brackets like in this example.
+image:media/media/image70.png[media/media/image70,width=163,height=80]Figure 70 illustrates that the attribute notation can be used for an association end owned by a class. In this example, the attribute name is "attr" and the elements of this attribute are typed with _Class2._ The multiplicity, here "0..*", is added in square brackets. If the aggregation is ordered, it is added in curly brackets like in this example.
 
 [#_Ref37000883 .anchor]####Figure 70 Navigable Attribute Notation for Associations
 
-image:media/media/image71.emf[media/media/image71,width=91,height=80]Figure 71 shows a class with three attributes with primitive types and default values. When a property with a default value is instantiated in the absence of a specific setting for the property, the default value is evaluated to provide the initial values of the property.
+image:media/media/image71.png[media/media/image71,width=91,height=80]Figure 71 shows a class with three attributes with primitive types and default values. When a property with a default value is instantiated in the absence of a specific setting for the property, the default value is evaluated to provide the initial values of the property.
 
 [#_Ref66219196 .anchor]####Figure 71 Default Value
 
-image:media/media/image72.emf[media/media/image72,width=206,height=80]Figure 72 shows that there is a dependency relationship between _Class1_ and _Class2_. In this case, the dependency means that _Class1_ depends on _Class2_ because the type of attribute _attr_ depends on the specification of class _Class2._ A dependency is depicted as dashed arrow between two model elements.
+image:media/media/image72.png[media/media/image72,width=206,height=80]Figure 72 shows that there is a dependency relationship between _Class1_ and _Class2_. In this case, the dependency means that _Class1_ depends on _Class2_ because the type of attribute _attr_ depends on the specification of class _Class2._ A dependency is depicted as dashed arrow between two model elements.
 
 [#_Ref36937918 .anchor]####Figure 72 Dependency
 
-image:media/media/image73.emf[media/media/image73,width=86,height=80]Figure 73 shows an abstract class. It uses the stereotype <<abstract>>. There are no instances of abstract classes. They are typically used for specific member elements that are inherited by non-abstract classes.
+image:media/media/image73.png[media/media/image73,width=86,height=80]Figure 73 shows an abstract class. It uses the stereotype <<abstract>>. There are no instances of abstract classes. They are typically used for specific member elements that are inherited by non-abstract classes.
 
 [#_Ref56445747 .anchor]####Figure 73 Abstract Class
 
 Figure 74 shows a package named "Package2". A package is a namespace for its members. In this example, the member belonging to _Package2_ is class _Class2_.
 
-[#_Ref36938237 .anchor]##image:media/media/image74.emf[media/media/image74,width=106,height=80]Figure 74 Package
+[#_Ref36938237 .anchor]##image:media/media/image74.png[media/media/image74,width=106,height=80]Figure 74 Package
 
-image:media/media/image75.emf[media/media/image75,width=256,height=86]Figure 75 shows that all elements in _Package2_ are imported into the namespace defined by _Package1_. This is a special dependency relationship between the two packages with stereotype <<import>>.
+image:media/media/image75.png[media/media/image75,width=256,height=86]Figure 75 shows that all elements in _Package2_ are imported into the namespace defined by _Package1_. This is a special dependency relationship between the two packages with stereotype <<import>>.
 
 [#_Ref36938632 .anchor]####Figure 75 Imported Package
 
-image:media/media/image76.emf[media/media/image76,width=119,height=93] Figure 76 shows an enumeration with the name "Enumeration1". An enumeration is a data type with its values enumerated as literals. It contains two literal values, "a" and "b". It is a class with stereotype <<enumeration>>. The literals owned by the enumeration are ordered.
+image:media/media/image76.png[media/media/image76,width=119,height=93] Figure 76 shows an enumeration with the name "Enumeration1". An enumeration is a data type with its values enumerated as literals. It contains two literal values, "a" and "b". It is a class with stereotype <<enumeration>>. The literals owned by the enumeration are ordered.
 
 {empty}[#_Ref36939673 .anchor]####Figure 76 Enumerationfootnote:[In Enterprise Architect, the single enumeration values also have a stereotype <<enum>> each.]
 
-image:media/media/image77.emf[media/media/image77,width=86,height=73]Figure 77 shows the definition of the data type with the name "DataType1". A data type has instances that are identified only by their value. It is a class with stereotype <<dataType>>.
+image:media/media/image77.png[media/media/image77,width=86,height=73]Figure 77 shows the definition of the data type with the name "DataType1". A data type has instances that are identified only by their value. It is a class with stereotype <<dataType>>.
 
 [#_Ref36940247 .anchor]####Figure 77 Data Type
 
-image:media/media/image78.emf[media/media/image78,width=86,height=73]Figure 78 shows a primitive data type with the name "int". Primitive data types are predefined data types, without any substructure. The primitive data types are defined outside UML.
+image:media/media/image78.png[media/media/image78,width=86,height=73]Figure 78 shows a primitive data type with the name "int". Primitive data types are predefined data types, without any substructure. The primitive data types are defined outside UML.
 
 [#_Ref36940498 .anchor]####Figure 78 Primitive Data Type
 
 Figure 79 shows how a note can be attached to an element, in this example to class "Class1".
 
-[#_Ref36995742 .anchor]##image:media/media/image79.emf[media/media/image79,width=200,height=80]Figure 79 Note
+[#_Ref36995742 .anchor]##image:media/media/image79.png[media/media/image79,width=200,height=80]Figure 79 Note
 
-image:media/media/image80.emf[media/media/image80,width=213,height=80]Figure 80 shows how a constraint is attached to an element, in this example to class "Class1".
+image:media/media/image80.png[media/media/image80,width=213,height=80]Figure 80 shows how a constraint is attached to an element, in this example to class "Class1".
 
 [#_Ref36995796 .anchor]####Figure 80 Constraint
 
@@ -4267,13 +4267,13 @@ It is assumed that only the end member of the association is navigable per defau
 
 _Class2_ instance only exists if the parent object of type _Class1_ exists.
 
-[#_Ref36999936 .anchor]##image:media/media/image81.emf[media/media/image81,width=410,height=205]Figure 81 Graphical Representations of Composite Aggregation/Composition
+[#_Ref36999936 .anchor]##image:media/media/image81.png[media/media/image81,width=410,height=205]Figure 81 Graphical Representations of Composite Aggregation/Composition
 
 Figure 82 shows different representations of a shared aggregation: a _Class2_ instance can exist independently of a _Class1_ instance; it only references the instances of _Class2_. Now an attribute with the same semantics is defined In Variant B. The reference is denoted by a star added after the type of the attribute.
 
 It is assumed that only the end member of the aggregation association is navigable per default, i.e. it is possible to navigate from an instance of _Class1_ to the owned instance of _Class2_ but not vice versa. Otherwise, variant B would not be identical to Variant A.
 
-image:media/media/image82.emf[media/media/image82,width=397,height=224] A specialty in Figure 82 is that the aggregated instances are referables in the sense of the Asset Administration Shell metamodel (i.e. they inherit from the predefined abstract class "Referable"). This is why Variant B is identical to Variant A. This would not be the case for non-referable elements in the metamodel. The structure of a reference to a model element of the Asset Administration Shell is explicitly defined. A model reference consists of an ordered list of keys. The last key in the key chain shall reference an instance of type _Class2_ (i.e. Reference/type equal to "Class2").
+image:media/media/image82.png[media/media/image82,width=397,height=224] A specialty in Figure 82 is that the aggregated instances are referables in the sense of the Asset Administration Shell metamodel (i.e. they inherit from the predefined abstract class "Referable"). This is why Variant B is identical to Variant A. This would not be the case for non-referable elements in the metamodel. The structure of a reference to a model element of the Asset Administration Shell is explicitly defined. A model reference consists of an ordered list of keys. The last key in the key chain shall reference an instance of type _Class2_ (i.e. Reference/type equal to "Class2").
 
 [#_Ref37014356 .anchor]####Figure 82 Graphical Representation of Shared Aggregation
 
@@ -4281,13 +4281,13 @@ Figure 83 show different graphical representations of generalization. Variant A 
 
 Variant C not only shows which class Class3 instances are inheriting from, but also what they are inheriting. This is depicted by the class name it is inheriting from, followed by "::" and then the list of all inherited elements – here attribute _class2_. Typically, the inherited elements are not shown.
 
-[#_Ref37015321 .anchor]##image:media/media/image83.emf[media/media/image83,width=386,height=206]Figure 83 Graphical Representation of Generalization/Inheritance
+[#_Ref37015321 .anchor]##image:media/media/image83.png[media/media/image83,width=386,height=206]Figure 83 Graphical Representation of Generalization/Inheritance
 
 Figure 84 depicts different graphical notations for enumerations in combination with inheritance. On the left side "Enumeration1" additionally contains the literals as defined by "Enumeration2".
 
 Note 1: the direction of inheritance is opposite to the one for class inheritance. This can be seen at the right side of Figure 84 that defines the same enumeration but without inheritance.
 
-image:media/media/image84.emf[media/media/image84,width=339,height=160]Note 2: in this specification all elements of an enumeration are ordered alphabetically.
+image:media/media/image84.png[media/media/image84,width=339,height=160]Note 2: in this specification all elements of an enumeration are ordered alphabetically.
 
 [#_Ref127802962 .anchor]####Figure 84 Graphical Representation for Enumeration with Inheritance
 
@@ -4325,17 +4325,17 @@ Note: the submodel template defining the structure of such a bill of material is
 
 Figure 88 shows an extract of the metamodel containing the most important elements to describe composite I4.0 Components.
 
-[#_Ref120119373 .anchor]##image:media/media/image88.emf[media/media/image88,width=595,height=522]Figure 88 Extract From Metamodel for Composite I4.0 Components
+[#_Ref120119373 .anchor]##image:media/media/image88.png[media/media/image88,width=595,height=522]Figure 88 Extract From Metamodel for Composite I4.0 Components
 
 == Metamodel UML with Inherited Attributes
 
 In this annex, some UML diagrams are shown together with all attributes inherited for a better overview.
 
-image:media/media/image89.emf[media/media/image89,width=623,height=612] Note: abstract classes are numbered h0_, h1_ etc. Their aliases however are defined without this prefix. The reason for this naming is that no order for inherited classes can be defined in the tooling used for UML modelling (Enterprise Architect); they are ordered alphabetically.
+image:media/media/image89.png[media/media/image89,width=623,height=612] Note: abstract classes are numbered h0_, h1_ etc. Their aliases however are defined without this prefix. The reason for this naming is that no order for inherited classes can be defined in the tooling used for UML modelling (Enterprise Architect); they are ordered alphabetically.
 
 [#_Ref36938064 .anchor]####Figure 89 Selected Classes of Metamodel with Inherited Attributes
 
-image:media/media/image90.emf[media/media/image90,width=623,height=393]
+image:media/media/image90.png[media/media/image90,width=623,height=393]
 
 [#_Toc126252302 .anchor]####Figure 90 Model for Submodel Elements with Inherited Attributes
 
