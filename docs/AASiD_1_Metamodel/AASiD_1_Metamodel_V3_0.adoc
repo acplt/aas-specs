@@ -108,7 +108,9 @@ Guiding principle for the specification was to provide detailed information, whi
 
 === Terms and Definitions
 
+====
 [.underline]#Please note#: the definitions of terms are only valid in a certain context. This glossary applies only within the context of this document.
+====
 
 If available, definitions were taken from IEC 63278-1 DRAFT, July 2022.
 
@@ -509,10 +511,9 @@ hardware or software element which specifies the common _attributes_ shared by a
 
 ====
 Note 1 to entry: the set of instance assets may exist or may not exist.
+Examples of type assets are type of material, a product type, a type of a part, a device type, a machine type, a type of software, a type of control system, a type of production system.
 ====
 
-
-Examples of type assets are type of material, a product type, a type of a part, a device type, a machine type, a type of software, a type of control system, a type of production system.
 
 * [SOURCE: IEC 63278-1]
 
@@ -994,12 +995,12 @@ Before accessing concrete data provided via a submodel, an application typically
 
 When comparing two elements, different use cases should be considered in order to define how these two elements are semantically related. This clause gives first hints on the aspects to consider when dealing with matching semantic identifiers. For example, semantic references including context information as represented in IRDI-Path in ECLASS are not yet considered. Sometimes a concept description is derived from another concept description or is identical to or at least compatible with another concept description. The metamodel foresees an attribute "isCaseOf" for such semantic IDs. However, these are not considered in the matching strategies described in this clause.
 
-Exact Matching (identical semanticIds) – DEFAULT
+*Exact Matching (identical semanticIds) – DEFAULT*
 
 * With exact matching, two semantic IDs need to be string-identical.
 ** Example: Property with idShort "ManufacturerName" + semanticId 0173-1#02-AAO677#002 and Property with idShort "Herstellername" + semanticId 0173-1#02-AAO677#002 have exactly equal semantics.
 
-Intelligent Matching (compatible semanticIds)
+*Intelligent Matching (compatible semanticIds)*
 
 * Ignore Versioning
 ** With intelligent matching, different versions of a concept definition may be matched. For example, if semantic versioning is used to version the concept description, then upward or backward compatible versions can be matched.
@@ -3330,7 +3331,7 @@ a|
 
 <schema elementFormDefault="qualified" targetNamespace="http://www.admin-shell.io/aas/2/0" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:aas="http://www.admin-shell.io/aas/2/0" />
 
-MZ_________ÿÿ__¸_______@___________________________________€_____º__´ Í!¸_LÍ!This program cannot be run in DOS mode.$_______PE__L___Rö\^________à_
+pass:[MZ_________ÿÿ__¸_______@___________________________________€_____º__´	Í!¸_LÍ!This program cannot be run in DOS mode.$_______PE__L___Rö\^________à_]
 
 |ContentType a|
 _string_ with max 100 and min 1 characters
@@ -3933,13 +3934,13 @@ Some mappings or serializations convert the type "Reference" into a single strin
 
 [.underline]#Grammar:#
 
+____
 *<Reference> ::= ["[" <ReferenceType> [ "- " <referredSemanticId> " -" ] "]" ] <Key> \{(", " <Key> }**
 
-____
 *<ReferenceType> ::= "ExternalRef" | "ModelRef" value of AAS:Reference/type*
 
-*<SemanticId> ::= ["[" <ReferenceType> "]"] <Key> \{(", " <Key> }* +
-value of AAS:Reference/referredSemanticId*
+*<SemanticId> ::= ["[" <ReferenceType> "]"] <Key> \{(", " <Key> }** +
+*value of AAS:Reference/referredSemanticId*
 
 *<Key> ::= "(" <KeyType> ")" <KeyValue>*
 
@@ -3964,14 +3965,16 @@ Note 2: _ReferenceType_ is optional. It is clear from the first key in the key c
 
 [.underline]#References#:
 
+____
 *(GlobalReference)0173-1#02-BAA120#008*
 
 *[ExternalRef](GlobalReference)0173-1#02-BAA120#008*
 
 *(Submodel)https://example.com/aas/1/1/1234859590, (SubmodelElementList)Documents, (SubmodelElementCollection)0, (MultiLanguageProperty)Title*
+____
 
 [.underline]#Model References:#
-
+____
 *(ConceptDescription)0173-1#02-BAA120#008*
 
 *[ModelRef](ConceptDescription)0173-1#02-BAA120#008*
@@ -3981,6 +3984,7 @@ Note 2: _ReferenceType_ is optional. It is clear from the first key in the key c
 *[ModelRef- (ConceptDescription)0173-1#02-BAA120#008*
 
 *-](Submodel)https://example.com/aas/1/1/1234859590*
+____
 
 ====  Semantic Identifiers for Metamodel and Data Specifications
 
@@ -3988,17 +3992,14 @@ Rules for creating identifiers are defined to enable the unique identification o
 
 The following grammar is used to create valid identifiers:
 
+____
 *<Namespace> ::= <AAS Namespace> | <Data Specification Namespace>*
 
 *<Namespace Qualifier> ::= <AAS Namespace Qualifier> | <Data Specification Qualifier>*
 
 *<AAS Namespace> ::= <Shell-Namespace> "/aas/" <Version>*
 
-*<Data Specification Namespace> ::=*
-
-____
-*<Shell-Namespace> "/DataSpecifications/" <idShort of Data Specification> <Version>*
-____
+*<Data Specification Namespace> ::= <Shell-Namespace> "/DataSpecifications/" <idShort of Data Specification> <Version>*
 
 *<Shell-Namespace> ::= "https://admin-shell.io/"*
 
@@ -4007,6 +4008,7 @@ ____
 *<Digit> ::= "0"| "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"*
 
 *<Character> ::= characters conformant to regular expression [a..zA..Z-]*
+____
 
 Up to this point, two data specification templates are defined. Now we need to define which data specification namespace is to be used for every data specification.
 
@@ -4042,7 +4044,9 @@ The application of the pattern is explained as follows:
 
 The concept identifier of a Class follows the pattern
 
+____
 _<_*AAS Class name>*
+____
 
 This also applies to abstract classes and types including enumerations.
 
@@ -4050,6 +4054,7 @@ This also applies to abstract classes and types including enumerations.
 #
 
 [.underline]#Valid examples:#
+____
 
 *AAS:Submodel*
 
@@ -4060,6 +4065,7 @@ This also applies to abstract classes and types including enumerations.
 *AAS:ContentType*
 
 *AAS:KeyTypes*
+____
 
 Attributes of classes are separated by "/". Inherited attributes can also be referenced in this way, if the concrete referable is important in the context.
 
@@ -4069,31 +4075,42 @@ ____
 *<AAS Class name>"/"<AAS Attribute Name>*
 ____
 
-[.underline]#Examples#footnote:[For simplicity reasons, most examples use the namespace qualifier and not the full path of the namespace.][.underline]#:#
+Examplesfootnote:[For simplicity reasons, most examples use the namespace qualifier and not the full path of the namespace.]:
+
+____
 
 *AAS:Referable/idShort*
 
 *AAS:Property/idShort*
 
 *AAS:Qualifier/semanticId*
+____
 
 This also applies to attributes of attributes, if the cardinality of the attributes involved is not greater than 1:
+____
 
 *<AAS Class Name> "/" <AAS Attribute Name> [\{ "/" <AAS Attribute Name>}* ]*
+____
 
 [.underline]#Valid examples:#
+____
 
 *AAS:Identifiable/administration/version*
+____
 
 This also applies to values of enumerations:
+____
 
 *<AAS Class Name>[\{ "/" <AAS Attribute Name>}*][ "/" <AAS Enumeration Value>]*
+____
 
 [.underline]#Valid examples:#
+____
 
 *AAS:Key/type/Submodel*
 
 *AAS:AasSubmodelElements/Submodel*
+____
 
 In case of an attribute with a cardinality greater than 1, no further attributes or enumeration values can be added.
 
@@ -4104,20 +4121,22 @@ Note: although the attribute name in UML is always singular, the attribute name 
 
 
 [.underline]#Valid examples#:
+____
 
 *AAS:Operation/InputVariables*
 
 *AAS:AssetAdministrationShell/submodels*
 
 *AAS:Submodel/submodelElements*
+____
 
 _[.underline]#Invalid examples:#_
 
 ____
 *AAS:AssetAdministrationShell/submodels/administration/version*
-____
 
 *AAS:Submodel/Property/idShort*
+____
 
 These semantic identifiers are used as values for the _RefSemantic_ attribute in AutomationML Mapping of the Asset Administration Shell. They are also used in OPC UA to describe the semantics of the metamodel via the OPC UA _HasDictionaryEntry_ reference type.
 
@@ -4128,8 +4147,10 @@ Data specification handling is special. Data specification templates do not belo
 [.underline]#Examples:#
 
 In xml and JSON, data specifications are embedded into the schema itself using the attribute "embeddedDataSpecification". Here, no concept identifier shall be used. For example,
+____
 
 *AAS:ConceptDescription/embeddedDataSpecifications*
+____
 
 is not a valid concept identifier. _AAS:DataSpecificationContent_ is a valid concept identifier.
 
