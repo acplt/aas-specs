@@ -436,9 +436,127 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 </head>
-<body class="article">
+<body class="article toc2 toc-left">
 <div id="header">
 <h1>Specification of the Asset Administration Shell. Part 1: Metamodel</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_preamble">Preamble</a>
+<ul class="sectlevel2">
+<li><a href="#_editorial_notes">Editorial Notes</a></li>
+<li><a href="#_scope_of_this_document">Scope of this Document</a></li>
+<li><a href="#_structure_of_the_document">Structure of the Document</a></li>
+<li><a href="#_working_principles">Working Principles</a></li>
+</ul>
+</li>
+<li><a href="#_terms_definitions_and_abbreviations">Terms, Definitions and Abbreviations</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_definitions">Terms and Definitions</a></li>
+<li><a href="#_abbreviations_used_in_this_document">Abbreviations Used in this Document</a></li>
+<li><a href="#_abbreviations_of_metamodel">Abbreviations of Metamodel</a></li>
+</ul>
+</li>
+<li><a href="#_introduction">Introduction</a></li>
+<li><a href="#_general">General</a>
+<ul class="sectlevel2">
+<li><a href="#_introduction_2">Introduction</a></li>
+<li><a href="#_types_and_instances">Types and Instances</a></li>
+<li><a href="#_identification_of_elements">Identification of Elements</a></li>
+<li><a href="#_matching_strategies">Matching Strategies</a></li>
+<li><a href="#_submodel_instances_and_templates">Submodel Instances and Templates</a></li>
+<li><a href="#_events">Events</a></li>
+</ul>
+</li>
+<li><a href="#_the_information_metamodel_of_the_asset_administration_shell_normative">The Information Metamodel of the Asset Administration Shell (normative)</a>
+<ul class="sectlevel2">
+<li><a href="#_introduction_3">Introduction</a></li>
+<li><a href="#_overview_metamodel_of_the_asset_administration_shell">Overview Metamodel of the Asset Administration Shell</a></li>
+<li><a href="#_metamodel_specification_details_designators">Metamodel Specification Details: Designators</a></li>
+</ul>
+</li>
+<li><a href="#_data_specification_templates_normative">Data Specification Templates (normative)</a>
+<ul class="sectlevel2">
+<li><a href="#_introduction_5">Introduction</a></li>
+</ul>
+</li>
+<li><a href="#_mappings_to_data_formats_to_share_i4_0_compliant_information_normative">Mappings to Data Formats to Share I4.0-Compliant Information (normative)</a>
+<ul class="sectlevel2">
+<li><a href="#_general_5">General</a></li>
+<li><a href="#_general_rules">General Rules</a></li>
+<li><a href="#_xml">XML</a></li>
+<li><a href="#_json">JSON</a></li>
+<li><a href="#_rdf">RDF</a></li>
+<li><a href="#_automationml">AutomationML</a></li>
+<li><a href="#_opc_ua">OPC UA</a></li>
+</ul>
+</li>
+<li><a href="#_summary_and_outlook">Summary and Outlook</a></li>
+<li><a href="#_concepts_of_the_administration_shell">Concepts of the Administration Shell</a>
+<ul class="sectlevel2">
+<li><a href="#_general_6">General</a></li>
+<li><a href="#_relevant_sources_and_documents">Relevant Sources and Documents</a></li>
+<li><a href="#_basic_concepts_for_industry_4_0">Basic Concepts for Industry 4.0</a></li>
+<li><a href="#_the_concept_of_properties">The Concept of Properties</a></li>
+<li><a href="#_the_concept_of_submodels">The Concept of Submodels</a></li>
+<li><a href="#_basic_structure_of_the_asset_administration_shell">Basic Structure of the Asset Administration Shell</a></li>
+<li><a href="#_how_are_new_identifiers_created">How Are New Identifiers Created?</a></li>
+<li><a href="#_best_practice_for_creating_uri_identifiers">Best Practice for Creating URI Identifiers</a></li>
+</ul>
+</li>
+<li><a href="#_requirements">Requirements</a></li>
+<li><a href="#_backus_naur_form">Backus-Naur-Form</a></li>
+<li><a href="#_templates_for_uml_tables">Templates for UML Tables</a>
+<ul class="sectlevel2">
+<li><a href="#_general_7">General</a></li>
+<li><a href="#_template_for_classes">Template for Classes</a></li>
+<li><a href="#_template_for_enumerations">Template for Enumerations</a></li>
+<li><a href="#_template_for_primitives">Template for Primitives</a></li>
+<li><a href="#_handling_of_constraints">Handling of Constraints</a></li>
+</ul>
+</li>
+<li><a href="#_legend_for_uml_modelling">Legend for UML Modelling</a>
+<ul class="sectlevel2">
+<li><a href="#_omg_uml_general">OMG UML General</a></li>
+<li><a href="#_uml_naming_rules">UML Naming Rules</a></li>
+<li><a href="#_templates_inheritance_qualifiers_and_categories">Templates, Inheritance, Qualifiers, and Categories</a></li>
+<li><a href="#_notes_to_graphical_uml_representation">Notes to Graphical UML Representation</a></li>
+</ul>
+</li>
+<li><a href="#_how_to_use_the_metamodel">How to Use the Metamodel</a>
+<ul class="sectlevel2">
+<li><a href="#_composite_i4_0_components">Composite I4.0 Components</a></li>
+</ul>
+</li>
+<li><a href="#_metamodel_uml_with_inherited_attributes">Metamodel UML with Inherited Attributes</a></li>
+<li><a href="#_metamodel_changes">Metamodel Changes</a>
+<ul class="sectlevel2">
+<li><a href="#_general_8">General</a></li>
+<li><a href="#_changes_v3_0_vs_v2_0_1">Changes V3.0 vs. V2.0.1</a></li>
+<li><a href="#_metamodel_changes_v3_0_vs_v2_0_1">Metamodel Changes V3.0 VS. V2.0.1</a></li>
+<li><a href="#_changes_v3_0_vs_v3_0rc02">Changes V3.0 Vs. V3.0RC02</a></li>
+<li><a href="#_metamodel_changes_v3_0_vs_v3_0rc02">Metamodel Changes V3.0 vs. V3.0RC02</a></li>
+<li><a href="#_changes_v3_0rc02_vs_v2_0_1">Changes V3.0RC02 vs. V2.0.1</a></li>
+<li><a href="#_metamodel_changes_v3_0rc02_vs_v2_0_1_wo_security_part">Metamodel Changes V3.0RC02 vs. V2.0.1 w/o Security Part</a></li>
+<li><a href="#_metamodel_changes_v3_0rc02_vs_v2_0_1_data_specification_iec61360">Metamodel Changes V3.0RC02 vs. V2.0.1 – Data Specification IEC61360</a></li>
+<li><a href="#_metamodel_changes_v3_0rc02_vs_v2_0_1_security_part">Metamodel Changes V3.0RC02 vs. V2.0.1 – Security Part</a></li>
+<li><a href="#_changes_v3_0rc02_vs_v3_0rc01">Changes V3.0RC02 vs. V3.0RC01</a></li>
+<li><a href="#_metamodel_changes_v3_0rc02_vs_v3_0rc01_wo_security_part">Metamodel Changes V3.0RC02 vs. V3.0RC01 w/o Security Part</a></li>
+<li><a href="#_metamodel_changes_v3_0rc02_vs_v3_0rc01_data_specification_iec61360">Metamodel Changes V3.0RC02 vs. V3.0RC01 – Data Specification IEC61360</a></li>
+<li><a href="#_metamodel_changes_v3_0rc02_vs_v3_0rc01_security_part">Metamodel Changes V3.0RC02 vs. V3.0RC01 – Security Part</a></li>
+<li><a href="#_changes_v3_0rc01_vs_v2_0_1">Changes V3.0RC01 vs. V2.0.1</a></li>
+<li><a href="#_metamodel_changes_v3_0rc01_wo_security_part">Metamodel Changes V3.0RC01 w/o Security Part</a></li>
+<li><a href="#_metamodel_changes_v3_0rc01_security_part">Metamodel Changes V3.0RC01 – Security Part</a></li>
+<li><a href="#_changes_v2_0_1_vs_v2_0">Changes V2.0.1 vs. V2.0</a></li>
+<li><a href="#_metamodel_changes_v2_0_1_wo_security_part">Metamodel Changes V2.0.1 w/o Security Part</a></li>
+<li><a href="#_changes_v2_0_vs_v1_0">Changes V2.0 vs. V1.0</a></li>
+<li><a href="#_metamodel_changes_v2_0_wo_security_part">Metamodel Changes V2.0 w/o Security Part</a></li>
+<li><a href="#_metamodel_changes_v2_0_security_part">Metamodel Changes V2.0 – Security Part</a></li>
+</ul>
+</li>
+<li><a href="#_bibliography">Bibliography</a></li>
+</ul>
+</div>
 </div>
 <div id="content">
 <div class="sect1">
@@ -11588,9 +11706,9 @@ Substituted by Identifiable/id</p></td>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 14. New Elements in Metamodel</caption>
 <colgroup>
-<col style="width: 8%;">
-<col style="width: 41%;">
-<col style="width: 51%;">
+<col style="width: 5.1546%;">
+<col style="width: 42.268%;">
+<col style="width: 52.5774%;">
 </colgroup>
 <thead>
 <tr>
@@ -17772,7 +17890,7 @@ shall be of kind=Template.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-07-13 23:30:36 +0200
+Last updated 2023-07-14 00:03:51 +0200
 </div>
 </div>
 </body>
