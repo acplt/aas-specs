@@ -1574,9 +1574,10 @@ Note: it is recommended to use an external reference.
 |Reference |0..*
 |===
 
-===== image:media/media/image19.png[media/media/image19,width=408,height=258]Identifiable Attributes
+===== Identifiable Attributes
 
-Figure 18 Metamodel of Identifiables
+.Figure 18 Metamodel of Identifiables
+image:media/media/image19.png[media/media/image19,width=408,height=258]
 
 An identifiable element is a referable with a globally unique identifier (_Identifier_). Only the global ID (_Identifiable/id_) shall be used to reference an identifiable, because the _idShort_ is not unique for an identifiable. Identifiables may have administrative information like version, etc.
 
@@ -1637,9 +1638,10 @@ Note: see Clause 5.3.12.3 for constraints related to qualifiables.
 |qualifier |Additional qualification of a qualifiable element |Qualifier |0..*
 |===
 
-===== image:media/media/image21.png[media/media/image21,width=385,height=148]Qualifier Attributes
+===== Qualifier Attributes
 
-Figure 20 Metamodel of Qualifiers
+.Figure 20 Metamodel of Qualifiers
+image:media/media/image21.png[media/media/image21,width=385,height=148]
 
 Qualifiers may be defined for qualifiable elements.
 
@@ -1718,9 +1720,10 @@ image:media/media/image22.png[Ein Bild, das Text enthält. Automatisch generiert
  +
 Figure 21 Example: Qualifier from IEC CDD
 
-===== image:media/media/image23.png[media/media/image23,width=222,height=151]Referable Attributes
+===== Referable Attributes
 
-Figure 22 Metamodel of Referables
+.Figure 22 Metamodel of Referables
+image:media/media/image23.png[media/media/image23,width=222,height=151]
 
 The metamodel differentiates between elements that are identifiable, referable, or none of both. The latter means they are neither inheriting from _Referable_ nor from _Identifiable_, which applies e.g. to __Qualifier__s.
 
@@ -1824,9 +1827,10 @@ SubmodelElementList
 |An element with the category VARIABLE is an element that is calculated during runtime, i.e. its value is a runtime value.
 |===
 
-==== image:media/media/image24.png[media/media/image24,width=530,height=324]Asset Administration Shell Attributes
+==== Asset Administration Shell Attributes
 
-Figure 23 Metamodel of an AssetAdministrationShell
+.Figure 23 Metamodel of an AssetAdministrationShell
+image:media/media/image24.png[media/media/image24,width=530,height=324]
 
 An Administration Shell is uniquely identifiable since it inherits from _Identifiable_.
 
@@ -1852,9 +1856,10 @@ Temporarily, no submodel might be assigned to the Asset Administration Shell.
 |ModelReference<Submodel> |0..*
 |===
 
-==== image:media/media/image25.png[media/media/image25,width=442,height=242]Asset Information Attributes
+==== Asset Information Attributes
 
-Figure 24 Metamodel of Asset Information
+.Figure 24 Metamodel of Asset Information
+image:media/media/image25.png[media/media/image25,width=442,height=242]
 
 [width="100%",cols="21%,50%,21%,8%",options="header",]
 |===
@@ -1976,9 +1981,10 @@ Note 2: semanticIds for the single specificAssetIds do not need to be unique.
 
 For more information on the concept of subject, see Attribute Based Access Control (ABAC) link:#bib49[[49\]]. The assumption is that every subject has a unique identifier.
 
-==== image:media/media/image26.png[media/media/image26,width=470,height=139]Submodel Attributes
+==== Submodel Attributes
 
-Figure 25 Metamodel of Submodel
+.Figure 25 Metamodel of Submodel
+image:media/media/image26.png[media/media/image26,width=470,height=139]
 
 Adding a _semanticId_ for a submodel is recommended (see Table 2).
 
@@ -2004,9 +2010,10 @@ A submodel is used to structure the digital representation and technical functio
 |submodelElement |A submodel consists of zero or more submodel elements. |SubmodelElement |0..*
 |===
 
-==== image:media/media/image27.png[media/media/image27,width=207,height=139]Submodel Element Attributes
+==== Submodel Element Attributes
 
-Figure 26 Metamodel of Submodel Element
+.Figure 26 Metamodel of Submodel Element
+image:media/media/image27.png[media/media/image27,width=207,height=139]
 
 Submodel elements are qualifiable elements, i.e. one or more qualifiers may be defined for each of them.
 
@@ -2033,9 +2040,10 @@ Submodel elements include data properties as well as operations, events and othe
 
 All submodel elements including abstract classes like data elements are specified in alphabetical order.
 
-===== image:media/media/image29.png[media/media/image29,width=200,height=177]Annotated Relationship Element Attributes
+===== Annotated Relationship Element Attributes
 
-Figure 28 Metamodel of Annotated Relationship Elements
+.Figure 28 Metamodel of Annotated Relationship Elements
+image:media/media/image29.png[media/media/image29,width=200,height=177]
 
 An annotated relationship is a relationship similar to a ternary association in UML. The semantics of the relationship is defined via the _semanticId_ of the _RelationshipElement_. If this semantic definition requires additional information not contained in the _first_ or _second_ object referenced via the relationship, this information needs to be stored as annotation.
 
@@ -2048,9 +2056,10 @@ An annotated relationship is a relationship similar to a ternary association in 
 |annotation |A data element that represents an annotation that holds for the relationship between the two elements |DataElement |0..*
 |===
 
-===== image:media/media/image30.png[media/media/image30,width=378,height=232]Basic Event Element Attributes
+===== Basic Event Element Attributes
 
-Figure 29 Metamodel of Basic Event Element
+.Figure 29 Metamodel of Basic Event Element
+image:media/media/image30.png[media/media/image30,width=378,height=232]
 
 [width="100%",cols="19%,43%,28%,10%",options="header",]
 |===
@@ -2176,9 +2185,10 @@ Note: this is an external reference.
 
 For more information on the concept of subject, see Attribute Based Access Control (ABAC) link:#bib49[[49\]]. The assumption is that every subject has a unique identifier.
 
-===== image:media/media/image32.png[media/media/image32,width=146,height=93] Blob Attributes
+===== Blob Attributes
 
-Figure 31 Metamodel of Blobs
+.Figure 31 Metamodel of Blobs
+image:media/media/image32.png[media/media/image32,width=146,height=93]
 
 For information on content type, see Clause 5.3.7.9 on submodel element "File".
 
@@ -2210,9 +2220,10 @@ The allowed values are defined as in RFC2046.
 |ContentType |1
 |===
 
-===== image:media/media/image33.png[media/media/image33,width=113,height=80]Capability Attributes
+===== Capability Attributes
 
-Figure 32 Metamodel of Capabilities
+.Figure 32 Metamodel of Capabilities
+image:media/media/image33.png[media/media/image33,width=113,height=80]
 
 
 ====
@@ -2228,9 +2239,10 @@ Note: the _semanticId_ of a capability is typically an ontology, which enables r
 |Attribute |Explanation |Type |Card.
 |===
 
-===== image:media/media/image34.png[media/media/image34,width=623,height=235]Data Element and Overview of Data Element Types
+===== Data Element and Overview of Data Element Types
 
-Figure 33 Metamodel of Data Elements
+.Figure 33 Metamodel of Data Elements
+image:media/media/image34.png[media/media/image34,width=623,height=235]
 
 A data element is a submodel element that is not further composed of other submodel elements.
 
@@ -2310,9 +2322,10 @@ image:media/media/image36.png[media/media/image36,width=168,height=82]
 |Attribute |Explanation |Type |Card.
 |===
 
-===== image:media/media/image37.png[media/media/image37,width=146,height=93] File Attributes
+===== File Attributes
 
-Figure 36 Metamodel of File Submodel Element
+.Figure 36 Metamodel of File Submodel Element
+image:media/media/image37.png[media/media/image37,width=146,height=93]
 
 A media type (also MIME type and content type) is a two-part identifier for file formats and format contents transmitted via the Internet. The Internet Assigned Numbers Authority (IANA) is the official authority for the standardization and publication of these classifications.
 
@@ -2416,9 +2429,10 @@ Note 3: even if the submodel element as the value of an input and an output vari
 ====
 
 
-===== image:media/media/image40.png[media/media/image40,width=186,height=106]Property Attributes
+===== Property Attributes
 
-Figure 39 Metamodel of Properties
+.Figure 39 Metamodel of Properties
+image:media/media/image40.png[media/media/image40,width=186,height=106]
 
 [width="100%",cols="17%,51%,23%,9%",options="header",]
 |===
@@ -2471,9 +2485,10 @@ If the max value is missing, the value is assumed to be positive infinite.
 |ValueDataType |0..1
 |===
 
-===== image:media/media/image42.png[media/media/image42,width=146,height=95]Reference Element Attributes
+===== Reference Element Attributes
 
-Figure 41 Metamodel of Reference Elements
+.Figure 41 Metamodel of Reference Elements
+image:media/media/image42.png[media/media/image42,width=146,height=95]
 
 [width="100%",cols="18%,53%,14%,15%",options="header",]
 |===
@@ -2486,9 +2501,10 @@ Figure 41 Metamodel of Reference Elements
 
 For more information on references, see Clause 5.3.9.
 
-===== image:media/media/image43.png[media/media/image43,width=132,height=93]Relationship Element Attributes
+===== Relationship Element Attributes
 
-Figure 42 Metamodel of Relationship Elements
+.Figure 42 Metamodel of Relationship Elements
+image:media/media/image43.png[media/media/image43,width=132,height=93]
 
 [width="100%",cols="14%,60%,19%,7%",options="header",]
 |===
@@ -2500,9 +2516,10 @@ Figure 42 Metamodel of Relationship Elements
 |second |Reference to the second element in the relationship taking the role of the object |Reference |1
 |===
 
-===== image:media/media/image44.png[media/media/image44,width=182,height=228]Submodel Element Collection Attributes
+===== Submodel Element Collection Attributes
 
-Figure 43 Metamodel of Submodel Element Collections
+.Figure 43 Metamodel of Submodel Element Collections
+image:media/media/image44.png[media/media/image44,width=182,height=228]
 
 Submodel Element Collections are used for complex elements with a typically fixed set of properties with unique names. This set of properties is typically predefined by the semantic definition (referenced via _semanticId_) of the submodel element collection. Each property within the collection itself should have clearly defined semantics.
 
@@ -2529,9 +2546,10 @@ Note: the elements within a submodel element collection are not ordered. Every e
 |value |Submodel element contained in the collection |SubmodelElement |0..*
 |===
 
-===== image:media/media/image45.png[media/media/image45,width=259,height=314]Submodel Element List Attributes
+===== Submodel Element List Attributes
 
-Figure 44 Metamodel of Submodel Element Lists
+.Figure 44 Metamodel of Submodel Element Lists
+image:media/media/image45.png[media/media/image45,width=259,height=314]
 
 Submodel element lists are used for sets (i.e. unordered collections without duplicates), ordered lists (i.e. ordered collections that may contain duplicates), bags (i.e. unordered collections that may contain duplicates), and ordered sets (i.e. ordered collections without duplicates).
 
@@ -2595,9 +2613,10 @@ Note: it is recommended to use an external reference.
 |valueTypeListElement |The value type of the submodel element contained in the list |DataTypeDefXsd |0..1
 |===
 
-==== image:media/media/image46.png[media/media/image46,width=186,height=92]Concept Description Attributes
+==== Concept Description Attributes
 
-Figure 45 Metamodel of Concept Descriptions
+.Figure 45 Metamodel of Concept Descriptions
+image:media/media/image46.png[media/media/image46,width=186,height=92]
 
 [width="100%",cols="18%,57%,17%,8%",options="header",]
 |===
@@ -2632,9 +2651,10 @@ Different types of submodel elements require different attributes to describe th
 
 See Clause 5.3.11.3 for predefined data specification templates.
 
-==== image:media/media/image47.png[media/media/image47,width=547,height=227]Environment Attributes
+==== Environment Attributes
 
-Figure 46 Metamodel for Environment
+.Figure 46 Metamodel for Environment
+image:media/media/image47.png[media/media/image47,width=547,height=227]
 
 
 ====
@@ -2667,9 +2687,10 @@ Note: references should not be mixed up with locators. Even URLs can be used as 
 ====
 
 
-===== image:media/media/image48.png[media/media/image48,width=358,height=207] Reference Attributes
+=====  Reference Attributes
 
-Figure 47 Metamodel of Reference
+.Figure 47 Metamodel of Reference
+image:media/media/image48.png[media/media/image48,width=358,height=207]
 
 See Clause 4.4.2 for reference matching.
 
@@ -3823,9 +3844,10 @@ image:media/media/image56.png[media/media/image56,width=550,height=398]
 
 The template introduced to describe the concept of a property, a value list, or a value is based on IEC 61360. Figure 55 also shows how concept descriptions and the predefined data specification templates are related to each other.
 
-==== image:media/media/image57.png[media/media/image57,width=259,height=208]Data Specification Template Attributes
+==== Data Specification Template Attributes
 
-Figure 56 Data Specification Templates
+.Figure 56 Data Specification Templates
+image:media/media/image57.png[media/media/image57,width=259,height=208]
 
 
 ====
