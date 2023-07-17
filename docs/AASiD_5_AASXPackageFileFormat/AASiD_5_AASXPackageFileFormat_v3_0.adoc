@@ -277,7 +277,7 @@ When exchanging information from partner A to partner B, two use cases may apply
 .Figure 4 Example Filtering for Export and Import
 image:media/media/image5.jpg[extracted-media/media/image5,width=642,height=666]
 
-As an example (see [.mark]####Figure 4), let’s assume that the producer is submitting the complete order data. However, the consumer (in this case the machine builder) is filtering the information (1) and is only importing the information relevant to him. Regarding the functionality, both are filtering: the producer is filtering what he submits to the consumer (2) and the consumer in turn is not using all functionality but is filtering the functionality he wants to use in his environment. The same is possible between machine builders and operators.
+As an example (see Figure 4), let’s assume that the producer is submitting the complete order data. However, the consumer (in this case the machine builder) is filtering the information (1) and is only importing the information relevant to him. Regarding the functionality, both are filtering: the producer is filtering what he submits to the consumer (2) and the consumer in turn is not using all functionality but is filtering the functionality he wants to use in his environment. The same is possible between machine builders and operators.
 
 
 ====
@@ -334,7 +334,8 @@ The Asset Administration Shell Package (AASX) format is derived from the Open Pa
 
 Figure 7 defines a set of relationship types (URIs) and the corresponding source files as a part of the logical model for the AASX format. In addition (not shown in Figure 7), a specific relationship instance also has a unique ID and a target resource (URI of a target file inside or outside of the package).
 
-image:media/media/image8.png[extracted-media/media/image8,width=642,height=300]Figure 7 Relationship Types for AASX Packages (Logical Model)
+.Figure 7 Relationship Types for AASX Packages (Logical Model)
+image:media/media/image8.png[extracted-media/media/image8,width=642,height=300]
 
 The relationship types for thumbnail, core-properties, digital-signatures (origin, signature and certificate) are defined by Open Packaging Conventions. The other relationship types were specifically defined to support the AASX package format.
 
@@ -468,13 +469,15 @@ Using the ECMA-376 relationships (see Clause 0) allows to locate files within th
 
 Figure 9 shows the overall physical model, i.e. the file structure of an AASX package. The folder "suppl" is empty in this example or not shown. The corresponding files contained in the folder "suppl" would be referenced in the data.xml.rels and data.json.rels files. The file "Thumbnail.png" is referenced in file ".rels" as target for relationship with type "metadata/thumbnail".
 
-image:media/media/image9.png[extracted-media/media/image9,width=622,height=272]Figure 8 shows an example of an AASX package focusing on the specific aasx part including AAS examples. It depicts the content of the AASX package listed in a tree view using the ECMA-376 relationship types defined in Figure 7 and follows the file name conventions as defined above. In this example, it is assumed that the AAS specification files are serialized in XML. The data.xml file in this example contains two Asset Administration Shells, two submodels, and a single concept description. Three files are referenced within the submodels; they are added to the package in the folder suppl. The files can be referenced from both AAS, i.e. from both submodels. The same accounts for the concept description that can be used in both submodels. The submodels can be part of both AAS, if needed.
+Figure 8 shows an example of an AASX package focusing on the specific aasx part including AAS examples. It depicts the content of the AASX package listed in a tree view using the ECMA-376 relationship types defined in Figure 7 and follows the file name conventions as defined above. In this example, it is assumed that the AAS specification files are serialized in XML. The data.xml file in this example contains two Asset Administration Shells, two submodels, and a single concept description. Three files are referenced within the submodels; they are added to the package in the folder suppl. The files can be referenced from both AAS, i.e. from both submodels. The same accounts for the concept description that can be used in both submodels. The submodels can be part of both AAS, if needed.
 
-Figure 8 Example of Mapping Logical (right) to Physical Model (left)
+.Figure 8 Example of Mapping Logical (right) to Physical Model (left)
+image:media/media/image9.png[extracted-media/media/image9,width=622,height=272]
 
-image:media/media/image10.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=377,height=299]In addition to the AASX specific files, files common to all ECMA-376 packages – such as relationship parts (*.rels) and the Content Types stream ([Content_Types].xml) – must be contained in an AASX package in its physical representation as a .zip archive. For more information on these files, please refer to the ECMA-376 specification.
+In addition to the AASX specific files, files common to all ECMA-376 packages – such as relationship parts (*.rels) and the Content Types stream ([Content_Types].xml) – must be contained in an AASX package in its physical representation as a .zip archive. For more information on these files, please refer to the ECMA-376 specification.
 
-Figure 9 AASX File Structure (Physical Model)
+.Figure 9 AASX File Structure (Physical Model)
+image:media/media/image10.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=377,height=299]
 
 ===  Digital Signatures
 
@@ -488,7 +491,6 @@ An example is the Office Document Cryptography Structure (MS-OFFCRYPTO) used by 
 
 Regarding encryption and confidentiality, the following rules shall be followed.
 
-[arabic]
 . Decide if there is a need to include confidential content in a package; if there is no need, it shall not be included.
 . If encryption is desired for a temporary communication act (e.g. e-mail exchange, etc.) or if an AASX needs to be stored somewhere to be opened later by the same entity, then encryption methods can be used for that specific means (e.g. use BitLocker when storing the AASX in Windows-based systems that support it, use S/MIME for exchanging encrypted e-mails between entities, etc.).
 . For all other use casesfootnote:[A use case could be to encrypt a submodel and only provide the access to the unencrypted data after paying a fee.] where encryption is required for some or all of the content of the AASX, the following applies.

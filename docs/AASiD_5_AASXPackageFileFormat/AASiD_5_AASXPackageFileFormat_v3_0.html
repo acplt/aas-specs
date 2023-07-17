@@ -609,7 +609,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>If available, definitions were taken from IEC 63278-1 DRAFT, July 2022.</p>
 </div>
 <div class="paragraph">
-<p>access control</p>
+<p><strong>access control</strong></p>
 </div>
 <div class="paragraph">
 <p>protection of system resources against unauthorized access; a process by which use of system resources is regulated according to a security policy and is permitted by only authorized entities (users, programs, processes, or other systems) according to that policy</p>
@@ -622,7 +622,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p>application</p>
+<p><strong>application</strong></p>
 </div>
 <div class="paragraph">
 <p>software functional element specific to the solution of a problem in industrial-process measurement and control</p>
@@ -642,7 +642,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p>asset</p>
+<p><strong>asset</strong></p>
 </div>
 <div class="paragraph">
 <p>physical, digital, or intangible entity that has value to an individual, an organization or a government</p>
@@ -683,7 +683,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p>Asset Administration Shell (AAS)</p>
+<p><strong>Asset Administration Shell (AAS)</strong></p>
 </div>
 <div class="paragraph">
 <p>standardized digital representation of an asset</p>
@@ -703,7 +703,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p>digital representation</p>
+<p><strong>digital representation</strong></p>
 </div>
 <div class="paragraph">
 <p>information and services representing an entity from a given viewpoint</p>
@@ -737,7 +737,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p>identifier (ID)</p>
+<p><strong>identifier (ID)</strong></p>
 </div>
 <div class="paragraph">
 <p>identity information that unambiguously distinguishes one entity from another one in a given domain</p>
@@ -757,7 +757,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p>Submodel</p>
+<p><strong>Submodel</strong></p>
 </div>
 <div class="paragraph">
 <p>container of SubmodelElements defining a hierarchical structure consisting of SubmodelElements</p>
@@ -770,7 +770,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p>system</p>
+<p><strong>system</strong></p>
 </div>
 <div class="paragraph">
 <p>interacting, interrelated, or interdependent elements forming a complex whole</p>
@@ -1042,7 +1042,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p>As an example (see <span class="mark">#</span>#Figure 4), let’s assume that the producer is submitting the complete order data. However, the consumer (in this case the machine builder) is filtering the information (1) and is only importing the information relevant to him. Regarding the functionality, both are filtering: the producer is filtering what he submits to the consumer (2) and the consumer in turn is not using all functionality but is filtering the functionality he wants to use in his environment. The same is possible between machine builders and operators.</p>
+<p>As an example (see Figure 4), let’s assume that the producer is submitting the complete order data. However, the consumer (in this case the machine builder) is filtering the information (1) and is only importing the information relevant to him. Regarding the functionality, both are filtering: the producer is filtering what he submits to the consumer (2) and the consumer in turn is not using all functionality but is filtering the functionality he wants to use in his environment. The same is possible between machine builders and operators.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -1151,7 +1151,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Figure 7 defines a set of relationship types (URIs) and the corresponding source files as a part of the logical model for the AASX format. In addition (not shown in Figure 7), a specific relationship instance also has a unique ID and a target resource (URI of a target file inside or outside of the package).</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="media/media/image8.png" alt="extracted-media/media/image8" width="642" height="300"></span>Figure 7 Relationship Types for AASX Packages (Logical Model)</p>
+<div class="title">Figure 7 Relationship Types for AASX Packages (Logical Model)</div>
+<p><span class="image"><img src="media/media/image8.png" alt="extracted-media/media/image8" width="642" height="300"></span></p>
 </div>
 <div class="paragraph">
 <p>The relationship types for thumbnail, core-properties, digital-signatures (origin, signature and certificate) are defined by Open Packaging Conventions. The other relationship types were specifically defined to support the AASX package format.</p>
@@ -1483,16 +1484,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Figure 9 shows the overall physical model, i.e. the file structure of an AASX package. The folder "suppl" is empty in this example or not shown. The corresponding files contained in the folder "suppl" would be referenced in the data.xml.rels and data.json.rels files. The file "Thumbnail.png" is referenced in file ".rels" as target for relationship with type "metadata/thumbnail".</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="media/media/image9.png" alt="extracted-media/media/image9" width="622" height="272"></span>Figure 8 shows an example of an AASX package focusing on the specific aasx part including AAS examples. It depicts the content of the AASX package listed in a tree view using the ECMA-376 relationship types defined in Figure 7 and follows the file name conventions as defined above. In this example, it is assumed that the AAS specification files are serialized in XML. The data.xml file in this example contains two Asset Administration Shells, two submodels, and a single concept description. Three files are referenced within the submodels; they are added to the package in the folder suppl. The files can be referenced from both AAS, i.e. from both submodels. The same accounts for the concept description that can be used in both submodels. The submodels can be part of both AAS, if needed.</p>
+<p>Figure 8 shows an example of an AASX package focusing on the specific aasx part including AAS examples. It depicts the content of the AASX package listed in a tree view using the ECMA-376 relationship types defined in Figure 7 and follows the file name conventions as defined above. In this example, it is assumed that the AAS specification files are serialized in XML. The data.xml file in this example contains two Asset Administration Shells, two submodels, and a single concept description. Three files are referenced within the submodels; they are added to the package in the folder suppl. The files can be referenced from both AAS, i.e. from both submodels. The same accounts for the concept description that can be used in both submodels. The submodels can be part of both AAS, if needed.</p>
 </div>
 <div class="paragraph">
-<p>Figure 8 Example of Mapping Logical (right) to Physical Model (left)</p>
+<div class="title">Figure 8 Example of Mapping Logical (right) to Physical Model (left)</div>
+<p><span class="image"><img src="media/media/image9.png" alt="extracted-media/media/image9" width="622" height="272"></span></p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="media/media/image10.png" alt="Ein Bild" width="377" height="299"></span>In addition to the AASX specific files, files common to all ECMA-376 packages – such as relationship parts (*.rels) and the Content Types stream ([Content_Types].xml) – must be contained in an AASX package in its physical representation as a .zip archive. For more information on these files, please refer to the ECMA-376 specification.</p>
+<p>In addition to the AASX specific files, files common to all ECMA-376 packages – such as relationship parts (*.rels) and the Content Types stream ([Content_Types].xml) – must be contained in an AASX package in its physical representation as a .zip archive. For more information on these files, please refer to the ECMA-376 specification.</p>
 </div>
 <div class="paragraph">
-<p>Figure 9 AASX File Structure (Physical Model)</p>
+<div class="title">Figure 9 AASX File Structure (Physical Model)</div>
+<p><span class="image"><img src="media/media/image10.png" alt="Ein Bild" width="377" height="299"></span></p>
 </div>
 </div>
 <div class="sect2">
@@ -1742,7 +1745,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-07-17 18:47:21 +0200
+Last updated 2023-07-17 19:06:39 +0200
 </div>
 </div>
 </body>
