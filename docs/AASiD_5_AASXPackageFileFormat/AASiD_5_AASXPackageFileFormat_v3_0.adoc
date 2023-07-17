@@ -235,15 +235,13 @@ Besides a technology-neutral specification of the information model in UML, seve
 
 Figure 1 shows the different ways of exchanging information via Asset Administration Shells. This part of the "Details of the Asset Administration Shell" series, Part 5, deals with type 1: file exchange. The following steps need to be executed to enable an exchange between partners:
 
-[arabic]
 . definition of the Asset Administration Shell in a selected format, for example XML (see link:#bib9[[9\]]),
 . selecting the additional files that are referenced in submodels of the Asset Administration Shell and should also be exchanged,
 . provision of the Asset Administration Shell together with the selected files in a standardized exchange format, the AASX package format as specified in this document,
 . defining a secure way to exchange the file, for example via secure file download on a web server link:#bib12[[12\]].
 
+.Figure 1 Part 5: File Exchange Type of Information Exchange via Asset Administration Shells
 image:media/media/image2.jpeg[extracted-media/media/image2,width=535,height=337]
-
-Figure 1 Part 5: File Exchange Type of Information Exchange via Asset Administration Shells
 
 == Basic Concepts and Leading Picture
 
@@ -257,17 +255,15 @@ The Asset Administration Shells are not necessarily exported "as is". Instead, s
 
 In Figure 3, it is assumed that import does not need additional filtering.
 
+.Figure 2 Use Case File Exchange between Value Chain Partners
 image:media/media/image3.jpeg[extracted-media/media/image3,width=642,height=491]
-
-Figure 2 Use Case File Exchange between Value Chain Partners
 
 "Supplier" and "Integrator" form two independent legal bodies (Figure 3). The organizational boundaries as well as the system boundaries including the partners’ infrastructures must be taken into account for data exchange, file exchange being one form of data exchange.
 
 The exchange of files needs to fulfil some requirements with respect to usability and security link:#bib12[[12\]]. A bilateral agreement on security constraints is required, which must be fulfilled for the transfer and usage of the files. Please refer to Part 4 of the series "Details of the Asset Administration Shell" for more details.
 
+.Figure 3 File Exchange between two Value Chain Partners
 image:media/media/image4.jpg[extracted-media/media/image4,width=642,height=270]
-
-Figure 3 File Exchange between two Value Chain Partners
 
 For usability sake, a container format is used for file exchange and a corresponding structure is defined. This predefined structure helps the consumer to understand the content of the single files. The container may contain auxiliary files referenced by the AAS or even executable code.
 
@@ -278,9 +274,8 @@ When exchanging information from partner A to partner B, two use cases may apply
 * The producer of information only wants to submit certain parts of the information. The information might vary depending on the specific consumer it is submitted to. This requires a filtering mechanism, which allows to individually shape the information for the specific consumer.
 * The consumer of information does not want to include all information provided by the producer in his own process, i.e. he wants to filter only the relevant information.
 +
+.Figure 4 Example Filtering for Export and Import
 image:media/media/image5.jpg[extracted-media/media/image5,width=642,height=666]
-
-Figure 4 Example Filtering for Export and Import
 
 As an example (see [.mark]####Figure 4), let’s assume that the producer is submitting the complete order data. However, the consumer (in this case the machine builder) is filtering the information (1) and is only importing the information relevant to him. Regarding the functionality, both are filtering: the producer is filtering what he submits to the consumer (2) and the consumer in turn is not using all functionality but is filtering the functionality he wants to use in his environment. The same is possible between machine builders and operators.
 
@@ -292,9 +287,8 @@ Note: in the use case described above, (i.e. the exchange of information via sha
 
 Figure 4 shows an example, where the defined xml format is used as defined in this document. The German translation shall not be submitted, only English language is provided to partner B.
 
+.Figure 5 Example Filtering of Information in XML
 image:media/media/image6.jpg[extracted-media/media/image6,width=642,height=299]
-
-Figure 5 Example Filtering of Information in XML
 
 === Basic Concepts of the Open Packaging Conventions
 
@@ -319,9 +313,8 @@ Some use cases make it necessary to exchange the full or partial structure of th
 
 The following process in Figure 6 is defined for creating and consuming AASX packages.
 
+.Figure 6 Process for Generating and Consuming AASX Packages
 image:media/media/image7.jpeg[extracted-media/media/image7,width=642,height=335]
-
-Figure 6 Process for Generating and Consuming AASX Packages
 
 The process starts by serializing the existing AAS (e.g. D1 and E1) into files (according to the serialization mechanisms described in this document), as well as exporting other supplementary files (i.e. files mentioned in the structure of the AAS, such as manuals, CAD files, etc.). All these files will be packaged together into the AASX ZIP file format and will be followed by several security steps that define the policies for modifiability, encryption, and digital signing of the files inside the AASX. The final AASX can then be transported from the AASX producer (in this case partner A) to the AASX consumer (partner B) via digital media such as e-mail, USB stick, etc. The consumer first needs to validate and verify the incoming AASX, unpack the contained files, and import them to generate the new AAS in the consumer environment. The process will be explained in detail in the following sub-sections.
 

@@ -503,7 +503,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>This document was produced from September 2022 to January 2023 by the sub working group "Asset Administration Shell" of the joint working group of the Plattform Industrie 4.0 working group "Reference Architectures, Standards and Norms" and the "Open Technology" working group of the Industrial Digital Twin Association (IDTA). It is the first version published by the IDTA.</p>
 </div>
 <div class="paragraph">
-<p>This specification is versioned using <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning 2.0.0</a> (semver) and follows the semver specification [8].</p>
+<p>This specification is versioned using <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning 2.0.0</a> (semver) and follows the semver specification <a href="#bib8">[8]</a>.</p>
 </div>
 <div class="paragraph">
 <p>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in <a href="https://tools.ietf.org/html/bcp14">BCP 14</a> <a href="https://tools.ietf.org/html/rfc2119">RFC2119</a> <a href="https://tools.ietf.org/html/rfc8174">RFC8174</a><sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>:</p>
@@ -553,7 +553,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>The main stakeholders addressed in this document are architects and software developers aiming to implement a digital twin using the Asset Administration Shell in an interoperable way. Additionally, the content can also be used as input for discussions with international standardization organizations and further collaborations.</p>
 </div>
 <div class="paragraph">
-<p>Please consult the continuously updated reading guide [11] for an overview of documents on the Asset Administration Shell. The reading guide gives advice on which documents should be read depending on the role of the reader.</p>
+<p>Please consult the continuously updated reading guide <a href="#bib11">[11]</a> for an overview of documents on the Asset Administration Shell. The reading guide gives advice on which documents should be read depending on the role of the reader.</p>
 </div>
 </div>
 <div class="sect2">
@@ -957,7 +957,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_introduction">Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The document series "Details of the Asset Administration Shell" specifies the different needs of implementing Asset Administration Shells in an Industry 4.0 environment. A corresponding IEC series is in development, see [13].</p>
+<p>The document series "Details of the Asset Administration Shell" specifies the different needs of implementing Asset Administration Shells in an Industry 4.0 environment. A corresponding IEC series is in development, see <a href="#bib13">[13]</a>.</p>
 </div>
 <div class="paragraph">
 <p>Besides a technology-neutral specification of the information model in UML, several different formats are provided to exchange Asset Administration Shells: XML, JSON, RDF, AutomationML, as well as an OPC UA information model.</p>
@@ -968,7 +968,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>definition of the Asset Administration Shell in a selected format, for example XML (see [9]),</p>
+<p>definition of the Asset Administration Shell in a selected format, for example XML (see <a href="#bib9">[9]</a>),</p>
 </li>
 <li>
 <p>selecting the additional files that are referenced in submodels of the Asset Administration Shell and should also be exchanged,</p>
@@ -977,15 +977,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>provision of the Asset Administration Shell together with the selected files in a standardized exchange format, the AASX package format as specified in this document,</p>
 </li>
 <li>
-<p>defining a secure way to exchange the file, for example via secure file download on a web server [12].</p>
+<p>defining a secure way to exchange the file, for example via secure file download on a web server <a href="#bib12">[12]</a>.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Figure 1 Part 5: File Exchange Type of Information Exchange via Asset Administration Shells</div>
 <p><span class="image"><img src="media/media/image2.jpeg" alt="extracted-media/media/image2" width="535" height="337"></span></p>
-</div>
-<div class="paragraph">
-<p>Figure 1 Part 5: File Exchange Type of Information Exchange via Asset Administration Shells</p>
 </div>
 </div>
 </div>
@@ -1007,22 +1005,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>In Figure 3, it is assumed that import does not need additional filtering.</p>
 </div>
 <div class="paragraph">
+<div class="title">Figure 2 Use Case File Exchange between Value Chain Partners</div>
 <p><span class="image"><img src="media/media/image3.jpeg" alt="extracted-media/media/image3" width="642" height="491"></span></p>
-</div>
-<div class="paragraph">
-<p>Figure 2 Use Case File Exchange between Value Chain Partners</p>
 </div>
 <div class="paragraph">
 <p>"Supplier" and "Integrator" form two independent legal bodies (Figure 3). The organizational boundaries as well as the system boundaries including the partners’ infrastructures must be taken into account for data exchange, file exchange being one form of data exchange.</p>
 </div>
 <div class="paragraph">
-<p>The exchange of files needs to fulfil some requirements with respect to usability and security [12]. A bilateral agreement on security constraints is required, which must be fulfilled for the transfer and usage of the files. Please refer to Part 4 of the series "Details of the Asset Administration Shell" for more details.</p>
+<p>The exchange of files needs to fulfil some requirements with respect to usability and security <a href="#bib12">[12]</a>. A bilateral agreement on security constraints is required, which must be fulfilled for the transfer and usage of the files. Please refer to Part 4 of the series "Details of the Asset Administration Shell" for more details.</p>
 </div>
 <div class="paragraph">
+<div class="title">Figure 3 File Exchange between two Value Chain Partners</div>
 <p><span class="image"><img src="media/media/image4.jpg" alt="extracted-media/media/image4" width="642" height="270"></span></p>
-</div>
-<div class="paragraph">
-<p>Figure 3 File Exchange between two Value Chain Partners</p>
 </div>
 <div class="paragraph">
 <p>For usability sake, a container format is used for file exchange and a corresponding structure is defined. This predefined structure helps the consumer to understand the content of the single files. The container may contain auxiliary files referenced by the AAS or even executable code.</p>
@@ -1041,13 +1035,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li>
 <p>The consumer of information does not want to include all information provided by the producer in his own process, i.e. he wants to filter only the relevant information.</p>
 <div class="paragraph">
+<div class="title">Figure 4 Example Filtering for Export and Import</div>
 <p><span class="image"><img src="media/media/image5.jpg" alt="extracted-media/media/image5" width="642" height="666"></span></p>
 </div>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>Figure 4 Example Filtering for Export and Import</p>
 </div>
 <div class="paragraph">
 <p>As an example (see <span class="mark">#</span>#Figure 4), let’s assume that the producer is submitting the complete order data. However, the consumer (in this case the machine builder) is filtering the information (1) and is only importing the information relevant to him. Regarding the functionality, both are filtering: the producer is filtering what he submits to the consumer (2) and the consumer in turn is not using all functionality but is filtering the functionality he wants to use in his environment. The same is possible between machine builders and operators.</p>
@@ -1063,10 +1055,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Figure 4 shows an example, where the defined xml format is used as defined in this document. The German translation shall not be submitted, only English language is provided to partner B.</p>
 </div>
 <div class="paragraph">
+<div class="title">Figure 5 Example Filtering of Information in XML</div>
 <p><span class="image"><img src="media/media/image6.jpg" alt="extracted-media/media/image6" width="642" height="299"></span></p>
-</div>
-<div class="paragraph">
-<p>Figure 5 Example Filtering of Information in XML</p>
 </div>
 </div>
 <div class="sect2">
@@ -1078,7 +1068,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Relationships are defined to connect the package to files, and to connect various files in the package. The definition of the relationships (along with the files’ names) is the <strong>logical model</strong> of the package. The resource, i.e. a source of a relationship, must be either the package itself or a data component (file) inside of the package. The target resource of a relationship can be any URI-addressable resource inside or outside of the package. It is possible to have more than one relationship that share the same target file (see example 9–6 in ISO/IEC 29500-2: 2012).</p>
 </div>
 <div class="paragraph">
-<p>The <strong>physical model</strong> maps these logical concepts to a physical format. The result of this mapping is a physical package format (a ZIP archive format) in which files appear in a directory-like hierarchy (adapted from [4] and [5]).</p>
+<p>The <strong>physical model</strong> maps these logical concepts to a physical format. The result of this mapping is a physical package format (a ZIP archive format) in which files appear in a directory-like hierarchy (adapted from <a href="#bib4">[4]</a> and <a href="#bib5">[5]</a>).</p>
 </div>
 </div>
 </div>
@@ -1117,10 +1107,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>The following process in Figure 6 is defined for creating and consuming AASX packages.</p>
 </div>
 <div class="paragraph">
+<div class="title">Figure 6 Process for Generating and Consuming AASX Packages</div>
 <p><span class="image"><img src="media/media/image7.jpeg" alt="extracted-media/media/image7" width="642" height="335"></span></p>
-</div>
-<div class="paragraph">
-<p>Figure 6 Process for Generating and Consuming AASX Packages</p>
 </div>
 <div class="paragraph">
 <p>The process starts by serializing the existing AAS (e.g. D1 and E1) into files (according to the serialization mechanisms described in this document), as well as exporting other supplementary files (i.e. files mentioned in the structure of the AAS, such as manuals, CAD files, etc.). All these files will be packaged together into the AASX ZIP file format and will be followed by several security steps that define the policies for modifiability, encryption, and digital signing of the files inside the AASX. The final AASX can then be transported from the AASX producer (in this case partner A) to the AASX consumer (partner B) via digital media such as e-mail, USB stick, etc. The consumer first needs to validate and verify the incoming AASX, unpack the contained files, and import them to generate the new AAS in the consumer environment. The process will be explained in detail in the following sub-sections.</p>
@@ -1510,16 +1498,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_digital_signatures">Digital Signatures</h3>
 <div class="paragraph">
-<p>A digital signing feature is already provided by the Open Packaging ­­­­Conventions specification [4]. Hence, this signing framework for packages can also be used for AASX packages. To ensure the integrity of the AAS data, all relevant files within the package (aasx-origin file, AAS structure specification file, supplementary files) and the associated relationship parts shall be signed.</p>
+<p>A digital signing feature is already provided by the Open Packaging ­­­­Conventions specification <a href="#bib4">[4]</a>. Hence, this signing framework for packages can also be used for AASX packages. To ensure the integrity of the AAS data, all relevant files within the package (aasx-origin file, AAS structure specification file, supplementary files) and the associated relationship parts shall be signed.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_encryption">Encryption</h3>
 <div class="paragraph">
-<p>The Open Packaging Conventions specification (ISO/IEC 29500-2:2012) mentions that "ZIP-based packages shall not include encryption as described in the ZIP specification. Package implementers shall enforce this restriction [M3.9]"<sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnotedef_9" title="View footnote.">9</a>]</sup>]. However, an Open Packaging Conventions package may be encrypted with other means and some applications, which use this package format as the basis for a more specific format, may use encryption during interchange or DRM for distribution [1].</p>
+<p>The Open Packaging Conventions specification (ISO/IEC 29500-2:2012) mentions that "ZIP-based packages shall not include encryption as described in the ZIP specification. Package implementers shall enforce this restriction [M3.9]"<sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnotedef_9" title="View footnote.">9</a>]</sup>. However, an Open Packaging Conventions package may be encrypted with other means and some applications, which use this package format as the basis for a more specific format, may use encryption during interchange or DRM for distribution <a href="#bib1">[1]</a>.</p>
 </div>
 <div class="paragraph">
-<p>An example is the Office Document Cryptography Structure (MS-OFFCRYPTO) used by derivate office formats. Some technologies used may be covered by patents from Microsoft and are therefore not recommended for the AASX format. Digital Rights Management (DRM) can also be used to encrypt content elements in a package with specific access rights granted to authorize users (see the implementation in the system.io.packaging namespace [7]).</p>
+<p>An example is the Office Document Cryptography Structure (MS-OFFCRYPTO) used by derivate office formats. Some technologies used may be covered by patents from Microsoft and are therefore not recommended for the AASX format. Digital Rights Management (DRM) can also be used to encrypt content elements in a package with specific access rights granted to authorize users (see the implementation in the system.io.packaging namespace <a href="#bib7">[7]</a>).</p>
 </div>
 <div class="paragraph">
 <p>Regarding encryption and confidentiality, the following rules shall be followed.</p>
@@ -1557,7 +1545,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>This document (Part 5 of the document series "Details of the Asset Administration Shell") defines the AASX package file format for file exchange of Administration Shells based on the Open Package Conventions.</p>
 </div>
 <div class="paragraph">
-<p>Additional parts of the document series cover (see [10]):</p>
+<p>Additional parts of the document series cover (see <a href="#bib10">[10]</a>):</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1615,10 +1603,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Some international organizations (e.g. EU, NATO, etc.) recommend using Open Document Format (ISO/IEC 26300-3) instead. However, this recommendation is related to the formats used specifically in Office applications.</p>
 </li>
 <li>
-<p>The Office Open XML and Open Packaging Conventions specifications originated from the Microsoft Corporation and were later standardized as ISO/IEC 29500 and ECMA-376. Current and future versions of ISO/IEC 29500 and ECMA-376 are covered by Microsoft&#8217;s Open Specification Promise, whereby Microsoft "irrevocably promises" not to assert any claims against those making, using, and selling conforming implementations of any specification covered by the promise (so long as those accepting the promise refrain from suing Microsoft for patent infringement in relation to Microsoft&#8217;s implementation of the covered specification) [1].</p>
+<p>The Office Open XML and Open Packaging Conventions specifications originated from the Microsoft Corporation and were later standardized as ISO/IEC 29500 and ECMA-376. Current and future versions of ISO/IEC 29500 and ECMA-376 are covered by Microsoft&#8217;s Open Specification Promise, whereby Microsoft "irrevocably promises" not to assert any claims against those making, using, and selling conforming implementations of any specification covered by the promise (so long as those accepting the promise refrain from suing Microsoft for patent infringement in relation to Microsoft&#8217;s implementation of the covered specification) <a href="#bib1">[1]</a>.</p>
 </li>
 <li>
-<p>Office Open XML (including the Open Packaging Conventions format) and Open Document Format are politically conflicting formats (see details in [2] and [3]). Choosing Open Packaging Conventions as the option for storing the Asset Administration Shell information had only technical reasons based on the arguments mentioned here.</p>
+<p>Office Open XML (including the Open Packaging Conventions format) and Open Document Format are politically conflicting formats (see details in <a href="#bib2">[2]</a> and <a href="#bib3">[3]</a>). Choosing Open Packaging Conventions as the option for storing the Asset Administration Shell information had only technical reasons based on the arguments mentioned here.</p>
 </li>
 <li>
 <p>Open Packaging Conventions was chosen in favor of iiRDS (v1.0). The scope of iiRDS might not be aligned with the requirements of the Asset Administration Shell, i.e. iiRDS is mainly a format for storing technical documentation of industry devices based on ontology concepts.</p>
@@ -1677,43 +1665,43 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_bibliography">Bibliography</h2>
 <div class="sectionbody">
-<div class="paragraph">
+<div id="bib1" class="paragraph">
 <p>[1] "Sustainability of Digital Formats: Planning for Library of Congress Collections. Open Packaging Conventions (Office Open XML)", ISO 29500-2:2008-2012, 2012. [Online]. Available: <a href="https://www.loc.gov/preservation/digital/formats/fdd/fdd000363.shtml" class="bare">https://www.loc.gov/preservation/digital/formats/fdd/fdd000363.shtml</a></p>
 </div>
-<div class="paragraph">
+<div id="bib2" class="paragraph">
 <p>[2] "Standardization of Office Open XML", Wikipedia. Accessed: 2019-01-26 [Online]. Available: <a href="https://en.wikipedia.org/wiki/Standardization_of_Office_Open_XML" class="bare">https://en.wikipedia.org/wiki/Standardization_of_Office_Open_XML</a></p>
 </div>
-<div class="paragraph">
+<div id="bib3" class="paragraph">
 <p>[3] "OpenDocument standardization", Wikipedia. Accessed: 2019-01-26 [Online]. Available: <a href="https://en.wikipedia.org/wiki/OpenDocument_standardization" class="bare">https://en.wikipedia.org/wiki/OpenDocument_standardization</a></p>
 </div>
-<div class="paragraph">
+<div id="bib4" class="paragraph">
 <p>[4] "The Digital Signing Framework of the Open Packaging Conventions". Accessed: 2019-01-26. [Online]. Available: <a href="https://msdn.microsoft.com/en-us/library/aa905326.aspx" class="bare">https://msdn.microsoft.com/en-us/library/aa905326.aspx</a></p>
 </div>
-<div class="paragraph">
+<div id="bib5" class="paragraph">
 <p>[5] "Open Packaging Conventions Fundamentals". Accessed: 2019-01-26 [Online]. Available: <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd742818(v=vs.85).aspx" class="bare">https://msdn.microsoft.com/en-us/library/windows/desktop/dd742818(v=vs.85).aspx</a></p>
 </div>
-<div class="paragraph">
+<div id="bib6" class="paragraph">
 <p>[6] "Sustainability of Digital Formats: Planning for Library of Congress Collections. Document Container File: Core (based on ZIP 6.3.3)". Accessed: 2019-01-26. [Online]. Available: <a href="https://www.loc.gov/preservation/digital/formats/fdd/fdd000361.shtml" class="bare">https://www.loc.gov/preservation/digital/formats/fdd/fdd000361.shtml</a></p>
 </div>
-<div class="paragraph">
+<div id="bib7" class="paragraph">
 <p>[7] "System.IO.Packaging Namespace", MSDN, Accessed: 2019-01-26 [Online]. Available: <a href="https://msdn.microsoft.com/en-us/library/system.io.packaging(v=vs.110).aspx" class="bare">https://msdn.microsoft.com/en-us/library/system.io.packaging(v=vs.110).aspx</a></p>
 </div>
-<div class="paragraph">
+<div id="bib8" class="paragraph">
 <p>[8] T. Preston-Werner "Semantic Versioning". Version 2.0.0. Accessed: 2020-11-13. [Online]. Available: <a href="https://semver.org/spec/v2.0.0.html" class="bare">https://semver.org/spec/v2.0.0.html</a></p>
 </div>
-<div class="paragraph">
+<div id="bib9" class="paragraph">
 <p>[9] "Details of the Asset Administration Shell – The exchange of information between partners in the value chain of Industrie 4.0". [Online]. Available: <a href="https://industrialdigitaltwin.org/en/content-hub" class="bare">https://industrialdigitaltwin.org/en/content-hub</a></p>
 </div>
-<div class="paragraph">
+<div id="bib10" class="paragraph">
 <p>[10] "Details of the Asset Administration Shell – Interoperability at Runtime – Exchanging Information via Application Programming Interfaces". [Online]. Available: <a href="https://industrialdigitaltwin.org/en/content-hub" class="bare">https://industrialdigitaltwin.org/en/content-hub</a></p>
 </div>
-<div class="paragraph">
+<div id="bib11" class="paragraph">
 <p>[11] "Asset Administration Shell. Reading Guide". Plattform Industrie 4.0 in cooperation with IDTA. November 2020. [Online]. Available: <a href="https://industrialdigitaltwin.org/wp-content/uploads/2022/02/AAS-ReadingGuide_202201.pdf" class="bare">https://industrialdigitaltwin.org/wp-content/uploads/2022/02/AAS-ReadingGuide_202201.pdf</a></p>
 </div>
-<div class="paragraph">
+<div id="bib12" class="paragraph">
 <p>[12] "Secure Download Service", Discussion Paper. Oct. 2020, Plattform Industrie 4.0. [Online]. Available: <a href="https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/secure_downloadservice.html" class="bare">https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/secure_downloadservice.html</a></p>
 </div>
-<div class="paragraph">
+<div id="bib13" class="paragraph">
 <p>[13] IEC 63278-1 "Asset Administration Shell for industrial applications – Part 1: Asset Administration Shell structure". 95/925/CDV</p>
 </div>
 </div>
@@ -1743,7 +1731,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <a href="#_footnoteref_7">7</a>. To avoid the long names of the relationship types, the short name is used in the text.
 </div>
 <div class="footnote" id="_footnotedef_9">
-<a href="#_footnoteref_9">9</a>. The reason might be related to the transparency requirement for the package format as well as license requirements of PKWARE. For ISO/IEC 21320-1 (Document Container File: Core), the following statement applies: “Encryption of individual files and of the central directory is prohibited. Hence this profile of ZIP_PK is more transparent than its parent format.” [6
+<a href="#_footnoteref_9">9</a>. The reason might be related to the transparency requirement for the package format as well as license requirements of PKWARE. For ISO/IEC 21320-1 (Document Container File: Core), the following statement applies: “Encryption of individual files and of the central directory is prohibited. Hence this profile of ZIP_PK is more transparent than its parent format.” <a href="#bib6">[6]</a>
 </div>
 <div class="footnote" id="_footnotedef_10">
 <a href="#_footnoteref_10">10</a>. A use case could be to encrypt a submodel and only provide the access to the unencrypted data after paying a fee.
@@ -1754,7 +1742,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-07-17 18:39:39 +0200
+Last updated 2023-07-17 18:47:21 +0200
 </div>
 </div>
 </body>

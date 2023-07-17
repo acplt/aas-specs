@@ -75,14 +75,14 @@ def convert_spec_part_5():
 
     # 6 Fix the bibliography
 
-    # 6.1 Add anchors to bibliography
-    keys, content = add_anchor_to_biblio(content)
-    # 6.2 Connect the in-document references to bibliography
-    content = add_link_to_biblio(content, keys)
+    # # 6.1 Add anchors to bibliography
+    # keys, content = add_anchor_to_biblio(content)
+    # # 6.2 Connect the in-document references to bibliography
+    # content = add_link_to_biblio(content, keys)
 
-    # # 7 Fix the image captions
-    # content = move_caption_to_beginning(content)
-    #
+    # 7 Fix the image captions
+    content = move_caption_to_beginning(content)
+
     # # # 8 Fix the Quotes on keyword
     # # content = replace_quotes_on_keyword(content)
 
