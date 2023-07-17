@@ -70,13 +70,13 @@ The bibliography can be found in Annex C.
 
 If available, definitions were taken from IEC 63278-1 DRAFT, July 2022.
 
-access control
+*access control*
 
 protection of system resources against unauthorized access; a process by which use of system resources is regulated according to a security policy and is permitted by only authorized entities (users, programs, processes, or other systems) according to that policy
 
 * [SOURCE: IEC TS 62443-1-1]
 
-application
+*application*
 
 software functional element specific to the solution of a problem in industrial-process measurement and control
 
@@ -88,7 +88,7 @@ Note 1 to entry: an application can be distributed among resources and may commu
 
 * [SOURCE: IEC TR 62390:2005-01, 3.1.2]
 
-asset
+*asset*
 
 physical, digital, or intangible entity that has value to an individual, an organization or a government
 
@@ -118,7 +118,7 @@ EXAMPLE 3: a software license is an example of an intangible asset.
 
 * [SOURCE: IEC 63278-1, based on IEV 741-01-04; editorial changes]
 
-Asset Administration Shell (AAS)
+*Asset Administration Shell (AAS)*
 
 standardized digital representation of an asset
 
@@ -130,7 +130,7 @@ Note 1 to entry: Asset Administration Shell and Administration Shell are used sy
 
 * [SOURCE: IEC 63278-1, note added]
 
-digital representation
+*digital representation*
 
 information and services representing an entity from a given viewpoint
 
@@ -154,7 +154,7 @@ EXAMPLE 3: examples of viewpoints are mechanical, electrical, or commercial char
 
 * [SOURCE: IEC 63278-1; editorial changes]
 
-identifier (ID)
+*identifier (ID)*
 
 identity information that unambiguously distinguishes one entity from another one in a given domain
 
@@ -166,13 +166,13 @@ Note 1 to entry: there are specific identifiers, e.g. UUID Universal unique iden
 
 * [SOURCE: Glossary Industrie 4.0]
 
-Submodel
+*Submodel*
 
 container of SubmodelElements defining a hierarchical structure consisting of SubmodelElements
 
 * [SOURCE: IEC 63278-1]
 
-system
+*system*
 
 interacting, interrelated, or interdependent elements forming a complex whole
 
