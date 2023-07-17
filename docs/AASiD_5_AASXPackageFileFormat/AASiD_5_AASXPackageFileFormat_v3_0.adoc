@@ -74,7 +74,7 @@ access control
 
 protection of system resources against unauthorized access; a process by which use of system resources is regulated according to a security policy and is permitted by only authorized entities (users, programs, processes, or other systems) according to that policy
 
-* {empty}[SOURCE: IEC TS 62443-1-1]
+* [SOURCE: IEC TS 62443-1-1]
 
 application
 
@@ -82,7 +82,7 @@ software functional element specific to the solution of a problem in industrial-
 
 Note 1 to entry: an application can be distributed among resources and may communicate with other applications.
 
-* {empty}[SOURCE: IEC TR 62390:2005-01, 3.1.2]
+* [SOURCE: IEC TR 62390:2005-01, 3.1.2]
 
 asset
 
@@ -96,7 +96,7 @@ EXAMPLE 2: examples for digital assets are process definitions, business procedu
 
 EXAMPLE 3: a software license is an example of an intangible asset.
 
-* {empty}[SOURCE: IEC 63278-1, based on IEV 741-01-04; editorial changes]
+* [SOURCE: IEC 63278-1, based on IEV 741-01-04; editorial changes]
 
 Asset Administration Shell (AAS)
 
@@ -104,7 +104,7 @@ standardized digital representation of an asset
 
 Note 1 to entry: Asset Administration Shell and Administration Shell are used synonymously.
 
-* {empty}[SOURCE: IEC 63278-1, note added]
+* [SOURCE: IEC 63278-1, note added]
 
 digital representation
 
@@ -116,7 +116,7 @@ EXAMPLE 2: examples of services are providing the history of the configuration d
 
 EXAMPLE 3: examples of viewpoints are mechanical, electrical, or commercial characteristics.
 
-* {empty}[SOURCE: IEC 63278-1; editorial changes]
+* [SOURCE: IEC 63278-1; editorial changes]
 
 identifier (ID)
 
@@ -124,19 +124,19 @@ identity information that unambiguously distinguishes one entity from another on
 
 Note 1 to entry: there are specific identifiers, e.g. UUID Universal unique identifier, IEC 15418 (GS1).
 
-* {empty}[SOURCE: Glossary Industrie 4.0]
+* [SOURCE: Glossary Industrie 4.0]
 
 Submodel
 
 container of SubmodelElements defining a hierarchical structure consisting of SubmodelElements
 
-* {empty}[SOURCE: IEC 63278-1]
+* [SOURCE: IEC 63278-1]
 
 system
 
 interacting, interrelated, or interdependent elements forming a complex whole
 
-* {empty}[SOURCE: IEC 63278-1; IEC TS 62443-1-1:2009, 3.2.123]
+* [SOURCE: IEC 63278-1; IEC TS 62443-1-1:2009, 3.2.123]
 
 ===  Abbreviations
 
@@ -199,7 +199,7 @@ Figure 1 shows the different ways of exchanging information via Asset Administra
 
 image:media/media/image2.jpeg[extracted-media/media/image2,width=535,height=337]
 
-[#_Ref55938616 .anchor]####Figure 1 Part 5: File Exchange Type of Information Exchange via Asset Administration Shells
+Figure 1 Part 5: File Exchange Type of Information Exchange via Asset Administration Shells
 
 == Basic Concepts and Leading Picture
 
@@ -215,7 +215,7 @@ In Figure 3, it is assumed that import does not need additional filtering.
 
 image:media/media/image3.jpeg[extracted-media/media/image3,width=642,height=491]
 
-[#_Ref529022840 .anchor]####Figure 2 Use Case File Exchange between Value Chain Partners
+Figure 2 Use Case File Exchange between Value Chain Partners
 
 "Supplier" and "Integrator" form two independent legal bodies (Figure 3). The organizational boundaries as well as the system boundaries including the partners’ infrastructures must be taken into account for data exchange, file exchange being one form of data exchange.
 
@@ -223,7 +223,7 @@ The exchange of files needs to fulfil some requirements with respect to usabilit
 
 image:media/media/image4.jpg[extracted-media/media/image4,width=642,height=270]
 
-[#_Ref123245416 .anchor]####Figure 3 File Exchange between two Value Chain Partners
+Figure 3 File Exchange between two Value Chain Partners
 
 For usability sake, a container format is used for file exchange and a corresponding structure is defined. This predefined structure helps the consumer to understand the content of the single files. The container may contain auxiliary files referenced by the AAS or even executable code.
 
@@ -236,7 +236,7 @@ When exchanging information from partner A to partner B, two use cases may apply
 +
 image:media/media/image5.jpg[extracted-media/media/image5,width=642,height=666]
 
-[#_Ref125548789 .anchor]####Figure 4 Example Filtering for Export and Import
+Figure 4 Example Filtering for Export and Import
 
 As an example (see [.mark]####Figure 4), let’s assume that the producer is submitting the complete order data. However, the consumer (in this case the machine builder) is filtering the information (1) and is only importing the information relevant to him. Regarding the functionality, both are filtering: the producer is filtering what he submits to the consumer (2) and the consumer in turn is not using all functionality but is filtering the functionality he wants to use in his environment. The same is possible between machine builders and operators.
 
@@ -246,7 +246,7 @@ Figure 4 shows an example, where the defined xml format is used as defined in th
 
 image:media/media/image6.jpg[extracted-media/media/image6,width=642,height=299]
 
-[#_Toc129691023 .anchor]####Figure 5 Example Filtering of Information in XML
+Figure 5 Example Filtering of Information in XML
 
 === Basic Concepts of the Open Packaging Conventions
 
@@ -273,7 +273,7 @@ The following process in Figure 6 is defined for creating and consuming AASX pac
 
 image:media/media/image7.jpeg[extracted-media/media/image7,width=642,height=335]
 
-[#_Ref25052769 .anchor]####Figure 6 Process for Generating and Consuming AASX Packages
+Figure 6 Process for Generating and Consuming AASX Packages
 
 The process starts by serializing the existing AAS (e.g. D1 and E1) into files (according to the serialization mechanisms described in this document), as well as exporting other supplementary files (i.e. files mentioned in the structure of the AAS, such as manuals, CAD files, etc.). All these files will be packaged together into the AASX ZIP file format and will be followed by several security steps that define the policies for modifiability, encryption, and digital signing of the files inside the AASX. The final AASX can then be transported from the AASX producer (in this case partner A) to the AASX consumer (partner B) via digital media such as e-mail, USB stick, etc. The consumer first needs to validate and verify the incoming AASX, unpack the contained files, and import them to generate the new AAS in the consumer environment. The process will be explained in detail in the following sub-sections.
 
@@ -293,7 +293,7 @@ The Asset Administration Shell Package (AASX) format is derived from the Open Pa
 
 Figure 7 defines a set of relationship types (URIs) and the corresponding source files as a part of the logical model for the AASX format. In addition (not shown in Figure 7), a specific relationship instance also has a unique ID and a target resource (URI of a target file inside or outside of the package).
 
-[#_Ref529302453 .anchor]##image:media/media/image8.png[extracted-media/media/image8,width=642,height=300]Figure 7 Relationship Types for AASX Packages (Logical Model)
+image:media/media/image8.png[extracted-media/media/image8,width=642,height=300]Figure 7 Relationship Types for AASX Packages (Logical Model)
 
 The relationship types for thumbnail, core-properties, digital-signatures (origin, signature and certificate) are defined by Open Packaging Conventions. The other relationship types were specifically defined to support the AASX package format.
 
@@ -409,11 +409,11 @@ Figure 9 shows the overall physical model, i.e. the file structure of an AASX pa
 
 image:media/media/image9.png[extracted-media/media/image9,width=622,height=272]Figure 8 shows an example of an AASX package focusing on the specific aasx part including AAS examples. It depicts the content of the AASX package listed in a tree view using the ECMA-376 relationship types defined in Figure 7 and follows the file name conventions as defined above. In this example, it is assumed that the AAS specification files are serialized in XML. The data.xml file in this example contains two Asset Administration Shells, two submodels, and a single concept description. Three files are referenced within the submodels; they are added to the package in the folder suppl. The files can be referenced from both AAS, i.e. from both submodels. The same accounts for the concept description that can be used in both submodels. The submodels can be part of both AAS, if needed.
 
-[#_Toc129691026 .anchor]####Figure 8 Example of Mapping Logical (right) to Physical Model (left)
+Figure 8 Example of Mapping Logical (right) to Physical Model (left)
 
 image:media/media/image10.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=377,height=299]In addition to the AASX specific files, files common to all ECMA-376 packages – such as relationship parts (*.rels) and the Content Types stream ([Content_Types].xml) – must be contained in an AASX package in its physical representation as a .zip archive. For more information on these files, please refer to the ECMA-376 specification.
 
-[#_Ref129953788 .anchor]####Figure 9 AASX File Structure (Physical Model)
+Figure 9 AASX File Structure (Physical Model)
 
 ===  Digital Signatures
 
@@ -445,9 +445,6 @@ Additional parts of the document series cover (see [10]):
 * the payload of these APIs is based on the definitions of the information model as specified in document Part 1; the API also includes operations for downloading AASX files as specified in this document,
 * data specification templates (Part 3 series),
 * security aspects of the Asset Administration Shell (Part 4)
-
-[upperalpha]
-. [#_Toc54816334 .anchor]##
 
 == Background Information
 
