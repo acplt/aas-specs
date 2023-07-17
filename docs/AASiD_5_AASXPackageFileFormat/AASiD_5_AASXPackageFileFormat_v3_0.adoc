@@ -80,7 +80,11 @@ application
 
 software functional element specific to the solution of a problem in industrial-process measurement and control
 
+
+====
 Note 1 to entry: an application can be distributed among resources and may communicate with other applications.
+====
+
 
 * [SOURCE: IEC TR 62390:2005-01, 3.1.2]
 
@@ -88,13 +92,29 @@ asset
 
 physical, digital, or intangible entity that has value to an individual, an organization or a government
 
+
+====
 Note 1 to entry: an asset can be single entity, a collection of entities, an assembly of entities, or a composition of entities.
+====
 
+
+
+====
 EXAMPLE 1: examples for physical entities are equipment, raw material, parts components and pieces, supplies, consumables, physical products, and waste.
+====
 
+
+
+====
 EXAMPLE 2: examples for digital assets are process definitions, business procedures, or actual states.
+====
 
+
+
+====
 EXAMPLE 3: a software license is an example of an intangible asset.
+====
+
 
 * [SOURCE: IEC 63278-1, based on IEV 741-01-04; editorial changes]
 
@@ -102,7 +122,11 @@ Asset Administration Shell (AAS)
 
 standardized digital representation of an asset
 
+
+====
 Note 1 to entry: Asset Administration Shell and Administration Shell are used synonymously.
+====
+
 
 * [SOURCE: IEC 63278-1, note added]
 
@@ -110,11 +134,23 @@ digital representation
 
 information and services representing an entity from a given viewpoint
 
+
+====
 EXAMPLE 1: examples of information are properties (e.g. maximum temperature), actual parameters (e.g. actual velocity), events (e.g. notification of status change), schematics (electrical), and visualization information (2D and 3D drawings).
+====
 
+
+
+====
 EXAMPLE 2: examples of services are providing the history of the configuration data, providing the actual velocity, and providing a simulation.
+====
 
+
+
+====
 EXAMPLE 3: examples of viewpoints are mechanical, electrical, or commercial characteristics.
+====
+
 
 * [SOURCE: IEC 63278-1; editorial changes]
 
@@ -122,7 +158,11 @@ identifier (ID)
 
 identity information that unambiguously distinguishes one entity from another one in a given domain
 
+
+====
 Note 1 to entry: there are specific identifiers, e.g. UUID Universal unique identifier, IEC 15418 (GS1).
+====
+
 
 * [SOURCE: Glossary Industrie 4.0]
 
@@ -140,7 +180,11 @@ interacting, interrelated, or interdependent elements forming a complex whole
 
 ===  Abbreviations
 
+
+====
 Note: not all abbreviations are used in this document. The list of abbreviations is identical in the different parts of the document series "Details of the Asset Administration Shell".footnote:[There might be smaller differences in the different parts with respect to which abbreviations are listed.]
+====
+
 
 [width="100%",cols="21%,79%",options="header",]
 |===
@@ -240,7 +284,11 @@ Figure 4 Example Filtering for Export and Import
 
 As an example (see [.mark]####Figure 4), let’s assume that the producer is submitting the complete order data. However, the consumer (in this case the machine builder) is filtering the information (1) and is only importing the information relevant to him. Regarding the functionality, both are filtering: the producer is filtering what he submits to the consumer (2) and the consumer in turn is not using all functionality but is filtering the functionality he wants to use in his environment. The same is possible between machine builders and operators.
 
+
+====
 Note: in the use case described above, (i.e. the exchange of information via sharing of xml files, etc.), the information that is not intended for submission needs to be extracted from the corresponding xml files before delivery or before import, respectively. Role or attribute-based access control does not fit this use case. The corresponding access policies might help filtering the corresponding information, but they cannot be submitted as part of the file exchanged.
+====
+
 
 Figure 4 shows an example, where the defined xml format is used as defined in this document. The German translation shall not be submitted, only English language is provided to partner B.
 
@@ -329,7 +377,11 @@ Some core properties are: Title, Subject, Creator, Keywords, Description, LastMo
 |*digital-signature/origin* |0..1 a|
 Required if you need to sign files and relationships inside the package. Their relationships basically target files that contain the data on signatures (e.g. certificate, digests, etc.).
 
+
+====
 Note: see Clause 5.5 on digital signatures for more information.
+====
+
 
 |*aasx-origin* |1 a|
 This relationship targets an aasx origin file which shall be an empty file or a plain text file containing the text "Intentionally empty"footnote:[This will allow extensions of the AASX package format in future versions of this specification.].
@@ -347,7 +399,11 @@ It is the entry point for all aas specific relationships and files inside the pa
 |*digital-signature/signature* |1..* a|
 Required if you need to sign files and relationships inside the package. Their relationships basically target files that contain the data on signatures (e.g. certificate, digests, …).
 
+
+====
 Note: see Clause 5.5 on digital signatures for more information.
+====
+
 
 |===
 
@@ -360,7 +416,11 @@ Note: see Clause 5.5 on digital signatures for more information.
 |*digital-signature/certificate* |0..1 a|
 Required if you need to sign files and relationships inside the package. Their relationships basically target files that contain the data on signatures (e.g. certificate, digests, …).
 
+
+====
 Note: see Clause 5.5 on digital signatures for more information.
+====
+
 
 |===
 
@@ -388,9 +448,17 @@ Typical formats contained are XML and/or JSON.
 |*aas-suppl* |0..1 a|
 Targets any additional file, which is referenced from within the data of an AAS via a relative URI reference in the _File_ submodel element.
 
-Note 1: blobs as defined via submodel Element _Blob_ are not stored as supplemental files within the package.
 
+====
+Note 1: blobs as defined via submodel Element _Blob_ are not stored as supplemental files within the package.
+====
+
+
+
+====
 Note 2: not every _File_ element inside the specification of an Submodel may target a file stored within the same AASX package. Only a relative URI reference shall be interpreted as a reference to a supplementary file within the AASX package. The path within the .rels file of the Open Package Conventions container can be a relative or absolute Open Package Conventions path.
+====
+
 
 The source of any aasx-suppl relationship must be the file containing the AAS structure/specification. If the information is available in several formats, the relationships need to be defined for each of the files.
 

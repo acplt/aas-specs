@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.18">
-<title>Preamble</title>
+<title>Specification of the Asset Administration Shell. Part 5: Package File Format (AASX)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -436,46 +436,61 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 </head>
-<body class="article">
+<body class="article toc2 toc-left">
 <div id="header">
+<h1>Specification of the Asset Administration Shell. Part 5: Package File Format (AASX)</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_preamble">Preamble</a>
+<ul class="sectlevel2">
+<li><a href="#_editorial_notes">Editorial Notes</a></li>
+<li><a href="#_scope_of_this_document">Scope of this Document</a></li>
+<li><a href="#_normative_references">Normative References</a></li>
+<li><a href="#_structure_of_the_document">Structure of the Document</a></li>
+</ul>
+</li>
+<li><a href="#_terms_definitions_and_abbreviations">Terms, Definitions and Abbreviations</a>
+<ul class="sectlevel2">
+<li><a href="#_terms_and_definitions">Terms and Definitions</a></li>
+<li><a href="#_abbreviations">Abbreviations</a></li>
+</ul>
+</li>
+<li><a href="#_introduction">Introduction</a></li>
+<li><a href="#_basic_concepts_and_leading_picture">Basic Concepts and Leading Picture</a>
+<ul class="sectlevel2">
+<li><a href="#_leading_picture">Leading Picture</a></li>
+<li><a href="#_filtering_of_information_in_export_and_import">Filtering of Information in Export and Import</a></li>
+<li><a href="#_basic_concepts_of_the_open_packaging_conventions">Basic Concepts of the Open Packaging Conventions</a></li>
+</ul>
+</li>
+<li><a href="#_package_file_format_for_the_asset_administration_shell_aasx_normative">Package File Format for the Asset Administration Shell (AASX) (normative)</a>
+<ul class="sectlevel2">
+<li><a href="#_general">General</a></li>
+<li><a href="#_conventions_for_the_asset_administration_shell_package_file_format_aasx">Conventions for the Asset Administration Shell Package File Format (AASX)</a></li>
+<li><a href="#_ecma_376_relationships">ECMA-376 Relationships</a></li>
+<li><a href="#_file_name_conventions">File Name Conventions</a></li>
+<li><a href="#_digital_signatures">Digital Signatures</a></li>
+<li><a href="#_encryption">Encryption</a></li>
+</ul>
+</li>
+<li><a href="#_summary_and_outlook">Summary and Outlook</a></li>
+<li><a href="#_background_information">Background Information</a>
+<ul class="sectlevel2">
+<li><a href="#_selection_of_the_reference_format_for_the_asset_administration_shell_package_format">Selection of the Reference Format for the Asset Administration Shell Package Format</a></li>
+</ul>
+</li>
+<li><a href="#_changes">Changes</a>
+<ul class="sectlevel2">
+<li><a href="#_general_2">General</a></li>
+<li><a href="#_changes_part_5_v3_0_vs_part_1_v2_0_1">Changes Part 5 V3.0 vs. Part 1 V2.0.1</a></li>
+</ul>
+</li>
+<li><a href="#_bibliography">Bibliography</a></li>
+</ul>
+</div>
 </div>
 <div id="content">
-<div class="paragraph">
-<p><span class="image"><img src="media/media/image1.png" alt="Ein Bild" width="794" height="1123"></span></p>
-</div>
-<div class="paragraph">
-<p>Imprint</p>
-</div>
-<div class="paragraph">
-<p><strong>Publisher</strong></p>
-</div>
-<div class="paragraph">
-<p>Industrial Digital Twin Association</p>
-</div>
-<div class="paragraph">
-<p>Lyoner Strasse 18</p>
-</div>
-<div class="paragraph">
-<p>60528 Frankfurt am Main</p>
-</div>
-<div class="paragraph">
-<p>Germany</p>
-</div>
-<div class="paragraph">
-<p><a href="https://www.industrialdigitaltwin.org/" class="bare">https://www.industrialdigitaltwin.org/</a></p>
-</div>
-<div class="paragraph">
-<p><strong>Status</strong></p>
-</div>
-<div class="paragraph">
-<p>March 2023</p>
-</div>
-<div class="paragraph">
-<p><strong>Illustrations</strong></p>
-</div>
-<div class="paragraph">
-<p>Publik. Agentur für Kommunikation GmbH, designed by Publik. Agentur für Kommunikation GmbH</p>
-</div>
 <div class="sect1">
 <h2 id="_preamble">Preamble</h2>
 <div class="sectionbody">
@@ -612,8 +627,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>software functional element specific to the solution of a problem in industrial-process measurement and control</p>
 </div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>Note 1 to entry: an application can be distributed among resources and may communicate with other applications.</p>
+</div>
+</div>
 </div>
 <div class="ulist">
 <ul>
@@ -628,17 +647,33 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>physical, digital, or intangible entity that has value to an individual, an organization or a government</p>
 </div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>Note 1 to entry: an asset can be single entity, a collection of entities, an assembly of entities, or a composition of entities.</p>
 </div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>EXAMPLE 1: examples for physical entities are equipment, raw material, parts components and pieces, supplies, consumables, physical products, and waste.</p>
 </div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>EXAMPLE 2: examples for digital assets are process definitions, business procedures, or actual states.</p>
 </div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>EXAMPLE 3: a software license is an example of an intangible asset.</p>
+</div>
+</div>
 </div>
 <div class="ulist">
 <ul>
@@ -653,8 +688,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>standardized digital representation of an asset</p>
 </div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>Note 1 to entry: Asset Administration Shell and Administration Shell are used synonymously.</p>
+</div>
+</div>
 </div>
 <div class="ulist">
 <ul>
@@ -669,14 +708,26 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>information and services representing an entity from a given viewpoint</p>
 </div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>EXAMPLE 1: examples of information are properties (e.g. maximum temperature), actual parameters (e.g. actual velocity), events (e.g. notification of status change), schematics (electrical), and visualization information (2D and 3D drawings).</p>
 </div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>EXAMPLE 2: examples of services are providing the history of the configuration data, providing the actual velocity, and providing a simulation.</p>
 </div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>EXAMPLE 3: examples of viewpoints are mechanical, electrical, or commercial characteristics.</p>
+</div>
+</div>
 </div>
 <div class="ulist">
 <ul>
@@ -691,8 +742,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>identity information that unambiguously distinguishes one entity from another one in a given domain</p>
 </div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>Note 1 to entry: there are specific identifiers, e.g. UUID Universal unique identifier, IEC 15418 (GS1).</p>
+</div>
+</div>
 </div>
 <div class="ulist">
 <ul>
@@ -730,8 +785,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect2">
 <h3 id="_abbreviations">Abbreviations</h3>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>Note: not all abbreviations are used in this document. The list of abbreviations is identical in the different parts of the document series "Details of the Asset Administration Shell".<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p>
+</div>
+</div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -926,7 +985,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="media/media/image2.jpeg" alt="extracted-media/media/image2" width="535" height="337"></span></p>
 </div>
 <div class="paragraph">
-<p><span id="_Ref55938616 " class="anchor">#</span>#Figure 1 Part 5: File Exchange Type of Information Exchange via Asset Administration Shells</p>
+<p>Figure 1 Part 5: File Exchange Type of Information Exchange via Asset Administration Shells</p>
 </div>
 </div>
 </div>
@@ -951,7 +1010,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="media/media/image3.jpeg" alt="extracted-media/media/image3" width="642" height="491"></span></p>
 </div>
 <div class="paragraph">
-<p><span id="_Ref529022840 " class="anchor">#</span>#Figure 2 Use Case File Exchange between Value Chain Partners</p>
+<p>Figure 2 Use Case File Exchange between Value Chain Partners</p>
 </div>
 <div class="paragraph">
 <p>"Supplier" and "Integrator" form two independent legal bodies (Figure 3). The organizational boundaries as well as the system boundaries including the partners’ infrastructures must be taken into account for data exchange, file exchange being one form of data exchange.</p>
@@ -963,7 +1022,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="media/media/image4.jpg" alt="extracted-media/media/image4" width="642" height="270"></span></p>
 </div>
 <div class="paragraph">
-<p><span id="_Ref123245416 " class="anchor">#</span>#Figure 3 File Exchange between two Value Chain Partners</p>
+<p>Figure 3 File Exchange between two Value Chain Partners</p>
 </div>
 <div class="paragraph">
 <p>For usability sake, a container format is used for file exchange and a corresponding structure is defined. This predefined structure helps the consumer to understand the content of the single files. The container may contain auxiliary files referenced by the AAS or even executable code.</p>
@@ -988,13 +1047,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p><span id="_Ref125548789 " class="anchor">#</span>#Figure 4 Example Filtering for Export and Import</p>
+<p>Figure 4 Example Filtering for Export and Import</p>
 </div>
 <div class="paragraph">
 <p>As an example (see <span class="mark">#</span>#Figure 4), let’s assume that the producer is submitting the complete order data. However, the consumer (in this case the machine builder) is filtering the information (1) and is only importing the information relevant to him. Regarding the functionality, both are filtering: the producer is filtering what he submits to the consumer (2) and the consumer in turn is not using all functionality but is filtering the functionality he wants to use in his environment. The same is possible between machine builders and operators.</p>
 </div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>Note: in the use case described above, (i.e. the exchange of information via sharing of xml files, etc.), the information that is not intended for submission needs to be extracted from the corresponding xml files before delivery or before import, respectively. Role or attribute-based access control does not fit this use case. The corresponding access policies might help filtering the corresponding information, but they cannot be submitted as part of the file exchanged.</p>
+</div>
+</div>
 </div>
 <div class="paragraph">
 <p>Figure 4 shows an example, where the defined xml format is used as defined in this document. The German translation shall not be submitted, only English language is provided to partner B.</p>
@@ -1003,7 +1066,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="media/media/image6.jpg" alt="extracted-media/media/image6" width="642" height="299"></span></p>
 </div>
 <div class="paragraph">
-<p><span id="_Toc129691023 " class="anchor">#</span>#Figure 5 Example Filtering of Information in XML</p>
+<p>Figure 5 Example Filtering of Information in XML</p>
 </div>
 </div>
 <div class="sect2">
@@ -1057,7 +1120,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="media/media/image7.jpeg" alt="extracted-media/media/image7" width="642" height="335"></span></p>
 </div>
 <div class="paragraph">
-<p><span id="_Ref25052769 " class="anchor">#</span>#Figure 6 Process for Generating and Consuming AASX Packages</p>
+<p>Figure 6 Process for Generating and Consuming AASX Packages</p>
 </div>
 <div class="paragraph">
 <p>The process starts by serializing the existing AAS (e.g. D1 and E1) into files (according to the serialization mechanisms described in this document), as well as exporting other supplementary files (i.e. files mentioned in the structure of the AAS, such as manuals, CAD files, etc.). All these files will be packaged together into the AASX ZIP file format and will be followed by several security steps that define the policies for modifiability, encryption, and digital signing of the files inside the AASX. The final AASX can then be transported from the AASX producer (in this case partner A) to the AASX consumer (partner B) via digital media such as e-mail, USB stick, etc. The consumer first needs to validate and verify the incoming AASX, unpack the contained files, and import them to generate the new AAS in the consumer environment. The process will be explained in detail in the following sub-sections.</p>
@@ -1100,7 +1163,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Figure 7 defines a set of relationship types (URIs) and the corresponding source files as a part of the logical model for the AASX format. In addition (not shown in Figure 7), a specific relationship instance also has a unique ID and a target resource (URI of a target file inside or outside of the package).</p>
 </div>
 <div class="paragraph">
-<p>[<mark>_Ref529302453 .anchor]</mark>#<span class="image"><img src="media/media/image8.png" alt="extracted-media/media/image8" width="642" height="300"></span>Figure 7 Relationship Types for AASX Packages (Logical Model)</p>
+<p><span class="image"><img src="media/media/image8.png" alt="extracted-media/media/image8" width="642" height="300"></span>Figure 7 Relationship Types for AASX Packages (Logical Model)</p>
 </div>
 <div class="paragraph">
 <p>The relationship types for thumbnail, core-properties, digital-signatures (origin, signature and certificate) are defined by Open Packaging Conventions. The other relationship types were specifically defined to support the AASX package format.</p>
@@ -1191,8 +1254,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Required if you need to sign files and relationships inside the package. Their relationships basically target files that contain the data on signatures (e.g. certificate, digests, etc.).</p>
 </div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>Note: see Clause 5.5 on digital signatures for more information.</p>
+</div>
+</div>
 </div></div></td>
 </tr>
 <tr>
@@ -1248,8 +1315,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Required if you need to sign files and relationships inside the package. Their relationships basically target files that contain the data on signatures (e.g. certificate, digests, …).</p>
 </div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>Note: see Clause 5.5 on digital signatures for more information.</p>
+</div>
+</div>
 </div></div></td>
 </tr>
 </tbody>
@@ -1289,8 +1360,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Required if you need to sign files and relationships inside the package. Their relationships basically target files that contain the data on signatures (e.g. certificate, digests, …).</p>
 </div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>Note: see Clause 5.5 on digital signatures for more information.</p>
+</div>
+</div>
 </div></div></td>
 </tr>
 </tbody>
@@ -1374,11 +1449,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Targets any additional file, which is referenced from within the data of an AAS via a relative URI reference in the <em>File</em> submodel element.</p>
 </div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>Note 1: blobs as defined via submodel Element <em>Blob</em> are not stored as supplemental files within the package.</p>
 </div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>Note 2: not every <em>File</em> element inside the specification of an Submodel may target a file stored within the same AASX package. Only a relative URI reference shall be interpreted as a reference to a supplementary file within the AASX package. The path within the .rels file of the Open Package Conventions container can be a relative or absolute Open Package Conventions path.</p>
+</div>
+</div>
 </div>
 <div class="paragraph">
 <p>The source of any aasx-suppl relationship must be the file containing the AAS structure/specification. If the information is available in several formats, the relationships need to be defined for each of the files.</p>
@@ -1415,13 +1498,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="media/media/image9.png" alt="extracted-media/media/image9" width="622" height="272"></span>Figure 8 shows an example of an AASX package focusing on the specific aasx part including AAS examples. It depicts the content of the AASX package listed in a tree view using the ECMA-376 relationship types defined in Figure 7 and follows the file name conventions as defined above. In this example, it is assumed that the AAS specification files are serialized in XML. The data.xml file in this example contains two Asset Administration Shells, two submodels, and a single concept description. Three files are referenced within the submodels; they are added to the package in the folder suppl. The files can be referenced from both AAS, i.e. from both submodels. The same accounts for the concept description that can be used in both submodels. The submodels can be part of both AAS, if needed.</p>
 </div>
 <div class="paragraph">
-<p><span id="_Toc129691026 " class="anchor">#</span>#Figure 8 Example of Mapping Logical (right) to Physical Model (left)</p>
+<p>Figure 8 Example of Mapping Logical (right) to Physical Model (left)</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="media/media/image10.png" alt="Ein Bild" width="377" height="299"></span>In addition to the AASX specific files, files common to all ECMA-376 packages – such as relationship parts (*.rels) and the Content Types stream ([Content_Types].xml) – must be contained in an AASX package in its physical representation as a .zip archive. For more information on these files, please refer to the ECMA-376 specification.</p>
 </div>
 <div class="paragraph">
-<p><span id="_Ref129953788 " class="anchor">#</span>#Figure 9 AASX File Structure (Physical Model)</p>
+<p>Figure 9 AASX File Structure (Physical Model)</p>
 </div>
 </div>
 <div class="sect2">
@@ -1494,13 +1577,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>security aspects of the Asset Administration Shell (Part 4)</p>
 </li>
 </ul>
-</div>
-<div class="olist upperalpha">
-<ol class="upperalpha" type="A">
-<li>
-<p>[<mark>_Toc54816334 .anchor]</mark>#</p>
-</li>
-</ol>
 </div>
 </div>
 </div>
@@ -1678,7 +1754,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-07-17 18:23:08 +0200
+Last updated 2023-07-17 18:39:39 +0200
 </div>
 </div>
 </body>

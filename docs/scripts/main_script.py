@@ -61,18 +61,18 @@ def convert_spec_part_5():
 
     content = utils.read_file(spec_file)
 
-    # 1 Replace the Table of Contents in adoc file
-    content = remove_lines_between(content, start_line=25, end_line=100)
+    # # 1 Replace the Table of Contents in adoc file
+    # content = remove_lines_between(content, start_line=25, end_line=100)
 
     # # 3 Remove certain commonly occurring patterns in asciidoc file - check the script for list of patterns
     # content = remove_text_matching_regex(content)
-    #
+
     # # 4 Escaping the angular brackets
     # content = escape_double_angular_brackets(content)
-    #
-    # # 5 Style note boxes
-    # content = recolor_notes(content)
-    #
+
+    # 5 Style note boxes
+    content = recolor_notes(content)
+
     # # 6 Fix the bibliography
     #
     # # 6.1 Add anchors to bibliography
