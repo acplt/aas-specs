@@ -9,7 +9,7 @@ This document (version 3.0) is the continuation of the definition of the AASX Pa
 
 This document was produced from September 2022 to January 2023 by the sub working group "Asset Administration Shell" of the joint working group of the Plattform Industrie 4.0 working group "Reference Architectures, Standards and Norms" and the "Open Technology" working group of the Industrial Digital Twin Association (IDTA). It is the first version published by the IDTA.
 
-This specification is versioned using https://semver.org/spec/v2.0.0.html[Semantic Versioning 2.0.0] (semver) and follows the semver specification [8].
+This specification is versioned using https://semver.org/spec/v2.0.0.html[Semantic Versioning 2.0.0] (semver) and follows the semver specification link:#bib8[[8\]].
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in https://tools.ietf.org/html/bcp14[BCP 14] https://tools.ietf.org/html/rfc2119[RFC2119] https://tools.ietf.org/html/rfc8174[RFC8174]footnote:[https://www.ietf.org/rfc/rfc2119.txt]:
 
@@ -34,7 +34,7 @@ This document assumes familiarity with the metamodel of the Asset Administration
 
 The main stakeholders addressed in this document are architects and software developers aiming to implement a digital twin using the Asset Administration Shell in an interoperable way. Additionally, the content can also be used as input for discussions with international standardization organizations and further collaborations.
 
-Please consult the continuously updated reading guide [11] for an overview of documents on the Asset Administration Shell. The reading guide gives advice on which documents should be read depending on the role of the reader.
+Please consult the continuously updated reading guide link:#bib11[[11\]] for an overview of documents on the Asset Administration Shell. The reading guide gives advice on which documents should be read depending on the role of the reader.
 
 === Normative References
 
@@ -229,17 +229,17 @@ Note: not all abbreviations are used in this document. The list of abbreviations
 
 == Introduction
 
-The document series "Details of the Asset Administration Shell" specifies the different needs of implementing Asset Administration Shells in an Industry 4.0 environment. A corresponding IEC series is in development, see [13].
+The document series "Details of the Asset Administration Shell" specifies the different needs of implementing Asset Administration Shells in an Industry 4.0 environment. A corresponding IEC series is in development, see link:#bib13[[13\]].
 
 Besides a technology-neutral specification of the information model in UML, several different formats are provided to exchange Asset Administration Shells: XML, JSON, RDF, AutomationML, as well as an OPC UA information model.
 
 Figure 1 shows the different ways of exchanging information via Asset Administration Shells. This part of the "Details of the Asset Administration Shell" series, Part 5, deals with type 1: file exchange. The following steps need to be executed to enable an exchange between partners:
 
 [arabic]
-. definition of the Asset Administration Shell in a selected format, for example XML (see [9]),
+. definition of the Asset Administration Shell in a selected format, for example XML (see link:#bib9[[9\]]),
 . selecting the additional files that are referenced in submodels of the Asset Administration Shell and should also be exchanged,
 . provision of the Asset Administration Shell together with the selected files in a standardized exchange format, the AASX package format as specified in this document,
-. defining a secure way to exchange the file, for example via secure file download on a web server [12].
+. defining a secure way to exchange the file, for example via secure file download on a web server link:#bib12[[12\]].
 
 image:media/media/image2.jpeg[extracted-media/media/image2,width=535,height=337]
 
@@ -263,7 +263,7 @@ Figure 2 Use Case File Exchange between Value Chain Partners
 
 "Supplier" and "Integrator" form two independent legal bodies (Figure 3). The organizational boundaries as well as the system boundaries including the partners’ infrastructures must be taken into account for data exchange, file exchange being one form of data exchange.
 
-The exchange of files needs to fulfil some requirements with respect to usability and security [12]. A bilateral agreement on security constraints is required, which must be fulfilled for the transfer and usage of the files. Please refer to Part 4 of the series "Details of the Asset Administration Shell" for more details.
+The exchange of files needs to fulfil some requirements with respect to usability and security link:#bib12[[12\]]. A bilateral agreement on security constraints is required, which must be fulfilled for the transfer and usage of the files. Please refer to Part 4 of the series "Details of the Asset Administration Shell" for more details.
 
 image:media/media/image4.jpg[extracted-media/media/image4,width=642,height=270]
 
@@ -302,7 +302,7 @@ The packaging model specified by the Open Packaging Conventions describes *packa
 
 Relationships are defined to connect the package to files, and to connect various files in the package. The definition of the relationships (along with the files’ names) is the *logical model* of the package. The resource, i.e. a source of a relationship, must be either the package itself or a data component (file) inside of the package. The target resource of a relationship can be any URI-addressable resource inside or outside of the package. It is possible to have more than one relationship that share the same target file (see example 9–6 in ISO/IEC 29500-2: 2012).
 
-The *physical model* maps these logical concepts to a physical format. The result of this mapping is a physical package format (a ZIP archive format) in which files appear in a directory-like hierarchy (adapted from [4] and [5]).
+The *physical model* maps these logical concepts to a physical format. The result of this mapping is a physical package format (a ZIP archive format) in which files appear in a directory-like hierarchy (adapted from link:#bib4[[4\]] and link:#bib5[[5\]]).
 
 == Package File Format for the Asset Administration Shell (AASX) (normative)
 
@@ -485,13 +485,13 @@ Figure 9 AASX File Structure (Physical Model)
 
 ===  Digital Signatures
 
-A digital signing feature is already provided by the Open Packaging ­­­­Conventions specification [4]. Hence, this signing framework for packages can also be used for AASX packages. To ensure the integrity of the AAS data, all relevant files within the package (aasx-origin file, AAS structure specification file, supplementary files) and the associated relationship parts shall be signed.
+A digital signing feature is already provided by the Open Packaging ­­­­Conventions specification link:#bib4[[4\]]. Hence, this signing framework for packages can also be used for AASX packages. To ensure the integrity of the AAS data, all relevant files within the package (aasx-origin file, AAS structure specification file, supplementary files) and the associated relationship parts shall be signed.
 
 ===  Encryption
 
-The Open Packaging Conventions specification (ISO/IEC 29500-2:2012) mentions that "ZIP-based packages shall not include encryption as described in the ZIP specification. Package implementers shall enforce this restriction [M3.9]"footnote:[The reason might be related to the transparency requirement for the package format as well as license requirements of PKWARE. For ISO/IEC 21320-1 (Document Container File: Core), the following statement applies: “Encryption of individual files and of the central directory is prohibited. Hence this profile of ZIP_PK is more transparent than its parent format.” [6]]. However, an Open Packaging Conventions package may be encrypted with other means and some applications, which use this package format as the basis for a more specific format, may use encryption during interchange or DRM for distribution [1].
+The Open Packaging Conventions specification (ISO/IEC 29500-2:2012) mentions that "ZIP-based packages shall not include encryption as described in the ZIP specification. Package implementers shall enforce this restriction [M3.9]"footnote:[The reason might be related to the transparency requirement for the package format as well as license requirements of PKWARE. For ISO/IEC 21320-1 (Document Container File: Core), the following statement applies: “Encryption of individual files and of the central directory is prohibited. Hence this profile of ZIP_PK is more transparent than its parent format.” link:#bib6[[6\]]]. However, an Open Packaging Conventions package may be encrypted with other means and some applications, which use this package format as the basis for a more specific format, may use encryption during interchange or DRM for distribution link:#bib1[[1\]].
 
-An example is the Office Document Cryptography Structure (MS-OFFCRYPTO) used by derivate office formats. Some technologies used may be covered by patents from Microsoft and are therefore not recommended for the AASX format. Digital Rights Management (DRM) can also be used to encrypt content elements in a package with specific access rights granted to authorize users (see the implementation in the system.io.packaging namespace [7]).
+An example is the Office Document Cryptography Structure (MS-OFFCRYPTO) used by derivate office formats. Some technologies used may be covered by patents from Microsoft and are therefore not recommended for the AASX format. Digital Rights Management (DRM) can also be used to encrypt content elements in a package with specific access rights granted to authorize users (see the implementation in the system.io.packaging namespace link:#bib7[[7\]]).
 
 Regarding encryption and confidentiality, the following rules shall be followed.
 
@@ -506,7 +506,7 @@ Regarding encryption and confidentiality, the following rules shall be followed.
 
 This document (Part 5 of the document series "Details of the Asset Administration Shell") defines the AASX package file format for file exchange of Administration Shells based on the Open Package Conventions.
 
-Additional parts of the document series cover (see [10]):
+Additional parts of the document series cover (see link:#bib10[[10\]]):
 
 * the information meta model of the Asset Administration Shell (Part 1),
 * interfaces and APIs for accessing the information of Asset Administration Shells (access, modify, query, and execute information and active functionality; Part 2),
@@ -528,8 +528,8 @@ The Open Packaging Conventionsfootnote:[Not to be confused with OPC (Open Platfo
 * There are some APIs to handle Open Packaging Conventions packages (Windows API, .NET, Java, etc.) that do not require much knowledge on the technical specification.
 * Open Packaging Conventions encourages chunking, i.e. splitting files into small chunks. This is favorable for reducing the effect of file corruption and better for data access.
 * Some international organizations (e.g. EU, NATO, etc.) recommend using Open Document Format (ISO/IEC 26300-3) instead. However, this recommendation is related to the formats used specifically in Office applications.
-* The Office Open XML and Open Packaging Conventions specifications originated from the Microsoft Corporation and were later standardized as ISO/IEC 29500 and ECMA-376. Current and future versions of ISO/IEC 29500 and ECMA-376 are covered by Microsoft's Open Specification Promise, whereby Microsoft "irrevocably promises" not to assert any claims against those making, using, and selling conforming implementations of any specification covered by the promise (so long as those accepting the promise refrain from suing Microsoft for patent infringement in relation to Microsoft's implementation of the covered specification) [1].
-* Office Open XML (including the Open Packaging Conventions format) and Open Document Format are politically conflicting formats (see details in [2] and [3]). Choosing Open Packaging Conventions as the option for storing the Asset Administration Shell information had only technical reasons based on the arguments mentioned here.
+* The Office Open XML and Open Packaging Conventions specifications originated from the Microsoft Corporation and were later standardized as ISO/IEC 29500 and ECMA-376. Current and future versions of ISO/IEC 29500 and ECMA-376 are covered by Microsoft's Open Specification Promise, whereby Microsoft "irrevocably promises" not to assert any claims against those making, using, and selling conforming implementations of any specification covered by the promise (so long as those accepting the promise refrain from suing Microsoft for patent infringement in relation to Microsoft's implementation of the covered specification) link:#bib1[[1\]].
+* Office Open XML (including the Open Packaging Conventions format) and Open Document Format are politically conflicting formats (see details in link:#bib2[[2\]] and link:#bib3[[3\]]). Choosing Open Packaging Conventions as the option for storing the Asset Administration Shell information had only technical reasons based on the arguments mentioned here.
 * Open Packaging Conventions was chosen in favor of iiRDS (v1.0). The scope of iiRDS might not be aligned with the requirements of the Asset Administration Shell, i.e. iiRDS is mainly a format for storing technical documentation of industry devices based on ontology concepts.
 
 == Changes
@@ -554,28 +554,41 @@ Minor changes:
 
 == Bibliography
 
+[#bib1]
 [1] "Sustainability of Digital Formats: Planning for Library of Congress Collections. Open Packaging Conventions (Office Open XML)", ISO 29500-2:2008-2012, 2012. [Online]. Available: https://www.loc.gov/preservation/digital/formats/fdd/fdd000363.shtml
 
+[#bib2]
 [2] "Standardization of Office Open XML", Wikipedia. Accessed: 2019-01-26 [Online]. Available: https://en.wikipedia.org/wiki/Standardization_of_Office_Open_XML
 
+[#bib3]
 [3] "OpenDocument standardization", Wikipedia. Accessed: 2019-01-26 [Online]. Available: https://en.wikipedia.org/wiki/OpenDocument_standardization
 
+[#bib4]
 [4] "The Digital Signing Framework of the Open Packaging Conventions". Accessed: 2019-01-26. [Online]. Available: https://msdn.microsoft.com/en-us/library/aa905326.aspx
 
+[#bib5]
 [5] "Open Packaging Conventions Fundamentals". Accessed: 2019-01-26 [Online]. Available: https://msdn.microsoft.com/en-us/library/windows/desktop/dd742818(v=vs.85).aspx
 
+[#bib6]
 [6] "Sustainability of Digital Formats: Planning for Library of Congress Collections. Document Container File: Core (based on ZIP 6.3.3)". Accessed: 2019-01-26. [Online]. Available: https://www.loc.gov/preservation/digital/formats/fdd/fdd000361.shtml
 
+[#bib7]
 [7] "System.IO.Packaging Namespace", MSDN, Accessed: 2019-01-26 [Online]. Available: https://msdn.microsoft.com/en-us/library/system.io.packaging(v=vs.110).aspx
 
+[#bib8]
 [8] T. Preston-Werner "Semantic Versioning". Version 2.0.0. Accessed: 2020-11-13. [Online]. Available: https://semver.org/spec/v2.0.0.html
 
+[#bib9]
 [9] "Details of the Asset Administration Shell – The exchange of information between partners in the value chain of Industrie 4.0". [Online]. Available: https://industrialdigitaltwin.org/en/content-hub
 
+[#bib10]
 [10] "Details of the Asset Administration Shell – Interoperability at Runtime – Exchanging Information via Application Programming Interfaces". [Online]. Available: https://industrialdigitaltwin.org/en/content-hub
 
+[#bib11]
 [11] "Asset Administration Shell. Reading Guide". Plattform Industrie 4.0 in cooperation with IDTA. November 2020. [Online]. Available: https://industrialdigitaltwin.org/wp-content/uploads/2022/02/AAS-ReadingGuide_202201.pdf
 
+[#bib12]
 [12] "Secure Download Service", Discussion Paper. Oct. 2020, Plattform Industrie 4.0. [Online]. Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/secure_downloadservice.html
 
+[#bib13]
 [13] IEC 63278-1 "Asset Administration Shell for industrial applications – Part 1: Asset Administration Shell structure". 95/925/CDV
