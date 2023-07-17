@@ -1,26 +1,5 @@
-image:media/media/image1.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=794,height=1123]
-
-Imprint
-
-*Publisher*
-
-Industrial Digital Twin Association
-
-Lyoner Strasse 18
-
-60528 Frankfurt am Main
-
-Germany
-
-https://www.industrialdigitaltwin.org/
-
-*Status*
-
-March 2023
-
-*Illustrations*
-
-Publik. Agentur für Kommunikation GmbH, designed by Publik. Agentur für Kommunikation GmbH
+:toc: left
+= Specification of the Asset Administration Shell. Part 5: Package File Format (AASX)
 
 == Preamble
 
