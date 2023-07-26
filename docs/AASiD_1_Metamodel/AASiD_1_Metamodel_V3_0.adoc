@@ -551,7 +551,7 @@ software _entity_ that may take different values, one at a time
 The following abbreviations are not used in the document but may be used as abbreviations for the elements in the metamodel defined in this document.
 
 . Elements with Allowed Identifying Values
-[cols="33%,67%",options="header",]
+[cols="33%,67%",options=header]
 |===
 |*Abbreviation* |*Description*
 |AAS |Asset Administration Shell
@@ -651,7 +651,7 @@ This important relationship should be maintained throughout the life of the inst
 
 
 .Life Cycle Phases and Roles of Type and Instance Assets
-[cols="20%,22%,58%",]
+[cols="20%,22%,58%", options=header]
 |===
 |*Asset Kind* |*Life Cycle Phase* |*Description*
 |Type asset |Development |Valid from the ideation/conceptualization to the first prototypes/test. The 'type' of an asset is defined; distinguishing properties and functionalities are defined and implemented. All (internal) design artefacts associated with the type asset are created, such as CAD data, schematics, embedded software.
@@ -1359,16 +1359,18 @@ Note 4: the process of versioning or adding other administrative information to 
 ====
 
 
-[cols="19%,51%,15%,15%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |AdministrativeInformation | |
+|Class: |AdministrativeInformation
 |Explanation: a|
 Administrative metainformation for an element like version information
 
 [.underline]#Constraint AASd-005:# If _AdministrativeInformation_/version is not specified, _AdministrativeInformation/revision_ shall also be unspecified. This means that a revision requires a version. If there is no version, there is no revision. Revision is optional.
 
-| |
-|Inherits from: |HasDataSpecification | |
+|Inherits from: |HasDataSpecification
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |version |Version of the element |VersionType |0..1
 |revision |Revision of the element |RevisionType |0..1
@@ -1402,11 +1404,14 @@ Note 3: usage of the template ID is not restricted to submodel instances. The cr
 .Figure 14 Metamodel of HasDataSpecification
 image:media/media/image15.png[media/media/image15]
 
-[cols="27%,40%,18%,15%,",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |HasDataSpecification \<<abstract>> | | |
-|Explanation: |Element that can be extended by using data specification templates. A data specification template defines a named set of additional attributes an element may or shall have. The data specifications used are explicitly specified with their global ID. | | |
-|Inherits from: |-- | | |
+|Class: |HasDataSpecification \<<abstract>>
+|Explanation: |Element that can be extended by using data specification templates. A data specification template defines a named set of additional attributes an element may or shall have. The data specifications used are explicitly specified with their global ID.
+|Inherits from: |--
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card. |
 |dataSpecification a|
 External reference to the data specification template used by the element
@@ -1427,9 +1432,9 @@ For more details on data specifications, please see Clause 6.
 .Figure 15 Metamodel of Has Extensions
 image:media/media/image16.png[media/media/image16]
 
-[cols="28%,33%,24%,15%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |HasExtensions \<<abstract>> | |
+|Class: |HasExtensions \<<abstract>>
 |Explanation: a|
 Element that can be extended by proprietary extensions
 
@@ -1445,17 +1450,23 @@ Note 2: extensions are proprietary, i.e. they do not support global interoperabi
 ====
 
 
-| |
-|Inherits from: |- | |
+
+|Inherits from: |-
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |extension |An extension of the element. |Extension |0..*
 |===
 
-[cols="24%,32%,32%,12%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Extension | |
-|Explanation: |Single extension of an element | |
-|Inherits from: |HasSemantics | |
+|Class: |Extension
+|Explanation: |Single extension of an element
+|Inherits from: |HasSemantics
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |name |Name of the extension |NameType |1
 |valueType a|
@@ -1473,16 +1484,19 @@ image:media/media/image17.png[media/media/image17]
 
 ===== Has Kind Attributes
 
-[cols="18%,49%,19%,14%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |HasKind | |
+|Class: |HasKind
 |Explanation: a|
 An element with a kind is an element that can either represent a template or an instance.
 
 Default for an element is that it is representing an instance.
 
-| |
-|Inherits from: |-- | |
+
+|Inherits from: |--
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |kind a|
 Kind of the element: either type or instance
@@ -1511,16 +1525,19 @@ image:media/media/image18.png[media/media/image18]
 
 For matching algorithm, see Clause 4.4.1.
 
-[cols="24%,43%,21%,12%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |HasSemantics \<<abstract>> | |
+|Class: |HasSemantics \<<abstract>>
 |Explanation: a|
 Element that can have a semantic definition plus some supplemental semantic definitions
 
 [.underline]#Constraint AASd-118#: If a supplemental semantic ID (_HasSemantics/supplementalSemanticId_) is defined, there shall also be a main semantic ID (_HasSemantics/semanticId_).
 
-| |
-|Inherits from: |-- | |
+
+|Inherits from: |--
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |semanticId a|
 Identifier of the semantic definition of the element called semantic ID or also main semantic ID of the element
@@ -1557,9 +1574,9 @@ Information about identification can be found in Clause 4.3. See Clause 4.3.4 fo
 
 See Clause 4.3.4 for information about which identifier types are supported.
 
-[cols="18%,45%,26%,11%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Identifiable \<<abstract>> | |
+|Class: |Identifiable \<<abstract>>
 |Explanation: a|
 An element that has a globally unique identifier
 
@@ -1569,8 +1586,11 @@ Note: see Clause 5.3.12.2 for constraints related to identifiables.
 ====
 
 
-| |
-|Inherits from: |Referable | |
+
+|Inherits from: |Referable
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |administration a|
 Administrative information of an identifiable element
@@ -1590,9 +1610,9 @@ Note: some of the administrative information like the version number might need 
 .Figure 19 Metamodel of Qualifiables
 image:media/media/image20.png[media/media/image20]
 
-[cols="17%,50%,19%,14%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Qualifiable \<<abstract>> | |
+|Class: |Qualifiable \<<abstract>>
 |Explanation: a|
 A qualifiable element may be further qualified by one or more qualifiers.
 
@@ -1602,8 +1622,11 @@ Note: see Clause 5.3.12.3 for constraints related to qualifiables.
 ====
 
 
-| |
-|Inherits from: |-- | |
+
+|Inherits from: |--
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |qualifier |Additional qualification of a qualifiable element |Qualifier |0..*
 |===
@@ -1617,9 +1640,9 @@ Qualifiers may be defined for qualifiable elements.
 
 There are standardized qualifiers defined in IEC CDD, IEC61360-4 – IEC/SC 3D. A level qualifier defining the level type minimal, maximal, typical, and nominal value is specified in IEC 62569-1. In DIN SPEC 92000, qualifier types like e.g. expression semantics and expression logic are defined.
 
-[cols="19%,52%,18%,11%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Qualifier | |
+|Class: |Qualifier
 |Explanation: a|
 A qualifier is essentially a type-value-pair. Depending on the kind of qualifier, it makes additional statements
 
@@ -1631,8 +1654,11 @@ A qualifier is essentially a type-value-pair. Depending on the kind of qualifier
 
 [.underline]#Constraint AASd-020#: The value of _Qualifier/value_ shall be consistent with the data type as defined in _Qualifier/valueType_.
 
-| |
-|Inherits from: |HasSemantics | |
+
+|Inherits from: |HasSemantics
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |Kind \<<Experimental>> a|
 The qualifier kind describes the kind of qualifier that is applied to the element.
@@ -1703,9 +1729,9 @@ Not every element of the metamodel is referable. There are elements that are jus
 
 The __idShort__ shall be unique in its name space for non-identifiable referables (see Constraint AASd-022). A name space is defined as follows in this context: the parent element(s), which an element is part of and that is either referable or identifiable, is the name space of the element. Examples: a submodel is the name space for the properties directly contained in it; the name space of a submodel element contained in a submodel element collection is the submodel element collection.
 
-[cols="18%,49%,23%,10%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Referable \<<abstract>> | |
+|Class: |Referable \<<abstract>>
 |Explanation: a|
 Note1 : an element that is referable by its idShort. This ID is not globally unique. This ID is unique within the name space of the element.
 
@@ -1717,8 +1743,11 @@ Note 2: see Clause 5.3.12.2 for constraints related to referables.
 
 [.underline]#Constraint AASd-002:# _idShort_ of __Referable__s shall only feature letters, digits, underscore ("_"); starting mandatory with a letter, i.e. [a-zA-Z][a-zA-Z0-9_]*.
 
-| |
-|Inherits from: |HasExtensions | |
+
+|Inherits from: |HasExtensions
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |category \<<Deprecated>> a|
 The category is a value that gives further meta information w.r.t. the class of the element. It affects the expected existence of attributes and the applicability of constraints.
@@ -1806,11 +1835,14 @@ An Administration Shell is uniquely identifiable since it inherits from _Identif
 
 The _derivedFrom_ attribute is used to establish a relationship between two Asset Administration Shells that are derived from each other. For more detailed information on the _derivedFrom_ concept, see Clause 4.2.
 
-[cols="19%,31%,40%,10%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |AssetAdministrationShell | |
-|Explanation: |An Asset Administration Shell | |
-|Inherits from: |Identifiable; HasDataSpecification | |
+|Class: |AssetAdministrationShell
+|Explanation: |An Asset Administration Shell
+|Inherits from: |Identifiable; HasDataSpecification
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |derivedFrom |The reference to the Asset Administration Shell, which the Asset Administration Shell was derived from |ModelReference<AssetAdministrationShell> |0..1
 |assetInformation |Meta information about the asset the Asset Administration Shell is representing |AssetInformation |1
@@ -1831,9 +1863,9 @@ Temporarily, no submodel might be assigned to the Asset Administration Shell.
 .Figure 24 Metamodel of Asset Information
 image:media/media/image25.png[media/media/image25]
 
-[cols="21%,50%,21%,8%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |AssetInformation | |
+|Class: |AssetInformation
 |Explanation: a|
 In _AssetInformation,_ identifying meta data of the asset that is represented by an Asset Administration Shell is defined.
 
@@ -1849,8 +1881,11 @@ Note: see Clause 5.3.12.5 for constraints related to asset information.
 ====
 
 
-| |
-|Inherits from: |-- | |
+
+|Inherits from: |--
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |assetKind |Denotes whether the _Asset_ is of kind "Type" or "Instance" |AssetKind |1
 |globalAssetId a|
@@ -1879,11 +1914,14 @@ Note: besides this asset information, there still might be an identification sub
 ====
 
 
-[cols="21%,46%,23%,10%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Resource | |
-|Explanation: |Resource represents an address to a file (a locator). The value is a URI that can represent an absolute or relative path. | |
-|Inherits from: |-- | |
+|Class: |Resource
+|Explanation: |Resource represents an address to a file (a locator). The value is a URI that can represent an absolute or relative path.
+|Inherits from: |--
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |path a|
 Path and name of the resource (with file extension)
@@ -1912,16 +1950,19 @@ The content type states which file extensions the file can have.
 
 For more information on types and instances, see Clause 4.2.
 
-[cols="24%,46%,18%,12%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |SpecificAssetId | |
+|Class: |SpecificAssetId
 |Explanation: a|
 A specific asset ID describes a generic supplementary identifying attribute of the asset. The specific asset ID is not necessarily globally unique.
 
 [.underline]#Constraint AASd-133#: _SpecificAssetId/externalSubjectId_ shall be a global reference, i.e. _Reference/type_ _= ExternalReference_.
 
-| |
-|Inherits from: |HasSemantics | |
+
+|Inherits from: |HasSemantics
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |name |Name of the asset identifier |LabelType |1
 |value |The value of the specific asset identifier with the corresponding name |Identifier |1
@@ -1966,16 +2007,19 @@ Note: validators shall handle a submodel like _SubmodelElementCollection/submode
 ====
 
 
-[cols="25%,46%,19%,10%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Submodel | |
+|Class: |Submodel
 |Explanation: a|
 A submodel defines a specific aspect of the asset represented by the Asset Administration Shell.
 
 A submodel is used to structure the digital representation and technical functionality of an Administration Shell into distinguishable parts. Each submodel refers to a well-defined domain or subject matter. Submodels can become standardized and, in turn, submodel templates.
 
-| |
-|Inherits from: |Identifiable; HasKind; HasSemantics; Qualifiable; HasDataSpecification | |
+
+|Inherits from: |Identifiable; HasKind; HasSemantics; Qualifiable; HasDataSpecification
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |submodelElement |A submodel consists of zero or more submodel elements. |SubmodelElement |0..*
 |===
@@ -1991,11 +2035,14 @@ It is recommended to add a _semanticId_ to a _SubmodelElement._
 
 Submodel elements may also have defined data specification templates. A template might be defined to mirror some of the attributes like _preferredName_ and _unit_ of a property concept definition if there is no corresponding concept description available. Otherwise, there is only the property definition referenced by _semanticId_ available for the property; the attributes must be looked up online in a different way and are not available offline.
 
-[cols="18%,52%,12%,18%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |SubmodelElement \<<abstract>> | |
-|Explanation: |A submodel element is an element suitable for the description and differentiation of assets. | |
-|Inherits from: |Referable; HasSemantics; Qualifiable; HasDataSpecification | |
+|Class: |SubmodelElement \<<abstract>>
+|Explanation: |A submodel element is an element suitable for the description and differentiation of assets.
+|Inherits from: |Referable; HasSemantics; Qualifiable; HasDataSpecification
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |===
 
@@ -2017,11 +2064,14 @@ image:media/media/image29.png[media/media/image29]
 
 An annotated relationship is a relationship similar to a ternary association in UML. The semantics of the relationship is defined via the _semanticId_ of the _RelationshipElement_. If this semantic definition requires additional information not contained in the _first_ or _second_ object referenced via the relationship, this information needs to be stored as annotation.
 
-[cols="18%,49%,18%,15%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |AnnotatedRelationshipElement | |
-|Explanation: |An annotated relationship element is a relationship element that can be annotated with additional data elements. | |
-|Inherits from: |RelationshipElement | |
+|Class: |AnnotatedRelationshipElement
+|Explanation: |An annotated relationship element is a relationship element that can be annotated with additional data elements.
+|Inherits from: |RelationshipElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |annotation |A data element that represents an annotation that holds for the relationship between the two elements |DataElement |0..*
 |===
@@ -2031,11 +2081,14 @@ An annotated relationship is a relationship similar to a ternary association in 
 .Figure 29 Metamodel of Basic Event Element
 image:media/media/image30.png[media/media/image30]
 
-[cols="19%,43%,28%,10%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |BasicEventElement \<<Experimental>> | |
-|Explanation: |A basic event element | |
-|Inherits from: |EventElement | |
+|Class: |BasicEventElement \<<Experimental>>
+|Explanation: |A basic event element
+|Inherits from: |EventElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |observed |Reference to a referable, e.g. a data element or a submodel that is being observed |ModelReference<Referable> |1
 |Direction a|
@@ -2112,11 +2165,14 @@ Note: the payload is not part of the information model as exchanged via the AASX
 image:media/media/image31.png[media/media/image31]
 
 
-[cols="23%,39%,29%,9%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |EventPayload \<<Experimental>> | |
-|Explanation: |Defines the necessary information of an event instance sent out or received | |
-|Inherits from: |- | |
+|Class: |EventPayload \<<Experimental>>
+|Explanation: |Defines the necessary information of an event instance sent out or received
+|Inherits from: |-
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |source |Reference to the source event element |ModelReference<EventElement> |1
 |sourceSemanticId a|
@@ -2164,11 +2220,14 @@ image:media/media/image32.png[media/media/image32]
 
 For information on content type, see Clause 5.3.7.9 on submodel element "File".
 
-[cols="18%,55%,15%,12%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Blob | |
-|Explanation: |A Blob is a data element representing a file that is contained in the value attribute with its source code. | |
-|Inherits from: |DataElement | |
+|Class: |Blob
+|Explanation: |A Blob is a data element representing a file that is contained in the value attribute with its source code.
+|Inherits from: |DataElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |value a|
 The value of the blob instance of a blob data element
@@ -2203,11 +2262,14 @@ Note: the _semanticId_ of a capability is typically an ontology, which enables r
 ====
 
 
-[cols="18%,53%,15%,14%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Capability | |
-|Explanation: |A capability is the implementation-independent description of the potential of an asset to achieve a certain effect in the physical or virtual world. | |
-|Inherits from: |SubmodelElement | |
+|Class: |Capability
+|Explanation: |A capability is the implementation-independent description of the potential of an asset to achieve a certain effect in the physical or virtual world.
+|Inherits from: |SubmodelElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |===
 
@@ -2222,9 +2284,9 @@ A data element is a submodel element that has a value or a predefined number of 
 
 The type of value differs for different subtypes of data elements. Data elements include properties, file handling, and reference elements, see Figure 33.
 
-[width="99%",cols="17%,55%,14%,14%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |DataElement \<<abstract>> | |
+|Class: |DataElement \<<abstract>>
 |Explanation: a|
 A data element is a submodel element that is not further composed of other submodel elements.
 
@@ -2238,8 +2300,11 @@ Note: categories are deprecated and should no longer be used.
 ====
 
 
-| |
-|Inherits from: |SubmodelElement | |
+
+|Inherits from: |SubmodelElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |===
 
@@ -2250,16 +2315,19 @@ image:media/media/image35.png[media/media/image35]
 
 The entity submodel element is designed to be used in submodels defining the relationship between the parts of the composite asset it is composed of (e.g. bill of material). These parts are called entities. Not all entities have a global asset ID.
 
-[cols="22%,49%,21%,8%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Entity | |
+|Class: |Entity
 |Explanation: a|
 An entity is a submodel element that is used to model entities.
 
 [.underline]#Constraint AASd-014:# Either the attribute _globalAssetId_ or _specificAssetId_ of an _Entity_ must be set if _Entity/entityType_ is set to "_SelfManagedEntity_". Otherwise, they do not exist.
 
-| |
-|Inherits from: |SubmodelElement | |
+
+|Inherits from: |SubmodelElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |statement |Describes statements applicable to the entity by a set of submodel elements, typically with a qualified value |SubmodelElement |0..*
 |entityType |Describes whether the entity is a co-managed entity or a self-managed entity |EntityType |1
@@ -2286,11 +2354,14 @@ The asset of an I4.0 Component is a self-managed entity per definition.
 .Figure 35 Metamodel of Events
 image:media/media/image36.png[media/media/image36]
 
-[width="99%",cols="19%,50%,17%,14%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |EventElement \<<abstract>> \<<Experimental>> | |
-|Explanation: |An event element | |
-|Inherits from: |SubmodelElement | |
+|Class: |EventElement \<<abstract>> \<<Experimental>>
+|Explanation: |An event element
+|Inherits from: |SubmodelElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |===
 
@@ -2307,11 +2378,14 @@ Note: for information on handling supplementary external files in exchanging Ass
 ====
 
 
-[cols="18%,49%,18%,15%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |File | |
-|Explanation: |A file is a data element that represents an address to a file (a locator). The value is a URI that can represent an absolute or relative path. | |
-|Inherits from: |DataElement | |
+|Class: |File
+|Explanation: |A file is a data element that represents an address to a file (a locator). The value is a URI that can represent an absolute or relative path.
+|Inherits from: |DataElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |value a|
 Path and name of the file (with file extension)
@@ -2329,16 +2403,19 @@ The path can be absolute or relative.
 .Figure 37 Metamodel of Multi Language Properties
 image:media/media/image38.png[media/media/image38]
 
-[width="99%",cols="19%,50%,21%,10%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |MultiLanguageProperty | |
+|Class: |MultiLanguageProperty
 |Explanation: a|
 A property is a data element that has a multi-language value.
 
 [.underline]#Constraint AASd-012#: if both the _MultiLanguageProperty/value_ and the _MultiLanguageProperty/valueId_ are present, the meaning must be the same for each string in a specific language, as specified in _MultiLanguageProperty/valueId_.
 
-| |
-|Inherits from: |DataElement | |
+
+|Inherits from: |DataElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |value |The value of the property instance |MultiLanguageTextType |0..1
 |valueId a|
@@ -2358,27 +2435,33 @@ Note: it is recommended to use an external reference.
 .Figure 38 Metamodel of Operations
 image:media/media/image39.png[media/media/image39]
 
-[cols="18%,45%,25%,12%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Operation | |
+|Class: |Operation
 |Explanation: a|
 An operation is a submodel element with input and output variables.
 
 [.underline]#Constraint AASd-134:# For an _Operation,_ the _idShort_ of all _inputVariable/value_, _outputVariable/value,_ and _inoutputVariable/value_ shall be unique.
 
-| |
-|Inherits from: |SubmodelElement | |
+
+|Inherits from: |SubmodelElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |inputVariable |Input parameter of the operation |OperationVariable |0..*
 |outputVariable |Output parameter of the operation |OperationVariable |0..*
 |inoutputVariable |Parameter that is input and output of the operation |OperationVariable |0..*
 |===
 
-[width="99%",cols="23%,39%,28%,10%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |OperationVariable | |
-|Explanation: |The value of an operation variable is a submodel element that is used as input and/or output variable of an operation. | |
-|Inherits from: |-- | |
+|Class: |OperationVariable
+|Explanation: |The value of an operation variable is a submodel element that is used as input and/or output variable of an operation.
+|Inherits from: |--
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |value |Describes an argument or result of an operation via a submodel element |SubmodelElement |1
 |===
@@ -2406,16 +2489,19 @@ Note 3: even if the submodel element as the value of an input and an output vari
 .Figure 39 Metamodel of Properties
 image:media/media/image40.png[media/media/image40]
 
-[cols="17%,51%,23%,9%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Property | |
+|Class: |Property
 |Explanation: a|
 A property is a data element that has a single value.
 
 [.underline]#Constraint AASd-007:# If both the _Property/value_ and the _Property/valueId_ are present, the value of _Property/value_ needs to be identical to the value of the referenced coded value in _Property/valueId_.
 
-| |
-|Inherits from: |DataElement | |
+
+|Inherits from: |DataElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |valueType |Data type of the value attribute |DataTypeDefXsd |1
 |value |The value of the property instance |ValueDataType |0..1
@@ -2436,11 +2522,14 @@ Note: it is recommended to use an external reference.
 .Figure 40 Metamodel of Ranges
 image:media/media/image41.png[media/media/image41]
 
-[cols="18%,44%,21%,17%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Range \<<Experimental>> | |
-|Explanation: |A range data element is a data element that defines a range with min and max. | |
-|Inherits from: |DataElement | |
+|Class: |Range \<<Experimental>>
+|Explanation: |A range data element is a data element that defines a range with min and max.
+|Inherits from: |DataElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |valueType |Data type of the min und max attributes |DataTypeDefXsd |1
 |min a|
@@ -2462,11 +2551,14 @@ If the max value is missing, the value is assumed to be positive infinite.
 .Figure 41 Metamodel of Reference Elements
 image:media/media/image42.png[media/media/image42]
 
-[cols="18%,53%,14%,15%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |ReferenceElement | |
-|Explanation: |A reference element is a data element that defines a logical reference to another element within the same or another Asset Administration Shell or a reference to an external object or entity. | |
-|Inherits from: |DataElement | |
+|Class: |ReferenceElement
+|Explanation: |A reference element is a data element that defines a logical reference to another element within the same or another Asset Administration Shell or a reference to an external object or entity.
+|Inherits from: |DataElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |value |External reference to an external object or entity or a logical reference to another element within the same or another Asset Administration Shell (i.e. a model reference to a _Referable_) |Reference |0..1
 |===
@@ -2478,11 +2570,14 @@ For more information on references, see Clause 5.3.9.
 .Figure 42 Metamodel of Relationship Elements
 image:media/media/image43.png[media/media/image43]
 
-[cols="14%,60%,19%,7%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |RelationshipElement | |
-|Explanation: |A relationship element is used to define a relationship between two elements being either referable (model reference) or external (external reference). | |
-|Inherits from: |SubmodelElement | |
+|Class: |RelationshipElement
+|Explanation: |A relationship element is used to define a relationship between two elements being either referable (model reference) or external (external reference).
+|Inherits from: |SubmodelElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |first |Reference to the first element in the relationship taking the role of the subject |Reference |1
 |second |Reference to the second element in the relationship taking the role of the object |Reference |1
@@ -2509,11 +2604,14 @@ Note: the elements within a submodel element collection are not ordered. Every e
 ====
 
 
-[width="99%",cols="17%,44%,25%,14%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |SubmodelElementCollection | |
-|Explanation: |A submodel element collection is a kind of struct, i.e. a logical encapsulation of multiple named values. | |
-|Inherits from: |SubmodelElement | |
+|Class: |SubmodelElementCollection
+|Explanation: |A submodel element collection is a kind of struct, i.e. a logical encapsulation of multiple named values.
+|Inherits from: |SubmodelElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |value |Submodel element contained in the collection |SubmodelElement |0..*
 |===
@@ -2537,9 +2635,9 @@ Similarly, a table with three columns can be represented. In this case a _Submod
 
 Matching strategies for semantic IDs are explained in Clause 4.4.1.
 
-[cols="31%,39%,20%,10%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |SubmodelElementList | |
+|Class: |SubmodelElementList
 |Explanation: a|
 A submodel element list is an ordered list of submodel elements.
 
@@ -2561,8 +2659,11 @@ The numbering starts with Zero (0).
 
 [.underline]#Constraint AASd-109:# If _SubmodelElementList/typeValueListElement_ is equal to _Property_ or _Range,_ _SubmodelElementList/valueTypeListElement_ shall be set and all first level child elements in the _SubmodelElementList_ shall have the value type as specified in _SubmodelElementList/valueTypeListElement_.
 
-| |
-|Inherits from: |SubmodelElement | |
+
+|Inherits from: |SubmodelElement
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |orderRelevant a|
 Defines whether order in list is relevant. If _orderRelevant_ = false, the list represents a set or a bag.
@@ -2590,16 +2691,19 @@ Note: it is recommended to use an external reference.
 .Figure 45 Metamodel of Concept Descriptions
 image:media/media/image46.png[media/media/image46]
 
-[cols="18%,57%,17%,8%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |ConceptDescription | |
+|Class: |ConceptDescription
 |Explanation: a|
 The semantics of a property or other elements that may have a semantic description is defined by a concept description.
 
 The description of the concept should follow a standardized schema (realized as data specification template).
 
-| |
-|Inherits from: |Identifiable; HasDataSpecification | |
+
+|Inherits from: |Identifiable; HasDataSpecification
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |isCaseOf a|
 Reference to an external definition the concept is compatible to or was derived from
@@ -2634,11 +2738,14 @@ Note: _Environment_ is not an identifiable or referable element. It is introduce
 ====
 
 
-[cols="25%,43%,23%,9%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Environment | |
-|Explanation: |Container for the sets of different identifiables | |
-|Inherits from: |Reference | |
+|Class: |Environment
+|Explanation: |Container for the sets of different identifiables
+|Inherits from: |Reference
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |assetAdministrationShell |Asset Administration Shell |AssetAdministrationShell |0..*
 |submodel |Submodel |Submodel |0..*
@@ -2666,9 +2773,9 @@ image:media/media/image48.png[media/media/image48]
 
 See Clause 4.4.2 for reference matching.
 
-[cols="21%,46%,21%,12%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Reference | |
+|Class: |Reference
 |Explanation: a|
 Reference to either a model element of the same or another Asset Administration Shell or to an external entity
 
@@ -2676,8 +2783,11 @@ A model reference is an ordered list of keys, each key referencing an element. T
 
 An external reference is a reference to an external entity.
 
-| |
-|Inherits from: |-- | |
+
+|Inherits from: |--
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |type a|
 Type of the reference
@@ -2729,11 +2839,14 @@ image:media/media/image50.png[media/media/image50]
 .Figure 50 Metamodel of KeyTypes Enumeration
 image:media/media/image51.png[media/media/image51]
 
-[cols="18%,49%,21%,12%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |Key | |
-|Explanation: |A key is a reference to an element by its ID | |
-|Inherits from: |-- | |
+|Class: |Key
+|Explanation: |A key is a reference to an element by its ID
+|Inherits from: |--
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |type a|
 Denotes which kind of entity is referenced
@@ -3832,11 +3945,14 @@ It is required that a data specification template has a global unique ID so that
 
 A template consists of the _DataSpecificationContent_ containing the additional attributes to be added to the element instance that references the data specification template, as well as meta information about the template itself. These are two separate classes in UML.
 
-[cols="25%,38%,25%,12%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |DataSpecification \<<Template>> | |
-|Explanation: |Data specification template | |
-|Inherits from: |-- | |
+|Class: |DataSpecification \<<Template>>
+|Explanation: |Data specification template
+|Inherits from: |--
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |administration a|
 Administrative information of an identifiable element
@@ -3853,11 +3969,17 @@ Note: some of the administrative information like the version number might need 
 |description |Description of how and in which context the data specification template is applicable; can be provided in several languages. |MultiLanguageTextType |0..1
 |===
 
-[cols="25%,38%,25%,12%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |DataSpecificationContent \<<Template>>\<<abstract>> | |
-|Explanation: |Data specification content is part of a data specification template and defines, which additional attributes shall be added to the element instance that references the data specification template and meta information about the template itself. | |
-|Inherits from: |-- | |
+|Class: |DataSpecificationContent \<<Template>>\<<abstract>>
+|Explanation: |Data specification content is part of a data specification template and defines, which additional attributes shall be added to the element instance that references the data specification template and meta information about the template itself.
+|Inherits from: |--
+|===
+[cols="25%,40%,25%,10%",options="header",]
+|===
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |===
 
@@ -4801,11 +4923,14 @@ For capitalization of titles, rules according to https://capitalizemytitle.com/ 
 
 Template for Classes:
 
-[cols="36%,29%,23%,12%",options="header",]
+[cols="25%h,75%"]
 |===
-|Class: |<Class Name> [\<<abstract>>] ["\<<Experimental>>"] ["\<<Deprecated>>"] ["\<<Template>>"] | |
-|Explanation: |<Explanatory text> | |
-|Inherits from: |\{<Class Name> ";" }+ \| "-" | |
+|Class: |<Class Name> [\<<abstract>>] ["\<<Experimental>>"] ["\<<Deprecated>>"] ["\<<Template>>"]
+|Explanation: |<Explanatory text>
+|Inherits from: |\{<Class Name> ";" }+ \| "-"
+|===
+[cols="25%,40%,25%,10%",options="header"]
+|===
 |Attribute |Explanation |Type |Card.
 |<attribute or association name> ["\<<ordered>>"] ["\<<Experimental>>"] ["\<<Deprecated>>"] |<Explanatory text> |<Type> |<Card>
 |===
