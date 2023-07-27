@@ -186,7 +186,7 @@ Note: not all abbreviations are used in this document. The list of abbreviations
 ====
 
 
-[width="100%",cols="21%,79%",options="header",]
+[cols="21%,79%",options="header"]
 |===
 |*Abbreviation* |*Description*
 |AAS |Asset Administration Shell
@@ -341,7 +341,7 @@ The relationship types for thumbnail, core-properties, digital-signatures (origi
 
 The following name spaces are defined:
 
-[width="100%",cols="18%,82%",options="header",]
+[cols="18%,82%",options="header"]
 |===
 |*Namespace* |*Value*
 |<rel> |http://schema.openxmlformats.org/package/2006/relationships
@@ -349,12 +349,14 @@ The following name spaces are defined:
 |===
 
 Each relationship typefootnote:[To avoid the long names of the relationship types, the short name is used in the text.] as denoted in Figure 7 is described in the following.
-
-[width="100%",cols="27%,16%,57%",options="header",]
+[cols="30%h,70%"]
 |===
-|*Relationship Type* | |
-|*Source File of Relationship Type:* |*--* |
-|*Namespace:* |*<rel>* |
+|*Relationship Type* |
+|*Source File of Relationship Type:* |*--*
+|*Namespace:* |*<rel>*
+|===
+[cols="30%,10%,60%",options="header"]
+|===
 |*Relationship Type* |*Card.* |*Description*
 |*metadata/thumbnail* |0..1 a|
 Required to define a thumbnail for that package (e.g. picture of the administrated device).
@@ -384,11 +386,14 @@ It is the entry point for all aas specific relationships and files inside the pa
 
 |===
 
-[width="100%",cols="28%,16%,56%",options="header",]
+[cols="30%h,70%"]
 |===
 |*Relationship Type* | |
 |*Source File of Relationship Type:* |*<rel>/digital-signature/origin* |
 |*Namespace:* |*<rel>* |
+|===
+[cols="30%,10%,60%", options="header"]
+|===
 |*Relationship Type* |*Card.* |*Description*
 |*digital-signature/signature* |1..* a|
 Required if you need to sign files and relationships inside the package. Their relationships basically target files that contain the data on signatures (e.g. certificate, digests, …).
@@ -401,11 +406,14 @@ Note: see Clause 5.5 on digital signatures for more information.
 
 |===
 
-[width="100%",cols="28%,16%,56%",options="header",]
+[cols="30%h,70%"]
 |===
 |*Relationship Type* | |
 |*Source File of Relationship Type:* |*<rel>/digital-signature/signature* |
 |*Namespace:* |*<rel>* |
+|===
+[cols="30%,10%,60%", options="header"]
+|===
 |*Relationship Type* |*Card.* |*Description*
 |*digital-signature/certificate* |0..1 a|
 Required if you need to sign files and relationships inside the package. Their relationships basically target files that contain the data on signatures (e.g. certificate, digests, …).
@@ -418,11 +426,14 @@ Note: see Clause 5.5 on digital signatures for more information.
 
 |===
 
-[width="100%",cols="28%,16%,56%",options="header",]
+[cols="30%h,70%"]
 |===
 |*Relationship Type* | |
 |*Source File of Relationship Type:* |*<rel_aas>/aasx-origin* |
 |*Namespace:* |*<rel_aas>* |
+|===
+[cols="30%,10%,60%", options="header"]
+|===
 |*Relationship Type* |*Mandatory* |*Description*
 |*aas-spec* |1..* a|
 Targets the file that contains the structure/specification of one or more identifiable elements (such as AAS, Submodel or ConceptDescription).
@@ -433,11 +444,14 @@ Typical formats contained are XML and/or JSON.
 
 |===
 
-[width="100%",cols="28%,16%,56%",options="header",]
+[cols="30%h,70%"]
 |===
 |*Relationship Type* | |
 |*Source File of Relationship Type:* |*<rel_aas>/aas-spec* |
 |*Namespace:* |*<rel_aas>* |
+|===
+[cols="30%,10%,60%", options="header"]
+|===
 |*Relationship Type* |*Mandatory* |*Description*
 |*aas-suppl* |0..1 a|
 Targets any additional file, which is referenced from within the data of an AAS via a relative URI reference in the _File_ submodel element.
