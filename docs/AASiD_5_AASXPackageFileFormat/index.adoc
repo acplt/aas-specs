@@ -1,6 +1,7 @@
 :toc: left
 :toc-title: Specification of the Asset Administration Shell. Part 5: Package File Format (AASX)
 :stylesheet: ../style.css
+:nofooter:
 
 = Specification of the Asset Administration Shell. Part 5: Package File Format (AASX)
 
