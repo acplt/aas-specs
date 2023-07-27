@@ -1460,7 +1460,7 @@ Note 2: extensions are proprietary, i.e. they do not support global interoperabi
 |Attribute |Explanation |Type |Card.
 |extension |An extension of the element. |Extension |0..*
 |===
-
+{empty}
 [cols="25%h,75%"]
 |===
 |Class: |Extension
@@ -1938,7 +1938,7 @@ The content type states which file extensions the file can have.
 
 |ContentType |0..1
 |===
-
+{empty}
 [cols="30%,70%",options="header",]
 |===
 |Enumeration: |AssetKind
@@ -2134,7 +2134,7 @@ Might not be specified, i.e. if there is no maximum interval.
 
 |duration |0..1
 |===
-
+{empty}
 [cols="30%,70%",options="header",]
 |===
 |Enumeration: |Direction \<<Experimental>>
@@ -2144,7 +2144,7 @@ Might not be specified, i.e. if there is no maximum interval.
 |input |Input direction
 |output |Output direction
 |===
-
+{empty}
 [cols="30%,70%",options="header",]
 |===
 |Enumeration: |StateOfEvent \<<Experimental>>
@@ -2336,7 +2336,7 @@ An entity is a submodel element that is used to model entities.
 |globalAssetId |Global identifier of the asset the entity is representing |Identifier |0..1
 |specificAssetId |Reference to a specific asset ID representing a supplementary identifier of the asset represented by the Asset Administration Shell |SpecificAssetId |0..*
 |===
-
+{empty}
 [cols="30%,70%",options="header",]
 |===
 |Enumeration: |EntityType
@@ -2455,7 +2455,7 @@ An operation is a submodel element with input and output variables.
 |outputVariable |Output parameter of the operation |OperationVariable |0..*
 |inoutputVariable |Parameter that is input and output of the operation |OperationVariable |0..*
 |===
-
+{empty}
 [cols="25%h,75%"]
 |===
 |Class: |OperationVariable
@@ -2815,7 +2815,7 @@ Note 2: it is recommended to use an external reference for the semantic ID expec
 |Reference |0..1
 |key \<<ordered>> |Unique reference in its name space |Key |1..*
 |===
-
+{empty}
 [cols="31%,69%",options="header",]
 |===
 |Enumeration: |ReferenceTypes
@@ -2935,7 +2935,7 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |SubmodelElementCollection |Struct of submodel elements
 |SubmodelElementList |List of submodel elements
 |===
-
+{empty}
 [cols="32%,68%",options="header",]
 |===
 |Enumeration: |FragmentKeys
@@ -2993,7 +2993,7 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |SubmodelElementCollection |Struct of submodel elements
 |SubmodelElementList |List of submodel elements
 |===
-
+{empty}
 [cols="31%,69%",options="header",]
 |===
 |Enumeration: |GloballyIdentifiables
@@ -3022,7 +3022,7 @@ Note: identifiables are abstract, i.e. if a key uses "Identifiable", the referen
 
 |Submodel |Submodel
 |===
-
+{empty}
 [cols="32%,68%",options="header",]
 |===
 |Enumeration: |AasReferableNonIdentifiables
@@ -3079,7 +3079,7 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |SubmodelElementCollection |Struct of submodel elements
 |SubmodelElementList |List of submodel elements
 |===
-
+{empty}
 [cols="31%,68%,1%",options="header",]
 |===
 |Enumeration: |AasSubmodelElements |
@@ -3131,7 +3131,7 @@ Note: Submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |SubmodelElementCollection |Struct of submodel elements |
 |SubmodelElementList |List of submodel elements |
 |===
-
+{empty}
 [cols="32%,68%",options="header",]
 |===
 |Enumeration: |AasReferables
@@ -3209,7 +3209,7 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |SubmodelElementCollection |Struct of submodel elements
 |SubmodelElementList |List of submodel elements
 |===
-
+{empty}
 [cols="31%,69%",options="header",]
 |===
 |Enumeration: |GenericFragmentKeys
@@ -3226,7 +3226,7 @@ Note: not used as type but in constraints.
 |Literal |Explanation
 |FragmentReference |Bookmark or a similar local identifier of a subordinate part of a primary resource
 |===
-
+{empty}
 [cols="31%,69%",options="header",]
 |===
 |Enumeration: |AasIdentifiables
@@ -3254,7 +3254,7 @@ Note: Identifiables are abstract, i.e. if a key uses "Identifiable", the referen
 
 |Submodel |Submodel
 |===
-
+{empty}
 [cols="31%,69%",options="header",]
 |===
 |Enumeration: |GenericGloballyIdentifiables
@@ -3795,7 +3795,7 @@ Note: this is written in RDF/Turtle syntax, @end and ²de are the language tags.
 
 
 |===
-
+{empty}
 [cols="37%,63%",options="header",]
 |===
 |Enumeration: |DataTypeDefXsd
@@ -3848,7 +3848,7 @@ For more details see https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes
 |xs:unsignedLong |see: https://www.w3.org/TR/xmlschema11-2/#unsignedLong
 |xs:unsignedShort |see: https://www.w3.org/TR/xmlschema11-2/#unsignedShort
 |===
-
+{empty}
 [cols="29%,71%",options="header",]
 |===
 |Enumeration: |DataTypeDefRdf
@@ -3970,7 +3970,7 @@ Note: some of the administrative information like the version number might need 
 |dataSpecificationContent |The content of the template without meta data |DataSpecificationContent |1
 |description |Description of how and in which context the data specification template is applicable; can be provided in several languages. |MultiLanguageTextType |0..1
 |===
-
+{empty}
 [cols="25%h,75%"]
 |===
 |Class: |DataSpecificationContent \<<Template>>\<<abstract>>

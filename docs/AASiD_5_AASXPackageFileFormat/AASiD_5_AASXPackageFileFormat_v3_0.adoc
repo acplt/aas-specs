@@ -385,7 +385,7 @@ This relationship targets an aasx origin file which shall be an empty file or a 
 It is the entry point for all aas specific relationships and files inside the package. The source of the aasx origin relationship must be the package root.
 
 |===
-
+{empty}
 [cols="30%h,70%"]
 |===
 |*Relationship Type* | |
@@ -405,7 +405,7 @@ Note: see Clause 5.5 on digital signatures for more information.
 
 
 |===
-
+{empty}
 [cols="30%h,70%"]
 |===
 |*Relationship Type* | |
@@ -425,7 +425,7 @@ Note: see Clause 5.5 on digital signatures for more information.
 
 
 |===
-
+{empty}
 [cols="30%h,70%"]
 |===
 |*Relationship Type* | |
@@ -443,7 +443,7 @@ Different formats of the same information can be contained in the container.
 Typical formats contained are XML and/or JSON.
 
 |===
-
+{empty}
 [cols="30%h,70%"]
 |===
 |*Relationship Type* | |
