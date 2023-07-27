@@ -1,7 +1,8 @@
 :toc: left
 :toc-title: Specification of the Asset Administration Shell. Part 1: Metamodel
+:stylesheet: ../style.css
+
 = Specification of the Asset Administration Shell. Part 1: Metamodel
-:stylesheet: style.css
 
 == Preamble
 
