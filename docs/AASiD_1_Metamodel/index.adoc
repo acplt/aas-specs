@@ -572,11 +572,11 @@ The following abbreviations are not used in the document but may be used as abbr
 |In |inputVariable
 |Prop |Property
 |MLP |MultiLanguageProperty
-|Range |Range
+|xref:Range[Range] |Range
 |Ent |Entity
 |Evt |Event
-|File |File
-|Blob |Blob
+|xref:File[File] |File
+|xref:Blob[Blob] |Blob
 |Opr |Operation
 |Out |outputVariable
 |Qfr |Qualifier
@@ -870,7 +870,7 @@ Typically, URLs will be used.
 
 | |idShort |string |optionalfootnote:[Note: in version V1.0 of this specification, idShort was optional for identifiables. This changed in V2.0: idShort was set to mandatory for all referables. With V3.0, idShort was again made optional.]
 | |displayName |multi language string |optional
-|AssetInformation |globalAssetId |IRI a|
+|xref:AssetInformation[AssetInformation] |globalAssetId |IRI a|
 recommended
 
 As soon as the Asset Administration Shell is "released" for production or operation, a globalAssetId should be assigned.
@@ -918,7 +918,7 @@ recommended
 Typically, the semanticId is an external reference to an external standard defining the semantics of the submodel.
 
 | |supplementalSemanticId |IRDI, IRI (URI) |optional
-|SubmodelElement |idShort |string a|
+|xref:SubmodelElement[SubmodelElement] |idShort |string a|
 mandatory
 
 Typically, the English short name of the concept definition that is referenced via semanticId.
@@ -940,7 +940,7 @@ recommended
 link to a _ConceptDescription_ or the concept definition in an external repository via a global ID
 
 | |supplementalSemanticId |IRDI, IRI (URI) |optional
-|ConceptDescription |id |IRDI, IRI, Custom a|
+|xref:ConceptDescription[ConceptDescription] |id |IRDI, IRI, Custom a|
 mandatory
 
 _ConceptDescription_ needs to have a global ID. If the concept description is a copy from an external dictionary like ECLASS or IEC CDD, it may use the same global ID as it is used in the external dictionary.
@@ -956,7 +956,7 @@ optional
 
 links to the concept definition in an external repository, which the concept description is a copy from, or that it corresponds to
 
-|Qualifier |semanticId |IRDI, IRI (URI), Custom a|
+|xref:Qualifier[Qualifier] |semanticId |IRDI, IRI (URI), Custom a|
 recommended
 
 Links to the qualifier type definition in an external repository
@@ -1222,8 +1222,8 @@ Table 5 describes the different scopes of an event.
 [cols="32%,68%",options="header",]
 |===
 |*Event attached to ...* |*Scope*
-|AssetAdministrationShell |This event monitors/represents all logical elements of an Administration Shell, such as _AssetAdministrationShell, AssetInformation, Submodels_.
-|Submodel |This event monitors/represents all logical elements of the respective _Submodel_ and all logical dependents.
+|xref:AssetAdministrationShell[AssetAdministrationShell] |This event monitors/represents all logical elements of an Administration Shell, such as _AssetAdministrationShell, AssetInformation, Submodels_.
+|xref:Submodel[Submodel] |This event monitors/represents all logical elements of the respective _Submodel_ and all logical dependents.
 |SubmodelElementList and SubmodelElementCollection and Entity |This event monitors/represents all logical elements of the respective _SubmodelElementCollection, SubmodelElementList or Entity_ and all logical dependents (value or statement resp.).
 |SubmodelElement (others) |This event monitors/represents a single atomic _SubmodelElement_, e.g. a data element which might include the contents of a _Blob_ or _File_.
 |===
@@ -1369,7 +1369,7 @@ Note 4: the process of versioning or adding other administrative information to 
 
 [cols="25%h,75%"]
 |===
-|Class: |AdministrativeInformation
+|Class: |[[AdministrativeInformation]]AdministrativeInformation
 |Explanation: a|
 Administrative metainformation for an element like version information
 
@@ -1382,7 +1382,7 @@ Administrative metainformation for an element like version information
 |Attribute |Explanation |Type |Card.
 |version |Version of the element |xref:VersionType[VersionType] |0..1
 |revision |Revision of the element |xref:RevisionType[RevisionType] |0..1
-|creator |The subject ID of the subject responsible for making the element |Reference |0..1
+|creator |The subject ID of the subject responsible for making the element |xref:Reference[Reference] |0..1
 |templateId a|
 Identifier of the template that guided the creation of the element
 
@@ -1414,7 +1414,7 @@ image:media/media/image15.png[media/media/image15]
 
 [cols="25%h,75%"]
 |===
-|Class: |HasDataSpecification \<<abstract>>
+|Class: |[[HasDataSpecification]]HasDataSpecification \<<abstract>>
 |Explanation: |Element that can be extended by using data specification templates. A data specification template defines a named set of additional attributes an element may or shall have. The data specifications used are explicitly specified with their global ID.
 |Inherits from: |--
 |===
@@ -1430,7 +1430,7 @@ Note: this is an external reference.
 ====
 
 
-|Reference |0..* |
+|xref:Reference[Reference] |0..* |
 |===
 
 For more details on data specifications, please see Clause 6.
@@ -1442,7 +1442,7 @@ image:media/media/image16.png[media/media/image16]
 
 [cols="25%h,75%"]
 |===
-|Class: |HasExtensions \<<abstract>>
+|Class: |[[HasExtensions]]HasExtensions \<<abstract>>
 |Explanation: a|
 Element that can be extended by proprietary extensions
 
@@ -1464,12 +1464,12 @@ Note 2: extensions are proprietary, i.e. they do not support global interoperabi
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|extension |An extension of the element. |Extension |0..*
+|extension |An extension of the element. |xref:Extension[Extension] |0..*
 |===
 {empty}
 [cols="25%h,75%"]
 |===
-|Class: |Extension
+|Class: |[[Extension]]Extension
 |Explanation: |Single extension of an element
 |Inherits from: |HasSemantics
 |===
@@ -1494,7 +1494,7 @@ image:media/media/image17.png[media/media/image17]
 
 [cols="25%h,75%"]
 |===
-|Class: |HasKind
+|Class: |[[HasKind]]HasKind
 |Explanation: a|
 An element with a kind is an element that can either represent a template or an instance.
 
@@ -1535,7 +1535,7 @@ For matching algorithm, see Clause 4.4.1.
 
 [cols="25%h,75%"]
 |===
-|Class: |HasSemantics \<<abstract>>
+|Class: |[[HasSemantics]]HasSemantics \<<abstract>>
 |Explanation: a|
 Element that can have a semantic definition plus some supplemental semantic definitions
 
@@ -1556,7 +1556,7 @@ Note: it is recommended to use an external reference.
 ====
 
 
-|Reference |0..1
+|xref:Reference[Reference] |0..1
 |supplementalSemanticId a|
 Identifier of a supplemental semantic definition of the element called supplemental semantic ID of the element
 
@@ -1566,7 +1566,7 @@ Note: it is recommended to use an external reference.
 ====
 
 
-|Reference |0..*
+|xref:Reference[Reference] |0..*
 |===
 
 ===== Identifiable Attributes
@@ -1584,7 +1584,7 @@ See Clause 4.3.4 for information about which identifier types are supported.
 
 [cols="25%h,75%"]
 |===
-|Class: |Identifiable \<<abstract>>
+|Class: |[[Identifiable]]Identifiable \<<abstract>>
 |Explanation: a|
 An element that has a globally unique identifier
 
@@ -1609,7 +1609,7 @@ Note: some of the administrative information like the version number might need 
 ====
 
 
-|AdministrativeInformation |0..1
+|xref:AdministrativeInformation[AdministrativeInformation] |0..1
 |id |The globally unique identification of the element |xref:Identifier[Identifier] |1
 |===
 
@@ -1620,7 +1620,7 @@ image:media/media/image20.png[media/media/image20]
 
 [cols="25%h,75%"]
 |===
-|Class: |Qualifiable \<<abstract>>
+|Class: |[[Qualifiable]]Qualifiable \<<abstract>>
 |Explanation: a|
 A qualifiable element may be further qualified by one or more qualifiers.
 
@@ -1636,7 +1636,7 @@ Note: see Clause 5.3.12.3 for constraints related to qualifiables.
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|qualifier |Additional qualification of a qualifiable element |Qualifier |0..*
+|qualifier |Additional qualification of a qualifiable element |xref:Qualifier[Qualifier] |0..*
 |===
 
 ===== Qualifier Attributes
@@ -1650,7 +1650,7 @@ There are standardized qualifiers defined in IEC CDD, IEC61360-4 – IEC/SC 3D. 
 
 [cols="25%h,75%"]
 |===
-|Class: |Qualifier
+|Class: |[[Qualifier]]Qualifier
 |Explanation: a|
 A qualifier is essentially a type-value-pair. Depending on the kind of qualifier, it makes additional statements
 
@@ -1686,7 +1686,7 @@ Note: it is recommended to use an external reference.
 ====
 
 
-|Reference |0..1
+|xref:Reference[Reference] |0..1
 |===
 
 It is recommended to add a _semanticId_ for the concept of the _Qualifier_. _Qualifier/type_ is the preferred name of the concept of the qualifier or its short name.
@@ -1739,7 +1739,7 @@ The __idShort__ shall be unique in its name space for non-identifiable referable
 
 [cols="25%h,75%"]
 |===
-|Class: |Referable \<<abstract>>
+|Class: |[[Referable]]Referable \<<abstract>>
 |Explanation: a|
 Note1 : an element that is referable by its idShort. This ID is not globally unique. This ID is unique within the name space of the element.
 
@@ -1845,7 +1845,7 @@ The _derivedFrom_ attribute is used to establish a relationship between two Asse
 
 [cols="25%h,75%"]
 |===
-|Class: |AssetAdministrationShell
+|Class: |[[AssetAdministrationShell]]AssetAdministrationShell
 |Explanation: |An Asset Administration Shell
 |Inherits from: |Identifiable; HasDataSpecification
 |===
@@ -1853,7 +1853,7 @@ The _derivedFrom_ attribute is used to establish a relationship between two Asse
 |===
 |Attribute |Explanation |Type |Card.
 |derivedFrom |The reference to the Asset Administration Shell, which the Asset Administration Shell was derived from |ModelReference<AssetAdministrationShell> |0..1
-|assetInformation |Meta information about the asset the Asset Administration Shell is representing |AssetInformation |1
+|assetInformation |Meta information about the asset the Asset Administration Shell is representing |xref:AssetInformation[AssetInformation] |1
 |submodel a|
 Reference to a submodel of the Asset Administration Shell
 
@@ -1873,7 +1873,7 @@ image:media/media/image25.png[media/media/image25]
 
 [cols="25%h,75%"]
 |===
-|Class: |AssetInformation
+|Class: |[[AssetInformation]]AssetInformation
 |Explanation: a|
 In _AssetInformation,_ identifying meta data of the asset that is represented by an Asset Administration Shell is defined.
 
@@ -1902,7 +1902,7 @@ Identifier of the asset the Asset Administration Shell is representing
 This attribute is required as soon as the Asset Administration Shell is exchanged via partners in the life cycle of the asset. In a first phase of the life cycle, the asset might not yet have a global asset ID but already an internal identifier. The internal identifier would be modelled via "specificAssetId".
 
 |xref:Identifier[Identifier] |0..1
-|specificAssetId |Additional domain-specific, typically proprietary identifier for the asset like serial number, manufacturer part ID, customer part IDs, etc |SpecificAssetId |0..*
+|specificAssetId |Additional domain-specific, typically proprietary identifier for the asset like serial number, manufacturer part ID, customer part IDs, etc |xref:SpecificAssetId[SpecificAssetId] |0..*
 |assetType a|
 In case _AssetInformation/assetKind_ is applicable the _AssetInformation/assetType_ is the asset ID of the type asset of the asset under consideration as identified by _AssetInformation/globalAssetId_.
 
@@ -1913,7 +1913,7 @@ Note: in case _AssetInformation/assetKind_ is "Instance" then the AssetInformati
 
 
 |xref:Identifier[Identifier] |0..1
-|defaultThumbnail |Thumbnail of the asset represented by the Asset Administration Shell; used as default. |Resource |0..1
+|defaultThumbnail |Thumbnail of the asset represented by the Asset Administration Shell; used as default. |xref:Resource[Resource] |0..1
 |===
 
 
@@ -1924,7 +1924,7 @@ Note: besides this asset information, there still might be an identification sub
 
 [cols="25%h,75%"]
 |===
-|Class: |Resource
+|Class: |[[Resource]]Resource
 |Explanation: |Resource represents an address to a file (a locator). The value is a URI that can represent an absolute or relative path.
 |Inherits from: |--
 |===
@@ -1960,7 +1960,7 @@ For more information on types and instances, see Clause 4.2.
 
 [cols="25%h,75%"]
 |===
-|Class: |SpecificAssetId
+|Class: |[[SpecificAssetId]]SpecificAssetId
 |Explanation: a|
 A specific asset ID describes a generic supplementary identifying attribute of the asset. The specific asset ID is not necessarily globally unique.
 
@@ -1983,7 +1983,7 @@ Note: this is an external reference.
 ====
 
 
-|Reference |0..1
+|xref:Reference[Reference] |0..1
 |===
 
 
@@ -2017,7 +2017,7 @@ Note: validators shall handle a submodel like _SubmodelElementCollection/submode
 
 [cols="25%h,75%"]
 |===
-|Class: |Submodel
+|Class: |[[Submodel]]Submodel
 |Explanation: a|
 A submodel defines a specific aspect of the asset represented by the Asset Administration Shell.
 
@@ -2029,7 +2029,7 @@ A submodel is used to structure the digital representation and technical functio
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|submodelElement |A submodel consists of zero or more submodel elements. |SubmodelElement |0..*
+|submodelElement |A submodel consists of zero or more submodel elements. |xref:SubmodelElement[SubmodelElement] |0..*
 |===
 
 ==== Submodel Element Attributes
@@ -2045,7 +2045,7 @@ Submodel elements may also have defined data specification templates. A template
 
 [cols="25%h,75%"]
 |===
-|Class: |SubmodelElement \<<abstract>>
+|Class: |[[SubmodelElement]]SubmodelElement \<<abstract>>
 |Explanation: |A submodel element is an element suitable for the description and differentiation of assets.
 |Inherits from: |Referable; HasSemantics; Qualifiable; HasDataSpecification
 |===
@@ -2074,14 +2074,14 @@ An annotated relationship is a relationship similar to a ternary association in 
 
 [cols="25%h,75%"]
 |===
-|Class: |AnnotatedRelationshipElement
+|Class: |[[AnnotatedRelationshipElement]]AnnotatedRelationshipElement
 |Explanation: |An annotated relationship element is a relationship element that can be annotated with additional data elements.
 |Inherits from: |RelationshipElement
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|annotation |A data element that represents an annotation that holds for the relationship between the two elements |DataElement |0..*
+|annotation |A data element that represents an annotation that holds for the relationship between the two elements |xref:DataElement[DataElement] |0..*
 |===
 
 ===== Basic Event Element Attributes
@@ -2091,7 +2091,7 @@ image:media/media/image30.png[media/media/image30]
 
 [cols="25%h,75%"]
 |===
-|Class: |BasicEventElement \<<Experimental>>
+|Class: |[[BasicEventElement]]BasicEventElement \<<Experimental>>
 |Explanation: |A basic event element
 |Inherits from: |EventElement
 |===
@@ -2175,7 +2175,7 @@ image:media/media/image31.png[media/media/image31]
 
 [cols="25%h,75%"]
 |===
-|Class: |EventPayload \<<Experimental>>
+|Class: |[[EventPayload]]EventPayload \<<Experimental>>
 |Explanation: |Defines the necessary information of an event instance sent out or received
 |Inherits from: |-
 |===
@@ -2192,7 +2192,7 @@ Note: it is recommended to use an external reference.
 ====
 
 
-|Reference |0..1
+|xref:Reference[Reference] |0..1
 |observableReference |Reference to the referable, which defines the scope of the event. |ModelReference<Referable> |1
 |observableSemanticId a|
 semanticId of the referable, which defines the scope of the event, if available.
@@ -2203,7 +2203,7 @@ Note: it is recommended to use an external reference.
 ====
 
 
-|Reference |0..1
+|xref:Reference[Reference] |0..1
 |topic |Information for the outer message infrastructure to schedule the event for the respective communication channel |xref:MessageTopicType[MessageTopicType] |0..1
 |subjectId a|
 Subject, who/which initiated the creation
@@ -2214,7 +2214,7 @@ Note: this is an external reference.
 ====
 
 
-|Reference |0..1
+|xref:Reference[Reference] |0..1
 |timestamp |Timestamp in UTC, when this event was triggered |dateTime |1
 |payload |Event-specific payload |xref:BlobType[BlobType] |0..1
 |===
@@ -2230,7 +2230,7 @@ For information on content type, see Clause 5.3.7.9 on submodel element "File".
 
 [cols="25%h,75%"]
 |===
-|Class: |Blob
+|Class: |[[Blob]]Blob
 |Explanation: |A Blob is a data element representing a file that is contained in the value attribute with its source code.
 |Inherits from: |DataElement
 |===
@@ -2272,7 +2272,7 @@ Note: the _semanticId_ of a capability is typically an ontology, which enables r
 
 [cols="25%h,75%"]
 |===
-|Class: |Capability
+|Class: |[[Capability]]Capability
 |Explanation: |A capability is the implementation-independent description of the potential of an asset to achieve a certain effect in the physical or virtual world.
 |Inherits from: |SubmodelElement
 |===
@@ -2294,7 +2294,7 @@ The type of value differs for different subtypes of data elements. Data elements
 
 [cols="25%h,75%"]
 |===
-|Class: |DataElement \<<abstract>>
+|Class: |[[DataElement]]DataElement \<<abstract>>
 |Explanation: a|
 A data element is a submodel element that is not further composed of other submodel elements.
 
@@ -2325,7 +2325,7 @@ The entity submodel element is designed to be used in submodels defining the rel
 
 [cols="25%h,75%"]
 |===
-|Class: |Entity
+|Class: |[[Entity]]Entity
 |Explanation: a|
 An entity is a submodel element that is used to model entities.
 
@@ -2337,10 +2337,10 @@ An entity is a submodel element that is used to model entities.
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|statement |Describes statements applicable to the entity by a set of submodel elements, typically with a qualified value |SubmodelElement |0..*
+|statement |Describes statements applicable to the entity by a set of submodel elements, typically with a qualified value |xref:SubmodelElement[SubmodelElement] |0..*
 |entityType |Describes whether the entity is a co-managed entity or a self-managed entity |EntityType |1
 |globalAssetId |Global identifier of the asset the entity is representing |xref:Identifier[Identifier] |0..1
-|specificAssetId |Reference to a specific asset ID representing a supplementary identifier of the asset represented by the Asset Administration Shell |SpecificAssetId |0..*
+|specificAssetId |Reference to a specific asset ID representing a supplementary identifier of the asset represented by the Asset Administration Shell |xref:SpecificAssetId[SpecificAssetId] |0..*
 |===
 {empty}
 [cols="30%,70%",options="header",]
@@ -2364,7 +2364,7 @@ image:media/media/image36.png[media/media/image36]
 
 [cols="25%h,75%"]
 |===
-|Class: |EventElement \<<abstract>> \<<Experimental>>
+|Class: |[[EventElement]]EventElement \<<abstract>> \<<Experimental>>
 |Explanation: |An event element
 |Inherits from: |SubmodelElement
 |===
@@ -2388,7 +2388,7 @@ Note: for information on handling supplementary external files in exchanging Ass
 
 [cols="25%h,75%"]
 |===
-|Class: |File
+|Class: |[[File]]File
 |Explanation: |A file is a data element that represents an address to a file (a locator). The value is a URI that can represent an absolute or relative path.
 |Inherits from: |DataElement
 |===
@@ -2413,7 +2413,7 @@ image:media/media/image38.png[media/media/image38]
 
 [cols="25%h,75%"]
 |===
-|Class: |MultiLanguageProperty
+|Class: |[[MultiLanguageProperty]]MultiLanguageProperty
 |Explanation: a|
 A property is a data element that has a multi-language value.
 
@@ -2435,7 +2435,7 @@ Note: it is recommended to use an external reference.
 ====
 
 
-|Reference |0..1
+|xref:Reference[Reference] |0..1
 |===
 
 ===== Operation Attributes
@@ -2445,7 +2445,7 @@ image:media/media/image39.png[media/media/image39]
 
 [cols="25%h,75%"]
 |===
-|Class: |Operation
+|Class: |[[Operation]]Operation
 |Explanation: a|
 An operation is a submodel element with input and output variables.
 
@@ -2457,21 +2457,21 @@ An operation is a submodel element with input and output variables.
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|inputVariable |Input parameter of the operation |OperationVariable |0..*
-|outputVariable |Output parameter of the operation |OperationVariable |0..*
-|inoutputVariable |Parameter that is input and output of the operation |OperationVariable |0..*
+|inputVariable |Input parameter of the operation |xref:OperationVariable[OperationVariable] |0..*
+|outputVariable |Output parameter of the operation |xref:OperationVariable[OperationVariable] |0..*
+|inoutputVariable |Parameter that is input and output of the operation |xref:OperationVariable[OperationVariable] |0..*
 |===
 {empty}
 [cols="25%h,75%"]
 |===
-|Class: |OperationVariable
+|Class: |[[OperationVariable]]OperationVariable
 |Explanation: |The value of an operation variable is a submodel element that is used as input and/or output variable of an operation.
 |Inherits from: |--
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|value |Describes an argument or result of an operation via a submodel element |SubmodelElement |1
+|value |Describes an argument or result of an operation via a submodel element |xref:SubmodelElement[SubmodelElement] |1
 |===
 
 
@@ -2499,7 +2499,7 @@ image:media/media/image40.png[media/media/image40]
 
 [cols="25%h,75%"]
 |===
-|Class: |Property
+|Class: |[[Property]]Property
 |Explanation: a|
 A property is a data element that has a single value.
 
@@ -2522,7 +2522,7 @@ Note: it is recommended to use an external reference.
 ====
 
 
-|Reference |0..1
+|xref:Reference[Reference] |0..1
 |===
 
 ===== Range Attributes
@@ -2532,7 +2532,7 @@ image:media/media/image41.png[media/media/image41]
 
 [cols="25%h,75%"]
 |===
-|Class: |Range \<<Experimental>>
+|Class: |[[Range]]Range \<<Experimental>>
 |Explanation: |A range data element is a data element that defines a range with min and max.
 |Inherits from: |DataElement
 |===
@@ -2561,14 +2561,14 @@ image:media/media/image42.png[media/media/image42]
 
 [cols="25%h,75%"]
 |===
-|Class: |ReferenceElement
+|Class: |[[ReferenceElement]]ReferenceElement
 |Explanation: |A reference element is a data element that defines a logical reference to another element within the same or another Asset Administration Shell or a reference to an external object or entity.
 |Inherits from: |DataElement
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|value |External reference to an external object or entity or a logical reference to another element within the same or another Asset Administration Shell (i.e. a model reference to a _Referable_) |Reference |0..1
+|value |External reference to an external object or entity or a logical reference to another element within the same or another Asset Administration Shell (i.e. a model reference to a _Referable_) |xref:Reference[Reference] |0..1
 |===
 
 For more information on references, see Clause 5.3.9.
@@ -2580,15 +2580,15 @@ image:media/media/image43.png[media/media/image43]
 
 [cols="25%h,75%"]
 |===
-|Class: |RelationshipElement
+|Class: |[[RelationshipElement]]RelationshipElement
 |Explanation: |A relationship element is used to define a relationship between two elements being either referable (model reference) or external (external reference).
 |Inherits from: |SubmodelElement
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|first |Reference to the first element in the relationship taking the role of the subject |Reference |1
-|second |Reference to the second element in the relationship taking the role of the object |Reference |1
+|first |Reference to the first element in the relationship taking the role of the subject |xref:Reference[Reference] |1
+|second |Reference to the second element in the relationship taking the role of the object |xref:Reference[Reference] |1
 |===
 
 ===== Submodel Element Collection Attributes
@@ -2614,14 +2614,14 @@ Note: the elements within a submodel element collection are not ordered. Every e
 
 [cols="25%h,75%"]
 |===
-|Class: |SubmodelElementCollection
+|Class: |[[SubmodelElementCollection]]SubmodelElementCollection
 |Explanation: |A submodel element collection is a kind of struct, i.e. a logical encapsulation of multiple named values.
 |Inherits from: |SubmodelElement
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|value |Submodel element contained in the collection |SubmodelElement |0..*
+|value |Submodel element contained in the collection |xref:SubmodelElement[SubmodelElement] |0..*
 |===
 
 ===== Submodel Element List Attributes
@@ -2645,7 +2645,7 @@ Matching strategies for semantic IDs are explained in Clause 4.4.1.
 
 [cols="25%h,75%"]
 |===
-|Class: |SubmodelElementList
+|Class: |[[SubmodelElementList]]SubmodelElementList
 |Explanation: a|
 A submodel element list is an ordered list of submodel elements.
 
@@ -2679,7 +2679,7 @@ Defines whether order in list is relevant. If _orderRelevant_ = false, the list 
 Default: True
 
 |boolean |0..1
-|value |Submodel element contained in the list |SubmodelElement |0..*
+|value |Submodel element contained in the list |xref:SubmodelElement[SubmodelElement] |0..*
 |semanticIdListElement a|
 Semantic ID which the submodel elements contained in the list match
 
@@ -2689,7 +2689,7 @@ Note: it is recommended to use an external reference.
 ====
 
 
-|Reference |0..1
+|xref:Reference[Reference] |0..1
 |typeValueListElement |The submodel element type of the submodel elements contained in the list |AasSubmodelElements |1
 |valueTypeListElement |The value type of the submodel element contained in the list |DataTypeDefXsd |0..1
 |===
@@ -2701,7 +2701,7 @@ image:media/media/image46.png[media/media/image46]
 
 [cols="25%h,75%"]
 |===
-|Class: |ConceptDescription
+|Class: |[[ConceptDescription]]ConceptDescription
 |Explanation: a|
 The semantics of a property or other elements that may have a semantic description is defined by a concept description.
 
@@ -2728,7 +2728,7 @@ Note: compare with is-case-of relationship in ISO 13584-32 & IEC EN 61360
 ====
 
 
-|Reference |0..*
+|xref:Reference[Reference] |0..*
 |===
 
 Different types of submodel elements require different attributes to describe their semantics. This is why a concept description has at least one data specification template associated with it. This template defines the attributes needed to describe the semantics.
@@ -2748,16 +2748,16 @@ Note: _Environment_ is not an identifiable or referable element. It is introduce
 
 [cols="25%h,75%"]
 |===
-|Class: |Environment
+|Class: |[[Environment]]Environment
 |Explanation: |Container for the sets of different identifiables
 |Inherits from: |Reference
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|assetAdministrationShell |Asset Administration Shell |AssetAdministrationShell |0..*
-|submodel |Submodel |Submodel |0..*
-|conceptDescription |Concept description |ConceptDescription |0..*
+|assetAdministrationShell |Asset Administration Shell |xref:AssetAdministrationShell[AssetAdministrationShell] |0..*
+|submodel |xref:Submodel[Submodel] |Submodel |0..*
+|conceptDescription |Concept description |xref:ConceptDescription[ConceptDescription] |0..*
 |===
 
 ==== Referencing in Asset Administration Shells
@@ -2783,7 +2783,7 @@ See Clause 4.4.2 for reference matching.
 
 [cols="25%h,75%"]
 |===
-|Class: |Reference
+|Class: |[[Reference]]Reference
 |Explanation: a|
 Reference to either a model element of the same or another Asset Administration Shell or to an external entity
 
@@ -2818,8 +2818,8 @@ Note 2: it is recommended to use an external reference for the semantic ID expec
 ====
 
 
-|Reference |0..1
-|key \<<ordered>> |Unique reference in its name space |Key |1..*
+|xref:Reference[Reference] |0..1
+|key \<<ordered>> |Unique reference in its name space |xref:Key[Key] |1..*
 |===
 {empty}
 [cols="31%,69%",options="header",]
@@ -2849,7 +2849,7 @@ image:media/media/image51.png[media/media/image51]
 
 [cols="25%h,75%"]
 |===
-|Class: |Key
+|Class: |[[Key]]Key
 |Explanation: |A key is a reference to an element by its ID
 |Inherits from: |--
 |===
@@ -2880,13 +2880,13 @@ image:media/media/image52.png[media/media/image52]
 |Explanation: |Enumeration of different key value types within a key
 |Set of: |FragementKeys; AasReferables, GloballyIdentifiables
 |Literal |Explanation
-|AnnotatedRelationshipElement |Annotated relationship element
-|AssetAdministrationShell |Asset Administration Shell
-|BasicEventElement |Basic event element
-|Blob |Blob
-|Capability |Capability
-|ConceptDescription |Concept Description
-|DataElement a|
+|xref:AnnotatedRelationshipElement[AnnotatedRelationshipElement] |Annotated relationship element
+|xref:AssetAdministrationShell[AssetAdministrationShell] |Asset Administration Shell
+|xref:BasicEventElement[BasicEventElement] |Basic event element
+|xref:Blob[Blob] |Blob
+|xref:Capability[Capability] |Capability
+|xref:ConceptDescription[ConceptDescription] |Concept Description
+|xref:DataElement[DataElement] a|
 Data Element
 
 
@@ -2895,8 +2895,8 @@ Note: data elements are abstract, i.e. if a key uses "DataElement", the referenc
 ====
 
 
-|Entity |Entity
-|EventElement a|
+|xref:Entity[Entity] |Entity
+|xref:EventElement[EventElement] a|
 Event
 
 
@@ -2905,10 +2905,10 @@ Note: event element is abstract.
 ====
 
 
-|File |File
+|xref:File[File] |File
 |FragmentReference |Bookmark or a similar local identifier of a subordinate part of a primary resource
 |GlobalReference |Global reference
-|Identifiable a|
+|xref:Identifiable[Identifiable] a|
 Identifiable
 
 
@@ -2917,19 +2917,19 @@ Note: identifiable is abstract, i.e. if a key uses "Identifiable" the reference 
 ====
 
 
-|MultiLanguageProperty |Property with a value that can be provided in multiple languages
-|Operation |Operation
-|Property |Property
-|Range |Range with min and max
-|Referable |
+|xref:MultiLanguageProperty[MultiLanguageProperty] |Property with a value that can be provided in multiple languages
+|xref:Operation[Operation] |Operation
+|xref:Property[Property] |Property
+|xref:Range[Range] |Range with min and max
+|xref:Referable[Referable] |
 ====
 Note: referables are abstract, i.e. if a key uses "Referable", the reference may be an Asset Administration Shell, a property, etc.
 ====
 
-|ReferenceElement |Reference
-|RelationshipElement |Relationship
-|Submodel |Submodel
-|SubmodelElement a|
+|xref:ReferenceElement[ReferenceElement] |Reference
+|xref:RelationshipElement[RelationshipElement] |Relationship
+|xref:Submodel[Submodel] |Submodel
+|xref:SubmodelElement[SubmodelElement] a|
 Submodel element
 
 
@@ -2938,8 +2938,8 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 ====
 
 
-|SubmodelElementCollection |Struct of submodel elements
-|SubmodelElementList |List of submodel elements
+|xref:SubmodelElementCollection[SubmodelElementCollection] |Struct of submodel elements
+|xref:SubmodelElementList[SubmodelElementList] |List of submodel elements
 |===
 {empty}
 [cols="32%,68%",options="header",]
@@ -2956,11 +2956,11 @@ Note: not used as type but in constraints.
 
 |Set of: |AASReferableNonIdentifiables, GenericFragmentKeys
 |Literal |Explanation
-|AnnotatedRelationshipElement |Annotated relationship element
-|BasicEventElement |Basic event element
-|Blob |Blob
-|Capability |Capability
-|DataElement a|
+|xref:AnnotatedRelationshipElement[AnnotatedRelationshipElement] |Annotated relationship element
+|xref:BasicEventElement[BasicEventElement] |Basic event element
+|xref:Blob[Blob] |Blob
+|xref:Capability[Capability] |Capability
+|xref:DataElement[DataElement] a|
 Data element
 
 
@@ -2969,8 +2969,8 @@ Note: data elements are abstract, i.e. if a key uses "DataElement", the referenc
 ====
 
 
-|Entity |Entity
-|EventElement a|
+|xref:Entity[Entity] |Entity
+|xref:EventElement[EventElement] a|
 Event
 
 
@@ -2979,15 +2979,15 @@ Note: event elements are abstract.
 ====
 
 
-|File |File
+|xref:File[File] |File
 |FragmentReference |Bookmark or a similar local identifier of a subordinate part of a primary resource
-|MultiLanguageProperty |Property with a value that can be provided in multiple languages
-|Operation |Operation
-|Property |Property
-|Range |Range with min and max
-|ReferenceElement |Reference
-|RelationshipElement |Relationship
-|SubmodelElement a|
+|xref:MultiLanguageProperty[MultiLanguageProperty] |Property with a value that can be provided in multiple languages
+|xref:Operation[Operation] |Operation
+|xref:Property[Property] |Property
+|xref:Range[Range] |Range with min and max
+|xref:ReferenceElement[ReferenceElement] |Reference
+|xref:RelationshipElement[RelationshipElement] |Relationship
+|xref:SubmodelElement[SubmodelElement] a|
 Submodel element
 
 
@@ -2996,8 +2996,8 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 ====
 
 
-|SubmodelElementCollection |Struct of submodel elements
-|SubmodelElementList |List of submodel elements
+|xref:SubmodelElementCollection[SubmodelElementCollection] |Struct of submodel elements
+|xref:SubmodelElementList[SubmodelElementList] |List of submodel elements
 |===
 {empty}
 [cols="31%,69%",options="header",]
@@ -3014,10 +3014,10 @@ Note: not used as type but in constraints.
 
 |Set of: |AasIdentifiables, GenericGloballyIdentifiables
 |Literal |Explanation
-|AssetAdministrationShell |Asset Administration Shell
-|ConceptDescription |Concept description
+|xref:AssetAdministrationShell[AssetAdministrationShell] |Asset Administration Shell
+|xref:ConceptDescription[ConceptDescription] |Concept description
 |GlobalReference |Global reference
-|Identifiable a|
+|xref:Identifiable[Identifiable] a|
 Identifiable
 
 
@@ -3026,7 +3026,7 @@ Note: identifiables are abstract, i.e. if a key uses "Identifiable", the referen
 ====
 
 
-|Submodel |Submodel
+|xref:Submodel[Submodel] |Submodel
 |===
 {empty}
 [cols="32%,68%",options="header",]
@@ -3043,11 +3043,11 @@ Note: not used as type but in constraints.
 
 |Set of: |AasSubmodelElements
 |Literal |Explanation
-|AnnotatedRelationshipElement |Annotated relationship element
-|BasicEventElement |Basic event element
-|Blob |Blob
-|Capability |Capability
-|DataElement a|
+|xref:AnnotatedRelationshipElement[AnnotatedRelationshipElement] |Annotated relationship element
+|xref:BasicEventElement[BasicEventElement] |Basic event element
+|xref:Blob[Blob] |Blob
+|xref:Capability[Capability] |Capability
+|xref:DataElement[DataElement] a|
 Data element
 
 
@@ -3056,8 +3056,8 @@ Note: data elements are abstract, i.e. if a key uses "DataElement", the referenc
 ====
 
 
-|Entity |Entity
-|EventElement a|
+|xref:Entity[Entity] |Entity
+|xref:EventElement[EventElement] a|
 Event
 
 
@@ -3066,14 +3066,14 @@ Note: event elements are abstract.
 ====
 
 
-|File |File
-|MultiLanguageProperty |Property with a value that can be provided in multiple languages
-|Operation |Operation
-|Property |Property
-|Range |Range with min and max
-|ReferenceElement |Reference
-|RelationshipElement |Relationship
-|SubmodelElement a|
+|xref:File[File] |File
+|xref:MultiLanguageProperty[MultiLanguageProperty] |Property with a value that can be provided in multiple languages
+|xref:Operation[Operation] |Operation
+|xref:Property[Property] |Property
+|xref:Range[Range] |Range with min and max
+|xref:ReferenceElement[ReferenceElement] |Reference
+|xref:RelationshipElement[RelationshipElement] |Relationship
+|xref:SubmodelElement[SubmodelElement] a|
 Submodel element
 
 
@@ -3082,8 +3082,8 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 ====
 
 
-|SubmodelElementCollection |Struct of submodel elements
-|SubmodelElementList |List of submodel elements
+|xref:SubmodelElementCollection[SubmodelElementCollection] |Struct of submodel elements
+|xref:SubmodelElementList[SubmodelElementList] |List of submodel elements
 |===
 {empty}
 [cols="31%,68%,1%",options="header",]
@@ -3092,11 +3092,11 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |Explanation: |Enumeration of different fragment key value types within a key |
 |Set of: |-- |
 |Literal |Explanation |
-|AnnotatedRelationshipElement |Annotated relationship element |
-|BasicEventElement |Basic event element |
-|Blob |Blob |
-|Capability |Capability |
-|DataElement a|
+|xref:AnnotatedRelationshipElement[AnnotatedRelationshipElement] |Annotated relationship element |
+|xref:BasicEventElement[BasicEventElement] |Basic event element |
+|xref:Blob[Blob] |Blob |
+|xref:Capability[Capability] |Capability |
+|xref:DataElement[DataElement] a|
 Data element
 
 
@@ -3106,8 +3106,8 @@ Note: data elements are abstract, i.e. if a key uses "DataElement", the referenc
 
 
 |
-|Entity |Entity |
-|EventElement a|
+|xref:Entity[Entity] |Entity |
+|xref:EventElement[EventElement] a|
 Event
 
 
@@ -3117,14 +3117,14 @@ Note: event elements are abstract.
 
 
 |
-|File |File |
-|MultiLanguageProperty |Property with a value that can be provided in multiple languages |
-|Operation |Operation |
-|Property |Property |
-|Range |Range with min and max |
-|ReferenceElement |Reference |
-|RelationshipElement |Relationship |
-|SubmodelElement a|
+|xref:File[File] |File |
+|xref:MultiLanguageProperty[MultiLanguageProperty] |Property with a value that can be provided in multiple languages |
+|xref:Operation[Operation] |Operation |
+|xref:Property[Property] |Property |
+|xref:Range[Range] |Range with min and max |
+|xref:ReferenceElement[ReferenceElement] |Reference |
+|xref:RelationshipElement[RelationshipElement] |Relationship |
+|xref:SubmodelElement[SubmodelElement] a|
 Submodel element
 
 
@@ -3134,8 +3134,8 @@ Note: Submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 
 
 |
-|SubmodelElementCollection |Struct of submodel elements |
-|SubmodelElementList |List of submodel elements |
+|xref:SubmodelElementCollection[SubmodelElementCollection] |Struct of submodel elements |
+|xref:SubmodelElementList[SubmodelElementList] |List of submodel elements |
 |===
 {empty}
 [cols="32%,68%",options="header",]
@@ -3152,9 +3152,9 @@ Note: not used as type but in constraints.
 
 |Set of: |AasReferableNonIdentifiables, AasIdentifiables
 |Literal |Explanation
-|AssetAdministrationShell |Asset Administration Shell
-|ConceptDescription |Concept description
-|Identifiable a|
+|xref:AssetAdministrationShell[AssetAdministrationShell] |Asset Administration Shell
+|xref:ConceptDescription[ConceptDescription] |Concept description
+|xref:Identifiable[Identifiable] a|
 Identifiable
 
 
@@ -3163,12 +3163,12 @@ Note: Identifiables are abstract, i.e. if a key uses "Identifiable", the referen
 ====
 
 
-|Submodel |Submodel
-|AnnotatedRelationshipElement |Annotated relationship element
-|BasicEventElement |Basic event element
-|Blob |Blob
-|Capability |Capability
-|DataElement a|
+|xref:Submodel[Submodel] |Submodel
+|xref:AnnotatedRelationshipElement[AnnotatedRelationshipElement] |Annotated relationship element
+|xref:BasicEventElement[BasicEventElement] |Basic event element
+|xref:Blob[Blob] |Blob
+|xref:Capability[Capability] |Capability
+|xref:DataElement[DataElement] a|
 Data element
 
 
@@ -3177,8 +3177,8 @@ Note: data elements are abstract, i.e. if a key uses "DataElement", the referenc
 ====
 
 
-|Entity |Entity
-|EventElement a|
+|xref:Entity[Entity] |Entity
+|xref:EventElement[EventElement] a|
 Event
 
 
@@ -3187,11 +3187,11 @@ Note: event elements are abstract.
 ====
 
 
-|File |File
-|MultiLanguageProperty |Property with a value that can be provided in multiple languages
-|Operation |Operation
-|Property |Property
-|Referable a|
+|xref:File[File] |File
+|xref:MultiLanguageProperty[MultiLanguageProperty] |Property with a value that can be provided in multiple languages
+|xref:Operation[Operation] |Operation
+|xref:Property[Property] |Property
+|xref:Referable[Referable] a|
 Referable
 
 
@@ -3200,10 +3200,10 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 ====
 
 
-|Range |Range with min and max
-|ReferenceElement |Reference
-|RelationshipElement |Relationship
-|SubmodelElement a|
+|xref:Range[Range] |Range with min and max
+|xref:ReferenceElement[ReferenceElement] |Reference
+|xref:RelationshipElement[RelationshipElement] |Relationship
+|xref:SubmodelElement[SubmodelElement] a|
 Submodel element
 
 
@@ -3212,8 +3212,8 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 ====
 
 
-|SubmodelElementCollection |Struct of submodel elements
-|SubmodelElementList |List of submodel elements
+|xref:SubmodelElementCollection[SubmodelElementCollection] |Struct of submodel elements
+|xref:SubmodelElementList[SubmodelElementList] |List of submodel elements
 |===
 {empty}
 [cols="31%,69%",options="header",]
@@ -3247,9 +3247,9 @@ Note: not used as type but in constraints.
 
 |Set of: |--
 |Literal |Explanation
-|AssetAdministrationShell |Asset Administration Shell
-|ConceptDescription |Concept description
-|Identifiable a|
+|xref:AssetAdministrationShell[AssetAdministrationShell] |Asset Administration Shell
+|xref:ConceptDescription[ConceptDescription] |Concept description
+|xref:Identifiable[Identifiable] a|
 Identifiable
 
 
@@ -3258,7 +3258,7 @@ Note: Identifiables are abstract, i.e. if a key uses "Identifiable", the referen
 ====
 
 
-|Submodel |Submodel
+|xref:Submodel[Submodel] |Submodel
 |===
 {empty}
 [cols="31%,69%",options="header",]
@@ -3955,7 +3955,7 @@ A template consists of the _DataSpecificationContent_ containing the additional 
 
 [cols="25%h,75%"]
 |===
-|Class: |DataSpecification \<<Template>>
+|Class: |[[DataSpecification]]DataSpecification \<<Template>>
 |Explanation: |Data specification template
 |Inherits from: |--
 |===
@@ -3971,15 +3971,15 @@ Note: some of the administrative information like the version number might need 
 ====
 
 
-|AdministrativeInformation |0..1
+|xref:AdministrativeInformation[AdministrativeInformation] |0..1
 |id |The globally unique identification of the element |xref:Identifier[Identifier] |1
-|dataSpecificationContent |The content of the template without meta data |DataSpecificationContent |1
+|dataSpecificationContent |The content of the template without meta data |xref:DataSpecificationContent[DataSpecificationContent] |1
 |description |Description of how and in which context the data specification template is applicable; can be provided in several languages. |xref:MultiLanguageTextType[MultiLanguageTextType] |0..1
 |===
 {empty}
 [cols="25%h,75%"]
 |===
-|Class: |DataSpecificationContent \<<Template>>\<<abstract>>
+|Class: |[[DataSpecificationContent]]DataSpecificationContent \<<Template>>\<<abstract>>
 |Explanation: |Data specification content is part of a data specification template and defines, which additional attributes shall be added to the element instance that references the data specification template and meta information about the template itself.
 |Inherits from: |--
 |===
@@ -5420,9 +5420,9 @@ Note: Security is still part of the Asset Administration Shell, but the Asset Ad
 |file:///C:/__localWork/Asset%20Administration%20Shell%20-%20Verwaltungsschale/Verwaltungsschale%20im%20Detail%20-%20part%201a%20V3.0/Change%202.0%20-%203.0.xlsx#RANGE!#REF![(x)link:#bib2[[2\]]] |xref:BlobType[BlobType |Primitive changed from "group of bytes" to Base64Binary
 |X |ConceptDictionary |Removed
 |X |Constraint |Abstract class removed. Formula now used in Security part only
-|x  |DataSpecification |No longer inherits from Identifiable. However, same attribute names and types
+|x  |xref:DataSpecification[DataSpecification] |No longer inherits from Identifiable. However, same attribute names and types
 |x |DataSpecification/description |Type changed from LangStringSet to MultiLanguageTextType, thus adding a length constraint
-| |DataSpecificationContent |Stereotype \<<Template>> added
+| |xref:DataSpecificationContent[DataSpecificationContent] |Stereotype \<<Template>> added
 |(x) |DataTypeDef |Removed and split into DataTypeDefXsd and DataTypeDefRdf. Some types excluded and not supported because now XML Schema 1.0 reference +
  +
 Before: just string allowing any xsd simple type as string +
@@ -5464,7 +5464,7 @@ The elements remain, except for new SubmodelElementList, and renamed submodel el
 |x |xref:PathType[PathType] |Same as Identifier, i.e. length constraint added
 |  |Property/valueType |Type changed from DataTypeDef to DataTypeDefXsd
 |x |Qualifiable/qualifier |Type changed from Constraint to Qualifier
-|  |Qualifier |No longer inherits from abstract class "Constraint"
+|  |xref:Qualifier[Qualifier] |No longer inherits from abstract class "Constraint"
 |  |Qualifier/valueType |Type changed from DataTypeDef to DataTypeDefXsd
 |x |xref:QualifierType[QualifierType] |Type changed from string to NameType (i.e. length constraint added)
 |  |Range/valueType |Type changed from DataTypeDef to DataTypeDefXsd
@@ -5519,14 +5519,14 @@ Before: ReferableElements
 |  |AdministrativeInformation/creator |New optional attribute
 |  |AdministrativeInformation/templateId |New optional attribute
 |x |AssetAdministrationShell/assetInformation |Substitute for AssetAdministrationShell/asset; no reference any longer, instead aggregation
-|  |AssetInformation |with attributes/functionality from former class Asset because not specific to Asset but AAS
+|  |xref:AssetInformation[AssetInformation] |with attributes/functionality from former class Asset because not specific to Asset but AAS
 |  |AssetInformation/assetKind |Former Asset/assetKind
 |  |AssetInformation/assetType |New optional attribute
 |  |AssetInformation/globalAssetId |Former Asset/identification/id
 |  |AssetInformation/specificAssetId |Former Asset/assetIdentificationModel
 |  |AssetInformation/thumbnail |Optional Attribute of new class AssetInformation that was not available in Asset class before
 |  |AssetKind/NotApplicable |New enumeration value
-|  |BasicEventElement |Former BasicEvent +
+|  |xref:BasicEventElement[BasicEventElement] |Former BasicEvent +
  +
 New \<<Experimental>> submodel element for events
 |  |BasicEventElement/direction |Was part of non-normative part before
@@ -5552,10 +5552,10 @@ Maximum length defined: 100 characters
 |  |Direction |New Enumeration for BasicEventElement
 | |Entity/globalAssetId |Former Entity/asset was split into globalAssetId and specificAssetId
 |  |Entity/specificAssetId |Former Entity/asset was split into globalAssetId and specificAssetId
-|  |Environment |New class for entry point for Asset Administration Shells, submodels and concept descriptions.
-|  |EventElement |Former name: Event +
+|  |xref:Environment[Environment] |New class for entry point for Asset Administration Shells, submodels and concept descriptions.
+|  |xref:EventElement[EventElement] |Former name: Event +
 Set to \<<Experimental>>
-|  |EventPayload |New experimental class for event payload +
+|  |xref:EventPayload[EventPayload] |New experimental class for event payload +
 Was part of non-normative part before
 |  |EventPayload/observableSemanticId |Was part of non-normative part before
 |  |EventPayload/payload |Was part of non-normative part before +
@@ -5568,7 +5568,7 @@ Type changed from ModelReference(Referable) to ModelReference(EventElement)
 Type changed from dateTimeStamp to dateTime because restriction to types of XML Schema 1.0 that does not contain dateTimeStamp. dateTimeStamp is a derived type of dateTime in XML Schema 1.1
 |  |EventPayload/topic |Was part of non-normative part before +
 Type changed from string to MessageTopicType (i.e. length constraint added, maximum 255 characters)
-|  |Extension |New class, part of new abstract class HasExtensions
+|  |xref:Extension[Extension] |New class, part of new abstract class HasExtensions
 | |Extension/name | 
 | |Extension/refersTo | 
 | |Extension/valueType | 
@@ -5578,7 +5578,7 @@ Type changed from string to MessageTopicType (i.e. length constraint added, maxi
 |  |GenericFragmentKeys |New enumeration used for References
 |  |GenericGloballyIdentifiers |New enumeration used for References
 |  |GloballyIdentifiables |New enumeration used for References
-|  |HasExtensions |New abstract class, inherited by Referable
+|  |xref:HasExtensions[HasExtensions] |New abstract class, inherited by Referable
 |  |HasSemantics/supplementalSemanticId |New attribute
 |  |Identifiable/id |Substitute for Identifiable/identification
 |  |KeyTypes |Before: KeyElements +
@@ -5597,15 +5597,15 @@ New submodel element SubmodelElementList added, renamed submodel elements Event 
 | |Reference/type |New mandatory attribute for Reference
 |  |ReferenceTypes |New enumeration for Reference/type
 |  |ReferenceTypes/ExternalReference |Enumeration value, was named GlobalReference before
-|  |Resource |new type for AssetInformation/defaultThumbnail
+|  |xref:Resource[Resource] |new type for AssetInformation/defaultThumbnail
 |  |ShortNameType |New string type with maximum 64 characters
-|  |SpecificAssetId |New type for AssetInformation/specificAssetId
+|  |xref:SpecificAssetId[SpecificAssetId] |New type for AssetInformation/specificAssetId
 |  |SpecificAssetId/externalSubjectId |See Attribute Based Access Control (ABAC) for subject concept
 |  |SpecificAssetId/name |New type for AssetInformation/specificAssetId
 |  |SpecificAssetId/value |New type for AssetInformation/specificAssetId
 |  |StateOfEvent |New experimental enumeration for BasicEventElement
 |  |SubmodelElementElements |Enumeration for submodel elements (split of ReferableElements)
-|  |SubmodelElementList |Before SubmodelElementCollection was used for lists and collections
+|  |xref:SubmodelElementList[SubmodelElementList] |Before SubmodelElementCollection was used for lists and collections
 |  |SubmodelElementList/orderRelevant |Similar to SubmodelElementCollection/ordered
 |  |SubmodelElementList/semanticIdListElement |Attribute of new class SubmodelElementList
 |  |SubmodelElementList/typeValueListElement |Attribute of new class SubmodelElementList
@@ -5766,12 +5766,12 @@ Smaller changes
 [cols="5%,32%,61%",options="header",]
 |===
 |*nc* |*V3.0 Change w.r.t. V3.0RC02* |*Comment*
-| |AdministrativeInformation |Stereotype \<<dataType>> removed
+| |xref:AdministrativeInformation[AdministrativeInformation] |Stereotype \<<dataType>> removed
 | |AssetInformation/externalSubjectId |Not mandatory any longer; now optional
 |x |AssetInformation/globalAssetId |Type changed from Reference to Identifier
 | |AssetKind/Type |Updated description of value "Type" of enumeration "AssetKind" conformant to IEC 63278-1
 | |AssetKind/Instance |Updated description of value "Instance" of enumeration "AssetKind" - conformant to IEC 63278-1
-| |BasicEventElement |Set to \<<Experimental>>
+| |xref:BasicEventElement[BasicEventElement] |Set to \<<Experimental>>
 |x |BasicEventElement/messageTopic |Type changed from string to MessageTopicType (i.e. length constraint added, maximum 255 characters)
 |x |BasicEventElement/minInterval |Type changed from dateTime to duration
 |x |BasicEventElement/maxInterval |Type changed from dateTime to duration
@@ -5787,9 +5787,9 @@ Smaller changes
 | |Direction |Set to \<<Experimental>>
 |x |Entity/globalAssetId |Type changed from Reference to Identifier
 |x |Extension/name |Type changed from string to NameType; length constraint added
-| |EventElement |Set to \<<Experimental>>
+| |xref:EventElement[EventElement] |Set to \<<Experimental>>
 | |EventElement/duration |Type changed from dateTimeStamp to dateTime
-| |EventPayload |Set to \<<Experimental>>
+| |xref:EventPayload[EventPayload] |Set to \<<Experimental>>
 | |EventPayload/payload |Type changed from string to BlobType
 | |EventPayload/source |Type changed from ModelReference(Referable) to ModelReference(EventElement)
 | |EventPayload/timestamp |Type changed from dateTimeStamp to dateTime because restriction to types of XML Schema 1.0 that does not contain dateTimeStamp. dateTimeStamp is a derived type of dateTime in XML Schema 1.1
@@ -5817,7 +5817,7 @@ Text how to select a suitable display name removed; now explained in Table 2
 |x |Referable/description |Type changed from string to MultiLanguageTextType; length constraint added
 |x |Referable/idShort |Type changed from string to NameType; length constraint added
 |x |ReferenceTypes/GlobalReference |Renamed to ExternalReference
-| |Resource |Stereotype \<<DataType>> removed.
+| |xref:Resource[Resource] |Stereotype \<<DataType>> removed.
 | |StateOfEvent |Set to \<<Experimental>>
 |x |SpecificAssetId/name |Type changed from string to LabelType (a string with length constraint)
 |x |SpecificAssetId/value |Type changed from string to Identifier (because of length constraint)
@@ -5971,7 +5971,7 @@ Note: ReferableElements was substituted by AasSubmodelElements and Aas Identifia
 [cols="5%,43%,50%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V2.0.1* |*Comment*
-| |AdministrativeInformation |Bugfix: Stereotype "DataType" added
+| |xref:AdministrativeInformation[AdministrativeInformation] |Bugfix: Stereotype "DataType" added
 | |AnnotatedRelationship/annotation |Bugfix: Type changed from ModelReference<DataElement> to DataElement
 | |anySimpleTypeDef |Type removed, was no longer used in any class definition, was mentioned in text only
 |x |Asset |Removed, asset referenced via AssetInformation/globalAssetId only
@@ -6034,7 +6034,7 @@ Note: the elements remain, except for new SubmodelElementList and renamed submod
 |x |MimeType |Type name changed to ContentType
 | |Property/valueType |Type changed from DataTypeDef to DataTypeDefXsd
 |x |Qualifiable/qualifier |Type changed from Constraint to Qualifier
-| |Qualifier |No longer inherits from abstract class "Constraint"
+| |xref:Qualifier[Qualifier] |No longer inherits from abstract class "Constraint"
 | |Qualifier/valueType |Type changed from DataTypeDef to DataTypeDefXsd
 | |Range/valueType |Type changed from DataTypeDef to DataTypeDefXsd
 | |Referable/idShort |Now optional, was mandatory
@@ -6083,12 +6083,12 @@ Before: Identifiables
 | |AasReferableNonIdentifiables |New enumeration used for References
 | |AasReferables |New enumeration used for References, includes abstract Referable
 |x |AssetAdministrationShell/assetInformation |substitute for AssetAdministrationShell/asset; no reference any longer, instead now aggregation
-| |AssetInformation |with attributes/functionality from former class Asset, because not specific to Asset but to AAS
+| |xref:AssetInformation[AssetInformation] |with attributes/functionality from former class Asset, because not specific to Asset but to AAS
 | |AssetInformation/assetKind |Former Asset/assetKind
 | |AssetInformation/globalAssetId |Former Asset/identification/id
 | |AssetInformation/specificAssetId |Former Asset/assetIdentificationModel
 | |AssetInformation/thumbnail |Optional Attribute of new class AssetInformation that was not available in Asset class before
-| |BasicEventElement a|
+| |xref:BasicEventElement[BasicEventElement] a|
 Former name: BasicEvent
 
 Was part of non-normative part before
@@ -6114,21 +6114,21 @@ Enumeration consisting of enumerations
 decimalBuildInTypes, durationBuildInTypes, PrimitiveTypes that correspond to anySimpleTypes of xsd. + added prefix xs: to every value in enumeration
 
 | |Direction |New enumeration for BasicEventElement
-| |Environment |New class for entry point for Asset Administration Shells, submodels and concept descriptions
-| |EventElement |Former name: Event
-| |EventPayload |New class for event payload
+| |xref:Environment[Environment] |New class for entry point for Asset Administration Shells, submodels and concept descriptions
+| |xref:EventElement[EventElement] |Former name: Event
+| |xref:EventPayload[EventPayload] |New class for event payload
 | |EventPayload/observableSemanticId |Was part of non-normative part before
 | |EventPayload/payload |Was part of non-normative part before
 | |EventPayload/source |Was part of non-normative part before
 | |EventPayload/sourceSemanticId |Was part of non-normative part before
 | |EventPayload/subjectId |Was part of non-normative part before
 | |EventPayload/timestamp |Was part of non-normative part before
-| |Extension |New class, part of new abstract class HasExtensions
+| |xref:Extension[Extension] |New class, part of new abstract class HasExtensions
 | |FragmentKeys |New enumeration used for References
 | |GenericFragmentKeys |New enumeration used for References
 | |GenericGloballyIdentifiers |New enumeration used for References
 | |GloballyIdentifiables |New enumeration used for References
-| |HasExtensions |New abstract class, inherited by Referable
+| |xref:HasExtensions[HasExtensions] |New abstract class, inherited by Referable
 | |HasSemantics/supplementalSemanticId |New attribute
 | |Identifiable/id |Substitute for Identifiable/identification
 | |IdentifierKeyValuePair |New class for AssetInformation/specificAssetId
@@ -6146,7 +6146,7 @@ New submodel element SubmodelElementList added, submodel elements Event and Basi
 |x |Reference/type |New mandatory attribute for Reference
 | |ReferenceTypes |New enumeration for Reference/type
 | |StateOfEvent |New enumeration for BasicEventElement
-| |SpecificAssetId |New type for AssetInformation/specificAssetId
+| |xref:SpecificAssetId[SpecificAssetId] |New type for AssetInformation/specificAssetId
 | |SpecificAssetId/name |New type for AssetInformation/specificAssetId
 | |SpecificAssetId/value |New type for AssetInformation/specificAssetId
 | |SpecificAssetId/externalSubjectId a|
@@ -6155,7 +6155,7 @@ New type for AssetInformation/specificAssetId
 See Attribute Based Access Control (ABAC) for subject concept
 
 | |SubmodelElementElements |Enumeration for submodel elements (split of ReferableElements)
-|  |SubmodelElementList |Before SubmodelElementCollection was used for lists and structs
+|  |xref:SubmodelElementList[SubmodelElementList] |Before SubmodelElementCollection was used for lists and structs
 | |SubmodelElementList/orderRelevant |Similar to SubmodelElementCollection/ordered
 | |SubmodelElementList/value |Similar to SubmodelElementCollection/value but ordered and with all elements having the same semanticId
 | |SubmodelElementList/semanticIdListElement |Attribute of new class SubmodelElementList
@@ -6247,7 +6247,7 @@ Constraint AASD-120: idShort of submodel elements within a SubmodelElementList s
 [cols="5%,46%,43%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V2.0.1* |*Comment*
-| |DataSpecification a|
+| |xref:DataSpecification[DataSpecification] a|
 Stereotype \<<Template>> added + does not inherit from Identifiable any longer because Data Specification are handled in a different way
 
 Some attributes are added to DataSpecification as new attributes like id, administration and description.(see separate entries)
@@ -6257,7 +6257,7 @@ Some attributes are added to DataSpecification as new attributes like id, admini
 | |DataSpecification/idShort |Removed, was inherited before by Identifiable
 |x |DataSpecificationIEC61360/value |Type changed from ValueDataType to string
 | |DataSpecificationIEC61360/valueId |Removed, the valueId is identical to the ID of the concept description
-| |DataSpecificationContent |Stereotype \<<Template>> added
+| |xref:DataSpecificationContent[DataSpecificationContent] |Stereotype \<<Template>> added
 |x |DataTypeIEC61360 |Some new values were added: BLOB, FILE, HTML, IRDI. URL renamed to IRI. +
  +
 See separate entries for individual changes.
@@ -6403,7 +6403,7 @@ Bugfixes:
 [cols="5%,45%,51%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V3.0RC01* |*Comment*
-| |AdministrativeInformation |Bugfix: Stereotype "DataType" added
+| |xref:AdministrativeInformation[AdministrativeInformation] |Bugfix: Stereotype "DataType" added
 | |AnnotatedRelationship/annotation |Type changed from ModelReference<DataElement> to DataElement
 |x |Asset |Removed, asset referenced via globalAssetId only
 |x |AssetAdministrationShell/security a|
@@ -6464,7 +6464,7 @@ Note: the elements remain, except for new SubmodelElementList and renamed submod
 |x |MimeType |Type name changed to ContentType
 | |Property/valueType |Type changed from DataTypeDef to DataTypeDefXsd
 |x |Qualifiable/qualifier |Type changed from Constraint to Qualifier
-| |Qualifier |Does not inherit from abstract class "Constraint" any longer
+| |xref:Qualifier[Qualifier] |Does not inherit from abstract class "Constraint" any longer
 | |Qualifier/valueType |Type changed from DataTypeDef to DataTypeDefXsd
 | |Range/valueType |Type changed from DataTypeDef to DataTypeDefXsd
 | |Referable/idShort |Now optional, was mandatory
@@ -6512,7 +6512,7 @@ Before: Identifiables
 
 | |AasReferableNonIdentifiables |New enumeration used for References
 | |AasReferables |New enumeration used for References, includes abstract Referable
-| |BasicEventElement |Former name: BasicEvent
+| |xref:BasicEventElement[BasicEventElement] |Former name: BasicEvent
 | |BasicEventElement/direction |
 | |BasicEventElement/lastUpdate |
 | |BasicEventElement/messageBroker |
@@ -6528,9 +6528,9 @@ Before: Identifiables
 |  |decimalBuildInTypes |Enumeration for DataTypeDef
 | |Direction |New enumeration for BasicEventElement
 |  |durationBuildInTypes |Enumeration for DataTypeDef
-| |Environment |New class for entry point for Asset Administration Shells, submodels and concept descriptions
-| |EventElement |Former name: Event
-| |EventPayload |New class for event payload
+| |xref:Environment[Environment] |New class for entry point for Asset Administration Shells, submodels and concept descriptions
+| |xref:EventElement[EventElement] |Former name: Event
+| |xref:EventPayload[EventPayload] |New class for event payload
 | |EventPayload/observableReference |
 | |EventPayload/observableSemanticId |
 | |EventPayload/payload |
@@ -6558,13 +6558,13 @@ New submodel element SubmodelElementList added, renamed submodel elements Event 
 | |Qualifier/kind |New attribute for Qualifier
 | |QualifierKind |New enumeration for Qualifier/kind
 | |Referable/checksum |
-| |SpecificAssetId |Before: IdentifierKeyValuePair, was renamed
+| |xref:SpecificAssetId[SpecificAssetId] |Before: IdentifierKeyValuePair, was renamed
 | |SpecificAssetId/name |Before: IdentifierKeyValuePair/key, was renamed
 | |SpecificAssetId/value |Before: IdentifierKeyValuePair/value
 | |SpecificAssetId/externalSubjectId |Before: IdentifierKeyValuePair/externalSubjectId
 | |StateOfEvent |New enumeration for BasicEventElement
 | |SubmodelElementElements |Enumeration for submodel elements (split of ReferableElements into SubmodelElementElements and IdentifiableElements)
-|  |SubmodelElementList |Before SubmodelElementCollection was used for lists and structs
+|  |xref:SubmodelElementList[SubmodelElementList] |Before SubmodelElementCollection was used for lists and structs
 | |SubmodelElementList/orderRelevant |Similar to SubmodelElementCollection/ordered
 | |SubmodelElementList/value |Similar to SubmodelElementCollection/value but ordered and with all elements having the same semanticId
 | |SubmodelElementList/semanticIdListElement |Attribute for new class SubmodelElementList
@@ -6779,7 +6779,7 @@ Constraint AASD-120: idShort of submodel elements within a SubmodelElementList s
 [cols="5%,46%,43%",options="header",]
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V3.0RC01* |*Comment*
-| |DataSpecification a|
+| |xref:DataSpecification[DataSpecification] a|
 Stereotype \<<Template>> added + does not inherit from Identifiable any longer because Data Specification are handled differently
 
 Some attributes are added to DataSpecification as new attributes like id, administration and description
@@ -6790,7 +6790,7 @@ Some attributes are added to DataSpecification as new attributes like id, admini
 | |DataSpecificationIEC61360/unitId |Type changes from Reference to GlobalReference
 |x |DataSpecificationIEC61360/value |Type changed from ValueDataType to string
 | |DataSpecificationIEC61360/valueId |Removed, the valueId is identical to the ID of the concept description
-| |DataSpecificationContent |Stereotype \<<Template>> added
+| |xref:DataSpecificationContent[DataSpecificationContent] |Stereotype \<<Template>> added
 |x |DataTypeIEC61360 a|
 Some new values were added: BLOB, FILE, HTML, IRDI; URL renamed to IRI
 
@@ -6926,12 +6926,12 @@ Major changes:
 |===
 |*nc* |*V3.0RC01 vs. V2.0.1* |*Comment*
 |x |AssetAdministrationShell/assetInformation |Substitute for AssetAdministrationShell/asset (no reference any longer, instead aggregation)
-| |AssetInformation |with attributes/functionality from former class Asset because not specific to Asset but AAS
+| |xref:AssetInformation[AssetInformation] |with attributes/functionality from former class Asset because not specific to Asset but AAS
 | |AssetInformation/thumbnail |Optional Attribute of new class AssetInformation that was not available in Asset class before
 |x |Entity/globalAssetId |Substitute for Entity/asset (together with Entity/specificAssetId)
 |x |Entity/specificAssetId |Substitute for Entity/asset (together with Entity/globalAssetId)
-| |Extension |New class, part of new abstract class HasExtensions
-| |HasExtensions |New abstract class, inherited by Referable
+| |xref:Extension[Extension] |New class, part of new abstract class HasExtensions
+| |xref:HasExtensions[HasExtensions] |New abstract class, inherited by Referable
 | |IdentifierKeyValuePair |New class for AssetInformation/specificAssetId
 | |Referable/displayName |New optional attribute for all referables
 |===
@@ -7050,7 +7050,7 @@ Major changes:
 | |DataTypeIEC61360/INTEGER_MEASURE |Bugfix, was missing
 | |DataTypeIEC61360/INTEGER_CURRENCY |Bugfix, was missing
 | |hasDataSpecification |Bugfix, is abstract class – was mixed up with DataSpecification class that is not abstract
-| |DataSpecification |Bugfix, is not abstract
+| |xref:DataSpecification[DataSpecification] |Bugfix, is not abstract
 | |AnnotatedRelationshipElement/annotation |Bugfix, Annotation ist not a reference to Data Elements
 |===
 
@@ -7109,14 +7109,14 @@ Cardinality changed from mandatory to optional
 
 |x |DataSpecificationIEC61360/code |Attribute code removed
 | |DataSpecificationIEC61360/definition |Cardinality changed from mandatory to optional
-| |HasDataSpecification |Was abstract before
+| |xref:HasDataSpecification[HasDataSpecification] |Was abstract before
 | |HasDataSpecification/hasDataSpecification |Renamed to HasDataSpecification/dataSpecification
 |x |HasKind/kind |Now of type "ModellingKind" instead of "Kind". Values changed: Type now Template; Instance remains
 |x |File/value |File name not without but with extension
 |x |Identifiable/description |Type changed from langString to LangStringSet
 |x |IdentifierType/URI |URI renamed to IRI
 | |Kind |Type Kind removed and substituted by types AssetKind and ModellingKind
-|x |OperationVariable |No longer inherits from SubmodelElement
+|x |xref:OperationVariable[OperationVariable] |No longer inherits from SubmodelElement
 | |Property/value |Type changed from anySimpleTypeDef to ValueDataType
 |x |Qualifier/qualifierType |Renamed to Qualifier/type
 |x |Qualifier/qualifierValue a|
@@ -7133,18 +7133,18 @@ Type changed from AnySimpleTypeDef to ValueDataType
 [cols="43%,57%",options="header",]
 |===
 |*V2.0* |*Comment*
-|AnnotatedRelationshipElement |New submodel element, inheriting from RelationshipElement
+|xref:AnnotatedRelationshipElement[AnnotatedRelationshipElement] |New submodel element, inheriting from RelationshipElement
 |Asset/billOfMaterial |New attribute
 |AssetKind |New enumeration type
 |BasicEvent |New submodel element, inherits from Event
-|Capability |New submodel element
+|xref:Capability[Capability] |New submodel element
 |DataSpecificationIEC61360/valueList |For value lists (string)
 |DataSpecificationIEC61360/value |For coded and explicit values
 |DataSpecificationIEC61360/valueId |For coded values
 |DataSpecificationIEC61360/levelType |For Ranges
 |DataSpecificationPhysicalUnit |New data specification template
 |DataTypeIEC61360 |New enumeration type
-|Entity |New submodel Element
+|xref:Entity[Entity] |New submodel Element
 |EntityType |New enumeration type
 |IdentifierType |Is a subset of KeyType Enumeration
 |KeyElements/FragmentReference |New value FragmentReference as part of KeyElements Enumeration
@@ -7153,9 +7153,9 @@ Type changed from AnySimpleTypeDef to ValueDataType
 |xref:LangStringSet[LangStringSet] |New type, used for example in MultiLanguageProperty
 |LevelType |New enumeration type
 |ModellingKind |New enumeration type
-|MultiLanguageProperty |New submodel element
+|xref:MultiLanguageProperty[MultiLanguageProperty] |New submodel element
 |Qualifier/valueType |New attribute to be consistent with valueType of Property etc.
-|Range |New submodel element
+|xref:Range[Range] |New submodel element
 |ReferableElements/BasicEvent |New enumeration value
 |ReferableElements/Capability |New enumeration value
 |ReferableElements/Event |New enumeration value
