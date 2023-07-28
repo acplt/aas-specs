@@ -1516,14 +1516,11 @@ Default Value = _Instance_
 
 The kind enumeration is used to denote whether an element is of kind _Template_ or _Instance_. It is used to distinguish between submodels and submodel templates.
 
-[cols="30%h,70%"]
+[cols="31%,69%",options="header",]
 |===
 |Enumeration: |ModellingKind
 |Explanation: |Enumeration for denoting whether an element is a template or an instance
 |Set of: |--
-|===
-[cols="30%,70%",options="header",]
-|===
 |Literal |Explanation
 |Template |specification of the common features of a structured element in sufficient detail that such a instance can be instantiated using it
 |Instance |concrete, clearly identifiable element instance. Its creation and validation may be guided by a corresponding element template.
@@ -1694,14 +1691,11 @@ Note: it is recommended to use an external reference.
 
 It is recommended to add a _semanticId_ for the concept of the _Qualifier_. _Qualifier/type_ is the preferred name of the concept of the qualifier or its short name.
 
-[cols="30%h,70%"]
+[cols="30%,70%",options="header",]
 |===
 |Enumeration: |QualifierKind
 |Explanation: |Enumeration for kinds of qualifiers
 |Set of: |--
-|===
-[cols="30%,70%",options="header",]
-|===
 |Literal |Explanation
 |ValueQualifier a|
 Qualifies the value of the element; the corresponding qualifier value can change over time.
@@ -1951,14 +1945,11 @@ The content type states which file extensions the file can have.
 |xref:ContentType[ContentType] |0..1
 |===
 {empty}
-[cols="30%h,70%"]
+[cols="30%,70%",options="header",]
 |===
 |Enumeration: |AssetKind
 |Explanation: |Enumeration for denoting whether an asset is a type asset or an instance asset or whether this kind of classification is not applicable
 |Set of: |--
-|===
-[cols="30%,70%",options="header",]
-|===
 |Literal |Explanation
 |Type |Type asset
 |Instance |Instance asset
@@ -2150,27 +2141,21 @@ Might not be specified, i.e. if there is no maximum interval.
 |duration |0..1
 |===
 {empty}
-[cols="30%h,70%"]
+[cols="30%,70%",options="header",]
 |===
 |Enumeration: |Direction \<<Experimental>>
 |Explanation: |Direction
 |Set of: |--
-|===
-[cols="30%,70%",options="header",]
-|===
 |Literal |Explanation
 |input |Input direction
 |output |Output direction
 |===
 {empty}
-[cols="30%h,70%"]
+[cols="30%,70%",options="header",]
 |===
 |Enumeration: |StateOfEvent \<<Experimental>>
 |Explanation: |State of an event
 |Set of: |--
-|===
-[cols="30%,70%",options="header",]
-|===
 |Literal |Explanation
 |on |Event is on
 |off |Event is off
@@ -2358,14 +2343,11 @@ An entity is a submodel element that is used to model entities.
 |specificAssetId |Reference to a specific asset ID representing a supplementary identifier of the asset represented by the Asset Administration Shell |xref:SpecificAssetId[SpecificAssetId] |0..*
 |===
 {empty}
-[cols="30%h,70%"]
+[cols="30%,70%",options="header",]
 |===
 |Enumeration: |EntityType
 |Explanation: |Enumeration for denoting whether an entity is a self-managed entity or a co-managed entity
 |Set of: |--
-|===
-[cols="30%,70%",options="header",]
-|===
 |Literal |Explanation
 |CoManagedEntity |There is no separate Asset Administration Shell for co-managed entities. Co-managed entities need to be part of a self-managed entity.
 |SelfManagedEntity a|
@@ -2840,14 +2822,11 @@ Note 2: it is recommended to use an external reference for the semantic ID expec
 |key \<<ordered>> |Unique reference in its name space |xref:Key[Key] |1..*
 |===
 {empty}
-[cols="30%h,70%"]
+[cols="31%,69%",options="header",]
 |===
 |Enumeration: |ReferenceTypes
 |Explanation: |Enumeration for denoting whether an element is an external or model reference
 |Set of: |--
-|===
-[cols="30%,70%",options="header",]
-|===
 |Literal |Explanation
 |ExternalReference |External reference
 |ModelReference |Model reference
@@ -2895,14 +2874,11 @@ An example for using a _FragmentId_ as type of a key is a reference to an elemen
 .Figure 51 Metamodel of AasSubmodelElements Enumeration
 image:media/media/image52.png[media/media/image52]
 
-[cols="30%h,70%"]
+[cols="31%,69%",options="header",]
 |===
 |Enumeration: |KeyTypes
 |Explanation: |Enumeration of different key value types within a key
 |Set of: |FragementKeys; AasReferables, GloballyIdentifiables
-|===
-[cols="30%,70%",options="header",]
-|===
 |Literal |Explanation
 |xref:AnnotatedRelationshipElement[AnnotatedRelationshipElement] |Annotated relationship element
 |xref:AssetAdministrationShell[AssetAdministrationShell] |Asset Administration Shell
@@ -2966,14 +2942,11 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |xref:SubmodelElementList[SubmodelElementList] |List of submodel elements
 |===
 {empty}
-[cols="30%h,70%"]
+[cols="32%,68%",options="header",]
 |===
 |Enumeration: |FragmentKeys
 |Explanation: a|
 Enumeration of different fragment key value types within a key
-|===
-[cols="30%,70%",options="header",]
-|===
 
 
 ====
@@ -3027,14 +3000,11 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |xref:SubmodelElementList[SubmodelElementList] |List of submodel elements
 |===
 {empty}
-[cols="30%h,70%"]
+[cols="31%,69%",options="header",]
 |===
 |Enumeration: |GloballyIdentifiables
 |Explanation: a|
 Enumeration of different key value types within a key
-|===
-[cols="30%,70%",options="header",]
-|===
 
 
 ====
@@ -3059,14 +3029,11 @@ Note: identifiables are abstract, i.e. if a key uses "Identifiable", the referen
 |xref:Submodel[Submodel] |Submodel
 |===
 {empty}
-[cols="30%h,70%"]
+[cols="32%,68%",options="header",]
 |===
 |Enumeration: |AasReferableNonIdentifiables
 |Explanation: a|
 Enumeration of different fragment key value types within a key
-|===
-[cols="30%,70%",options="header",]
-|===
 
 
 ====
@@ -3119,14 +3086,11 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |xref:SubmodelElementList[SubmodelElementList] |List of submodel elements
 |===
 {empty}
-[cols="30%h,70%"]
+[cols="31%,68%,1%",options="header",]
 |===
 |Enumeration: |AasSubmodelElements |
 |Explanation: |Enumeration of different fragment key value types within a key |
 |Set of: |-- |
-|===
-[cols="30%,70%,1%",options="header",]
-|===
 |Literal |Explanation |
 |xref:AnnotatedRelationshipElement[AnnotatedRelationshipElement] |Annotated relationship element |
 |xref:BasicEventElement[BasicEventElement] |Basic event element |
@@ -3174,14 +3138,11 @@ Note: Submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |xref:SubmodelElementList[SubmodelElementList] |List of submodel elements |
 |===
 {empty}
-[cols="30%h,70%"]
+[cols="32%,68%",options="header",]
 |===
 |Enumeration: |AasReferables
 |Explanation: a|
 Enumeration of referables
-|===
-[cols="30%,70%",options="header",]
-|===
 
 
 ====
@@ -3255,14 +3216,11 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |xref:SubmodelElementList[SubmodelElementList] |List of submodel elements
 |===
 {empty}
-[cols="30%h,70%"]
+[cols="31%,69%",options="header",]
 |===
 |Enumeration: |GenericFragmentKeys
 |Explanation: a|
 Enumeration of different fragment key value types within a key
-|===
-[cols="30%,70%",options="header",]
-|===
 
 
 ====
@@ -3275,14 +3233,11 @@ Note: not used as type but in constraints.
 |FragmentReference |Bookmark or a similar local identifier of a subordinate part of a primary resource
 |===
 {empty}
-[cols="30%h,70%"]
+[cols="31%,69%",options="header",]
 |===
 |Enumeration: |AasIdentifiables
 |Explanation: a|
 Enumeration of different key value types within a key
-|===
-[cols="30%,70%",options="header",]
-|===
 
 
 ====
@@ -3306,14 +3261,11 @@ Note: Identifiables are abstract, i.e. if a key uses "Identifiable", the referen
 |xref:Submodel[Submodel] |Submodel
 |===
 {empty}
-[cols="30%h,70%"]
+[cols="31%,69%",options="header",]
 |===
 |Enumeration: |GenericGloballyIdentifiables
 |Explanation: |Enumeration of different key value types within a key
 |Set of: |--
-|===
-[cols="30%,70%",options="header",]
-|===
 |Literal |Explanation
 |GlobalReference |Global reference
 |===
@@ -3850,14 +3802,11 @@ Note: this is written in RDF/Turtle syntax, @end and ²de are the language tags.
 
 |===
 {empty}
-[cols="30%h,70%"]
+[cols="37%,63%",options="header",]
 |===
 |Enumeration: |DataTypeDefXsd
 |Explanation: a|
 Enumeration listing all xsd anySimpleTypes
-|===
-[cols="30%,70%",options="header",]
-|===
 
 For more details see https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes
 
@@ -3906,14 +3855,11 @@ For more details see https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes
 |xs:unsignedShort |see: https://www.w3.org/TR/xmlschema11-2/#unsignedShort
 |===
 {empty}
-[cols="30%h,70%"]
+[cols="29%,71%",options="header",]
 |===
 |Enumeration: |DataTypeDefRdf
 |Explanation: |Enumeration listing all RDF types
 |Set of: |--
-|===
-[cols="30%,70%",options="header",]
-|===
 |Literal |Explanation
 |rdf:langString |String with a language tag
 |===
@@ -5057,14 +5003,11 @@ This would be an invalid reference for "ModelReference<Submodel>"
 
 Template for Enumerations:
 
-[cols="30%h,70%"]
+[cols="30%,70%",options="header",]
 |===
 |Enumeration: |<Enumeration Name> ["\<<Experimental>>"] ["\<<Deprecated>>"]
 |Explanation: |
 |Set of: |\{<Enumeration> ";" }+ \| "-"
-|===
-[cols="30%,70%",options="header",]
-|===
 |Literal |Explanation
 |<enumValue1>["\<<Experimental>>"] ["\<<Deprecated>>"] a|
 <Explanatory text>
