@@ -202,7 +202,7 @@ Note 3 to entry: the impact manifests itself in a measurable effect within the p
 
 value that can be looked up in a dictionary and can be translated
 
-* [SOURCE: ECLASSfootnote:[https://eclass.eu/support/technical-specification/data-model/conceptual-data-model] footnote:[In IEC61360:2017, this refers to a "term" of a value list]]
+* [SOURCE: xref:https://eclass.eu/support/technical-specification/data-model/conceptual-data-model[ECLASS] footnote:[In IEC61360:2017, this refers to a "term" of a value list]]
 
 *component*
 
@@ -256,7 +256,7 @@ Note 1 to entry: in this context, the entity in the definition of digital repres
 
 commonly used _concept_, like numbers (e.g. 109, 25) which do not need lookup in dictionaries
 
-* [SOURCE: ECLASSfootnote:[https://eclass.eu/support/technical-specification/data-model/conceptual-data-model]]
+* [SOURCE: xref:https://eclass.eu/support/technical-specification/data-model/conceptual-data-model[ECLASS]]
 
 *identifier (ID)*
 
@@ -837,11 +837,11 @@ The ID of the asset needs to comply with the restrictions for global identifiers
 In link:#bib4[[4\]]link:#bib20[[20\]], two standard-conforming global identification types are defined:
 
 * *IRDI* – ISO29002-5, ISO IEC 6523 and ISO IEC 11179-6 link:#bib20[[20\]] as an identifier scheme for properties and classifications. They are created in a process of consortium-wise specification or international standardization. To this end, users come together and feed their ideas into the consortia or standardization bodies. Properties in ISO, IEC help to safeguard key commercial interests. Repositories like ECLASS and others make it possible to standardize a relatively large number of identifiers in an appropriately short time.
-* *IRI* – IRI (Rfc 3987footnote:[https://tools.ietf.org/html/rfc3987]) or URI and URL according to RFC 3986footnote:[https://tools.ietf.org/html/rfc3986] as identification of assets, Administration Shells and other (probably not standardized, but globally unique) properties and classifications.
+* *IRI* – IRI (xref:https://tools.ietf.org/html/rfc3987[RFC 3987]) or URI and URL according to xref:https://tools.ietf.org/html/rfc3986[RFC 3986] as identification of assets, Administration Shells and other (probably not standardized, but globally unique) properties and classifications.
 
 The following is also permitted:
 
-* *Custom* – internal custom identifiers such as UUIDs/GUIDs (universally unique identifiersfootnote:[https://en.wikipedia.org/wiki/Universally_unique_identifier]/globally unique identifiers), which a manufacturer can use for all sorts of in-house purposes within the Administration Shell.
+* *Custom* – internal custom identifiers such as UUIDs/GUIDs (xref:https://en.wikipedia.org/wiki/Universally_unique_identifier[universally unique identifiers]/globally unique identifiers), which a manufacturer can use for all sorts of in-house purposes within the Administration Shell.
 
 This means that the IRIs/URIs/URLs and internal custom identifiers can represent and communicate manufacturer-specific information and functions in the Administration Shell and the 4.0 infrastructure just as well as standardized information and functions. One infrastructure can serve both purposes.
 
@@ -1051,7 +1051,7 @@ Note: if the key types are not identical although all key values follow the corr
 ====
 
 
-The definition of XML Schemafootnote:[https://www.w3.org/TR/xmlschema-2/#terminology] is used for matching
+The definition of xref:https://www.w3.org/TR/xmlschema-2/#terminology[XML Schema] is used for matching
 
 * "(Of string or names:) Two strings or names being compared must be identical.
 * Characters with multiple possible representations in ISO/IEC 10646 (e.g. characters with both precomposed and base+diacritic forms) match only if they have the same representation in both strings.
@@ -3414,7 +3414,7 @@ is not a valid model reference because _AssetAdministrationShell_ and _Submodel_
 
 ===== Predefined Simple Data Types
 
-The metamodel of the Asset Administration Shell uses basic data types as defined in the XML Schema Definition (XSD)footnote:[https://www.w3.org/XML/Core/, former https://www.w3.org/XML/Schema]. See Table 7 for an overview of the used types. Their definition is outside the scope of this document.
+The metamodel of the Asset Administration Shell uses basic data types as defined in the xref:https://www.w3.org/XML/Core/[XML Schema Definition] (XSD)footnote:[https://www.w3.org/XML/Core/, former https://www.w3.org/XML/Schema]. See Table 7 for an overview of the used types. Their definition is outside the scope of this document.
 
 The meaning and format of xsd types is specified in https://www.w3.org/XML/Schema. The simple type "langString" is specified in the Resource Description Framework (RDF)footnote:[see: https://www.w3.org/TR/rdf11-concepts/].
 
@@ -3563,7 +3563,7 @@ _Identifier_
 
 
 ====
-Note: for any string conformant to RFC8089footnote:[https://datatracker.ietf.org/doc/html/rfc8089], the "file" URI scheme (for relative and absolute file paths) applies.
+Note: for any string conformant to xref:https://datatracker.ietf.org/doc/html/rfc8089[RFC8089], the "file" URI scheme (for relative and absolute file paths) applies.
 ====
 
 
@@ -3591,7 +3591,7 @@ a|
 |[[QualifierType]]QualifierType |_NameType_ a|
 "ExpressionSemantic" (as specified in DIN SPEC 92000:2019-09, see link:#bib16[[16\]])
 
-"life cycle qual" (as specified in IEC 61360-7 - IEC/SC 3D - Common Data Dictionary (CDD - V2.0015.0004footnote:[https://cdd.iec.ch/cdd/common/iec61360-7.nsf/SearchFrameset?OpenFrameSet])
+"life cycle qual" (as specified in IEC 61360-7 - IEC/SC 3D - Common Data Dictionary (xref:https://cdd.iec.ch/cdd/common/iec61360-7.nsf/SearchFrameset?OpenFrameSet[CDD - V2.0015.0004])
 
 |[[VersionType]]VersionType a|
 _string_ with max 4 and min 1 characters
