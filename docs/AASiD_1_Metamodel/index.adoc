@@ -863,7 +863,7 @@ See Annex A for more information on how to create new identifiers and best pract
 [cols="21%,17%,22%,40%",options="header",]
 |===
 |*Elements with identifying values* |*Attribute* |*Allowed identifiers (recommended or typical)* |*Remarks*
-|AssetAdministration­Shell |id |IRI (URL) a|
+|xref:AssetAdministrationShell[AssetAdministrationShell] |id |IRI (URL) a|
 mandatory
 
 Typically, URLs will be used.
@@ -884,7 +884,7 @@ An asset typically may be represented by several different identification proper
 
 They are used for lookup of Asset Administration Shells in cases the globalAssetId is not available. However, they do not need to be globally unique.
 
-|Submodel with kind = Template |id |IRDI, IRI (URI) a|
+|xref:Submodel[Submodel] with kind = Template |id |IRDI, IRI (URI) a|
 mandatory
 
 IRDI, if the defined submodel is standardized and has been assigned an IRDI.
@@ -905,7 +905,7 @@ recommended
 The semantic ID might refer to an external semantic model defining the semantics of the submodel.
 
 | |supplementalSemanticId |IRDI, IRI (URI) |optional
-|Submodel with kind = Instance |id |IRI (URI), Custom |mandatory
+|xref:Submodel[Submodel] with kind = Instance |id |IRI (URI), Custom |mandatory
 | |idShort |string a|
 recommended
 
@@ -1224,8 +1224,8 @@ Table 5 describes the different scopes of an event.
 |*Event attached to ...* |*Scope*
 |xref:AssetAdministrationShell[AssetAdministrationShell] |This event monitors/represents all logical elements of an Administration Shell, such as _AssetAdministrationShell, AssetInformation, Submodels_.
 |xref:Submodel[Submodel] |This event monitors/represents all logical elements of the respective _Submodel_ and all logical dependents.
-|SubmodelElementList and SubmodelElementCollection and Entity |This event monitors/represents all logical elements of the respective _SubmodelElementCollection, SubmodelElementList or Entity_ and all logical dependents (value or statement resp.).
-|SubmodelElement (others) |This event monitors/represents a single atomic _SubmodelElement_, e.g. a data element which might include the contents of a _Blob_ or _File_.
+|xref:SubmodelElementList[SubmodelElementList] and xref:SubmodelElementCollection[SubmodelElementCollection] and xref:Entity[Entity] |This event monitors/represents all logical elements of the respective _SubmodelElementCollection, SubmodelElementList or Entity_ and all logical dependents (value or statement resp.).
+|xref:SubmodelElement[SubmodelElement] (others) |This event monitors/represents a single atomic _SubmodelElement_, e.g. a data element which might include the contents of a _Blob_ or _File_.
 |===
 
 == The Information Metamodel of the Asset Administration Shell (normative)
@@ -2774,7 +2774,7 @@ Note: _Environment_ is not an identifiable or referable element. It is introduce
 |===
 |Attribute |Explanation |Type |Card.
 |assetAdministrationShell |Asset Administration Shell |xref:AssetAdministrationShell[AssetAdministrationShell] |0..*
-|submodel |xref:Submodel[Submodel] |Submodel |0..*
+|submodel |Submodel |xref:Submodel[Submodel] |0..*
 |conceptDescription |Concept description |xref:ConceptDescription[ConceptDescription] |0..*
 |===
 
