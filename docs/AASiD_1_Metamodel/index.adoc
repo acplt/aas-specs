@@ -1380,8 +1380,8 @@ Administrative metainformation for an element like version information
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|version |Version of the element |VersionType |0..1
-|revision |Revision of the element |RevisionType |0..1
+|version |Version of the element |xref:VersionType[VersionType] |0..1
+|revision |Revision of the element |xref:RevisionType[RevisionType] |0..1
 |creator |The subject ID of the subject responsible for making the element |Reference |0..1
 |templateId a|
 Identifier of the template that guided the creation of the element
@@ -1404,7 +1404,7 @@ Note 3: usage of the template ID is not restricted to submodel instances. The cr
 ====
 
 
-|Identifier |0..1
+|xref:Identifier[Identifier] |0..1
 |===
 
 ===== Has Data Specification Attributes
@@ -1476,14 +1476,14 @@ Note 2: extensions are proprietary, i.e. they do not support global interoperabi
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|name |Name of the extension |NameType |1
+|name |Name of the extension |xref:NameType[NameType] |1
 |valueType a|
 Data type of the value attribute of the extension
 
 Default: xs:string
 
 |DataTypeDefXsd |0..1
-|value |Value of the extension |ValueDataType |0..1
+|value |Value of the extension |xref:ValueDataType[ValueDataType] |0..1
 |refersTo |Reference to an element the extension refers to |ModelReference<Referable> |0..*
 |===
 
@@ -1610,7 +1610,7 @@ Note: some of the administrative information like the version number might need 
 
 
 |AdministrativeInformation |0..1
-|id |The globally unique identification of the element |Identifier |1
+|id |The globally unique identification of the element |xref:Identifier[Identifier] |1
 |===
 
 ===== Qualifiable Attributes
@@ -1674,9 +1674,9 @@ The qualifier kind describes the kind of qualifier that is applied to the elemen
 Default: ConceptQualifier
 
 |QualifierKind |0..1
-|type |The qualifier type describes the type of qualifier that is applied to the element. |QualifierType |1
+|type |The qualifier type describes the type of qualifier that is applied to the element. |xref:QualifierType[QualifierType] |1
 |valueType |Data type of the qualifier _value_ |DataTypeDefXsd |1
-|value |The qualifier value is the value of the qualifier. |ValueDataType |0..1
+|value |The qualifier value is the value of the qualifier. |xref:ValueDataType[ValueDataType] |0..1
 |valueId a|
 Reference to the global unique ID of a coded value
 
@@ -1766,7 +1766,7 @@ Note: The category is not identical to the semantic definition (_HasSemantics_) 
 ====
 
 
-|NameType |0..1
+|xref:NameType[NameType] |0..1
 |idShort a|
 In case of identifiables, this attribute is a short name of the element. In case of a referable, this ID is an identifying string of the element within its name space.
 
@@ -1776,8 +1776,8 @@ Note: if the element is a property and the property has a semantic definition (_
 ====
 
 
-|NameType |0..1
-|displayName |Display name; can be provided in several languages |MultiLanguageNameType |0..1
+|xref:NameType[NameType] |0..1
+|displayName |Display name; can be provided in several languages |xref:MultiLanguageNameType[MultiLanguageNameType] |0..1
 |description a|
 Description or comments on the element
 
@@ -1787,7 +1787,7 @@ If no description is defined, the definition of the concept description that def
 
 Additional information can be provided, e.g. if the element is qualified and which qualifier types can be expected in which context or which additional data specification templates.
 
-|MultiLanguageTextType |0..1
+|xref:MultiLanguageTextType[MultiLanguageTextType] |0..1
 |===
 
 Predefined categories are described in Table 6.
@@ -1901,7 +1901,7 @@ Identifier of the asset the Asset Administration Shell is representing
 
 This attribute is required as soon as the Asset Administration Shell is exchanged via partners in the life cycle of the asset. In a first phase of the life cycle, the asset might not yet have a global asset ID but already an internal identifier. The internal identifier would be modelled via "specificAssetId".
 
-|Identifier |0..1
+|xref:Identifier[Identifier] |0..1
 |specificAssetId |Additional domain-specific, typically proprietary identifier for the asset like serial number, manufacturer part ID, customer part IDs, etc |SpecificAssetId |0..*
 |assetType a|
 In case _AssetInformation/assetKind_ is applicable the _AssetInformation/assetType_ is the asset ID of the type asset of the asset under consideration as identified by _AssetInformation/globalAssetId_.
@@ -1912,7 +1912,7 @@ Note: in case _AssetInformation/assetKind_ is "Instance" then the AssetInformati
 ====
 
 
-|Identifier |0..1
+|xref:Identifier[Identifier] |0..1
 |defaultThumbnail |Thumbnail of the asset represented by the Asset Administration Shell; used as default. |Resource |0..1
 |===
 
@@ -1936,13 +1936,13 @@ Path and name of the resource (with file extension)
 
 The path can be absolute or relative.
 
-|PathType |1
+|xref:PathType[PathType] |1
 |contentType a|
 Content type of the content of the file
 
 The content type states which file extensions the file can have.
 
-|ContentType |0..1
+|xref:ContentType[ContentType] |0..1
 |===
 {empty}
 [cols="30%,70%",options="header",]
@@ -1972,8 +1972,8 @@ A specific asset ID describes a generic supplementary identifying attribute of t
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|name |Name of the asset identifier |LabelType |1
-|value |The value of the specific asset identifier with the corresponding name |Identifier |1
+|name |Name of the asset identifier |xref:LabelType[LabelType] |1
+|value |The value of the specific asset identifier with the corresponding name |xref:Identifier[Identifier] |1
 |externalSubjectId a|
 The unique ID of the (external) subject the specific asset ID _value_ belongs to or has meaning to
 
@@ -2111,7 +2111,7 @@ State of event
 Can be \{ on, off }
 
 |StateOfEvent |1
-|messageTopic |Information for the outer message infrastructure to schedule the event for the respective communication channel. |MessageTopicType |0..1
+|messageTopic |Information for the outer message infrastructure to schedule the event for the respective communication channel. |xref:MessageTopicType[MessageTopicType] |0..1
 |messageBroker a|
 Information about which outer message infrastructure shall handle messages for the _EventElement_; refers to a _Submodel,_ _SubmodelElementList_, _SubmodelElementCollection_ or _Entity_, which contains __DataElement__s describing the proprietary specification for the message broker
 
@@ -2204,7 +2204,7 @@ Note: it is recommended to use an external reference.
 
 
 |Reference |0..1
-|topic |Information for the outer message infrastructure to schedule the event for the respective communication channel |MessageTopicType |0..1
+|topic |Information for the outer message infrastructure to schedule the event for the respective communication channel |xref:MessageTopicType[MessageTopicType] |0..1
 |subjectId a|
 Subject, who/which initiated the creation
 
@@ -2216,7 +2216,7 @@ Note: this is an external reference.
 
 |Reference |0..1
 |timestamp |Timestamp in UTC, when this event was triggered |dateTime |1
-|payload |Event-specific payload |BlobType |0..1
+|payload |Event-specific payload |xref:BlobType[BlobType] |0..1
 |===
 
 For more information on the concept of subject, see Attribute Based Access Control (ABAC) link:#bib49[[49\]]. The assumption is that every subject has a unique identifier.
@@ -2246,7 +2246,7 @@ Note: in contrast to the file property, the file content is stored directly as v
 ====
 
 
-|BlobType |0..1
+|xref:BlobType[BlobType] |0..1
 |contentType a|
 Content type of the content of the blob.
 
@@ -2256,7 +2256,7 @@ Valid values are content types like "application/json", "application/xls", "imag
 
 The allowed values are defined as in RFC2046.
 
-|ContentType |1
+|xref:ContentType[ContentType] |1
 |===
 
 ===== Capability Attributes
@@ -2339,7 +2339,7 @@ An entity is a submodel element that is used to model entities.
 |Attribute |Explanation |Type |Card.
 |statement |Describes statements applicable to the entity by a set of submodel elements, typically with a qualified value |SubmodelElement |0..*
 |entityType |Describes whether the entity is a co-managed entity or a self-managed entity |EntityType |1
-|globalAssetId |Global identifier of the asset the entity is representing |Identifier |0..1
+|globalAssetId |Global identifier of the asset the entity is representing |xref:Identifier[Identifier] |0..1
 |specificAssetId |Reference to a specific asset ID representing a supplementary identifier of the asset represented by the Asset Administration Shell |SpecificAssetId |0..*
 |===
 {empty}
@@ -2400,8 +2400,8 @@ Path and name of the file (with file extension)
 
 The path can be absolute or relative.
 
-|PathType |0..1
-|contentType |Content type of the content of the file |ContentType |1
+|xref:PathType[PathType] |0..1
+|contentType |Content type of the content of the file |xref:ContentType[ContentType] |1
 |===
 
 ===== Multi Language Property Attributes
@@ -2425,7 +2425,7 @@ A property is a data element that has a multi-language value.
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|value |The value of the property instance |MultiLanguageTextType |0..1
+|value |The value of the property instance |xref:MultiLanguageTextType[MultiLanguageTextType] |0..1
 |valueId a|
 Reference to the global unique ID of a coded value.
 
@@ -2512,7 +2512,7 @@ A property is a data element that has a single value.
 |===
 |Attribute |Explanation |Type |Card.
 |valueType |Data type of the value attribute |DataTypeDefXsd |1
-|value |The value of the property instance |ValueDataType |0..1
+|value |The value of the property instance |xref:ValueDataType[ValueDataType] |0..1
 |valueId a|
 Reference to the global unique ID of a coded value
 
@@ -2545,13 +2545,13 @@ The minimum value of the range
 
 If the min value is missing, the value is assumed to be negative infinite.
 
-|ValueDataType |0..1
+|xref:ValueDataType[ValueDataType] |0..1
 |max a|
 The maximum value of the range
 
 If the max value is missing, the value is assumed to be positive infinite.
 
-|ValueDataType |0..1
+|xref:ValueDataType[ValueDataType] |0..1
 |===
 
 ===== Reference Element Attributes
@@ -2866,7 +2866,7 @@ If _Key/type = FragmentReference,_ the key represents a bookmark or a similar lo
 In all other cases, the key references a model element of the same or another Asset Administration Shell. The name of the model element is explicitly listed.
 
 |KeyTypes |1
-|value |The key value, for example an IRDI or an URI |Identifier |1
+|value |The key value, for example an IRDI or an URI |xref:Identifier[Identifier] |1
 |===
 
 An example for using a _FragmentId_ as type of a key is a reference to an element within a file that is part of an Asset Administration Shell aasx package.
@@ -3413,7 +3413,7 @@ Note: see Clause 5.3.12.6 for constraints on types.
 [cols="13%,30%,57%",options="header",]
 |===
 |*Primitive* |*Definition* |*Value Examples*
-|BlobType a|
+|[[BlobType]]BlobType a|
 _base64binary_
 
 to represent file content (binaries and non-binaries)
@@ -3425,7 +3425,7 @@ a|
 
 pass:[MZ_________ÿÿ__¸_______@___________________________________€_____º__´	Í!¸_LÍ!This program cannot be run in DOS mode.$_______PE__L___Rö\^________à_]
 
-|ContentType a|
+|[[ContentType]]ContentType a|
 _string_ with max 100 and min 1 characters
 
 
@@ -3441,13 +3441,13 @@ application/pdf
 
 image/jpeg
 
-|Identifier |_string_ with max 2,000 and min 1 characters a|
+|[[Identifier]]Identifier |_string_ with max 2,000 and min 1 characters a|
 https://cust/123456
 
 0173-1#02-BAA120#008
 
-|LabelType |_string_ with max 64 and min 1 characters |"ABC1234"
-|LangStringSet a|
+|[[LabelType]]LabelType |_string_ with max 64 and min 1 characters |"ABC1234"
+|[[LangStringSet]]LangStringSet a|
 _Array of elements of type langString_
 
 
@@ -3499,21 +3499,21 @@ In JSON:
 
 ]
 
-|MessageTopicType |_string_ with max 255 and min 1 characters |
-|MultiLanguageNameType a|
+|[[MessageTopicType]]MessageTopicType |_string_ with max 255 and min 1 characters |
+|[[MultiLanguageNameType]]MultiLanguageNameType a|
 _LangStringSet_
 
 Each langString within the array of strings has a max of 1023 and a min of 1 characters (as for NameType).
 
 |_See LangStringSet_
-|MultiLanguageTextType a|
+|[[MultiLanguageTextType]]MultiLanguageTextType a|
 _LangStringSet_
 
 Each string within langString has a max of 1,023 and min of 1 characters.
 
 |_See LangStringSet_
-|NameType |_string_ with max 128 and min 1 characters |"ManufacturerPartId"
-|PathType a|
+|[[NameType]]NameType |_string_ with max 128 and min 1 characters |"ManufacturerPartId"
+|[[PathType]]PathType a|
 _Identifier_
 
 
@@ -3529,7 +3529,7 @@ file:c:/local/Specification.pdf
 
 file://host.example.com/path/to/file
 
-|RevisionType a|
+|[[RevisionType]]RevisionType a|
 _string_ with max 4 and min 1 characters
 
 following the following regular expression:
@@ -3543,12 +3543,12 @@ a|
 
 "567"
 
-|QualifierType |_NameType_ a|
+|[[QualifierType]]QualifierType |_NameType_ a|
 "ExpressionSemantic" (as specified in DIN SPEC 92000:2019-09, see link:#bib16[[16\]])
 
 "life cycle qual" (as specified in IEC 61360-7 - IEC/SC 3D - Common Data Dictionary (CDD - V2.0015.0004footnote:[https://cdd.iec.ch/cdd/common/iec61360-7.nsf/SearchFrameset?OpenFrameSet])
 
-|VersionType a|
+|[[VersionType]]VersionType a|
 _string_ with max 4 and min 1 characters
 
 following the following regular expression:
@@ -3560,7 +3560,7 @@ a|
 
 "9999"
 
-|ValueDataType |_any xsd atomic type as specified via DataTypeDefXsd_ a|
+|[[ValueDataType]]ValueDataType |_any xsd atomic type as specified via DataTypeDefXsd_ a|
 "This is a string value"
 
 10
@@ -3972,9 +3972,9 @@ Note: some of the administrative information like the version number might need 
 
 
 |AdministrativeInformation |0..1
-|id |The globally unique identification of the element |Identifier |1
+|id |The globally unique identification of the element |xref:Identifier[Identifier] |1
 |dataSpecificationContent |The content of the template without meta data |DataSpecificationContent |1
-|description |Description of how and in which context the data specification template is applicable; can be provided in several languages. |MultiLanguageTextType |0..1
+|description |Description of how and in which context the data specification template is applicable; can be provided in several languages. |xref:MultiLanguageTextType[MultiLanguageTextType] |0..1
 |===
 {empty}
 [cols="25%h,75%"]
@@ -5417,7 +5417,7 @@ Note: Security is still part of the Asset Administration Shell, but the Asset Ad
 |  |AssetKind/Instance |Updated description of value "Instance" of enumeration "AssetKind" conformant to IEC 63278-1
 |  |AssetKind/Type |Updated description of value "Type" of enumeration "AssetKind" conformant to IEC 63278-1
 |X |BasicEvent |Renamed to BasicEventElement and set to \<<Experimental>>
-|file:///C:/__localWork/Asset%20Administration%20Shell%20-%20Verwaltungsschale/Verwaltungsschale%20im%20Detail%20-%20part%201a%20V3.0/Change%202.0%20-%203.0.xlsx#RANGE!#REF![(x)link:#bib2[[2\]]] |BlobType |Primitive changed from "group of bytes" to Base64Binary
+|file:///C:/__localWork/Asset%20Administration%20Shell%20-%20Verwaltungsschale/Verwaltungsschale%20im%20Detail%20-%20part%201a%20V3.0/Change%202.0%20-%203.0.xlsx#RANGE!#REF![(x)link:#bib2[[2\]]] |xref:BlobType[BlobType |Primitive changed from "group of bytes" to Base64Binary
 |X |ConceptDictionary |Removed
 |X |Constraint |Abstract class removed. Formula now used in Security part only
 |x  |DataSpecification |No longer inherits from Identifiable. However, same attribute names and types
@@ -5441,7 +5441,7 @@ Formula now used in Security part only
  +
 Substituted by Identifiable/id
 |x |IdentifiableElements |Renamed to AasIdentifiables
-|x |Identifier a|
+|x |xref:Identifier[Identifier] a|
 Type changed
 
 Before struct class with two attributes: id and idType. Now string data type only.
@@ -5461,12 +5461,12 @@ The elements remain, except for new SubmodelElementList, and renamed submodel el
 |  |LocalKeyType |Enumeration removed because no Key/idType any longer
 |x |MimeType |Type name changed to ContentType
 |x |MultiLanguageProperty/value |Type changed from LangStringSet to MultiLanguageTextType, thus adding a length constraint
-|x |PathType |Same as Identifier, i.e. length constraint added
+|x |xref:PathType[PathType] |Same as Identifier, i.e. length constraint added
 |  |Property/valueType |Type changed from DataTypeDef to DataTypeDefXsd
 |x |Qualifiable/qualifier |Type changed from Constraint to Qualifier
 |  |Qualifier |No longer inherits from abstract class "Constraint"
 |  |Qualifier/valueType |Type changed from DataTypeDef to DataTypeDefXsd
-|x |QualifierType |Type changed from string to NameType (i.e. length constraint added)
+|x |xref:QualifierType[QualifierType] |Type changed from string to NameType (i.e. length constraint added)
 |  |Range/valueType |Type changed from DataTypeDef to DataTypeDefXsd
 |x |Referable/category a|
 Type changed from string to NameType (i.e. length constraint added)
@@ -5500,7 +5500,7 @@ Now part of AasSubmodelElements
 |  |RelationshipElement/first |Type changes from model reference Referable to Reference (global or model reference)
 |  |RelationshipElement/second |Type changes from model reference Referable to Reference (global or model reference)
 |file:///C:/__localWork/Asset%20Administration%20Shell%20-%20Verwaltungsschale/Verwaltungsschale%20im%20Detail%20-%20part%201a%20V3.0/Change%202.0%20-%203.0.xlsx#RANGE!B79[xlink:#bib1[[1\]]] |SubmodelElement/kind |Removed. SubmodelElement no longer inheritsfrom HasKind
-|  |ValueDataType |Before as specified via DataTypeDef, now any xsd atomic type as specified via DataTypeDefXsd
+|  |xref:ValueDataType[ValueDataType] |Before as specified via DataTypeDef, now any xsd atomic type as specified via DataTypeDefXsd
 | x |View |Removed
 |===
 
@@ -5539,7 +5539,7 @@ Type changed from dateTime to duration
 Type changed from dateTime to duration
 | |BasicEventElement/observed |Former name: BasicEvent/observed
 | |BasicEventElement/state |Was part of non-normative part before
-|  |ContentType |Former name: MimeType +
+|  |xref:ContentType[ContentType] |Former name: MimeType +
 Maximum length defined: 100 characters
 |  |DataTypeDefRdf |Enumeration for types of Rdf + added prefix rdf: to every value in enumeration
 |  |DataTypeDefXsd |Enumeration that corresponds to anySimpleTypes of XML Schema 1.0 +
@@ -5584,12 +5584,12 @@ Type changed from string to MessageTopicType (i.e. length constraint added, maxi
 |  |KeyTypes |Before: KeyElements +
  +
 New submodel element SubmodelElementList added, renamed submodel elements Event and BasicEvent to EventElement and BasicEventElement
-|  |LabelType |New string type with maximum 64 characters
-|  |MessageTopicType |New string type with maximum 255 characters
+|  |xref:LabelType[LabelType] |New string type with maximum 64 characters
+|  |xref:MessageTopicType[MessageTopicType] |New string type with maximum 255 characters
 | |ModellingKind |Renamed enumeration, before: ModelingKind
-|  |MultiLanguageNameType |Substitute for LangStringSet with short multi-language strings, maximum 64 characters
-|  |MultiLanguageTextType |Substitute for LangStringSet with long multi-language strings, maximum 64 characters
-|  |NameType |New string type with maximum 128 characters
+|  |xref:MultiLanguageNameType[MultiLanguageNameType] |Substitute for LangStringSet with short multi-language strings, maximum 64 characters
+|  |xref:MultiLanguageTextType[MultiLanguageTextType] |Substitute for LangStringSet with long multi-language strings, maximum 64 characters
+|  |xref:NameType[NameType] |New string type with maximum 128 characters
 |  |Qualifier/kind |New experimental attribute for Qualifier
 |  |QualifierKind |New enumeration for Qualifier/kind
 |  |Referable/displayName |New optional attribute for all referables
@@ -5775,8 +5775,8 @@ Smaller changes
 |x |BasicEventElement/messageTopic |Type changed from string to MessageTopicType (i.e. length constraint added, maximum 255 characters)
 |x |BasicEventElement/minInterval |Type changed from dateTime to duration
 |x |BasicEventElement/maxInterval |Type changed from dateTime to duration
-|(x)footnote:[Derived Schemata used Base64Binary and not hexBinary, therefore this change is considered to be backward compatible for most applications.] |BlobType |Primitive changed from "group of bytes" to Base64Binary
-| |ContentType |Maximum length defined: 100 characters
+|(x)footnote:[Derived Schemata used Base64Binary and not hexBinary, therefore this change is considered to be backward compatible for most applications.] |xref:BlobType[BlobType] |Primitive changed from "group of bytes" to Base64Binary
+| |xref:ContentType[ContentType] |Maximum length defined: 100 characters
 | |decimalBuildInTypes |Removed
 | |durationBuildInTypes |Removed
 |x |DataSpecification/description |Type changed from LangStringSet to MultiLanguageTextType; length constraint added
@@ -5795,13 +5795,13 @@ Smaller changes
 | |EventPayload/timestamp |Type changed from dateTimeStamp to dateTime because restriction to types of XML Schema 1.0 that does not contain dateTimeStamp. dateTimeStamp is a derived type of dateTime in XML Schema 1.1
 | |EventPayload/topic |Type changed from string to MessageTopicType (i.e. length constraint added, maximum 255 characters)
 |x |HasKind/kind |Type changed from ModelingKind to ModellingKind
-|x |Identifier |Maximum length defined: 2,000 characters
+|x |xref:Identifier[Identifier] |Maximum length defined: 2,000 characters
 |x |Key/value |Type changed from string to Identifier; length constraint added
 |x |MultiLanguageProperty/value |Type changed from LangStringSet to MultiLanguageTextType; length constraint added
-|x |PathType |Same as Identifier; length constraint added
+|x |xref:PathType[PathType] |Same as Identifier; length constraint added
 | |PrimitiveTypes |Removed
 | |Qualifier/kind |Set to \<<Experimental>>
-|x |QualifierType |Type changed from string to NameType; length constraint added
+|x |xref:QualifierType[QualifierType] |Type changed from string to NameType; length constraint added
 | |rdfBuildInTypes |Removed
 |x |Referable/category a|
 Type changed from string to NameType; length constraint added
@@ -5832,16 +5832,16 @@ Text how to select a suitable display name removed; now explained in Table 2
 | |AdministrativeInformation/templateId |New optional attribute
 | |AssetInformation/assetType |New optional attribute
 | |AssetKind/NotApplicable |New enumeration value
-| |LabelType |New string type with maximum 64 characters
-| |MessageTopicType |New string type with maximum 255 characters
+| |xref:LabelType[LabelType] |New string type with maximum 64 characters
+| |xref:MessageTopicType[MessageTopicType] |New string type with maximum 255 characters
 | |ModellingKind |Renamed enumeration, before: ModelingKind
-| |MultiLanguageNameType |Substitute for LangStringSet with short multi-language strings, maximum 64 characters
-| |MultiLanguageTextType |Substitute for LangStringSet with long multi-language strings, maximum 64 characters
-| |NameType |New string type with maximum 128 characters
+| |xref:MultiLanguageNameType[MultiLanguageNameType] |Substitute for LangStringSet with short multi-language strings, maximum 64 characters
+| |xref:MultiLanguageTextType[MultiLanguageTextType] |Substitute for LangStringSet with long multi-language strings, maximum 64 characters
+| |xref:NameType[NameType] |New string type with maximum 128 characters
 | |ReferenceTypes/ExternalReference |Enumeration value: before: GlobalReference
-| |RevisionType |New type for _AdministrativeInformation/version_ with length constraints and regular expression
+| |xref:RevisionType[RevisionType] |New type for _AdministrativeInformation/version_ with length constraints and regular expression
 | |ShortNameType |New string type with maximum 64 characters
-| |VersionType |New type for _AdministrativeInformation/revision_ with length constraints and regular expression
+| |xref:VersionType[VersionType] |New type for _AdministrativeInformation/revision_ with length constraints and regular expression
 |===
 
 .New, Changed or Removed Constraints
@@ -6012,7 +6012,7 @@ Removed
 Substituted by Identifiable/id
 
 |x |IdentifiableElements |Renamed to AasIdentifiables
-|x |Identifier a|
+|x |xref:Identifier[Identifier] a|
 Type changed
 
 Before struct class with two attributes: id and idType; now string data type only
@@ -6062,7 +6062,7 @@ Now part of AasSubmodelElements
 
 | |RelationshipElement/first |Type changes from model reference Referable to Reference (global or model reference)
 | |RelationshipElement/second |Type changes from model reference Referable to Reference (global or model reference)
-| |ValueDataType |Before as specified via DataTypeDef, now any xsd atomic type as specified via DataTypeDefXsd
+| |xref:ValueDataType[ValueDataType] |Before as specified via DataTypeDef, now any xsd atomic type as specified via DataTypeDefXsd
 | x |View |Removed
 |===
 
@@ -6105,7 +6105,7 @@ Was part of non-normative part before
 | |BasicEventElement/maxInterval |Was part of non-normative part before
 | |BasicEventElement/observed |Was part of non-normative part before
 | |BasicEventElement/state |Was part of non-normative part before
-| |ContentType |Former name: MimeType
+| |xref:ContentType[ContentType] |Former name: MimeType
 | |dateTimeStamp |New data type for metamodel as used in EventPayload
 | |DataTypeDefRdf |Enumeration for types of Rdf + prefix rdf: added to every value in enumeration
 | |DataTypeDefXsd a|
@@ -6442,7 +6442,7 @@ Removed
 Substituted by Identifiable/id
 
 |(x) |IdentifiableElements |Renamed to AasIdentifiables
-|x |Identifier a|
+|x |xref:Identifier[Identifier] a|
 Type changed
 
 Before struct class with two attributes: id and idType; now string data type only
@@ -6491,7 +6491,7 @@ Now part of AasSubmodelElements
 
 | |RelationshipElement/first |Type changes from model reference Referable to Reference (global or model reference)
 | |RelationshipElement/second |Type changes from model reference Referable to Reference (global or model reference)
-| |ValueDataType |Before as specified via DataTypeDef, now any xsd atomic type as specified via DataTypeDefXsd + Prefix xs: added to every value in list
+| |xref:ValueDataType[ValueDataType] |Before as specified via DataTypeDef, now any xsd atomic type as specified via DataTypeDefXsd + Prefix xs: added to every value in list
 |x |ValueList/valueReferencePairType |Bugfix: renamed to ValueList/valueReferencePairs
 | x |View |removed
 |===
@@ -6521,7 +6521,7 @@ Before: Identifiables
 | |BasicEventElement/maxInterval |
 | |BasicEventElement/observed |Former name: BasicEvent/observed
 | |BasicEventElement/state |
-| |ContentType |Former name: MimeType
+| |xref:ContentType[ContentType] |Former name: MimeType
 | |DataTypeDefRdf |Enumeration for types of Rdf + prefix rdf: added to every value in enumeration
 | |DataTypeDefXsd |Enumeration consisting of enumerations decimalBuildInTypes, durationBuildInTypes, PrimitiveTypes that correspond to anySimpleTypes of xsd. + prefix xs: added to every value in enumeration
 | |dateTimeStamp |New data type for metamodel as used in EventPayload
@@ -7150,7 +7150,7 @@ Type changed from AnySimpleTypeDef to ValueDataType
 |KeyElements/FragmentReference |New value FragmentReference as part of KeyElements Enumeration
 |LocalKeyType |Is a subset of KeyType Enumeration
 |LocalKeyType/FragmentId |New value for KeyType Enumeration (via subset LocalKeyType)
-|LangStringSet |New type, used for example in MultiLanguageProperty
+|xref:LangStringSet[LangStringSet] |New type, used for example in MultiLanguageProperty
 |LevelType |New enumeration type
 |ModellingKind |New enumeration type
 |MultiLanguageProperty |New submodel element
@@ -7161,7 +7161,7 @@ Type changed from AnySimpleTypeDef to ValueDataType
 |ReferableElements/Event |New enumeration value
 |ReferableElements/MultiLanguageProperty |New enumeration value
 |ReferableElements/Range |New enumeration value
-|ValueDataType |New type, used for example for Property value
+|xref:ValueDataType[ValueDataType] |New type, used for example for Property value
 |ValueList |New class
 |ValueReferencePairType |New class
 |===
