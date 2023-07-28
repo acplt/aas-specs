@@ -20,6 +20,12 @@ a:hover, a:focus {
   color: #ff500f;
 }
 
+/*Details*/
+#header .details {
+  color: #ff500f;
+}
+
+
 /*Headers*/
 
 #header > h1:first-child {

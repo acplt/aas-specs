@@ -3,7 +3,12 @@
 :stylesheet: ../style.css
 :nofooter:
 
-= Specification of the Asset Administration Shell. Part 5: Package File Format (AASX)
+= Part 5: Package File Format (AASX)
+:author: IDTA
+:version-label: Number
+:revnumber: 01005
+:revdate: April 2023
+:revremark: Specification of the Asset Administration Shell
 
 == Preamble
 
