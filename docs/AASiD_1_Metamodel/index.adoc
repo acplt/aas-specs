@@ -1375,7 +1375,7 @@ Administrative metainformation for an element like version information
 
 [.underline]#Constraint AASd-005:# If _AdministrativeInformation_/version is not specified, _AdministrativeInformation/revision_ shall also be unspecified. This means that a revision requires a version. If there is no version, there is no revision. Revision is optional.
 
-|Inherits from: |HasDataSpecification
+|Inherits from: |xref:HasDataSpecification[HasDataSpecification]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -1471,7 +1471,7 @@ Note 2: extensions are proprietary, i.e. they do not support global interoperabi
 |===
 |Class: |[[Extension]]Extension
 |Explanation: |Single extension of an element
-|Inherits from: |HasSemantics
+|Inherits from: |xref:HasSemantics[HasSemantics]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -1484,7 +1484,7 @@ Default: xs:string
 
 |xref:DataTypeDefXsd[DataTypeDefXsd]|0..1
 |value |Value of the extension |xref:ValueDataType[ValueDataType] |0..1
-|refersTo |Reference to an element the extension refers to |ModelReference<Referable> |0..*
+|refersTo |Reference to an element the extension refers to |ModelReference<xref:Referable[Referable]> |0..*
 |===
 
 .Figure 16 Metamodel of HasKind
@@ -1598,7 +1598,7 @@ Note: see Clause 5.3.12.2 for constraints related to identifiables.
 
 
 
-|Inherits from: |Referable
+|Inherits from: |xref:Referable[Referable]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -1666,7 +1666,7 @@ A qualifier is essentially a type-value-pair. Depending on the kind of qualifier
 [.underline]#Constraint AASd-020#: The value of _Qualifier/value_ shall be consistent with the data type as defined in _Qualifier/valueType_.
 
 
-|Inherits from: |HasSemantics
+|Inherits from: |xref:HasSemantics[HasSemantics]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -1758,7 +1758,7 @@ Note 2: see Clause 5.3.12.2 for constraints related to referables.
 [.underline]#Constraint AASd-002:# _idShort_ of __Referable__s shall only feature letters, digits, underscore ("_"); starting mandatory with a letter, i.e. [a-zA-Z][a-zA-Z0-9_]*.
 
 
-|Inherits from: |HasExtensions
+|Inherits from: |xref:HasExtensions[HasExtensions]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -1853,12 +1853,12 @@ The _derivedFrom_ attribute is used to establish a relationship between two Asse
 |===
 |Class: |[[AssetAdministrationShell]]AssetAdministrationShell
 |Explanation: |An Asset Administration Shell
-|Inherits from: |Identifiable; HasDataSpecification
+|Inherits from: |xref:Identifiable[Identifiable; HasDataSpecification]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|derivedFrom |The reference to the Asset Administration Shell, which the Asset Administration Shell was derived from |ModelReference<AssetAdministrationShell> |0..1
+|derivedFrom |The reference to the Asset Administration Shell, which the Asset Administration Shell was derived from |ModelReference<xref:AssetAdministrationShell[AssetAdministrationShell]> |0..1
 |assetInformation |Meta information about the asset the Asset Administration Shell is representing |xref:AssetInformation[AssetInformation] |1
 |submodel a|
 Reference to a submodel of the Asset Administration Shell
@@ -1869,7 +1869,7 @@ The asset of an Asset Administration Shell is typically described by one or more
 
 Temporarily, no submodel might be assigned to the Asset Administration Shell.
 
-|ModelReference<Submodel> |0..*
+|ModelReference<xref:Submodel[Submodel]> |0..*
 |===
 
 ==== Asset Information Attributes
@@ -1976,7 +1976,7 @@ A specific asset ID describes a generic supplementary identifying attribute of t
 [.underline]#Constraint AASd-133#: _SpecificAssetId/externalSubjectId_ shall be a global reference, i.e. _Reference/type_ _= ExternalReference_.
 
 
-|Inherits from: |HasSemantics
+|Inherits from: |xref:HasSemantics[HasSemantics]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2033,7 +2033,7 @@ A submodel defines a specific aspect of the asset represented by the Asset Admin
 A submodel is used to structure the digital representation and technical functionality of an Administration Shell into distinguishable parts. Each submodel refers to a well-defined domain or subject matter. Submodels can become standardized and, in turn, submodel templates.
 
 
-|Inherits from: |Identifiable; HasKind; HasSemantics; Qualifiable; HasDataSpecification
+|Inherits from: |xref:Identifiable[Identifiable]; xref:HasKind[HasKind]; xref:HasSemantics[HasSemantics]; xref:Qualifiable[Qualifiable]; xref:HasDataSpecification[HasDataSpecification]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2056,7 +2056,7 @@ Submodel elements may also have defined data specification templates. A template
 |===
 |Class: |[[SubmodelElement]]SubmodelElement \<<abstract>>
 |Explanation: |A submodel element is an element suitable for the description and differentiation of assets.
-|Inherits from: |Referable; HasSemantics; Qualifiable; HasDataSpecification
+|Inherits from: |xref:Referable[Referable]; xref:HasSemantics[HasSemantics]; xref:Qualifiable[Qualifiable]; xref:HasDataSpecification[HasDataSpecification]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2085,7 +2085,7 @@ An annotated relationship is a relationship similar to a ternary association in 
 |===
 |Class: |[[AnnotatedRelationshipElement]]AnnotatedRelationshipElement
 |Explanation: |An annotated relationship element is a relationship element that can be annotated with additional data elements.
-|Inherits from: |RelationshipElement
+|Inherits from: |xref:RelationshipElement[RelationshipElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2102,12 +2102,12 @@ image:media/media/image30.png[media/media/image30]
 |===
 |Class: |[[BasicEventElement]]BasicEventElement \<<Experimental>>
 |Explanation: |A basic event element
-|Inherits from: |EventElement
+|Inherits from: |xref:EventElement[EventElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|observed |Reference to a referable, e.g. a data element or a submodel that is being observed |ModelReference<Referable> |1
+|observed |Reference to a referable, e.g. a data element or a submodel that is being observed |ModelReference<xref:Referable[Referable]> |1
 |Direction a|
 Direction of event
 
@@ -2130,7 +2130,7 @@ Note: this proprietary specification could be standardized by using respective s
 ====
 
 
-|ModelReference<Referable> |0..1
+|ModelReference<xref:Referable[Referable]> |0..1
 |lastUpdate |Timestamp in UTC, when the last event was received (input direction) or sent (output direction) |dateTime |0..1
 |minInterval a|
 For input direction reports on the maximum frequency, the software entity behind the respective referable can handle input events.
@@ -2197,7 +2197,7 @@ image:media/media/image31.png[media/media/image31]
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|source |Reference to the source event element |ModelReference<EventElement> |1
+|source |Reference to the source event element |ModelReference<xref:EventElement[EventElement]> |1
 |sourceSemanticId a|
 semanticId of the source event element, if available
 
@@ -2208,7 +2208,7 @@ Note: it is recommended to use an external reference.
 
 
 |xref:Reference[Reference] |0..1
-|observableReference |Reference to the referable, which defines the scope of the event. |ModelReference<Referable> |1
+|observableReference |Reference to the referable, which defines the scope of the event. |ModelReference<xref:Referable[Referable]> |1
 |observableSemanticId a|
 semanticId of the referable, which defines the scope of the event, if available.
 
@@ -2247,7 +2247,7 @@ For information on content type, see Clause 5.3.7.9 on submodel element "File".
 |===
 |Class: |[[Blob]]Blob
 |Explanation: |A Blob is a data element representing a file that is contained in the value attribute with its source code.
-|Inherits from: |DataElement
+|Inherits from: |xref:DataElement[DataElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2289,7 +2289,7 @@ Note: the _semanticId_ of a capability is typically an ontology, which enables r
 |===
 |Class: |[[Capability]]Capability
 |Explanation: |A capability is the implementation-independent description of the potential of an asset to achieve a certain effect in the physical or virtual world.
-|Inherits from: |SubmodelElement
+|Inherits from: |xref:SubmodelElement[SubmodelElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2324,7 +2324,7 @@ Note: categories are deprecated and should no longer be used.
 
 
 
-|Inherits from: |SubmodelElement
+|Inherits from: |xref:SubmodelElement[SubmodelElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2347,7 +2347,7 @@ An entity is a submodel element that is used to model entities.
 [.underline]#Constraint AASd-014:# Either the attribute _globalAssetId_ or _specificAssetId_ of an _Entity_ must be set if _Entity/entityType_ is set to "_SelfManagedEntity_". Otherwise, they do not exist.
 
 
-|Inherits from: |SubmodelElement
+|Inherits from: |xref:SubmodelElement[SubmodelElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2384,7 +2384,7 @@ image:media/media/image36.png[media/media/image36]
 |===
 |Class: |[[EventElement]]EventElement \<<abstract>> \<<Experimental>>
 |Explanation: |An event element
-|Inherits from: |SubmodelElement
+|Inherits from: |xref:SubmodelElement[SubmodelElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2408,7 +2408,7 @@ Note: for information on handling supplementary external files in exchanging Ass
 |===
 |Class: |[[File]]File
 |Explanation: |A file is a data element that represents an address to a file (a locator). The value is a URI that can represent an absolute or relative path.
-|Inherits from: |DataElement
+|Inherits from: |xref:DataElement[DataElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2438,7 +2438,7 @@ A property is a data element that has a multi-language value.
 [.underline]#Constraint AASd-012#: if both the _MultiLanguageProperty/value_ and the _MultiLanguageProperty/valueId_ are present, the meaning must be the same for each string in a specific language, as specified in _MultiLanguageProperty/valueId_.
 
 
-|Inherits from: |DataElement
+|Inherits from: |xref:DataElement[DataElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2470,7 +2470,7 @@ An operation is a submodel element with input and output variables.
 [.underline]#Constraint AASd-134:# For an _Operation,_ the _idShort_ of all _inputVariable/value_, _outputVariable/value,_ and _inoutputVariable/value_ shall be unique.
 
 
-|Inherits from: |SubmodelElement
+|Inherits from: |xref:SubmodelElement[SubmodelElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2524,7 +2524,7 @@ A property is a data element that has a single value.
 [.underline]#Constraint AASd-007:# If both the _Property/value_ and the _Property/valueId_ are present, the value of _Property/value_ needs to be identical to the value of the referenced coded value in _Property/valueId_.
 
 
-|Inherits from: |DataElement
+|Inherits from: |xref:DataElement[DataElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2552,7 +2552,7 @@ image:media/media/image41.png[media/media/image41]
 |===
 |Class: |[[Range]]Range \<<Experimental>>
 |Explanation: |A range data element is a data element that defines a range with min and max.
-|Inherits from: |DataElement
+|Inherits from: |xref:DataElement[DataElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2581,7 +2581,7 @@ image:media/media/image42.png[media/media/image42]
 |===
 |Class: |[[ReferenceElement]]ReferenceElement
 |Explanation: |A reference element is a data element that defines a logical reference to another element within the same or another Asset Administration Shell or a reference to an external object or entity.
-|Inherits from: |DataElement
+|Inherits from: |xref:DataElement[DataElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2600,7 +2600,7 @@ image:media/media/image43.png[media/media/image43]
 |===
 |Class: |[[RelationshipElement]]RelationshipElement
 |Explanation: |A relationship element is used to define a relationship between two elements being either referable (model reference) or external (external reference).
-|Inherits from: |SubmodelElement
+|Inherits from: |xref:SubmodelElement[SubmodelElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2634,7 +2634,7 @@ Note: the elements within a submodel element collection are not ordered. Every e
 |===
 |Class: |[[SubmodelElementCollection]]SubmodelElementCollection
 |Explanation: |A submodel element collection is a kind of struct, i.e. a logical encapsulation of multiple named values.
-|Inherits from: |SubmodelElement
+|Inherits from: |xref:SubmodelElement[SubmodelElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2686,7 +2686,7 @@ The numbering starts with Zero (0).
 [.underline]#Constraint AASd-109:# If _SubmodelElementList/typeValueListElement_ is equal to _Property_ or _Range,_ _SubmodelElementList/valueTypeListElement_ shall be set and all first level child elements in the _SubmodelElementList_ shall have the value type as specified in _SubmodelElementList/valueTypeListElement_.
 
 
-|Inherits from: |SubmodelElement
+|Inherits from: |xref:SubmodelElement[SubmodelElement]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2726,7 +2726,7 @@ The semantics of a property or other elements that may have a semantic descripti
 The description of the concept should follow a standardized schema (realized as data specification template).
 
 
-|Inherits from: |Identifiable; HasDataSpecification
+|Inherits from: |xref:Identifiable[Identifiable]; xref:HasDataSpecification[HasDataSpecification]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -2768,7 +2768,7 @@ Note: _Environment_ is not an identifiable or referable element. It is introduce
 |===
 |Class: |[[Environment]]Environment
 |Explanation: |Container for the sets of different identifiables
-|Inherits from: |Reference
+|Inherits from: |xref:Reference[Reference]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
@@ -5033,11 +5033,11 @@ Note 3: optional lists, i.e. attributes with cardinality > 1 and minimum 0, are 
 
 [.underline]#Examples for valid model references#
 
-If class type equal to "ModelReference<Submodel>", the following reference would be a valid reference (using the text serialization as defined in Clause 7.2.3):
+If class type equal to "ModelReference<xref:Submodel[Submodel]>", the following reference would be a valid reference (using the text serialization as defined in Clause 7.2.3):
 
 *(Submodel)https://example.com/aas/1/1/1234859590*
 
-If class type equal to "ModelReference<Referable>", the following references would be valid references (using the text serialization as defined in Clause 7.2.3):
+If class type equal to "ModelReference<xref:Referable[Referable]>", the following references would be valid references (using the text serialization as defined in Clause 7.2.3):
 
 *(Submodel)https://example.com/aas/1/1/1234859590*
 
@@ -5045,11 +5045,11 @@ If class type equal to "ModelReference<Referable>", the following references wou
 
 *(Submodel)https://example.com/aas/1/1/1234859590, (File)myDocument*
 
-This would be an invalid reference for "ModelReference<Referable>", instead type "Reference" shall be used:
+This would be an invalid reference for "ModelReference<xref:Referable[Referable]>", instead type "Reference" shall be used:
 
 *(Submodel)https://example.com/aas/1/1/1234859590, (File)myDocument (FragmentReference)Hints*
 
-This would be an invalid reference for "ModelReference<Submodel>"
+This would be an invalid reference for "ModelReference<xref:Submodel[Submodel]>"
 
 *(Submodel)https://example.com/aas/1/1/1234859590, (Property)temperature*
 
@@ -6029,7 +6029,7 @@ Note: ReferableElements was substituted by AasSubmodelElements and Aas Identifia
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V2.0.1* |*Comment*
 | |xref:AdministrativeInformation[AdministrativeInformation] |Bugfix: Stereotype "DataType" added
-| |AnnotatedRelationship/annotation |Bugfix: Type changed from ModelReference<DataElement> to DataElement
+| |AnnotatedRelationship/annotation |Bugfix: Type changed from ModelReference<xref:DataElement[DataElement]> to DataElement
 | |anySimpleTypeDef |Type removed, was no longer used in any class definition, was mentioned in text only
 |x |Asset |Removed, asset referenced via AssetInformation/globalAssetId only
 |x |AssetAdministrationShell/asset |Removed, substituted by AssetAdministrationShell/assetInformation (no reference any longer, instead now aggregation)
@@ -6461,7 +6461,7 @@ Bugfixes:
 |===
 |*nc* |*V3.0RC02 Change w.r.t. V3.0RC01* |*Comment*
 | |xref:AdministrativeInformation[AdministrativeInformation] |Bugfix: Stereotype "DataType" added
-| |AnnotatedRelationship/annotation |Type changed from ModelReference<DataElement> to DataElement
+| |AnnotatedRelationship/annotation |Type changed from ModelReference<xref:DataElement[DataElement]> to DataElement
 |x |Asset |Removed, asset referenced via globalAssetId only
 |x |AssetAdministrationShell/security a|
 Removed
@@ -6489,7 +6489,7 @@ Bugfix:
 Type change from reference of Reference to Reference (from Reference* to Reference)
 
 |x |Event |Renamed to EventElement
-|x |Extension/refersTo |Type changed from Reference to ModelReference<Referable>
+|x |Extension/refersTo |Type changed from Reference to ModelReference<xref:Referable[Referable]>
 |x |File/mimeType |Renamed to contentType + Type name changed from MimeType to ContentType
 |x |Formula |Now abstract class now used in Security part only
 |x |Formula/dependsOn |Removed since formula language not yet defined
