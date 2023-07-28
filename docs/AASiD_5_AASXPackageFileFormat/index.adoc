@@ -392,8 +392,8 @@ It is the entry point for all aas specific relationships and files inside the pa
 {empty}
 [cols="30%h,70%"]
 |===
-|*Relationship Type* | |
-|*Source File of Relationship Type:* |*<rel>/digital-signature/origin* |
+|*Relationship Type* |
+|*Source File of Relationship Type:* |*<rel>/digital-signature/origin*
 |*Namespace:* |*<rel>* |
 |===
 [cols="30%,10%,60%", options="header"]
@@ -412,8 +412,8 @@ Note: see Clause 5.5 on digital signatures for more information.
 {empty}
 [cols="30%h,70%"]
 |===
-|*Relationship Type* | |
-|*Source File of Relationship Type:* |*<rel>/digital-signature/signature* |
+|*Relationship Type* |
+|*Source File of Relationship Type:* |*<rel>/digital-signature/signature*
 |*Namespace:* |*<rel>* |
 |===
 [cols="30%,10%,60%", options="header"]
@@ -432,8 +432,8 @@ Note: see Clause 5.5 on digital signatures for more information.
 {empty}
 [cols="30%h,70%"]
 |===
-|*Relationship Type* | |
-|*Source File of Relationship Type:* |*<rel_aas>/aasx-origin* |
+|*Relationship Type* |
+|*Source File of Relationship Type:* |*<rel_aas>/aasx-origin*
 |*Namespace:* |*<rel_aas>* |
 |===
 [cols="30%,10%,60%", options="header"]
@@ -450,8 +450,8 @@ Typical formats contained are XML and/or JSON.
 {empty}
 [cols="30%h,70%"]
 |===
-|*Relationship Type* | |
-|*Source File of Relationship Type:* |*<rel_aas>/aas-spec* |
+|*Relationship Type* |
+|*Source File of Relationship Type:* |*<rel_aas>/aas-spec*
 |*Namespace:* |*<rel_aas>* |
 |===
 [cols="30%,10%,60%", options="header"]
