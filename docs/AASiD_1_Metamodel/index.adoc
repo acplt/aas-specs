@@ -4449,7 +4449,6 @@ Additional parts of the document series cover (see link:#bib37[[37\]]):
 * predefined data specification templates (Part 3 series), for example for concept descriptions of properties conformant to IEC61360 (Part 3a),
 * the infrastructure, which hosts and interconnects multiple Asset Administration Shells, implementing registry, discovery services, endpoint handling, and more,
 * security aspects including access control, Part 4.
-* {blank}
 
 == Concepts of the Administration Shell
 
