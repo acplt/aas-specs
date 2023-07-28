@@ -90,5 +90,21 @@ def convert_spec_part_5():
     utils.write_file(spec_file, content)
 
 
+def manual_fixes():
+    # Search for tables with complex structure and split them (class tables, enumeration tables)
+    # Search for "\|\=\=\=\n\n\[cols\=" and place "{empty}" between tables which should be splitted by a blank line
+    # Search for "image:media.*].*". These are places where text directly follows images. Add a blank line after image.
+
+    ## Add refs of types
+    # Place tags in tables
+    # Search for
+    # \|BlobType |\|ContentType |\|Identifier |\|LabelType |\|LangStringSet |\|MessageTopicType |\|MultiLanguageNameType |\|MultiLanguageTextType |\|NameType |\|PathType |\|RevisionType |\|QualifierType |\|VersionType |\|ValueDataType
+    # Class: \ |CLASSNAME
+    # Inherit from: \ |CLASSNAME
+    # Enumeration: \ |CLASSNAME
+    # replace with "xref: BlobType[BlobType]"
+    pass
+
+
 if __name__ == '__main__':
     convert_spec_part_5()
