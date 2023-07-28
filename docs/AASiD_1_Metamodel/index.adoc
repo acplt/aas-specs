@@ -1420,7 +1420,7 @@ image:media/media/image15.png[media/media/image15]
 |===
 [cols="25%,40%,25%,10%",options="header"]
 |===
-|Attribute |Explanation |Type |Card. |
+|Attribute |Explanation |Type |Card.
 |dataSpecification a|
 External reference to the data specification template used by the element
 
