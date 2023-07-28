@@ -1,11 +1,11 @@
 :stylesheet: style.css
 :nofooter:
 
-= Specifications of the Asset Administration Shell
+= Asset Administration Shell Specifications
 
-This is documentation of the AAS V3.0.
+This documentation covers the AAS V3.0 specifications.
 
-We generated the HTML documentation for the following parts of the documentation:
+We have generated the HTML documentation for the following parts:
 
 == Specifications
 
