@@ -1482,7 +1482,7 @@ Data type of the value attribute of the extension
 
 Default: xs:string
 
-|DataTypeDefXsd |0..1
+|xref:DataTypeDefXsd[DataTypeDefXsd]|0..1
 |value |Value of the extension |xref:ValueDataType[ValueDataType] |0..1
 |refersTo |Reference to an element the extension refers to |ModelReference<Referable> |0..*
 |===
@@ -1511,7 +1511,7 @@ Kind of the element: either type or instance
 
 Default Value = _Instance_
 
-|ModellingKind |0..1
+|xref:ModellingKind[ModellingKind]|0..1
 |===
 
 The kind enumeration is used to denote whether an element is of kind _Template_ or _Instance_. It is used to distinguish between submodels and submodel templates.
@@ -1676,9 +1676,9 @@ The qualifier kind describes the kind of qualifier that is applied to the elemen
 
 Default: ConceptQualifier
 
-|QualifierKind |0..1
+|xref:QualifierKind[QualifierKind] |0..1
 |type |The qualifier type describes the type of qualifier that is applied to the element. |xref:QualifierType[QualifierType] |1
-|valueType |Data type of the qualifier _value_ |DataTypeDefXsd |1
+|valueType |Data type of the qualifier _value_ |xref:DataTypeDefXsd[DataTypeDefXsd] |1
 |value |The qualifier value is the value of the qualifier. |xref:ValueDataType[ValueDataType] |0..1
 |valueId a|
 Reference to the global unique ID of a coded value
@@ -1901,7 +1901,7 @@ Note: see Clause 5.3.12.5 for constraints related to asset information.
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|assetKind |Denotes whether the _Asset_ is of kind "Type" or "Instance" |AssetKind |1
+|assetKind |Denotes whether the _Asset_ is of kind "Type" or "Instance" |xref:AssetKind[AssetKind]|1
 |globalAssetId a|
 Identifier of the asset the Asset Administration Shell is representing
 
@@ -2113,13 +2113,13 @@ Direction of event
 
 Can be \{ input, output }
 
-|Direction |1
+|xref:Direction[Direction]|1
 |State a|
 State of event
 
 Can be \{ on, off }
 
-|StateOfEvent |1
+|xref:StateOfEvent[StateOfEvent]|1
 |messageTopic |Information for the outer message infrastructure to schedule the event for the respective communication channel. |xref:MessageTopicType[MessageTopicType] |0..1
 |messageBroker a|
 Information about which outer message infrastructure shall handle messages for the _EventElement_; refers to a _Submodel,_ _SubmodelElementList_, _SubmodelElementCollection_ or _Entity_, which contains __DataElement__s describing the proprietary specification for the message broker
@@ -2353,7 +2353,7 @@ An entity is a submodel element that is used to model entities.
 |===
 |Attribute |Explanation |Type |Card.
 |statement |Describes statements applicable to the entity by a set of submodel elements, typically with a qualified value |xref:SubmodelElement[SubmodelElement] |0..*
-|entityType |Describes whether the entity is a co-managed entity or a self-managed entity |EntityType |1
+|entityType |Describes whether the entity is a co-managed entity or a self-managed entity |xref:EntityType[EntityType]|1
 |globalAssetId |Global identifier of the asset the entity is representing |xref:Identifier[Identifier] |0..1
 |specificAssetId |Reference to a specific asset ID representing a supplementary identifier of the asset represented by the Asset Administration Shell |xref:SpecificAssetId[SpecificAssetId] |0..*
 |===
@@ -2529,7 +2529,7 @@ A property is a data element that has a single value.
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|valueType |Data type of the value attribute |DataTypeDefXsd |1
+|valueType |Data type of the value attribute |xref:DataTypeDefXsd[DataTypeDefXsd] |1
 |value |The value of the property instance |xref:ValueDataType[ValueDataType] |0..1
 |valueId a|
 Reference to the global unique ID of a coded value
@@ -2557,7 +2557,7 @@ image:media/media/image41.png[media/media/image41]
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
-|valueType |Data type of the min und max attributes |DataTypeDefXsd |1
+|valueType |Data type of the min und max attributes |xref:DataTypeDefXsd[DataTypeDefXsd] |1
 |min a|
 The minimum value of the range
 
@@ -2708,8 +2708,8 @@ Note: it is recommended to use an external reference.
 
 
 |xref:Reference[Reference] |0..1
-|typeValueListElement |The submodel element type of the submodel elements contained in the list |AasSubmodelElements |1
-|valueTypeListElement |The value type of the submodel element contained in the list |DataTypeDefXsd |0..1
+|typeValueListElement |The submodel element type of the submodel elements contained in the list |xref:AasSubmodelElements[AasSubmodelElements]|1
+|valueTypeListElement |The value type of the submodel element contained in the list |xref:DataTypeDefXsd[DataTypeDefXsd]|0..1
 |===
 
 ==== Concept Description Attributes
@@ -2820,7 +2820,7 @@ Type of the reference
 
 Denotes whether reference is an external reference or a model reference
 
-|ReferenceTypes |1
+|xref:ReferenceTypes[ReferenceTypes]|1
 |referredSemanticId a|
 Expected semantic ID of the referenced model element (_Reference/type=ModelReference_); there typically is no semantic ID for for the referenced object of external references _(Reference/type=ExternalReference)_.
 
@@ -2886,7 +2886,7 @@ If _Key/type = FragmentReference,_ the key represents a bookmark or a similar lo
 
 In all other cases, the key references a model element of the same or another Asset Administration Shell. The name of the model element is explicitly listed.
 
-|KeyTypes |1
+|xref:KeyTypes[KeyTypes]|1
 |value |The key value, for example an IRDI or an URI |xref:Identifier[Identifier] |1
 |===
 
@@ -5565,12 +5565,12 @@ Now part of AasSubmodelElements
 [cols="5%,41%,51%",options="header",]
 |===
 | |*New Elements V3.0 vs V2.0.1* |*Comment*
-|  |AasIdentifiables |New enumeration used for References, includes abstract Identifiable +
+|  |xref:AasIdentifiables[AasIdentifiables] |New enumeration used for References, includes abstract Identifiable +
  +
 Before: Identifiables
-|  |AasReferableNonIdentifiables |New enumeration used for References
-|  |AasReferables |New enumeration used for References, includes abstract Referable
-|  |AasSubmodelElements |New enumeration used for References +
+|  |xref:AasReferableNonIdentifiables[AasReferableNonIdentifiables] |New enumeration used for References
+|  |xref:AasReferables[AasReferables] |New enumeration used for References, includes abstract Referable
+|  |xref:AasSubmodelElements[AasSubmodelElements] |New enumeration used for References +
  +
 Before: ReferableElements
 |  |AdministrativeInformation/creator |New optional attribute
@@ -5598,15 +5598,15 @@ Type changed from dateTime to duration
 | |BasicEventElement/state |Was part of non-normative part before
 |  |xref:ContentType[ContentType] |Former name: MimeType +
 Maximum length defined: 100 characters
-|  |DataTypeDefRdf |Enumeration for types of Rdf + added prefix rdf: to every value in enumeration
-|  |DataTypeDefXsd |Enumeration that corresponds to anySimpleTypes of XML Schema 1.0 +
+|  |xref:DataTypeDefRdf[DataTypeDefRdf] |Enumeration for types of Rdf + added prefix rdf: to every value in enumeration
+|  |xref:DataTypeDefXsd[DataTypeDefXsd] |Enumeration that corresponds to anySimpleTypes of XML Schema 1.0 +
  +
 + added prefix xs: to every value in enumeration
 |  |dateTimeStamp |New data type for metamodel as used in EventPayload
 | |DataSpecification/administration |Was inherited before by Identifiable
 | |DataSpecification/id |Was inherited before by Identifiable
 | |DataSpecification/desciption |Was inherited before by Identifiable
-|  |Direction |New Enumeration for BasicEventElement
+|  |xref:Direction[Direction] |New Enumeration for BasicEventElement
 | |Entity/globalAssetId |Former Entity/asset was split into globalAssetId and specificAssetId
 |  |Entity/specificAssetId |Former Entity/asset was split into globalAssetId and specificAssetId
 |  |xref:Environment[Environment] |New class for entry point for Asset Administration Shells, submodels and concept descriptions.
@@ -5631,28 +5631,28 @@ Type changed from string to MessageTopicType (i.e. length constraint added, maxi
 | |Extension/valueType | 
 | |Extension/valueType | 
 |  |File/contentType |Fromer File/mimeType
-|  |FragmentKeys |New enumeration used for References
-|  |GenericFragmentKeys |New enumeration used for References
+|  |xref:FragmentKeys[FragmentKeys] |New enumeration used for References
+|  |xref:GenericFragmentKeys[GenericFragmentKeys] |New enumeration used for References
 |  |GenericGloballyIdentifiers |New enumeration used for References
-|  |GloballyIdentifiables |New enumeration used for References
+|  |xref:GloballyIdentifiables[GloballyIdentifiables] |New enumeration used for References
 |  |xref:HasExtensions[HasExtensions] |New abstract class, inherited by Referable
 |  |HasSemantics/supplementalSemanticId |New attribute
 |  |Identifiable/id |Substitute for Identifiable/identification
-|  |KeyTypes |Before: KeyElements +
+|  |xref:KeyTypes[KeyTypes] |Before: KeyElements +
  +
 New submodel element SubmodelElementList added, renamed submodel elements Event and BasicEvent to EventElement and BasicEventElement
 |  |xref:LabelType[LabelType] |New string type with maximum 64 characters
 |  |xref:MessageTopicType[MessageTopicType] |New string type with maximum 255 characters
-| |ModellingKind |Renamed enumeration, before: ModelingKind
+| |xref:ModellingKind[ModellingKind] |Renamed enumeration, before: ModelingKind
 |  |xref:MultiLanguageNameType[MultiLanguageNameType] |Substitute for LangStringSet with short multi-language strings, maximum 64 characters
 |  |xref:MultiLanguageTextType[MultiLanguageTextType] |Substitute for LangStringSet with long multi-language strings, maximum 64 characters
 |  |xref:NameType[NameType] |New string type with maximum 128 characters
 |  |Qualifier/kind |New experimental attribute for Qualifier
-|  |QualifierKind |New enumeration for Qualifier/kind
+|  |xref:QualifierKind[QualifierKind] |New enumeration for Qualifier/kind
 |  |Referable/displayName |New optional attribute for all referables
 |  |Reference/referredSemanticId |New optional attribute for Reference
 | |Reference/type |New mandatory attribute for Reference
-|  |ReferenceTypes |New enumeration for Reference/type
+|  |xref:ReferenceTypes[ReferenceTypes] |New enumeration for Reference/type
 |  |ReferenceTypes/ExternalReference |Enumeration value, was named GlobalReference before
 |  |xref:Resource[Resource] |new type for AssetInformation/defaultThumbnail
 |  |ShortNameType |New string type with maximum 64 characters
@@ -5660,7 +5660,7 @@ New submodel element SubmodelElementList added, renamed submodel elements Event 
 |  |SpecificAssetId/externalSubjectId |See Attribute Based Access Control (ABAC) for subject concept
 |  |SpecificAssetId/name |New type for AssetInformation/specificAssetId
 |  |SpecificAssetId/value |New type for AssetInformation/specificAssetId
-|  |StateOfEvent |New experimental enumeration for BasicEventElement
+|  |xref:StateOfEvent[StateOfEvent] |New experimental enumeration for BasicEventElement
 |  |SubmodelElementElements |Enumeration for submodel elements (split of ReferableElements)
 |  |xref:SubmodelElementList[SubmodelElementList] |Before SubmodelElementCollection was used for lists and collections
 |  |SubmodelElementList/orderRelevant |Similar to SubmodelElementCollection/ordered
@@ -5841,7 +5841,7 @@ Smaller changes
 |x |DateTypeDefXsd/dateTimeStamp |Removed since not part of XML Schema 1.0
 |x |DataTypeDefXsd/dayTimeDuration |Removed since not part of XML Schema 1.0
 |x |DataTypeDefXsd/yearMonthDuration |Removed since not part of XML Schema 1.0
-| |Direction |Set to \<<Experimental>>
+| |xref:Direction[Direction] |Set to \<<Experimental>>
 |x |Entity/globalAssetId |Type changed from Reference to Identifier
 |x |Extension/name |Type changed from string to NameType; length constraint added
 | |xref:EventElement[EventElement] |Set to \<<Experimental>>
@@ -5875,7 +5875,7 @@ Text how to select a suitable display name removed; now explained in Table 2
 |x |Referable/idShort |Type changed from string to NameType; length constraint added
 |x |ReferenceTypes/GlobalReference |Renamed to ExternalReference
 | |xref:Resource[Resource] |Stereotype \<<DataType>> removed.
-| |StateOfEvent |Set to \<<Experimental>>
+| |xref:StateOfEvent[StateOfEvent] |Set to \<<Experimental>>
 |x |SpecificAssetId/name |Type changed from string to LabelType (a string with length constraint)
 |x |SpecificAssetId/value |Type changed from string to Identifier (because of length constraint)
 |xfootnote:[Since _HasKind/kind_ had the default _Instance,_ this change has no impact if the attribute was omitted for submodel instances.] |SubmodelElement/kind |Removed. SubmodelElement does not inherit from HasKind any longer
@@ -5891,7 +5891,7 @@ Text how to select a suitable display name removed; now explained in Table 2
 | |AssetKind/NotApplicable |New enumeration value
 | |xref:LabelType[LabelType] |New string type with maximum 64 characters
 | |xref:MessageTopicType[MessageTopicType] |New string type with maximum 255 characters
-| |ModellingKind |Renamed enumeration, before: ModelingKind
+| |xref:ModellingKind[ModellingKind] |Renamed enumeration, before: ModelingKind
 | |xref:MultiLanguageNameType[MultiLanguageNameType] |Substitute for LangStringSet with short multi-language strings, maximum 64 characters
 | |xref:MultiLanguageTextType[MultiLanguageTextType] |Substitute for LangStringSet with long multi-language strings, maximum 64 characters
 | |xref:NameType[NameType] |New string type with maximum 128 characters
@@ -6137,8 +6137,8 @@ New enumeration used for References, includes abstract Identifiable
 
 Before: Identifiables
 
-| |AasReferableNonIdentifiables |New enumeration used for References
-| |AasReferables |New enumeration used for References, includes abstract Referable
+| |xref:AasReferableNonIdentifiables[AasReferableNonIdentifiables] |New enumeration used for References
+| |xref:AasReferables[AasReferables] |New enumeration used for References, includes abstract Referable
 |x |AssetAdministrationShell/assetInformation |substitute for AssetAdministrationShell/asset; no reference any longer, instead now aggregation
 | |xref:AssetInformation[AssetInformation] |with attributes/functionality from former class Asset, because not specific to Asset but to AAS
 | |AssetInformation/assetKind |Former Asset/assetKind
@@ -6164,13 +6164,13 @@ Was part of non-normative part before
 | |BasicEventElement/state |Was part of non-normative part before
 | |xref:ContentType[ContentType] |Former name: MimeType
 | |dateTimeStamp |New data type for metamodel as used in EventPayload
-| |DataTypeDefRdf |Enumeration for types of Rdf + prefix rdf: added to every value in enumeration
+| |xref:DataTypeDefRdf[DataTypeDefRdf] |Enumeration for types of Rdf + prefix rdf: added to every value in enumeration
 | |DataTypeDefXsd a|
 Enumeration consisting of enumerations
 
 decimalBuildInTypes, durationBuildInTypes, PrimitiveTypes that correspond to anySimpleTypes of xsd. + added prefix xs: to every value in enumeration
 
-| |Direction |New enumeration for BasicEventElement
+| |xref:Direction[Direction] |New enumeration for BasicEventElement
 | |xref:Environment[Environment] |New class for entry point for Asset Administration Shells, submodels and concept descriptions
 | |xref:EventElement[EventElement] |Former name: Event
 | |xref:EventPayload[EventPayload] |New class for event payload
@@ -6181,10 +6181,10 @@ decimalBuildInTypes, durationBuildInTypes, PrimitiveTypes that correspond to any
 | |EventPayload/subjectId |Was part of non-normative part before
 | |EventPayload/timestamp |Was part of non-normative part before
 | |xref:Extension[Extension] |New class, part of new abstract class HasExtensions
-| |FragmentKeys |New enumeration used for References
-| |GenericFragmentKeys |New enumeration used for References
+| |xref:FragmentKeys[FragmentKeys] |New enumeration used for References
+| |xref:GenericFragmentKeys[GenericFragmentKeys] |New enumeration used for References
 | |GenericGloballyIdentifiers |New enumeration used for References
-| |GloballyIdentifiables |New enumeration used for References
+| |xref:GloballyIdentifiables[GloballyIdentifiables] |New enumeration used for References
 | |xref:HasExtensions[HasExtensions] |New abstract class, inherited by Referable
 | |HasSemantics/supplementalSemanticId |New attribute
 | |Identifiable/id |Substitute for Identifiable/identification
@@ -6195,14 +6195,14 @@ Before: KeyElements
 New submodel element SubmodelElementList added, submodel elements Event and BasicEvent to EventElement and BasicEventElement renamed
 
 | |Qualifier/kind |New attribute for Qualifier
-| |QualifierKind |New enumeration for Qualifier/kind
+| |xref:QualifierKind[QualifierKind] |New enumeration for Qualifier/kind
 |  |PrimitiveTypes |Enumeration for DataTypeDefXsd
 | |Referable/checksum |New optional attribute for all referables
 | |Referable/displayName |New optional attribute for all referables
 | |Reference/referredSemanticId |New optional attribute for Reference
 |x |Reference/type |New mandatory attribute for Reference
-| |ReferenceTypes |New enumeration for Reference/type
-| |StateOfEvent |New enumeration for BasicEventElement
+| |xref:ReferenceTypes[ReferenceTypes] |New enumeration for Reference/type
+| |xref:StateOfEvent[StateOfEvent] |New enumeration for BasicEventElement
 | |xref:SpecificAssetId[SpecificAssetId] |New type for AssetInformation/specificAssetId
 | |SpecificAssetId/name |New type for AssetInformation/specificAssetId
 | |SpecificAssetId/value |New type for AssetInformation/specificAssetId
@@ -6567,8 +6567,8 @@ New enumeration used for References, includes abstract Identifiable
 
 Before: Identifiables
 
-| |AasReferableNonIdentifiables |New enumeration used for References
-| |AasReferables |New enumeration used for References, includes abstract Referable
+| |xref:AasReferableNonIdentifiables[AasReferableNonIdentifiables] |New enumeration used for References
+| |xref:AasReferables[AasReferables] |New enumeration used for References, includes abstract Referable
 | |xref:BasicEventElement[BasicEventElement] |Former name: BasicEvent
 | |BasicEventElement/direction |
 | |BasicEventElement/lastUpdate |
@@ -6579,11 +6579,11 @@ Before: Identifiables
 | |BasicEventElement/observed |Former name: BasicEvent/observed
 | |BasicEventElement/state |
 | |xref:ContentType[ContentType] |Former name: MimeType
-| |DataTypeDefRdf |Enumeration for types of Rdf + prefix rdf: added to every value in enumeration
-| |DataTypeDefXsd |Enumeration consisting of enumerations decimalBuildInTypes, durationBuildInTypes, PrimitiveTypes that correspond to anySimpleTypes of xsd. + prefix xs: added to every value in enumeration
+| |xref:DataTypeDefRdf[DataTypeDefRdf] |Enumeration for types of Rdf + prefix rdf: added to every value in enumeration
+| |xref:DataTypeDefXsd[DataTypeDefXsd] |Enumeration consisting of enumerations decimalBuildInTypes, durationBuildInTypes, PrimitiveTypes that correspond to anySimpleTypes of xsd. + prefix xs: added to every value in enumeration
 | |dateTimeStamp |New data type for metamodel as used in EventPayload
 |  |decimalBuildInTypes |Enumeration for DataTypeDef
-| |Direction |New enumeration for BasicEventElement
+| |xref:Direction[Direction] |New enumeration for BasicEventElement
 |  |durationBuildInTypes |Enumeration for DataTypeDef
 | |xref:Environment[Environment] |New class for entry point for Asset Administration Shells, submodels and concept descriptions
 | |xref:EventElement[EventElement] |Former name: Event
@@ -6597,10 +6597,10 @@ Before: Identifiables
 | |EventPayload/timestamp |
 | |EventPayload/topic |
 | |File/contentType |Former name: mimeType
-| |FragmentKeys |New enumeration used for References
-| |GenericFragmentKeys |New enumeration used for References
+| |xref:FragmentKeys[FragmentKeys] |New enumeration used for References
+| |xref:GenericFragmentKeys[GenericFragmentKeys] |New enumeration used for References
 | |GenericGloballyIdentifiers |New enumeration used for References
-| |GloballyIdentifiables |New enumeration used for References
+| |xref:GloballyIdentifiables[GloballyIdentifiables] |New enumeration used for References
 | |HasSemantics/supplementalSemanticId |New attribute
 | |Identifiable/id |Substitute for Identifiable/identification
 | |KeyTypes a|
@@ -6613,13 +6613,13 @@ New submodel element SubmodelElementList added, renamed submodel elements Event 
 | |Reference/referredSemanticId |New optional attribute of Reference
 |  |PrimitiveTypes |Enumeration for DataTypeDefXsd
 | |Qualifier/kind |New attribute for Qualifier
-| |QualifierKind |New enumeration for Qualifier/kind
+| |xref:QualifierKind[QualifierKind] |New enumeration for Qualifier/kind
 | |Referable/checksum |
 | |xref:SpecificAssetId[SpecificAssetId] |Before: IdentifierKeyValuePair, was renamed
 | |SpecificAssetId/name |Before: IdentifierKeyValuePair/key, was renamed
 | |SpecificAssetId/value |Before: IdentifierKeyValuePair/value
 | |SpecificAssetId/externalSubjectId |Before: IdentifierKeyValuePair/externalSubjectId
-| |StateOfEvent |New enumeration for BasicEventElement
+| |xref:StateOfEvent[StateOfEvent] |New enumeration for BasicEventElement
 | |SubmodelElementElements |Enumeration for submodel elements (split of ReferableElements into SubmodelElementElements and IdentifiableElements)
 |  |xref:SubmodelElementList[SubmodelElementList] |Before SubmodelElementCollection was used for lists and structs
 | |SubmodelElementList/orderRelevant |Similar to SubmodelElementCollection/ordered
@@ -7192,7 +7192,7 @@ Type changed from AnySimpleTypeDef to ValueDataType
 |*V2.0* |*Comment*
 |xref:AnnotatedRelationshipElement[AnnotatedRelationshipElement] |New submodel element, inheriting from RelationshipElement
 |Asset/billOfMaterial |New attribute
-|AssetKind |New enumeration type
+|xref:AssetKind[AssetKind] |New enumeration type
 |BasicEvent |New submodel element, inherits from Event
 |xref:Capability[Capability] |New submodel element
 |DataSpecificationIEC61360/valueList |For value lists (string)
@@ -7202,14 +7202,14 @@ Type changed from AnySimpleTypeDef to ValueDataType
 |DataSpecificationPhysicalUnit |New data specification template
 |DataTypeIEC61360 |New enumeration type
 |xref:Entity[Entity] |New submodel Element
-|EntityType |New enumeration type
+|xref:EntityType[EntityType] |New enumeration type
 |IdentifierType |Is a subset of KeyType Enumeration
 |KeyElements/FragmentReference |New value FragmentReference as part of KeyElements Enumeration
 |LocalKeyType |Is a subset of KeyType Enumeration
 |LocalKeyType/FragmentId |New value for KeyType Enumeration (via subset LocalKeyType)
 |xref:LangStringSet[LangStringSet] |New type, used for example in MultiLanguageProperty
 |LevelType |New enumeration type
-|ModellingKind |New enumeration type
+|xref:ModellingKind[ModellingKind] |New enumeration type
 |xref:MultiLanguageProperty[MultiLanguageProperty] |New submodel element
 |Qualifier/valueType |New attribute to be consistent with valueType of Property etc.
 |xref:Range[Range] |New submodel element
