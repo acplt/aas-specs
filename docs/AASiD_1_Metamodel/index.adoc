@@ -3127,11 +3127,11 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |===
 [cols="30%,70%"],options="header"]
 |===
-|Literal |Explanation |
-|xref:AnnotatedRelationshipElement[AnnotatedRelationshipElement] |Annotated relationship element |
-|xref:BasicEventElement[BasicEventElement] |Basic event element |
-|xref:Blob[Blob] |Blob |
-|xref:Capability[Capability] |Capability |
+|Literal |Explanation
+|xref:AnnotatedRelationshipElement[AnnotatedRelationshipElement] |Annotated relationship element
+|xref:BasicEventElement[BasicEventElement] |Basic event element
+|xref:Blob[Blob] |Blob
+|xref:Capability[Capability] |Capability
 |xref:DataElement[DataElement] a|
 Data element
 
@@ -3141,8 +3141,7 @@ Note: data elements are abstract, i.e. if a key uses "DataElement", the referenc
 ====
 
 
-|
-|xref:Entity[Entity] |Entity |
+|xref:Entity[Entity] |Entity
 |xref:EventElement[EventElement] a|
 Event
 
@@ -3152,14 +3151,13 @@ Note: event elements are abstract.
 ====
 
 
-|
-|xref:File[File] |File |
-|xref:MultiLanguageProperty[MultiLanguageProperty] |Property with a value that can be provided in multiple languages |
-|xref:Operation[Operation] |Operation |
-|xref:Property[Property] |Property |
-|xref:Range[Range] |Range with min and max |
-|xref:ReferenceElement[ReferenceElement] |Reference |
-|xref:RelationshipElement[RelationshipElement] |Relationship |
+|xref:File[File] |File
+|xref:MultiLanguageProperty[MultiLanguageProperty] |Property with a value that can be provided in multiple languages
+|xref:Operation[Operation] |Operation
+|xref:Property[Property] |Property
+|xref:Range[Range] |Range with min and max
+|xref:ReferenceElement[ReferenceElement] |Reference
+|xref:RelationshipElement[RelationshipElement] |Relationship
 |xref:SubmodelElement[SubmodelElement] a|
 Submodel element
 
@@ -3169,9 +3167,8 @@ Note: Submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 ====
 
 
-|
-|xref:SubmodelElementCollection[SubmodelElementCollection] |Struct of submodel elements |
-|xref:SubmodelElementList[SubmodelElementList] |List of submodel elements |
+|xref:SubmodelElementCollection[SubmodelElementCollection] |Struct of submodel elements
+|xref:SubmodelElementList[SubmodelElementList] |List of submodel elements
 |===
 {empty}
 [cols="30%h,70%"]
