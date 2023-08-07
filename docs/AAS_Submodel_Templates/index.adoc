@@ -144,7 +144,7 @@ a|
 
 https://www.domain-abc.com/Model-Nr-1234/Serial-Nr-5678
 
-|link:#bib1[[1\]] |
+|1 |
 |[MLP] +
 ManufacturerName | a|
 [IRDI] 0173-1#02-AAO677#002
@@ -164,7 +164,7 @@ Note: mandatory property according to EU Machine Directive 2006/42/EC.
 
 
 |[langString] +
-Muster AG @DE |link:#bib1[[1\]] |
+Muster AG @DE |1 |
 |[MLP] +
 ManufacturerProductDesignation | a|
 [IRDI] 0173-1#02-AAW338#001
@@ -196,7 +196,7 @@ ABC-123 @EN
 
 Industrieroboter @DE
 
-|link:#bib1[[1\]] |
+|1 |
 |[SubmodelElementCollection] +
 ContactInformation | a|
 [IRI] https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation
@@ -211,7 +211,7 @@ Note: physical address is a mandatory property according to EU Machine Directive
 
 See separate clause
 
-|n/a |link:#bib1[[1\]] |
+|n/a |1 |
 |[MLP] +
 ManufacturerProductRoot | a|
 [IRDI] 0173-1#02-AAU732#001
@@ -223,7 +223,7 @@ a|
 
 flow meter@EN
 
-|[0..1] |
+|0..1 |
 |[MLP] +
 ManufacturerProductFamily | a|
 [IRDI] 0173-1#02-AAU731#001
@@ -239,7 +239,7 @@ ManufacturerProductFamily (0173-1#02-AAU731#001) or +
 ManufacturerProductType (0173-1#02-AAO057#002).
 
 |[langString] +
-Type ABC@EN |[0..1] |
+Type ABC@EN |0..1 |
 |[MLP] +
 ManufacturerProductType | a|
 [IRDI] 0173-1#02-AAO057#002
@@ -261,7 +261,7 @@ ManufacturerProductFamily (0173-1#02-AAU731#001) or +
 ManufacturerProductType (0173-1#02-AAO057#002).
 
 |[langString] +
-FM-ABC-1234@EN |[0..1] |
+FM-ABC-1234@EN |0..1 |
 |[MLP]footnote:mlp[Recommendation: property declaration as MLP is required by its semantic definition. As the property value is language independent, users are recommended to provide maximal 1 string in any language of the user’s choice.] +
 OrderCodeOfManufacturer | a|
 [IRDI] 0173-1#02-AAO227#002
@@ -275,7 +275,7 @@ Note: see also [IRDI] 0112/2///61987#ABA950#006 order code of product
 
 
 |[langString]footnote:mlp[] +
-FMABC1234@EN |[0..1] |
+FMABC1234@EN |0..1 |
 |[MLP]footnote:mlp[] +
 ProductArticleNumberOfManufacturer | a|
 [IRDI] 0173-1#02-AAO676#003
@@ -289,7 +289,7 @@ Note: see also [IRDI] 0112/2///61987#ABA581#006 article number
 
 
 |[langString]footnote:mlp[] +
-FM11-ABC22-123456@EN |[0..1] |
+FM11-ABC22-123456@EN |0..1 |
 |[Property] +
 SerialNumber | a|
 [IRDI] 0173-1#02-AAM556#002
@@ -303,7 +303,7 @@ Note: see also [IRDI] 0112/2///61987#ABA951#007 serial number
 
 
 |[String] +
-12345678 |[0..1] |
+12345678 |0..1 |
 |[Property] +
 YearOfConstruction | a|
 [IRDI] 0173-1#02-AAP906#001
@@ -317,7 +317,7 @@ Note: mandatory property according to EU Machine Directive 2006/42/EC.
 
 
 |[String] +
-2020 |link:#bib1[[1\]] |
+2020 |1 |
 |[Property] +
 DateOfManufacture | a|
 [IRDI] 0173-1#02-AAR972#002
@@ -337,7 +337,7 @@ Note: format by lexical representation: CCYY-MM-DD
 
 
 |[Date] +
-2021-01-01 |[0..1] |
+2021-01-01 |0..1 |
 |[MLP]footnote:mlp[] +
 HardwareVersion | a|
 [IRDI] 0173-1#02-AAN270#002
@@ -351,7 +351,7 @@ Note: see also [IRDI] 0112/2///61987#ABA926#006 hardware version
 
 
 |[langString]footnote:mlp[] +
-1.0.0@EN |[0..1] |
+1.0.0@EN |0..1 |
 |[MLP]footnote:mlp[] +
 FirmwareVersion | a|
 [IRDI] 0173-1#02-AAM985#002
@@ -365,7 +365,7 @@ Note: see also [IRDI] 0112/2///61987#ABA302#004 firmware version
 
 
 |[langString]footnote:mlp[] +
-1.0@EN |[0..1] |
+1.0@EN |0..1 |
 |[MLP]footnote:mlp[] +
 SoftwareVersion | a|
 [IRDI] 0173-1#02-AAM737#002
@@ -379,7 +379,7 @@ Note: see also [IRDI] 0112/2///61987#ABA601#006 software version
 
 
 |[langString]footnote:mlp[] +
-1.0.0@EN |[0..1] |
+1.0.0@EN |0..1 |
 |[Property] +
 CountryOfOrigin | a|
 [IRDI] 0173-1#02-AAO259#004
@@ -399,14 +399,14 @@ Note: Country codes defined accord. to DIN EN ISO 3166-1 alpha-2 codes
 
 
 |[String] +
-DE |[0..1] |
+DE |0..1 |
 |[File] +
 CompanyLogo | a|
 [IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/CompanyLogo
 
 A graphic mark used to represent a company, an organisation or a product
 
-|[File] |[0..1] |
+|[File] |0..1 |
 |[SubmodelElementCollection] +
 Markings | a|
 [IRDI] 0173-1#01-AGZ673#001
@@ -421,7 +421,7 @@ Note: CE marking is declared as mandatory according to EU Machine Directive 2006
 
 See separate clause
 
-|n/a |[0..1] |
+|n/a |0..1 |
 a|
 [SubmodelElementCollection]
 
@@ -440,7 +440,7 @@ Note: defined as “Asset specific nameplate information” per ECLASS
 
 See separate clause
 
-|n/a |[0..1] |
+|n/a |0..1 |
 |===
 
 
@@ -501,7 +501,7 @@ Note: mandatory property according to EU Machine Directive 2006/42/EC.
 
 
 |[langString] +
-Musterstraße 1@DE |link:#bib1[[1\]]
+Musterstraße 1@DE |1
 |[MLP]footnote:mlp[] +
 Zipcode a|
 [IRDI] 0173-1#02-AAO129#002
@@ -525,7 +525,7 @@ a|
 
 12345@DE
 
-|link:#bib1[[1\]]
+|1
 |[MLP] +
 CityTown a|
 [IRDI] 0173-1#02-AAO132#002
@@ -549,7 +549,7 @@ a|
 
 Musterstadt@DE
 
-|link:#bib1[[1\]]
+|1
 |[MLP]footnote:mlp[] +
 NationalCode a|
 [IRDI] 0173-1#02-AAO134#002
@@ -579,7 +579,7 @@ a|
 
 DE@DE
 
-|link:#bib1[[1\]]
+|1
 |===
 
 The following example in Figure 4 shows a possible modelling of SMC “Address” in Submodel “Nameplate”.
@@ -634,7 +634,7 @@ Note: CE marking is declared as mandatory according to the Blue Guide of the EU-
 
 See separate clause.
 
-|n/a |[1..*]
+|n/a |1..*
 |===
 
 === Properties of the SMC “Marking” for product marking
@@ -690,7 +690,7 @@ valueId with ECLASS enumeration IRDI is preferable, e.g. [IRDI] 0173-1#07-DAA603
 
 Samples for valueId from ECLASS are listed in Annex B
 
-|link:#bib1[[1\]] |
+|1 |
 a|
 [Property]
 
@@ -712,7 +712,7 @@ a|
 
 KEMA99IECEX1105/128
 
-|[0..1] |
+|0..1 |
 |[Property] +
 IssueDate a|
 [IRI] https://admin-shell.io/zvei/nameplate/2/0/ +
@@ -737,7 +737,7 @@ a|
 
 2021-01-01
 
-|[0..1] |
+|0..1 |
 |[Property] +
 ExpiryDate a|
 [IRI] https://admin-shell.io/zvei/nameplate/2/0/ +
@@ -768,7 +768,7 @@ a|
 
 2021-01-01
 
-|[0..1] |
+|0..1 |
 |[File] +
 MarkingFile a|
 [IRI] https://admin-shell.io/zvei/nameplate/2/0/ +
@@ -777,7 +777,7 @@ Nameplate/Markings/Marking/MarkingFile
 conformity symbol of the marking
 
 |[File] +
-/aasx/Nameplate/marking_ce.png |link:#bib1[[1\]] |
+/aasx/Nameplate/marking_ce.png |1 |
 |[Property] +
 MarkingAdditionalText\{00} a|
 [IRI] https://admin-shell.io/zvei/nameplate/2/0/ +
@@ -792,7 +792,7 @@ Note: see also [IRDI] 0173-1#02-AAM954#002 details of other certificate
 
 
 |[String] +
-0044 |[0..*] |
+0044 |0..* |
 a|
 [SubmodelElementCollection]
 
@@ -806,7 +806,7 @@ Collection of explosion safefy specifications
 
 See separate clause
 
-|n/a |[0..1] |
+|n/a |0..1 |
 |===
 
 Regarding the property “MarkingName” the preferable solution is to provide a valueId in IRDI originating from ECLASS enumeration value list, e.g. "CE” (IRDI: 0173-1#07-DAA603#004). In case none of the existing ECLASS enumeration values matches, filling plain string text into the “value” field of the property “MarkingName” can be accepted alternatively. It needs to be pointed out that ECLASS also provides marking definitions in terms of boolean property, e.g. “CE- qualification present” (IRDI: 0173-1#02-BAF053#008). In this case users should instead use a matching ECLASS enumeration value or, if not provided as enumeration, fill in plain string text.
@@ -842,7 +842,7 @@ contains information related to explosion safety according to device nameplate
 
 See separate clause.
 
-|n/a |[1..*]
+|n/a |1..*
 |===
 
 
@@ -891,7 +891,7 @@ a|
 
 KEMA99IECEX1105/128
 
-|[0..1] |
+|0..1 |
 a|
 [MLP]footnote:mlp[]
 
@@ -920,7 +920,7 @@ a|
 
 ATEX@DE
 
-|[0..1] |
+|0..1 |
 a|
 [MLP]footnote:mlp[]
 
@@ -949,7 +949,7 @@ a|
 
 PTB@DE
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -988,7 +988,7 @@ Ex db eb ia
 
 Ex db; Ex eb
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -1018,7 +1018,7 @@ a|
 
 Unit: V
 
-|[0..1] |
+|0..1 |
 a|
 [ReferenceElement]
 
@@ -1035,7 +1035,7 @@ Note: Reference to the instruction manual or control drawing
 ====
 
 
-|[Reference] |[0..1] |
+|[Reference] |0..1 |
 a|
 [Property]
 
@@ -1056,7 +1056,7 @@ a|
 
 X
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -1073,7 +1073,7 @@ a|
 
 U
 
-|[0..1] |
+|0..1 |
 a|
 [SubmodelElementCollection]
 
@@ -1093,7 +1093,7 @@ Note: If the device is mounted in the process boundary, ambient and process cond
 
 See separate clause
 
-|n/a |[0..1] |
+|n/a |0..1 |
 a|
 [SubmodelElementCollection]
 
@@ -1113,7 +1113,7 @@ Note: If the device is mounted in the process boundary, ambient and process cond
 
 See separate clause
 
-|n/a |[0..1] |
+|n/a |0..1 |
 a|
 [SubmodelElementCollection]
 
@@ -1139,7 +1139,7 @@ Note: If for one external IS circuit several sets of safety parameters are provi
 
 See separate clause
 
-|n/a |[0..*] |
+|n/a |0..* |
 |===
 
 
@@ -1198,7 +1198,7 @@ a|
 
 2G
 
-|[0..1] |
+|0..1 |
 a|
 [MLP]footnote:mlp[]
 
@@ -1234,7 +1234,7 @@ a|
 
 Gb@DE
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -1251,7 +1251,7 @@ a|
 
 Class I, Division 2
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -1280,7 +1280,7 @@ Ex db eb ia
 
 Ex db; Ex eb
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -1313,7 +1313,7 @@ IIIB
 
 A,B,C,D
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -1344,7 +1344,7 @@ a|
 
 Unit: ºC
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -1375,7 +1375,7 @@ a|
 
 Unit: ºC
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -1400,7 +1400,7 @@ a|
 
 Unit: ºC
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -1431,7 +1431,7 @@ T6
 
 T5
 
-|[0..1] |
+|0..1 |
 |===
 
 === Properties of the SMC “ProcessConditions”
@@ -1487,7 +1487,7 @@ a|
 
 1G
 
-|[0..1]
+|0..1
 a|
 [MLP]footnote:mlp[]
 
@@ -1516,7 +1516,7 @@ a|
 
 Ga@DE
 
-|[0..1]
+|0..1
 a|
 [Property]
 
@@ -1535,7 +1535,7 @@ IS
 
 NI;AIS
 
-|[0..1]
+|0..1
 a|
 [Property]
 
@@ -1558,7 +1558,7 @@ a|
 
 ia
 
-|[0..1]
+|0..1
 a|
 [Property]
 
@@ -1595,7 +1595,7 @@ IIC
 
 A,B,C,D
 
-|[0..1]
+|0..1
 a|
 [Property]
 
@@ -1619,7 +1619,7 @@ a|
 
 Unit: ºC
 
-|[0..1]
+|0..1
 a|
 [Property]
 
@@ -1643,7 +1643,7 @@ a|
 
 Unit: ºC
 
-|[0..1]
+|0..1
 a|
 [Property]
 
@@ -1668,7 +1668,7 @@ a|
 
 Unit: ºC
 
-|[0..1]
+|0..1
 a|
 [Property]
 
@@ -1697,7 +1697,7 @@ a|
 
 T4
 
-|[0..1]
+|0..1
 |===
 
 === Properties of the SMC “ExternalElectricalCircuit”
@@ -1756,7 +1756,7 @@ a|
 
 26(+)/27(-)
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -1795,7 +1795,7 @@ Ex db eb ia
 
 Ex db; Ex eb
 
-|[0..1] |
+|0..1 |
 a|
 [MLP]footnote:mlp[]
 
@@ -1830,7 +1830,7 @@ a|
 
 Ga@DE
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -1865,7 +1865,7 @@ a|
 
 IIC
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -1888,7 +1888,7 @@ a|
 
 linear
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -1906,7 +1906,7 @@ Note: Enter “x” if relevant
 ====
 
 
-|[String] |[0..1] |
+|[String] |0..1 |
 a|
 [Property]
 
@@ -1924,7 +1924,7 @@ Note: Enter “x” if relevant
 ====
 
 
-|[String] |[0..1] |
+|[String] |0..1 |
 a|
 [SubmodelElementCollection]
 
@@ -1944,7 +1944,7 @@ Note: IS-parameters for passive circuits, if relevant (e.g. 2 wire field devices
 
 See separate clause
 
-|n/a |[0..1] |
+|n/a |0..1 |
 a|
 [SubmodelElementCollection]
 
@@ -1964,7 +1964,7 @@ Note: IS-parameters for active circuits, if relevant (e.g. power supply, IS-barr
 
 See separate clause
 
-|n/a |[0..1] |
+|n/a |0..1 |
 |===
 
 
@@ -2018,7 +2018,7 @@ a|
 
 Unit: mW
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -2043,7 +2043,7 @@ a|
 
 Unit: V
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -2068,7 +2068,7 @@ a|
 
 Unit: mA
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -2093,7 +2093,7 @@ a|
 
 Unit: µF
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -2118,7 +2118,7 @@ a|
 
 Unit: mH
 
-|[0..1] |
+|0..1 |
 |===
 
 
@@ -2172,7 +2172,7 @@ a|
 
 Unit: mW
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -2197,7 +2197,7 @@ a|
 
 Unit: V
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -2222,7 +2222,7 @@ a|
 
 Unit: mA
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -2247,7 +2247,7 @@ a|
 
 Unit: µF
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -2272,7 +2272,7 @@ a|
 
 Unit: mH
 
-|[0..1] |
+|0..1 |
 a|
 [Property]
 
@@ -2295,7 +2295,7 @@ a|
 
 Unit: mH/Q
 
-|[0..1] |
+|0..1 |
 |===
 
 === Properties of the SMC “AssetSpecificProperties”
@@ -2325,13 +2325,13 @@ Asset specific nameplate information required by guideline, stipulation or legis
 
 See separate clause
 
-|n/a |[1..*] |
+|n/a |1..* |
 |[Property] \{arbitrary} a|
 semanticId = \{arbitrary, representing information required by further standards}
 
 Properties which are not required by any legislations but provided due to best practice.
 
-|n/a |[1..*] |
+|n/a |1..* |
 |===
 
 
@@ -2356,8 +2356,8 @@ Properties of SMC “GuidelineSpecificProperties”
 
 guideline, stipulation or legislation used for determining conformity
 
-|[String] |link:#bib1[[1\]] |
-|[Property] \{arbitrary} |semanticId = \{arbitrary, representing information required by further standards} |n/a |[1..*] |
+|[String] |1 |
+|[Property] \{arbitrary} |semanticId = \{arbitrary, representing information required by further standards} |n/a |1..* |
 |===
 
 Beside the mentioned EU Machine Directive 2006/42/EC which this Submodel template is compliant with, there might be further information required by further stipulations and regulations depending on different asset. The SMC “AssetSpecificProperties” and its child SMC “GuidelineSpecificProperties” are therefore used to cover additional mandatory nameplate information while referencing the related stipulation or regulation.
