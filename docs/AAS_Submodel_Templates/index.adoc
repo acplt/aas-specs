@@ -52,7 +52,6 @@ According to link:#bib3[[3\]], interoperable properties might be defined by stan
 
 List of examplary standards defining interoperable properties
 
-[width="100%",cols="50%,50%",options="header",]
 |===
 |IEC 62890:2020-07 — Industrial-process measurement, control and automation - Life-cycle-management for systems and components |Describes basic concepts of product types and instances and the concepts of a life-cycle mode
 |VDMA 24903 — Obsolescence management – Exchange of information regarding change and discontinuance of products and items |Describes important event in the life-cycle of a product type and identifies important information elements to be conveyed
@@ -111,7 +110,7 @@ image:media/media/image4.png[media/media/image4,width=500,height=408]
 
 Properties of Submodel "Nameplate"
 
-[width="100%",cols="21%,1%,49%,22%,7%,",]
+[cols="21%,1%,49%,22%,7%,",]
 |===
 |*idShort:* | a|
 Nameplate
@@ -596,7 +595,7 @@ Figure 2 shows the UML-diagram defining the relevant properties which need to be
 
 Properties of SMC "Markings"
 
-[width="100%",cols="24%,50%,19%,7%",]
+[cols="24%,50%,19%,7%",]
 |===
 |*idShort:* |Markings | |
 |*Class:* |SubmodelElementCollection | |
@@ -647,7 +646,7 @@ image:media/media/image7.png[media/media/image7,width=564,height=247]
 
 Properties of SMC "Marking"
 
-[width="100%",cols="24%,49%,20%,7%,",]
+[cols="24%,49%,20%,7%,",]
 |===
 |*idShort:* |Marking\{00} | | |
 |*Class:* |SubmodelElementCollection | | |
@@ -825,7 +824,7 @@ Figure 5 shows the UML-diagram defining the relevant properties which need to be
 
 Properties of SMC “ExplosionSafeties"
 
-[width="100%",cols="24%,50%,19%,7%",]
+[cols="24%,50%,19%,7%",]
 |===
 |*idShort:* |ExplosionSafeties | |
 |*Class:* |SubmodelElementCollection | |
@@ -861,7 +860,7 @@ image:media/media/image9.png[media/media/image9,width=642,height=550]
 
 Table 7: Properties of SMC “ExplosionSafety”
 
-[width="100%",cols="24%,50%,19%,7%,",]
+[cols="24%,50%,19%,7%,",]
 |===
 |*idShort:* |ExplosionSafety | | |
 |*Class:* |SubmodelElementCollection | | |
@@ -1151,7 +1150,7 @@ See separate clause
 
 Properties of SMC "AmbientConditions "
 
-[width="100%",cols="24%,50%,19%,7%,",]
+[cols="24%,50%,19%,7%,",]
 |===
 |*idShort:* |AmbientConditions | | |
 |*Class:* |SubmodelElementCollection | | |
@@ -1441,7 +1440,7 @@ T5
 
 Properties of SMC "ProcessConditions"
 
-[width="100%",cols="24%,50%,19%,7%",]
+[cols="24%,50%,19%,7%",]
 |===
 |*idShort:* |ProcessConditions | |
 |*Class:* |SubmodelElementCollection | |
@@ -1707,7 +1706,7 @@ Figure 7 shows the UML-diagram defining the relevant properties which need to be
 
 Properties of SMC "ExternalElectricalCircuit"
 
-[width="100%",cols="24%,50%,19%,7%,",]
+[cols="24%,50%,19%,7%,",]
 |===
 |*idShort:* |ExternalElectricalCircuit | | |
 |*Class:* |SubmodelElementCollection | | |
@@ -1976,7 +1975,7 @@ Figure 7 shows the UML-diagram defining the relevant properties which need to be
 
 Properties of SMC "SafetyRelatedPropertiesForPassiveBehaviour"
 
-[width="100%",cols="24%,50%,19%,7%,",]
+[cols="24%,50%,19%,7%,",]
 |===
 |*idShort:* |SafetyRelatedPropertiesForPassiveBehaviour | | |
 |*Class:* |SubmodelElementCollection | | |
@@ -2130,7 +2129,7 @@ Figure 7 shows the UML-diagram defining the relevant properties which need to be
 
 Properties of SMC "SafetyRelatedPropertiesForActiveBehaviour"
 
-[width="100%",cols="24%,50%,19%,7%,",]
+[cols="24%,50%,19%,7%,",]
 |===
 |*idShort:* |SafetyRelatedPropertiesForActiveBehaviour | | |
 |*Class:* |SubmodelElementCollection | | |
@@ -2305,7 +2304,7 @@ Figure 2 shows the UML-diagram defining the relevant properties which need to be
 
 Properties of SMC “AssetSpecificProperties”
 
-[width="100%",cols="24%,50%,19%,7%,",]
+[cols="24%,50%,19%,7%,",]
 |===
 |*idShort:* |AssetSpecificProperties | | |
 |*Class:* |SubmodelElementCollection | | |
@@ -2343,7 +2342,7 @@ Figure 2 shows the UML-diagram defining the relevant properties which need to be
 
 Properties of SMC “GuidelineSpecificProperties”
 
-[width="100%",cols="24%,50%,19%,7%,",]
+[cols="24%,50%,19%,7%,",]
 |===
 |*idShort:* |GuidelineSpecificProperties\{00} | | |
 |*Class:* |SubmodelElementCollection | | |
@@ -2388,7 +2387,7 @@ image:media/media/image12.png[media/media/image12,width=608,height=716]
 
 List of elements in SMC “ExplosionSafety” of Remote I/O Module 9468
 
-[width="100%",cols="20%,13%,16%,3%,12%,12%,12%,12%",options="header",]
+[cols="20%,13%,16%,3%,12%,12%,12%,12%",options="header",]
 |===
 |Parent element |semanticId |Element |Unit |SMC 01 |SMC 02 |SMC 03 |SMC 04
 |Marking |https://admin-shell.io/zvei/ +
@@ -2652,7 +2651,7 @@ image:media/media/image14.png[media/media/image14,width=608,height=453]
 
 List of elements in SMC “ExplosionSafety” of the load disconnect switch
 
-[width="100%",cols="20%,20%,26%,4%,15%,15%",options="header",]
+[cols="20%,20%,26%,4%,15%,15%",options="header",]
 |===
 |Parent element |semanticId |Element |Unit |SMC 01 |SMC 02
 |Marking |https://admin-shell.io/zvei/ +
@@ -2711,7 +2710,7 @@ image:media/media/image16.png[media/media/image16,width=603,height=592]
 
 List of elements in SMC “ExplosionSafety” of FISCO power supply
 
-[width="100%",cols="20%,24%,20%,4%,16%,16%",options="header",]
+[cols="20%,24%,20%,4%,16%,16%",options="header",]
 |===
 |Parent element |semanticId |Element |Unit |SMC 01 |SMC 02
 |Marking |https://admin-shell.io/zvei/ +
@@ -2934,7 +2933,7 @@ image:media/media/image18.png[media/media/image18,width=638,height=659]
 
 List of elements in SMC “ExplosionSafety” of flow meter Promag 300
 
-[width="100%",cols="18%,13%,18%,3%,12%,12%,12%,12%",options="header",]
+[cols="18%,13%,18%,3%,12%,12%,12%,12%",options="header",]
 |===
 |Parent element |semanticId |Element |Unit |SMC 01 |SMC 02 |SMC 03 |SMC 04
 |Marking |https://admin-shell.io/zvei/ +
@@ -3112,7 +3111,7 @@ For clarity and brevity, a set of rules is used for the tables for describing Su
 * The tables often place two informations in different rows of the same table cell. In this case, the first information is marked out by sharp brackets [] form the second information. A special case are the semanticIds, which are marked out by the format: (type)(local)[idType]value.
 * The types of SubmodelElements are abbreviated:
 
-[width="100%",cols="41%,59%",options="header",]
+[cols="41%,59%",options="header",]
 |===
 |SME type |SubmodelElement type
 |Property |Property
@@ -3137,7 +3136,7 @@ The following table provides sample ECLASS definitions for modelling product mar
 
 Sample ECLASS definitions for product marking
 
-[width="100%",cols="7%,39%,54%",]
+[cols="7%,39%,54%",]
 |===
 |Item |IRDI |preferredName@en
 |1 |0173-1#07-AAB047#003 |CCC
