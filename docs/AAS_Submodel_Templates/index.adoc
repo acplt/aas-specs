@@ -1,3 +1,16 @@
+:toc: left
+:toc-title: Digital Nameplate for Industrial Equipment
+:stylesheet: ../style.css
+:nofooter:
+
+= Digital Nameplate for Industrial Equipment
+:author: IDTA
+:version-label: Number
+:revnumber: 02006-2-0
+:revdate: October 2022
+:revremark: Submodel Template of the Asset Administration Shell
+
+
 == General
 
 === About this document
