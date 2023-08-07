@@ -105,7 +105,11 @@ Properties of Submodel "Nameplate"
 |*idShort:* | a|
 Nameplate
 
+
+====
 Note: the above idShort shall always be as stated.
+====
+
 
 | | |
 |*Class:* | |Submodel | | |
@@ -119,7 +123,11 @@ URIOfTheProduct | a|
 
 unique global identification of the product using an universal resource identifier (URI)
 
+
+====
 Note: see also [IRDI] 0112/2///61987#ABN590#001 URI of product instance
+====
+
 
 a|
 [String]
@@ -133,9 +141,17 @@ ManufacturerName | a|
 
 legally valid designation of the natural or judicial person which is directly responsible for the design, production, packaging and labeling of a product in respect to its being brought into circulation
 
-Note: see also [IRDI] 0112/2///61987#ABA565#007 manufacturer
 
+====
+Note: see also [IRDI] 0112/2///61987#ABA565#007 manufacturer
+====
+
+
+
+====
 Note: mandatory property according to EU Machine Directive 2006/42/EC.
+====
+
 
 |[langString] +
 Muster AG @DE |[1] |
@@ -145,11 +161,23 @@ ManufacturerProductDesignation | a|
 
 Short description of the product (short text)
 
+
+====
 Note: see also [IRDI] 0112/2///61987#ABA567#007 name of product
+====
 
+
+
+====
 Note: Short designation of the product is meant.
+====
 
+
+
+====
 Note: mandatory property according to EU Machine Directive 2006/42/EC.
+====
+
 
 a|
 [langString]
@@ -165,7 +193,11 @@ ContactInformation | a|
 
 The SMC “ContactInformation” contains information on how to contact the manufacturer or an authorised service provider, e.g. when a maintenance service is required
 
+
+====
 Note: physical address is a mandatory property according to EU Machine Directive 2006/42/EC.
+====
+
 
 See separate clause
 
@@ -188,7 +220,11 @@ ManufacturerProductFamily | a|
 
 2nd level of a 3 level manufacturer specific product hierarchy
 
+
+====
 Note: conditionally mandatory property according to EU Machine Directive 2006/42/EC. One of the two properties must be provided: +
+====
+
 ManufacturerProductFamily (0173-1#02-AAU731#001) or +
 ManufacturerProductType (0173-1#02-AAO057#002).
 
@@ -200,9 +236,17 @@ ManufacturerProductType | a|
 
 Characteristic to differentiate between different products of a product family or special variants
 
-Note: see also [IRDI] 0112/2///61987#ABA300#006 code of product
 
+====
+Note: see also [IRDI] 0112/2///61987#ABA300#006 code of product
+====
+
+
+
+====
 Note: conditionally mandatory property according to EU Machine Directive 2006/42/EC. One of the two properties must be provided: +
+====
+
 ManufacturerProductFamily (0173-1#02-AAU731#001) or +
 ManufacturerProductType (0173-1#02-AAO057#002).
 
@@ -214,7 +258,11 @@ OrderCodeOfManufacturer | a|
 
 By manufactures issued unique combination of numbers and letters used to identify the device for ordering
 
+
+====
 Note: see also [IRDI] 0112/2///61987#ABA950#006 order code of product
+====
+
 
 |[langString]^1^ +
 FMABC1234@EN |[0..1] |
@@ -224,7 +272,11 @@ ProductArticleNumberOfManufacturer | a|
 
 unique product identifier of the manufacturer
 
+
+====
 Note: see also [IRDI] 0112/2///61987#ABA581#006 article number
+====
+
 
 |[langString] ^1^ +
 FM11-ABC22-123456@EN |[0..1] |
@@ -234,7 +286,11 @@ SerialNumber | a|
 
 unique combination of numbers and letters used to identify the device once it has been manufactured
 
+
+====
 Note: see also [IRDI] 0112/2///61987#ABA951#007 serial number
+====
+
 
 |[String] +
 12345678 |[0..1] |
@@ -244,7 +300,11 @@ YearOfConstruction | a|
 
 Year as completion date of object
 
+
+====
 Note: mandatory property according to EU Machine Directive 2006/42/EC.
+====
+
 
 |[String] +
 2020 |[1] |
@@ -254,9 +314,17 @@ DateOfManufacture | a|
 
 Date from which the production and / or development process is completed or from which a service is provided completely
 
-Note: see also [IRDI] 0112/2///61987#ABB757#007 date of manufacture
 
+====
+Note: see also [IRDI] 0112/2///61987#ABB757#007 date of manufacture
+====
+
+
+
+====
 Note: format by lexical representation: CCYY-MM-DD
+====
+
 
 |[Date] +
 2021-01-01 |[0..1] |
@@ -266,7 +334,11 @@ HardwareVersion | a|
 
 Version of the hardware supplied with the device
 
+
+====
 Note: see also [IRDI] 0112/2///61987#ABA926#006 hardware version
+====
+
 
 |[langString] ^1^ +
 1.0.0@EN |[0..1] |
@@ -276,7 +348,11 @@ FirmwareVersion | a|
 
 Version of the firmware supplied with the device
 
+
+====
 Note: see also [IRDI] 0112/2///61987#ABA302#004 firmware version
+====
+
 
 |[langString] ^1^ +
 1.0@EN |[0..1] |
@@ -286,7 +362,11 @@ SoftwareVersion | a|
 
 Version of the software used by the device
 
+
+====
 Note: see also [IRDI] 0112/2///61987#ABA601#006 software version
+====
+
 
 |[langString] ^1^ +
 1.0.0@EN |[0..1] |
@@ -296,9 +376,17 @@ CountryOfOrigin | a|
 
 Country where the product was manufactured
 
-Note: see also [IRDI] 0112/2///61360_4#ADA034#001 country of origin
 
+====
+Note: see also [IRDI] 0112/2///61360_4#ADA034#001 country of origin
+====
+
+
+
+====
 Note: Country codes defined accord. to DIN EN ISO 3166-1 alpha-2 codes
+====
+
 
 |[String] +
 DE |[0..1] |
@@ -315,7 +403,11 @@ Markings | a|
 
 Collection of product markings
 
+
+====
 Note: CE marking is declared as mandatory according to EU Machine Directive 2006/42/EC.
+====
+
 
 See separate clause
 
@@ -330,7 +422,11 @@ AssetSpecificProperties
 
 Group of properties that are listed on the asset's nameplate and are grouped based on guidelines
 
+
+====
 Note: defined as “Asset specific nameplate information” per ECLASS
+====
+
 
 See separate clause
 
@@ -362,7 +458,11 @@ Table 3: Mandatory properties of SMC "ContactInformation"
 |*idShort:* a|
 ContactInformation
 
+
+====
 Note: the above idShort shall always be as stated.
+====
+
 
 | |
 |*Class:* |SubmodelElementCollection | |
@@ -379,9 +479,17 @@ Street a|
 
 street name and house number
 
-Note: see also [IRDI] 0112/2///61987#ABA286#001 street
 
+====
+Note: see also [IRDI] 0112/2///61987#ABA286#001 street
+====
+
+
+
+====
 Note: mandatory property according to EU Machine Directive 2006/42/EC.
+====
+
 
 |[langString] +
 Musterstraße 1@DE |[1]
@@ -391,9 +499,17 @@ Zipcode a|
 
 ZIP code of address
 
-Note: see also [IRDI] 0112/2///61987#ABA281#001 ZIP/Postal code
 
+====
+Note: see also [IRDI] 0112/2///61987#ABA281#001 ZIP/Postal code
+====
+
+
+
+====
 Note: mandatory property according to EU Machine Directive 2006/42/EC.
+====
+
 
 a|
 [langString] ^1^
@@ -407,9 +523,17 @@ CityTown a|
 
 town or city
 
-Note: see also [IRDI] 0112/2///61987#ABA129#001 city/town
 
+====
+Note: see also [IRDI] 0112/2///61987#ABA129#001 city/town
+====
+
+
+
+====
 Note: mandatory property according to EU Machine Directive 2006/42/EC.
+====
+
 
 a|
 [langString]
@@ -423,11 +547,23 @@ NationalCode a|
 
 code of a country
 
+
+====
 Note: see also [IRDI] 0112/2///61360_4#ADA005#001 country code
+====
 
+
+
+====
 Note: Country codes defined accord. to DIN EN ISO 3166-1 alpha-2 codes
+====
 
+
+
+====
 Note: mandatory property according to EU Machine Directive 2006/42/EC.
+====
+
 
 a|
 [langString] ^1^
@@ -461,7 +597,11 @@ Properties of SMC "Markings"
 |*Explanation:* a|
 Collection of product markings
 
+
+====
 Note: CE marking is declared as mandatory according to EU Machine Directive 2006/42/EC.
+====
+
 
 | |
 |*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.*
@@ -472,9 +612,17 @@ Marking\{00} a|
 
 contains information about the marking labelled on the device
 
-Note: see also [IRDI] 0112/2///61987#ABH515#003 Certificate or approval
 
+====
+Note: see also [IRDI] 0112/2///61987#ABH515#003 Certificate or approval
+====
+
+
+
+====
 Note: CE marking is declared as mandatory according to the Blue Guide of the EU-Commission
+====
+
 
 See separate clause.
 
@@ -501,7 +649,11 @@ Properties of SMC "Marking"
 |*Explanation:* a|
 contains information about the marking labelled on the device
 
+
+====
 Note: see also [IRDI] 0112/2///61987#ABH515#003 Certificate or approval
+====
+
 
 | | |
 |*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
@@ -513,9 +665,17 @@ Nameplate/Markings/Marking/MarkingName
 
 common name of the marking
 
-Note: see also [IRDI] 0173-1#02-BAB392#015 certificate/approval
 
+====
+Note: see also [IRDI] 0173-1#02-BAB392#015 certificate/approval
+====
+
+
+
+====
 Note: CE marking is declared as mandatory according to Blue Guide of the EU-Commission
+====
+
 
 a|
 [String] +
@@ -534,7 +694,11 @@ a|
 
 alphanumeric character sequence identifying a certificate or approval
 
+
+====
 Note: Approval identifier, reference to the certificate number, to be entered without spaces
+====
+
 
 a|
 [String]
@@ -549,9 +713,17 @@ Nameplate/Markings/Marking/IssueDate
 
 Date, at which the specified certificate is issued
 
-Note: format by lexical representation: CCYY-MM-DD
 
+====
+Note: format by lexical representation: CCYY-MM-DD
+====
+
+
+
+====
 Note: to be specified to the day
+====
+
 
 a|
 [Date]
@@ -566,11 +738,23 @@ Nameplate/Markings/Marking/ExpiryDate
 
 Date, at which the specified certificate expires
 
+
+====
 Note: see also [IRDI] 0173-1#02-AAO997#001 Validity date
+====
 
+
+
+====
 Note: format by lexical representation: CCYY-MM-DD
+====
 
+
+
+====
 Note: to be specified to the day
+====
+
 
 a|
 [Date]
@@ -594,7 +778,11 @@ Nameplate/Markings/Marking/MarkingAdditionalText
 
 where applicable, additional information on the marking in plain text, e.g. the ID-number of the notified body involved in the conformity process
 
+
+====
 Note: see also [IRDI] 0173-1#02-AAM954#002 details of other certificate
+====
+
 
 |[String] +
 0044 |[0..*] |
@@ -687,7 +875,11 @@ a|
 
 alphanumeric character sequence identifying a certificate or approval
 
+
+====
 Note: Approval identifier, reference to the certificate number, to be entered without spaces
+====
+
 
 a|
 [String]
@@ -706,9 +898,17 @@ a|
 
 classification according to the standard or directive to which the approval applies
 
-Note: name of the approval system, e.g. ATEX, IECEX, NEC, EAC, CCC, CEC
 
+====
+Note: name of the approval system, e.g. ATEX, IECEX, NEC, EAC, CCC, CEC
+====
+
+
+
+====
 Note: only values from the enumeration should be used as stated. For additional systems further values can be used.
+====
+
 
 a|
 [langString] ^1^
@@ -727,9 +927,17 @@ a|
 
 certificates and approvals pertaining to general usage and compliance with constructional standards and directives
 
-Note: name of the agency, which has issued the certificate, e.g. PTB, KEMA, CSA, SIRA
 
+====
+Note: name of the agency, which has issued the certificate, e.g. PTB, KEMA, CSA, SIRA
+====
+
+
+
+====
 Note: only values from the enumeration should be used as stated. For additional systems further values can be used.
+====
+
 
 a|
 [langString] ^1^
@@ -748,11 +956,21 @@ a|
 
 classification of an explosion protection according to the specific measures applied to avoid ignition of a surrounding explosive atmosphere
 
-Note:
 
-* Type of protection for the device as listed in the certificate
-* Symbol(s) for the Type of protection. Several types of protection are separated by a semicolon “;”
-* If several TypeOfProtection are listed in the same certificate, for each TypeOfProtection a separate SMC “Explosion Safety” shall be provided
+====
+Note: Type of protection for the device as listed in the certificate
+====
+
+
+====
+Note: Symbol(s) for the Type of protection. Several types of protection are separated by a semicolon “;”
+====
+
+
+====
+Note: If several TypeOfProtection are listed in the same certificate, for each TypeOfProtection a separate SMC “Explosion Safety” shall be provided
+====
+
 
 a|
 [String]
@@ -776,9 +994,17 @@ a|
 
 from the manufacturer for the capital assets limited isolation with given(indicated) operating conditions
 
-Note: U~m~(eff)
 
+====
+Note: U~m~(eff)
+====
+
+
+
+====
 Note: Insulation voltage, if specified in the certificate
+====
+
 
 a|
 [Decimal]
@@ -798,7 +1024,11 @@ a|
 
 designation used to uniquely identify a control/reference drawing stored in a file system
 
+
+====
 Note: Reference to the instruction manual or control drawing
+====
+
 
 |[Reference] |[0..1] |
 a|
@@ -810,7 +1040,11 @@ a|
 [IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/ +
 Markings/Marking/ExplosionSafeties/ExplosionSafety/SpecificConditionsForUse
 
+
+====
 Note: X if any, otherwise no entry
+====
+
 
 a|
 [String]
@@ -846,7 +1080,11 @@ Markings/Marking/ExplosionSafeties/ExplosionSafety/AmbientConditions
 
 Contains properties which are related to the ambient conditions of the device.
 
+
+====
 Note: If the device is mounted in the process boundary, ambient and process conditions are provided separately.
+====
+
 
 See separate clause
 
@@ -862,7 +1100,11 @@ Markings/Marking/ExplosionSafeties/ExplosionSafety/ProcessConditions
 
 Contains properties which are related to the process conditions of the device.
 
+
+====
 Note: If the device is mounted in the process boundary, ambient and process conditions are provided separately.
+====
+
 
 See separate clause
 
@@ -878,9 +1120,17 @@ Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit
 
 specifies the parameters of external electrical circuits.
 
-Note: If several external circuits can be connected to the device, this block shall provide a cardinality with the number of circuits
 
+====
+Note: If several external circuits can be connected to the device, this block shall provide a cardinality with the number of circuits
+====
+
+
+
+====
 Note: If for one external IS circuit several sets of safety parameters are provided (e.g. for several material groups), each set is specified in a separate block as a separate circuit.
+====
+
 
 See separate clause
 
@@ -916,11 +1166,27 @@ a|
 
 category of device in accordance with directive 94/9/EC
 
+
+====
 Note: editorial definiton: Category of device in accordance with directive 2014/34/EU
+====
 
-Note: Equipment category according to the ATEX system. According to the current nameplate, also the combination “GD” is permitted
 
+
+====
+
+====
+Note: Equipment category according to the ATEX system.
+====
+ According to the current nameplate, also the combination “GD” is permitted
+====
+
+
+
+====
 Note: The combination “GD” is no longer accepted and was changed in the standards. Currently the marking for “G” and “D” must be provided in a separate marking string. Older devices may still exist with the marking “GD”.
+====
+
 
 a|
 [String]
@@ -939,12 +1205,24 @@ a|
 
 part of a hazardous area classification system indicating the likelihood of the existence of a classified hazard
 
-Note: editorial definition: Level of protection assigned to equipment based on its likelihood of becoming a source of ignition
 
+====
+Note: editorial definition: Level of protection assigned to equipment based on its likelihood of becoming a source of ignition
+====
+
+
+
+====
 Note: Equipment protection level according to the IEC standards. +
+====
+
 According to the current nameplate, also the combination “GD” is permitted
 
+
+====
 Note: The combination “GD” is no longer accepted and was changed in the standards. Currently the marking for “G” and “D” must be provided in a separate marking string. Older devices may still exist with the marking “GD”.
+====
+
 
 a|
 [langString] ^1^
@@ -980,7 +1258,11 @@ a|
 
 classification of an explosion protection according to the specific measures applied to avoid ignition of a surrounding explosive atmosphere
 
+
+====
 Note: Symbol(s) for the Type of protection. Several types of protection are separated by a semicolon “;”
+====
+
 
 a|
 [String]
@@ -1005,9 +1287,17 @@ a|
 
 classification of dangerous gaseous substances based on their ability to cause an explosion
 
-Note: Equipment grouping according to IEC 60079-0 is meant by this property
 
+====
+Note: Equipment grouping according to IEC 60079-0 is meant by this property
+====
+
+
+
+====
 Note: Symbol(s) for the gas group (IIA…IIC) or dust group (IIIA…IIIC)
+====
+
 
 a|
 [String]
@@ -1030,9 +1320,17 @@ a|
 
 lower limit of the temperature range of the surrounding space in which the component, the pipework or the system can be operated
 
-Note: editorial defnition: lower limit of the temperature range of the environment in which the component, the pipework or the system can be operated
 
+====
+Note: editorial defnition: lower limit of the temperature range of the environment in which the component, the pipework or the system can be operated
+====
+
+
+
+====
 Note: Rated minimum ambient temperature
+====
+
 
 a|
 [Decimal]
@@ -1053,9 +1351,17 @@ a|
 
 upper limit of the temperature range of the surrounding space in which the component, the pipework or the system can be operated
 
-Note: editorial definition: upper limit of the temperature range of the environment in which the component, the pipework or the system can be operated
 
+====
+Note: editorial definition: upper limit of the temperature range of the environment in which the component, the pipework or the system can be operated
+====
+
+
+
+====
 Note: Rated maximum ambient temperature
+====
+
 
 a|
 [Decimal]
@@ -1076,7 +1382,11 @@ a|
 
 maximum permissible surface temperature of a device used in an explosion hazardous area with combustible dust
 
+
+====
 Note: Maximum surface temperature of the device (dust layer ≤ 5 mm) for specified maximum ambient and maximum process temperature, relevant for Group III only
+====
+
 
 a|
 [Decimal]
@@ -1097,9 +1407,17 @@ a|
 
 classification system of electrical apparatus, based on its maximum surface temperature, related to the specific explosive atmosphere for which it is intended to be used.
 
-Note: editorial defnition: classification system of electrical apparatus, based on its maximum surface temperature, intended for use in an explosive atmosphere with flammable gas, vapour or mist.
 
+====
+Note: editorial defnition: classification system of electrical apparatus, based on its maximum surface temperature, intended for use in an explosive atmosphere with flammable gas, vapour or mist.
+====
+
+
+
+====
 Note: Temperature class of the device for specified maximum ambient and maximum process temperature, relevant for Group II only (Further combinations may be provided in the instruction manual).
+====
+
 
 a|
 [String]
@@ -1127,7 +1445,11 @@ ProcessConditions | |
 |*Explanation:* a|
 Contains properties are related to the process conditions of the device.
 
+
+====
 Note: If the device is mounted in the process boundary, ambient and process conditions are provided separately.
+====
+
 
 | |
 |*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.*
@@ -1143,9 +1465,17 @@ a|
 
 category of device in accordance with directive 94/9/EC
 
-Note: editorial defnition: Category of device in accordance with directive 2014/34/EU
 
+====
+Note: editorial defnition: Category of device in accordance with directive 2014/34/EU
+====
+
+
+
+====
 Note: Equipment category according to the ATEX system.
+====
+
 
 a|
 [String]
@@ -1164,9 +1494,17 @@ a|
 
 part of a hazardous area classification system indicating the likelihood of the existence of a classified hazard
 
-Note: editorial defnition: Level of protection assigned to equipment based on its likelihood of becoming a source of ignition
 
+====
+Note: editorial defnition: Level of protection assigned to equipment based on its likelihood of becoming a source of ignition
+====
+
+
+
+====
 Note: Equipment protection level according to the IEC or other standards, e.g. Ga (IEC), Class I/Division 1 (US), Zone (EAC)
+====
+
 
 a|
 [langString] ^1^
@@ -1204,7 +1542,11 @@ a|
 
 classification of an explosion protection according to the specific measures applied to avoid ignition of a surrounding explosive atmosphere
 
+
+====
 Note: Symbol(s) for the Type of protection. Several types of protection are separated by a semicolon “;”
+====
+
 
 a|
 [String]
@@ -1223,11 +1565,23 @@ a|
 
 classification of dangerous gaseous substances based on their ability to cause an explosion
 
+
+====
 Note: editorial definition: classification of dangerous gaseous substances based on their ability to be ignited
+====
 
+
+
+====
 Note: Equipment grouping according to IEC 60079-0 is meant by this property
+====
 
+
+
+====
 Note: Symbol(s) for the gas group (IIA…IIC) or dust group (IIIA…IIIC)
+====
+
 
 a|
 [String]
@@ -1247,7 +1601,11 @@ a|
 
 lowest temperature to which the wetted parts of the equipment can be subjected without permanent impairment of operating characteristics
 
+
+====
 Note: Rated minimum process temperature
+====
+
 
 a|
 [Decimal]
@@ -1267,7 +1625,11 @@ a|
 
 highest temperature to which the wetted parts of the device may be subjected without permanent impairment of operating characteristics
 
+
+====
 Note: Rated maximum process temperature
+====
+
 
 a|
 [Decimal]
@@ -1288,7 +1650,11 @@ a|
 
 maximum permissible surface temperature of a device used in an explosion hazardous area with combustible dust
 
+
+====
 Note: Maximum surface temperature (dust layer ≤ 5 mm) for specified maximum ambient and maximum process temperature, relevant for Group III only
+====
+
 
 a|
 [Decimal]
@@ -1309,9 +1675,17 @@ a|
 
 classification system of electrical apparatus, based on its maximum surface temperature, related to the specific explosive atmosphere for which it is intended to be used
 
-Note: editorial definition: classification system of electrical apparatus, based on its maximum surface temperature, intended for use in an explosive atmospheres with flammable gas, vapour or mist.
 
+====
+Note: editorial definition: classification system of electrical apparatus, based on its maximum surface temperature, intended for use in an explosive atmospheres with flammable gas, vapour or mist.
+====
+
+
+
+====
 Note: Temperature class for specified maximum ambient and maximum process temperature, relevant for Group II only (Further combinations may be provided in the instruction manual).
+====
+
 
 a|
 [String]
@@ -1337,9 +1711,17 @@ ExternalElectricalCircuit | | |
 |*Explanation:* a|
 specifies the parameters of external electrical circuits.
 
-Note: If several external circuits can be connected to the device, this block shall provide a cardinality with the number of circuits
 
+====
+Note: If several external circuits can be connected to the device, this block shall provide a cardinality with the number of circuits
+====
+
+
+
+====
 Note: If for one external IS circuit several sets of safety parameters are provided (e.g. for several material groups), each set is specified in a separate block as a separate circuit.
+====
+
 
 | | |
 |*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
@@ -1354,7 +1736,11 @@ a|
 
 alphanumeric character sequence identifying an electrical terminal
 
+
+====
 Note: For each circuit the designation of the terminals shall be specified. If several circuits are provided with the same parameters, their terminal pairs are listed and separated by a semicolon. If several circuits belong to one channel this shall be described in the instructions.
+====
+
 
 a|
 [String]
@@ -1377,11 +1763,21 @@ a|
 
 classification of an explosion protection according to the specific measures applied to avoid ignition of a surrounding explosive atmosphere
 
-Note:
 
-* Type of protection for the device as listed in the certificate
-* Symbol(s) for the Type of protection. Several types of protection are separated by a semicolon “;”
-* If several TypeOfProtection are listed in the same certificate, for each TypeOfProtection a separate SMC “Explosion Safety” shall be provided
+====
+Note: Type of protection for the device as listed in the certificate
+====
+
+
+====
+Note: Symbol(s) for the Type of protection. Several types of protection are separated by a semicolon “;”
+====
+
+
+====
+Note: If several TypeOfProtection are listed in the same certificate, for each TypeOfProtection a separate SMC “Explosion Safety” shall be provided
+====
+
 
 a|
 [String]
@@ -1406,11 +1802,23 @@ a|
 
 part of a hazardous area classification system indicating the likelihood of the existence of a classified hazard
 
+
+====
 Note: editorial definition: Level of protection assigned to equipment based on its likelihood of becoming a source of ignition
+====
 
+
+
+====
 Note: EPL according to IEC standards
+====
 
+
+
+====
 Note: value should be chosen from an enumeration list with values “Ga, Gb, Gc, Da, Db, Dc, Ma, Mb”
+====
+
 
 a|
 [langString] ^1^
@@ -1429,11 +1837,23 @@ a|
 
 classification of dangerous gaseous substances based on their ability to cause an explosion
 
+
+====
 Note: editorial definition: classification of dangerous gaseous substances based on their ability to be ignited
+====
 
+
+
+====
 Note: Equipment grouping according to IEC 60079-0 is meant by this property
+====
 
+
+
+====
 Note: Symbol(s) for the gas group (IIA…IIC) or dust group (IIIA…IIIC)
+====
+
 
 a|
 [String]
@@ -1452,7 +1872,11 @@ Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Characterist
 
 Characteristic of the intrinsically safe circuit
 
+
+====
 Note: linear/ non-linear
+====
+
 
 a|
 [String]
@@ -1471,7 +1895,11 @@ Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Fisco
 
 FISCO certified intrinsically safe fieldbus circuit (IEC 60079-11)
 
+
+====
 Note: Enter “x” if relevant
+====
+
 
 |[String] |[0..1] |
 a|
@@ -1485,7 +1913,11 @@ Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/TwoWISE
 
 2-WISE certified intrinsically safe circuit (IEC 60079-47)
 
+
+====
 Note: Enter “x” if relevant
+====
+
 
 |[String] |[0..1] |
 a|
@@ -1499,7 +1931,11 @@ a|
 
 properties characterizing the safety related parameters of a loop-powered, intrinsically safe input or output circuit
 
+
+====
 Note: IS-parameters for passive circuits, if relevant (e.g. 2 wire field devices, valves)
+====
+
 
 See separate clause
 
@@ -1515,7 +1951,11 @@ a|
 
 properties characterizing the safety related parameters of an intrinsically safe circuit
 
+
+====
 Note: IS-parameters for active circuits, if relevant (e.g. power supply, IS-barriers)
+====
+
 
 See separate clause
 
@@ -1540,7 +1980,11 @@ Properties of SMC "SafetyRelatedPropertiesForPassiveBehaviour"
 |*Explanation:* a|
 properties characterizing the safety related parameters of a loop-powered, intrinsically safe input or output circuit
 
+
+====
 Note: IS-parameters for passive circuits, if relevant (e.g. 2 wire field devices, valves)
+====
+
 
 | | |
 |*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
@@ -1556,7 +2000,11 @@ a|
 
 maximum power that can be applied to the connection facilities of the apparatus without invalidating the type of protection
 
+
+====
 Note: Limit value for input power
+====
+
 
 a|
 [Decimal]
@@ -1577,7 +2025,11 @@ a|
 
 maximum voltage (peak a.c. or d.c.) that can be applied to the connection facilities of the apparatus without invalidating the type of protection
 
+
+====
 Note: Limit value for input voltage
+====
+
 
 a|
 [Decimal]
@@ -1598,7 +2050,11 @@ a|
 
 maximum current (peak a.c. or d.c) that can be applied to the connection facilities of the apparatus without invalidating the type of protection
 
+
+====
 Note: Limit value for input current
+====
+
 
 a|
 [Decimal]
@@ -1619,7 +2075,11 @@ a|
 
 maximum equivalent internal capacitance of the apparatus which is considered as appearing across the connection facilities
 
+
+====
 Note: Maximum internal capacitance of the circuit
+====
+
 
 a|
 [Decimal]
@@ -1640,7 +2100,11 @@ a|
 
 maximum equivalent internal inductance of the apparatus which is considered as appearing across the connection facilities
 
+
+====
 Note: Maximum internal inductance of the circuit
+====
+
 
 a|
 [Decimal]
@@ -1670,7 +2134,11 @@ Properties of SMC "SafetyRelatedPropertiesForActiveBehaviour"
 |*Explanation:* a|
 properties characterizing the safety related parameters of an intrinsically safe circuit
 
+
+====
 Note: IS-parameters for active circuits, if relevant (e.g. power supply, IS-barriers)
+====
+
 
 | | |
 |*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
@@ -1686,7 +2154,11 @@ a|
 
 maximum electrical power that can be taken from the apparatus
 
+
+====
 Note: Limit value for output power
+====
+
 
 a|
 [Decimal]
@@ -1707,7 +2179,11 @@ a|
 
 maximum voltage (peak a.c. or d.c.) that can occur at the connection facilities of the apparatus at any applied voltage up to the maximum voltage
 
+
+====
 Note: Limit value for open circuits output voltage
+====
+
 
 a|
 [Decimal]
@@ -1728,7 +2204,11 @@ a|
 
 maximum current (peak a.c. or d.c.) in the apparatus that can be taken from the connection facilities of the apparatus
 
+
+====
 Note: Limit value for closed circuit output current
+====
+
 
 a|
 [Decimal]
@@ -1749,7 +2229,11 @@ a|
 
 maximum capacitance that can be connected to the connection facilities of the apparatus without invalidating the type of protection
 
+
+====
 Note: Maximum external capacitance to be connected to the circuit
+====
+
 
 a|
 [Decimal]
@@ -1770,7 +2254,11 @@ a|
 
 maximum value of inductance that can be connected to the connection facilities of the apparatus without invalidating the type of protection
 
+
+====
 Note: Maximum external inductance to be connected to the circuit
+====
+
 
 a|
 [Decimal]
@@ -1791,7 +2279,11 @@ a|
 
 maximum value of ratio of inductance (Lo) to resistance (Ro) of any external circuit that can be connected to the connection facilities of the electrical apparatus without invalidating intrinsic safety
 
+
+====
 Note: External Inductance to Resistance ratio
+====
+
 
 a|
 [Decimal]
