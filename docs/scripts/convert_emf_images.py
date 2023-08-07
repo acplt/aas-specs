@@ -4,8 +4,8 @@ from wand.image import Image as wima
 
 
 def convert_emf_to_png_with_wand(emf_file: str, png_file):
-    with wima(filename=emf_file) as img:
-        img.format = 'png'
+    with wima(filename=emf_file, resolution=500) as img:
+        img.format = 'PNG'
         img.save(filename=png_file)
 
 
