@@ -262,7 +262,7 @@ ManufacturerProductType (0173-1#02-AAO057#002).
 
 |[langString] +
 FM-ABC-1234@EN |[0..1] |
-|[MLP]footnote:[Recommendation: property declaration as MLP is required by its semantic definition. As the property value is language independent, users are recommended to provide maximal 1 string in any language of the user’s choice.] +
+|[MLP]footnote:mlp[Recommendation: property declaration as MLP is required by its semantic definition. As the property value is language independent, users are recommended to provide maximal 1 string in any language of the user’s choice.] +
 OrderCodeOfManufacturer | a|
 [IRDI] 0173-1#02-AAO227#002
 
@@ -274,9 +274,9 @@ Note: see also [IRDI] 0112/2///61987#ABA950#006 order code of product
 ====
 
 
-|[langString]^1^ +
+|[langString]footnote:mlp[] +
 FMABC1234@EN |[0..1] |
-|[MLP] ^1^ +
+|[MLP]footnote:mlp[] +
 ProductArticleNumberOfManufacturer | a|
 [IRDI] 0173-1#02-AAO676#003
 
@@ -288,7 +288,7 @@ Note: see also [IRDI] 0112/2///61987#ABA581#006 article number
 ====
 
 
-|[langString] ^1^ +
+|[langString]footnote:mlp[] +
 FM11-ABC22-123456@EN |[0..1] |
 |[Property] +
 SerialNumber | a|
@@ -338,7 +338,7 @@ Note: format by lexical representation: CCYY-MM-DD
 
 |[Date] +
 2021-01-01 |[0..1] |
-|[MLP] ^1^ +
+|[MLP]footnote:mlp[] +
 HardwareVersion | a|
 [IRDI] 0173-1#02-AAN270#002
 
@@ -350,9 +350,9 @@ Note: see also [IRDI] 0112/2///61987#ABA926#006 hardware version
 ====
 
 
-|[langString] ^1^ +
+|[langString]footnote:mlp[] +
 1.0.0@EN |[0..1] |
-|[MLP] ^1^ +
+|[MLP]footnote:mlp[] +
 FirmwareVersion | a|
 [IRDI] 0173-1#02-AAM985#002
 
@@ -364,9 +364,9 @@ Note: see also [IRDI] 0112/2///61987#ABA302#004 firmware version
 ====
 
 
-|[langString] ^1^ +
+|[langString]footnote:mlp[] +
 1.0@EN |[0..1] |
-|[MLP] ^1^ +
+|[MLP]footnote:mlp[] +
 SoftwareVersion | a|
 [IRDI] 0173-1#02-AAM737#002
 
@@ -378,7 +378,7 @@ Note: see also [IRDI] 0112/2///61987#ABA601#006 software version
 ====
 
 
-|[langString] ^1^ +
+|[langString]footnote:mlp[] +
 1.0.0@EN |[0..1] |
 |[Property] +
 CountryOfOrigin | a|
@@ -502,7 +502,7 @@ Note: mandatory property according to EU Machine Directive 2006/42/EC.
 
 |[langString] +
 Musterstraße 1@DE |link:#bib1[[1\]]
-|[MLP] ^1^ +
+|[MLP]footnote:mlp[] +
 Zipcode a|
 [IRDI] 0173-1#02-AAO129#002
 
@@ -521,7 +521,7 @@ Note: mandatory property according to EU Machine Directive 2006/42/EC.
 
 
 a|
-[langString] ^1^
+[langString]footnote:mlp[]
 
 12345@DE
 
@@ -550,7 +550,7 @@ a|
 Musterstadt@DE
 
 |link:#bib1[[1\]]
-|[MLP] ^1^ +
+|[MLP]footnote:mlp[] +
 NationalCode a|
 [IRDI] 0173-1#02-AAO134#002
 
@@ -575,7 +575,7 @@ Note: mandatory property according to EU Machine Directive 2006/42/EC.
 
 
 a|
-[langString] ^1^
+[langString]footnote:mlp[]
 
 DE@DE
 
@@ -893,7 +893,7 @@ KEMA99IECEX1105/128
 
 |[0..1] |
 a|
-[MLP] ^1^
+[MLP]footnote:mlp[]
 
 TypeOfApproval
 
@@ -916,13 +916,13 @@ Note: only values from the enumeration should be used as stated. For additional 
 
 
 a|
-[langString] ^1^
+[langString]footnote:mlp[]
 
 ATEX@DE
 
 |[0..1] |
 a|
-[MLP] ^1^
+[MLP]footnote:mlp[]
 
 ApprovalAgencyTestingAgency
 
@@ -945,7 +945,7 @@ Note: only values from the enumeration should be used as stated. For additional 
 
 
 a|
-[langString] ^1^
+[langString]footnote:mlp[]
 
 PTB@DE
 
@@ -1200,7 +1200,7 @@ a|
 
 |[0..1] |
 a|
-[MLP] ^1^
+[MLP]footnote:mlp[]
 
 EquipmentProtectionLevel
 
@@ -1230,7 +1230,7 @@ Note: The combination “GD” is no longer accepted and was changed in the stan
 
 
 a|
-[langString] ^1^
+[langString]footnote:mlp[]
 
 Gb@DE
 
@@ -1489,7 +1489,7 @@ a|
 
 |[0..1]
 a|
-[MLP] ^1^
+[MLP]footnote:mlp[]
 
 EquipmentProtectionLevel
 
@@ -1512,7 +1512,7 @@ Note: Equipment protection level according to the IEC or other standards, e.g. G
 
 
 a|
-[langString] ^1^
+[langString]footnote:mlp[]
 
 Ga@DE
 
@@ -1797,7 +1797,7 @@ Ex db; Ex eb
 
 |[0..1] |
 a|
-[MLP] ^1^
+[MLP]footnote:mlp[]
 
 EquipmentProtectionLevel
 
@@ -1826,7 +1826,7 @@ Note: value should be chosen from an enumeration list with values “Ga, Gb, Gc,
 
 
 a|
-[langString] ^1^
+[langString]footnote:mlp[]
 
 Ga@DE
 
