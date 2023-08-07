@@ -37,7 +37,7 @@ With regard to explosion-protected equipment, various additional information is 
 
 According to [3], interoperable properties might be defined by standards, consortium specifcations or manufacturer specifications. Useful standards providing sources of concepts are:
 
-[#_Toc114783907 .anchor]####Table 1 List of examplary standards defining interoperable properties
+List of examplary standards defining interoperable properties
 
 [width="100%",cols="50%,50%",options="header",]
 |===
@@ -62,7 +62,7 @@ For clarity and an improved legibility readers suggested to go through this sect
 
 image:media/media/image3.png[media/media/image3,width=468,height=201]
 
-[#_Toc114783926 .anchor]####Figure 1: Reading aid and example: UML notation used in this document
+Figure 1: Reading aid and example: UML notation used in this document
 
 Further details about UML diagrams please refer to [6] and [10].
 
@@ -96,9 +96,9 @@ Figure 2 shows the UML-diagram defining the relevant properties which need to be
 
 image:media/media/image4.png[media/media/image4,width=500,height=408]
 
-[#_Ref100652607 .anchor]####Figure 2: UML-Diagram for Submodel "Nameplate"
+Figure 2: UML-Diagram for Submodel "Nameplate"
 
-[#_Ref100652638 .anchor]####Table 2: Properties of Submodel "Nameplate"
+Properties of Submodel "Nameplate"
 
 [width="100%",cols="21%,1%,49%,22%,7%,",]
 |===
@@ -122,7 +122,7 @@ unique global identification of the product using an universal resource identifi
 Note: see also [IRDI] 0112/2///61987#ABN590#001 URI of product instance
 
 a|
-{empty}[String]
+[String]
 
 https://www.domain-abc.com/Model-Nr-1234/Serial-Nr-5678
 
@@ -152,7 +152,7 @@ Note: Short designation of the product is meant.
 Note: mandatory property according to EU Machine Directive 2006/42/EC.
 
 a|
-{empty}[langString]
+[langString]
 
 ABC-123 @EN
 
@@ -177,7 +177,7 @@ ManufacturerProductRoot | a|
 Top level of a 3 level manufacturer specific product hierarchy
 
 a|
-{empty}[langString]
+[langString]
 
 flow meter@EN
 
@@ -321,7 +321,7 @@ See separate clause
 
 |n/a |[0..1] |
 a|
-{empty}[SubmodelElementCollection]
+[SubmodelElementCollection]
 
 AssetSpecificProperties
 
@@ -337,7 +337,7 @@ See separate clause
 |n/a |[0..1] |
 |===
 
-[#_Toc114783950 .anchor]##
+
 
 === Mandatory properties of the SMC “ContactInformation” for physical address
 
@@ -351,9 +351,9 @@ Table 3 describes the details of the SMC structure combined with examples.
 
 image:media/media/image5.png[media/media/image5,width=462,height=357]
 
-{empty}[#_Ref100652695 .anchor]####Figure 3: UML-Diagram for SMC "ContactInformation" defined in Submodel “ContactInformations” by [11]footnote:[As SMC “ContactInformation” is designed for re-usage in other submodels, the displayed cardinalities of properties in the UML diagramm differ from requirements for this submodel template.]
+Figure 3: UML-Diagram for SMC "ContactInformation" defined in Submodel “ContactInformations” by [11]footnote:[As SMC “ContactInformation” is designed for re-usage in other submodels, the displayed cardinalities of properties in the UML diagramm differ from requirements for this submodel template.]
 
-[#_Ref100652715 .anchor]##
+
 
 Table 3: Mandatory properties of SMC "ContactInformation"
 
@@ -412,7 +412,7 @@ Note: see also [IRDI] 0112/2///61987#ABA129#001 city/town
 Note: mandatory property according to EU Machine Directive 2006/42/EC.
 
 a|
-{empty}[langString]
+[langString]
 
 Musterstadt@DE
 
@@ -441,15 +441,15 @@ The following example in Figure 4 shows a possible modelling of SMC “Address�
 
 image:media/media/image6.png[media/media/image6,width=495,height=376]
 
-[#_Ref100652804 .anchor]####Figure 4: Example modelling of SMC "ContactInformation"
+Figure 4: Example modelling of SMC "ContactInformation"
 
-[#_Toc114783951 .anchor]##
+
 
 === Properties of the SMC “Markings”
 
 Figure 2 shows the UML-diagram defining the relevant properties which need to be set. [.mark]####Table 4 describes the details of the SMC structure.
 
-[#_Ref100653041 .anchor]####Table 4: Properties of SMC "Markings"
+Properties of SMC "Markings"
 
 [width="100%",cols="24%,50%,19%,7%",]
 |===
@@ -487,9 +487,9 @@ Figure 5 shows the UML-diagram defining the relevant properties which need to be
 
 image:media/media/image7.png[media/media/image7,width=564,height=247]
 
-[#_Ref100653063 .anchor]####Figure 5: UML-Diagram for SMC "Marking"
+Figure 5: UML-Diagram for SMC "Marking"
 
-[#_Ref100653085 .anchor]####Table 5: Properties of SMC "Marking"
+Properties of SMC "Marking"
 
 [width="100%",cols="24%,49%,20%,7%,",]
 |===
@@ -525,7 +525,7 @@ Samples for valueId from ECLASS are listed in Annex B
 
 |[1] |
 a|
-{empty}[Property]
+[Property]
 
 DesignationOfCertificateOrApproval
 
@@ -537,7 +537,7 @@ alphanumeric character sequence identifying a certificate or approval
 Note: Approval identifier, reference to the certificate number, to be entered without spaces
 
 a|
-{empty}[String]
+[String]
 
 KEMA99IECEX1105/128
 
@@ -554,7 +554,7 @@ Note: format by lexical representation: CCYY-MM-DD
 Note: to be specified to the day
 
 a|
-{empty}[Date]
+[Date]
 
 2021-01-01
 
@@ -573,7 +573,7 @@ Note: format by lexical representation: CCYY-MM-DD
 Note: to be specified to the day
 
 a|
-{empty}[Date]
+[Date]
 
 2021-01-01
 
@@ -599,7 +599,7 @@ Note: see also [IRDI] 0173-1#02-AAM954#002 details of other certificate
 |[String] +
 0044 |[0..*] |
 a|
-{empty}[SubmodelElementCollection]
+[SubmodelElementCollection]
 
 ExplosionSafeties
 
@@ -620,15 +620,15 @@ The following example illustrates how to model product marking in an AAS. On the
 
 image:media/media/image8.png[media/media/image8,width=562,height=272]
 
-[#_Toc114783931 .anchor]####Figure 6: Example modelling of SMC "Marking"
+Figure 6: Example modelling of SMC "Marking"
 
-[#_Toc114783953 .anchor]##
+
 
 === Properties of the SMC “ExplosionSafeties”
 
 Figure 5 shows the UML-diagram defining the relevant properties which need to be set. describes the details of the SMC structure
 
-[#_Toc114783912 .anchor]####Table 6 Properties of SMC “ExplosionSafeties"
+Properties of SMC “ExplosionSafeties"
 
 [width="100%",cols="24%,50%,19%,7%",]
 |===
@@ -651,7 +651,7 @@ See separate clause.
 |n/a |[1..*]
 |===
 
-[#_Toc99402233 .anchor]##
+
 
 === Properties of the SMC “ExplosionSafety”
 
@@ -661,9 +661,9 @@ Table 7 describes the details of the SMC structure.
 
 image:media/media/image9.png[media/media/image9,width=642,height=550]
 
-[#_Ref100653148 .anchor]####Figure 7: UML-Diagram of SMC "ExplosionSafety"
+Figure 7: UML-Diagram of SMC "ExplosionSafety"
 
-[#_Ref100653130 .anchor]##
+
 
 Table 7: Properties of SMC “ExplosionSafety”
 
@@ -678,7 +678,7 @@ Table 7: Properties of SMC “ExplosionSafety”
 |*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
 |*idShort* |*Description@en* |*example* | |
 a|
-{empty}[Property]
+[Property]
 
 DesignationOfCertificateOrApproval
 
@@ -690,7 +690,7 @@ alphanumeric character sequence identifying a certificate or approval
 Note: Approval identifier, reference to the certificate number, to be entered without spaces
 
 a|
-{empty}[String]
+[String]
 
 KEMA99IECEX1105/128
 
@@ -738,7 +738,7 @@ PTB@DE
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 TypeOfProtection
 
@@ -755,7 +755,7 @@ Note:
 * If several TypeOfProtection are listed in the same certificate, for each TypeOfProtection a separate SMC “Explosion Safety” shall be provided
 
 a|
-{empty}[String]
+[String]
 
 db
 
@@ -767,7 +767,7 @@ Ex db; Ex eb
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 RatedInsulationVoltage
 
@@ -781,7 +781,7 @@ Note: U~m~(eff)
 Note: Insulation voltage, if specified in the certificate
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 250
 
@@ -789,7 +789,7 @@ Unit: V
 
 |[0..1] |
 a|
-{empty}[ReferenceElement]
+[ReferenceElement]
 
 InstructionsControlDrawing
 
@@ -802,7 +802,7 @@ Note: Reference to the instruction manual or control drawing
 
 |[Reference] |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 SpecificConditionsForUse
 
@@ -813,13 +813,13 @@ Markings/Marking/ExplosionSafeties/ExplosionSafety/SpecificConditionsForUse
 Note: X if any, otherwise no entry
 
 a|
-{empty}[String]
+[String]
 
 X
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 IncompleteDevice
 
@@ -830,13 +830,13 @@ Markings/Marking/ExplosionSafeties/ExplosionSafety/IncompleteDevice
 U if any, otherwise no entry
 
 a|
-{empty}[String]
+[String]
 
 U
 
 |[0..1] |
 a|
-{empty}[SubmodelElementCollection]
+[SubmodelElementCollection]
 
 AmbientConditions
 
@@ -852,7 +852,7 @@ See separate clause
 
 |n/a |[0..1] |
 a|
-{empty}[SubmodelElementCollection]
+[SubmodelElementCollection]
 
 ProcessConditions
 
@@ -868,7 +868,7 @@ See separate clause
 
 |n/a |[0..1] |
 a|
-{empty}[SubmodelElementCollection]
+[SubmodelElementCollection]
 
 ExternalElectricalCircuit\{00}
 
@@ -887,13 +887,13 @@ See separate clause
 |n/a |[0..*] |
 |===
 
-[#_Toc99402234 .anchor]##
+
 
 === Properties of the SMC “AmbientConditions”
 
 [.mark]####Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 8 describes the details of the SMC structure.
 
-[#_Ref100653211 .anchor]####Table 8: Properties of SMC "AmbientConditions "
+Properties of SMC "AmbientConditions "
 
 [width="100%",cols="24%,50%,19%,7%,",]
 |===
@@ -906,7 +906,7 @@ AmbientConditions | | |
 |*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
 |*idShort* |*Description@en* |*example* | |
 a|
-{empty}[Property]
+[Property]
 
 DeviceCategory
 
@@ -923,7 +923,7 @@ Note: Equipment category according to the ATEX system. According to the current 
 Note: The combination “GD” is no longer accepted and was changed in the standards. Currently the marking for “G” and “D” must be provided in a separate marking string. Older devices may still exist with the marking “GD”.
 
 a|
-{empty}[String]
+[String]
 
 2G
 
@@ -953,7 +953,7 @@ Gb@DE
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 RegionalSpecificMarking
 
@@ -964,13 +964,13 @@ Marking/ExplosionSafeties/ExplosionSafety/RegionalSpecificMarking
 Marking used only in specific regions, e.g. North America: class/divisions, EAC: “1” or NEC: “AIS”
 
 a|
-{empty}[String]
+[String]
 
 Class I, Division 2
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 TypeOfProtection
 
@@ -983,7 +983,7 @@ classification of an explosion protection according to the specific measures app
 Note: Symbol(s) for the Type of protection. Several types of protection are separated by a semicolon “;”
 
 a|
-{empty}[String]
+[String]
 
 db
 
@@ -995,7 +995,7 @@ Ex db; Ex eb
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 ExplosionGroup
 
@@ -1010,7 +1010,7 @@ Note: Equipment grouping according to IEC 60079-0 is meant by this property
 Note: Symbol(s) for the gas group (IIA…IIC) or dust group (IIIA…IIIC)
 
 a|
-{empty}[String]
+[String]
 
 IIC
 
@@ -1020,7 +1020,7 @@ A,B,C,D
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 MinimumAmbientTemperature
 
@@ -1035,7 +1035,7 @@ Note: editorial defnition: lower limit of the temperature range of the environme
 Note: Rated minimum ambient temperature
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 -40footnote:[Positive temperatures are listed without “+” sign. If several temperatures ranges are marked, only the most general range shall be indicated in the template, which is consistent with the specified temperature class or maximum surface temperature. Other temperature ranges and temperature classes/maximum surface temperatures may be listed in the instructions.]
 
@@ -1043,7 +1043,7 @@ Unit: ºC
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 MaxAmbientTemperature
 
@@ -1058,7 +1058,7 @@ Note: editorial definition: upper limit of the temperature range of the environm
 Note: Rated maximum ambient temperature
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 120^3^
 
@@ -1066,7 +1066,7 @@ Unit: ºC
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 MaxSurfaceTemperatureForDustProof
 
@@ -1079,7 +1079,7 @@ maximum permissible surface temperature of a device used in an explosion hazardo
 Note: Maximum surface temperature of the device (dust layer ≤ 5 mm) for specified maximum ambient and maximum process temperature, relevant for Group III only
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 100^3^
 
@@ -1087,7 +1087,7 @@ Unit: ºC
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 TemperatureClass
 
@@ -1102,7 +1102,7 @@ Note: editorial defnition: classification system of electrical apparatus, based 
 Note: Temperature class of the device for specified maximum ambient and maximum process temperature, relevant for Group II only (Further combinations may be provided in the instruction manual).
 
 a|
-{empty}[String]
+[String]
 
 T6
 
@@ -1115,7 +1115,7 @@ T5
 
 [.mark]####Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 9 describes the details of the SMC structure.
 
-[#_Ref100653241 .anchor]####Table 9: Properties of SMC "ProcessConditions"
+Properties of SMC "ProcessConditions"
 
 [width="100%",cols="24%,50%,19%,7%",]
 |===
@@ -1133,7 +1133,7 @@ Note: If the device is mounted in the process boundary, ambient and process cond
 |*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.*
 |*idShort* |*Description@en* |*example* |
 a|
-{empty}[Property]
+[Property]
 
 DeviceCategory
 
@@ -1148,7 +1148,7 @@ Note: editorial defnition: Category of device in accordance with directive 2014/
 Note: Equipment category according to the ATEX system.
 
 a|
-{empty}[String]
+[String]
 
 1G
 
@@ -1175,7 +1175,7 @@ Ga@DE
 
 |[0..1]
 a|
-{empty}[Property]
+[Property]
 
 RegionalSpecificMarking
 
@@ -1186,7 +1186,7 @@ Marking/ExplosionSafeties/ExplosionSafety/RegionalSpecificMarking
 Marking used only in specific regions, e.g. North America: class/divisions, EAC: “1” or NEC: “AIS”
 
 a|
-{empty}[String]
+[String]
 
 IS
 
@@ -1194,7 +1194,7 @@ NI;AIS
 
 |[0..1]
 a|
-{empty}[Property]
+[Property]
 
 TypeOfProtection
 
@@ -1207,13 +1207,13 @@ classification of an explosion protection according to the specific measures app
 Note: Symbol(s) for the Type of protection. Several types of protection are separated by a semicolon “;”
 
 a|
-{empty}[String]
+[String]
 
 ia
 
 |[0..1]
 a|
-{empty}[Property]
+[Property]
 
 ExplosionGroup
 
@@ -1230,7 +1230,7 @@ Note: Equipment grouping according to IEC 60079-0 is meant by this property
 Note: Symbol(s) for the gas group (IIA…IIC) or dust group (IIIA…IIIC)
 
 a|
-{empty}[String]
+[String]
 
 IIC
 
@@ -1238,7 +1238,7 @@ A,B,C,D
 
 |[0..1]
 a|
-{empty}[Property]
+[Property]
 
 LowerLimitingValueOfProcessTemperature
 
@@ -1250,7 +1250,7 @@ lowest temperature to which the wetted parts of the equipment can be subjected w
 Note: Rated minimum process temperature
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 -40^3^
 
@@ -1258,7 +1258,7 @@ Unit: ºC
 
 |[0..1]
 a|
-{empty}[Property]
+[Property]
 
 UpperLimitingValueOfProcessTemperature
 
@@ -1270,7 +1270,7 @@ highest temperature to which the wetted parts of the device may be subjected wit
 Note: Rated maximum process temperature
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 120^3^
 
@@ -1278,7 +1278,7 @@ Unit: ºC
 
 |[0..1]
 a|
-{empty}[Property]
+[Property]
 
 MaxSurfaceTemperatureForDustProof
 
@@ -1291,7 +1291,7 @@ maximum permissible surface temperature of a device used in an explosion hazardo
 Note: Maximum surface temperature (dust layer ≤ 5 mm) for specified maximum ambient and maximum process temperature, relevant for Group III only
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 85^3^
 
@@ -1299,7 +1299,7 @@ Unit: ºC
 
 |[0..1]
 a|
-{empty}[Property]
+[Property]
 
 TemperatureClass
 
@@ -1314,7 +1314,7 @@ Note: editorial definition: classification system of electrical apparatus, based
 Note: Temperature class for specified maximum ambient and maximum process temperature, relevant for Group II only (Further combinations may be provided in the instruction manual).
 
 a|
-{empty}[String]
+[String]
 
 T4
 
@@ -1325,7 +1325,7 @@ T4
 
 Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 10 describes the details of the SMC structure.
 
-[#_Ref100653299 .anchor]####Table 10: Properties of SMC "ExternalElectricalCircuit"
+Properties of SMC "ExternalElectricalCircuit"
 
 [width="100%",cols="24%,50%,19%,7%,",]
 |===
@@ -1345,7 +1345,7 @@ Note: If for one external IS circuit several sets of safety parameters are provi
 |*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
 |*idShort* |*Description@en* |*example* | |
 a|
-{empty}[Property]
+[Property]
 
 DesignationOfElectricalTerminal
 
@@ -1357,7 +1357,7 @@ alphanumeric character sequence identifying an electrical terminal
 Note: For each circuit the designation of the terminals shall be specified. If several circuits are provided with the same parameters, their terminal pairs are listed and separated by a semicolon. If several circuits belong to one channel this shall be described in the instructions.
 
 a|
-{empty}[String]
+[String]
 
 +/-
 
@@ -1367,7 +1367,7 @@ a|
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 TypeOfProtection
 
@@ -1384,7 +1384,7 @@ Note:
 * If several TypeOfProtection are listed in the same certificate, for each TypeOfProtection a separate SMC “Explosion Safety” shall be provided
 
 a|
-{empty}[String]
+[String]
 
 db
 
@@ -1419,7 +1419,7 @@ Ga@DE
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 ExplosionGroup
 
@@ -1436,13 +1436,13 @@ Note: Equipment grouping according to IEC 60079-0 is meant by this property
 Note: Symbol(s) for the gas group (IIA…IIC) or dust group (IIIA…IIIC)
 
 a|
-{empty}[String]
+[String]
 
 IIC
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 Characteristics
 
@@ -1455,13 +1455,13 @@ Characteristic of the intrinsically safe circuit
 Note: linear/ non-linear
 
 a|
-{empty}[String]
+[String]
 
 linear
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 Fisco
 
@@ -1475,7 +1475,7 @@ Note: Enter “x” if relevant
 
 |[String] |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 TwoWISE
 
@@ -1489,7 +1489,7 @@ Note: Enter “x” if relevant
 
 |[String] |[0..1] |
 a|
-{empty}[SubmodelElementCollection]
+[SubmodelElementCollection]
 
 SafetyRelatedPropertiesForPassiveBehaviour
 
@@ -1505,7 +1505,7 @@ See separate clause
 
 |n/a |[0..1] |
 a|
-{empty}[SubmodelElementCollection]
+[SubmodelElementCollection]
 
 SafetyRelatedPropertiesForActiveBehaviour
 
@@ -1522,13 +1522,13 @@ See separate clause
 |n/a |[0..1] |
 |===
 
-[#_Toc99402237 .anchor]##
+
 
 === Properties of the SMC “SafetyRelatedPropertiesForPassiveBehaviour”
 
 Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 11 describes the details of the SMC structure.
 
-[#_Ref100653323 .anchor]####Table 11: Properties of SMC "SafetyRelatedPropertiesForPassiveBehaviour"
+Properties of SMC "SafetyRelatedPropertiesForPassiveBehaviour"
 
 [width="100%",cols="24%,50%,19%,7%,",]
 |===
@@ -1546,7 +1546,7 @@ Note: IS-parameters for passive circuits, if relevant (e.g. 2 wire field devices
 |*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
 |*idShort* |*Description@en* |*example* | |
 a|
-{empty}[Property]
+[Property]
 
 MaxInputPower
 
@@ -1559,7 +1559,7 @@ maximum power that can be applied to the connection facilities of the apparatus 
 Note: Limit value for input power
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 1250
 
@@ -1567,7 +1567,7 @@ Unit: mW
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 MaxInputVoltage
 
@@ -1580,7 +1580,7 @@ maximum voltage (peak a.c. or d.c.) that can be applied to the connection facili
 Note: Limit value for input voltage
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 30
 
@@ -1588,7 +1588,7 @@ Unit: V
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 MaxInputCurrent
 
@@ -1601,7 +1601,7 @@ maximum current (peak a.c. or d.c) that can be applied to the connection facilit
 Note: Limit value for input current
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 100
 
@@ -1609,7 +1609,7 @@ Unit: mA
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 MaxInternalCapacitance
 
@@ -1622,7 +1622,7 @@ maximum equivalent internal capacitance of the apparatus which is considered as 
 Note: Maximum internal capacitance of the circuit
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 0
 
@@ -1630,7 +1630,7 @@ Unit: µF
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 MaxInternalInductance
 
@@ -1643,7 +1643,7 @@ maximum equivalent internal inductance of the apparatus which is considered as a
 Note: Maximum internal inductance of the circuit
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 0
 
@@ -1652,13 +1652,13 @@ Unit: mH
 |[0..1] |
 |===
 
-[#_Toc99402238 .anchor]##
+
 
 === Properties of the SMC “SafetyRelatedPropertiesForActiveBehaviour”
 
 Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 12 describes the details of the SMC structure.
 
-[#_Ref100653392 .anchor]####Table 12: Properties of SMC "SafetyRelatedPropertiesForActiveBehaviour"
+Properties of SMC "SafetyRelatedPropertiesForActiveBehaviour"
 
 [width="100%",cols="24%,50%,19%,7%,",]
 |===
@@ -1676,7 +1676,7 @@ Note: IS-parameters for active circuits, if relevant (e.g. power supply, IS-barr
 |*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
 |*idShort* |*Description@en* |*example* | |
 a|
-{empty}[Property]
+[Property]
 
 MaxOutputPower
 
@@ -1689,7 +1689,7 @@ maximum electrical power that can be taken from the apparatus
 Note: Limit value for output power
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 960
 
@@ -1697,7 +1697,7 @@ Unit: mW
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 MaxOutputVoltage
 
@@ -1710,7 +1710,7 @@ maximum voltage (peak a.c. or d.c.) that can occur at the connection facilities 
 Note: Limit value for open circuits output voltage
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 15.7
 
@@ -1718,7 +1718,7 @@ Unit: V
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 MaxOutputCurrent
 
@@ -1731,7 +1731,7 @@ maximum current (peak a.c. or d.c.) in the apparatus that can be taken from the 
 Note: Limit value for closed circuit output current
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 245
 
@@ -1739,7 +1739,7 @@ Unit: mA
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 MaxExternalCapacitance
 
@@ -1752,7 +1752,7 @@ maximum capacitance that can be connected to the connection facilities of the ap
 Note: Maximum external capacitance to be connected to the circuit
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 2878
 
@@ -1760,7 +1760,7 @@ Unit: µF
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 MaxExternalInductance
 
@@ -1773,7 +1773,7 @@ maximum value of inductance that can be connected to the connection facilities o
 Note: Maximum external inductance to be connected to the circuit
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 2.9
 
@@ -1781,7 +1781,7 @@ Unit: mH
 
 |[0..1] |
 a|
-{empty}[Property]
+[Property]
 
 MaxExternalInductanceResistanceRatio
 
@@ -1794,7 +1794,7 @@ maximum value of ratio of inductance (Lo) to resistance (Ro) of any external cir
 Note: External Inductance to Resistance ratio
 
 a|
-{empty}[Decimal]
+[Decimal]
 
 Unit: mH/Q
 
@@ -1805,7 +1805,7 @@ Unit: mH/Q
 
 Figure 2 shows the UML-diagram defining the relevant properties which need to be set. Table 13 describes the details of the SMC structure.
 
-[#_Ref100653416 .anchor]####Table 13: Properties of SMC “AssetSpecificProperties”
+Properties of SMC “AssetSpecificProperties”
 
 [width="100%",cols="24%,50%,19%,7%,",]
 |===
@@ -1817,7 +1817,7 @@ Figure 2 shows the UML-diagram defining the relevant properties which need to be
 |*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
 |*idShort* |*Description@en* |*example* | |
 a|
-{empty}[SubmodelElementCollection]
+[SubmodelElementCollection]
 
 GuidelineSpecificProperties\{00}
 
@@ -1837,13 +1837,13 @@ Properties which are not required by any legislations but provided due to best p
 |n/a |[1..*] |
 |===
 
-[#_Toc99402240 .anchor]##
+
 
 === Properties of the SMC “GuidelineSpecificProperties”
 
 Figure 2 shows the UML-diagram defining the relevant properties which need to be set. Table 14 describes the details of the SMC structure combined with examples.
 
-[#_Ref100653479 .anchor]####Table 14: Properties of SMC “GuidelineSpecificProperties”
+Properties of SMC “GuidelineSpecificProperties”
 
 [width="100%",cols="24%,50%,19%,7%,",]
 |===
@@ -1869,7 +1869,7 @@ In the following example a pressure equipment is addressed. Due to EU Directive 
 
 image:media/media/image10.png[media/media/image10,width=530,height=301]
 
-[#_Ref100653520 .anchor]####Figure 8: Example modelling of SMC “AssetSpecificProperties”
+Figure 8: Example modelling of SMC “AssetSpecificProperties”
 
 == Examples for using SMC “ExplosionSafety”
 
@@ -1881,7 +1881,7 @@ Figure 9 shows the nameplate of a Remote I/O module.
 
 image:media/media/image11.png[Ein Bild, das Text, Zeitung, Quittung enthält. Automatisch generierte Beschreibung,width=580,height=299]
 
-[#_Ref100653553 .anchor]####Figure 9: Sample nameplate of Remote I/O Module 9468
+Figure 9: Sample nameplate of Remote I/O Module 9468
 
 Figure 10 shows the UML diagram of all SMC “ExplosionSafety” of the respective nameplate.
 
@@ -1889,9 +1889,9 @@ Table 15 describes the details of the SMC structure.
 
 image:media/media/image12.png[media/media/image12,width=608,height=716]
 
-[#_Ref100653573 .anchor]####Figure 10: UML diagram of SMC “ExplosionSafety” for Remote I/O Module 9468
+Figure 10: UML diagram of SMC “ExplosionSafety” for Remote I/O Module 9468
 
-[#_Ref100653590 .anchor]####Table 15: List of elements in SMC “ExplosionSafety” of Remote I/O Module 9468
+List of elements in SMC “ExplosionSafety” of Remote I/O Module 9468
 
 [width="100%",cols="20%,13%,16%,3%,12%,12%,12%,12%",options="header",]
 |===
@@ -2147,7 +2147,7 @@ Figure 11 shows the nameplate of a load disconnect switch.
 
 image:media/media/image13.png[Ein Bild, das Text, Quittung enthält. Automatisch generierte Beschreibung,width=580,height=290]
 
-[#_Ref100653640 .anchor]####Figure 11: Sample nameplate of a load disconnect switch
+Figure 11: Sample nameplate of a load disconnect switch
 
 Figure 12 shows the UML diagram of all SMC “ExplosionSafety” of the respective nameplate.
 
@@ -2155,9 +2155,9 @@ Table 16 describes the details of the SMC structure.
 
 image:media/media/image14.png[media/media/image14,width=608,height=453]
 
-[#_Ref100653676 .anchor]####Figure 12: UML diagram of SMC “ExplosionSafety” for load disconnect switch
+Figure 12: UML diagram of SMC “ExplosionSafety” for load disconnect switch
 
-[#_Ref100653692 .anchor]####Table 16: List of elements in SMC “ExplosionSafety” of the load disconnect switch
+List of elements in SMC “ExplosionSafety” of the load disconnect switch
 
 [width="100%",cols="20%,20%,26%,4%,15%,15%",options="header",]
 |===
@@ -2208,7 +2208,7 @@ Figure 13 shows the nameplate of a FISCO power supply.
 
 image:media/media/image15.png[media/media/image15,width=626,height=177]
 
-[#_Ref100653738 .anchor]####Figure 13: Sample nameplate of FISCO power supply
+Figure 13: Sample nameplate of FISCO power supply
 
 Figure 14 shows the UML diagram of all SMC “ExplosionSafety” of the respective nameplate.
 
@@ -2216,9 +2216,9 @@ Table 17 describes the details of the SMC structure.
 
 image:media/media/image16.png[media/media/image16,width=603,height=592]
 
-[#_Ref100653753 .anchor]####Figure 14: UML diagram of SMC “ExplosionSafety” for FISCO power supply
+Figure 14: UML diagram of SMC “ExplosionSafety” for FISCO power supply
 
-[#_Ref100653792 .anchor]####Table 17: List of elements in SMC “ExplosionSafety” of FISCO power supply
+List of elements in SMC “ExplosionSafety” of FISCO power supply
 
 [width="100%",cols="20%,24%,20%,4%,16%,16%",options="header",]
 |===
@@ -2433,7 +2433,7 @@ Figure 15 shows the nameplate of a flow meter Promag 300.
 
 image:media/media/image17.png[media/media/image17,width=578,height=348]
 
-[#_Ref100670278 .anchor]####Figure 15: Sample nameplate of flow meter Promag 300
+Figure 15: Sample nameplate of flow meter Promag 300
 
 Figure 16 shows the UML diagram of all SMC “ExplosionSafety” of the respective nameplate.
 
@@ -2441,9 +2441,9 @@ Table 18 describes the details of the SMC structure.
 
 image:media/media/image18.png[media/media/image18,width=638,height=659]
 
-[#_Ref100653888 .anchor]####Figure 16: UML diagram of SMC “ExplosionSafety” for flow meter Promag 300
+Figure 16: UML diagram of SMC “ExplosionSafety” for flow meter Promag 300
 
-[#_Ref100653863 .anchor]####Table 18: List of elements in SMC “ExplosionSafety” of flow meter Promag 300
+List of elements in SMC “ExplosionSafety” of flow meter Promag 300
 
 [width="100%",cols="18%,13%,18%,3%,12%,12%,12%,12%",options="header",]
 |===
@@ -2646,7 +2646,7 @@ For clarity and brevity, a set of rules is used for the tables for describing Su
 
 The following table provides sample ECLASS definitions for modelling product marking in SMC “Marking”. Further values will be provided by ECLASS or other repositories.
 
-[#_Toc114783925 .anchor]####Table 19: Sample ECLASS definitions for product marking
+Sample ECLASS definitions for product marking
 
 [width="100%",cols="7%,39%,54%",]
 |===
@@ -2687,6 +2687,6 @@ The following table provides sample ECLASS definitions for modelling product mar
 
 [10] “OMG Unified Modeling Language (OMG UML)”, Formal/2017-12-05, Version 2.5.1. December 2018. [Online] Available: https/www.omg.org/spec/UML/
 
-{empty}[11] “IDTA 2002-1-0 Submodel for Contact Information”, 24 May 2022, Industrial Digital Twin Association, [Online]. Available: https://github.com/admin-shell-io/submodel-templates/blob/main/published/Contact%20Information/1/IDTA%202002-1-0_Submodel_ContactInformation.pdf[https://github.com/admin-shell-io/Submodel-templates/blob/main/published/Contact%20Information/1/IDTA%202002-1-0_Submodel_ContactInformation.pdf]
+[11] “IDTA 2002-1-0 Submodel for Contact Information”, 24 May 2022, Industrial Digital Twin Association, [Online]. Available: https://github.com/admin-shell-io/submodel-templates/blob/main/published/Contact%20Information/1/IDTA%202002-1-0_Submodel_ContactInformation.pdf[https://github.com/admin-shell-io/Submodel-templates/blob/main/published/Contact%20Information/1/IDTA%202002-1-0_Submodel_ContactInformation.pdf]
 
 www.industrialdigitaltwin.org
