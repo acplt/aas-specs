@@ -1,5 +1,6 @@
 :toc: left
 :toc-title: Digital Nameplate for Industrial Equipment
+:imagesdir: media/
 :stylesheet: ../../style.css
 :nofooter:
 
@@ -72,7 +73,7 @@ Requirements specified by further regulations and directives will be taken into 
 For clarity and an improved legibility readers suggested to go through this section at first before reading the following chapters.
 
 .Figure 1: Reading aid and example: UML notation used in this document
-image:media/media/image3.png[media/media/image3,width=468,height=201]
+image:image3.png[width=468,height=201]
 
 Further details about UML diagrams please refer to link:#bib6[[6\]] and link:#bib10[[10\]].
 
@@ -105,7 +106,7 @@ See clause 3 “Submodel and collections“.
 Figure 2 shows the UML-diagram defining the relevant properties which need to be set. Table 2 describes the details of the Submodel structure combined with examples.
 
 .Figure 2: UML-Diagram for Submodel "Nameplate"
-image:media/media/image4.png[media/media/image4,width=500,height=408]
+image:image4.png[width=500,height=408]
 
 .Properties of Submodel "Nameplate"
 
@@ -446,7 +447,7 @@ Figure 3 shows the UML-diagram defining the relevant properties which need to be
 Table 3 describes the details of the SMC structure combined with examples.
 
 .Figure 3: UML-Diagram for SMC "ContactInformation" defined in Submodel “ContactInformations” by link:#bib11[[11\]]footnote:[As SMC “ContactInformation” is designed for re-usage in other submodels, the displayed cardinalities of properties in the UML diagramm differ from requirements for this submodel template.]
-image:media/media/image5.png[media/media/image5,width=462,height=357]
+image:image5.png[width=462,height=357]
 
 
 
@@ -571,7 +572,7 @@ DE@DE
 The following example in Figure 4 shows a possible modelling of SMC “Address” in Submodel “Nameplate”.
 
 .Figure 4: Example modelling of SMC "ContactInformation"
-image:media/media/image6.png[media/media/image6,width=495,height=376]
+image:image6.png[width=495,height=376]
 
 
 
@@ -629,7 +630,7 @@ See separate clause.
 Figure 5 shows the UML-diagram defining the relevant properties which need to be set. Table 5 describes the details of the SMC structure combined with examples.
 
 .Figure 5: UML-Diagram for SMC "Marking"
-image:media/media/image7.png[media/media/image7,width=564,height=247]
+image:image7.png[width=564,height=247]
 
 .Properties of SMC "Marking"
 [width=100%, cols="h,1", options="autowidth"]
@@ -790,7 +791,7 @@ Regarding the property “MarkingName” the preferable solution is to provide a
 The following example illustrates how to model product marking in an AAS. On the left side there is a sample nameplate which contains two markings to be modelled: the CE marking and the WEEE marking with a crossed-out wheeled bin. Next to the nameplate a table lists all properties and their attributes.
 
 .Figure 6: Example modelling of SMC "Marking"
-image:media/media/image8.png[media/media/image8,width=562,height=272]
+image:image8.png[width=562,height=272]
 
 
 
@@ -831,7 +832,7 @@ Figure 7 shows the UML-diagram defining the relevant properties which need to be
 Table 7 describes the details of the SMC structure.
 
 .Figure 7: UML-Diagram of SMC "ExplosionSafety"
-image:media/media/image9.png[media/media/image9,width=642,height=550]
+image:image9.png[width=642,height=550]
 
 
 
@@ -2269,7 +2270,7 @@ Beside the mentioned EU Machine Directive 2006/42/EC which this Submodel templat
 In the following example a pressure equipment is addressed. Due to EU Directive 2014/68/EU the essential maximum/minimum allowable limits shall be provided for all pressure equipment. The example in [.mark]####Figure 8 shows a possible modelling of SMC “GuidelineSpecificProperties” in order to specify the minimum and maximum allowable pressure.
 
 .Figure 8: Example modelling of SMC “AssetSpecificProperties”
-image:media/media/image10.png[media/media/image10,width=530,height=301]
+image:image10.png[width=530,height=301]
 
 == Examples for using SMC “ExplosionSafety”
 
@@ -2280,14 +2281,14 @@ Due to the complexity of SMC “ExplosionSafety” examples are offered in this 
 Figure 9 shows the nameplate of a Remote I/O module.
 
 .Figure 9: Sample nameplate of Remote I/O Module 9468
-image:media/media/image11.png[Ein Bild, das Text, Zeitung, Quittung enthält. Automatisch generierte Beschreibung,width=580,height=299]
+image:image11.png[as Text, Zeitung, Quittung enthält. Automatisch generierte Beschreibung,width=580,height=299]
 
 Figure 10 shows the UML diagram of all SMC “ExplosionSafety” of the respective nameplate.
 
 Table 15 describes the details of the SMC structure.
 
 .Figure 10: UML diagram of SMC “ExplosionSafety” for Remote I/O Module 9468
-image:media/media/image12.png[media/media/image12,width=608,height=716]
+image:image12.png[width=608,height=716]
 
 .List of elements in SMC “ExplosionSafety” of Remote I/O Module 9468
 [width=100%, stripes=even, options="autowidth,header"]
@@ -2481,14 +2482,14 @@ ActiveBehaviour”
 Figure 11 shows the nameplate of a load disconnect switch.
 
 .Figure 11: Sample nameplate of a load disconnect switch
-image:media/media/image13.png[Ein Bild, das Text, Quittung enthält. Automatisch generierte Beschreibung,width=580,height=290]
+image:image13.png[as Text, Quittung enthält. Automatisch generierte Beschreibung,width=580,height=290]
 
 Figure 12 shows the UML diagram of all SMC “ExplosionSafety” of the respective nameplate.
 
 Table 16 describes the details of the SMC structure.
 
 .Figure 12: UML diagram of SMC “ExplosionSafety” for load disconnect switch
-image:media/media/image14.png[media/media/image14,width=608,height=453]
+image:image14.png[width=608,height=453]
 
 .List of elements in SMC “ExplosionSafety” of the load disconnect switch
 [width=100%, stripes=even, options="autowidth,header"]
@@ -2518,14 +2519,14 @@ image:media/media/image14.png[media/media/image14,width=608,height=453]
 Figure 13 shows the nameplate of a FISCO power supply.
 
 .Figure 13: Sample nameplate of FISCO power supply
-image:media/media/image15.png[media/media/image15,width=626,height=177]
+image:image15.png[width=626,height=177]
 
 Figure 14 shows the UML diagram of all SMC “ExplosionSafety” of the respective nameplate.
 
 Table 17 describes the details of the SMC structure.
 
 .Figure 14: UML diagram of SMC “ExplosionSafety” for FISCO power supply
-image:media/media/image16.png[media/media/image16,width=603,height=592]
+image:image16.png[width=603,height=592]
 
 .List of elements in SMC “ExplosionSafety” of FISCO power supply
 [width=100%, stripes=even, options="autowidth,header"]
@@ -2675,14 +2676,14 @@ ActiveBehaviour”
 Figure 15 shows the nameplate of a flow meter Promag 300.
 
 .Figure 15: Sample nameplate of flow meter Promag 300
-image:media/media/image17.png[media/media/image17,width=578,height=348]
+image:image17.png[width=578,height=348]
 
 Figure 16 shows the UML diagram of all SMC “ExplosionSafety” of the respective nameplate.
 
 Table 18 describes the details of the SMC structure.
 
 .Figure 16: UML diagram of SMC “ExplosionSafety” for flow meter Promag 300
-image:media/media/image18.png[media/media/image18,width=638,height=659]
+image:image18.png[width=638,height=659]
 
 .List of elements in SMC “ExplosionSafety” of flow meter Promag 300
 [width=100%, stripes=even, options="autowidth,header"]
