@@ -69,3 +69,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 	background: #e5f0f7;
 	box-shadow: 0 1px 4px #e0e0dc;
 }
+
+#header, #content, #footnotes, #footer {
+	margin-left: 0;
+}

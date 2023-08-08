@@ -11,3 +11,6 @@ We generated the HTML documentation for the following parts of the documentation
 
 * link:AASiD_1_Metamodel/index.html[Specification of the Asset Administration Shell. Part 1: Metamodel]
 * link:AASiD_5_AASXPackageFileFormat/index.html[Specification of the Asset Administration Shell. Part 5: Package File Format (AASX)]
+
+== Submodel Template Specifications
+* link:AAS_Submodel_Templates/Digital_Nameplate/index.html[Digital Nameplate for Industrial Equipment]
