@@ -1103,7 +1103,7 @@ See separate clause
 
 === Properties of the SMC “AmbientConditions”
 
-[.mark]####Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 8 describes the details of the SMC structure.
+Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 8 describes the details of the SMC structure.
 
 .Properties of SMC "AmbientConditions"
 [width=100%, cols="h,1", options="autowidth"]
@@ -1375,7 +1375,7 @@ T5
 
 === Properties of the SMC “ProcessConditions”
 
-[.mark]####Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 9 describes the details of the SMC structure.
+Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 9 describes the details of the SMC structure.
 
 .Properties of SMC "ProcessConditions"
 [width=100%, cols="h,1", options="autowidth"]
