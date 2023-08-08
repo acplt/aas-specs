@@ -2224,7 +2224,9 @@ Asset specific nameplate information required by guideline, stipulation or legis
 See separate clause
 
 |n/a |1..*
-|[Property] \{arbitrary} a|
+|[Property]
+
+\{arbitrary} a|
 semanticId = \{arbitrary, representing information required by further standards}
 
 Properties which are not required by any legislations but provided due to best practice.
@@ -2257,7 +2259,9 @@ h|idShort h|Description@en h|example h|
 guideline, stipulation or legislation used for determining conformity
 
 |[String] |1
-|[Property] \{arbitrary} |semanticId = \{arbitrary, representing information required by further standards} |n/a |1..*
+|[Property]
+
+\{arbitrary} |semanticId = \{arbitrary, representing information required by further standards} |n/a |1..*
 |===
 
 Beside the mentioned EU Machine Directive 2006/42/EC which this Submodel template is compliant with, there might be further information required by further stipulations and regulations depending on different asset. The SMC “AssetSpecificProperties” and its child SMC “GuidelineSpecificProperties” are therefore used to cover additional mandatory nameplate information while referencing the related stipulation or regulation.
@@ -2286,11 +2290,11 @@ Table 15 describes the details of the SMC structure.
 image:media/media/image12.png[media/media/image12,width=608,height=716]
 
 .List of elements in SMC “ExplosionSafety” of Remote I/O Module 9468
-[width=100%, options="autowidth,header"]
+[width=100%, stripes=even, options="autowidth,header"]
 |===
 |Parent element |semanticId |Element |Unit |SMC 01 |SMC 02 |SMC 03 |SMC 04
 |Marking |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties |SMC “ExplosionSafeties” | | | | |
-|SMC “ExplosionSafeties” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ ExplosionSafeties/ExplosionSafety |SMC “ExplosionSafety” | |DEKRA12ATEX0173X_01 |DEKRA12ATEX0173X_02 |FM17US0332X_01 |FM17US0332X_02
+|SMC “ExplosionSafeties” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety |SMC “ExplosionSafety” | |DEKRA12ATEX0173X_01 |DEKRA12ATEX0173X_02 |FM17US0332X_01 |FM17US0332X_02
 |SMC “ExplosionSafety” |0112/2///61987#ABH783#001 |DesignationOfCertificateOrApproval | |DEKRA12ATEX0173X |DEKRA12ATEX0173X |FM17US0332X |FM17US0332X
 |SMC “ExplosionSafety” |0173-1#02-AAM812#003 |TypeOfApproval | |IECEX@EN |IECEX@EN |IECEX@EN |IECEX@EN
 |SMC “ExplosionSafety” |0173-1#02-AAM632#001 |ApprovalAgencyTestingAgency | |CSA@EN |CSA@EN |CSA@EN |CSA@EN
@@ -2306,8 +2310,7 @@ image:media/media/image12.png[media/media/image12,width=608,height=716]
 |SMC “AmbientConditions” |0173-1#02-AAZ952#001 |MinimumAmbientTemperature |ºC |-40 |-40 |-40 |-40
 |SMC “AmbientConditions” |0173-1#02-BAA039#010 |MaxAmbientTemperature |ºC |75 |75 |75 |75
 |SMC “AmbientConditions” |0173-1#02-AAO371#004 |TemperatureClass | |T4 | |T4 |T4
-|SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01
 |SMC “ExternalElectricalCircuit_01” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |1+ / 2- |1+ / 2- |1+ / 2- |1+ / 2-
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAQ325#003 |TypeOfProtection | |ia |ia |IS |ia
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Da |Class I, Division 1 |Class I, Zone 1
@@ -2365,8 +2368,7 @@ PropertiesFor
 ActiveBehaviour”
 
 |0173-1#02-AAM636#003 |MaxExternalInductance |mH |3.8 |3.8 |3.8 |3.8
-|SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02
 |SMC “ExternalElectricalCircuit_02” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |1+ / 2+ / 4- |1+ / 2+ / 4- |1+ / 2+ / 4- |1+ / 2+ / 4-
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAQ325#003 |TypeOfProtection | |ia |ia |IS |ia
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Da |Class I, Division 1 |Class I, Zone 1
@@ -2424,8 +2426,7 @@ PropertiesFor
 ActiveBehaviour”
 
 |0173-1#02-AAM636#003 |MaxExternalInductance |mH |3.6 |3.6 |3.6 |3.6
-|SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03
 |SMC “ExternalElectricalCircuit_03” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |2+ / 4- |2+ / 4- |2+ / 4- |2+ / 4-
 |SMC “ExternalElectricalCircuit_03” |0173-1#02-AAQ325#003 |TypeOfProtection | |ia |ia |IS |ia
 |SMC “ExternalElectricalCircuit_03” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Da |Class I, Division 1 |Class I, Zone 1
@@ -2490,7 +2491,7 @@ Table 16 describes the details of the SMC structure.
 image:media/media/image14.png[media/media/image14,width=608,height=453]
 
 .List of elements in SMC “ExplosionSafety” of the load disconnect switch
-[width=100%, options="autowidth,header"]
+[width=100%, stripes=even, options="autowidth,header"]
 |===
 |Parent element |semanticId |Element |Unit |SMC 01 |SMC 02
 |Marking |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties |SMC “ExplosionSafeties” | | |
@@ -2527,7 +2528,7 @@ Table 17 describes the details of the SMC structure.
 image:media/media/image16.png[media/media/image16,width=603,height=592]
 
 .List of elements in SMC “ExplosionSafety” of FISCO power supply
-[width=100%, options="autowidth,header"]
+[width=100%, stripes=even, options="autowidth,header"]
 |===
 |Parent element |semanticId |Element |Unit |SMC 01 |SMC 02
 |Marking |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties |SMC “ExplosionSafeties” | | |
@@ -2549,8 +2550,7 @@ image:media/media/image16.png[media/media/image16,width=603,height=592]
 |SMC “AmbientConditions” |0173-1#02-AAO371#004 |TemperatureClass | |T4 |T4
 |SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ProcessConditions |SMC “ProcessConditions” | | |*existing*
 |SMC “ProcessConditions” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/RegionalSpecificMarking |RegionalSpecificMarking | | |NI; AIS
-|SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01
 |SMC “ExternalElectricalCircuit_01” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |+ / - |+ / -
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAQ325#003 |TypeOfProtection | |ia |IS
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Class I, Division 1
@@ -2609,8 +2609,7 @@ PropertiesFor
 ActiveBehaviour”
 
 |0173-1#02-AAM636#003 |MaxExternalInductance |mH |0.58 |0.58
-|SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02
 |SMC “ExternalElectricalCircuit_02” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |+ / - |+ / -
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAQ325#003 |TypeOfProtection | |ia |IS
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Class I, Division 1
@@ -2686,7 +2685,7 @@ Table 18 describes the details of the SMC structure.
 image:media/media/image18.png[media/media/image18,width=638,height=659]
 
 .List of elements in SMC “ExplosionSafety” of flow meter Promag 300
-[width=100%, options="autowidth,header"]
+[width=100%, stripes=even, options="autowidth,header"]
 |===
 |Parent element |semanticId |Element |Unit |SMC 01 |SMC 02 |SMC 03 |SMC 04
 |Marking |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties |SMC “ExplosionSafeties” | | | | |
@@ -2712,8 +2711,7 @@ image:media/media/image18.png[media/media/image18,width=638,height=659]
 |SMC “ProcessConditions” |0173-1#02-AAN307#004 |UpperLimitingValueOfProcessTemperature |ºC |80 |80 |80 |80
 |SMC “ProcessConditions” |0173-1#02-AAM666#005 |MaxSurfaceTemperatureForDustProof |ºC | |85 | |85
 |SMC “ProcessConditions” |0173-1#02-AAO371#004 |TemperatureClass | |T6 | |T6 |
-|SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01
 |SMC “ExternalElectricalCircuit_01” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |26(+)/27(-) |26(+)/27(-) |26(+)/27(-) |26(+)/27(-)
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAQ325#003 |TypeOfProtection | |Ex ia |Ex ia |Ex ia |Ex ia
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Da |Ga |Da
@@ -2737,8 +2735,7 @@ PassiveBehaviour” |0173-1#02-AAM640#004 |MaxInternalCapacitance |µF |0.006 |0
 |SMC “SafetyRelated +
 PropertiesFor +
 PassiveBehaviour” |0173-1#02-AAM639#003 |MaxInternalInductance |mH |0 |0 |0 |0
-|SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02
 |SMC “ExternalElectricalCircuit_02” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |24(+)/25(-) |24(+)/25(-) |24(+)/25(-) |24(+)/25(-)
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAQ325#003 |TypeOfProtection | |Ex ia |Ex ia |Ex ia |Ex ia
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Da |Ga |Da
@@ -2762,8 +2759,7 @@ PassiveBehaviour” |0173-1#02-AAM640#004 |MaxInternalCapacitance |µF |0 |0 |0 
 |SMC “SafetyRelated +
 PropertiesFor +
 PassiveBehaviour” |0173-1#02-AAM639#003 |MaxInternalInductance |mH |0 |0 |0 |0
-|SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03
 |SMC “ExternalElectricalCircuit_03” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |22(+)/23(-) |22(+)/23(-) |22(+)/23(-) |22(+)/23(-)
 |SMC “ExternalElectricalCircuit_03” |0173-1#02-AAQ325#003 |TypeOfProtection | |Ex ia |Ex ia |Ex ia |Ex ia
 |SMC “ExternalElectricalCircuit_03” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Da |Ga |Da
