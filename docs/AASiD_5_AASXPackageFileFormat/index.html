@@ -76,6 +76,10 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 	background: #e5f0f7;
 	box-shadow: 0 1px 4px #e0e0dc;
 }
+
+#header, #content, #footnotes, #footer {
+	margin-left: 0;
+}
 
 </style>
 </head>
@@ -441,7 +445,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 </div>
 </div>
 </div>
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
 <colgroup>
 <col style="width: 21%;">
 <col style="width: 79%;">
@@ -632,7 +636,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 </div>
 <div class="paragraph">
 <div class="title">Figure 1 Part 5: File Exchange Type of Information Exchange via Asset Administration Shells</div>
-<p><span class="image"><img src="media/media/image2.jpeg" alt="extracted-media/media/image2" width="535" height="337"></span></p>
+<p><span class="image"><img src="media/image2.jpeg" alt="image2" width="535" height="337"></span></p>
 </div>
 </div>
 </div>
@@ -655,7 +659,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 </div>
 <div class="paragraph">
 <div class="title">Figure 2 Use Case File Exchange between Value Chain Partners</div>
-<p><span class="image"><img src="media/media/image3.jpeg" alt="extracted-media/media/image3" width="642" height="491"></span></p>
+<p><span class="image"><img src="media/image3.jpeg" alt="image3" width="642" height="491"></span></p>
 </div>
 <div class="paragraph">
 <p>"Supplier" and "Integrator" form two independent legal bodies (Figure 3). The organizational boundaries as well as the system boundaries including the partners’ infrastructures must be taken into account for data exchange, file exchange being one form of data exchange.</p>
@@ -665,7 +669,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 </div>
 <div class="paragraph">
 <div class="title">Figure 3 File Exchange between two Value Chain Partners</div>
-<p><span class="image"><img src="media/media/image4.jpg" alt="extracted-media/media/image4" width="642" height="270"></span></p>
+<p><span class="image"><img src="media/image4.jpg" alt="image4" width="642" height="270"></span></p>
 </div>
 <div class="paragraph">
 <p>For usability sake, a container format is used for file exchange and a corresponding structure is defined. This predefined structure helps the consumer to understand the content of the single files. The container may contain auxiliary files referenced by the AAS or even executable code.</p>
@@ -685,7 +689,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 <p>The consumer of information does not want to include all information provided by the producer in his own process, i.e. he wants to filter only the relevant information.</p>
 <div class="paragraph">
 <div class="title">Figure 4 Example Filtering for Export and Import</div>
-<p><span class="image"><img src="media/media/image5.jpg" alt="extracted-media/media/image5" width="642" height="666"></span></p>
+<p><span class="image"><img src="media/image5.jpg" alt="image5" width="642" height="666"></span></p>
 </div>
 </li>
 </ul>
@@ -705,7 +709,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 </div>
 <div class="paragraph">
 <div class="title">Figure 5 Example Filtering of Information in XML</div>
-<p><span class="image"><img src="media/media/image6.jpg" alt="extracted-media/media/image6" width="642" height="299"></span></p>
+<p><span class="image"><img src="media/image6.jpg" alt="image6" width="642" height="299"></span></p>
 </div>
 </div>
 <div class="sect2">
@@ -757,7 +761,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 </div>
 <div class="paragraph">
 <div class="title">Figure 6 Process for Generating and Consuming AASX Packages</div>
-<p><span class="image"><img src="media/media/image7.jpeg" alt="extracted-media/media/image7" width="642" height="335"></span></p>
+<p><span class="image"><img src="media/image7.jpeg" alt="image7" width="642" height="335"></span></p>
 </div>
 <div class="paragraph">
 <p>The process starts by serializing the existing AAS (e.g. D1 and E1) into files (according to the serialization mechanisms described in this document), as well as exporting other supplementary files (i.e. files mentioned in the structure of the AAS, such as manuals, CAD files, etc.). All these files will be packaged together into the AASX ZIP file format and will be followed by several security steps that define the policies for modifiability, encryption, and digital signing of the files inside the AASX. The final AASX can then be transported from the AASX producer (in this case partner A) to the AASX consumer (partner B) via digital media such as e-mail, USB stick, etc. The consumer first needs to validate and verify the incoming AASX, unpack the contained files, and import them to generate the new AAS in the consumer environment. The process will be explained in detail in the following sub-sections.</p>
@@ -801,7 +805,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 </div>
 <div class="paragraph">
 <div class="title">Figure 7 Relationship Types for AASX Packages (Logical Model)</div>
-<p><span class="image"><img src="media/media/image8.png" alt="extracted-media/media/image8" width="642" height="300"></span></p>
+<p><span class="image"><img src="media/image8.png" alt="image8" width="642" height="300"></span></p>
 </div>
 <div class="paragraph">
 <p>The relationship types for thumbnail, core-properties, digital-signatures (origin, signature and certificate) are defined by Open Packaging Conventions. The other relationship types were specifically defined to support the AASX package format.</p>
@@ -809,7 +813,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 <div class="paragraph">
 <p>The following name spaces are defined:</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
 <colgroup>
 <col style="width: 18%;">
 <col style="width: 82%;">
@@ -834,7 +838,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 <div class="paragraph">
 <p>Each relationship type<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup> as denoted in Figure 7 is described in the following.</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 70%;">
@@ -854,7 +858,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 10%;">
@@ -926,7 +930,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 <div class="paragraph">
 <p></p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 70%;">
@@ -946,7 +950,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 10%;">
@@ -979,7 +983,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 <div class="paragraph">
 <p></p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 70%;">
@@ -999,7 +1003,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 10%;">
@@ -1032,7 +1036,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 <div class="paragraph">
 <p></p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 70%;">
@@ -1052,7 +1056,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 10%;">
@@ -1084,7 +1088,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 <div class="paragraph">
 <p></p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 70%;">
@@ -1104,7 +1108,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all stripes-hover stretch">
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 10%;">
@@ -1174,14 +1178,14 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 </div>
 <div class="paragraph">
 <div class="title">Figure 8 Example of Mapping Logical (right) to Physical Model (left)</div>
-<p><span class="image"><img src="media/media/image9.png" alt="extracted-media/media/image9" width="622" height="272"></span></p>
+<p><span class="image"><img src="media/image9.png" alt="image9" width="622" height="272"></span></p>
 </div>
 <div class="paragraph">
 <p>In addition to the AASX specific files, files common to all ECMA-376 packages – such as relationship parts (*.rels) and the Content Types stream ([Content_Types].xml) – must be contained in an AASX package in its physical representation as a .zip archive. For more information on these files, please refer to the ECMA-376 specification.</p>
 </div>
 <div class="paragraph">
 <div class="title">Figure 9 AASX File Structure (Physical Model)</div>
-<p><span class="image"><img src="media/media/image10.png" alt="Ein Bild" width="377" height="299"></span></p>
+<p><span class="image"><img src="media/image10.png" alt="image10" width="377" height="299"></span></p>
 </div>
 </div>
 <div class="sect2">
