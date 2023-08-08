@@ -1,6 +1,6 @@
 :toc: left
 :toc-title: Digital Nameplate for Industrial Equipment
-:stylesheet: ../style.css
+:stylesheet: ../../style.css
 :nofooter:
 
 = Digital Nameplate for Industrial Equipment
