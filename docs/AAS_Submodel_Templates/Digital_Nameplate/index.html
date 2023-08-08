@@ -12,6 +12,9 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
 @import "https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css";
 
+body {
+	background: #f2f2f2;
+}
 
 #toc.toc2 {
   background: #ffffff;
@@ -67,9 +70,18 @@ tbody tr th, tbody tr th p, tfoot tr th, tfoot tr th p {
 table thead, table tfoot {
     background: #0028CD;
 }
+table thead:hover, table thead:focus {
+    background: #0028CD;
+}
 
 table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
     color: #ffffff;
+}
+table thead tr th:hover, table thead tr th:focus, table tfoot tr th:hover, table tfoot tr th:focus {
+    background: #0028CD;
+}
+table thead:hover, table thead:focus, table tfoot:hover, table tfoot:focus {
+    background: #0028CD;
 }
 
 .exampleblock > .content {

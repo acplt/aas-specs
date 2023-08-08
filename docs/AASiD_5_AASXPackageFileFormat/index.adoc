@@ -2,7 +2,6 @@
 :toc-title: Specification of the Asset Administration Shell. Part 5: Package File Format (AASX)
 :stylesheet: ../style.css
 :imagesdir: media/
-:table-stripes: hover
 :nofooter:
 
 = Part 5: Package File Format (AASX)

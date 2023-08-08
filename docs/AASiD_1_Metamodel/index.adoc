@@ -2,7 +2,6 @@
 :toc-title: Specification of the Asset Administration Shell. Part 1: Metamodel
 :stylesheet: ../style.css
 :imagesdir: media/
-:table-stripes: hover
 :nofooter:
 
 = Part 1: Metamodel
