@@ -50,8 +50,7 @@ With regard to explosion-protected equipment, various additional information is 
 
 According to link:#bib3[[3\]], interoperable properties might be defined by standards, consortium specifcations or manufacturer specifications. Useful standards providing sources of concepts are:
 
-List of examplary standards defining interoperable properties
-
+.List of examplary standards defining interoperable properties
 |===
 |IEC 62890:2020-07 — Industrial-process measurement, control and automation - Life-cycle-management for systems and components |Describes basic concepts of product types and instances and the concepts of a life-cycle mode
 |VDMA 24903 — Obsolescence management – Exchange of information regarding change and discontinuance of products and items |Describes important event in the life-cycle of a product type and identifies important information elements to be conveyed
@@ -108,45 +107,39 @@ Figure 2 shows the UML-diagram defining the relevant properties which need to be
 .Figure 2: UML-Diagram for Submodel "Nameplate"
 image:media/media/image4.png[media/media/image4,width=500,height=408]
 
-Properties of Submodel "Nameplate"
+.Properties of Submodel "Nameplate"
 
-[cols="21%,1%,49%,22%,7%,",]
+[width=100%, cols="h,1", options="autowidth",]
 |===
-|*idShort:* | a|
-Nameplate
-
-
+|idShort: a| Nameplate
 ====
 Note: the above idShort shall always be as stated.
 ====
-
-
-| | |
-|*Class:* | |Submodel | | |
-|*semanticId:* | |[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate | | |
-|*Explanation:* | |Contains the nameplate information attached to the product | | |
-|*[SME type]* | |*semanticId = [idType]value* |*[valueType]* |*card.* |
-|*idShort* | |*Description@en* |*example* | |
+|Class: |Submodel
+|semanticId: |[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate
+|Explanation: |Contains the nameplate information attached to the product
+|===
+[%autowidth]
+|===
+h| [SME type] h| semanticId = [idType]value h| [valueType] h| card.
+h| idShort h| Description@en* h| example h|
 |[Property] +
-URIOfTheProduct | a|
+URIOfTheProduct a|
 [IRDI] 0173-1#02-AAY811#001
 
 unique global identification of the product using an universal resource identifier (URI)
-
 
 ====
 Note: see also [IRDI] 0112/2///61987#ABN590#001 URI of product instance
 ====
 
-
-a|
-[String]
+|[String]
 
 https://www.domain-abc.com/Model-Nr-1234/Serial-Nr-5678
 
-|1 |
+|1
 |[MLP] +
-ManufacturerName | a|
+ManufacturerName a|
 [IRDI] 0173-1#02-AAO677#002
 
 legally valid designation of the natural or judicial person which is directly responsible for the design, production, packaging and labeling of a product in respect to its being brought into circulation
@@ -164,9 +157,9 @@ Note: mandatory property according to EU Machine Directive 2006/42/EC.
 
 
 |[langString] +
-Muster AG @DE |1 |
+Muster AG @DE |1
 |[MLP] +
-ManufacturerProductDesignation | a|
+ManufacturerProductDesignation a|
 [IRDI] 0173-1#02-AAW338#001
 
 Short description of the product (short text)
@@ -189,16 +182,15 @@ Note: mandatory property according to EU Machine Directive 2006/42/EC.
 ====
 
 
-a|
-[langString]
+|[langString]
 
 ABC-123 @EN
 
 Industrieroboter @DE
 
-|1 |
+|1
 |[SubmodelElementCollection] +
-ContactInformation | a|
+ContactInformation a|
 [IRI] https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation
 
 The SMC “ContactInformation” contains information on how to contact the manufacturer or an authorised service provider, e.g. when a maintenance service is required
@@ -211,21 +203,20 @@ Note: physical address is a mandatory property according to EU Machine Directive
 
 See separate clause
 
-|n/a |1 |
+|n/a |1
 |[MLP] +
-ManufacturerProductRoot | a|
+ManufacturerProductRoot a|
 [IRDI] 0173-1#02-AAU732#001
 
 Top level of a 3 level manufacturer specific product hierarchy
 
-a|
-[langString]
+|[langString]
 
 flow meter@EN
 
-|0..1 |
+|0..1
 |[MLP] +
-ManufacturerProductFamily | a|
+ManufacturerProductFamily a|
 [IRDI] 0173-1#02-AAU731#001
 
 2nd level of a 3 level manufacturer specific product hierarchy
@@ -239,9 +230,9 @@ ManufacturerProductFamily (0173-1#02-AAU731#001) or +
 ManufacturerProductType (0173-1#02-AAO057#002).
 
 |[langString] +
-Type ABC@EN |0..1 |
+Type ABC@EN |0..1
 |[MLP] +
-ManufacturerProductType | a|
+ManufacturerProductType a|
 [IRDI] 0173-1#02-AAO057#002
 
 Characteristic to differentiate between different products of a product family or special variants
@@ -261,9 +252,9 @@ ManufacturerProductFamily (0173-1#02-AAU731#001) or +
 ManufacturerProductType (0173-1#02-AAO057#002).
 
 |[langString] +
-FM-ABC-1234@EN |0..1 |
+FM-ABC-1234@EN |0..1
 |[MLP]footnote:mlp[Recommendation: property declaration as MLP is required by its semantic definition. As the property value is language independent, users are recommended to provide maximal 1 string in any language of the user’s choice.] +
-OrderCodeOfManufacturer | a|
+OrderCodeOfManufacturer a|
 [IRDI] 0173-1#02-AAO227#002
 
 By manufactures issued unique combination of numbers and letters used to identify the device for ordering
@@ -275,9 +266,9 @@ Note: see also [IRDI] 0112/2///61987#ABA950#006 order code of product
 
 
 |[langString]footnote:mlp[] +
-FMABC1234@EN |0..1 |
+FMABC1234@EN |0..1
 |[MLP]footnote:mlp[] +
-ProductArticleNumberOfManufacturer | a|
+ProductArticleNumberOfManufacturer a|
 [IRDI] 0173-1#02-AAO676#003
 
 unique product identifier of the manufacturer
@@ -289,9 +280,9 @@ Note: see also [IRDI] 0112/2///61987#ABA581#006 article number
 
 
 |[langString]footnote:mlp[] +
-FM11-ABC22-123456@EN |0..1 |
+FM11-ABC22-123456@EN |0..1
 |[Property] +
-SerialNumber | a|
+SerialNumber a|
 [IRDI] 0173-1#02-AAM556#002
 
 unique combination of numbers and letters used to identify the device once it has been manufactured
@@ -303,9 +294,9 @@ Note: see also [IRDI] 0112/2///61987#ABA951#007 serial number
 
 
 |[String] +
-12345678 |0..1 |
+12345678 |0..1
 |[Property] +
-YearOfConstruction | a|
+YearOfConstruction a|
 [IRDI] 0173-1#02-AAP906#001
 
 Year as completion date of object
@@ -317,9 +308,9 @@ Note: mandatory property according to EU Machine Directive 2006/42/EC.
 
 
 |[String] +
-2020 |1 |
+2020 |1
 |[Property] +
-DateOfManufacture | a|
+DateOfManufacture a|
 [IRDI] 0173-1#02-AAR972#002
 
 Date from which the production and / or development process is completed or from which a service is provided completely
@@ -337,9 +328,9 @@ Note: format by lexical representation: CCYY-MM-DD
 
 
 |[Date] +
-2021-01-01 |0..1 |
+2021-01-01 |0..1
 |[MLP]footnote:mlp[] +
-HardwareVersion | a|
+HardwareVersion a|
 [IRDI] 0173-1#02-AAN270#002
 
 Version of the hardware supplied with the device
@@ -351,9 +342,9 @@ Note: see also [IRDI] 0112/2///61987#ABA926#006 hardware version
 
 
 |[langString]footnote:mlp[] +
-1.0.0@EN |0..1 |
+1.0.0@EN |0..1
 |[MLP]footnote:mlp[] +
-FirmwareVersion | a|
+FirmwareVersion a|
 [IRDI] 0173-1#02-AAM985#002
 
 Version of the firmware supplied with the device
@@ -365,9 +356,9 @@ Note: see also [IRDI] 0112/2///61987#ABA302#004 firmware version
 
 
 |[langString]footnote:mlp[] +
-1.0@EN |0..1 |
+1.0@EN |0..1
 |[MLP]footnote:mlp[] +
-SoftwareVersion | a|
+SoftwareVersion a|
 [IRDI] 0173-1#02-AAM737#002
 
 Version of the software used by the device
@@ -379,9 +370,9 @@ Note: see also [IRDI] 0112/2///61987#ABA601#006 software version
 
 
 |[langString]footnote:mlp[] +
-1.0.0@EN |0..1 |
+1.0.0@EN |0..1
 |[Property] +
-CountryOfOrigin | a|
+CountryOfOrigin a|
 [IRDI] 0173-1#02-AAO259#004
 
 Country where the product was manufactured
@@ -399,16 +390,16 @@ Note: Country codes defined accord. to DIN EN ISO 3166-1 alpha-2 codes
 
 
 |[String] +
-DE |0..1 |
+DE |0..1
 |[File] +
-CompanyLogo | a|
+CompanyLogo a|
 [IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/CompanyLogo
 
 A graphic mark used to represent a company, an organisation or a product
 
-|[File] |0..1 |
+|[File] |0..1
 |[SubmodelElementCollection] +
-Markings | a|
+Markings a|
 [IRDI] 0173-1#01-AGZ673#001
 
 Collection of product markings
@@ -421,13 +412,12 @@ Note: CE marking is declared as mandatory according to EU Machine Directive 2006
 
 See separate clause
 
-|n/a |0..1 |
-a|
-[SubmodelElementCollection]
+|n/a |0..1
+|[SubmodelElementCollection]
 
 AssetSpecificProperties
 
-| a|
+a|
 [IRDI] 0173-1#01-AGZ672#001
 
 Group of properties that are listed on the asset's nameplate and are grouped based on guidelines
@@ -440,7 +430,7 @@ Note: defined as “Asset specific nameplate information” per ECLASS
 
 See separate clause
 
-|n/a |0..1 |
+|n/a |0..1
 |===
 
 
@@ -460,28 +450,27 @@ image:media/media/image5.png[media/media/image5,width=462,height=357]
 
 
 
-Table 3: Mandatory properties of SMC "ContactInformation"
-
-[width="99%",cols="16%,58%,20%,6%",]
+.Mandatory properties of SMC "ContactInformation"
+[width=100%, cols="h,1", options="autowidth"]
 |===
-|*idShort:* a|
+|idShort: a|
 ContactInformation
-
 
 ====
 Note: the above idShort shall always be as stated.
 ====
 
-
-| |
-|*Class:* |SubmodelElementCollection | |
-|*semanticId:* |[IRI] https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation | |
-|*isCaseOf* |[IRDI] 0173-1#02-AAQ837#005 | |
-|*AllowDuplicates* |True | |
-|*Parent:* |Submodel “Nameplate” | |
-|*Explanation:* |The SMC “ContactInformation” contains information on how to contact the manufacturer or an authorised service provider, e.g. when a maintenance service is required | |
-|*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.*
-|*idShort* |*Description@en* |*example* |
+|Class: |SubmodelElementCollection
+|semanticId: |[IRI] https://admin-shell.io/zvei/nameplate/1/0/ContactInformations/ContactInformation
+|isCaseOf |[IRDI] 0173-1#02-AAQ837#005
+|AllowDuplicates |True
+|Parent: |Submodel “Nameplate”
+|Explanation: |The SMC “ContactInformation” contains information on how to contact the manufacturer or an authorised service provider, e.g. when a maintenance service is required
+|===
+[%autowidth]
+|===
+h|[SME type] h|semanticId = [idType]value h|[valueType] h|card.
+h|idShort h|Description@en h|example h|
 |[MLP] +
 Street a|
 [IRDI] 0173-1#02-AAO128#002
@@ -520,8 +509,7 @@ Note: mandatory property according to EU Machine Directive 2006/42/EC.
 ====
 
 
-a|
-[langString]footnote:mlp[]
+|[langString]footnote:mlp[]
 
 12345@DE
 
@@ -544,8 +532,7 @@ Note: mandatory property according to EU Machine Directive 2006/42/EC.
 ====
 
 
-a|
-[langString]
+|[langString]
 
 Musterstadt@DE
 
@@ -574,8 +561,7 @@ Note: mandatory property according to EU Machine Directive 2006/42/EC.
 ====
 
 
-a|
-[langString]footnote:mlp[]
+|[langString]footnote:mlp[]
 
 DE@DE
 
@@ -593,15 +579,14 @@ image:media/media/image6.png[media/media/image6,width=495,height=376]
 
 Figure 2 shows the UML-diagram defining the relevant properties which need to be set. [.mark]####Table 4 describes the details of the SMC structure.
 
-Properties of SMC "Markings"
-
-[cols="24%,50%,19%,7%",]
+.Properties of SMC "Markings"
+[width=100%, cols="h,1", options="autowidth"]
 |===
-|*idShort:* |Markings | |
-|*Class:* |SubmodelElementCollection | |
-|*semanticId:* |[IRDI] 0173-1#01-AGZ673#001 | |
-|*AllowDuplicates* |True | |
-|*Parent:* |Submodel “Nameplate” | |
+|*idShort:* |Markings
+|*Class:* |SubmodelElementCollection
+|*semanticId:* |[IRDI] 0173-1#01-AGZ673#001
+|*AllowDuplicates* |True
+|*Parent:* |Submodel “Nameplate”
 |*Explanation:* a|
 Collection of product markings
 
@@ -611,9 +596,11 @@ Note: CE marking is declared as mandatory according to EU Machine Directive 2006
 ====
 
 
-| |
-|*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.*
-|*idShort* |*Description@en* |*example* |
+|===
+[%autowidth]
+|===
+h|[SME type] h|semanticId = [idType]value h|[valueType] h|card.
+h|idShort h|Description@en h|example h|
 |[SubmodelElementCollection] +
 Marking\{00} a|
 [IRDI] 0173-1#01-AHD206#001
@@ -644,16 +631,15 @@ Figure 5 shows the UML-diagram defining the relevant properties which need to be
 .Figure 5: UML-Diagram for SMC "Marking"
 image:media/media/image7.png[media/media/image7,width=564,height=247]
 
-Properties of SMC "Marking"
-
-[cols="24%,49%,20%,7%,",]
+.Properties of SMC "Marking"
+[width=100%, cols="h,1", options="autowidth"]
 |===
-|*idShort:* |Marking\{00} | | |
-|*Class:* |SubmodelElementCollection | | |
-|*semanticId:* |[IRDI] 0173-1#01-AHD206#001 | | |
-|*AllowDuplicates* |True | | |
-|*Parent:* |SubmodelElementCollection “Markings” | | |
-|*Explanation:* a|
+|idShort: |Marking\{00}
+|Class: |SubmodelElementCollection
+|semanticId: |[IRDI] 0173-1#01-AHD206#001
+|AllowDuplicates |True
+|Parent: |SubmodelElementCollection “Markings”
+|Explanation: a|
 contains information about the marking labelled on the device
 
 
@@ -662,13 +648,14 @@ Note: see also [IRDI] 0112/2///61987#ABH515#003 Certificate or approval
 ====
 
 
-| | |
-|*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
-|*idShort* |*Description@en* |*example* | |
+|===
+[%autowidth]
+|===
+h|[SME type] h|semanticId = [idType]value h|[valueType] h|card.
+h|idShort h|Description@en h|example h|
 |[Property] +
 MarkingName a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/ +
-Nameplate/Markings/Marking/MarkingName
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/MarkingName
 
 common name of the marking
 
@@ -684,15 +671,13 @@ Note: CE marking is declared as mandatory according to Blue Guide of the EU-Comm
 ====
 
 
-a|
-[String] +
+|[String] +
 valueId with ECLASS enumeration IRDI is preferable, e.g. [IRDI] 0173-1#07-DAA603#004 for CE. If no IRDI available, string value can also be accepted.
 
 Samples for valueId from ECLASS are listed in Annex B
 
-|1 |
-a|
-[Property]
+|1
+|[Property]
 
 DesignationOfCertificateOrApproval
 
@@ -707,16 +692,14 @@ Note: Approval identifier, reference to the certificate number, to be entered wi
 ====
 
 
-a|
-[String]
+|[String]
 
 KEMA99IECEX1105/128
 
-|0..1 |
+|0..1
 |[Property] +
 IssueDate a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/ +
-Nameplate/Markings/Marking/IssueDate
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/IssueDate
 
 Date, at which the specified certificate is issued
 
@@ -732,16 +715,14 @@ Note: to be specified to the day
 ====
 
 
-a|
-[Date]
+|[Date]
 
 2021-01-01
 
-|0..1 |
+|0..1
 |[Property] +
 ExpiryDate a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/ +
-Nameplate/Markings/Marking/ExpiryDate
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExpiryDate
 
 Date, at which the specified certificate expires
 
@@ -763,25 +744,22 @@ Note: to be specified to the day
 ====
 
 
-a|
-[Date]
+|[Date]
 
 2021-01-01
 
-|0..1 |
+|0..1
 |[File] +
 MarkingFile a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/ +
-Nameplate/Markings/Marking/MarkingFile
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/MarkingFile
 
 conformity symbol of the marking
 
 |[File] +
-/aasx/Nameplate/marking_ce.png |1 |
+/aasx/Nameplate/marking_ce.png |1
 |[Property] +
 MarkingAdditionalText\{00} a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/ +
-Nameplate/Markings/Marking/MarkingAdditionalText
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/MarkingAdditionalText
 
 where applicable, additional information on the marking in plain text, e.g. the ID-number of the notified body involved in the conformity process
 
@@ -792,21 +770,19 @@ Note: see also [IRDI] 0173-1#02-AAM954#002 details of other certificate
 
 
 |[String] +
-0044 |0..* |
-a|
-[SubmodelElementCollection]
+0044 |0..*
+|[SubmodelElementCollection]
 
 ExplosionSafeties
 
 a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/ +
-Nameplate/Markings/Marking/ExplosionSafeties
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties
 
 Collection of explosion safefy specifications
 
 See separate clause
 
-|n/a |0..1 |
+|n/a |0..1
 |===
 
 Regarding the property “MarkingName” the preferable solution is to provide a valueId in IRDI originating from ECLASS enumeration value list, e.g. "CE” (IRDI: 0173-1#07-DAA603#004). In case none of the existing ECLASS enumeration values matches, filling plain string text into the “value” field of the property “MarkingName” can be accepted alternatively. It needs to be pointed out that ECLASS also provides marking definitions in terms of boolean property, e.g. “CE- qualification present” (IRDI: 0173-1#02-BAF053#008). In this case users should instead use a matching ECLASS enumeration value or, if not provided as enumeration, fill in plain string text.
@@ -822,18 +798,19 @@ image:media/media/image8.png[media/media/image8,width=562,height=272]
 
 Figure 5 shows the UML-diagram defining the relevant properties which need to be set. describes the details of the SMC structure
 
-Properties of SMC “ExplosionSafeties"
-
-[cols="24%,50%,19%,7%",]
+.Properties of SMC “ExplosionSafeties"
+[width=100%, cols="h,1", options="autowidth"]
 |===
-|*idShort:* |ExplosionSafeties | |
-|*Class:* |SubmodelElementCollection | |
-|*semanticId:* |[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties | |
-|*AllowDuplicates* |True | |
-|*Parent:* |SubmodelElementCollection “Marking” | |
-|*Explanation:* |Collection of explosion safefy specifications | |
-|*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.*
-|*idShort* |*Description@en* |*example* |
+|*idShort:* |ExplosionSafeties
+|*Class:* |SubmodelElementCollection
+|*semanticId:* |[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties
+|*AllowDuplicates* |True
+|*Parent:* |SubmodelElementCollection “Marking”
+|===
+[%autowidth]
+|===
+h|[SME type] h|semanticId = [idType]value h|[valueType] h|card.
+h|idShort h|Description@en h|example h|
 |[SubmodelElementCollection] +
 ExplosionSafety\{00} a|
 [IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety
@@ -858,20 +835,21 @@ image:media/media/image9.png[media/media/image9,width=642,height=550]
 
 
 
-Table 7: Properties of SMC “ExplosionSafety”
-
-[cols="24%,50%,19%,7%,",]
+.Properties of SMC “ExplosionSafety”
+[width=100%, cols="h,1", options="autowidth"]
 |===
-|*idShort:* |ExplosionSafety | | |
-|*Class:* |SubmodelElementCollection | | |
-|*semanticId:* |[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety | | |
-|*AllowDuplicates* |True | | |
-|*Parent:* |SubmodelElementCollection “ExplosionSafeties” | | |
-|*Explanation:* |contains information related to explosion safety according to device nameplate | | |
-|*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
-|*idShort* |*Description@en* |*example* | |
-a|
-[Property]
+|idShort: |ExplosionSafety
+|Class: |SubmodelElementCollection
+|semanticId: |[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety
+|AllowDuplicates |True
+|Parent: |SubmodelElementCollection “ExplosionSafeties”
+|Explanation: |contains information related to explosion safety according to device nameplate
+|===
+[%autowidth]
+|===
+h|[SME type] h|semanticId = [idType]value h|[valueType] h|card.
+h|idShort h|Description@en h|example h|
+|[Property]
 
 DesignationOfCertificateOrApproval
 
@@ -886,14 +864,12 @@ Note: Approval identifier, reference to the certificate number, to be entered wi
 ====
 
 
-a|
-[String]
+|[String]
 
 KEMA99IECEX1105/128
 
-|0..1 |
-a|
-[MLP]footnote:mlp[]
+|0..1
+|[MLP]footnote:mlp[]
 
 TypeOfApproval
 
@@ -915,14 +891,12 @@ Note: only values from the enumeration should be used as stated. For additional 
 ====
 
 
-a|
-[langString]footnote:mlp[]
+|[langString]footnote:mlp[]
 
 ATEX@DE
 
-|0..1 |
-a|
-[MLP]footnote:mlp[]
+|0..1
+|[MLP]footnote:mlp[]
 
 ApprovalAgencyTestingAgency
 
@@ -944,14 +918,12 @@ Note: only values from the enumeration should be used as stated. For additional 
 ====
 
 
-a|
-[langString]footnote:mlp[]
+|[langString]footnote:mlp[]
 
 PTB@DE
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 TypeOfProtection
 
@@ -977,8 +949,7 @@ Note: If several TypeOfProtection are listed in the same certificate, for each T
 ====
 
 
-a|
-[String]
+|[String]
 
 db
 
@@ -988,9 +959,8 @@ Ex db eb ia
 
 Ex db; Ex eb
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 RatedInsulationVoltage
 
@@ -1011,16 +981,15 @@ Note: Insulation voltage, if specified in the certificate
 ====
 
 
-a|
+|
 [Decimal]
 
 250
 
 Unit: V
 
-|0..1 |
-a|
-[ReferenceElement]
+|0..1
+|[ReferenceElement]
 
 InstructionsControlDrawing
 
@@ -1035,15 +1004,13 @@ Note: Reference to the instruction manual or control drawing
 ====
 
 
-|[Reference] |0..1 |
-a|
-[Property]
+|[Reference] |0..1
+|[Property]
 
 SpecificConditionsForUse
 
 a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/ +
-Markings/Marking/ExplosionSafeties/ExplosionSafety/SpecificConditionsForUse
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/SpecificConditionsForUse
 
 
 ====
@@ -1051,37 +1018,31 @@ Note: X if any, otherwise no entry
 ====
 
 
-a|
-[String]
+|[String]
 
 X
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 IncompleteDevice
 
 a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/ +
-Markings/Marking/ExplosionSafeties/ExplosionSafety/IncompleteDevice
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/IncompleteDevice
 
 U if any, otherwise no entry
 
-a|
-[String]
+|[String]
 
 U
 
-|0..1 |
-a|
-[SubmodelElementCollection]
+|0..1
+|[SubmodelElementCollection]
 
 AmbientConditions
 
 a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/ +
-Markings/Marking/ExplosionSafeties/ExplosionSafety/AmbientConditions
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/AmbientConditions
 
 Contains properties which are related to the ambient conditions of the device.
 
@@ -1093,15 +1054,13 @@ Note: If the device is mounted in the process boundary, ambient and process cond
 
 See separate clause
 
-|n/a |0..1 |
-a|
-[SubmodelElementCollection]
+|n/a |0..1
+|[SubmodelElementCollection]
 
 ProcessConditions
 
 a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/ +
-Markings/Marking/ExplosionSafeties/ExplosionSafety/ProcessConditions
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ProcessConditions
 
 Contains properties which are related to the process conditions of the device.
 
@@ -1113,15 +1072,13 @@ Note: If the device is mounted in the process boundary, ambient and process cond
 
 See separate clause
 
-|n/a |0..1 |
-a|
-[SubmodelElementCollection]
+|n/a |0..1
+|[SubmodelElementCollection]
 
 ExternalElectricalCircuit\{00}
 
 a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/ +
-Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit
 
 specifies the parameters of external electrical circuits.
 
@@ -1139,7 +1096,7 @@ Note: If for one external IS circuit several sets of safety parameters are provi
 
 See separate clause
 
-|n/a |0..* |
+|n/a |0..*
 |===
 
 
@@ -1148,20 +1105,20 @@ See separate clause
 
 [.mark]####Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 8 describes the details of the SMC structure.
 
-Properties of SMC "AmbientConditions "
-
-[cols="24%,50%,19%,7%,",]
+.Properties of SMC "AmbientConditions"
+[width=100%, cols="h,1", options="autowidth"]
 |===
-|*idShort:* |AmbientConditions | | |
-|*Class:* |SubmodelElementCollection | | |
-|*semanticId:* |[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ +
-AmbientConditions | | |
-|*Parent:* |SubmodelElementCollection “ExplosionSafety” | | |
-|*Explanation:* |Contains properties which are related to the ambient conditions of the device. If the device is mounted in the process boundary, ambient and process conditions are provided separately | | |
-|*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
-|*idShort* |*Description@en* |*example* | |
-a|
-[Property]
+|idShort: |AmbientConditions
+|Class: |SubmodelElementCollection
+|semanticId: |[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/AmbientConditions
+|Parent: |SubmodelElementCollection “ExplosionSafety”
+|Explanation: |Contains properties which are related to the ambient conditions of the device. If the device is mounted in the process boundary, ambient and process conditions are provided separately
+|===
+[%autowidth]
+|===
+h|[SME type] h|semanticId = [idType]value h|[valueType] h|card.
+h|idShort h|Description@en h|example h|
+|[Property]
 
 DeviceCategory
 
@@ -1179,11 +1136,8 @@ Note: editorial definiton: Category of device in accordance with directive 2014/
 
 
 ====
-
-====
 Note: Equipment category according to the ATEX system.
-====
- According to the current nameplate, also the combination “GD” is permitted
+According to the current nameplate, also the combination “GD” is permitted
 ====
 
 
@@ -1193,14 +1147,12 @@ Note: The combination “GD” is no longer accepted and was changed in the stan
 ====
 
 
-a|
-[String]
+|[String]
 
 2G
 
-|0..1 |
-a|
-[MLP]footnote:mlp[]
+|0..1
+|[MLP]footnote:mlp[]
 
 EquipmentProtectionLevel
 
@@ -1229,31 +1181,26 @@ Note: The combination “GD” is no longer accepted and was changed in the stan
 ====
 
 
-a|
-[langString]footnote:mlp[]
+|[langString]footnote:mlp[]
 
 Gb@DE
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 RegionalSpecificMarking
 
 a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/ +
-Marking/ExplosionSafeties/ExplosionSafety/RegionalSpecificMarking
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/RegionalSpecificMarking
 
 Marking used only in specific regions, e.g. North America: class/divisions, EAC: “1” or NEC: “AIS”
 
-a|
-[String]
+|[String]
 
 Class I, Division 2
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 TypeOfProtection
 
@@ -1269,8 +1216,7 @@ Note: Symbol(s) for the Type of protection. Several types of protection are sepa
 ====
 
 
-a|
-[String]
+|[String]
 
 db
 
@@ -1280,9 +1226,8 @@ Ex db eb ia
 
 Ex db; Ex eb
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 ExplosionGroup
 
@@ -1304,8 +1249,7 @@ Note: Symbol(s) for the gas group (IIA…IIC) or dust group (IIIA…IIIC)
 ====
 
 
-a|
-[String]
+|[String]
 
 IIC
 
@@ -1313,9 +1257,8 @@ IIIB
 
 A,B,C,D
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 MinimumAmbientTemperature
 
@@ -1337,16 +1280,15 @@ Note: Rated minimum ambient temperature
 ====
 
 
-a|
+|
 [Decimal]
 
--40footnote:[Positive temperatures are listed without “+” sign. If several temperatures ranges are marked, only the most general range shall be indicated in the template, which is consistent with the specified temperature class or maximum surface temperature. Other temperature ranges and temperature classes/maximum surface temperatures may be listed in the instructions.]
+-40footnote:temp[Positive temperatures are listed without “+” sign. If several temperatures ranges are marked, only the most general range shall be indicated in the template, which is consistent with the specified temperature class or maximum surface temperature. Other temperature ranges and temperature classes/maximum surface temperatures may be listed in the instructions.]
 
 Unit: ºC
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 MaxAmbientTemperature
 
@@ -1368,16 +1310,15 @@ Note: Rated maximum ambient temperature
 ====
 
 
-a|
+|
 [Decimal]
 
-120^3^
+120footnote:temp[]
 
 Unit: ºC
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 MaxSurfaceTemperatureForDustProof
 
@@ -1393,16 +1334,15 @@ Note: Maximum surface temperature of the device (dust layer ≤ 5 mm) for specif
 ====
 
 
-a|
+|
 [Decimal]
 
-100^3^
+100footnote:temp[]
 
 Unit: ºC
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 TemperatureClass
 
@@ -1424,29 +1364,26 @@ Note: Temperature class of the device for specified maximum ambient and maximum 
 ====
 
 
-a|
-[String]
+|[String]
 
 T6
 
 T5
 
-|0..1 |
+|0..1
 |===
 
 === Properties of the SMC “ProcessConditions”
 
 [.mark]####Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 9 describes the details of the SMC structure.
 
-Properties of SMC "ProcessConditions"
-
-[cols="24%,50%,19%,7%",]
+.Properties of SMC "ProcessConditions"
+[width=100%, cols="h,1", options="autowidth"]
 |===
-|*idShort:* |ProcessConditions | |
-|*Class:* |SubmodelElementCollection | |
-|*semanticId:* |[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ +
-ProcessConditions | |
-|*Parent:* |SubmodelElementCollection “ExplosionSafety” | |
+|*idShort:* |ProcessConditions
+|*Class:* |SubmodelElementCollection
+|*semanticId:* |[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ProcessConditions
+|*Parent:* |SubmodelElementCollection “ExplosionSafety”
 |*Explanation:* a|
 Contains properties are related to the process conditions of the device.
 
@@ -1456,11 +1393,12 @@ Note: If the device is mounted in the process boundary, ambient and process cond
 ====
 
 
-| |
-|*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.*
-|*idShort* |*Description@en* |*example* |
-a|
-[Property]
+|===
+[%autowidth]
+|===
+h|[SME type] h|semanticId = [idType]value h|[valueType] h|card.
+h|idShort h|Description@en h|example h|
+|[Property]
 
 DeviceCategory
 
@@ -1482,14 +1420,12 @@ Note: Equipment category according to the ATEX system.
 ====
 
 
-a|
-[String]
+|[String]
 
 1G
 
 |0..1
-a|
-[MLP]footnote:mlp[]
+|[MLP]footnote:mlp[]
 
 EquipmentProtectionLevel
 
@@ -1511,33 +1447,28 @@ Note: Equipment protection level according to the IEC or other standards, e.g. G
 ====
 
 
-a|
-[langString]footnote:mlp[]
+|[langString]footnote:mlp[]
 
 Ga@DE
 
 |0..1
-a|
-[Property]
+|[Property]
 
 RegionalSpecificMarking
 
 a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/ +
-Marking/ExplosionSafeties/ExplosionSafety/RegionalSpecificMarking
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/RegionalSpecificMarking
 
 Marking used only in specific regions, e.g. North America: class/divisions, EAC: “1” or NEC: “AIS”
 
-a|
-[String]
+|[String]
 
 IS
 
 NI;AIS
 
 |0..1
-a|
-[Property]
+|[Property]
 
 TypeOfProtection
 
@@ -1553,14 +1484,12 @@ Note: Symbol(s) for the Type of protection. Several types of protection are sepa
 ====
 
 
-a|
-[String]
+|[String]
 
 ia
 
 |0..1
-a|
-[Property]
+|[Property]
 
 ExplosionGroup
 
@@ -1588,16 +1517,14 @@ Note: Symbol(s) for the gas group (IIA…IIC) or dust group (IIIA…IIIC)
 ====
 
 
-a|
-[String]
+|[String]
 
 IIC
 
 A,B,C,D
 
 |0..1
-a|
-[Property]
+|[Property]
 
 LowerLimitingValueOfProcessTemperature
 
@@ -1612,16 +1539,15 @@ Note: Rated minimum process temperature
 ====
 
 
-a|
+|
 [Decimal]
 
--40^3^
+-40footnote:temp[]
 
 Unit: ºC
 
 |0..1
-a|
-[Property]
+|[Property]
 
 UpperLimitingValueOfProcessTemperature
 
@@ -1636,16 +1562,15 @@ Note: Rated maximum process temperature
 ====
 
 
-a|
+|
 [Decimal]
 
-120^3^
+120footnote:temp[]
 
 Unit: ºC
 
 |0..1
-a|
-[Property]
+|[Property]
 
 MaxSurfaceTemperatureForDustProof
 
@@ -1661,16 +1586,15 @@ Note: Maximum surface temperature (dust layer ≤ 5 mm) for specified maximum am
 ====
 
 
-a|
+|
 [Decimal]
 
-85^3^
+85footnote:temp[]
 
 Unit: ºC
 
 |0..1
-a|
-[Property]
+|[Property]
 
 TemperatureClass
 
@@ -1692,8 +1616,7 @@ Note: Temperature class for specified maximum ambient and maximum process temper
 ====
 
 
-a|
-[String]
+|[String]
 
 T4
 
@@ -1704,16 +1627,14 @@ T4
 
 Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 10 describes the details of the SMC structure.
 
-Properties of SMC "ExternalElectricalCircuit"
-
-[cols="24%,50%,19%,7%,",]
+.Properties of SMC "ExternalElectricalCircuit"
+[width=100%, cols="h,1", options="autowidth"]
 |===
-|*idShort:* |ExternalElectricalCircuit | | |
-|*Class:* |SubmodelElementCollection | | |
-|*semanticId:* |[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ +
-ExternalElectricalCircuit | | |
-|*Parent:* |SubmodelElementCollection “ExplosionSafety” | | |
-|*Explanation:* a|
+|idShort: |ExternalElectricalCircuit
+|Class: |SubmodelElementCollection
+|semanticId: |[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit
+|Parent: |SubmodelElementCollection “ExplosionSafety”
+|Explanation: a|
 specifies the parameters of external electrical circuits.
 
 
@@ -1728,11 +1649,12 @@ Note: If for one external IS circuit several sets of safety parameters are provi
 ====
 
 
-| | |
-|*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
-|*idShort* |*Description@en* |*example* | |
-a|
-[Property]
+|===
+[%autowidth]
+|===
+h|[SME type] h|semanticId = [idType]value h|[valueType] h|card.
+h|idShort h|Description@en h|example h|
+|[Property]
 
 DesignationOfElectricalTerminal
 
@@ -1747,8 +1669,7 @@ Note: For each circuit the designation of the terminals shall be specified. If s
 ====
 
 
-a|
-[String]
+|[String]
 
 +/-
 
@@ -1756,9 +1677,8 @@ a|
 
 26(+)/27(-)
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 TypeOfProtection
 
@@ -1784,8 +1704,7 @@ Note: If several TypeOfProtection are listed in the same certificate, for each T
 ====
 
 
-a|
-[String]
+|[String]
 
 db
 
@@ -1795,9 +1714,8 @@ Ex db eb ia
 
 Ex db; Ex eb
 
-|0..1 |
-a|
-[MLP]footnote:mlp[]
+|0..1
+|[MLP]footnote:mlp[]
 
 EquipmentProtectionLevel
 
@@ -1825,14 +1743,12 @@ Note: value should be chosen from an enumeration list with values “Ga, Gb, Gc,
 ====
 
 
-a|
-[langString]footnote:mlp[]
+|[langString]footnote:mlp[]
 
 Ga@DE
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 ExplosionGroup
 
@@ -1860,20 +1776,17 @@ Note: Symbol(s) for the gas group (IIA…IIC) or dust group (IIIA…IIIC)
 ====
 
 
-a|
-[String]
+|[String]
 
 IIC
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 Characteristics
 
 a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/ +
-Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Characteristics
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Characteristics
 
 Characteristic of the intrinsically safe circuit
 
@@ -1883,20 +1796,17 @@ Note: linear/ non-linear
 ====
 
 
-a|
-[String]
+|[String]
 
 linear
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 Fisco
 
 a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/ +
-Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Fisco
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Fisco
 
 FISCO certified intrinsically safe fieldbus circuit (IEC 60079-11)
 
@@ -1906,15 +1816,13 @@ Note: Enter “x” if relevant
 ====
 
 
-|[String] |0..1 |
-a|
-[Property]
+|[String] |0..1
+|[Property]
 
 TwoWISE
 
 a|
-[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/ +
-Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/TwoWISE
+[IRI] https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/TwoWISE
 
 2-WISE certified intrinsically safe circuit (IEC 60079-47)
 
@@ -1924,9 +1832,8 @@ Note: Enter “x” if relevant
 ====
 
 
-|[String] |0..1 |
-a|
-[SubmodelElementCollection]
+|[String] |0..1
+|[SubmodelElementCollection]
 
 SafetyRelatedPropertiesForPassiveBehaviour
 
@@ -1944,9 +1851,8 @@ Note: IS-parameters for passive circuits, if relevant (e.g. 2 wire field devices
 
 See separate clause
 
-|n/a |0..1 |
-a|
-[SubmodelElementCollection]
+|n/a |0..1
+|[SubmodelElementCollection]
 
 SafetyRelatedPropertiesForActiveBehaviour
 
@@ -1964,7 +1870,7 @@ Note: IS-parameters for active circuits, if relevant (e.g. power supply, IS-barr
 
 See separate clause
 
-|n/a |0..1 |
+|n/a |0..1
 |===
 
 
@@ -1973,16 +1879,15 @@ See separate clause
 
 Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 11 describes the details of the SMC structure.
 
-Properties of SMC "SafetyRelatedPropertiesForPassiveBehaviour"
-
-[cols="24%,50%,19%,7%,",]
+.Properties of SMC "SafetyRelatedPropertiesForPassiveBehaviour"
+[width=100%, cols="h,1", options="autowidth"]
 |===
-|*idShort:* |SafetyRelatedPropertiesForPassiveBehaviour | | |
-|*Class:* |SubmodelElementCollection | | |
-|*semanticId:* |[IRDI] 0173-1#02-AAQ380#006 +
-( [IRDI] 0112/2///61987#ABC586#001 Safety related properties for passive behaviour) | | |
-|*Parent:* |SubmodelElementCollection “ExternalElectricalCircuit” | | |
-|*Explanation:* a|
+|idShort: |SafetyRelatedPropertiesForPassiveBehaviour
+|Class: |SubmodelElementCollection
+|semanticId: |[IRDI] 0173-1#02-AAQ380#006 +
+( [IRDI] 0112/2///61987#ABC586#001 Safety related properties for passive behaviour)
+|Parent: |SubmodelElementCollection “ExternalElectricalCircuit”
+|Explanation: a|
 properties characterizing the safety related parameters of a loop-powered, intrinsically safe input or output circuit
 
 
@@ -1991,11 +1896,12 @@ Note: IS-parameters for passive circuits, if relevant (e.g. 2 wire field devices
 ====
 
 
-| | |
-|*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
-|*idShort* |*Description@en* |*example* | |
-a|
-[Property]
+|===
+[%autowidth]
+|===
+h|[SME type] h|semanticId = [idType]value h|[valueType] h|card.
+h|idShort h|Description@en h|example h|
+|[Property]
 
 MaxInputPower
 
@@ -2011,16 +1917,15 @@ Note: Limit value for input power
 ====
 
 
-a|
+|
 [Decimal]
 
 1250
 
 Unit: mW
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 MaxInputVoltage
 
@@ -2036,16 +1941,15 @@ Note: Limit value for input voltage
 ====
 
 
-a|
+|
 [Decimal]
 
 30
 
 Unit: V
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 MaxInputCurrent
 
@@ -2061,16 +1965,15 @@ Note: Limit value for input current
 ====
 
 
-a|
+|
 [Decimal]
 
 100
 
 Unit: mA
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 MaxInternalCapacitance
 
@@ -2086,16 +1989,15 @@ Note: Maximum internal capacitance of the circuit
 ====
 
 
-a|
+|
 [Decimal]
 
 0
 
 Unit: µF
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 MaxInternalInductance
 
@@ -2111,14 +2013,14 @@ Note: Maximum internal inductance of the circuit
 ====
 
 
-a|
+|
 [Decimal]
 
 0
 
 Unit: mH
 
-|0..1 |
+|0..1
 |===
 
 
@@ -2127,16 +2029,15 @@ Unit: mH
 
 Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 12 describes the details of the SMC structure.
 
-Properties of SMC "SafetyRelatedPropertiesForActiveBehaviour"
-
-[cols="24%,50%,19%,7%,",]
+.Properties of SMC "SafetyRelatedPropertiesForActiveBehaviour"
+[width=100%, cols="h,1", options="autowidth"]
 |===
-|*idShort:* |SafetyRelatedPropertiesForActiveBehaviour | | |
-|*Class:* |SubmodelElementCollection | | |
-|*semanticId:* |[IRDI] 0173-1#02-AAQ381#006 +
-( [IRDI] 0112/2///61987#ABC585#001 Safety related properties for active behaviour) | | |
-|*Parent:* |SubmodelElementCollection “ExternalElectricalCircuit” | | |
-|*Explanation:* a|
+|idShort: |SafetyRelatedPropertiesForActiveBehaviour
+|Class: |SubmodelElementCollection
+|semanticId: |[IRDI] 0173-1#02-AAQ381#006 +
+( [IRDI] 0112/2///61987#ABC585#001 Safety related properties for active behaviour)
+|Parent: |SubmodelElementCollection “ExternalElectricalCircuit”
+|Explanation: a|
 properties characterizing the safety related parameters of an intrinsically safe circuit
 
 
@@ -2145,11 +2046,12 @@ Note: IS-parameters for active circuits, if relevant (e.g. power supply, IS-barr
 ====
 
 
-| | |
-|*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
-|*idShort* |*Description@en* |*example* | |
-a|
-[Property]
+|===
+[%autowidth]
+|===
+h|[SME type] h|semanticId = [idType]value h|[valueType] h|card.
+h|idShort h|Description@en h|example h|
+|[Property]
 
 MaxOutputPower
 
@@ -2165,16 +2067,15 @@ Note: Limit value for output power
 ====
 
 
-a|
+|
 [Decimal]
 
 960
 
 Unit: mW
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 MaxOutputVoltage
 
@@ -2190,16 +2091,15 @@ Note: Limit value for open circuits output voltage
 ====
 
 
-a|
+|
 [Decimal]
 
 15.7
 
 Unit: V
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 MaxOutputCurrent
 
@@ -2215,16 +2115,15 @@ Note: Limit value for closed circuit output current
 ====
 
 
-a|
+|
 [Decimal]
 
 245
 
 Unit: mA
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 MaxExternalCapacitance
 
@@ -2240,16 +2139,15 @@ Note: Maximum external capacitance to be connected to the circuit
 ====
 
 
-a|
+|
 [Decimal]
 
 2878
 
 Unit: µF
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 MaxExternalInductance
 
@@ -2265,16 +2163,15 @@ Note: Maximum external inductance to be connected to the circuit
 ====
 
 
-a|
+|
 [Decimal]
 
 2.9
 
 Unit: mH
 
-|0..1 |
-a|
-[Property]
+|0..1
+|[Property]
 
 MaxExternalInductanceResistanceRatio
 
@@ -2290,31 +2187,32 @@ Note: External Inductance to Resistance ratio
 ====
 
 
-a|
+|
 [Decimal]
 
 Unit: mH/Q
 
-|0..1 |
+|0..1
 |===
 
 === Properties of the SMC “AssetSpecificProperties”
 
 Figure 2 shows the UML-diagram defining the relevant properties which need to be set. Table 13 describes the details of the SMC structure.
 
-Properties of SMC “AssetSpecificProperties”
-
-[cols="24%,50%,19%,7%,",]
+.Properties of SMC “AssetSpecificProperties”
+[width=100%, cols="h,1", options="autowidth"]
 |===
-|*idShort:* |AssetSpecificProperties | | |
-|*Class:* |SubmodelElementCollection | | |
-|*semanticId:* |[IRDI] 0173-1#01-AGZ672#001 | | |
-|*Parent:* |Submodel “Nameplate” | | |
-|*Explanation:* |Group of properties that are listed on the asset's nameplate and are grouped based on guidelines | | |
-|*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
-|*idShort* |*Description@en* |*example* | |
-a|
-[SubmodelElementCollection]
+|idShort: |AssetSpecificProperties
+|Class: |SubmodelElementCollection
+|semanticId: |[IRDI] 0173-1#01-AGZ672#001
+|Parent: |Submodel “Nameplate”
+|Explanation: |Group of properties that are listed on the asset's nameplate and are grouped based on guidelines
+|===
+[%autowidth]
+|===
+h|[SME type] h|semanticId = [idType]value h|[valueType] h|card.
+h|idShort h|Description@en h|example h|
+|[SubmodelElementCollection]
 
 GuidelineSpecificProperties\{00}
 
@@ -2325,13 +2223,13 @@ Asset specific nameplate information required by guideline, stipulation or legis
 
 See separate clause
 
-|n/a |1..* |
+|n/a |1..*
 |[Property] \{arbitrary} a|
 semanticId = \{arbitrary, representing information required by further standards}
 
 Properties which are not required by any legislations but provided due to best practice.
 
-|n/a |1..* |
+|n/a |1..*
 |===
 
 
@@ -2340,24 +2238,26 @@ Properties which are not required by any legislations but provided due to best p
 
 Figure 2 shows the UML-diagram defining the relevant properties which need to be set. Table 14 describes the details of the SMC structure combined with examples.
 
-Properties of SMC “GuidelineSpecificProperties”
-
-[cols="24%,50%,19%,7%,",]
+.Properties of SMC “GuidelineSpecificProperties”
+[width=100%, cols="h,1", options="autowidth"]
 |===
-|*idShort:* |GuidelineSpecificProperties\{00} | | |
-|*Class:* |SubmodelElementCollection | | |
-|*semanticId:* |[IRDI] 0173-1#01-AHD205#001 | | |
-|*Parent:* |SMC “AssetSpecificProperties” | | |
-|*Explanation:* |Asset specific nameplate information required by guideline, stipulation or legislation. | | |
-|*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.* |
-|*idShort* |*Description@en* |*example* | |
+|idShort: |GuidelineSpecificProperties\{00}
+|Class: |SubmodelElementCollection
+|semanticId: |[IRDI] 0173-1#01-AHD205#001
+|Parent: |SMC “AssetSpecificProperties”
+|Explanation: |Asset specific nameplate information required by guideline, stipulation or legislation.
+|===
+[%autowidth]
+|===
+h|[SME type] h|semanticId = [idType]value h|[valueType] h|card.
+h|idShort h|Description@en h|example h|
 |[Property] GuidelineForConformityDeclaration a|
 [IRDI] 0173-1#02-AAO856#002
 
 guideline, stipulation or legislation used for determining conformity
 
-|[String] |1 |
-|[Property] \{arbitrary} |semanticId = \{arbitrary, representing information required by further standards} |n/a |1..* |
+|[String] |1
+|[Property] \{arbitrary} |semanticId = \{arbitrary, representing information required by further standards} |n/a |1..*
 |===
 
 Beside the mentioned EU Machine Directive 2006/42/EC which this Submodel template is compliant with, there might be further information required by further stipulations and regulations depending on different asset. The SMC “AssetSpecificProperties” and its child SMC “GuidelineSpecificProperties” are therefore used to cover additional mandatory nameplate information while referencing the related stipulation or regulation.
@@ -2385,72 +2285,34 @@ Table 15 describes the details of the SMC structure.
 .Figure 10: UML diagram of SMC “ExplosionSafety” for Remote I/O Module 9468
 image:media/media/image12.png[media/media/image12,width=608,height=716]
 
-List of elements in SMC “ExplosionSafety” of Remote I/O Module 9468
-
-[cols="20%,13%,16%,3%,12%,12%,12%,12%",options="header",]
+.List of elements in SMC “ExplosionSafety” of Remote I/O Module 9468
+[width=100%, options="autowidth,header"]
 |===
 |Parent element |semanticId |Element |Unit |SMC 01 |SMC 02 |SMC 03 |SMC 04
-|Marking |https://admin-shell.io/zvei/ +
-nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties |SMC “ExplosionSafeties” | | | | |
-|SMC “ExplosionSafeties” |https://admin-shell.io/zvei/ +
-nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ ExplosionSafeties/ +
-ExplosionSafety |SMC “ExplosionSafety” | |DEKRA12ATEX0173X_01 |DEKRA12ATEX0173X_02 |FM17US0332X_01 |FM17US0332X_02
+|Marking |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties |SMC “ExplosionSafeties” | | | | |
+|SMC “ExplosionSafeties” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ ExplosionSafeties/ExplosionSafety |SMC “ExplosionSafety” | |DEKRA12ATEX0173X_01 |DEKRA12ATEX0173X_02 |FM17US0332X_01 |FM17US0332X_02
 |SMC “ExplosionSafety” |0112/2///61987#ABH783#001 |DesignationOfCertificateOrApproval | |DEKRA12ATEX0173X |DEKRA12ATEX0173X |FM17US0332X |FM17US0332X
 |SMC “ExplosionSafety” |0173-1#02-AAM812#003 |TypeOfApproval | |IECEX@EN |IECEX@EN |IECEX@EN |IECEX@EN
 |SMC “ExplosionSafety” |0173-1#02-AAM632#001 |ApprovalAgencyTestingAgency | |CSA@EN |CSA@EN |CSA@EN |CSA@EN
 |SMC “ExplosionSafety” |0173-1#02-AAQ325#003 |TypeOfProtection | |Ex ia [ia Ga] |[Ex ia Da] |IS; AIS |AEx ia [ia]
 |SMC “ExplosionSafety” |0112/2///61987#ABO102#001 |InstructionsControlDrawing | |https://xxx.pdf |https://xxx.pdf |https://xxx.pdf |https://xxx.pdf
-|SMC “ExplosionSafety” |https://admin-shell.io/ +
-zvei/nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-SpecificConditionsForUse |SpecificConditionsForUse | |X |X |X |X
-|SMC “ExplosionSafety” |https://admin-shell.io/zvei/ +
-nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-AmbientConditions |SMC “AmbientConditions” | |*existing* |*existing* |*existing* |*existing*
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/SpecificConditionsForUse |SpecificConditionsForUse | |X |X |X |X
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/AmbientConditions |SMC “AmbientConditions” | |*existing* |*existing* |*existing* |*existing*
 |SMC “AmbientConditions” |0173-1#02-AAK297#004 |DeviceCategory | |2(1)G |(1)D | |
 |SMC “AmbientConditions” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Gb | | |
-|SMC “AmbientConditions” |https://admin-shell.io/ +
-zvei/nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-RegionalSpecificMarking |RegionalSpecificMarking | | | |Class I, Division 1 |Class I, Zone 1
+|SMC “AmbientConditions” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/RegionalSpecificMarking |RegionalSpecificMarking | | | |Class I, Division 1 |Class I, Zone 1
 |SMC “AmbientConditions” |0173-1#02-AAQ325#003 |TypeOfProtection | |ia | |IS |ia
 |SMC “AmbientConditions” |0173-1#02-AAT372#001 |ExplosionGroup | |IIC |IIIC |A,B,C,D |IIC
 |SMC “AmbientConditions” |0173-1#02-AAZ952#001 |MinimumAmbientTemperature |ºC |-40 |-40 |-40 |-40
 |SMC “AmbientConditions” |0173-1#02-BAA039#010 |MaxAmbientTemperature |ºC |75 |75 |75 |75
 |SMC “AmbientConditions” |0173-1#02-AAO371#004 |TemperatureClass | |T4 | |T4 |T4
 |SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01
+/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01
 |SMC “ExternalElectricalCircuit_01” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |1+ / 2- |1+ / 2- |1+ / 2- |1+ / 2-
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAQ325#003 |TypeOfProtection | |ia |ia |IS |ia
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Da |Class I, Division 1 |Class I, Zone 1
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAT372#001 |ExplosionGroup | |IIC |IIIC |A,B |IIC
-|SMC “ExternalElectricalCircuit_01” |https://admin-shell.io/zvei/ +
-nameplate/2/0/Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit/ +
-Characteristics |Characteristics | |linear |linear |linear |linear
+|SMC “ExternalElectricalCircuit_01” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Characteristics |Characteristics | |linear |linear |linear |linear
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAQ380#006 |SMC “SafetyRelated +
 PropertiesFor +
 PassiveBehaviour” | |*existing* |*existing* |*non-existing* |*non-existing*
@@ -2504,23 +2366,12 @@ ActiveBehaviour”
 
 |0173-1#02-AAM636#003 |MaxExternalInductance |mH |3.8 |3.8 |3.8 |3.8
 |SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02
+/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02
 |SMC “ExternalElectricalCircuit_02” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |1+ / 2+ / 4- |1+ / 2+ / 4- |1+ / 2+ / 4- |1+ / 2+ / 4-
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAQ325#003 |TypeOfProtection | |ia |ia |IS |ia
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Da |Class I, Division 1 |Class I, Zone 1
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAT372#001 |ExplosionGroup | |IIC |IIIC |A,B |IIC
-|SMC “ExternalElectricalCircuit_02” |https://admin-shell.io/zvei/ +
-nameplate/2/0/Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit/ +
-Characteristics |Characteristics | |linear |linear |linear |linear
+|SMC “ExternalElectricalCircuit_02” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Characteristics |Characteristics | |linear |linear |linear |linear
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAQ380#006 |SMC “SafetyRelated +
 PropertiesFor +
 PassiveBehaviour” | |*existing* |*existing* |*existing* |*existing*
@@ -2574,23 +2425,12 @@ ActiveBehaviour”
 
 |0173-1#02-AAM636#003 |MaxExternalInductance |mH |3.6 |3.6 |3.6 |3.6
 |SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03
+/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03
 |SMC “ExternalElectricalCircuit_03” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |2+ / 4- |2+ / 4- |2+ / 4- |2+ / 4-
 |SMC “ExternalElectricalCircuit_03” |0173-1#02-AAQ325#003 |TypeOfProtection | |ia |ia |IS |ia
 |SMC “ExternalElectricalCircuit_03” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Da |Class I, Division 1 |Class I, Zone 1
 |SMC “ExternalElectricalCircuit_03” |0173-1#02-AAT372#001 |ExplosionGroup | |IIC |IIIC |A,B |IIC
-|SMC “ExternalElectricalCircuit_03” |https://admin-shell.io/zvei/ +
-nameplate/2/0/Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit/ +
-Characteristics |Characteristics | |linear |linear |linear |linear
+|SMC “ExternalElectricalCircuit_03” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Characteristics |Characteristics | |linear |linear |linear |linear
 |SMC “ExternalElectricalCircuit_03” |0173-1#02-AAQ380#006 |SMC “SafetyRelated +
 PropertiesFor +
 PassiveBehaviour” | |*existing* |*existing* |*existing* |*existing*
@@ -2649,41 +2489,19 @@ Table 16 describes the details of the SMC structure.
 .Figure 12: UML diagram of SMC “ExplosionSafety” for load disconnect switch
 image:media/media/image14.png[media/media/image14,width=608,height=453]
 
-List of elements in SMC “ExplosionSafety” of the load disconnect switch
-
-[cols="20%,20%,26%,4%,15%,15%",options="header",]
+.List of elements in SMC “ExplosionSafety” of the load disconnect switch
+[width=100%, options="autowidth,header"]
 |===
 |Parent element |semanticId |Element |Unit |SMC 01 |SMC 02
-|Marking |https://admin-shell.io/zvei/ +
-nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties |SMC “ExplosionSafeties” | | |
-|SMC “ExplosionSafeties” |https://admin-shell.io/zvei/ +
-nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety |SMC “ExplosionSafety” | |PTB01ATEX1024_01 |PTB01ATEX1024_02
+|Marking |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties |SMC “ExplosionSafeties” | | |
+|SMC “ExplosionSafeties” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety |SMC “ExplosionSafety” | |PTB01ATEX1024_01 |PTB01ATEX1024_02
 |SMC “ExplosionSafety” |0112/2///61987#ABH783#001 |DesignationOfCertificateOrApproval | |PTB 01 ATEX 1024 |PTB 01 ATEX 1024
 |SMC “ExplosionSafety” |0173-1#02-AAM812#003 |TypeOfApproval | |IECEX@EN |IECEX@EN
 |SMC “ExplosionSafety” |0173-1#02-AAM632#001 |ApprovalAgencyTestingAgency | |CSA@EN |CSA@EN
 |SMC “ExplosionSafety” |0173-1#02-AAQ325#003 |TypeOfProtection | |db eb |tb
 |SMC “ExplosionSafety” |0112/2///61987#ABO102#001 |InstructionsControlDrawing | |\{Reference} |\{Reference}
-|SMC “ExplosionSafety” |https://admin-shell.io/ +
-zvei/nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-SpecificConditionsForUse |SpecificConditionsForUse | |X |X
-|SMC “ExplosionSafety” |https://admin-shell.io/zvei/ +
-nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-AmbientConditions |SMC “AmbientConditions” | |*existing* |*existing*
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/SpecificConditionsForUse |SpecificConditionsForUse | |X |X
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/AmbientConditions |SMC “AmbientConditions” | |*existing* |*existing*
 |SMC “AmbientConditions” |0173-1#02-AAK297#004 |DeviceCategory | |2G |2D
 |SMC “AmbientConditions” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Gb |Db
 |SMC “AmbientConditions” |0173-1#02-AAQ325#003 |TypeOfProtection | |db eb |tb
@@ -2708,85 +2526,37 @@ Table 17 describes the details of the SMC structure.
 .Figure 14: UML diagram of SMC “ExplosionSafety” for FISCO power supply
 image:media/media/image16.png[media/media/image16,width=603,height=592]
 
-List of elements in SMC “ExplosionSafety” of FISCO power supply
-
-[cols="20%,24%,20%,4%,16%,16%",options="header",]
+.List of elements in SMC “ExplosionSafety” of FISCO power supply
+[width=100%, options="autowidth,header"]
 |===
 |Parent element |semanticId |Element |Unit |SMC 01 |SMC 02
-|Marking |https://admin-shell.io/zvei/ +
-nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties |SMC “ExplosionSafeties” | | |
-|SMC “ExplosionSafeties” |https://admin-shell.io/zvei/ +
-nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety |SMC “ExplosionSafety” | |BVS06ATEXE004X |3026646
+|Marking |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties |SMC “ExplosionSafeties” | | |
+|SMC “ExplosionSafeties” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety |SMC “ExplosionSafety” | |BVS06ATEXE004X |3026646
 |SMC “ExplosionSafety” |0112/2///61987#ABH783#001 |DesignationOfCertificateOrApproval | |BVS06ATEXE004X |3026646
 |SMC “ExplosionSafety” |0173-1#02-AAM812#003 |TypeOfApproval | |IECEX@EN |IECEX@EN
 |SMC “ExplosionSafety” |0173-1#02-AAM632#001 |ApprovalAgencyTestingAgency | |CSA@EN |CSA@EN
 |SMC “ExplosionSafety” |0173-1#02-AAQ325#003 |TypeOfProtection | |Ex mb e ib [ia Ga] |NI; AIS
 |SMC “ExplosionSafety” |0173-1#02-AAN532#003 |RatedInsulationVoltage |V |253 |250
-|SMC “ExplosionSafety” |https://admin-shell.io/ +
-zvei/nameplate/2/0/ +
-Nameplate/Markings/ +
-Marking/ExplosionSafeties/ExplosionSafety/ +
-SpecificConditionsForUse |SpecificConditionsForUse | |X |
-|SMC “ExplosionSafety” |https://admin-shell.io/zvei/ +
-nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-AmbientConditions |SMC “AmbientConditions” | |*existing* |*existing*
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/SpecificConditionsForUse |SpecificConditionsForUse | |X |
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/AmbientConditions |SMC “AmbientConditions” | |*existing* |*existing*
 |SMC “AmbientConditions” |0173-1#02-AAK297#004 |DeviceCategory | |2(1)G |
 |SMC “AmbientConditions” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Gb |
-|SMC “AmbientConditions” |https://admin-shell.io/ +
-zvei/nameplate/2/0/ +
-Nameplate/Markings/ +
-Marking/ExplosionSafeties/ExplosionSafety/ +
-RegionalSpecificMarking |RegionalSpecificMarking | | |Class I, Division 2
+|SMC “AmbientConditions” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/RegionalSpecificMarking |RegionalSpecificMarking | | |Class I, Division 2
 |SMC “AmbientConditions” |0173-1#02-AAQ325#003 |TypeOfProtection | |mb e ib |NI; AIS
 |SMC “AmbientConditions” |0173-1#02-AAT372#001 |ExplosionGroup | |IIC |A,B,C,D
 |SMC “AmbientConditions” |0173-1#02-AAZ952#001 |MinimumAmbientTemperature |ºC |-40 |-40
 |SMC “AmbientConditions” |0173-1#02-BAA039#010 |MaxAmbientTemperature |ºC |75 |75
 |SMC “AmbientConditions” |0173-1#02-AAO371#004 |TemperatureClass | |T4 |T4
-|SMC “ExplosionSafety” |https://admin-shell.io/ +
-zvei/nameplate/2/0/ +
-Nameplate/Markings/ +
-Marking/ExplosionSafeties/ExplosionSafety/ +
-ProcessConditions |SMC “ProcessConditions” | | |*existing*
-|SMC “ProcessConditions” |https://admin-shell.io/ +
-zvei/nameplate/2/0/ +
-Nameplate/Markings/ +
-Marking/ExplosionSafeties/ExplosionSafety/ +
-RegionalSpecificMarking |RegionalSpecificMarking | | |NI; AIS
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ProcessConditions |SMC “ProcessConditions” | | |*existing*
+|SMC “ProcessConditions” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/RegionalSpecificMarking |RegionalSpecificMarking | | |NI; AIS
 |SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01
+/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01
 |SMC “ExternalElectricalCircuit_01” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |+ / - |+ / -
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAQ325#003 |TypeOfProtection | |ia |IS
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Class I, Division 1
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAT372#001 |ExplosionGroup | |IIC |A,B
-|SMC “ExternalElectricalCircuit_01” |https://admin-shell.io/zvei/ +
-nameplate/2/0/Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit/ +
-Characteristics |Characteristics | |linear |linear
-|SMC “ExternalElectricalCircuit_01” |https://admin-shell.io/ +
-zvei/nameplate/2/0/ +
-Nameplate/Markings/ +
-Marking/ExplosionSafeties/ExplosionSafety/ +
-ExternalElectricalCircuit/ +
-Fisco |Fisco | |X |X
+|SMC “ExternalElectricalCircuit_01” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Characteristics |Characteristics | |linear |linear
+|SMC “ExternalElectricalCircuit_01” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Fisco |Fisco | |X |X
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAQ380#006 |SMC “SafetyRelated +
 PropertiesFor +
 PassiveBehaviour” | |*existing* |*existing*
@@ -2840,29 +2610,13 @@ ActiveBehaviour”
 
 |0173-1#02-AAM636#003 |MaxExternalInductance |mH |0.58 |0.58
 |SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02
+/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02
 |SMC “ExternalElectricalCircuit_02” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |+ / - |+ / -
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAQ325#003 |TypeOfProtection | |ia |IS
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Class I, Division 1
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAT372#001 |ExplosionGroup | |IIB |C,D
-|SMC “ExternalElectricalCircuit_02” |https://admin-shell.io/zvei/ +
-nameplate/2/0/Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit/ +
-Characteristics |Characteristics | |linear |linear
-|SMC “ExternalElectricalCircuit_02” |https://admin-shell.io/ +
-zvei/nameplate/2/0/ +
-Nameplate/Markings/ +
-Marking/ExplosionSafeties/ExplosionSafety/ +
-ExternalElectricalCircuit/ +
-Fisco |Fisco | |X |X
+|SMC “ExternalElectricalCircuit_02” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Characteristics |Characteristics | |linear |linear
+|SMC “ExternalElectricalCircuit_02” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Fisco |Fisco | |X |X
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAQ380#006 |SMC “SafetyRelated +
 PropertiesFor +
 PassiveBehaviour” | |*existing* |*existing*
@@ -2931,42 +2685,20 @@ Table 18 describes the details of the SMC structure.
 .Figure 16: UML diagram of SMC “ExplosionSafety” for flow meter Promag 300
 image:media/media/image18.png[media/media/image18,width=638,height=659]
 
-List of elements in SMC “ExplosionSafety” of flow meter Promag 300
-
-[cols="18%,13%,18%,3%,12%,12%,12%,12%",options="header",]
+.List of elements in SMC “ExplosionSafety” of flow meter Promag 300
+[width=100%, options="autowidth,header"]
 |===
 |Parent element |semanticId |Element |Unit |SMC 01 |SMC 02 |SMC 03 |SMC 04
-|Marking |https://admin-shell.io/zvei/ +
-nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties |SMC “ExplosionSafeties” | | | | |
-|SMC “ExplosionSafeties” |https://admin-shell.io/zvei/ +
-nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety |SMC “ExplosionSafety” | |SIRA16ATEX2219X_01 |SIRA16ATEX2219X_02 |IECExCSA16_0034X_01 |IECExCSA16_0034X_02
+|Marking |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties |SMC “ExplosionSafeties” | | | | |
+|SMC “ExplosionSafeties” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety |SMC “ExplosionSafety” | |SIRA16ATEX2219X_01 |SIRA16ATEX2219X_02 |IECExCSA16_0034X_01 |IECExCSA16_0034X_02
 |SMC “ExplosionSafety” |0112/2///61987#ABH783#001 |DesignationOfCertificateOrApproval | |SIRA16ATEX2219X |SIRA16ATEX2219X |IECExCSA16.0034X |IECExCSA16.0034X
 |SMC “ExplosionSafety” |0173-1#02-AAM812#003 |TypeOfApproval | |ATEX@EN |ATEX@EN |IECEX@EN |IECEX@EN
 |SMC “ExplosionSafety” |0173-1#02-AAM632#001 |ApprovalAgencyTestingAgency | |SIRA@EN |SIRA@EN |CSA@EN |CSA@EN
 |SMC “ExplosionSafety” |0173-1#02-AAQ325#003 |TypeOfProtection | |Ex db eb ia |Ex tb |Ex db eb ia |Ex tb IIIC T** °C Db
 |SMC “ExplosionSafety” |0173-1#02-AAN532#003 |RatedInsulationVoltage |V |250 |250 |250 |250
 |SMC “ExplosionSafety” |0112/2///61987#ABO102#001 |InstructionsControlDrawing | |\{Reference} |\{Reference} |\{Reference} |\{Reference}
-|SMC “ExplosionSafety” |https://admin-shell.io/ +
-zvei/nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-SpecificConditionsForUse |SpecificConditionsForUse | |X |X |X |X
-|SMC “ExplosionSafety” |https://admin-shell.io/zvei/ +
-nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-AmbientConditions |SMC “AmbientConditions” | |*existing* |*existing* |*existing* |*existing*
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/SpecificConditionsForUse |SpecificConditionsForUse | |X |X |X |X
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/AmbientConditions |SMC “AmbientConditions” | |*existing* |*existing* |*existing* |*existing*
 |SMC “AmbientConditions” |0173-1#02-AAK297#004 |DeviceCategory | |2G |2D |2G |2D
 |SMC “AmbientConditions” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Gb |Db |Gb |Db
 |SMC “AmbientConditions” |0173-1#02-AAQ325#003 |TypeOfProtection | |Ex db eb ia |Ex tb |Ex db eb ia |Ex tb
@@ -2975,35 +2707,18 @@ AmbientConditions |SMC “AmbientConditions” | |*existing* |*existing* |*exist
 |SMC “AmbientConditions” |0173-1#02-BAA039#010 |MaxAmbientTemperature |ºC |45 |45 |45 |45
 |SMC “AmbientConditions” |0173-1#02-AAM666#005 |MaxSurfaceTemperatureForDustProof |ºC | |85 | |85
 |SMC “AmbientConditions” |0173-1#02-AAO371#004 |TemperatureClass | |T6 | |T6 |
-|SMC “ExplosionSafety” |https://admin-shell.io/ +
-zvei/nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ProcessConditions |SMC “ProcessConditions” | |*existing* |*existing* |*existing* |*existing*
+|SMC “ExplosionSafety” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ProcessConditions |SMC “ProcessConditions” | |*existing* |*existing* |*existing* |*existing*
 |SMC “ProcessConditions” |0173-1#02-AAN309#004 |LowerLimitingValueOfProcessTemperature |ºC |-40 |-40 |-40 |-40
 |SMC “ProcessConditions” |0173-1#02-AAN307#004 |UpperLimitingValueOfProcessTemperature |ºC |80 |80 |80 |80
 |SMC “ProcessConditions” |0173-1#02-AAM666#005 |MaxSurfaceTemperatureForDustProof |ºC | |85 | |85
 |SMC “ProcessConditions” |0173-1#02-AAO371#004 |TemperatureClass | |T6 | |T6 |
 |SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01
+/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01 |ExternalElectricalCircuit_01
 |SMC “ExternalElectricalCircuit_01” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |26(+)/27(-) |26(+)/27(-) |26(+)/27(-) |26(+)/27(-)
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAQ325#003 |TypeOfProtection | |Ex ia |Ex ia |Ex ia |Ex ia
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Da |Ga |Da
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAT372#001 |ExplosionGroup | |IIC |IIIC |IIC |IIIC
-|SMC “ExternalElectricalCircuit_01” |https://admin-shell.io/zvei/ +
-nameplate/2/0/Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit/ +
-Characteristics |Characteristics | |linear |linear |linear |linear
+|SMC “ExternalElectricalCircuit_01” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Characteristics |Characteristics | |linear |linear |linear |linear
 |SMC “ExternalElectricalCircuit_01” |0173-1#02-AAQ380#006 |SMC “SafetyRelated +
 PropertiesFor +
 PassiveBehaviour” | |*existing* |*existing* |*non-existing* |*non-existing*
@@ -3023,23 +2738,12 @@ PassiveBehaviour” |0173-1#02-AAM640#004 |MaxInternalCapacitance |µF |0.006 |0
 PropertiesFor +
 PassiveBehaviour” |0173-1#02-AAM639#003 |MaxInternalInductance |mH |0 |0 |0 |0
 |SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02
+/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02 |ExternalElectricalCircuit_02
 |SMC “ExternalElectricalCircuit_02” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |24(+)/25(-) |24(+)/25(-) |24(+)/25(-) |24(+)/25(-)
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAQ325#003 |TypeOfProtection | |Ex ia |Ex ia |Ex ia |Ex ia
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Da |Ga |Da
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAT372#001 |ExplosionGroup | |IIC |IIIC |IIC |IIIC
-|SMC “ExternalElectricalCircuit_02” |https://admin-shell.io/zvei/ +
-nameplate/2/0/Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit/ +
-Characteristics |Characteristics | |linear |linear |linear |linear
+|SMC “ExternalElectricalCircuit_02” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Characteristics |Characteristics | |linear |linear |linear |linear
 |SMC “ExternalElectricalCircuit_02” |0173-1#02-AAQ380#006 |SMC “SafetyRelated +
 PropertiesFor +
 PassiveBehaviour” | |*existing* |*existing* |*existing* |*existing*
@@ -3059,23 +2763,12 @@ PassiveBehaviour” |0173-1#02-AAM640#004 |MaxInternalCapacitance |µF |0 |0 |0 
 PropertiesFor +
 PassiveBehaviour” |0173-1#02-AAM639#003 |MaxInternalInductance |mH |0 |0 |0 |0
 |SMC “ExplosionSafety” |https://admin-shell.io/zvei +
-/nameplate/2/0/ +
-Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03
+/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit |SMC “ExternalElectricalCircuit” | |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03 |ExternalElectricalCircuit_03
 |SMC “ExternalElectricalCircuit_03” |0112/2///61987#ABB147#004 |DesignationOfElectricalTerminal | |22(+)/23(-) |22(+)/23(-) |22(+)/23(-) |22(+)/23(-)
 |SMC “ExternalElectricalCircuit_03” |0173-1#02-AAQ325#003 |TypeOfProtection | |Ex ia |Ex ia |Ex ia |Ex ia
 |SMC “ExternalElectricalCircuit_03” |0173-1#02-AAM668#001 |EquipmentProtectionLevel | |Ga |Da |Ga |Da
 |SMC “ExternalElectricalCircuit_03” |0173-1#02-AAT372#001 |ExplosionGroup | |IIC |IIIC |IIC |IIIC
-|SMC “ExternalElectricalCircuit_03” |https://admin-shell.io/zvei/ +
-nameplate/2/0/Nameplate/ +
-Markings/Marking/ +
-ExplosionSafeties/ +
-ExplosionSafety/ +
-ExternalElectricalCircuit/ +
-Characteristics |Characteristics | |linear |linear |linear |linear
+|SMC “ExternalElectricalCircuit_03” |https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/ExplosionSafeties/ExplosionSafety/ExternalElectricalCircuit/Characteristics |Characteristics | |linear |linear |linear |linear
 |SMC “ExternalElectricalCircuit_03” |0173-1#02-AAQ380#006 |SMC “SafetyRelated +
 PropertiesFor +
 PassiveBehaviour” | |*existing* |*existing* |*existing* |*existing*
@@ -3111,7 +2804,7 @@ For clarity and brevity, a set of rules is used for the tables for describing Su
 * The tables often place two informations in different rows of the same table cell. In this case, the first information is marked out by sharp brackets [] form the second information. A special case are the semanticIds, which are marked out by the format: (type)(local)[idType]value.
 * The types of SubmodelElements are abbreviated:
 
-[cols="41%,59%",options="header",]
+[width=100%, options="autowidth,header"]
 |===
 |SME type |SubmodelElement type
 |Property |Property
@@ -3134,9 +2827,8 @@ For clarity and brevity, a set of rules is used for the tables for describing Su
 
 The following table provides sample ECLASS definitions for modelling product marking in SMC “Marking”. Further values will be provided by ECLASS or other repositories.
 
-Sample ECLASS definitions for product marking
-
-[cols="7%,39%,54%",]
+.Sample ECLASS definitions for product marking
+[width=100%, options="header, autowidth"]
 |===
 |Item |IRDI |preferredName@en
 |1 |0173-1#07-AAB047#003 |CCC
@@ -3187,5 +2879,3 @@ Sample ECLASS definitions for product marking
 
 [#bib11]
 [11] “IDTA 2002-1-0 Submodel for Contact Information”, 24 May 2022, Industrial Digital Twin Association, [Online]. Available: https://github.com/admin-shell-io/submodel-templates/blob/main/published/Contact%20Information/1/IDTA%202002-1-0_Submodel_ContactInformation.pdf[https://github.com/admin-shell-io/Submodel-templates/blob/main/published/Contact%20Information/1/IDTA%202002-1-0_Submodel_ContactInformation.pdf]
-
-www.industrialdigitaltwin.org
