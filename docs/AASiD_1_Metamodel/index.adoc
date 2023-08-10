@@ -5,12 +5,12 @@
 :imagesdir: media/
 :nofooter:
 
-= Part 1: Metamodel
-:author: IDTA
-:version-label: Number
-:revnumber: 01001
-:revdate: April 2023
-:revremark: Specification of the Asset Administration Shell
+= image:img.png[width=100%]
+//:author: IDTA
+//:version-label: Number
+//:revnumber: 01001
+//:revdate: April 2023
+//:revremark: Specification of the Asset Administration Shell
 
 == Preamble
 
