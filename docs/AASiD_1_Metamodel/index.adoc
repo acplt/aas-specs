@@ -2901,7 +2901,7 @@ image:image52.png[]
 |===
 |Enumeration: |[[KeyTypes]]KeyTypes
 |Explanation: |Enumeration of different key value types within a key
-|Set of: |FragementKeys; AasReferables, GloballyIdentifiables
+|Set of: |FragementKeys; xref:AasReferables[AasReferables], xref:GloballyIdentifiables[GloballyIdentifiables]
 |===
 [cols="30%,70%"],options="header"]
 |===
@@ -2980,7 +2980,7 @@ Note: not used as type but in constraints.
 ====
 
 
-|Set of: |AASReferableNonIdentifiables, GenericFragmentKeys
+|Set of: |xref:AASReferableNonIdentifiables[AASReferableNonIdentifiables], xref:GenericFragmentKeys[GenericFragmentKeys]
 |===
 [cols="30%,70%"],options="header"]
 |===
@@ -3041,7 +3041,7 @@ Note: not used as type but in constraints.
 ====
 
 
-|Set of: |AasIdentifiables, GenericGloballyIdentifiables
+|Set of: |xref:AasIdentifiables[AasIdentifiables], xref:GenericGloballyIdentifiables[GenericGloballyIdentifiables]
 |===
 [cols="30%,70%"],options="header"]
 |===
@@ -3073,7 +3073,7 @@ Note: not used as type but in constraints.
 ====
 
 
-|Set of: |AasSubmodelElements
+|Set of: |xref:AasSubmodelElements[AasSubmodelElements]
 |===
 [cols="30%,70%"],options="header"]
 |===
@@ -3185,7 +3185,7 @@ Note: not used as type but in constraints.
 ====
 
 
-|Set of: |AasReferableNonIdentifiables, AasIdentifiables
+|Set of: |xref:AASReferableNonIdentifiables[AASReferableNonIdentifiables], xref:AasIdentifiables[AasIdentifiables]
 |===
 [cols="30%,70%"],options="header"]
 |===
