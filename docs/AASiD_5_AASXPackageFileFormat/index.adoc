@@ -1,6 +1,7 @@
 :toc: left
 :toc-title: Specification of the Asset Administration Shell. Part 5: Package File Format (AASX)
 :stylesheet: ../style.css
+:favicon: ../favicon.png
 :imagesdir: media/
 :nofooter:
 
@@ -251,7 +252,7 @@ Figure 1 shows the different ways of exchanging information via Asset Administra
 . defining a secure way to exchange the file, for example via secure file download on a web server link:#bib12[[12\]].
 
 .Figure 1 Part 5: File Exchange Type of Information Exchange via Asset Administration Shells
-image:image2.jpeg[width=535,height=337]
+image:image2.jpeg[]
 
 == Basic Concepts and Leading Picture
 
@@ -266,14 +267,14 @@ The Asset Administration Shells are not necessarily exported "as is". Instead, s
 In Figure 3, it is assumed that import does not need additional filtering.
 
 .Figure 2 Use Case File Exchange between Value Chain Partners
-image:image3.jpeg[width=642,height=491]
+image:image3.jpeg[]
 
 "Supplier" and "Integrator" form two independent legal bodies (Figure 3). The organizational boundaries as well as the system boundaries including the partners’ infrastructures must be taken into account for data exchange, file exchange being one form of data exchange.
 
 The exchange of files needs to fulfil some requirements with respect to usability and security link:#bib12[[12\]]. A bilateral agreement on security constraints is required, which must be fulfilled for the transfer and usage of the files. Please refer to Part 4 of the series "Details of the Asset Administration Shell" for more details.
 
 .Figure 3 File Exchange between two Value Chain Partners
-image:image4.jpg[width=642,height=270]
+image:image4.jpg[]
 
 For usability sake, a container format is used for file exchange and a corresponding structure is defined. This predefined structure helps the consumer to understand the content of the single files. The container may contain auxiliary files referenced by the AAS or even executable code.
 
@@ -285,7 +286,7 @@ When exchanging information from partner A to partner B, two use cases may apply
 * The consumer of information does not want to include all information provided by the producer in his own process, i.e. he wants to filter only the relevant information.
 +
 .Figure 4 Example Filtering for Export and Import
-image:image5.jpg[width=642,height=666]
+image:image5.jpg[]
 
 As an example (see Figure 4), let’s assume that the producer is submitting the complete order data. However, the consumer (in this case the machine builder) is filtering the information (1) and is only importing the information relevant to him. Regarding the functionality, both are filtering: the producer is filtering what he submits to the consumer (2) and the consumer in turn is not using all functionality but is filtering the functionality he wants to use in his environment. The same is possible between machine builders and operators.
 
@@ -298,7 +299,7 @@ Note: in the use case described above, (i.e. the exchange of information via sha
 Figure 4 shows an example, where the defined xml format is used as defined in this document. The German translation shall not be submitted, only English language is provided to partner B.
 
 .Figure 5 Example Filtering of Information in XML
-image:image6.jpg[width=642,height=299]
+image:image6.jpg[]
 
 === Basic Concepts of the Open Packaging Conventions
 
@@ -324,7 +325,7 @@ Some use cases make it necessary to exchange the full or partial structure of th
 The following process in Figure 6 is defined for creating and consuming AASX packages.
 
 .Figure 6 Process for Generating and Consuming AASX Packages
-image:image7.jpeg[width=642,height=335]
+image:image7.jpeg[]
 
 The process starts by serializing the existing AAS (e.g. D1 and E1) into files (according to the serialization mechanisms described in this document), as well as exporting other supplementary files (i.e. files mentioned in the structure of the AAS, such as manuals, CAD files, etc.). All these files will be packaged together into the AASX ZIP file format and will be followed by several security steps that define the policies for modifiability, encryption, and digital signing of the files inside the AASX. The final AASX can then be transported from the AASX producer (in this case partner A) to the AASX consumer (partner B) via digital media such as e-mail, USB stick, etc. The consumer first needs to validate and verify the incoming AASX, unpack the contained files, and import them to generate the new AAS in the consumer environment. The process will be explained in detail in the following sub-sections.
 
@@ -345,7 +346,7 @@ The Asset Administration Shell Package (AASX) format is derived from the Open Pa
 Figure 7 defines a set of relationship types (URIs) and the corresponding source files as a part of the logical model for the AASX format. In addition (not shown in Figure 7), a specific relationship instance also has a unique ID and a target resource (URI of a target file inside or outside of the package).
 
 .Figure 7 Relationship Types for AASX Packages (Logical Model)
-image:image8.png[width=642,height=300]
+image:image8.png[]
 
 The relationship types for thumbnail, core-properties, digital-signatures (origin, signature and certificate) are defined by Open Packaging Conventions. The other relationship types were specifically defined to support the AASX package format.
 
@@ -496,12 +497,12 @@ Figure 9 shows the overall physical model, i.e. the file structure of an AASX pa
 Figure 8 shows an example of an AASX package focusing on the specific aasx part including AAS examples. It depicts the content of the AASX package listed in a tree view using the ECMA-376 relationship types defined in Figure 7 and follows the file name conventions as defined above. In this example, it is assumed that the AAS specification files are serialized in XML. The data.xml file in this example contains two Asset Administration Shells, two submodels, and a single concept description. Three files are referenced within the submodels; they are added to the package in the folder suppl. The files can be referenced from both AAS, i.e. from both submodels. The same accounts for the concept description that can be used in both submodels. The submodels can be part of both AAS, if needed.
 
 .Figure 8 Example of Mapping Logical (right) to Physical Model (left)
-image:image9.png[width=622,height=272]
+image:image9.png[]
 
 In addition to the AASX specific files, files common to all ECMA-376 packages – such as relationship parts (*.rels) and the Content Types stream ([Content_Types].xml) – must be contained in an AASX package in its physical representation as a .zip archive. For more information on these files, please refer to the ECMA-376 specification.
 
 .Figure 9 AASX File Structure (Physical Model)
-image:image10.png[width=377,height=299]
+image:image10.png[]
 
 ===  Digital Signatures
 

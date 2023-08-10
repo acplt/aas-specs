@@ -4,17 +4,18 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.18">
+<meta name="generator" content="Asciidoctor 2.0.16">
 <meta name="author" content="IDTA">
+<link rel="icon" type="image/png" href="../favicon.png">
 <title>Digital Nameplate for Industrial Equipment</title>
 <style>
 
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
 @import "https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css";
 
-body {
+/*body {
 	background: #f2f2f2;
-}
+}*/
 
 #toc.toc2 {
   background: #ffffff;
@@ -70,18 +71,9 @@ tbody tr th, tbody tr th p, tfoot tr th, tfoot tr th p {
 table thead, table tfoot {
     background: #0028CD;
 }
-table thead:hover, table thead:focus {
-    background: #0028CD;
-}
 
 table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
     color: #ffffff;
-}
-table thead tr th:hover, table thead tr th:focus, table tfoot tr th:hover, table tfoot tr th:focus {
-    background: #0028CD;
-}
-table thead:hover, table thead:focus, table tfoot:hover, table tfoot:focus {
-    background: #0028CD;
 }
 
 .exampleblock > .content {
@@ -92,7 +84,11 @@ table thead:hover, table thead:focus, table tfoot:hover, table tfoot:focus {
 #header, #content, #footnotes, #footer {
 	margin-left: 0;
 }
-
+
+img {
+  margin: auto;
+  display: block;
+}
 </style>
 </head>
 <body class="article toc2 toc-left">
@@ -229,7 +225,7 @@ table thead:hover, table thead:focus, table tfoot:hover, table tfoot:focus {
 <div class="paragraph">
 <p>According to <a href="#bib3">[3]</a>, interoperable properties might be defined by standards, consortium specifcations or manufacturer specifications. Useful standards providing sources of concepts are:</p>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 1. List of examplary standards defining interoperable properties</caption>
 <colgroup>
 <col style="width: 50%;">
@@ -276,7 +272,7 @@ table thead:hover, table thead:focus, table tfoot:hover, table tfoot:focus {
 </div>
 <div class="paragraph">
 <div class="title">Figure 1: Reading aid and example: UML notation used in this document</div>
-<p><span class="image"><img src="media/image3.png" alt="image3" width="468" height="201"></span></p>
+<p><span class="image"><img src="media/image3.png" alt="image3"></span></p>
 </div>
 <div class="paragraph">
 <p>Further details about UML diagrams please refer to <a href="#bib6">[6]</a> and <a href="#bib10">[10]</a>.</p>
@@ -329,9 +325,9 @@ table thead:hover, table thead:focus, table tfoot:hover, table tfoot:focus {
 </div>
 <div class="paragraph">
 <div class="title">Figure 2: UML-Diagram for Submodel "Nameplate"</div>
-<p><span class="image"><img src="media/image4.png" alt="image4" width="500" height="408"></span></p>
+<p><span class="image"><img src="media/image4.png" alt="image4"></span></p>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 2. Properties of Submodel "Nameplate"</caption>
 <colgroup>
 <col>
@@ -365,7 +361,7 @@ table thead:hover, table thead:focus, table tfoot:hover, table tfoot:focus {
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stripes-hover fit-content">
+<table class="tableblock frame-all grid-all fit-content">
 <colgroup>
 <col>
 <col>
@@ -826,9 +822,9 @@ Markings</p></td>
 </div>
 <div class="paragraph">
 <div class="title">Figure 3: UML-Diagram for SMC "ContactInformation" defined in Submodel “ContactInformations” by <a href="#bib11">[11]</a><sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></div>
-<p><span class="image"><img src="media/image5.png" alt="image5" width="462" height="357"></span></p>
+<p><span class="image"><img src="media/image5.png" alt="image5"></span></p>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 3. Mandatory properties of SMC "ContactInformation"</caption>
 <colgroup>
 <col>
@@ -874,7 +870,7 @@ Markings</p></td>
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stripes-hover fit-content">
+<table class="tableblock frame-all grid-all fit-content">
 <colgroup>
 <col>
 <col>
@@ -1016,7 +1012,7 @@ NationalCode</p></td>
 </div>
 <div class="paragraph">
 <div class="title">Figure 4: Example modelling of SMC "ContactInformation"</div>
-<p><span class="image"><img src="media/image6.png" alt="image6" width="495" height="376"></span></p>
+<p><span class="image"><img src="media/image6.png" alt="image6"></span></p>
 </div>
 </div>
 <div class="sect2">
@@ -1024,7 +1020,7 @@ NationalCode</p></td>
 <div class="paragraph">
 <p>Figure 2 shows the UML-diagram defining the relevant properties which need to be set. <span class="mark">#</span>#Table 4 describes the details of the SMC structure.</p>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 4. Properties of SMC "Markings"</caption>
 <colgroup>
 <col>
@@ -1066,7 +1062,7 @@ NationalCode</p></td>
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stripes-hover fit-content">
+<table class="tableblock frame-all grid-all fit-content">
 <colgroup>
 <col>
 <col>
@@ -1125,9 +1121,9 @@ Marking{00}</p></td>
 </div>
 <div class="paragraph">
 <div class="title">Figure 5: UML-Diagram for SMC "Marking"</div>
-<p><span class="image"><img src="media/image7.png" alt="image7" width="564" height="247"></span></p>
+<p><span class="image"><img src="media/image7.png" alt="image7"></span></p>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 5. Properties of SMC "Marking"</caption>
 <colgroup>
 <col>
@@ -1169,7 +1165,7 @@ Marking{00}</p></td>
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stripes-hover fit-content">
+<table class="tableblock frame-all grid-all fit-content">
 <colgroup>
 <col>
 <col>
@@ -1356,7 +1352,7 @@ MarkingAdditionalText{00}</p></td>
 </div>
 <div class="paragraph">
 <div class="title">Figure 6: Example modelling of SMC "Marking"</div>
-<p><span class="image"><img src="media/image8.png" alt="image8" width="562" height="272"></span></p>
+<p><span class="image"><img src="media/image8.png" alt="image8"></span></p>
 </div>
 </div>
 <div class="sect2">
@@ -1364,7 +1360,7 @@ MarkingAdditionalText{00}</p></td>
 <div class="paragraph">
 <p>Figure 5 shows the UML-diagram defining the relevant properties which need to be set. describes the details of the SMC structure</p>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 6. Properties of SMC “ExplosionSafeties"</caption>
 <colgroup>
 <col>
@@ -1393,7 +1389,7 @@ MarkingAdditionalText{00}</p></td>
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stripes-hover fit-content">
+<table class="tableblock frame-all grid-all fit-content">
 <colgroup>
 <col>
 <col>
@@ -1441,9 +1437,9 @@ ExplosionSafety{00}</p></td>
 </div>
 <div class="paragraph">
 <div class="title">Figure 7: UML-Diagram of SMC "ExplosionSafety"</div>
-<p><span class="image"><img src="media/image9.png" alt="image9" width="642" height="550"></span></p>
+<p><span class="image"><img src="media/image9.png" alt="image9"></span></p>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 7. Properties of SMC “ExplosionSafety”</caption>
 <colgroup>
 <col>
@@ -1476,7 +1472,7 @@ ExplosionSafety{00}</p></td>
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stripes-hover fit-content">
+<table class="tableblock frame-all grid-all fit-content">
 <colgroup>
 <col>
 <col>
@@ -1768,7 +1764,7 @@ ExplosionSafety{00}</p></td>
 <div class="paragraph">
 <p>Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 8 describes the details of the SMC structure.</p>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 8. Properties of SMC "AmbientConditions"</caption>
 <colgroup>
 <col>
@@ -1797,7 +1793,7 @@ ExplosionSafety{00}</p></td>
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stripes-hover fit-content">
+<table class="tableblock frame-all grid-all fit-content">
 <colgroup>
 <col>
 <col>
@@ -2075,7 +2071,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 <div class="paragraph">
 <p>Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 9 describes the details of the SMC structure.</p>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 9. Properties of SMC "ProcessConditions"</caption>
 <colgroup>
 <col>
@@ -2113,7 +2109,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stripes-hover fit-content">
+<table class="tableblock frame-all grid-all fit-content">
 <colgroup>
 <col>
 <col>
@@ -2360,7 +2356,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 <div class="paragraph">
 <p>Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 10 describes the details of the SMC structure.</p>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 10. Properties of SMC "ExternalElectricalCircuit"</caption>
 <colgroup>
 <col>
@@ -2405,7 +2401,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stripes-hover fit-content">
+<table class="tableblock frame-all grid-all fit-content">
 <colgroup>
 <col>
 <col>
@@ -2667,7 +2663,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 <div class="paragraph">
 <p>Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 11 describes the details of the SMC structure.</p>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 11. Properties of SMC "SafetyRelatedPropertiesForPassiveBehaviour"</caption>
 <colgroup>
 <col>
@@ -2706,7 +2702,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stripes-hover fit-content">
+<table class="tableblock frame-all grid-all fit-content">
 <colgroup>
 <col>
 <col>
@@ -2844,7 +2840,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 <div class="paragraph">
 <p>Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 12 describes the details of the SMC structure.</p>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 12. Properties of SMC "SafetyRelatedPropertiesForActiveBehaviour"</caption>
 <colgroup>
 <col>
@@ -2883,7 +2879,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stripes-hover fit-content">
+<table class="tableblock frame-all grid-all fit-content">
 <colgroup>
 <col>
 <col>
@@ -3042,7 +3038,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 <div class="paragraph">
 <p>Figure 2 shows the UML-diagram defining the relevant properties which need to be set. Table 13 describes the details of the SMC structure.</p>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 13. Properties of SMC “AssetSpecificProperties”</caption>
 <colgroup>
 <col>
@@ -3071,7 +3067,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stripes-hover fit-content">
+<table class="tableblock frame-all grid-all fit-content">
 <colgroup>
 <col>
 <col>
@@ -3126,7 +3122,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 <div class="paragraph">
 <p>Figure 2 shows the UML-diagram defining the relevant properties which need to be set. Table 14 describes the details of the SMC structure combined with examples.</p>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 14. Properties of SMC “GuidelineSpecificProperties”</caption>
 <colgroup>
 <col>
@@ -3155,7 +3151,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all stripes-hover fit-content">
+<table class="tableblock frame-all grid-all fit-content">
 <colgroup>
 <col>
 <col>
@@ -3203,7 +3199,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 </div>
 <div class="paragraph">
 <div class="title">Figure 8: Example modelling of SMC “AssetSpecificProperties”</div>
-<p><span class="image"><img src="media/image10.png" alt="image10" width="530" height="301"></span></p>
+<p><span class="image"><img src="media/image10.png" alt="image10"></span></p>
 </div>
 </div>
 </div>
@@ -3221,7 +3217,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 </div>
 <div class="paragraph">
 <div class="title">Figure 9: Sample nameplate of Remote I/O Module 9468</div>
-<p><span class="image"><img src="media/image11.png" alt="as Text" width="580" height="299"></span></p>
+<p><span class="image"><img src="media/image11.png" alt="as Text" width="Zeitung" height="Quittung enthält. Automatisch generierte Beschreibung"></span></p>
 </div>
 <div class="paragraph">
 <p>Figure 10 shows the UML diagram of all SMC “ExplosionSafety” of the respective nameplate.</p>
@@ -3231,7 +3227,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 </div>
 <div class="paragraph">
 <div class="title">Figure 10: UML diagram of SMC “ExplosionSafety” for Remote I/O Module 9468</div>
-<p><span class="image"><img src="media/image12.png" alt="image12" width="608" height="716"></span></p>
+<p><span class="image"><img src="media/image12.png" alt="image12"></span></p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <caption class="title">Table 15. List of elements in SMC “ExplosionSafety” of Remote I/O Module 9468</caption>
@@ -4020,7 +4016,7 @@ ActiveBehaviour”</p></td>
 </div>
 <div class="paragraph">
 <div class="title">Figure 11: Sample nameplate of a load disconnect switch</div>
-<p><span class="image"><img src="media/image13.png" alt="as Text" width="580" height="290"></span></p>
+<p><span class="image"><img src="media/image13.png" alt="as Text" width="Quittung enthält. Automatisch generierte Beschreibung"></span></p>
 </div>
 <div class="paragraph">
 <p>Figure 12 shows the UML diagram of all SMC “ExplosionSafety” of the respective nameplate.</p>
@@ -4030,7 +4026,7 @@ ActiveBehaviour”</p></td>
 </div>
 <div class="paragraph">
 <div class="title">Figure 12: UML diagram of SMC “ExplosionSafety” for load disconnect switch</div>
-<p><span class="image"><img src="media/image14.png" alt="image14" width="608" height="453"></span></p>
+<p><span class="image"><img src="media/image14.png" alt="image14"></span></p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <caption class="title">Table 16. List of elements in SMC “ExplosionSafety” of the load disconnect switch</caption>
@@ -4199,7 +4195,7 @@ ActiveBehaviour”</p></td>
 </div>
 <div class="paragraph">
 <div class="title">Figure 13: Sample nameplate of FISCO power supply</div>
-<p><span class="image"><img src="media/image15.png" alt="image15" width="626" height="177"></span></p>
+<p><span class="image"><img src="media/image15.png" alt="image15"></span></p>
 </div>
 <div class="paragraph">
 <p>Figure 14 shows the UML diagram of all SMC “ExplosionSafety” of the respective nameplate.</p>
@@ -4209,7 +4205,7 @@ ActiveBehaviour”</p></td>
 </div>
 <div class="paragraph">
 <div class="title">Figure 14: UML diagram of SMC “ExplosionSafety” for FISCO power supply</div>
-<p><span class="image"><img src="media/image16.png" alt="image16" width="603" height="592"></span></p>
+<p><span class="image"><img src="media/image16.png" alt="image16"></span></p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <caption class="title">Table 17. List of elements in SMC “ExplosionSafety” of FISCO power supply</caption>
@@ -4746,7 +4742,7 @@ ActiveBehaviour”</p></td>
 </div>
 <div class="paragraph">
 <div class="title">Figure 15: Sample nameplate of flow meter Promag 300</div>
-<p><span class="image"><img src="media/image17.png" alt="image17" width="578" height="348"></span></p>
+<p><span class="image"><img src="media/image17.png" alt="image17"></span></p>
 </div>
 <div class="paragraph">
 <p>Figure 16 shows the UML diagram of all SMC “ExplosionSafety” of the respective nameplate.</p>
@@ -4756,7 +4752,7 @@ ActiveBehaviour”</p></td>
 </div>
 <div class="paragraph">
 <div class="title">Figure 16: UML diagram of SMC “ExplosionSafety” for flow meter Promag 300</div>
-<p><span class="image"><img src="media/image18.png" alt="image18" width="638" height="659"></span></p>
+<p><span class="image"><img src="media/image18.png" alt="image18"></span></p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <caption class="title">Table 18. List of elements in SMC “ExplosionSafety” of flow meter Promag 300</caption>
@@ -5444,7 +5440,7 @@ PassiveBehaviour”</p></td>
 </li>
 </ul>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col>
 <col>
@@ -5518,7 +5514,7 @@ PassiveBehaviour”</p></td>
 <div class="paragraph">
 <p>The following table provides sample ECLASS definitions for modelling product marking in SMC “Marking”. Further values will be provided by ECLASS or other repositories.</p>
 </div>
-<table class="tableblock frame-all grid-all stripes-hover stretch">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 19. Sample ECLASS definitions for product marking</caption>
 <colgroup>
 <col>

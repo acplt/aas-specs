@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.18">
-<meta name="author" content="IDTA">
-<title>Part 1: Metamodel</title>
+<meta name="generator" content="Asciidoctor 2.0.16">
+<link rel="icon" type="image/png" href="../favicon.png">
+<title></title>
 <style>
 
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
 @import "https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css";
 
-body {
+/*body {
 	background: #f2f2f2;
-}
+}*/
 
 #toc.toc2 {
   background: #ffffff;
@@ -83,18 +83,16 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 #header, #content, #footnotes, #footer {
 	margin-left: 0;
 }
-
+
+img {
+  margin: auto;
+  display: block;
+}
 </style>
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Part 1: Metamodel</h1>
-<div class="details">
-<span id="author" class="author">IDTA</span><br>
-<span id="revnumber">number 01001,</span>
-<span id="revdate">April 2023</span>
-<br><span id="revremark">Specification of the Asset Administration Shell</span>
-</div>
+<h1><span class="image"><img src="media/img.png" alt="img" width="100%"></span></h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Specification of the Asset Administration Shell. Part 1: Metamodel</div>
 <ul class="sectlevel1">
@@ -538,7 +536,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 <div class="ulist">
 <ul>
 <li>
-<p>[SOURCE: <a href="#https://eclass.eu/support/technical-specification/data-model/conceptual-data-model">ECLASS</a> <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>]</p>
+<p>[SOURCE: <a href="https://eclass.eu/support/technical-specification/data-model/conceptual-data-model">ECLASS</a> <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>]</p>
 </li>
 </ul>
 </div>
@@ -631,7 +629,7 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 <div class="ulist">
 <ul>
 <li>
-<p>[SOURCE: <a href="#https://eclass.eu/support/technical-specification/data-model/conceptual-data-model">ECLASS</a>]</p>
+<p>[SOURCE: <a href="https://eclass.eu/support/technical-specification/data-model/conceptual-data-model">ECLASS</a>]</p>
 </li>
 </ul>
 </div>
@@ -1720,7 +1718,7 @@ Maintenance</p></td>
 <p><strong>IRDI</strong> – ISO29002-5, ISO IEC 6523 and ISO IEC 11179-6 <a href="#bib20">[20]</a> as an identifier scheme for properties and classifications. They are created in a process of consortium-wise specification or international standardization. To this end, users come together and feed their ideas into the consortia or standardization bodies. Properties in ISO, IEC help to safeguard key commercial interests. Repositories like ECLASS and others make it possible to standardize a relatively large number of identifiers in an appropriately short time.</p>
 </li>
 <li>
-<p><strong>IRI</strong> – IRI (<a href="#https://tools.ietf.org/html/rfc3987">RFC 3987</a>) or URI and URL according to <a href="#https://tools.ietf.org/html/rfc3986">RFC 3986</a> as identification of assets, Administration Shells and other (probably not standardized, but globally unique) properties and classifications.</p>
+<p><strong>IRI</strong> – IRI (<a href="https://tools.ietf.org/html/rfc3987">RFC 3987</a>) or URI and URL according to <a href="https://tools.ietf.org/html/rfc3986">RFC 3986</a> as identification of assets, Administration Shells and other (probably not standardized, but globally unique) properties and classifications.</p>
 </li>
 </ul>
 </div>
@@ -1730,7 +1728,7 @@ Maintenance</p></td>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Custom</strong> – internal custom identifiers such as UUIDs/GUIDs (<a href="#https://en.wikipedia.org/wiki/Universally_unique_identifier">universally unique identifiers</a>/globally unique identifiers), which a manufacturer can use for all sorts of in-house purposes within the Administration Shell.</p>
+<p><strong>Custom</strong> – internal custom identifiers such as UUIDs/GUIDs (<a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">universally unique identifiers</a>/globally unique identifiers), which a manufacturer can use for all sorts of in-house purposes within the Administration Shell.</p>
 </li>
 </ul>
 </div>
@@ -2207,7 +2205,7 @@ Maintenance</p></td>
 </div>
 </div>
 <div class="paragraph">
-<p>The definition of <a href="https://www.w3.org/TR/xmlschema-2/.html#terminology">XML Schema</a> is used for matching</p>
+<p>The definition of <a href="https://www.w3.org/TR/xmlschema-2/#terminology">XML Schema</a> is used for matching</p>
 </div>
 <div class="ulist">
 <ul>
@@ -6266,7 +6264,7 @@ Figure 21).</p>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Set of:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">FragementKeys; AasReferables, GloballyIdentifiables</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FragementKeys; <a href="#AasReferables">AasReferables</a>, <a href="#GloballyIdentifiables">GloballyIdentifiables</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -6446,7 +6444,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Set of:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AASReferableNonIdentifiables, GenericFragmentKeys</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#AASReferableNonIdentifiables">AASReferableNonIdentifiables</a>, <a href="#GenericFragmentKeys">GenericFragmentKeys</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -6591,7 +6589,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Set of:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AasIdentifiables, GenericGloballyIdentifiables</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#AasIdentifiables">AasIdentifiables</a>, <a href="#GenericGloballyIdentifiables">GenericGloballyIdentifiables</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -6666,7 +6664,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Set of:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AasSubmodelElements</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#AasSubmodelElements">AasSubmodelElements</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -6945,7 +6943,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Set of:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AasReferableNonIdentifiables, AasIdentifiables</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#AASReferableNonIdentifiables">AASReferableNonIdentifiables</a>, <a href="#AasIdentifiables">AasIdentifiables</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -7397,7 +7395,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="sect4">
 <h5 id="_predefined_simple_data_types">Predefined Simple Data Types</h5>
 <div class="paragraph">
-<p>The metamodel of the Asset Administration Shell uses basic data types as defined in the <a href="#https://www.w3.org/XML/Core/">XML Schema Definition</a> (XSD)<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup>. See Table 7 for an overview of the used types. Their definition is outside the scope of this document.</p>
+<p>The metamodel of the Asset Administration Shell uses basic data types as defined in the <a href="https://www.w3.org/XML/Core/">XML Schema Definition</a> (XSD)<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup>. See Table 7 for an overview of the used types. Their definition is outside the scope of this document.</p>
 </div>
 <div class="paragraph">
 <p>The meaning and format of xsd types is specified in <a href="https://www.w3.org/XML/Schema" class="bare">https://www.w3.org/XML/Schema</a>. The simple type "langString" is specified in the Resource Description Framework (RDF)<sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnotedef_11" title="View footnote.">11</a>]</sup>.</p>
@@ -7674,7 +7672,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>Note: for any string conformant to <a href="#https://datatracker.ietf.org/doc/html/rfc8089">RFC8089</a>, the "file" URI scheme (for relative and absolute file paths) applies.</p>
+<p>Note: for any string conformant to <a href="https://datatracker.ietf.org/doc/html/rfc8089">RFC8089</a>, the "file" URI scheme (for relative and absolute file paths) applies.</p>
 </div>
 </div>
 </div></div></td>
@@ -7714,7 +7712,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <p>"ExpressionSemantic" (as specified in DIN SPEC 92000:2019-09, see <a href="#bib16">[16]</a>)</p>
 </div>
 <div class="paragraph">
-<p>"life cycle qual" (as specified in IEC 61360-7 - IEC/SC 3D - Common Data Dictionary (<a href="#https://cdd.iec.ch/cdd/common/iec61360-7.nsf/SearchFrameset?OpenFrameSet">CDD - V2.0015.0004</a>)</p>
+<p>"life cycle qual" (as specified in IEC 61360-7 - IEC/SC 3D - Common Data Dictionary (<a href="https://cdd.iec.ch/cdd/common/iec61360-7.nsf/SearchFrameset?OpenFrameSet">CDD - V2.0015.0004</a>)</p>
 </div></div></td>
 </tr>
 <tr>
@@ -7801,7 +7799,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 <div class="paragraph">
 <div class="title">Figure 53 Data TypeDefXsd Enumeration</div>
-<p><span class="image"><img src="media/image54.png" alt="image54" width="137" height="478"></span></p>
+<p><span class="image"><img src="media/image54.png" alt="image54"></span></p>
 </div>
 <div class="paragraph">
 <p>Table 9 depicts example values and the value range of the different data type"</p>
@@ -10892,7 +10890,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 <div class="paragraph">
 <div class="title">Figure 82 Graphical Representation of Shared Aggregation</div>
-<p><span class="image"><img src="media/image82.png" alt="image82" width="397" height="224"></span></p>
+<p><span class="image"><img src="media/image82.png" alt="image82"></span></p>
 </div>
 <div class="paragraph">
 <p>A specialty in Figure 82 is that the aggregated instances are referables in the sense of the Asset Administration Shell metamodel (i.e. they inherit from the predefined abstract class "Referable"). This is why Variant B is identical to Variant A. This would not be the case for non-referable elements in the metamodel. The structure of a reference to a model element of the Asset Administration Shell is explicitly defined. A model reference consists of an ordered list of keys. The last key in the key chain shall reference an instance of type <em>Class2</em> (i.e. Reference.</p>

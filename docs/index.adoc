@@ -1,4 +1,5 @@
 :stylesheet: style.css
+:favicon: ./favicon.png
 :nofooter:
 
 = Asset Administration Shell Specifications
