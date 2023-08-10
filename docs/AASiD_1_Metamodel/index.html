@@ -13,9 +13,9 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
 @import "https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css";
 
-body {
+/*body {
 	background: #f2f2f2;
-}
+}*/
 
 #toc.toc2 {
   background: #ffffff;
@@ -543,7 +543,7 @@ img {
 <div class="ulist">
 <ul>
 <li>
-<p>[SOURCE: <a href="#https://eclass.eu/support/technical-specification/data-model/conceptual-data-model">ECLASS</a> <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>]</p>
+<p>[SOURCE: <a href="https://eclass.eu/support/technical-specification/data-model/conceptual-data-model">ECLASS</a> <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>]</p>
 </li>
 </ul>
 </div>
@@ -636,7 +636,7 @@ img {
 <div class="ulist">
 <ul>
 <li>
-<p>[SOURCE: <a href="#https://eclass.eu/support/technical-specification/data-model/conceptual-data-model">ECLASS</a>]</p>
+<p>[SOURCE: <a href="https://eclass.eu/support/technical-specification/data-model/conceptual-data-model">ECLASS</a>]</p>
 </li>
 </ul>
 </div>
@@ -1725,7 +1725,7 @@ Maintenance</p></td>
 <p><strong>IRDI</strong> – ISO29002-5, ISO IEC 6523 and ISO IEC 11179-6 <a href="#bib20">[20]</a> as an identifier scheme for properties and classifications. They are created in a process of consortium-wise specification or international standardization. To this end, users come together and feed their ideas into the consortia or standardization bodies. Properties in ISO, IEC help to safeguard key commercial interests. Repositories like ECLASS and others make it possible to standardize a relatively large number of identifiers in an appropriately short time.</p>
 </li>
 <li>
-<p><strong>IRI</strong> – IRI (<a href="#https://tools.ietf.org/html/rfc3987">RFC 3987</a>) or URI and URL according to <a href="#https://tools.ietf.org/html/rfc3986">RFC 3986</a> as identification of assets, Administration Shells and other (probably not standardized, but globally unique) properties and classifications.</p>
+<p><strong>IRI</strong> – IRI (<a href="https://tools.ietf.org/html/rfc3987">RFC 3987</a>) or URI and URL according to <a href="https://tools.ietf.org/html/rfc3986">RFC 3986</a> as identification of assets, Administration Shells and other (probably not standardized, but globally unique) properties and classifications.</p>
 </li>
 </ul>
 </div>
@@ -1735,7 +1735,7 @@ Maintenance</p></td>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Custom</strong> – internal custom identifiers such as UUIDs/GUIDs (<a href="#https://en.wikipedia.org/wiki/Universally_unique_identifier">universally unique identifiers</a>/globally unique identifiers), which a manufacturer can use for all sorts of in-house purposes within the Administration Shell.</p>
+<p><strong>Custom</strong> – internal custom identifiers such as UUIDs/GUIDs (<a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">universally unique identifiers</a>/globally unique identifiers), which a manufacturer can use for all sorts of in-house purposes within the Administration Shell.</p>
 </li>
 </ul>
 </div>
@@ -2212,7 +2212,7 @@ Maintenance</p></td>
 </div>
 </div>
 <div class="paragraph">
-<p>The definition of <a href="https://www.w3.org/TR/xmlschema-2/.html#terminology">XML Schema</a> is used for matching</p>
+<p>The definition of <a href="https://www.w3.org/TR/xmlschema-2/#terminology">XML Schema</a> is used for matching</p>
 </div>
 <div class="ulist">
 <ul>
@@ -6271,7 +6271,7 @@ Figure 21).</p>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Set of:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#FragementKeys">[FragementKeys]</a>; AasReferables, GloballyIdentifiables</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FragementKeys; <a href="#AasReferables">AasReferables</a>, <a href="#GloballyIdentifiables">GloballyIdentifiables</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -6451,7 +6451,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Set of:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AASReferableNonIdentifiables, GenericFragmentKeys</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#AASReferableNonIdentifiables">AASReferableNonIdentifiables</a>, <a href="#GenericFragmentKeys">GenericFragmentKeys</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -6596,7 +6596,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Set of:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AasIdentifiables, GenericGloballyIdentifiables</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#AasIdentifiables">AasIdentifiables</a>, <a href="#GenericGloballyIdentifiables">GenericGloballyIdentifiables</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -6671,7 +6671,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Set of:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AasSubmodelElements</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#AasSubmodelElements">AasSubmodelElements</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -6950,7 +6950,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Set of:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AasReferableNonIdentifiables, AasIdentifiables</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#AASReferableNonIdentifiables">AASReferableNonIdentifiables</a>, <a href="#AasIdentifiables">AasIdentifiables</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -7402,7 +7402,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="sect4">
 <h5 id="_predefined_simple_data_types">Predefined Simple Data Types</h5>
 <div class="paragraph">
-<p>The metamodel of the Asset Administration Shell uses basic data types as defined in the <a href="#https://www.w3.org/XML/Core/">XML Schema Definition</a> (XSD)<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup>. See Table 7 for an overview of the used types. Their definition is outside the scope of this document.</p>
+<p>The metamodel of the Asset Administration Shell uses basic data types as defined in the <a href="https://www.w3.org/XML/Core/">XML Schema Definition</a> (XSD)<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup>. See Table 7 for an overview of the used types. Their definition is outside the scope of this document.</p>
 </div>
 <div class="paragraph">
 <p>The meaning and format of xsd types is specified in <a href="https://www.w3.org/XML/Schema" class="bare">https://www.w3.org/XML/Schema</a>. The simple type "langString" is specified in the Resource Description Framework (RDF)<sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnotedef_11" title="View footnote.">11</a>]</sup>.</p>
@@ -7679,7 +7679,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>Note: for any string conformant to <a href="#https://datatracker.ietf.org/doc/html/rfc8089">RFC8089</a>, the "file" URI scheme (for relative and absolute file paths) applies.</p>
+<p>Note: for any string conformant to <a href="https://datatracker.ietf.org/doc/html/rfc8089">RFC8089</a>, the "file" URI scheme (for relative and absolute file paths) applies.</p>
 </div>
 </div>
 </div></div></td>
@@ -7719,7 +7719,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <p>"ExpressionSemantic" (as specified in DIN SPEC 92000:2019-09, see <a href="#bib16">[16]</a>)</p>
 </div>
 <div class="paragraph">
-<p>"life cycle qual" (as specified in IEC 61360-7 - IEC/SC 3D - Common Data Dictionary (<a href="#https://cdd.iec.ch/cdd/common/iec61360-7.nsf/SearchFrameset?OpenFrameSet">CDD - V2.0015.0004</a>)</p>
+<p>"life cycle qual" (as specified in IEC 61360-7 - IEC/SC 3D - Common Data Dictionary (<a href="https://cdd.iec.ch/cdd/common/iec61360-7.nsf/SearchFrameset?OpenFrameSet">CDD - V2.0015.0004</a>)</p>
 </div></div></td>
 </tr>
 <tr>
