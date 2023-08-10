@@ -3649,7 +3649,7 @@ image:image53.png[]
 The enumeration is derived from Figure 54.
 
 .Figure 53 Data TypeDefXsd Enumeration
-image:image54.png[width=137,height=478]
+image:image54.png[]
 
 Table 9 depicts example values and the value range of the different data type"
 
@@ -5276,7 +5276,7 @@ Figure 82 shows different representations of a shared aggregation: a _Class2_ in
 It is assumed that only the end member of the aggregation association is navigable per default, i.e. it is possible to navigate from an instance of _Class1_ to the owned instance of _Class2_ but not vice versa. Otherwise, variant B would not be identical to Variant A.
 
 .Figure 82 Graphical Representation of Shared Aggregation
-image:image82.png[width=397,height=224]
+image:image82.png[]
 
 A specialty in Figure 82 is that the aggregated instances are referables in the sense of the Asset Administration Shell metamodel (i.e. they inherit from the predefined abstract class "Referable"). This is why Variant B is identical to Variant A. This would not be the case for non-referable elements in the metamodel. The structure of a reference to a model element of the Asset Administration Shell is explicitly defined. A model reference consists of an ordered list of keys. The last key in the key chain shall reference an instance of type _Class2_ (i.e. Reference.
 
