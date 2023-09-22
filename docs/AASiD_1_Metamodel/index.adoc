@@ -4092,9 +4092,6 @@ Note: some of the administrative information like the version number might need 
 |Explanation: |Data specification content is part of a data specification template and defines, which additional attributes shall be added to the element instance that references the data specification template and meta information about the template itself.
 |Inherits from: |--
 |===
-[cols="25%,40%,25%,10%",options="header",]
-|===
-|===
 [cols="25%,40%,25%,10%",options="header"]
 |===
 |Attribute |Explanation |Type |Card.
