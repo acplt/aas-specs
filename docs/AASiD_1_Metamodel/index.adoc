@@ -1368,7 +1368,7 @@ Note 3: some of the administrative information like the version number might nee
 Note 4: the process of versioning or adding other administrative information to elements is done by external version or configuration management software and not by the Asset Administration Shell itself.
 ====
 
-
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[AdministrativeInformation]]AdministrativeInformation
@@ -1414,6 +1414,7 @@ Note 3: usage of the template ID is not restricted to submodel instances. The cr
 .Figure 14 Metamodel of HasDataSpecification
 image:image15.png[]
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[HasDataSpecification]]HasDataSpecification \<<abstract>>
@@ -1442,6 +1443,7 @@ For more details on data specifications, please see Clause 6.
 .Figure 15 Metamodel of Has Extensions
 image:image16.png[]
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[HasExtensions]]HasExtensions \<<abstract>>
@@ -1468,7 +1470,8 @@ Note 2: extensions are proprietary, i.e. they do not support global interoperabi
 |Attribute |Explanation |Type |Card.
 |extension |An extension of the element. |xref:Extension[Extension] |0..*
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Extension]]Extension
@@ -1494,6 +1497,7 @@ image:image17.png[]
 
 ===== Has Kind Attributes
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[HasKind]]HasKind
@@ -1518,6 +1522,7 @@ Default Value = _Instance_
 
 The kind enumeration is used to denote whether an element is of kind _Template_ or _Instance_. It is used to distinguish between submodels and submodel templates.
 
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[ModellingKind]]ModellingKind
@@ -1538,6 +1543,7 @@ image:image18.png[]
 
 For matching algorithm, see Clause 4.4.1.
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[HasSemantics]]HasSemantics \<<abstract>>
@@ -1587,6 +1593,7 @@ Information about identification can be found in Clause 4.3. See Clause 4.3.4 fo
 
 See Clause 4.3.4 for information about which identifier types are supported.
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Identifiable]]Identifiable \<<abstract>>
@@ -1623,6 +1630,7 @@ Note: some of the administrative information like the version number might need 
 .Figure 19 Metamodel of Qualifiables
 image:image20.png[]
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Qualifiable]]Qualifiable \<<abstract>>
@@ -1653,6 +1661,7 @@ Qualifiers may be defined for qualifiable elements.
 
 There are standardized qualifiers defined in IEC CDD, IEC61360-4 – IEC/SC 3D. A level qualifier defining the level type minimal, maximal, typical, and nominal value is specified in IEC 62569-1. In DIN SPEC 92000, qualifier types like e.g. expression semantics and expression logic are defined.
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Qualifier]]Qualifier
@@ -1696,6 +1705,7 @@ Note: it is recommended to use an external reference.
 
 It is recommended to add a _semanticId_ for the concept of the _Qualifier_. _Qualifier/type_ is the preferred name of the concept of the qualifier or its short name.
 
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[QualifierKind]]QualifierKind
@@ -1745,6 +1755,7 @@ Not every element of the metamodel is referable. There are elements that are jus
 
 The __idShort__ shall be unique in its name space for non-identifiable referables (see Constraint AASd-022). A name space is defined as follows in this context: the parent element(s), which an element is part of and that is either referable or identifiable, is the name space of the element. Examples: a submodel is the name space for the properties directly contained in it; the name space of a submodel element contained in a submodel element collection is the submodel element collection.
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Referable]]Referable \<<abstract>>
@@ -1851,6 +1862,7 @@ An Administration Shell is uniquely identifiable since it inherits from _Identif
 
 The _derivedFrom_ attribute is used to establish a relationship between two Asset Administration Shells that are derived from each other. For more detailed information on the _derivedFrom_ concept, see Clause 4.2.
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[AssetAdministrationShell]]AssetAdministrationShell
@@ -1879,6 +1891,7 @@ Temporarily, no submodel might be assigned to the Asset Administration Shell.
 .Figure 24 Metamodel of Asset Information
 image:image25.png[]
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[AssetInformation]]AssetInformation
@@ -1930,6 +1943,7 @@ Note: besides this asset information, there still might be an identification sub
 ====
 
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Resource]]Resource
@@ -1952,7 +1966,8 @@ The content type states which file extensions the file can have.
 
 |xref:ContentType[ContentType] |0..1
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[AssetKind]]AssetKind
@@ -1969,6 +1984,7 @@ The content type states which file extensions the file can have.
 
 For more information on types and instances, see Clause 4.2.
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[SpecificAssetId]]SpecificAssetId
@@ -2026,6 +2042,7 @@ Note: validators shall handle a submodel like _SubmodelElementCollection/submode
 ====
 
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Submodel]]Submodel
@@ -2054,6 +2071,7 @@ It is recommended to add a _semanticId_ to a _SubmodelElement._
 
 Submodel elements may also have defined data specification templates. A template might be defined to mirror some of the attributes like _preferredName_ and _unit_ of a property concept definition if there is no corresponding concept description available. Otherwise, there is only the property definition referenced by _semanticId_ available for the property; the attributes must be looked up online in a different way and are not available offline.
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[SubmodelElement]]SubmodelElement \<<abstract>>
@@ -2083,6 +2101,7 @@ image:image29.png[]
 
 An annotated relationship is a relationship similar to a ternary association in UML. The semantics of the relationship is defined via the _semanticId_ of the _RelationshipElement_. If this semantic definition requires additional information not contained in the _first_ or _second_ object referenced via the relationship, this information needs to be stored as annotation.
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[AnnotatedRelationshipElement]]AnnotatedRelationshipElement
@@ -2100,6 +2119,7 @@ An annotated relationship is a relationship similar to a ternary association in 
 .Figure 29 Metamodel of Basic Event Element
 image:image30.png[]
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[BasicEventElement]]BasicEventElement \<<Experimental>>
@@ -2151,7 +2171,8 @@ Might not be specified, i.e. if there is no maximum interval.
 
 |duration |0..1
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[Direction]]Direction \<<Experimental>>
@@ -2164,7 +2185,8 @@ Might not be specified, i.e. if there is no maximum interval.
 |input |Input direction
 |output |Output direction
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[StateOfEvent]]StateOfEvent \<<Experimental>>
@@ -2190,6 +2212,7 @@ Note: the payload is not part of the information model as exchanged via the AASX
 image:image31.png[]
 
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[EventPayload]]EventPayload \<<Experimental>>
@@ -2245,6 +2268,7 @@ image:image32.png[]
 
 For information on content type, see Clause 5.3.7.9 on submodel element "File".
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Blob]]Blob
@@ -2287,6 +2311,7 @@ Note: the _semanticId_ of a capability is typically an ontology, which enables r
 ====
 
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Capability]]Capability
@@ -2309,6 +2334,7 @@ A data element is a submodel element that has a value or a predefined number of 
 
 The type of value differs for different subtypes of data elements. Data elements include properties, file handling, and reference elements, see Figure 33.
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[DataElement]]DataElement \<<abstract>>
@@ -2340,6 +2366,7 @@ image:image35.png[]
 
 The entity submodel element is designed to be used in submodels defining the relationship between the parts of the composite asset it is composed of (e.g. bill of material). These parts are called entities. Not all entities have a global asset ID.
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Entity]]Entity
@@ -2359,7 +2386,8 @@ An entity is a submodel element that is used to model entities.
 |globalAssetId |Global identifier of the asset the entity is representing |xref:Identifier[Identifier] |0..1
 |specificAssetId |Reference to a specific asset ID representing a supplementary identifier of the asset represented by the Asset Administration Shell |xref:SpecificAssetId[SpecificAssetId] |0..*
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[EntityType]]EntityType
@@ -2382,6 +2410,7 @@ The asset of an I4.0 Component is a self-managed entity per definition.
 .Figure 35 Metamodel of Events
 image:image36.png[]
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[EventElement]]EventElement \<<abstract>> \<<Experimental>>
@@ -2406,6 +2435,7 @@ Note: for information on handling supplementary external files in exchanging Ass
 ====
 
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[File]]File
@@ -2431,6 +2461,7 @@ The path can be absolute or relative.
 .Figure 37 Metamodel of Multi Language Properties
 image:image38.png[]
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[MultiLanguageProperty]]MultiLanguageProperty
@@ -2463,6 +2494,7 @@ Note: it is recommended to use an external reference.
 .Figure 38 Metamodel of Operations
 image:image39.png[]
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Operation]]Operation
@@ -2481,7 +2513,8 @@ An operation is a submodel element with input and output variables.
 |outputVariable |Output parameter of the operation |xref:OperationVariable[OperationVariable] |0..*
 |inoutputVariable |Parameter that is input and output of the operation |xref:OperationVariable[OperationVariable] |0..*
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[OperationVariable]]OperationVariable
@@ -2517,6 +2550,7 @@ Note 3: even if the submodel element as the value of an input and an output vari
 .Figure 39 Metamodel of Properties
 image:image40.png[]
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Property]]Property
@@ -2550,6 +2584,7 @@ Note: it is recommended to use an external reference.
 .Figure 40 Metamodel of Ranges
 image:image41.png[]
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Range]]Range \<<Experimental>>
@@ -2579,6 +2614,7 @@ If the max value is missing, the value is assumed to be positive infinite.
 .Figure 41 Metamodel of Reference Elements
 image:image42.png[]
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[ReferenceElement]]ReferenceElement
@@ -2598,6 +2634,7 @@ For more information on references, see Clause 5.3.9.
 .Figure 42 Metamodel of Relationship Elements
 image:image43.png[]
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[RelationshipElement]]RelationshipElement
@@ -2632,6 +2669,7 @@ Note: the elements within a submodel element collection are not ordered. Every e
 ====
 
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[SubmodelElementCollection]]SubmodelElementCollection
@@ -2663,6 +2701,7 @@ Similarly, a table with three columns can be represented. In this case a _Submod
 
 Matching strategies for semantic IDs are explained in Clause 4.4.1.
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[SubmodelElementList]]SubmodelElementList
@@ -2719,6 +2758,7 @@ Note: it is recommended to use an external reference.
 .Figure 45 Metamodel of Concept Descriptions
 image:image46.png[]
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[ConceptDescription]]ConceptDescription
@@ -2766,6 +2806,7 @@ Note: _Environment_ is not an identifiable or referable element. It is introduce
 ====
 
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Environment]]Environment
@@ -2801,6 +2842,7 @@ image:image48.png[]
 
 See Clause 4.4.2 for reference matching.
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Reference]]Reference
@@ -2841,7 +2883,8 @@ Note 2: it is recommended to use an external reference for the semantic ID expec
 |xref:Reference[Reference] |0..1
 |key \<<ordered>> |Unique reference in its name space |xref:Key[Key] |1..*
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[ReferenceTypes]]ReferenceTypes
@@ -2870,6 +2913,7 @@ image:image50.png[]
 .Figure 50 Metamodel of KeyTypes Enumeration
 image:image51.png[]
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[Key]]Key
@@ -2897,6 +2941,7 @@ An example for using a _FragmentId_ as type of a key is a reference to an elemen
 .Figure 51 Metamodel of AasSubmodelElements Enumeration
 image:image52.png[]
 
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[KeyTypes]]KeyTypes
@@ -2967,7 +3012,8 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |xref:SubmodelElementCollection[SubmodelElementCollection] |Struct of submodel elements
 |xref:SubmodelElementList[SubmodelElementList] |List of submodel elements
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[FragmentKeys]]FragmentKeys
@@ -3028,7 +3074,8 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |xref:SubmodelElementCollection[SubmodelElementCollection] |Struct of submodel elements
 |xref:SubmodelElementList[SubmodelElementList] |List of submodel elements
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[GloballyIdentifiables]]GloballyIdentifiables
@@ -3060,7 +3107,8 @@ Note: identifiables are abstract, i.e. if a key uses "Identifiable", the referen
 
 |xref:Submodel[Submodel] |Submodel
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[AasReferableNonIdentifiables]]AasReferableNonIdentifiables
@@ -3120,8 +3168,9 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |xref:SubmodelElementCollection[SubmodelElementCollection] |Struct of submodel elements
 |xref:SubmodelElementList[SubmodelElementList] |List of submodel elements
 |===
-{empty}
-[cols="30%,70%,1%",options="header",]
+
+[.table-with-appendix-table]
+[cols="30%h,70%,1%"]
 |===
 |Enumeration: |[[AasSubmodelElements]]AasSubmodelElements |
 |Explanation: |Enumeration of different fragment key value types within a key |
@@ -3172,7 +3221,8 @@ Note: Submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |xref:SubmodelElementCollection[SubmodelElementCollection] |Struct of submodel elements
 |xref:SubmodelElementList[SubmodelElementList] |List of submodel elements
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[AasReferables]]AasReferables
@@ -3253,7 +3303,8 @@ Note: submodel elements are abstract, i.e. if a key uses "SubmodelElement", the 
 |xref:SubmodelElementCollection[SubmodelElementCollection] |Struct of submodel elements
 |xref:SubmodelElementList[SubmodelElementList] |List of submodel elements
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[GenericFragmentKeys]]GenericFragmentKeys
@@ -3273,7 +3324,8 @@ Note: not used as type but in constraints.
 |Literal |Explanation
 |FragmentReference |Bookmark or a similar local identifier of a subordinate part of a primary resource
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[AasIdentifiables]]AasIdentifiables
@@ -3304,7 +3356,8 @@ Note: Identifiables are abstract, i.e. if a key uses "Identifiable", the referen
 
 |xref:Submodel[Submodel] |Submodel
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[GenericGloballyIdentifiables]]GenericGloballyIdentifiables
@@ -3848,7 +3901,8 @@ Note: this is written in RDF/Turtle syntax, @end and ²de are the language tags.
 
 
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[DataTypeDefXsd]]DataTypeDefXsd
@@ -3904,7 +3958,7 @@ For more details see https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes
 |xs:unsignedLong |see: https://www.w3.org/TR/xmlschema11-2/#unsignedLong
 |xs:unsignedShort |see: https://www.w3.org/TR/xmlschema11-2/#unsignedShort
 |===
-{empty}
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |[[DataTypeDefRdf]]DataTypeDefRdf
@@ -4006,6 +4060,7 @@ It is required that a data specification template has a global unique ID so that
 
 A template consists of the _DataSpecificationContent_ containing the additional attributes to be added to the element instance that references the data specification template, as well as meta information about the template itself. These are two separate classes in UML.
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[DataSpecification]]DataSpecification \<<Template>>
@@ -4029,7 +4084,8 @@ Note: some of the administrative information like the version number might need 
 |dataSpecificationContent |The content of the template without meta data |xref:DataSpecificationContent[DataSpecificationContent] |1
 |description |Description of how and in which context the data specification template is applicable; can be provided in several languages. |xref:MultiLanguageTextType[MultiLanguageTextType] |0..1
 |===
-{empty}
+
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |[[DataSpecificationContent]]DataSpecificationContent \<<Template>>\<<abstract>>
@@ -4983,6 +5039,7 @@ For capitalization of titles, rules according to https://capitalizemytitle.com/ 
 
 Template for Classes:
 
+[.table-with-appendix-table]
 [cols="25%h,75%"]
 |===
 |Class: |<Class Name> [\<<abstract>>] ["\<<Experimental>>"] ["\<<Deprecated>>"] ["\<<Template>>"]
@@ -5055,6 +5112,7 @@ This would be an invalid reference for "ModelReference<xref:Submodel[Submodel]>"
 
 Template for Enumerations:
 
+[.table-with-appendix-table]
 [cols="30%h,70%"]
 |===
 |Enumeration: |<Enumeration Name> ["\<<Experimental>>"] ["\<<Deprecated>>"]

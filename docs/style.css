@@ -43,8 +43,7 @@ h1, h2, h3, .sidebarblock > .content > .title, h4, h5, h6 {
 }
 
 /*Tables*/
-
-table {
+.table-with-appendix-table {
 	margin-bottom: 0;
 }
 
