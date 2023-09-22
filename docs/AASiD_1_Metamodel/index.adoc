@@ -5,7 +5,7 @@
 :imagesdir: media/
 :nofooter:
 
-= image::img.png[width=100%]
+= image:img.png[width=100%]
 //:author: IDTA
 //:version-label: Number
 //:revnumber: 01001
