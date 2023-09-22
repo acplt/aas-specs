@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.16">
 <link rel="icon" type="image/png" href="../favicon.png">
-<title></title>
+<title>image::img.png[width=100%]</title>
 <style>
 
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
@@ -84,13 +84,13 @@ table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
 }
 
 img {
-  display: block;
+  margin: auto;
 }
 </style>
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1><span class="image"><img src="media/img.png" alt="img" width="100%"></span></h1>
+<h1>image::img.png[width=100%]</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Specification of the Asset Administration Shell. Part 1: Metamodel</div>
 <ul class="sectlevel1">
@@ -1338,9 +1338,11 @@ Examples of type assets are type of material, a product type, a type of a part, 
 <div class="paragraph">
 <p>The general concept and the structure of the Asset Administration Shell is described in IEC 63278-1 (see Figure 1).</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 1 Asset Administration Shell and Related Roles (Source: IEC 63278-1)</div>
-<p><span class="image"><img src="media/image2.png" alt="image2"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image2.png" alt="image2">
+</div>
+<div class="title">Figure 1. Figure 1 Asset Administration Shell and Related Roles (Source: IEC 63278-1)</div>
 </div>
 <div class="paragraph">
 <p>These are the main specifics and roles defined for the Asset Administration Shell:</p>
@@ -1382,9 +1384,11 @@ Examples of type assets are type of material, a product type, a type of a part, 
 <div class="paragraph">
 <p>Figure 2 shows the different ways of exchanging information Asset Administration Shells. This part of the "Asset Administration Shell in Detail" series is the basis for all of these types of information exchange.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 2 Types of Information Exchange via Asset Administration Shells</div>
-<p><span class="image"><img src="media/image3.jpeg" alt="image3"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image3.jpeg" alt="image3">
+</div>
+<div class="title">Figure 2. Figure 2 Types of Information Exchange via Asset Administration Shells</div>
 </div>
 <div class="paragraph">
 <p>File exchange (1) is described in detail in Part 5 of this document series.</p>
@@ -1523,9 +1527,11 @@ Maintenance</p></td>
 <div class="paragraph">
 <p>gives an example of how to handle type assets and their derived instance assets. The attribute "assetKind" indicates whether the Asset Administration Shell (denoted by the ": AAS" UML notation for a class instance) represents a type asset or an instance asset. Additionally, attributes are added to show that the attributes of type asset and instance assets typically differ from each other.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 3 Example: Asset Administration Shells for Type and Instance Assets</div>
-<p><span class="image"><img src="media/image4.png" alt="image4"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image4.png" alt="image4">
+</div>
+<div class="title">Figure 3. Figure 3 Example: Asset Administration Shells for Type and Instance Assets</div>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -1646,9 +1652,11 @@ Maintenance</p></td>
 </div>
 </div>
 </div>
-<div class="paragraph">
-<div class="title">Figure 4 Example: Asset Administration Shell, Asset Administration Shell Types and Instances</div>
-<p><span class="image"><img src="media/image5.png" alt="image5"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image5.png" alt="image5">
+</div>
+<div class="title">Figure 4. Figure 4 Example: Asset Administration Shell, Asset Administration Shell Types and Instances</div>
 </div>
 </div>
 </div>
@@ -1694,9 +1702,11 @@ Maintenance</p></td>
 <div class="paragraph">
 <p>In the domain of smart manufacturing, the assets need to be uniquely identified worldwide <a href="#bib4">[4]</a> <a href="#bib20">[20]</a> by the means of identifiers (IDs). The Administration Shell also has a unique ID (see Figure 5).</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 5 Unique Identifier for Administration Shell and Asset (Modified Figure from <a href="#bib4">[4]</a>)</div>
-<p><span class="image"><img src="media/image6.jpeg" alt="image6"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image6.jpeg" alt="image6">
+</div>
+<div class="title">Figure 5. Figure 5 Unique Identifier for Administration Shell and Asset (Modified Figure from <a href="#bib4">[4]</a>)</div>
 </div>
 <div class="paragraph">
 <p>An Administration Shell represents exactly one asset, with a unique asset ID. In a batch-based production, the batches will become the assets and will be described by a respective Administration Shell. If a set of assets shall be described by an Administration Shell, a unique ID for the composite asset needs to be created <a href="#bib13">[13]</a>.</p>
@@ -2034,9 +2044,11 @@ Maintenance</p></td>
 <div class="paragraph">
 <p>In an application featuring a resource-oriented architecture (ROA), a worldwide unique resource locator (URL) might be composed of a series of segments, which do not need to be globally unique, see Figure 6.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 6 Motivation of Exemplary Identifiers and idShort</div>
-<p><span class="image"><img src="media/image7.jpeg" alt="image7"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image7.jpeg" alt="image7">
+</div>
+<div class="title">Figure 6. Figure 6 Motivation of Exemplary Identifiers and idShort</div>
 </div>
 <div class="paragraph">
 <p>To allow such efficient addressing by the chaining of elements by an API of an Administration Shell, <em>idShort</em> is provided for a set of classes of the metamodel. It inherits from the abstract class <em>Referable</em>, in order to refer to such dependent elements (see 5.1).</p>
@@ -2339,7 +2351,7 @@ Maintenance</p></td>
 </ul>
 </div>
 <div class="ulist">
-<div class="title"><span class="image"><img src="media/image8.jpeg" alt="image8"></span></div>
+<div class="title">image::image8.jpeg[]</div>
 <ul>
 <li>
 <p>An integrator has purchased a device. Later in time, the supplier of the device provides a new firmware. The integrator wants to detect the offer of a new firmware and wants to update the firmware after evaluating its suitability ("forward events"). A dependent Asset Administration Shell ("D4") detects events from a parent or type Asset Administration Shell ("D1"), which is described by the <em>derivedFrom</em> relation. An illustration of the use case is given in Figure 7.</p>
@@ -2349,9 +2361,11 @@ Maintenance</p></td>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<div class="title">Figure 7 Forward and Reverse Events</div>
-<p><span class="image"><img src="media/image8.jpeg" alt="image8"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image8.jpeg" alt="image8">
+</div>
+<div class="title">Figure 7. Figure 7 Forward and Reverse Events</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2360,9 +2374,11 @@ Maintenance</p></td>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<div class="title">Figure 8 Tracking of Changes via Events</div>
-<p><span class="image"><img src="media/image9.jpeg" alt="image9"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image9.jpeg" alt="image9">
+</div>
+<div class="title">Figure 8. Figure 8 Tracking of Changes via Events</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2371,9 +2387,11 @@ Maintenance</p></td>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<div class="title">Figure 9 Value Push Events Across Clouds</div>
-<p><span class="image"><img src="media/image10.jpeg" alt="image10"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image10.jpeg" alt="image10">
+</div>
+<div class="title">Figure 9. Figure 9 Value Push Events Across Clouds</div>
 </div>
 </div>
 <div class="sect3">
@@ -2635,9 +2653,11 @@ Table 5 describes the different scopes of an event.</p>
 <div class="paragraph">
 <p>In case of an Asset Administration Shell of an instance asset, a reference to the Asset Administration Shell representing the corresponding type asset or another instance asset it was derived from may be added (<em>AssetAdministrationShell/derivedFrom</em>). The same holds true for the Asset Administration Shell of an type asset. Types can also be derived from other types.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 10 Overview Metamodel of the Asset Administration Shell</div>
-<p><span class="image"><img src="media/image11.png" alt="image11"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image11.png" alt="image11">
+</div>
+<div class="title">Figure 10. Figure 10 Overview Metamodel of the Asset Administration Shell</div>
 </div>
 <div class="paragraph">
 <p>An asset may typically be represented by several different identification properties like the serial number, the manufacturer part ID or the different customer part IDs, its RFID code, etc. Such external identifiers are defined as specific asset IDs, each characterized by a user-defined name, a value, and the user domain (tenant, subject in Attribute Based Access Control; <em>AssetInformation/specificAssetId</em>). See Clause 5.3.4 for details. Additionally, a global asset identifier should be assigned to the asset (<em>AssetInformation/globalAssetId</em>) in the production and operation phase.</p>
@@ -2689,13 +2709,17 @@ Table 5 describes the different scopes of an event.</p>
 <div class="paragraph">
 <p>Figure 11 shows the so-called environment. The environment’s purpose is to list all Asset Administration Shells, all submodels, and all concept descriptions – in other word, all identifiables within an ecosystem.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 11 Metamodel of Environment</div>
-<p><span class="image"><img src="media/image12.png" alt="image12"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image12.png" alt="image12">
 </div>
-<div class="paragraph">
-<div class="title">Figure 12 Metamodel Package Overview</div>
-<p><span class="image"><img src="media/image13.png" alt="image13"></span></p>
+<div class="title">Figure 11. Figure 11 Metamodel of Environment</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="media/image13.png" alt="image13">
+</div>
+<div class="title">Figure 12. Figure 12 Metamodel Package Overview</div>
 </div>
 </div>
 <div class="sect2">
@@ -2725,9 +2749,11 @@ Table 5 describes the different scopes of an event.</p>
 </div>
 <div class="sect4">
 <h5 id="_administrative_information_attributes">Administrative Information Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 13 Metamodel of Administrative Information</div>
-<p><span class="image"><img src="media/image14.png" alt="image14"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image14.png" alt="image14">
+</div>
+<div class="title">Figure 13. Figure 13 Metamodel of Administrative Information</div>
 </div>
 <div class="paragraph">
 <p>Every identifiable may contain administrative information. Administrative information includes, for example,</p>
@@ -2881,9 +2907,11 @@ Table 5 describes the different scopes of an event.</p>
 </div>
 <div class="sect4">
 <h5 id="_has_data_specification_attributes">Has Data Specification Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 14 Metamodel of HasDataSpecification</div>
-<p><span class="image"><img src="media/image15.png" alt="image15"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image15.png" alt="image15">
+</div>
+<div class="title">Figure 14. Figure 14 Metamodel of HasDataSpecification</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -2944,9 +2972,11 @@ Table 5 describes the different scopes of an event.</p>
 </div>
 <div class="sect4">
 <h5 id="_extensions_attributes">Extensions Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 15 Metamodel of Has Extensions</div>
-<p><span class="image"><img src="media/image16.png" alt="image16"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image16.png" alt="image16">
+</div>
+<div class="title">Figure 15. Figure 15 Metamodel of Has Extensions</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -3075,9 +3105,11 @@ Table 5 describes the different scopes of an event.</p>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<div class="title">Figure 16 Metamodel of HasKind</div>
-<p><span class="image"><img src="media/image17.png" alt="image17"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image17.png" alt="image17">
+</div>
+<div class="title">Figure 16. Figure 16 Metamodel of HasKind</div>
 </div>
 </div>
 <div class="sect4">
@@ -3184,9 +3216,11 @@ Table 5 describes the different scopes of an event.</p>
 </div>
 <div class="sect4">
 <h5 id="_has_semantics_attributes">Has Semantics Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 17 Metamodel of Semantic References (HasSemantics)</div>
-<p><span class="image"><img src="media/image18.png" alt="image18"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image18.png" alt="image18">
+</div>
+<div class="title">Figure 17. Figure 17 Metamodel of Semantic References (HasSemantics)</div>
 </div>
 <div class="paragraph">
 <p>For matching algorithm, see Clause 4.4.1.</p>
@@ -3267,9 +3301,11 @@ Table 5 describes the different scopes of an event.</p>
 </div>
 <div class="sect4">
 <h5 id="_identifiable_attributes">Identifiable Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 18 Metamodel of Identifiables</div>
-<p><span class="image"><img src="media/image19.png" alt="image19"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image19.png" alt="image19">
+</div>
+<div class="title">Figure 18. Figure 18 Metamodel of Identifiables</div>
 </div>
 <div class="paragraph">
 <p>An identifiable element is a referable with a globally unique identifier (<em>Identifier</em>). Only the global ID (<em>Identifiable/id</em>) shall be used to reference an identifiable, because the <em>idShort</em> is not unique for an identifiable. Identifiables may have administrative information like version, etc.</p>
@@ -3354,9 +3390,11 @@ Table 5 describes the different scopes of an event.</p>
 </div>
 <div class="sect4">
 <h5 id="_qualifiable_attributes">Qualifiable Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 19 Metamodel of Qualifiables</div>
-<p><span class="image"><img src="media/image20.png" alt="image20"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image20.png" alt="image20">
+</div>
+<div class="title">Figure 19. Figure 19 Metamodel of Qualifiables</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -3414,9 +3452,11 @@ Table 5 describes the different scopes of an event.</p>
 </div>
 <div class="sect4">
 <h5 id="_qualifier_attributes">Qualifier Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 20 Metamodel of Qualifiers</div>
-<p><span class="image"><img src="media/image21.png" alt="image21"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image21.png" alt="image21">
+</div>
+<div class="title">Figure 20. Figure 20 Metamodel of Qualifiers</div>
 </div>
 <div class="paragraph">
 <p>Qualifiers may be defined for qualifiable elements.</p>
@@ -3600,16 +3640,20 @@ Figure 21).</p>
 <div class="paragraph">
 <p>Example of a <em>TemplateQualifier:</em> a submodel element with qualifier value "mandatory" or "optional". This qualification is needed to build a correct submodel instance. For more information see <a href="#bib48">[48]</a>.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 21 Example: Qualifier from IEC CDD</div>
-<p><span class="image"><img src="media/image22.png" alt="Ein Bild" width="das Text enthält. Automatisch generierte Beschreibung"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image22.png" alt="Ein Bild" width="das Text enthält. Automatisch generierte Beschreibung">
+</div>
+<div class="title">Figure 21. Figure 21 Example: Qualifier from IEC CDD</div>
 </div>
 </div>
 <div class="sect4">
 <h5 id="_referable_attributes">Referable Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 22 Metamodel of Referables</div>
-<p><span class="image"><img src="media/image23.png" alt="image23"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image23.png" alt="image23">
+</div>
+<div class="title">Figure 22. Figure 22 Metamodel of Referables</div>
 </div>
 <div class="paragraph">
 <p>The metamodel differentiates between elements that are identifiable, referable, or none of both. The latter means they are neither inheriting from <em>Referable</em> nor from <em>Identifiable</em>, which applies e.g. to <em>Qualifier</em>s.</p>
@@ -3803,9 +3847,11 @@ Figure 21).</p>
 </div>
 <div class="sect3">
 <h4 id="_asset_administration_shell_attributes">Asset Administration Shell Attributes</h4>
-<div class="paragraph">
-<div class="title">Figure 23 Metamodel of an AssetAdministrationShell</div>
-<p><span class="image"><img src="media/image24.png" alt="image24"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image24.png" alt="image24">
+</div>
+<div class="title">Figure 23. Figure 23 Metamodel of an AssetAdministrationShell</div>
 </div>
 <div class="paragraph">
 <p>An Administration Shell is uniquely identifiable since it inherits from <em>Identifiable</em>.</p>
@@ -3883,9 +3929,11 @@ Figure 21).</p>
 </div>
 <div class="sect3">
 <h4 id="_asset_information_attributes">Asset Information Attributes</h4>
-<div class="paragraph">
-<div class="title">Figure 24 Metamodel of Asset Information</div>
-<p><span class="image"><img src="media/image25.png" alt="image25"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image25.png" alt="image25">
+</div>
+<div class="title">Figure 24. Figure 24 Metamodel of Asset Information</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -4193,9 +4241,11 @@ Figure 21).</p>
 </div>
 <div class="sect3">
 <h4 id="_submodel_attributes">Submodel Attributes</h4>
-<div class="paragraph">
-<div class="title">Figure 25 Metamodel of Submodel</div>
-<p><span class="image"><img src="media/image26.png" alt="image26"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image26.png" alt="image26">
+</div>
+<div class="title">Figure 25. Figure 25 Metamodel of Submodel</div>
 </div>
 <div class="paragraph">
 <p>Adding a <em>semanticId</em> for a submodel is recommended (see Table 2).</p>
@@ -4262,9 +4312,11 @@ Figure 21).</p>
 </div>
 <div class="sect3">
 <h4 id="_submodel_element_attributes">Submodel Element Attributes</h4>
-<div class="paragraph">
-<div class="title">Figure 26 Metamodel of Submodel Element</div>
-<p><span class="image"><img src="media/image27.png" alt="image27"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image27.png" alt="image27">
+</div>
+<div class="title">Figure 26. Figure 26 Metamodel of Submodel Element</div>
 </div>
 <div class="paragraph">
 <p>Submodel elements are qualifiable elements, i.e. one or more qualifiers may be defined for each of them.</p>
@@ -4314,9 +4366,11 @@ Figure 21).</p>
 </div>
 <div class="sect3">
 <h4 id="_overview_of_submodel_element_types">Overview of Submodel Element Types</h4>
-<div class="paragraph">
-<div class="title">Figure 27 Metamodel Overview for Submodel Element Subtypes</div>
-<p><span class="image"><img src="media/image28.png" alt="image28"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image28.png" alt="image28">
+</div>
+<div class="title">Figure 27. Figure 27 Metamodel Overview for Submodel Element Subtypes</div>
 </div>
 <div class="paragraph">
 <p>Submodel elements include data properties as well as operations, events and other elements needed to describe a model for an asset (see Figure 27).</p>
@@ -4329,9 +4383,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_annotated_relationship_element_attributes">Annotated Relationship Element Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 28 Metamodel of Annotated Relationship Elements</div>
-<p><span class="image"><img src="media/image29.png" alt="image29"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image29.png" alt="image29">
+</div>
+<div class="title">Figure 28. Figure 28 Metamodel of Annotated Relationship Elements</div>
 </div>
 <div class="paragraph">
 <p>An annotated relationship is a relationship similar to a ternary association in UML. The semantics of the relationship is defined via the <em>semanticId</em> of the <em>RelationshipElement</em>. If this semantic definition requires additional information not contained in the <em>first</em> or <em>second</em> object referenced via the relationship, this information needs to be stored as annotation.</p>
@@ -4383,9 +4439,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_basic_event_element_attributes">Basic Event Element Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 29 Metamodel of Basic Event Element</div>
-<p><span class="image"><img src="media/image30.png" alt="image30"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image30.png" alt="image30">
+</div>
+<div class="title">Figure 29. Figure 29 Metamodel of Basic Event Element</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -4605,9 +4663,11 @@ Figure 21).</p>
 </div>
 </div>
 </div>
-<div class="paragraph">
-<div class="title">Figure 30 Metamodel of Event Payload</div>
-<p><span class="image"><img src="media/image31.png" alt="image31"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image31.png" alt="image31">
+</div>
+<div class="title">Figure 30. Figure 30 Metamodel of Event Payload</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -4728,9 +4788,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_blob_attributes">Blob Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 31 Metamodel of Blobs</div>
-<p><span class="image"><img src="media/image32.png" alt="image32"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image32.png" alt="image32">
+</div>
+<div class="title">Figure 31. Figure 31 Metamodel of Blobs</div>
 </div>
 <div class="paragraph">
 <p>For information on content type, see Clause 5.3.7.9 on submodel element "File".</p>
@@ -4808,9 +4870,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_capability_attributes">Capability Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 32 Metamodel of Capabilities</div>
-<p><span class="image"><img src="media/image33.png" alt="image33"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image33.png" alt="image33">
+</div>
+<div class="title">Figure 32. Figure 32 Metamodel of Capabilities</div>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -4858,9 +4922,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_data_element_and_overview_of_data_element_types">Data Element and Overview of Data Element Types</h5>
-<div class="paragraph">
-<div class="title">Figure 33 Metamodel of Data Elements</div>
-<p><span class="image"><img src="media/image34.png" alt="image34"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image34.png" alt="image34">
+</div>
+<div class="title">Figure 33. Figure 33 Metamodel of Data Elements</div>
 </div>
 <div class="paragraph">
 <p>A data element is a submodel element that is not further composed of other submodel elements.</p>
@@ -4925,9 +4991,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_entity_attributes">Entity Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 34 Metamodel of Entities</div>
-<p><span class="image"><img src="media/image35.png" alt="image35"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image35.png" alt="image35">
+</div>
+<div class="title">Figure 34. Figure 34 Metamodel of Entities</div>
 </div>
 <div class="paragraph">
 <p>The entity submodel element is designed to be used in submodels defining the relationship between the parts of the composite asset it is composed of (e.g. bill of material). These parts are called entities. Not all entities have a global asset ID.</p>
@@ -5049,9 +5117,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_event_attributes">Event Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 35 Metamodel of Events</div>
-<p><span class="image"><img src="media/image36.png" alt="image36"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image36.png" alt="image36">
+</div>
+<div class="title">Figure 35. Figure 35 Metamodel of Events</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -5092,9 +5162,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_file_attributes">File Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 36 Metamodel of File Submodel Element</div>
-<p><span class="image"><img src="media/image37.png" alt="image37"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image37.png" alt="image37">
+</div>
+<div class="title">Figure 36. Figure 36 Metamodel of File Submodel Element</div>
 </div>
 <div class="paragraph">
 <p>A media type (also MIME type and content type) is a two-part identifier for file formats and format contents transmitted via the Internet. The Internet Assigned Numbers Authority (IANA) is the official authority for the standardization and publication of these classifications.</p>
@@ -5164,9 +5236,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_multi_language_property_attributes">Multi Language Property Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 37 Metamodel of Multi Language Properties</div>
-<p><span class="image"><img src="media/image38.png" alt="image38"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image38.png" alt="image38">
+</div>
+<div class="title">Figure 37. Figure 37 Metamodel of Multi Language Properties</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -5235,9 +5309,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_operation_attributes">Operation Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 38 Metamodel of Operations</div>
-<p><span class="image"><img src="media/image39.png" alt="image39"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image39.png" alt="image39">
+</div>
+<div class="title">Figure 38. Figure 38 Metamodel of Operations</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -5368,9 +5444,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_property_attributes">Property Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 39 Metamodel of Properties</div>
-<p><span class="image"><img src="media/image40.png" alt="image40"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image40.png" alt="image40">
+</div>
+<div class="title">Figure 39. Figure 39 Metamodel of Properties</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -5445,9 +5523,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_range_attributes">Range Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 40 Metamodel of Ranges</div>
-<p><span class="image"><img src="media/image41.png" alt="image41"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image41.png" alt="image41">
+</div>
+<div class="title">Figure 40. Figure 40 Metamodel of Ranges</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -5518,9 +5598,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_reference_element_attributes">Reference Element Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 41 Metamodel of Reference Elements</div>
-<p><span class="image"><img src="media/image42.png" alt="image42"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image42.png" alt="image42">
+</div>
+<div class="title">Figure 41. Figure 41 Metamodel of Reference Elements</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -5572,9 +5654,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_relationship_element_attributes">Relationship Element Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 42 Metamodel of Relationship Elements</div>
-<p><span class="image"><img src="media/image43.png" alt="image43"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image43.png" alt="image43">
+</div>
+<div class="title">Figure 42. Figure 42 Metamodel of Relationship Elements</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -5629,9 +5713,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_submodel_element_collection_attributes">Submodel Element Collection Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 43 Metamodel of Submodel Element Collections</div>
-<p><span class="image"><img src="media/image44.png" alt="image44"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image44.png" alt="image44">
+</div>
+<div class="title">Figure 43. Figure 43 Metamodel of Submodel Element Collections</div>
 </div>
 <div class="paragraph">
 <p>Submodel Element Collections are used for complex elements with a typically fixed set of properties with unique names. This set of properties is typically predefined by the semantic definition (referenced via <em>semanticId</em>) of the submodel element collection. Each property within the collection itself should have clearly defined semantics.</p>
@@ -5700,9 +5786,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_submodel_element_list_attributes">Submodel Element List Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 44 Metamodel of Submodel Element Lists</div>
-<p><span class="image"><img src="media/image45.png" alt="image45"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image45.png" alt="image45">
+</div>
+<div class="title">Figure 44. Figure 44 Metamodel of Submodel Element Lists</div>
 </div>
 <div class="paragraph">
 <p>Submodel element lists are used for sets (i.e. unordered collections without duplicates), ordered lists (i.e. ordered collections that may contain duplicates), bags (i.e. unordered collections that may contain duplicates), and ordered sets (i.e. ordered collections without duplicates).</p>
@@ -5836,9 +5924,11 @@ Figure 21).</p>
 </div>
 <div class="sect3">
 <h4 id="_concept_description_attributes">Concept Description Attributes</h4>
-<div class="paragraph">
-<div class="title">Figure 45 Metamodel of Concept Descriptions</div>
-<p><span class="image"><img src="media/image46.png" alt="image46"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image46.png" alt="image46">
+</div>
+<div class="title">Figure 45. Figure 45 Metamodel of Concept Descriptions</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -5914,9 +6004,11 @@ Figure 21).</p>
 </div>
 <div class="sect3">
 <h4 id="_environment_attributes">Environment Attributes</h4>
-<div class="paragraph">
-<div class="title">Figure 46 Metamodel for Environment</div>
-<p><span class="image"><img src="media/image47.png" alt="image47"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image47.png" alt="image47">
+</div>
+<div class="title">Figure 46. Figure 46 Metamodel for Environment</div>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -6002,9 +6094,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_reference_attributes">Reference Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 47 Metamodel of Reference</div>
-<p><span class="image"><img src="media/image48.png" alt="image48"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image48.png" alt="image48">
+</div>
+<div class="title">Figure 47. Figure 47 Metamodel of Reference</div>
 </div>
 <div class="paragraph">
 <p>See Clause 4.4.2 for reference matching.</p>
@@ -6139,9 +6233,11 @@ Figure 21).</p>
 </div>
 <div class="sect4">
 <h5 id="_key_attributes">Key Attributes</h5>
-<div class="paragraph">
-<div class="title">Figure 48 Metamodel of Keys</div>
-<p><span class="image"><img src="media/image49.png" alt="image49"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image49.png" alt="image49">
+</div>
+<div class="title">Figure 48. Figure 48 Metamodel of Keys</div>
 </div>
 <div class="paragraph">
 <p>Keys are used to define references (<em>Reference</em>).</p>
@@ -6149,13 +6245,17 @@ Figure 21).</p>
 <div class="paragraph">
 <p>Figure 49 presents a logical model of key types. These logical enumerations are used to formulate constraints.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 49 Logical Model for Keys of References (non-normative)</div>
-<p><span class="image"><img src="media/image50.png" alt="image50"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image50.png" alt="image50">
 </div>
-<div class="paragraph">
-<div class="title">Figure 50 Metamodel of KeyTypes Enumeration</div>
-<p><span class="image"><img src="media/image51.png" alt="image51"></span></p>
+<div class="title">Figure 49. Figure 49 Logical Model for Keys of References (non-normative)</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="media/image51.png" alt="image51">
+</div>
+<div class="title">Figure 50. Figure 50 Metamodel of KeyTypes Enumeration</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -6221,9 +6321,11 @@ Figure 21).</p>
 <div class="paragraph">
 <p>An example for using a <em>FragmentId</em> as type of a key is a reference to an element within a file that is part of an Asset Administration Shell aasx package.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 51 Metamodel of AasSubmodelElements Enumeration</div>
-<p><span class="image"><img src="media/image52.png" alt="image52"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image52.png" alt="image52">
+</div>
+<div class="title">Figure 51. Figure 51 Metamodel of AasSubmodelElements Enumeration</div>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -7741,16 +7843,20 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 </div>
-<div class="paragraph">
-<div class="title">Figure 52 DefTypeDefRdf Enumeration</div>
-<p><span class="image"><img src="media/image53.png" alt="image53"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image53.png" alt="image53">
+</div>
+<div class="title">Figure 52. Figure 52 DefTypeDefRdf Enumeration</div>
 </div>
 <div class="paragraph">
 <p>The enumeration is derived from Figure 54.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 53 Data TypeDefXsd Enumeration</div>
-<p><span class="image"><img src="media/image54.png" alt="image54"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image54.png" alt="image54">
+</div>
+<div class="title">Figure 53. Figure 53 Data TypeDefXsd Enumeration</div>
 </div>
 <div class="paragraph">
 <p>Table 9 depicts example values and the value range of the different data type"</p>
@@ -8424,9 +8530,11 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="paragraph">
 <p>RDF requires IETF BCP 47<sup class="footnote">[<a id="_footnoteref_20" class="footnote" href="#_footnotedef_20" title="View footnote.">20</a>]</sup> language tags. Simple two-letter language tags for locales like "de" conformant to ISO 639-1 are allowed, as well as language tags plus extension like "de-DE" for country code, dialect, etc. like in "en-US" for English (United States) or "en-GB" for English (United Kingdom). IETF language tags are referencing ISO 639, ISO 3166 and ISO 15924.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 54 Built-In Types of XML Schema Definition 1.0 (XSD)<sup class="footnote">[<a id="_footnoteref_21" class="footnote" href="#_footnotedef_21" title="View footnote.">21</a>]</sup></div>
-<p><span class="image"><img src="media/image55.png" alt="image55"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image55.png" alt="image55">
+</div>
+<div class="title">Figure 54. Figure 54 Built-In Types of XML Schema Definition 1.0 (XSD)<sup class="footnote">[<a id="_footnoteref_21" class="footnote" href="#_footnotedef_21" title="View footnote.">21</a>]</sup></div>
 </div>
 </div>
 </div>
@@ -8522,18 +8630,22 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="paragraph">
 <p>Figure 55 shows the concept of data specification for a predefined data specification conformant to IEC61360<sup class="footnote">[<a id="_footnoteref_23" class="footnote" href="#_footnotedef_23" title="View footnote.">23</a>]</sup> that, for example, can be used for concept descriptions for single properties.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 55 Core Elements of Using Data Specifications (non-normative)</div>
-<p><span class="image"><img src="media/image56.png" alt="image56"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image56.png" alt="image56">
+</div>
+<div class="title">Figure 55. Figure 55 Core Elements of Using Data Specifications (non-normative)</div>
 </div>
 <div class="paragraph">
 <p>The template introduced to describe the concept of a property, a value list, or a value is based on IEC 61360. Figure 55 also shows how concept descriptions and the predefined data specification templates are related to each other.</p>
 </div>
 <div class="sect3">
 <h4 id="_data_specification_template_attributes">Data Specification Template Attributes</h4>
-<div class="paragraph">
-<div class="title">Figure 56 Data Specification Templates</div>
-<p><span class="image"><img src="media/image57.png" alt="image57"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image57.png" alt="image57">
+</div>
+<div class="title">Figure 56. Figure 56 Data Specification Templates</div>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -8706,9 +8818,11 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<div class="title">Figure 57 Graphic View on Exchange Data Formats for the Asset Administration Shell<sup class="footnote">[<a id="_footnoteref_26" class="footnote" href="#_footnotedef_26" title="View footnote.">26</a>]</sup></div>
-<p><span class="image"><img src="media/image58.jpeg" alt="image58"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image58.jpeg" alt="image58">
+</div>
+<div class="title">Figure 57. Figure 57 Graphic View on Exchange Data Formats for the Asset Administration Shell<sup class="footnote">[<a id="_footnoteref_26" class="footnote" href="#_footnotedef_26" title="View footnote.">26</a>]</sup></div>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -9089,9 +9203,11 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="paragraph">
 <p>In the case of restricted use of data specifications, we speak of "embedded data specifications". Figure 58 explains the realization: instead of a set of external global references to externally defined data specifications, a set of pairs consisting of an external global reference to a data specification and the data specification content itself are directly "embedded". Here, the data specification content belongs to the schema, while the data specification including its content are not part of the schema in the general concept. This is similar to the concept of <em>semanticIds</em>: either it is an external global reference to an external concept dictionary, or it is a reference to a concept description within the schema. However, there is only one reference allowed for <em>semanticId</em>, whereas a set of data specification references is permitted for data specifications.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 58 Realization of Embedded Data Specifications</div>
-<p><span class="image"><img src="media/image59.png" alt="image59"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image59.png" alt="image59">
+</div>
+<div class="title">Figure 58. Figure 58 Realization of Embedded Data Specifications</div>
 </div>
 </div>
 </div>
@@ -9368,9 +9484,11 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="paragraph">
 <p>As far as the large variety of assets in Industry 4.0 are concerned, the Asset Administration Shell allows these assets to be handled in the same manner within the information world. This reduces complexity and allows for scalability. Additional motivation can be found in <a href="#bib2">[2]</a> <a href="#bib4">[4]</a> <a href="#bib7">[7]</a> <a href="#bib8">[8]</a>.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 59 Important Concepts of Industry 4.0 attached to the Asset <a href="#bib2">[2]</a> <a href="#bib21">[21]</a></div>
-<p><span class="image"><img src="media/image60.jpeg" alt="image60"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image60.jpeg" alt="image60">
+</div>
+<div class="title">Figure 59. Figure 59 Important Concepts of Industry 4.0 attached to the Asset <a href="#bib2">[2]</a> <a href="#bib21">[21]</a></div>
 </div>
 </div>
 <div class="sect2">
@@ -9381,9 +9499,11 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="paragraph">
 <p>Standardized data elements are an example for such properties. The definitions can be found in a range of repositories, such as IEC CDD (common data dictionary) or ECLASS. The definition of a property (aka standardized data element type, property type) associates a worldwide unique identifier with a definition, which is a set of well-defined attributes. Relevant attributes for the Administration Shell are, amongst others, the preferred name, the symbol, the unit of measure, and a human-readable textual definition of the property.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 60 Exemplary Definition of a Property the IEC CDD</div>
-<p><span class="image"><img src="media/image61.png" alt="Ein Bild" width="das Tisch enthält. Automatisch generierte Beschreibung"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image61.png" alt="Ein Bild" width="das Tisch enthält. Automatisch generierte Beschreibung">
+</div>
+<div class="title">Figure 60. Figure 60 Exemplary Definition of a Property the IEC CDD</div>
 </div>
 <div class="paragraph">
 <p>The instantiation of such a definition (just 'property', property instance) typically associates a value to the property. This mechanism makes it possible to convey semantically well-defined information to the Administration Shell.</p>
@@ -9404,9 +9524,11 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="paragraph">
 <p>As the figure shows, information from many different domains can be associated with a respective asset, and many different properties are required to be represented in Administration Shells of future I4.0 components. The architectural principle "separation of concerns" is supported by submodels.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 61 Examples of Different Domains Providing Properties for Submodels of the Administration Shell</div>
-<p><span class="image"><img src="media/image62.jpg" alt="image62"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image62.jpg" alt="image62">
+</div>
+<div class="title">Figure 61. Figure 61 Examples of Different Domains Providing Properties for Submodels of the Administration Shell</div>
 </div>
 <div class="paragraph">
 <p>The Administration Shell is made up of a series of submodels <a href="#bib4">[4]</a>. These represent different aspects of the asset concerned. For example, they may contain a description relating to safety or security <a href="#bib15">[15]</a> but they could also outline various process capabilities such as drilling or installation <a href="#bib6">[6]</a>.</p>
@@ -9427,9 +9549,11 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="paragraph">
 <p>The document on the structure of the Asset Administration Shell <a href="#bib4">[4]</a> <a href="#bib19">[19]</a> presents a rough, logical view of the Asset Administration Shell’s structure. The Asset Administration Shell – shown in blue in the following figure – comprises different sets of information. Both the asset and the Administration Shell are identified by a globally unique identifier. It comprises a number of submodels, which characterize the Asset Administration Shell.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 62 Basic Structure of the Asset Administration Shell</div>
-<p><span class="image"><img src="media/image63.jpeg" alt="image63"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image63.jpeg" alt="image63">
+</div>
+<div class="title">Figure 62. Figure 62 Basic Structure of the Asset Administration Shell</div>
 </div>
 <div class="paragraph">
 <p>Properties, data, and functions will contain information that not every partner within a value-added network or even within an organizational unit should be able to access; its integrity and availability should be guaranteed. Therefore, the structure of the Administration Shell shall be able to handle aspects such as access protection, visibility, identity, and rights management, confidentiality, and integrity. Information security needs to be respected and has to be aligned with an overall security concept. Security implementation must go together with the implementation of other components of an overall system.</p>
@@ -10564,16 +10688,20 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="paragraph">
 <p>Figure 63 shows a class with name "Class1" and an attribute with name "attr" of type <em>Class2</em>. Attributes are owned by the class. Some of these attributes may represents the end of binary associations, see also Figure 70. In this case, the instance of <em>Class2</em> is navigable via the instance of the owning class <em>Class1</em>.<sup class="footnote">[<a id="_footnoteref_36" class="footnote" href="#_footnotedef_36" title="View footnote.">36</a>]</sup></p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 63 Class</div>
-<p><span class="image"><img src="media/image64.png" alt="image64"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image64.png" alt="image64">
+</div>
+<div class="title">Figure 63. Figure 63 Class</div>
 </div>
 <div class="paragraph">
 <p>Figure 64 shows that <em>Class4</em> inherits all member elements from <em>Class3</em>. Or in other word, <em>Class3</em> is a generalization of <em>Class4, Class4</em> is a specialization of <em>Class3</em>. This means that each instance of <em>Class4</em> is also an instance of <em>Class3</em>. An instance of <em>Class4</em> has the attributes <em>attr1</em> and <em>attr2,</em> whereas instances of <em>Class3</em> only have the attribute <em>attr1</em>.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 64 Inheritance/Generalization</div>
-<p><span class="image"><img src="media/image65.png" alt="image65"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image65.png" alt="image65">
+</div>
+<div class="title">Figure 64. Figure 64 Inheritance/Generalization</div>
 </div>
 <div class="paragraph">
 <p>Figure 65 defines the required and allowed multiplicity/cardinality within an association between instances of <em>Class1</em> and <em>Class2</em>. In this example, an instance of <em>Class2</em> is always related to exactly one instance of <em>Class1</em>. An instance of <em>Class1</em> is either related to none, one, or more (unlimited, i.e. no constraint on the upper bound) instances of <em>Class2</em>. The relationship can change over time.</p>
@@ -10593,114 +10721,146 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="paragraph">
 <p>The default is 1 for lower-bound and upper-bound.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 65 Multiplicity</div>
-<p><span class="image"><img src="media/image66.png" alt="image66"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image66.png" alt="image66">
+</div>
+<div class="title">Figure 65. Figure 65 Multiplicity</div>
 </div>
 <div class="paragraph">
 <p>A multiplicity element represents a collection of values. The default is a set, i.e. it is not ordered and the elements within the collection are unique and contain no duplicates. Figure 66 shows an ordered collection: the instances of <em>Class2</em> related to an instance of <em>Class1</em>. The stereotype &lt;&lt;ordered&gt;&gt; is used to denote that the relationship is ordered.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 66 Ordered Multiplicity</div>
-<p><span class="image"><img src="media/image67.png" alt="image67"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image67.png" alt="image67">
+</div>
+<div class="title">Figure 66. Figure 66 Ordered Multiplicity</div>
 </div>
 <div class="paragraph">
 <p>Figure 67 shows that the member ends of an association can be named as well, i.e. an instance of <em>Class1</em> can be in relationship "relation" to an instance of <em>Class2</em>. Vice versa, the instance of <em>Class2</em> is in relationship "reverseRelation" to the instance of <em>Class1</em>.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 67 Association</div>
-<p><span class="image"><img src="media/image67.png" alt="image67"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image67.png" alt="image67">
+</div>
+<div class="title">Figure 67. Figure 67 Association</div>
 </div>
 <div class="paragraph">
 <p>Figure 68 shows a composition, also called a composite aggregation. A composition is a binary association, grouping a set of instances. The individuals in the set are typed as specified by <em>Class2</em>. The multiplicity of instances of <em>Class2</em> to <em>Class1</em> is always 1 (i.e. upper-bound and lower-bound have value "1"). One instance of <em>Class2</em> belongs to exactly one instance of <em>Class1</em>. There is no instance of <em>Class2</em> without a relationship to an instance of <em>Class1</em>. Figure 69 shows the composition using an association relationship with a filled diamond as composition adornment.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 68 Composition (Composite Aggregation)</div>
-<p><span class="image"><img src="media/image68.png" alt="image68"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image68.png" alt="image68">
+</div>
+<div class="title">Figure 68. Figure 68 Composition (Composite Aggregation)</div>
 </div>
 <div class="paragraph">
 <p>Figure 69 shows an aggregation. An aggregation is a binary association. In contrast to a composition, an instance of <em>Class2</em> can be shared by several instances of <em>Class1</em>. Figure 69 shows the shared aggregation using an association relationship with a hallow diamond as aggregation adornment.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 69 Aggregation</div>
-<p><span class="image"><img src="media/image69.png" alt="image69"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image69.png" alt="image69">
+</div>
+<div class="title">Figure 69. Figure 69 Aggregation</div>
 </div>
 <div class="paragraph">
 <p>Figure 70 illustrates that the attribute notation can be used for an association end owned by a class. In this example, the attribute name is "attr" and the elements of this attribute are typed with <em>Class2.</em> The multiplicity, here "0..*", is added in square brackets. If the aggregation is ordered, it is added in curly brackets like in this example.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 70 Navigable Attribute Notation for Associations</div>
-<p><span class="image"><img src="media/image70.png" alt="image70"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image70.png" alt="image70">
+</div>
+<div class="title">Figure 70. Figure 70 Navigable Attribute Notation for Associations</div>
 </div>
 <div class="paragraph">
 <p>Figure 71 shows a class with three attributes with primitive types and default values. When a property with a default value is instantiated in the absence of a specific setting for the property, the default value is evaluated to provide the initial values of the property.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 71 Default Value</div>
-<p><span class="image"><img src="media/image71.png" alt="image71"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image71.png" alt="image71">
+</div>
+<div class="title">Figure 71. Figure 71 Default Value</div>
 </div>
 <div class="paragraph">
 <p>Figure 72 shows that there is a dependency relationship between <em>Class1</em> and <em>Class2</em>. In this case, the dependency means that <em>Class1</em> depends on <em>Class2</em> because the type of attribute <em>attr</em> depends on the specification of class <em>Class2.</em> A dependency is depicted as dashed arrow between two model elements.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 72 Dependency</div>
-<p><span class="image"><img src="media/image72.png" alt="image72"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image72.png" alt="image72">
+</div>
+<div class="title">Figure 72. Figure 72 Dependency</div>
 </div>
 <div class="paragraph">
 <p>Figure 73 shows an abstract class. It uses the stereotype &lt;&lt;abstract&gt;&gt;. There are no instances of abstract classes. They are typically used for specific member elements that are inherited by non-abstract classes.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 73 Abstract Class</div>
-<p><span class="image"><img src="media/image73.png" alt="image73"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image73.png" alt="image73">
+</div>
+<div class="title">Figure 73. Figure 73 Abstract Class</div>
 </div>
 <div class="paragraph">
 <p>Figure 74 shows a package named "Package2". A package is a namespace for its members. In this example, the member belonging to <em>Package2</em> is class <em>Class2</em>.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 74 Package</div>
-<p><span class="image"><img src="media/image74.png" alt="image74"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image74.png" alt="image74">
+</div>
+<div class="title">Figure 74. Figure 74 Package</div>
 </div>
 <div class="paragraph">
 <p>Figure 75 shows that all elements in <em>Package2</em> are imported into the namespace defined by <em>Package1</em>. This is a special dependency relationship between the two packages with stereotype &lt;&lt;import&gt;&gt;.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 75 Imported Package</div>
-<p><span class="image"><img src="media/image75.png" alt="image75"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image75.png" alt="image75">
+</div>
+<div class="title">Figure 75. Figure 75 Imported Package</div>
 </div>
 <div class="paragraph">
 <p>Figure 76 shows an enumeration with the name "Enumeration1". An enumeration is a data type with its values enumerated as literals. It contains two literal values, "a" and "b". It is a class with stereotype &lt;&lt;enumeration&gt;&gt;. The literals owned by the enumeration are ordered.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 76 Enumeration<sup class="footnote">[<a id="_footnoteref_37" class="footnote" href="#_footnotedef_37" title="View footnote.">37</a>]</sup></div>
-<p><span class="image"><img src="media/image76.png" alt="image76"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image76.png" alt="image76">
+</div>
+<div class="title">Figure 76. Figure 76 Enumeration<sup class="footnote">[<a id="_footnoteref_37" class="footnote" href="#_footnotedef_37" title="View footnote.">37</a>]</sup></div>
 </div>
 <div class="paragraph">
 <p>Figure 77 shows the definition of the data type with the name "DataType1". A data type has instances that are identified only by their value. It is a class with stereotype &lt;&lt;dataType&gt;&gt;.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 77 Data Type</div>
-<p><span class="image"><img src="media/image77.png" alt="image77"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image77.png" alt="image77">
+</div>
+<div class="title">Figure 77. Figure 77 Data Type</div>
 </div>
 <div class="paragraph">
 <p>Figure 78 shows a primitive data type with the name "int". Primitive data types are predefined data types, without any substructure. The primitive data types are defined outside UML.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 78 Primitive Data Type</div>
-<p><span class="image"><img src="media/image78.png" alt="image78"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image78.png" alt="image78">
+</div>
+<div class="title">Figure 78. Figure 78 Primitive Data Type</div>
 </div>
 <div class="paragraph">
 <p>Figure 79 shows how a note can be attached to an element, in this example to class "Class1".</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 79 Note</div>
-<p><span class="image"><img src="media/image79.png" alt="image79"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image79.png" alt="image79">
+</div>
+<div class="title">Figure 79. Figure 79 Note</div>
 </div>
 <div class="paragraph">
 <p>Figure 80 shows how a constraint is attached to an element, in this example to class "Class1".</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 80 Constraint</div>
-<p><span class="image"><img src="media/image80.png" alt="image80"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image80.png" alt="image80">
+</div>
+<div class="title">Figure 80. Figure 80 Constraint</div>
 </div>
 </div>
 <div class="sect2">
@@ -10820,9 +10980,11 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="paragraph">
 <p><em>Class2</em> instance only exists if the parent object of type <em>Class1</em> exists.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 81 Graphical Representations of Composite Aggregation/Composition</div>
-<p><span class="image"><img src="media/image81.png" alt="image81"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image81.png" alt="image81">
+</div>
+<div class="title">Figure 81. Figure 81 Graphical Representations of Composite Aggregation/Composition</div>
 </div>
 <div class="paragraph">
 <p>Figure 82 shows different representations of a shared aggregation: a <em>Class2</em> instance can exist independently of a <em>Class1</em> instance; it only references the instances of <em>Class2</em>. Now an attribute with the same semantics is defined In Variant B. The reference is denoted by a star added after the type of the attribute.</p>
@@ -10830,9 +10992,11 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="paragraph">
 <p>It is assumed that only the end member of the aggregation association is navigable per default, i.e. it is possible to navigate from an instance of <em>Class1</em> to the owned instance of <em>Class2</em> but not vice versa. Otherwise, variant B would not be identical to Variant A.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 82 Graphical Representation of Shared Aggregation</div>
-<p><span class="image"><img src="media/image82.png" alt="image82"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image82.png" alt="image82">
+</div>
+<div class="title">Figure 82. Figure 82 Graphical Representation of Shared Aggregation</div>
 </div>
 <div class="paragraph">
 <p>A specialty in Figure 82 is that the aggregated instances are referables in the sense of the Asset Administration Shell metamodel (i.e. they inherit from the predefined abstract class "Referable"). This is why Variant B is identical to Variant A. This would not be the case for non-referable elements in the metamodel. The structure of a reference to a model element of the Asset Administration Shell is explicitly defined. A model reference consists of an ordered list of keys. The last key in the key chain shall reference an instance of type <em>Class2</em> (i.e. Reference.</p>
@@ -10843,9 +11007,11 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="paragraph">
 <p>Variant C not only shows which class Class3 instances are inheriting from, but also what they are inheriting. This is depicted by the class name it is inheriting from, followed by "::" and then the list of all inherited elements – here attribute <em>class2</em>. Typically, the inherited elements are not shown.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 83 Graphical Representation of Generalization/Inheritance</div>
-<p><span class="image"><img src="media/image83.png" alt="image83"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image83.png" alt="image83">
+</div>
+<div class="title">Figure 83. Figure 83 Graphical Representation of Generalization/Inheritance</div>
 </div>
 <div class="paragraph">
 <p>Figure 84 depicts different graphical notations for enumerations in combination with inheritance. On the left side "Enumeration1" additionally contains the literals as defined by "Enumeration2".</p>
@@ -10857,9 +11023,11 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 </div>
-<div class="paragraph">
-<div class="title">Figure 84 Graphical Representation for Enumeration with Inheritance</div>
-<p><span class="image"><img src="media/image84.png" alt="image84"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image84.png" alt="image84">
+</div>
+<div class="title">Figure 84. Figure 84 Graphical Representation for Enumeration with Inheritance</div>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -10871,23 +11039,29 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="paragraph">
 <p>Figure 85 shows an experimental class, marked by the stereotype "Experimental”.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 85 Graphical Representation for Experimental Classes</div>
-<p><span class="image"><img src="media/image85.png" alt="Ein Bild" width="das Text enthält. Automatisch generierte Beschreibung"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image85.png" alt="Ein Bild" width="das Text enthält. Automatisch generierte Beschreibung">
+</div>
+<div class="title">Figure 85. Figure 85 Graphical Representation for Experimental Classes</div>
 </div>
 <div class="paragraph">
 <p>Figure 86 depicts a deprecated class, which is marked by the stereotype "Deprecated".</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 86 Graphical Representation for Deprecated Elements</div>
-<p><span class="image"><img src="media/image86.png" alt="Ein Bild" width="das Text enthält. Automatisch generierte Beschreibung"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image86.png" alt="Ein Bild" width="das Text enthält. Automatisch generierte Beschreibung">
+</div>
+<div class="title">Figure 86. Figure 86 Graphical Representation for Deprecated Elements</div>
 </div>
 <div class="paragraph">
 <p>Figure 87 shows a class representing a template. It is marked by the stereotype "Template".</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 87 Graphical Representation of a Template Class</div>
-<p><span class="image"><img src="media/image87.png" alt="Ein Bild" width="das Text enthält. Automatisch generierte Beschreibung"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image87.png" alt="Ein Bild" width="das Text enthält. Automatisch generierte Beschreibung">
+</div>
+<div class="title">Figure 87. Figure 87 Graphical Representation of a Template Class</div>
 </div>
 </div>
 </div>
@@ -10943,9 +11117,11 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="paragraph">
 <p>Figure 88 shows an extract of the metamodel containing the most important elements to describe composite I4.0 Components.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 88 Extract From Metamodel for Composite I4.0 Components</div>
-<p><span class="image"><img src="media/image88.png" alt="image88"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image88.png" alt="image88">
+</div>
+<div class="title">Figure 88. Figure 88 Extract From Metamodel for Composite I4.0 Components</div>
 </div>
 </div>
 </div>
@@ -10956,9 +11132,11 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <div class="paragraph">
 <p>In this annex, some UML diagrams are shown together with all attributes inherited for a better overview.</p>
 </div>
-<div class="paragraph">
-<div class="title">Figure 89 Selected Classes of Metamodel with Inherited Attributes</div>
-<p><span class="image"><img src="media/image89.png" alt="image89"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image89.png" alt="image89">
+</div>
+<div class="title">Figure 89. Figure 89 Selected Classes of Metamodel with Inherited Attributes</div>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -10967,9 +11145,11 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 </div>
-<div class="paragraph">
-<div class="title">Figure 90 Model for Submodel Elements with Inherited Attributes</div>
-<p><span class="image"><img src="media/image90.png" alt="image90"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="media/image90.png" alt="image90">
+</div>
+<div class="title">Figure 90. Figure 90 Model for Submodel Elements with Inherited Attributes</div>
 </div>
 </div>
 </div>
