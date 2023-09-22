@@ -111,6 +111,7 @@ image:image4.png[]
 
 .Properties of Submodel "Nameplate"
 
+[.table-with-appendix-table]
 [width=100%, cols="h,1", options="autowidth",]
 |===
 |idShort: a| Nameplate
@@ -453,6 +454,7 @@ image:image5.png[]
 
 
 .Mandatory properties of SMC "ContactInformation"
+[.table-with-appendix-table]
 [width=100%, cols="h,1", options="autowidth"]
 |===
 |idShort: a|
@@ -582,6 +584,7 @@ image:image6.png[]
 Figure 2 shows the UML-diagram defining the relevant properties which need to be set. [.mark]####Table 4 describes the details of the SMC structure.
 
 .Properties of SMC "Markings"
+[.table-with-appendix-table]
 [width=100%, cols="h,1", options="autowidth"]
 |===
 |*idShort:* |Markings
@@ -634,6 +637,7 @@ Figure 5 shows the UML-diagram defining the relevant properties which need to be
 image:image7.png[]
 
 .Properties of SMC "Marking"
+[.table-with-appendix-table]
 [width=100%, cols="h,1", options="autowidth"]
 |===
 |idShort: |Marking\{00}
@@ -801,6 +805,7 @@ image:image8.png[]
 Figure 5 shows the UML-diagram defining the relevant properties which need to be set. describes the details of the SMC structure
 
 .Properties of SMC “ExplosionSafeties"
+[.table-with-appendix-table]
 [width=100%, cols="h,1", options="autowidth"]
 |===
 |*idShort:* |ExplosionSafeties
@@ -838,6 +843,7 @@ image:image9.png[]
 
 
 .Properties of SMC “ExplosionSafety”
+[.table-with-appendix-table]
 [width=100%, cols="h,1", options="autowidth"]
 |===
 |idShort: |ExplosionSafety
@@ -1108,6 +1114,7 @@ See separate clause
 Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 8 describes the details of the SMC structure.
 
 .Properties of SMC "AmbientConditions"
+[.table-with-appendix-table]
 [width=100%, cols="h,1", options="autowidth"]
 |===
 |idShort: |AmbientConditions
@@ -1380,6 +1387,7 @@ T5
 Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 9 describes the details of the SMC structure.
 
 .Properties of SMC "ProcessConditions"
+[.table-with-appendix-table]
 [width=100%, cols="h,1", options="autowidth"]
 |===
 |*idShort:* |ProcessConditions
@@ -1630,6 +1638,7 @@ T4
 Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 10 describes the details of the SMC structure.
 
 .Properties of SMC "ExternalElectricalCircuit"
+[.table-with-appendix-table]
 [width=100%, cols="h,1", options="autowidth"]
 |===
 |idShort: |ExternalElectricalCircuit
@@ -1882,6 +1891,7 @@ See separate clause
 Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 11 describes the details of the SMC structure.
 
 .Properties of SMC "SafetyRelatedPropertiesForPassiveBehaviour"
+[.table-with-appendix-table]
 [width=100%, cols="h,1", options="autowidth"]
 |===
 |idShort: |SafetyRelatedPropertiesForPassiveBehaviour
@@ -2032,6 +2042,7 @@ Unit: mH
 Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 12 describes the details of the SMC structure.
 
 .Properties of SMC "SafetyRelatedPropertiesForActiveBehaviour"
+[.table-with-appendix-table]
 [width=100%, cols="h,1", options="autowidth"]
 |===
 |idShort: |SafetyRelatedPropertiesForActiveBehaviour
@@ -2202,6 +2213,7 @@ Unit: mH/Q
 Figure 2 shows the UML-diagram defining the relevant properties which need to be set. Table 13 describes the details of the SMC structure.
 
 .Properties of SMC “AssetSpecificProperties”
+[.table-with-appendix-table]
 [width=100%, cols="h,1", options="autowidth"]
 |===
 |idShort: |AssetSpecificProperties
@@ -2243,6 +2255,7 @@ Properties which are not required by any legislations but provided due to best p
 Figure 2 shows the UML-diagram defining the relevant properties which need to be set. Table 14 describes the details of the SMC structure combined with examples.
 
 .Properties of SMC “GuidelineSpecificProperties”
+[.table-with-appendix-table]
 [width=100%, cols="h,1", options="autowidth"]
 |===
 |idShort: |GuidelineSpecificProperties\{00}
