@@ -1,0 +1,27 @@
+@startuml
+!theme plain
+left to right direction
+hide class circle
+hide class methods
+skinparam classAttributeIconSize 0
+' skinparam linetype polyline
+skinparam linetype ortho
+
+mainframe  Markings
+
+class "Markings" as ID00000001 <<SML>> {
+  +[00] : SMC
+}
+
+class "[00]" as ID00000002 <<SMC>> {
+  +MarkingName : xs:string = "0173-1#07-DA..."
+  +DesignationOfCertificateOrApproval : xs:string [0..1] = "KEMA99IECEX1..."
+  +IssueDate : xs:string [0..1] = "2022-01-01"
+  +ExpiryDate : xs:string [0..1] = "2022-01-01"
+  +MarkingFile : File
+  +MarkingAdditionalText : xs:string [0..*] = "0044"
+  +ExplosionSafeties : SMC [0..1]
+}
+
+ID00000001 *--  ID00000002 : "[00]"
+@enduml

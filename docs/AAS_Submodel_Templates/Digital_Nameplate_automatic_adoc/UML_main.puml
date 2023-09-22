@@ -1,0 +1,45 @@
+@startuml
+!theme plain
+left to right direction
+hide class circle
+hide class methods
+skinparam classAttributeIconSize 0
+' skinparam linetype polyline
+skinparam linetype ortho
+
+mainframe SMT Nameplate
+
+class "Nameplate" as ID00000001 <<SM>> {
+  +URIOfTheProduct : xs:string = "https://www...."
+  +ManufacturerName : MLP = "Muster AG"
+  +ManufacturerProductDesignation : MLP = "ABC-123"
+  +ContactInformation : SMC
+  +ManufacturerProductRoot : MLP [0..1] = "flow meter"
+  +ManufacturerProductFamily : MLP [0..1] = "Type ABC"
+  +ManufacturerProductType : MLP [0..1] = "FM-ABC-1234"
+  +OrderCodeOfManufacturer : MLP [0..1] = "FMABC1234"
+  +ProductArticleNumberOfManufacturer : MLP [0..1] = "FM11-ABC22-1..."
+  +SerialNumber : xs:string [0..1] = "12345678"
+  +YearOfConstruction : xs:string = "2022"
+  +DateOfManufacture : xs:date [0..1] = "2022-01-01"
+  +HardwareVersion : MLP [0..1] = "1.0.0"
+  +FirmwareVersion : MLP [0..1] = "1.0"
+  +SoftwareVersion : MLP [0..1] = "1.0.0"
+  +CountryOfOrigin : xs:string [0..1] = "DE"
+  +CompanyLogo : File [0..1]
+  +Markings : SML [0..*]
+  +AssetSpecificProperties : SMC [0..1]
+}
+
+class "Markings" as ID00000002 <<SML>> {
+  +[00] : SMC
+}
+
+class "AssetSpecificProperties" as ID00000003 <<SMC>> {
+  +GuidelineSpecificProperties{00} : SMC [1..*]
+  +{arbitrary} : xs:string [1..*]
+}
+
+ID00000001 *-- "0..*" ID00000002 : "Markings"
+ID00000001 *-- "0..1" ID00000003 : "AssetSpecificProperties"
+@enduml

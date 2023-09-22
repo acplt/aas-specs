@@ -1,0 +1,307 @@
+== Tables
+
+=== AsciiDoc_Digital_Nameplate_2_0
+
+[width="100%", cols="15%,55%,15%,15%"]
+|===
+s|{set:cellbgcolor:#0029cc} [white]#idShort:#
+3+s|{set:cellbgcolor:#eeeeee}AsciiDoc_Digital_Nameplate_2_0 
+
+s|{set:cellbgcolor:#0029cc} [white]#Class:#
+3+s|{set:cellbgcolor:#eeeeee}Submodel 
+
+s|{set:cellbgcolor:#0029cc} [white]#semanticId:#
+3+s|{set:cellbgcolor:#eeeeee}http://admin-shell.io/aasx-package-explorer/functions/asciidoc/1/0 
+
+s|{set:cellbgcolor:#0029cc} [white]#Parent:#
+3+s|{set:cellbgcolor:#eeeeee}AsciiDoc_Digital_Nameplate_2_0 
+
+s|{set:cellbgcolor:#0029cc} [white]#Explanation:#
+3+s|{set:cellbgcolor:#eeeeee}- 
+
+s|{set:cellbgcolor:#0029cc} [white]#Element details:#
+3+s|{set:cellbgcolor:#eeeeee}- 
+
+s|{set:cellbgcolor:#0029cc} [white]#[SME type] + +
+idShort#
+s| [white]#semanticId + +
+Description@en#
+s| [white]#[valueType] + +
+example#
+s| [white]#card.#
+
+
+
+|{set:cellbgcolor:#eeeeee}[SMC] + +
+Fixed_content
+|- + +
+- - -
+|[-] + +
+4 elements
+|-
+
+
+
+|[SMC] + +
+Variable_content
+|- + +
+- - -
+|[-] + +
+14 elements
+|-
+
+
+
+|===
+
+
+=== Fixed_content
+
+[width="100%", cols="15%,55%,15%,15%"]
+|===
+s|{set:cellbgcolor:#0029cc} [white]#idShort:#
+3+s|{set:cellbgcolor:#eeeeee}Fixed_content 
+
+s|{set:cellbgcolor:#0029cc} [white]#Class:#
+3+s|{set:cellbgcolor:#eeeeee}SubmodelElementCollection 
+
+s|{set:cellbgcolor:#0029cc} [white]#semanticId:#
+3+s|{set:cellbgcolor:#eeeeee}- 
+
+s|{set:cellbgcolor:#0029cc} [white]#Parent:#
+3+s|{set:cellbgcolor:#eeeeee}Fixed_content 
+
+s|{set:cellbgcolor:#0029cc} [white]#Explanation:#
+3+s|{set:cellbgcolor:#eeeeee}- 
+
+s|{set:cellbgcolor:#0029cc} [white]#Element details:#
+3+s|{set:cellbgcolor:#eeeeee}- 
+
+s|{set:cellbgcolor:#0029cc} [white]#[SME type] + +
+idShort#
+s| [white]#semanticId + +
+Description@en#
+s| [white]#[valueType] + +
+example#
+s| [white]#card.#
+
+
+
+|{set:cellbgcolor:#eeeeee}[Blob] + +
+asciidoc-style-idta_dot_css
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/imagefile/1/0 + +
+- - -
+|[-] + +
+13 bytes
+|-
+
+
+
+|[File] + +
+idta-smt-badge
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/imagefile/1/0 + +
+- - -
+|[-] + +
+/aasx/idta-smt-badge.png
+|-
+
+
+
+|[Blob] + +
+idta-cover-logo-small
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/imagefile/1/0 + +
+- - -
+|[-] + +
+13 bytes
+|-
+
+
+
+|[Blob] + +
+CoverPage
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/coverpage/1/0 + +
+- - -
+|[-] + +
+13 bytes
+|-
+
+
+
+|===
+
+
+=== Variable_content
+
+[width="100%", cols="15%,55%,15%,15%"]
+|===
+s|{set:cellbgcolor:#0029cc} [white]#idShort:#
+3+s|{set:cellbgcolor:#eeeeee}Variable_content 
+
+s|{set:cellbgcolor:#0029cc} [white]#Class:#
+3+s|{set:cellbgcolor:#eeeeee}SubmodelElementCollection 
+
+s|{set:cellbgcolor:#0029cc} [white]#semanticId:#
+3+s|{set:cellbgcolor:#eeeeee}- 
+
+s|{set:cellbgcolor:#0029cc} [white]#Parent:#
+3+s|{set:cellbgcolor:#eeeeee}Variable_content 
+
+s|{set:cellbgcolor:#0029cc} [white]#Explanation:#
+3+s|{set:cellbgcolor:#eeeeee}- 
+
+s|{set:cellbgcolor:#0029cc} [white]#Element details:#
+3+s|{set:cellbgcolor:#eeeeee}- 
+
+s|{set:cellbgcolor:#0029cc} [white]#[SME type] + +
+idShort#
+s| [white]#semanticId + +
+Description@en#
+s| [white]#[valueType] + +
+example#
+s| [white]#card.#
+
+
+
+|{set:cellbgcolor:#eeeeee}[Blob] + +
+1_General
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/heading1/1/0 + +
+- - -
+|[-] + +
+13 bytes
+|-
+
+
+
+|[Blob] + +
+1_1_About_this_document
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/heading2/1/0 + +
+- - -
+|[-] + +
+13 bytes
+|-
+
+
+
+|[Blob] + +
+Paragraph---50796025
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/textblock/1/0 + +
+- - -
+|[-] + +
+13 bytes
+|-
+
+
+
+|[Blob] + +
+1_2_Scope_of_the_Submodel
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/heading2/1/0 + +
+- - -
+|[-] + +
+13 bytes
+|-
+
+
+
+|[Blob] + +
+Paragraph---3CE29A1B
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/textblock/1/0 + +
+- - -
+|[-] + +
+13 bytes
+|-
+
+
+
+|[Blob] + +
+1_3_Relevant_standards_for_the_Submodel_template
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/heading2/1/0 + +
+- - -
+|[-] + +
+13 bytes
+|-
+
+
+
+|[Blob] + +
+Paragraph---6C678394
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/textblock/1/0 + +
+- - -
+|[-] + +
+13 bytes
+|-
+
+
+
+|[Blob] + +
+2_Information_set
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/heading1/1/0 + +
+- - -
+|[-] + +
+13 bytes
+|-
+
+
+
+|[Blob] + +
+2_1_Approach
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/heading2/1/0 + +
+- - -
+|[-] + +
+13 bytes
+|-
+
+
+
+|[Blob] + +
+Paragraph---13D64C1C
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/textblock/1/0 + +
+- - -
+|[-] + +
+13 bytes
+|-
+
+
+
+|[Blob] + +
+2_2_Overview_UML_model
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/heading2/1/0 + +
+- - -
+|[-] + +
+13 bytes
+|-
+
+
+
+|[Blob] + +
+Paragraph---3288E13E
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/textblock/1/0 + +
+- - -
+|[-] + +
+13 bytes
+|-
+
+
+
+|[Ref] + +
+UML_main
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/generate-uml/1/0 + +
+- - -
+|[-] + +
+[Submodel, www.example.com/ids/sm/1225_9020_5022_1974]
+|-
+
+
+
+|[Ref] + +
+Tables_main
+|http://admin-shell.io/aasx-package-explorer/functions/asciidoc/generate-tables/1/0 + +
+- - -
+|[-] + +
+[Submodel, www.example.com/ids/sm/1225_9020_5022_1974]
+|-
+
+
+
+|===
+
+

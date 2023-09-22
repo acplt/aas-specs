@@ -1,0 +1,79 @@
+@startuml
+!theme plain
+top to bottom direction
+hide class circle
+hide class methods
+skinparam classAttributeIconSize 0
+' skinparam linetype polyline
+skinparam linetype ortho
+
+mainframe SMT Nameplate
+
+class "Nameplate" as ID00000001 <<SM>> {
+}
+
+class "ContactInformation" as ID00000002 <<SMC>> {
+}
+
+class "Phone" as ID00000003 <<SMC>> {
+}
+
+class "Fax" as ID00000004 <<SMC>> {
+}
+
+class "Email" as ID00000005 <<SMC>> {
+}
+
+class "IPCommunication{00}" as ID00000006 <<SMC>> {
+}
+
+class "Markings" as ID00000007 <<SML>> {
+}
+
+class "[00]" as ID00000008 <<SMC>> {
+}
+
+class "ExplosionSafeties" as ID00000009 <<SMC>> {
+}
+
+class "ExplosionSafety" as ID0000000A <<SMC>> {
+}
+
+class "AmbientConditions" as ID0000000B <<SMC>> {
+}
+
+class "ProcessConditions" as ID0000000C <<SMC>> {
+}
+
+class "ExternalElectricalCircuit" as ID0000000D <<SMC>> {
+}
+
+class "SafetyRelatedPropertiesForPassiveBehaviour" as ID0000000E <<SMC>> {
+}
+
+class "SafetyRelatedPropertiesForActiveBehaviour" as ID0000000F <<SMC>> {
+}
+
+class "AssetSpecificProperties" as ID00000010 <<SMC>> {
+}
+
+class "GuidelineSpecificProperties{00}" as ID00000011 <<SMC>> {
+}
+
+ID00000002 *-- "0..1" ID00000003 : ""
+ID00000002 *-- "0..1" ID00000004 : ""
+ID00000002 *-- "0..1" ID00000005 : ""
+ID00000002 *-- "0..*" ID00000006 : ""
+ID00000001 *--  ID00000002 : ""
+ID0000000A *-- "0..1" ID0000000B : ""
+ID0000000A *-- "0..1" ID0000000C : ""
+ID0000000D *-- "0..1" ID0000000E : ""
+ID0000000D *-- "0..1" ID0000000F : ""
+ID0000000A *-- "0..*" ID0000000D : ""
+ID00000009 *-- "1..*" ID0000000A : ""
+ID00000008 *-- "0..1" ID00000009 : ""
+ID00000007 *--  ID00000008 : ""
+ID00000001 *-- "0..*" ID00000007 : ""
+ID00000010 *-- "1..*" ID00000011 : ""
+ID00000001 *-- "0..1" ID00000010 : ""
+@enduml
