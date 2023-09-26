@@ -16,3 +16,6 @@ We have generated the HTML documentation for the following parts:
 == Submodel Template Specifications
 * link:AAS_Submodel_Templates/Digital_Nameplate/index.html[Digital Nameplate for Industrial Equipment]
 * link:AAS_Submodel_Templates/Digital_Nameplate_automatic_adoc/index.html[Digital Nameplate for Industrial Equipment (Test View)]
+
+== Others
+* link:AAS_Classes/index.html[Classes/Types in AAS Metamodel]
