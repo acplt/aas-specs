@@ -1,0 +1,208 @@
+image:media/media/image1.jpeg[media/media/image1,width=793,height=1121]
+
+Imprint
+
+*Publisher*
+
+Industrial Digital Twin Association
+
+Lyoner Strasse 18
+
+60528 Frankfurt am Main
+
+Germany
+
+https://www.industrialdigitaltwin.org/
+
+Version history
+
+[width="100%",cols="14%,17%,69%",options="header",]
+|===
+|1.1.2022 |1^st^ Version |Initial IDTA-Specification
+|Date |Version/Revision |CHANGES made
+| | |
+|===
+
+Contents
+
+link:#general[1 General link:#general[6]]
+
+link:#about-this-document[1.1 About this document link:#about-this-document[6]]
+
+link:#scope-of-the-submodel[1.2 Scope of the Submodel link:#scope-of-the-submodel[6]]
+
+link:#relevant-standards-for-the-submodel-template[1.3 Relevant standards for the Submodel template link:#relevant-standards-for-the-submodel-template[6]]
+
+link:#use-cases-requirements-and-design-decisions[1.4 Use cases&#44; requirements and design decisions link:#use-cases-requirements-and-design-decisions[6]]
+
+link:#submodel-title[2 Submodel TITLE link:#submodel-title[7]]
+
+link:#approach[2.1 Approach link:#approach[7]]
+
+link:#title[2.2 Title link:#title[7]]
+
+link:#title-1[2.3 Title link:#title-1[7]]
+
+link:#attributes[2.4 Attributes link:#attributes[8]]
+
+link:#explanations-on-used-table-formats[Annex A. Explanations on used table formats link:#explanations-on-used-table-formats[9]]
+
+link:#general-1[1. General link:#general-1[9]]
+
+link:#tables-on-submodels-and-submodelelements[2. Tables on Submodels and SubmodelElements link:#tables-on-submodels-and-submodelelements[9]]
+
+link:#bibliography[Bibliography link:#bibliography[10]]
+
+Figures
+
+link:#_Toc93071284[Figure 1 Overview on concepts of the VDI2770 according [7]&#44; by courtesy of VDI link:#_Toc93071284[5]]
+
+Tables
+
+link:#_Toc93071386[Table 1 link:#_Toc93071386[12]]
+
+== General
+
+=== About this document
+
+This document is a part of a specification series. Each part specifies the contents of a Submodel template for the Asset Administration Shell (AAS). The AAS is described in [1], [2], [3] and [6]. First exemplary Submodel contents were described in [4], while the actual format of this document was derived by the "Administration Shell in Practice" [5]. The format aims to be very concise, giving only minimal necessary information for applying a Submodel template, while leaving deeper descriptions and specification of concepts, structures and mapping to the respective documents [1] to [6].
+
+The target group of the specification are developers and editors of technical documentation and manufacturer information, which are describing assets in smart manufacturing by means of the Asset Administration Shell (AAS) and therefore need to create a Submodel instance with a hierarchy of SubmodelElements. This document especially details on the question, which SubmodelElements with which semantic identification shall be used for this purpose.
+
+=== Scope of the Submodel
+
+Description of the Scope
+
+=== Relevant standards for the Submodel template
+
+List of relevant standards with titel
+
+=== Use cases, requirements and design decisions
+
+List of relevant use cases.
+
+== Submodel TITLE
+
+=== Approach
+
+Please describe the approach
+
+=== Title
+
+If you need to use figures, pleas use the figure desciptions
+
+image:media/media/image2.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=252,height=183]
+
+Figure 1: Example of a figure
+
+=== Title
+
+If you need to use general tables, pleasd use the table descriptions.
+
+[#_Toc93071386 .anchor]####Table 1: Example of a table description
+
+[width="100%",cols="14%,34%,52%",options="header",]
+|===
+|Tabel ID |ClassID |Description
+|01-01 |Identification |
+|02-01 |Technical specifiction |
+|===
+
+=== Attributes
+
+Table for attributes look like this. Please remember to use the table descriptions.
+
+[width="100%",cols="16%,50%,25%,9%",]
+|===
+|*idShort:* a|
+ManufacturerDocumentation\{00}
+
+Note: a different idShort might be used, as long as it is unqiue in the Submodel.
+
+| |
+|*Class:* |Submodel (SM) | |
+|*semanticId:* |[IRI] https://admin-shell.io/vdi/2770/1/1/Documentation | |
+|*Parent:* |Asset Administration Shell, to which the documents shall be associated to | |
+|*Explanation:* |The Submodel defines a set of manufacturer documentation to bring about information from manufacturer to operator of industrial equipment. | |
+|*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.*
+|*idShort* |*Description@en* |*example* |
+a|
+{empty}[SMC]
+
+Document\{00}
+
+a|
+[IRI] http://admin-shell.io/vdi/2770/1/0/Document
+
+Each SMC describes a Document (see IEC 82045-1 and IEC 8245-2), which is asscoated to the particular Asset Administration Shell.
+
+|n/a |0..*
+a|
+{empty}[Entity]
+
+Entity\{00}
+
+a|
+[IRI] http://admin-shell.io/vdi/2770/1/0/EntityForDocumentation
+
+States, that the described Entity is an important entity for documentation of the superordinate Asset of the Asset Administration Shell.
+
+Note: typically, such Entities are well-identified sub-parts of the Asset, such as supplier parts delivered to the manufacturer of the Asset.
+
+Note: these Entities are the target of the “DocumentedEntity"-ReferenceElements of the particular Documents contained in this Submodel. This mechanism substitutes the ObjectId-provision of VDI 2770 (see section 2.2).
+
+Note: If the described Entity has an own Asset Administration Shell, the SelfManaged-flag and AssetId-reference of the Entity shall be set accordingly.
+
+|Entity for an important sealing or bearing of the quipment. |0..*
+| | | |
+|===
+
+== Explanations on used table formats
+
+=== General
+
+The used tables in this document try to outline information as concise as possible. They do not convey all information on Submodels and SubmodelElements. For this purpose, the definitive definitions are given by a separate file in form of an AASX file of the Submodel template and its elements.
+
+=== Tables on Submodels and SubmodelElements
+
+For clarity and brevity, a set of rules is used for the tables for describing Submodels and SubmodelElements.
+
+* The tables follow in principle the same conventions as in [5].
+* The table heads abbreviate 'cardinality' with 'card'.
+* The tables often place two informations in different rows of the same table cell. In this case, the first information is marked out by sharp brackets [] form the second information. A special case are the semanticIds, which are marked out by the format: (type)(local)[idType]value.
+* The types of SubmodelElements are abbreviated:
+
+[width="100%",cols="41%,59%",options="header",]
+|===
+|SME type |SubmodelElement type
+|Property |Property
+|MLP |MultiLanguageProperty
+|Range |Range
+|File |File
+|Blob |Blob
+|Ref |ReferenceElement
+|Rel |RelationshipElement
+|SMC |SubmodelElementCollection
+|===
+
+* If an idShort ends with '\{00}', this indicates a suffix of the respective length (here: 2) of decimal digits, in order to make the idShort unique. A different idShort might be choosen, as long as it is unique in the parent’s context.
+* The Keys of semanticId in the main section feature only idType and value, such as: [IRI]https://admin-shell.io/vdi/2770/1/0/DocumentId/Id. The attributes "type" and "local" (typically "ConceptDescription" and "(local)" or "GlobalReference" and (no-local)") need to be set accordingly; see [6].
+* If a table does not contain a column with "parent" heading, all represented attributes share the same parent. This parent is denoted in the head of the table.
+* Multi-language strings are represented by the text value, followed by '@'-character and the ISO 639 language code: example@EN.
+* The [valueType] is only given for Properties.
+
+== Bibliography
+
+[1] “Recommendations for implementing the strategic initiative INDUSTRIE 4.0”, acatech, April 2013. [Online]. Available https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/
+
+[2] “Implementation Strategy Industrie 4.0: Report on the results of the Industrie 4.0 Platform”; BITKOM e.V. / VDMA e.V., /ZVEI e.V., April 2015. [Online]. Available: https://www.bitkom.org/noindex/Publikationen/2016/Sonstiges/Implementation-Strategy-Industrie-40/2016-01-Implementation-Strategy-Industrie40.pdf
+
+[3] “The Structure of the Administration Shell: TRILATERAL PERSPECTIVES from France, Italy and Germany”, March 2018, [Online]. Available: https://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/hm-2018-trilaterale-coop.html
+
+[4] “Beispiele zur Verwaltungsschale der Industrie 4.0-Komponente – Basisteil (German)”; ZVEI e.V., Whitepaper, November 2016. [Online]. Available: https://www.zvei.org/presse-medien/publikationen/beispiele-zur-verwaltungsschale-der-industrie-40-komponente-basisteil/
+
+[5] “Verwaltungsschale in der Praxis. Wie definiere ich Teilmodelle, beispielhafte Teilmodelle und Interaktion zwischen Verwaltungsschalen (in German)”, Version 1.0, April 2019, Plattform Industrie 4.0 in Kooperation mit VDE GMA Fachausschuss 7.20, Federal Ministry for Economic Affairs and Energy (BMWi), Available: https://www.plattform-i40.de/PI40/Redaktion/DE/Downloads/Publikation/2019-verwaltungsschale-in-der-praxis.html
+
+[6] “Details of the Asset Administration Shell; Part 1 - The exchange of information between partners in the value chain of Industrie 4.0 (Version 3.0RC01)”, November 2020, [Online]. Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/Details-of-the-Asset-Administration-Shell-Part1.html
+
+www.industrialdigitaltwin.org

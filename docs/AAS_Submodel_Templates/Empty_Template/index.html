@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.16">
+<meta name="author" content="IDTA">
+<link rel="icon" type="image/png" href="../../favicon.png">
+<title>Submodel Template of the Asset Administration Shell</title>
+<style>
+
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
+@import "https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css";
+
+/*body {
+	background: #f2f2f2;
+}*/
+
+#toc.toc2 {
+  background: #ffffff;
+}
+
+#toctitle {
+  color: #0028CD;
+}
+
+/*Links*/
+a {
+  color: #0028CD;
+}
+
+a:hover, a:focus {
+  color: #ff500f;
+}
+
+/*Details*/
+#header .details {
+  color: #ff500f;
+}
+
+
+/*Headers*/
+
+#header > h1:first-child {
+  color: #3149cc;
+}
+h1, h2, h3, .sidebarblock > .content > .title, h4, h5, h6 {
+  color: #3149cc;
+}
+
+.subheader, .admonitionblock td.content > .title, .audioblock > .title, .exampleblock > .title, .imageblock > .title, .listingblock > .title, .literalblock > .title, .stemblock > .title, .openblock > .title, .paragraph > .title, .quoteblock > .title, table.tableblock > .title, .verseblock > .title, .videoblock > .title, .dlist > .title, .olist > .title, .ulist > .title, .qlist > .title, .hdlist > .title {
+  color: #3149cc;
+}
+
+/*Tables*/
+.table-with-appendix-table {
+	margin-bottom: 0;
+}
+
+/*Header column*/
+tbody tr th {
+	background: #0028CD;
+}
+tbody tr th, tbody tr th p, tfoot tr th, tfoot tr th p {
+	color: #ffffff;
+}
+
+/*Header row*/
+table thead, table tfoot {
+    background: #0028CD;
+}
+
+table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
+    color: #ffffff;
+}
+
+.exampleblock > .content {
+	background: #e5f0f7;
+	box-shadow: 0 1px 4px #e0e0dc;
+}
+
+#header, #content, #footnotes, #footer {
+	margin-left: 0;
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+</style>
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Submodel Template of the Asset Administration Shell</h1>
+<div class="details">
+<span id="author" class="author">IDTA</span><br>
+<span id="revnumber">number 4711-1-0,</span>
+<span id="revdate">Month YEAR</span>
+<br><span id="revremark">Submodel Template of the Asset Administration Shell</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Digital Nameplate for Industrial Equipment</div>
+<ul class="sectlevel1">
+<li><a href="#_general">General</a>
+<ul class="sectlevel2">
+<li><a href="#_about_this_document">About this document</a></li>
+<li><a href="#_scope_of_the_submodel">Scope of the Submodel</a></li>
+<li><a href="#_relevant_standards_for_the_submodel_template">Relevant standards for the Submodel template</a></li>
+<li><a href="#_use_cases_requirements_and_design_decisions">Use cases, requirements and design decisions</a></li>
+</ul>
+</li>
+<li><a href="#_submodel_title">Submodel TITLE</a>
+<ul class="sectlevel2">
+<li><a href="#_approach">Approach</a></li>
+<li><a href="#_title">Title</a></li>
+<li><a href="#_title_2">Title</a></li>
+<li><a href="#_attributes">Attributes</a></li>
+</ul>
+</li>
+<li><a href="#_explanations_on_used_table_formats">Explanations on used table formats</a>
+<ul class="sectlevel2">
+<li><a href="#_general_2">General</a></li>
+<li><a href="#_tables_on_submodels_and_submodelelements">Tables on Submodels and SubmodelElements</a></li>
+</ul>
+</li>
+<li><a href="#_bibliography">Bibliography</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_general">General</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_about_this_document">About this document</h3>
+<div class="paragraph">
+<p>This document is a part of a specification series. Each part specifies the contents of a Submodel template for the Asset Administration Shell (AAS). The AAS is described in <a href="#bib1">[1]</a>, <a href="#bib2">[2]</a>, <a href="#bib3">[3]</a> and <a href="#bib6">[6]</a>. First exemplary Submodel contents were described in <a href="#bib4">[4]</a>, while the actual format of this document was derived by the "Administration Shell in Practice" <a href="#bib5">[5]</a>. The format aims to be very concise, giving only minimal necessary information for applying a Submodel template, while leaving deeper descriptions and specification of concepts, structures and mapping to the respective documents <a href="#bib1">[1]</a> to <a href="#bib6">[6]</a>.</p>
+</div>
+<div class="paragraph">
+<p>The target group of the specification are developers and editors of technical documentation and manufacturer information, which are describing assets in smart manufacturing by means of the Asset Administration Shell (AAS) and therefore need to create a Submodel instance with a hierarchy of SubmodelElements. This document especially details on the question, which SubmodelElements with which semantic identification shall be used for this purpose.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_scope_of_the_submodel">Scope of the Submodel</h3>
+<div class="paragraph">
+<p>Description of the Scope</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_relevant_standards_for_the_submodel_template">Relevant standards for the Submodel template</h3>
+<div class="paragraph">
+<p>List of relevant standards with titel</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_cases_requirements_and_design_decisions">Use cases, requirements and design decisions</h3>
+<div class="paragraph">
+<p>List of relevant use cases.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_submodel_title">Submodel TITLE</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_approach">Approach</h3>
+<div class="paragraph">
+<p>Please describe the approach</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_title">Title</h3>
+<div class="paragraph">
+<p>If you need to use figures, pleas use the figure desciptions</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="media/image2.png" alt="Ein Bild" width="252" height="183">
+</div>
+<div class="title">Figure 1. Example of a figure</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_title_2">Title</h3>
+<div class="paragraph">
+<p>If you need to use general tables, pleasd use the table descriptions.</p>
+</div>
+<div class="paragraph">
+<p>Example of a table description</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14%;">
+<col style="width: 34%;">
+<col style="width: 52%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Tabel ID</th>
+<th class="tableblock halign-left valign-top">ClassID</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">01-01</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identification</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">02-01</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Technical specifiction</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_attributes">Attributes</h3>
+<div class="paragraph">
+<p>Table for attributes look like this. Please remember to use the table descriptions.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch table-with-appendix-table">
+<colgroup>
+<col style="width: 16%;">
+<col style="width: 84%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>idShort:</strong></p></th>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ManufacturerDocumentation{00}</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Note: a different idShort might be used, as long as it is unqiue in the Submodel.</p>
+</div>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>Class:</strong></p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submodel (SM)</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>semanticId:</strong></p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[IRI] <a href="https://admin-shell.io/vdi/2770/1/1/Documentation" class="bare">https://admin-shell.io/vdi/2770/1/1/Documentation</a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>Parent:</strong></p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Asset Administration Shell, to which the documents shall be associated to</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>Explanation:</strong></p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Submodel defines a set of manufacturer documentation to bring about information from manufacturer to operator of industrial equipment.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16%;">
+<col style="width: 50%;">
+<col style="width: 25%;">
+<col style="width: 9%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>[SME type]</strong></p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>semanticId = [idType]value</strong></p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>[valueType]</strong></p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>card.</strong></p></th>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>idShort</strong></p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>Description@en</strong></p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>example</strong></p></th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Document{00}</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>[IRI] <a href="http://admin-shell.io/vdi/2770/1/0/Document" class="bare">http://admin-shell.io/vdi/2770/1/0/Document</a></p>
+</div>
+<div class="paragraph">
+<p>Each SMC describes a Document (see IEC 82045-1 and IEC 8245-2), which is asscoated to the particular Asset Administration Shell.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Entity{00}</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>[IRI] <a href="http://admin-shell.io/vdi/2770/1/0/EntityForDocumentation" class="bare">http://admin-shell.io/vdi/2770/1/0/EntityForDocumentation</a></p>
+</div>
+<div class="paragraph">
+<p>States, that the described Entity is an important entity for documentation of the superordinate Asset of the Asset Administration Shell.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Note: typically, such Entities are well-identified sub-parts of the Asset, such as supplier parts delivered to the manufacturer of the Asset.</p>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Note: these Entities are the target of the “DocumentedEntity"-ReferenceElements of the particular Documents contained in this Submodel. This mechanism substitutes the ObjectId-provision of VDI 2770 (see section 2.2).</p>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Note: If the described Entity has an own Asset Administration Shell, the SelfManaged-flag and AssetId-reference of the Entity shall be set accordingly.</p>
+</div>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entity for an important sealing or bearing of the quipment.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_explanations_on_used_table_formats">Explanations on used table formats</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_general_2">General</h3>
+<div class="paragraph">
+<p>The used tables in this document try to outline information as concise as possible. They do not convey all information on Submodels and SubmodelElements. For this purpose, the definitive definitions are given by a separate file in form of an AASX file of the Submodel template and its elements.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tables_on_submodels_and_submodelelements">Tables on Submodels and SubmodelElements</h3>
+<div class="paragraph">
+<p>For clarity and brevity, a set of rules is used for the tables for describing Submodels and SubmodelElements.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The tables follow in principle the same conventions as in <a href="#bib5">[5]</a>.</p>
+</li>
+<li>
+<p>The table heads abbreviate 'cardinality' with 'card'.</p>
+</li>
+<li>
+<p>The tables often place two informations in different rows of the same table cell. In this case, the first information is marked out by sharp brackets [] form the second information. A special case are the semanticIds, which are marked out by the format: (type)(local)[idType]value.</p>
+</li>
+<li>
+<p>The types of SubmodelElements are abbreviated:</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 41%;">
+<col style="width: 59%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">SME type</th>
+<th class="tableblock halign-left valign-top">SubmodelElement type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Property</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MLP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MultiLanguageProperty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Blob</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Blob</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ref</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ReferenceElement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RelationshipElement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SMC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SubmodelElementCollection</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>If an idShort ends with '{00}', this indicates a suffix of the respective length (here: 2) of decimal digits, in order to make the idShort unique. A different idShort might be choosen, as long as it is unique in the parent’s context.</p>
+</li>
+<li>
+<p>The Keys of semanticId in the main section feature only idType and value, such as: [IRI]<a href="https://admin-shell.io/vdi/2770/1/0/DocumentId/Id" class="bare">https://admin-shell.io/vdi/2770/1/0/DocumentId/Id</a>. The attributes <code>type</code> and "local" (typically <code>ConceptDescription</code> and "(local)" or <code>GlobalReference</code> and (no-local)") need to be set accordingly; see <a href="#bib6">[6]</a>.</p>
+</li>
+<li>
+<p>If a table does not contain a column with <code>parent</code> heading, all represented attributes share the same parent. This parent is denoted in the head of the table.</p>
+</li>
+<li>
+<p>Multi-language strings are represented by the text value, followed by '@'-character and the ISO 639 language code: example@EN.</p>
+</li>
+<li>
+<p>The [valueType] is only given for Properties.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bibliography">Bibliography</h2>
+<div class="sectionbody">
+<div id="bib1" class="paragraph">
+<p>[1] “Recommendations for implementing the strategic initiative INDUSTRIE 4.0”, acatech, April 2013. [Online]. Available <a href="https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/" class="bare">https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/</a></p>
+</div>
+<div id="bib2" class="paragraph">
+<p>[2] “Implementation Strategy Industrie 4.0: Report on the results of the Industrie 4.0 Platform”; BITKOM e.V. / VDMA e.V., /ZVEI e.V., April 2015. [Online]. Available: <a href="https://www.bitkom.org/noindex/Publikationen/2016/Sonstiges/Implementation-Strategy-Industrie-40/2016-01-Implementation-Strategy-Industrie40.pdf" class="bare">https://www.bitkom.org/noindex/Publikationen/2016/Sonstiges/Implementation-Strategy-Industrie-40/2016-01-Implementation-Strategy-Industrie40.pdf</a></p>
+</div>
+<div id="bib3" class="paragraph">
+<p>[3] “The Structure of the Administration Shell: TRILATERAL PERSPECTIVES from France, Italy and Germany”, March 2018, [Online]. Available: <a href="https://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/hm-2018-trilaterale-coop.html" class="bare">https://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/hm-2018-trilaterale-coop.html</a></p>
+</div>
+<div id="bib4" class="paragraph">
+<p>[4] “Beispiele zur Verwaltungsschale der Industrie 4.0-Komponente – Basisteil (German)”; ZVEI e.V., Whitepaper, November 2016. [Online]. Available: <a href="https://www.zvei.org/presse-medien/publikationen/beispiele-zur-verwaltungsschale-der-industrie-40-komponente-basisteil/" class="bare">https://www.zvei.org/presse-medien/publikationen/beispiele-zur-verwaltungsschale-der-industrie-40-komponente-basisteil/</a></p>
+</div>
+<div id="bib5" class="paragraph">
+<p>[5] “Verwaltungsschale in der Praxis. Wie definiere ich Teilmodelle, beispielhafte Teilmodelle und Interaktion zwischen Verwaltungsschalen (in German)”, Version 1.0, April 2019, Plattform Industrie 4.0 in Kooperation mit VDE GMA Fachausschuss 7.20, Federal Ministry for Economic Affairs and Energy (BMWi), Available: <a href="https://www.plattform-i40.de/PI40/Redaktion/DE/Downloads/Publikation/2019-verwaltungsschale-in-der-praxis.html" class="bare">https://www.plattform-i40.de/PI40/Redaktion/DE/Downloads/Publikation/2019-verwaltungsschale-in-der-praxis.html</a></p>
+</div>
+<div id="bib6" class="paragraph">
+<p>[6] “Details of the Asset Administration Shell; Part 1 - The exchange of information between partners in the value chain of Industrie 4.0 (Version 3.0RC01)”, November 2020, [Online]. Available: <a href="https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/Details-of-the-Asset-Administration-Shell-Part1.html" class="bare">https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/Details-of-the-Asset-Administration-Shell-Part1.html</a></p>
+</div>
+<div class="paragraph">
+<p>www.industrialdigitaltwin.org</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
