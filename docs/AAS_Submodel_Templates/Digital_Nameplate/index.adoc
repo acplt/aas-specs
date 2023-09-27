@@ -1,7 +1,7 @@
 :toc: left
 :toc-title: Digital Nameplate for Industrial Equipment
 :stylesheet: ../../style.css
-:favicon: ../favicon.png
+:favicon: ../../favicon.png
 :imagesdir: media/
 :nofooter:
 
