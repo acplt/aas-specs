@@ -5,7 +5,7 @@ from remove_pattern_from_adoc import remove_text_matching_regex
 from fix_angular_brackets import escape_double_angular_brackets
 from recolor_notes import recolor_notes
 from fix_the_biblio import add_anchor_to_biblio, add_link_to_biblio
-from fix_image_captions_in_adoc import move_caption_to_beginning
+from fix_image_captions_in_adoc import use_block_tag_for_img_and_move_caption_ahead
 from fixquotesonkeywords import replace_quotes_on_keyword
 from fix_square_bracket import escape_square_brackets
 import util.helper_func as utils
@@ -47,7 +47,7 @@ def convert_spec_part_1():
     content = add_link_to_biblio(content, keys)
 
     # 7 Fix the image captions
-    content = move_caption_to_beginning(content)
+    content = use_block_tag_for_img_and_move_caption_ahead(content)
 
     # # 8 Fix the Quotes on keyword
     # content = replace_quotes_on_keyword(content)
@@ -81,7 +81,7 @@ def convert_spec_part_5():
     content = add_link_to_biblio(content, keys)
 
     # 7 Fix the image captions
-    content = move_caption_to_beginning(content)
+    content = use_block_tag_for_img_and_move_caption_ahead(content)
 
     # # # 8 Fix the Quotes on keyword
     # # content = replace_quotes_on_keyword(content)
@@ -143,7 +143,7 @@ def convert_nameplate_submodel():
     content = add_link_to_biblio(content, keys)
 
     # 7 Fix the image captions
-    content = move_caption_to_beginning(content)
+    content = use_block_tag_for_img_and_move_caption_ahead(content)
 
     # 8 Fix the Quotes on keyword
     content = replace_quotes_on_keyword(content)
