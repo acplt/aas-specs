@@ -1,5 +1,7 @@
 :toc: left
 :toc-title: Specification of the Asset Administration Shell. Part 5: Package File Format (AASX)
+:sectlinks:
+:sectnums:
 :stylesheet: ../style.css
 :favicon: ../favicon.png
 :imagesdir: media/

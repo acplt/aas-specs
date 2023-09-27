@@ -47,6 +47,14 @@ a:hover, a:focus {
 h1, h2, h3, .sidebarblock > .content > .title, h4, h5, h6 {
   color: #3149cc;
 }
+#content h1 > a.link:hover, h2 > a.link:hover, h3 > a.link:hover, #toctitle > a.link:hover, .sidebarblock > .content > .title > a.link:hover, h4 > a.link:hover, h5 > a.link:hover, h6 > a.link:hover {
+	color: #ff500f;
+}
+
+#content h1 > a.link, h2 > a.link, h3 > a.link, #toctitle > a.link, .sidebarblock > .content > .title > a.link, h4 > a.link, h5 > a.link, h6 > a.link {
+	color: #3149cc;
+	text-decoration: none;
+}
 
 .subheader, .admonitionblock td.content > .title, .audioblock > .title, .exampleblock > .title, .imageblock > .title, .listingblock > .title, .literalblock > .title, .stemblock > .title, .openblock > .title, .paragraph > .title, .quoteblock > .title, table.tableblock > .title, .verseblock > .title, .videoblock > .title, .dlist > .title, .olist > .title, .ulist > .title, .qlist > .title, .hdlist > .title {
   color: #3149cc;
@@ -95,128 +103,128 @@ img {
 <div id="toc" class="toc2">
 <div id="toctitle">Specification of the Asset Administration Shell. Part 1: Metamodel</div>
 <ul class="sectlevel1">
-<li><a href="#_preamble">Preamble</a>
+<li><a href="#_preamble">1. Preamble</a>
 <ul class="sectlevel2">
-<li><a href="#_editorial_notes">Editorial Notes</a></li>
-<li><a href="#_scope_of_this_document">Scope of this Document</a></li>
-<li><a href="#_structure_of_the_document">Structure of the Document</a></li>
-<li><a href="#_working_principles">Working Principles</a></li>
+<li><a href="#_editorial_notes">1.1. Editorial Notes</a></li>
+<li><a href="#_scope_of_this_document">1.2. Scope of this Document</a></li>
+<li><a href="#_structure_of_the_document">1.3. Structure of the Document</a></li>
+<li><a href="#_working_principles">1.4. Working Principles</a></li>
 </ul>
 </li>
-<li><a href="#_terms_definitions_and_abbreviations">Terms, Definitions and Abbreviations</a>
+<li><a href="#_terms_definitions_and_abbreviations">2. Terms, Definitions and Abbreviations</a>
 <ul class="sectlevel2">
-<li><a href="#_terms_and_definitions">Terms and Definitions</a></li>
-<li><a href="#_abbreviations_used_in_this_document">Abbreviations Used in this Document</a></li>
-<li><a href="#_abbreviations_of_metamodel">Abbreviations of Metamodel</a></li>
+<li><a href="#_terms_and_definitions">2.1. Terms and Definitions</a></li>
+<li><a href="#_abbreviations_used_in_this_document">2.2. Abbreviations Used in this Document</a></li>
+<li><a href="#_abbreviations_of_metamodel">2.3. Abbreviations of Metamodel</a></li>
 </ul>
 </li>
-<li><a href="#_introduction">Introduction</a></li>
-<li><a href="#_general">General</a>
+<li><a href="#_introduction">3. Introduction</a></li>
+<li><a href="#_general">4. General</a>
 <ul class="sectlevel2">
-<li><a href="#_introduction_2">Introduction</a></li>
-<li><a href="#_types_and_instances">Types and Instances</a></li>
-<li><a href="#_identification_of_elements">Identification of Elements</a></li>
-<li><a href="#_matching_strategies">Matching Strategies</a></li>
-<li><a href="#_submodel_instances_and_templates">Submodel Instances and Templates</a></li>
-<li><a href="#_events">Events</a></li>
+<li><a href="#_introduction_2">4.1. Introduction</a></li>
+<li><a href="#_types_and_instances">4.2. Types and Instances</a></li>
+<li><a href="#_identification_of_elements">4.3. Identification of Elements</a></li>
+<li><a href="#_matching_strategies">4.4. Matching Strategies</a></li>
+<li><a href="#_submodel_instances_and_templates">4.5. Submodel Instances and Templates</a></li>
+<li><a href="#_events">4.6. Events</a></li>
 </ul>
 </li>
-<li><a href="#_the_information_metamodel_of_the_asset_administration_shell_normative">The Information Metamodel of the Asset Administration Shell (normative)</a>
+<li><a href="#_the_information_metamodel_of_the_asset_administration_shell_normative">5. The Information Metamodel of the Asset Administration Shell (normative)</a>
 <ul class="sectlevel2">
-<li><a href="#_introduction_3">Introduction</a></li>
-<li><a href="#_overview_metamodel_of_the_asset_administration_shell">Overview Metamodel of the Asset Administration Shell</a></li>
-<li><a href="#_metamodel_specification_details_designators">Metamodel Specification Details: Designators</a></li>
+<li><a href="#_introduction_3">5.1. Introduction</a></li>
+<li><a href="#_overview_metamodel_of_the_asset_administration_shell">5.2. Overview Metamodel of the Asset Administration Shell</a></li>
+<li><a href="#_metamodel_specification_details_designators">5.3. Metamodel Specification Details: Designators</a></li>
 </ul>
 </li>
-<li><a href="#_data_specification_templates_normative">Data Specification Templates (normative)</a>
+<li><a href="#_data_specification_templates_normative">6. Data Specification Templates (normative)</a>
 <ul class="sectlevel2">
-<li><a href="#_introduction_5">Introduction</a></li>
+<li><a href="#_introduction_5">6.1. Introduction</a></li>
 </ul>
 </li>
-<li><a href="#_mappings_to_data_formats_to_share_i4_0_compliant_information_normative">Mappings to Data Formats to Share I4.0-Compliant Information (normative)</a>
+<li><a href="#_mappings_to_data_formats_to_share_i4_0_compliant_information_normative">7. Mappings to Data Formats to Share I4.0-Compliant Information (normative)</a>
 <ul class="sectlevel2">
-<li><a href="#_general_5">General</a></li>
-<li><a href="#_general_rules">General Rules</a></li>
-<li><a href="#_xml">XML</a></li>
-<li><a href="#_json">JSON</a></li>
-<li><a href="#_rdf">RDF</a></li>
-<li><a href="#_automationml">AutomationML</a></li>
-<li><a href="#_opc_ua">OPC UA</a></li>
+<li><a href="#_general_5">7.1. General</a></li>
+<li><a href="#_general_rules">7.2. General Rules</a></li>
+<li><a href="#_xml">7.3. XML</a></li>
+<li><a href="#_json">7.4. JSON</a></li>
+<li><a href="#_rdf">7.5. RDF</a></li>
+<li><a href="#_automationml">7.6. AutomationML</a></li>
+<li><a href="#_opc_ua">7.7. OPC UA</a></li>
 </ul>
 </li>
-<li><a href="#_summary_and_outlook">Summary and Outlook</a></li>
-<li><a href="#_concepts_of_the_administration_shell">Concepts of the Administration Shell</a>
+<li><a href="#_summary_and_outlook">8. Summary and Outlook</a></li>
+<li><a href="#_concepts_of_the_administration_shell">9. Concepts of the Administration Shell</a>
 <ul class="sectlevel2">
-<li><a href="#_general_6">General</a></li>
-<li><a href="#_relevant_sources_and_documents">Relevant Sources and Documents</a></li>
-<li><a href="#_basic_concepts_for_industry_4_0">Basic Concepts for Industry 4.0</a></li>
-<li><a href="#_the_concept_of_properties">The Concept of Properties</a></li>
-<li><a href="#_the_concept_of_submodels">The Concept of Submodels</a></li>
-<li><a href="#_basic_structure_of_the_asset_administration_shell">Basic Structure of the Asset Administration Shell</a></li>
-<li><a href="#_how_are_new_identifiers_created">How Are New Identifiers Created?</a></li>
-<li><a href="#_best_practice_for_creating_uri_identifiers">Best Practice for Creating URI Identifiers</a></li>
+<li><a href="#_general_6">9.1. General</a></li>
+<li><a href="#_relevant_sources_and_documents">9.2. Relevant Sources and Documents</a></li>
+<li><a href="#_basic_concepts_for_industry_4_0">9.3. Basic Concepts for Industry 4.0</a></li>
+<li><a href="#_the_concept_of_properties">9.4. The Concept of Properties</a></li>
+<li><a href="#_the_concept_of_submodels">9.5. The Concept of Submodels</a></li>
+<li><a href="#_basic_structure_of_the_asset_administration_shell">9.6. Basic Structure of the Asset Administration Shell</a></li>
+<li><a href="#_how_are_new_identifiers_created">9.7. How Are New Identifiers Created?</a></li>
+<li><a href="#_best_practice_for_creating_uri_identifiers">9.8. Best Practice for Creating URI Identifiers</a></li>
 </ul>
 </li>
-<li><a href="#_requirements">Requirements</a></li>
-<li><a href="#_backus_naur_form">Backus-Naur-Form</a></li>
-<li><a href="#_templates_for_uml_tables">Templates for UML Tables</a>
+<li><a href="#_requirements">10. Requirements</a></li>
+<li><a href="#_backus_naur_form">11. Backus-Naur-Form</a></li>
+<li><a href="#_templates_for_uml_tables">12. Templates for UML Tables</a>
 <ul class="sectlevel2">
-<li><a href="#_general_7">General</a></li>
-<li><a href="#_template_for_classes">Template for Classes</a></li>
-<li><a href="#_template_for_enumerations">Template for Enumerations</a></li>
-<li><a href="#_template_for_primitives">Template for Primitives</a></li>
-<li><a href="#_handling_of_constraints">Handling of Constraints</a></li>
+<li><a href="#_general_7">12.1. General</a></li>
+<li><a href="#_template_for_classes">12.2. Template for Classes</a></li>
+<li><a href="#_template_for_enumerations">12.3. Template for Enumerations</a></li>
+<li><a href="#_template_for_primitives">12.4. Template for Primitives</a></li>
+<li><a href="#_handling_of_constraints">12.5. Handling of Constraints</a></li>
 </ul>
 </li>
-<li><a href="#_legend_for_uml_modelling">Legend for UML Modelling</a>
+<li><a href="#_legend_for_uml_modelling">13. Legend for UML Modelling</a>
 <ul class="sectlevel2">
-<li><a href="#_omg_uml_general">OMG UML General</a></li>
-<li><a href="#_uml_naming_rules">UML Naming Rules</a></li>
-<li><a href="#_templates_inheritance_qualifiers_and_categories">Templates, Inheritance, Qualifiers, and Categories</a></li>
-<li><a href="#_notes_to_graphical_uml_representation">Notes to Graphical UML Representation</a></li>
+<li><a href="#_omg_uml_general">13.1. OMG UML General</a></li>
+<li><a href="#_uml_naming_rules">13.2. UML Naming Rules</a></li>
+<li><a href="#_templates_inheritance_qualifiers_and_categories">13.3. Templates, Inheritance, Qualifiers, and Categories</a></li>
+<li><a href="#_notes_to_graphical_uml_representation">13.4. Notes to Graphical UML Representation</a></li>
 </ul>
 </li>
-<li><a href="#_how_to_use_the_metamodel">How to Use the Metamodel</a>
+<li><a href="#_how_to_use_the_metamodel">14. How to Use the Metamodel</a>
 <ul class="sectlevel2">
-<li><a href="#_composite_i4_0_components">Composite I4.0 Components</a></li>
+<li><a href="#_composite_i4_0_components">14.1. Composite I4.0 Components</a></li>
 </ul>
 </li>
-<li><a href="#_metamodel_uml_with_inherited_attributes">Metamodel UML with Inherited Attributes</a></li>
-<li><a href="#_metamodel_changes">Metamodel Changes</a>
+<li><a href="#_metamodel_uml_with_inherited_attributes">15. Metamodel UML with Inherited Attributes</a></li>
+<li><a href="#_metamodel_changes">16. Metamodel Changes</a>
 <ul class="sectlevel2">
-<li><a href="#_general_8">General</a></li>
-<li><a href="#_changes_v3_0_vs_v2_0_1">Changes V3.0 vs. V2.0.1</a></li>
-<li><a href="#_metamodel_changes_v3_0_vs_v2_0_1">Metamodel Changes V3.0 VS. V2.0.1</a></li>
-<li><a href="#_changes_v3_0_vs_v3_0rc02">Changes V3.0 Vs. V3.0RC02</a></li>
-<li><a href="#_metamodel_changes_v3_0_vs_v3_0rc02">Metamodel Changes V3.0 vs. V3.0RC02</a></li>
-<li><a href="#_changes_v3_0rc02_vs_v2_0_1">Changes V3.0RC02 vs. V2.0.1</a></li>
-<li><a href="#_metamodel_changes_v3_0rc02_vs_v2_0_1_wo_security_part">Metamodel Changes V3.0RC02 vs. V2.0.1 w/o Security Part</a></li>
-<li><a href="#_metamodel_changes_v3_0rc02_vs_v2_0_1_data_specification_iec61360">Metamodel Changes V3.0RC02 vs. V2.0.1 – Data Specification IEC61360</a></li>
-<li><a href="#_metamodel_changes_v3_0rc02_vs_v2_0_1_security_part">Metamodel Changes V3.0RC02 vs. V2.0.1 – Security Part</a></li>
-<li><a href="#_changes_v3_0rc02_vs_v3_0rc01">Changes V3.0RC02 vs. V3.0RC01</a></li>
-<li><a href="#_metamodel_changes_v3_0rc02_vs_v3_0rc01_wo_security_part">Metamodel Changes V3.0RC02 vs. V3.0RC01 w/o Security Part</a></li>
-<li><a href="#_metamodel_changes_v3_0rc02_vs_v3_0rc01_data_specification_iec61360">Metamodel Changes V3.0RC02 vs. V3.0RC01 – Data Specification IEC61360</a></li>
-<li><a href="#_metamodel_changes_v3_0rc02_vs_v3_0rc01_security_part">Metamodel Changes V3.0RC02 vs. V3.0RC01 – Security Part</a></li>
-<li><a href="#_changes_v3_0rc01_vs_v2_0_1">Changes V3.0RC01 vs. V2.0.1</a></li>
-<li><a href="#_metamodel_changes_v3_0rc01_wo_security_part">Metamodel Changes V3.0RC01 w/o Security Part</a></li>
-<li><a href="#_metamodel_changes_v3_0rc01_security_part">Metamodel Changes V3.0RC01 – Security Part</a></li>
-<li><a href="#_changes_v2_0_1_vs_v2_0">Changes V2.0.1 vs. V2.0</a></li>
-<li><a href="#_metamodel_changes_v2_0_1_wo_security_part">Metamodel Changes V2.0.1 w/o Security Part</a></li>
-<li><a href="#_changes_v2_0_vs_v1_0">Changes V2.0 vs. V1.0</a></li>
-<li><a href="#_metamodel_changes_v2_0_wo_security_part">Metamodel Changes V2.0 w/o Security Part</a></li>
-<li><a href="#_metamodel_changes_v2_0_security_part">Metamodel Changes V2.0 – Security Part</a></li>
+<li><a href="#_general_8">16.1. General</a></li>
+<li><a href="#_changes_v3_0_vs_v2_0_1">16.2. Changes V3.0 vs. V2.0.1</a></li>
+<li><a href="#_metamodel_changes_v3_0_vs_v2_0_1">16.3. Metamodel Changes V3.0 VS. V2.0.1</a></li>
+<li><a href="#_changes_v3_0_vs_v3_0rc02">16.4. Changes V3.0 Vs. V3.0RC02</a></li>
+<li><a href="#_metamodel_changes_v3_0_vs_v3_0rc02">16.5. Metamodel Changes V3.0 vs. V3.0RC02</a></li>
+<li><a href="#_changes_v3_0rc02_vs_v2_0_1">16.6. Changes V3.0RC02 vs. V2.0.1</a></li>
+<li><a href="#_metamodel_changes_v3_0rc02_vs_v2_0_1_wo_security_part">16.7. Metamodel Changes V3.0RC02 vs. V2.0.1 w/o Security Part</a></li>
+<li><a href="#_metamodel_changes_v3_0rc02_vs_v2_0_1_data_specification_iec61360">16.8. Metamodel Changes V3.0RC02 vs. V2.0.1 – Data Specification IEC61360</a></li>
+<li><a href="#_metamodel_changes_v3_0rc02_vs_v2_0_1_security_part">16.9. Metamodel Changes V3.0RC02 vs. V2.0.1 – Security Part</a></li>
+<li><a href="#_changes_v3_0rc02_vs_v3_0rc01">16.10. Changes V3.0RC02 vs. V3.0RC01</a></li>
+<li><a href="#_metamodel_changes_v3_0rc02_vs_v3_0rc01_wo_security_part">16.11. Metamodel Changes V3.0RC02 vs. V3.0RC01 w/o Security Part</a></li>
+<li><a href="#_metamodel_changes_v3_0rc02_vs_v3_0rc01_data_specification_iec61360">16.12. Metamodel Changes V3.0RC02 vs. V3.0RC01 – Data Specification IEC61360</a></li>
+<li><a href="#_metamodel_changes_v3_0rc02_vs_v3_0rc01_security_part">16.13. Metamodel Changes V3.0RC02 vs. V3.0RC01 – Security Part</a></li>
+<li><a href="#_changes_v3_0rc01_vs_v2_0_1">16.14. Changes V3.0RC01 vs. V2.0.1</a></li>
+<li><a href="#_metamodel_changes_v3_0rc01_wo_security_part">16.15. Metamodel Changes V3.0RC01 w/o Security Part</a></li>
+<li><a href="#_metamodel_changes_v3_0rc01_security_part">16.16. Metamodel Changes V3.0RC01 – Security Part</a></li>
+<li><a href="#_changes_v2_0_1_vs_v2_0">16.17. Changes V2.0.1 vs. V2.0</a></li>
+<li><a href="#_metamodel_changes_v2_0_1_wo_security_part">16.18. Metamodel Changes V2.0.1 w/o Security Part</a></li>
+<li><a href="#_changes_v2_0_vs_v1_0">16.19. Changes V2.0 vs. V1.0</a></li>
+<li><a href="#_metamodel_changes_v2_0_wo_security_part">16.20. Metamodel Changes V2.0 w/o Security Part</a></li>
+<li><a href="#_metamodel_changes_v2_0_security_part">16.21. Metamodel Changes V2.0 – Security Part</a></li>
 </ul>
 </li>
-<li><a href="#_bibliography">Bibliography</a></li>
+<li><a href="#_bibliography">17. Bibliography</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_preamble">Preamble</h2>
+<h2 id="_preamble"><a class="link" href="#_preamble">1. Preamble</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_editorial_notes">Editorial Notes</h3>
+<h3 id="_editorial_notes"><a class="link" href="#_editorial_notes">1.1. Editorial Notes</a></h3>
 <div class="paragraph">
 <p>This document (version 3.0) was produced from June 2022 to January 2023 by the joint sub working group "Asset Administration Shell" of the working group "Reference Architectures, Standards and Norms" of the Plattform Industrie 4.0 and the working group "Open Technology" of the Industrial Digital Twin Association (IDTA). It is the first release published by the Industrial Digital Twin Association.</p>
 </div>
@@ -265,7 +273,7 @@ img {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_scope_of_this_document">Scope of this Document</h3>
+<h3 id="_scope_of_this_document"><a class="link" href="#_scope_of_this_document">1.2. Scope of this Document</a></h3>
 <div class="paragraph">
 <p>The aim of this document is to define selected specifications of the structure of the Administration Shell to enable the meaningful exchange of information about assets and I4.0 components between partners in a value creation network.</p>
 </div>
@@ -299,7 +307,7 @@ img {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_structure_of_the_document">Structure of the Document</h3>
+<h3 id="_structure_of_the_document"><a class="link" href="#_structure_of_the_document">1.3. Structure of the Document</a></h3>
 <div class="paragraph">
 <p>All clauses that are normative have "(normative)" as a suffix in the heading of the clause.</p>
 </div>
@@ -338,7 +346,7 @@ img {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_working_principles">Working Principles</h3>
+<h3 id="_working_principles"><a class="link" href="#_working_principles">1.4. Working Principles</a></h3>
 <div class="paragraph">
 <p>The work is based on the following principle: keep it simple but do not simplify if it affects interoperability.</p>
 </div>
@@ -358,10 +366,10 @@ img {
 </div>
 </div>
 <div class="sect1">
-<h2 id="_terms_definitions_and_abbreviations">Terms, Definitions and Abbreviations</h2>
+<h2 id="_terms_definitions_and_abbreviations"><a class="link" href="#_terms_definitions_and_abbreviations">2. Terms, Definitions and Abbreviations</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_terms_and_definitions">Terms and Definitions</h3>
+<h3 id="_terms_and_definitions"><a class="link" href="#_terms_and_definitions">2.1. Terms and Definitions</a></h3>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
@@ -1043,7 +1051,7 @@ Examples of type assets are type of material, a product type, a type of a part, 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_abbreviations_used_in_this_document">Abbreviations Used in this Document</h3>
+<h3 id="_abbreviations_used_in_this_document"><a class="link" href="#_abbreviations_used_in_this_document">2.2. Abbreviations Used in this Document</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 21%;">
@@ -1208,7 +1216,7 @@ Examples of type assets are type of material, a product type, a type of a part, 
 </table>
 </div>
 <div class="sect2">
-<h3 id="_abbreviations_of_metamodel">Abbreviations of Metamodel</h3>
+<h3 id="_abbreviations_of_metamodel"><a class="link" href="#_abbreviations_of_metamodel">2.3. Abbreviations of Metamodel</a></h3>
 <div class="paragraph">
 <p>The following abbreviations are not used in the document but may be used as abbreviations for the elements in the metamodel defined in this document.</p>
 </div>
@@ -1331,7 +1339,7 @@ Examples of type assets are type of material, a product type, a type of a part, 
 </div>
 </div>
 <div class="sect1">
-<h2 id="_introduction">Introduction</h2>
+<h2 id="_introduction"><a class="link" href="#_introduction">3. Introduction</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This document specifies the information metamodel of the Asset Administration Shell.</p>
@@ -1403,10 +1411,10 @@ Examples of type assets are type of material, a product type, a type of a part, 
 </div>
 </div>
 <div class="sect1">
-<h2 id="_general">General</h2>
+<h2 id="_general"><a class="link" href="#_general">4. General</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_introduction_2">Introduction</h3>
+<h3 id="_introduction_2"><a class="link" href="#_introduction_2">4.1. Introduction</a></h3>
 <div class="paragraph">
 <p>Before specifying the information metamodel of the Asset Administration Shell, some general topics relevant for the Asset Administration Shell are explained.</p>
 </div>
@@ -1427,9 +1435,9 @@ Examples of type assets are type of material, a product type, a type of a part, 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_types_and_instances">Types and Instances</h3>
+<h3 id="_types_and_instances"><a class="link" href="#_types_and_instances">4.2. Types and Instances</a></h3>
 <div class="sect3">
-<h4 id="_life_cycle_with_type_assets_and_instance_assets">Life Cycle with Type Assets and Instance Assets</h4>
+<h4 id="_life_cycle_with_type_assets_and_instance_assets"><a class="link" href="#_life_cycle_with_type_assets_and_instance_assets">4.2.1. Life Cycle with Type Assets and Instance Assets</a></h4>
 <div class="paragraph">
 <p>Industry 4.0 utilizes an extended understanding of assets, comprising elements such as factories, production systems, equipment, machines, components, produced products and raw materials, business processes and orders, immaterial assets (such as processes, software, documents, plans, intellectual property, standards), services, human personnel, etc..</p>
 </div>
@@ -1521,7 +1529,7 @@ Maintenance</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_asset_administration_shells_representing_type_assets_and_instance_assets">Asset Administration Shells Representing Type Assets and Instance Assets</h4>
+<h4 id="_asset_administration_shells_representing_type_assets_and_instance_assets"><a class="link" href="#_asset_administration_shells_representing_type_assets_and_instance_assets">4.2.2. Asset Administration Shells Representing Type Assets and Instance Assets</a></h4>
 <div class="paragraph">
 <p>An Asset Administration Shell either represents a type asset or an instance asset. Typically, there is a relationship between instance assets and a type asset. However, not every instance asset is required to have a corresponding type asset.</p>
 </div>
@@ -1618,7 +1626,7 @@ Maintenance</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_asset_administration_shell_types_and_instances">Asset Administration Shell Types and Instances</h4>
+<h4 id="_asset_administration_shell_types_and_instances"><a class="link" href="#_asset_administration_shell_types_and_instances">4.2.3. Asset Administration Shell Types and Instances</a></h4>
 <div class="paragraph">
 <p>In the previous clause, type assets and instance assets were explained. The obvious question now is how to harmonize Asset Administration Shells and Asset Administration Shell types. The example in shows that the attributes "globalAssetId" and "assetKind" as well as the global Asset Administration Shell identifier (<em>id</em>, represented as name of the class) are present for all Asset Administration Shells. However, if there is no standard, the semantics of "id", "globalAssetId" or "kind" are not clear, although they are the same for all Asset Administration Shells. It is also not clear, which of the attributes are mandatory and which are specific for the asset (type or instance), as illustrated in .</p>
 </div>
@@ -1662,9 +1670,9 @@ Maintenance</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_identification_of_elements">Identification of Elements</h3>
+<h3 id="_identification_of_elements"><a class="link" href="#_identification_of_elements">4.3. Identification of Elements</a></h3>
 <div class="sect3">
-<h4 id="_overview">Overview</h4>
+<h4 id="_overview"><a class="link" href="#_overview">4.3.1. Overview</a></h4>
 <div class="paragraph">
 <p>According to <a href="#bib4">[4]</a>, identifiers are needed for the unique identification of many different elements within the domain of smart manufacturing. They are a fundamental element of a formal description of the Administration Shell. Identification is especially required for</p>
 </div>
@@ -1699,7 +1707,7 @@ Maintenance</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_identifiers_for_assets_and_administration_shells">Identifiers for Assets and Administration Shells</h4>
+<h4 id="_identifiers_for_assets_and_administration_shells"><a class="link" href="#_identifiers_for_assets_and_administration_shells">4.3.2. Identifiers for Assets and Administration Shells</a></h4>
 <div class="paragraph">
 <p>In the domain of smart manufacturing, the assets need to be uniquely identified worldwide <a href="#bib4">[4]</a> <a href="#bib20">[20]</a> by the means of identifiers (IDs). The Administration Shell also has a unique ID (see Figure 5).</p>
 </div>
@@ -1717,7 +1725,7 @@ Maintenance</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_what_type_of_identifiers_exist">What Type of Identifiers Exist?</h4>
+<h4 id="_what_type_of_identifiers_exist"><a class="link" href="#_what_type_of_identifiers_exist">4.3.3. What Type of Identifiers Exist?</a></h4>
 <div class="paragraph">
 <p>In <a href="#bib4">[4]</a><a href="#bib20">[20]</a>, two standard-conforming global identification types are defined:</p>
 </div>
@@ -1758,7 +1766,7 @@ Maintenance</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_which_identifiers_for_which_elements">Which Identifiers for Which Elements?</h4>
+<h4 id="_which_identifiers_for_which_elements"><a class="link" href="#_which_identifiers_for_which_elements">4.3.4. Which Identifiers for Which Elements?</a></h4>
 <div class="paragraph">
 <p>Not every identifier is applicable for every element of the UML model representing the Asset Administration Shell. Table 2 therefore gives an overview on the different constraints and recommendations on the various entities, which implement "Identifiable" or "HasSemantics". Attributes relate to the metamodel in Clause 5.1 and Clause 5.3.</p>
 </div>
@@ -2038,7 +2046,7 @@ Maintenance</p></td>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_usage_of_short_id_for_identifiable_elements">Usage of Short ID for Identifiable Elements</h4>
+<h4 id="_usage_of_short_id_for_identifiable_elements"><a class="link" href="#_usage_of_short_id_for_identifiable_elements">4.3.5. Usage of Short ID for Identifiable Elements</a></h4>
 <div class="paragraph">
 <p>The Administration Shell fosters the use of worldwide unique identifiers to a large degree. However, in some cases, this may lead to inefficiencies. Example: a property, which is part of a submodel, which in turn is part of an Administration Shell, each of which is identified by global identifiers <a href="#bib4">[4]</a>.</p>
 </div>
@@ -2060,9 +2068,9 @@ Maintenance</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_matching_strategies">Matching Strategies</h3>
+<h3 id="_matching_strategies"><a class="link" href="#_matching_strategies">4.4. Matching Strategies</a></h3>
 <div class="sect3">
-<h4 id="_matching_strategies_for_semantic_identifiers">Matching Strategies for Semantic Identifiers</h4>
+<h4 id="_matching_strategies_for_semantic_identifiers"><a class="link" href="#_matching_strategies_for_semantic_identifiers">4.4.1. Matching Strategies for Semantic Identifiers</a></h4>
 <div class="paragraph">
 <p>When comparing two elements, different use cases should be considered in order to define how these two elements are semantically related. This clause gives first hints on the aspects to consider when dealing with matching semantic identifiers. For example, semantic references including context information as represented in IRDI-Path in ECLASS are not yet considered. Sometimes a concept description is derived from another concept description or is identical to or at least compatible with another concept description. The metamodel foresees an attribute "isCaseOf" for such semantic IDs. However, these are not considered in the matching strategies described in this clause.</p>
 </div>
@@ -2160,7 +2168,7 @@ Maintenance</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_matching_algorithm_for_references">Matching Algorithm for References</h4>
+<h4 id="_matching_algorithm_for_references"><a class="link" href="#_matching_algorithm_for_references">4.4.2. Matching Algorithm for References</a></h4>
 <div class="paragraph">
 <p>Clause 4.4.1 has discussed matching strategies for semantic identifiers. This clause explains matching strategies based on the reference concept (see Clause 5.3.10) in more detail and covers other kinds of identifying elements.</p>
 </div>
@@ -2297,9 +2305,9 @@ Maintenance</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_submodel_instances_and_templates">Submodel Instances and Templates</h3>
+<h3 id="_submodel_instances_and_templates"><a class="link" href="#_submodel_instances_and_templates">4.5. Submodel Instances and Templates</a></h3>
 <div class="sect3">
-<h4 id="_can_new_or_proprietary_submodels_be_formed">Can New or Proprietary Submodels be Formed?</h4>
+<h4 id="_can_new_or_proprietary_submodels_be_formed"><a class="link" href="#_can_new_or_proprietary_submodels_be_formed">4.5.1. Can New or Proprietary Submodels be Formed?</a></h4>
 <div class="paragraph">
 <p>It is in the interest of Industry 4.0 for as many submodels as possible, including free and proprietary submodels, to be formed (see <a href="#bib4">[4]</a>, "Free property sets"). A submodel can be formed at any time for a specific Administration Shell of an asset. The provider of the Administration Shell can form in-house identifiers for the type and instance of the submodel in line with Clause 4.3. All I4.0 systems are called on to ignore submodels and properties that are not individually known. Hence, it is always possible to deposit proprietary – e.g. manufacturer-specific or user-specific – information, submodels, or properties in an Administration Shell.</p>
 </div>
@@ -2312,7 +2320,7 @@ Maintenance</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_creating_a_submodel_instance_based_on_an_existing_submodel_template">Creating a Submodel Instance Based on an Existing Submodel Template</h4>
+<h4 id="_creating_a_submodel_instance_based_on_an_existing_submodel_template"><a class="link" href="#_creating_a_submodel_instance_based_on_an_existing_submodel_template">4.5.2. Creating a Submodel Instance Based on an Existing Submodel Template</a></h4>
 <div class="paragraph">
 <p>A public specification of a submodel template (e.g. via publication by Plattform Industrie 4.0) should be available to instantiate an existing submodel template. In special cases, a submodel can also be instantiated from a non-public submodel template, such as a manufacturer specification.</p>
 </div>
@@ -2328,9 +2336,9 @@ Maintenance</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_events">Events</h3>
+<h3 id="_events"><a class="link" href="#_events">4.6. Events</a></h3>
 <div class="sect3">
-<h4 id="_overview_2">Overview</h4>
+<h4 id="_overview_2"><a class="link" href="#_overview_2">4.6.1. Overview</a></h4>
 <div class="paragraph">
 <p>Events are a very versatile mechanism of the Asset Administration Shell. The following subclauses describe some use cases for events. They summarize different types of events to depict requirements, introduce a <em>SubmodelElement</em> “<em>Event</em>" to enable declaration of events of an Asset Administration Shell. Further, the general format of event messages is specified.</p>
 </div>
@@ -2343,7 +2351,7 @@ Maintenance</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_brief_use_cases_for_events_used_in_asset_administration_shells">Brief Use Cases for Events Used in Asset Administration Shells</h4>
+<h4 id="_brief_use_cases_for_events_used_in_asset_administration_shells"><a class="link" href="#_brief_use_cases_for_events_used_in_asset_administration_shells">4.6.2. Brief Use Cases for Events Used in Asset Administration Shells</a></h4>
 <div class="ulist">
 <ul>
 <li>
@@ -2400,7 +2408,7 @@ Maintenance</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_input_and_output_directions_of_events">Input and Output Directions of Events</h4>
+<h4 id="_input_and_output_directions_of_events"><a class="link" href="#_input_and_output_directions_of_events">4.6.3. Input and Output Directions of Events</a></h4>
 <div class="paragraph">
 <p>We can distinguish between incoming and outgoing events. See Table 3 for more information on the event directions.</p>
 </div>
@@ -2429,7 +2437,7 @@ Maintenance</p></td>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_types_of_events">Types of Events</h4>
+<h4 id="_types_of_events"><a class="link" href="#_types_of_events">4.6.4. Types of Events</a></h4>
 <div class="paragraph">
 <p>The uses cases described in Clause 4.6.2 need different types of events. Each event type is identified by a <em>semanticId</em> and features a specialized payload.</p>
 </div>
@@ -2616,10 +2624,10 @@ Table 5 describes the different scopes of an event.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_the_information_metamodel_of_the_asset_administration_shell_normative">The Information Metamodel of the Asset Administration Shell (normative)</h2>
+<h2 id="_the_information_metamodel_of_the_asset_administration_shell_normative"><a class="link" href="#_the_information_metamodel_of_the_asset_administration_shell_normative">5. The Information Metamodel of the Asset Administration Shell (normative)</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_introduction_3">Introduction</h3>
+<h3 id="_introduction_3"><a class="link" href="#_introduction_3">5.1. Introduction</a></h3>
 <div class="paragraph">
 <p>This clause specifies the information metamodel of the Asset Administration Shell.</p>
 </div>
@@ -2638,7 +2646,7 @@ Table 5 describes the different scopes of an event.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_overview_metamodel_of_the_asset_administration_shell">Overview Metamodel of the Asset Administration Shell</h3>
+<h3 id="_overview_metamodel_of_the_asset_administration_shell"><a class="link" href="#_overview_metamodel_of_the_asset_administration_shell">5.2. Overview Metamodel of the Asset Administration Shell</a></h3>
 <div class="paragraph">
 <p>This clause gives an overview of the main classes of the Asset Administration Shell (AAS) metamodel.</p>
 </div>
@@ -2728,9 +2736,9 @@ Table 5 describes the different scopes of an event.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_metamodel_specification_details_designators">Metamodel Specification Details: Designators</h3>
+<h3 id="_metamodel_specification_details_designators"><a class="link" href="#_metamodel_specification_details_designators">5.3. Metamodel Specification Details: Designators</a></h3>
 <div class="sect3">
-<h4 id="_general_2">General</h4>
+<h4 id="_general_2"><a class="link" href="#_general_2">5.3.1. General</a></h4>
 <div class="paragraph">
 <p>This clause specifies the classes of the metamodel in detail. An overview is provided in Clause 5.2. Annex E explains UML modelling together with the specifics used in this specification. Annex D depicts the templates used to describe the classes and relationships. Annex G shows some of the diagrams together with all their inherited attributes to give a complete overview.</p>
 </div>
@@ -2745,15 +2753,15 @@ Table 5 describes the different scopes of an event.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_common_attributes">Common Attributes</h4>
+<h4 id="_common_attributes"><a class="link" href="#_common_attributes">5.3.2. Common Attributes</a></h4>
 <div class="sect4">
-<h5 id="_general_3">General</h5>
+<h5 id="_general_3"><a class="link" href="#_general_3">General</a></h5>
 <div class="paragraph">
 <p>This clause specifies the abstract classes that represent commonly used attributes and terminology, together with the classes and data types exclusively used in these classes. They are represented in alphabetical order.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_administrative_information_attributes">Administrative Information Attributes</h5>
+<h5 id="_administrative_information_attributes"><a class="link" href="#_administrative_information_attributes">Administrative Information Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image14.png" alt="image14">
@@ -2911,7 +2919,7 @@ Table 5 describes the different scopes of an event.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_has_data_specification_attributes">Has Data Specification Attributes</h5>
+<h5 id="_has_data_specification_attributes"><a class="link" href="#_has_data_specification_attributes">Has Data Specification Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image15.png" alt="image15">
@@ -2976,7 +2984,7 @@ Table 5 describes the different scopes of an event.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_extensions_attributes">Extensions Attributes</h5>
+<h5 id="_extensions_attributes"><a class="link" href="#_extensions_attributes">Extensions Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image16.png" alt="image16">
@@ -3118,7 +3126,7 @@ Table 5 describes the different scopes of an event.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_has_kind_attributes">Has Kind Attributes</h5>
+<h5 id="_has_kind_attributes"><a class="link" href="#_has_kind_attributes">Has Kind Attributes</a></h5>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
 <col style="width: 25%;">
@@ -3220,7 +3228,7 @@ Table 5 describes the different scopes of an event.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_has_semantics_attributes">Has Semantics Attributes</h5>
+<h5 id="_has_semantics_attributes"><a class="link" href="#_has_semantics_attributes">Has Semantics Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image18.png" alt="image18">
@@ -3305,7 +3313,7 @@ Table 5 describes the different scopes of an event.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_identifiable_attributes">Identifiable Attributes</h5>
+<h5 id="_identifiable_attributes"><a class="link" href="#_identifiable_attributes">Identifiable Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image19.png" alt="image19">
@@ -3394,7 +3402,7 @@ Table 5 describes the different scopes of an event.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_qualifiable_attributes">Qualifiable Attributes</h5>
+<h5 id="_qualifiable_attributes"><a class="link" href="#_qualifiable_attributes">Qualifiable Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image20.png" alt="image20">
@@ -3456,7 +3464,7 @@ Table 5 describes the different scopes of an event.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_qualifier_attributes">Qualifier Attributes</h5>
+<h5 id="_qualifier_attributes"><a class="link" href="#_qualifier_attributes">Qualifier Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image21.png" alt="image21">
@@ -3653,7 +3661,7 @@ Figure 21).</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_referable_attributes">Referable Attributes</h5>
+<h5 id="_referable_attributes"><a class="link" href="#_referable_attributes">Referable Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image23.png" alt="image23">
@@ -3851,7 +3859,7 @@ Figure 21).</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_asset_administration_shell_attributes">Asset Administration Shell Attributes</h4>
+<h4 id="_asset_administration_shell_attributes"><a class="link" href="#_asset_administration_shell_attributes">5.3.3. Asset Administration Shell Attributes</a></h4>
 <div class="imageblock">
 <div class="content">
 <img src="media/image24.png" alt="image24">
@@ -3933,7 +3941,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_asset_information_attributes">Asset Information Attributes</h4>
+<h4 id="_asset_information_attributes"><a class="link" href="#_asset_information_attributes">5.3.4. Asset Information Attributes</a></h4>
 <div class="imageblock">
 <div class="content">
 <img src="media/image25.png" alt="image25">
@@ -4245,7 +4253,7 @@ Figure 21).</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_submodel_attributes">Submodel Attributes</h4>
+<h4 id="_submodel_attributes"><a class="link" href="#_submodel_attributes">5.3.5. Submodel Attributes</a></h4>
 <div class="imageblock">
 <div class="content">
 <img src="media/image26.png" alt="image26">
@@ -4316,7 +4324,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_submodel_element_attributes">Submodel Element Attributes</h4>
+<h4 id="_submodel_element_attributes"><a class="link" href="#_submodel_element_attributes">5.3.6. Submodel Element Attributes</a></h4>
 <div class="imageblock">
 <div class="content">
 <img src="media/image27.png" alt="image27">
@@ -4370,7 +4378,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_overview_of_submodel_element_types">Overview of Submodel Element Types</h4>
+<h4 id="_overview_of_submodel_element_types"><a class="link" href="#_overview_of_submodel_element_types">5.3.7. Overview of Submodel Element Types</a></h4>
 <div class="imageblock">
 <div class="content">
 <img src="media/image28.png" alt="image28">
@@ -4381,13 +4389,13 @@ Figure 21).</p>
 <p>Submodel elements include data properties as well as operations, events and other elements needed to describe a model for an asset (see Figure 27).</p>
 </div>
 <div class="sect4">
-<h5 id="_general_4">General</h5>
+<h5 id="_general_4"><a class="link" href="#_general_4">General</a></h5>
 <div class="paragraph">
 <p>All submodel elements including abstract classes like data elements are specified in alphabetical order.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_annotated_relationship_element_attributes">Annotated Relationship Element Attributes</h5>
+<h5 id="_annotated_relationship_element_attributes"><a class="link" href="#_annotated_relationship_element_attributes">Annotated Relationship Element Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image29.png" alt="image29">
@@ -4443,7 +4451,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_basic_event_element_attributes">Basic Event Element Attributes</h5>
+<h5 id="_basic_event_element_attributes"><a class="link" href="#_basic_event_element_attributes">Basic Event Element Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image30.png" alt="image30">
@@ -4792,7 +4800,7 @@ Figure 21).</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_blob_attributes">Blob Attributes</h5>
+<h5 id="_blob_attributes"><a class="link" href="#_blob_attributes">Blob Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image32.png" alt="image32">
@@ -4874,7 +4882,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_capability_attributes">Capability Attributes</h5>
+<h5 id="_capability_attributes"><a class="link" href="#_capability_attributes">Capability Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image33.png" alt="image33">
@@ -4926,7 +4934,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_data_element_and_overview_of_data_element_types">Data Element and Overview of Data Element Types</h5>
+<h5 id="_data_element_and_overview_of_data_element_types"><a class="link" href="#_data_element_and_overview_of_data_element_types">Data Element and Overview of Data Element Types</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image34.png" alt="image34">
@@ -4995,7 +5003,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_entity_attributes">Entity Attributes</h5>
+<h5 id="_entity_attributes"><a class="link" href="#_entity_attributes">Entity Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image35.png" alt="image35">
@@ -5121,7 +5129,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_event_attributes">Event Attributes</h5>
+<h5 id="_event_attributes"><a class="link" href="#_event_attributes">Event Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image36.png" alt="image36">
@@ -5166,7 +5174,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_file_attributes">File Attributes</h5>
+<h5 id="_file_attributes"><a class="link" href="#_file_attributes">File Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image37.png" alt="image37">
@@ -5240,7 +5248,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_multi_language_property_attributes">Multi Language Property Attributes</h5>
+<h5 id="_multi_language_property_attributes"><a class="link" href="#_multi_language_property_attributes">Multi Language Property Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image38.png" alt="image38">
@@ -5313,7 +5321,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_operation_attributes">Operation Attributes</h5>
+<h5 id="_operation_attributes"><a class="link" href="#_operation_attributes">Operation Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image39.png" alt="image39">
@@ -5448,7 +5456,7 @@ Figure 21).</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_property_attributes">Property Attributes</h5>
+<h5 id="_property_attributes"><a class="link" href="#_property_attributes">Property Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image40.png" alt="image40">
@@ -5527,7 +5535,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_range_attributes">Range Attributes</h5>
+<h5 id="_range_attributes"><a class="link" href="#_range_attributes">Range Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image41.png" alt="image41">
@@ -5602,7 +5610,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_reference_element_attributes">Reference Element Attributes</h5>
+<h5 id="_reference_element_attributes"><a class="link" href="#_reference_element_attributes">Reference Element Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image42.png" alt="image42">
@@ -5658,7 +5666,7 @@ Figure 21).</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_relationship_element_attributes">Relationship Element Attributes</h5>
+<h5 id="_relationship_element_attributes"><a class="link" href="#_relationship_element_attributes">Relationship Element Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image43.png" alt="image43">
@@ -5717,7 +5725,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_submodel_element_collection_attributes">Submodel Element Collection Attributes</h5>
+<h5 id="_submodel_element_collection_attributes"><a class="link" href="#_submodel_element_collection_attributes">Submodel Element Collection Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image44.png" alt="image44">
@@ -5790,7 +5798,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_submodel_element_list_attributes">Submodel Element List Attributes</h5>
+<h5 id="_submodel_element_list_attributes"><a class="link" href="#_submodel_element_list_attributes">Submodel Element List Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image45.png" alt="image45">
@@ -5928,7 +5936,7 @@ Figure 21).</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_concept_description_attributes">Concept Description Attributes</h4>
+<h4 id="_concept_description_attributes"><a class="link" href="#_concept_description_attributes">5.3.8. Concept Description Attributes</a></h4>
 <div class="imageblock">
 <div class="content">
 <img src="media/image46.png" alt="image46">
@@ -6008,7 +6016,7 @@ Figure 21).</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_environment_attributes">Environment Attributes</h4>
+<h4 id="_environment_attributes"><a class="link" href="#_environment_attributes">5.3.9. Environment Attributes</a></h4>
 <div class="imageblock">
 <div class="content">
 <img src="media/image47.png" alt="image47">
@@ -6080,9 +6088,9 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_referencing_in_asset_administration_shells">Referencing in Asset Administration Shells</h4>
+<h4 id="_referencing_in_asset_administration_shells"><a class="link" href="#_referencing_in_asset_administration_shells">5.3.10. Referencing in Asset Administration Shells</a></h4>
 <div class="sect4">
-<h5 id="_overview_3">Overview</h5>
+<h5 id="_overview_3"><a class="link" href="#_overview_3">Overview</a></h5>
 <div class="paragraph">
 <p>To date, two kinds of references are distinguished: references to external objects or entities (external reference) and references to model elements of the same or another Asset Administration Shell (model reference). Model references are also used for metamodel inherent relationships like submodels of an Asset Administration Shell (notation see Annex A).</p>
 </div>
@@ -6098,7 +6106,7 @@ Figure 21).</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_reference_attributes">Reference Attributes</h5>
+<h5 id="_reference_attributes"><a class="link" href="#_reference_attributes">Reference Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image48.png" alt="image48">
@@ -6237,7 +6245,7 @@ Figure 21).</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_key_attributes">Key Attributes</h5>
+<h5 id="_key_attributes"><a class="link" href="#_key_attributes">Key Attributes</a></h5>
 <div class="imageblock">
 <div class="content">
 <img src="media/image49.png" alt="image49">
@@ -7316,7 +7324,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </table>
 </div>
 <div class="sect4">
-<h5 id="_constraints">Constraints</h5>
+<h5 id="_constraints"><a class="link" href="#_constraints">Constraints</a></h5>
 <div class="paragraph">
 <p><span class="underline">Constraint AASd-121:</span> For <em>Reference</em>s, the value of <em>Key/type</em> of the first <em>key</em> of <em>Reference/keys</em> shall be one of <em>GloballyIdentifiables</em>.</p>
 </div>
@@ -7449,9 +7457,9 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect3">
-<h4 id="_primitive_and_simple_data_types">Primitive and Simple Data Types</h4>
+<h4 id="_primitive_and_simple_data_types"><a class="link" href="#_primitive_and_simple_data_types">5.3.11. Primitive and Simple Data Types</a></h4>
 <div class="sect4">
-<h5 id="_predefined_simple_data_types">Predefined Simple Data Types</h5>
+<h5 id="_predefined_simple_data_types"><a class="link" href="#_predefined_simple_data_types">Predefined Simple Data Types</a></h5>
 <div class="paragraph">
 <p>The metamodel of the Asset Administration Shell uses basic data types as defined in the <a href="https://www.w3.org/XML/Core/">XML Schema Definition</a> (XSD)<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup>. See Table 7 for an overview of the used types. Their definition is outside the scope of this document.</p>
 </div>
@@ -7531,7 +7539,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </table>
 </div>
 <div class="sect4">
-<h5 id="_primitive_data_types">Primitive Data Types</h5>
+<h5 id="_primitive_data_types"><a class="link" href="#_primitive_data_types">Primitive Data Types</a></h5>
 <div class="paragraph">
 <p>Table 8 lists the Primitives used in the metamodel. Primitive data types start with a capital letter.</p>
 </div>
@@ -7814,7 +7822,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </table>
 </div>
 <div class="sect4">
-<h5 id="_enumeration_for_submodel_element_value_types">Enumeration for Submodel Element Value Types</h5>
+<h5 id="_enumeration_for_submodel_element_value_types"><a class="link" href="#_enumeration_for_submodel_element_value_types">Enumeration for Submodel Element Value Types</a></h5>
 <div class="paragraph">
 <p>Enumerations are primitive data types. Most of the enumerations are defined in the context of their class. This clause defines enumerations for submodel element value types<sup class="footnote">[<a id="_footnoteref_14" class="footnote" href="#_footnotedef_14" title="View footnote.">14</a>]</sup>.</p>
 </div>
@@ -8544,9 +8552,9 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect3">
-<h4 id="_constraints_global_invariants">Constraints: Global Invariants</h4>
+<h4 id="_constraints_global_invariants"><a class="link" href="#_constraints_global_invariants">5.3.12. Constraints: Global Invariants</a></h4>
 <div class="sect4">
-<h5 id="_introduction_4">Introduction</h5>
+<h5 id="_introduction_4"><a class="link" href="#_introduction_4">Introduction</a></h5>
 <div class="paragraph">
 <p>This clause documents constraints that represent global invariants, i.e. constraints that cannot be assigned to a single class.</p>
 </div>
@@ -8555,7 +8563,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect4">
-<h5 id="_constraints_for_referables_and_identifiables">Constraints for Referables and Identifiables</h5>
+<h5 id="_constraints_for_referables_and_identifiables"><a class="link" href="#_constraints_for_referables_and_identifiables">Constraints for Referables and Identifiables</a></h5>
 <div class="paragraph">
 <p><span class="underline">Constraint AASd-117:</span> <em>idShort</em> of non-identifiable <em>Referable</em>s not being a direct child of a <em>SubmodelElementList</em> shall be specified.</p>
 </div>
@@ -8581,7 +8589,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect4">
-<h5 id="_constraints_for_qualifiers">Constraints for Qualifiers</h5>
+<h5 id="_constraints_for_qualifiers"><a class="link" href="#_constraints_for_qualifiers">Constraints for Qualifiers</a></h5>
 <div class="paragraph">
 <p><span class="underline">Constraint AASd-021</span>: Every qualifiable can only have one qualifier with the same <em>Qualifier/type.</em></p>
 </div>
@@ -8593,13 +8601,13 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect4">
-<h5 id="_constraints_for_extensions">Constraints for Extensions</h5>
+<h5 id="_constraints_for_extensions"><a class="link" href="#_constraints_for_extensions">Constraints for Extensions</a></h5>
 <div class="paragraph">
 <p><span class="underline">Constraint AASd-077:</span> The name of an extension (<em>Extension/name</em>) within <em>HasExtensions</em> needs to be unique.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_constraints_for_asset_related_information">Constraints for Asset-Related Information</h5>
+<h5 id="_constraints_for_asset_related_information"><a class="link" href="#_constraints_for_asset_related_information">Constraints for Asset-Related Information</a></h5>
 <div class="paragraph">
 <p><span class="underline">Constraint AASd-116:</span> "<em>globalAssetId</em>" (case-insensitive) is a reserved key. If used as value for <em>SpecificAssetId/name,</em> <em>SpecificAssetId/value</em> shall be identical to <em>AssetInformation/globalAssetId</em>.</p>
 </div>
@@ -8612,7 +8620,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect4">
-<h5 id="_constraints_for_types">Constraints for Types</h5>
+<h5 id="_constraints_for_types"><a class="link" href="#_constraints_for_types">Constraints for Types</a></h5>
 <div class="paragraph">
 <p><span class="underline">Constraint AASd-130:</span> an attribute with data type "string" shall consist of these characters only: ^[\x09\x0A\x0D\x20-\uD7FF\uE000-\uFFFD\u00010000-\u0010FFFF]*$.</p>
 </div>
@@ -8625,10 +8633,10 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect1">
-<h2 id="_data_specification_templates_normative">Data Specification Templates (normative)</h2>
+<h2 id="_data_specification_templates_normative"><a class="link" href="#_data_specification_templates_normative">6. Data Specification Templates (normative)</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_introduction_5">Introduction</h3>
+<h3 id="_introduction_5"><a class="link" href="#_introduction_5">6.1. Introduction</a></h3>
 <div class="paragraph">
 <p>A data specification template specifies which additional attributes, which are not part of the metamodel, shall be added to an element instance. Typically, data specification templates have a specific scope. For example, templates for concept descriptions differ from templates for operations, etc. More than one data specification template can be defined and used for an element instance. <em>HasDataSpecification</em> defines, which templates are used for an element instance.</p>
 </div>
@@ -8645,7 +8653,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 <p>The template introduced to describe the concept of a property, a value list, or a value is based on IEC 61360. Figure 55 also shows how concept descriptions and the predefined data specification templates are related to each other.</p>
 </div>
 <div class="sect3">
-<h4 id="_data_specification_template_attributes">Data Specification Template Attributes</h4>
+<h4 id="_data_specification_template_attributes"><a class="link" href="#_data_specification_template_attributes">6.1.1. Data Specification Template Attributes</a></h4>
 <div class="imageblock">
 <div class="content">
 <img src="media/image57.png" alt="image57">
@@ -8777,10 +8785,10 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect1">
-<h2 id="_mappings_to_data_formats_to_share_i4_0_compliant_information_normative">Mappings to Data Formats to Share I4.0-Compliant Information (normative)</h2>
+<h2 id="_mappings_to_data_formats_to_share_i4_0_compliant_information_normative"><a class="link" href="#_mappings_to_data_formats_to_share_i4_0_compliant_information_normative">7. Mappings to Data Formats to Share I4.0-Compliant Information (normative)</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_general_5">General</h3>
+<h3 id="_general_5"><a class="link" href="#_general_5">7.1. General</a></h3>
 <div class="paragraph">
 <p>It is crucial for Industry 4.0 applications to share information between different systems throughout the areas covered by the entire RAMI4.0 model <a href="#bib1">[1]</a> <a href="#bib2">[2]</a>. OPC UA is a frequently used format for information models in the domain of production operations, but there is a need for other formats for further areas and the relationships between them.</p>
 </div>
@@ -8836,21 +8844,21 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_general_rules">General Rules</h3>
+<h3 id="_general_rules"><a class="link" href="#_general_rules">7.2. General Rules</a></h3>
 <div class="sect3">
-<h4 id="_introduction_6">Introduction</h4>
+<h4 id="_introduction_6"><a class="link" href="#_introduction_6">7.2.1. Introduction</a></h4>
 <div class="paragraph">
 <p>There are some general rules that apply to all serializations or can be used in different serializations.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_encoding">Encoding</h4>
+<h4 id="_encoding"><a class="link" href="#_encoding">7.2.2. Encoding</a></h4>
 <div class="paragraph">
 <p>Blobs require the following encoding: base64 string.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_serialization_of_values_of_type_reference">Serialization of Values of Type "Reference"</h4>
+<h4 id="_serialization_of_values_of_type_reference"><a class="link" href="#_serialization_of_values_of_type_reference">7.2.3. Serialization of Values of Type "Reference"</a></h4>
 <div class="paragraph">
 <p>Some mappings or serializations convert the type "Reference" into a single string. In this case, the following serialization is required:</p>
 </div>
@@ -8937,7 +8945,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect3">
-<h4 id="_semantic_identifiers_for_metamodel_and_data_specifications">Semantic Identifiers for Metamodel and Data Specifications</h4>
+<h4 id="_semantic_identifiers_for_metamodel_and_data_specifications"><a class="link" href="#_semantic_identifiers_for_metamodel_and_data_specifications">7.2.4. Semantic Identifiers for Metamodel and Data Specifications</a></h4>
 <div class="paragraph">
 <p>Rules for creating identifiers are defined to enable the unique identification of concepts as used and defined in the metamodel of the Asset Administration Shell.</p>
 </div>
@@ -9196,7 +9204,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect3">
-<h4 id="_embedded_data_specifications">Embedded Data Specifications</h4>
+<h4 id="_embedded_data_specifications"><a class="link" href="#_embedded_data_specifications">7.2.5. Embedded Data Specifications</a></h4>
 <div class="paragraph">
 <p>This specification predefines data specifications that can be used within an Asset Administration Shell to ensure interoperability.</p>
 </div>
@@ -9215,7 +9223,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_xml">XML</h3>
+<h3 id="_xml"><a class="link" href="#_xml">7.3. XML</a></h3>
 <div class="paragraph">
 <p>The metamodel of an Asset Administration Shell needs to be serialized for import and export scenarios. XML is a possible serialization format.</p>
 </div>
@@ -9245,7 +9253,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_json">JSON</h3>
+<h3 id="_json"><a class="link" href="#_json">7.4. JSON</a></h3>
 <div class="paragraph">
 <p>JSON<sup class="footnote">[<a id="_footnoteref_29" class="footnote" href="#_footnotedef_29" title="View footnote.">29</a>]</sup> (JavaScript Object Notation) is a further serialization format that serializes the metamodel of an Asset Administration Shell for import and export scenarios.</p>
 </div>
@@ -9275,7 +9283,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_rdf">RDF</h3>
+<h3 id="_rdf"><a class="link" href="#_rdf">7.5. RDF</a></h3>
 <div class="paragraph">
 <p>The Resource Description Framework (RDF) <a href="#bib32">[32]</a> is the recommended standard of the W3C to unambiguously model and present semantic data. RDF documents are structured in the form of triples, consisting of subjects, relations, and objects. The resulting model is often interpreted as a graph, with the subject and object elements as the nodes and the relations as the graph edges.</p>
 </div>
@@ -9311,7 +9319,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_automationml">AutomationML</h3>
+<h3 id="_automationml"><a class="link" href="#_automationml">7.6. AutomationML</a></h3>
 <div class="paragraph">
 <p>AutomationML (IEC 62714) is especially suited for serializing the import and export scenarios of the metamodel of an Asset Administration Shell in the engineering phase.</p>
 </div>
@@ -9346,7 +9354,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_opc_ua">OPC UA</h3>
+<h3 id="_opc_ua"><a class="link" href="#_opc_ua">7.7. OPC UA</a></h3>
 <div class="paragraph">
 <p>OPC UA is suited for the operating phase of Asset Administration Shells<sup class="footnote">[<a id="_footnoteref_31" class="footnote" href="#_footnotedef_31" title="View footnote.">31</a>]</sup> and especially applicable in case of machine-to-machine communication. The information model <a href="#bib42">[42]</a> is the basis for the definition of so-called OPC UA Information Models, or OPC UA Companion Specifications <a href="#bib43">[43]</a>.</p>
 </div>
@@ -9364,7 +9372,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect1">
-<h2 id="_summary_and_outlook">Summary and Outlook</h2>
+<h2 id="_summary_and_outlook"><a class="link" href="#_summary_and_outlook">8. Summary and Outlook</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This document has defined the metamodel for the structural viewpoint of the Asset Administration Shell using the technology-neutral modelling language UML.</p>
@@ -9410,16 +9418,16 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect1">
-<h2 id="_concepts_of_the_administration_shell">Concepts of the Administration Shell</h2>
+<h2 id="_concepts_of_the_administration_shell"><a class="link" href="#_concepts_of_the_administration_shell">9. Concepts of the Administration Shell</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_general_6">General</h3>
+<h3 id="_general_6"><a class="link" href="#_general_6">9.1. General</a></h3>
 <div class="paragraph">
 <p>Annex A provides general information about sources of information and relevant concepts for the Asset Administration Shell. Some of these concepts are explained in a general manner. Some concepts are update in order to reflect actual design decisions. No new concepts are introduced. Thus, this clause can be seen as a fully informative annex to the specifications of the Administration Shell.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_relevant_sources_and_documents">Relevant Sources and Documents</h3>
+<h3 id="_relevant_sources_and_documents"><a class="link" href="#_relevant_sources_and_documents">9.2. Relevant Sources and Documents</a></h3>
 <div class="paragraph">
 <p>The following documents were used to identify requirements and concepts for the Administration Shell:</p>
 </div>
@@ -9474,7 +9482,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_basic_concepts_for_industry_4_0">Basic Concepts for Industry 4.0</h3>
+<h3 id="_basic_concepts_for_industry_4_0"><a class="link" href="#_basic_concepts_for_industry_4_0">9.3. Basic Concepts for Industry 4.0</a></h3>
 <div class="paragraph">
 <p>Industry 4.0 describes concepts and definitions for the domain of smart manufacturing. For Industry 4.0, the term asset, being any "object which has a value for an organization", is of central importance <a href="#bib2">[2]</a> <a href="#bib21">[21]</a>. Industry 4.0 assets can take almost any form, e.g. a production system, a product, a software installation, intellectual properties, or even human resources.</p>
 </div>
@@ -9495,7 +9503,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_the_concept_of_properties">The Concept of Properties</h3>
+<h3 id="_the_concept_of_properties"><a class="link" href="#_the_concept_of_properties">9.4. The Concept of Properties</a></h3>
 <div class="paragraph">
 <p>According to <a href="#bib20">[20]</a>, the "IEC 61360 series provides a framework and an information model for product dictionaries. The concept of product type is represented by 'classes' and the product characteristics are represented by 'properties'".</p>
 </div>
@@ -9520,7 +9528,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_the_concept_of_submodels">The Concept of Submodels</h3>
+<h3 id="_the_concept_of_submodels"><a class="link" href="#_the_concept_of_submodels">9.5. The Concept of Submodels</a></h3>
 <div class="paragraph">
 <p>"The Administration Shell is the standardized digital representation of the asset, corner stone of the interoperability between the applications managing the manufacturing systems" <a href="#bib19">[19]</a>. Hence, it should provide a minimal but sufficient description according to the different application scenarios in Industry 4.0 <a href="#bib7">[7]</a> <a href="#bib8">[8]</a>. Many different (international) standards, consortia and manufacturer specifications can already contribute to this description <a href="#bib19">[19]</a>.</p>
 </div>
@@ -9548,7 +9556,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_basic_structure_of_the_asset_administration_shell">Basic Structure of the Asset Administration Shell</h3>
+<h3 id="_basic_structure_of_the_asset_administration_shell"><a class="link" href="#_basic_structure_of_the_asset_administration_shell">9.6. Basic Structure of the Asset Administration Shell</a></h3>
 <div class="paragraph">
 <p>The document on the structure of the Asset Administration Shell <a href="#bib4">[4]</a> <a href="#bib19">[19]</a> presents a rough, logical view of the Asset Administration Shell’s structure. The Asset Administration Shell – shown in blue in the following figure – comprises different sets of information. Both the asset and the Administration Shell are identified by a globally unique identifier. It comprises a number of submodels, which characterize the Asset Administration Shell.</p>
 </div>
@@ -9572,7 +9580,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_how_are_new_identifiers_created">How Are New Identifiers Created?</h3>
+<h3 id="_how_are_new_identifiers_created"><a class="link" href="#_how_are_new_identifiers_created">9.7. How Are New Identifiers Created?</a></h3>
 <div class="paragraph">
 <p>Following the different identification types from Clause 4.3.4, it can be stated that:</p>
 </div>
@@ -9594,7 +9602,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_best_practice_for_creating_uri_identifiers">Best Practice for Creating URI Identifiers</h3>
+<h3 id="_best_practice_for_creating_uri_identifiers"><a class="link" href="#_best_practice_for_creating_uri_identifiers">9.8. Best Practice for Creating URI Identifiers</a></h3>
 <div class="paragraph">
 <p>The approach for semantics and interaction for I4.0 components <a href="#bib18">[18]</a> suggests the use of the following structure (see Table 11) for URIs<sup class="footnote">[<a id="_footnoteref_33" class="footnote" href="#_footnotedef_33" title="View footnote.">33</a>]</sup>, which is slightly modified here. The idea is to always structure URIs following a scheme of different elements. However, this is just a recommendation and by no means mandatory.</p>
 </div>
@@ -9756,7 +9764,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect1">
-<h2 id="_requirements">Requirements</h2>
+<h2 id="_requirements"><a class="link" href="#_requirements">10. Requirements</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This annex collects the requirements from various documents that have impact on the specific structure of the Administration Shell. They serve as input for the specific description of the structures of the Administration Shell.</p>
@@ -10304,7 +10312,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect1">
-<h2 id="_backus_naur_form">Backus-Naur-Form</h2>
+<h2 id="_backus_naur_form"><a class="link" href="#_backus_naur_form">11. Backus-Naur-Form</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The Backus-Naur form (BNF) – a meta-syntax notation for context-free grammars – is used to define grammars. For more information see Wikipedia<sup class="footnote">[<a id="_footnoteref_35" class="footnote" href="#_footnotedef_35" title="View footnote.">35</a>]</sup>.</p>
@@ -10409,10 +10417,10 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect1">
-<h2 id="_templates_for_uml_tables">Templates for UML Tables</h2>
+<h2 id="_templates_for_uml_tables"><a class="link" href="#_templates_for_uml_tables">12. Templates for UML Tables</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_general_7">General</h3>
+<h3 id="_general_7"><a class="link" href="#_general_7">12.1. General</a></h3>
 <div class="paragraph">
 <p>The templates used for element specification are explained in this annex. For details for the semantics see Legend for UML Modelling.</p>
 </div>
@@ -10421,7 +10429,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_template_for_classes">Template for Classes</h3>
+<h3 id="_template_for_classes"><a class="link" href="#_template_for_classes">12.2. Template for Classes</a></h3>
 <div class="paragraph">
 <p>Template for Classes:</p>
 </div>
@@ -10575,7 +10583,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_template_for_enumerations">Template for Enumerations</h3>
+<h3 id="_template_for_enumerations"><a class="link" href="#_template_for_enumerations">12.3. Template for Enumerations</a></h3>
 <div class="paragraph">
 <p>Template for Enumerations:</p>
 </div>
@@ -10639,7 +10647,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_template_for_primitives">Template for Primitives</h3>
+<h3 id="_template_for_primitives"><a class="link" href="#_template_for_primitives">12.4. Template for Primitives</a></h3>
 <div class="paragraph">
 <p>Template for Primitive:</p>
 </div>
@@ -10666,7 +10674,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </table>
 </div>
 <div class="sect2">
-<h3 id="_handling_of_constraints">Handling of Constraints</h3>
+<h3 id="_handling_of_constraints"><a class="link" href="#_handling_of_constraints">12.5. Handling of Constraints</a></h3>
 <div class="paragraph">
 <p>Constraints are prefixed with <strong>AASd-</strong> followed by a three-digit number. The "d" in "AASd-" was motivated by "in Detail". The numbering of constraints is unique within namespace AASd; a number of a constraint that was removed will not be used again.</p>
 </div>
@@ -10681,10 +10689,10 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect1">
-<h2 id="_legend_for_uml_modelling">Legend for UML Modelling</h2>
+<h2 id="_legend_for_uml_modelling"><a class="link" href="#_legend_for_uml_modelling">13. Legend for UML Modelling</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_omg_uml_general">OMG UML General</h3>
+<h3 id="_omg_uml_general"><a class="link" href="#_omg_uml_general">13.1. OMG UML General</a></h3>
 <div class="paragraph">
 <p>This annex explains the UML elements used in this specification. For more information, please refer to the comprehensive literature available for UML. The formal specification can be found in <a href="#bib35">[35]</a>.</p>
 </div>
@@ -10867,7 +10875,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_uml_naming_rules">UML Naming Rules</h3>
+<h3 id="_uml_naming_rules"><a class="link" href="#_uml_naming_rules">13.2. UML Naming Rules</a></h3>
 <div class="paragraph">
 <p>The following rules are used for naming of classes, attributes etc.:</p>
 </div>
@@ -10908,7 +10916,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_templates_inheritance_qualifiers_and_categories">Templates, Inheritance, Qualifiers, and Categories</h3>
+<h3 id="_templates_inheritance_qualifiers_and_categories"><a class="link" href="#_templates_inheritance_qualifiers_and_categories">13.3. Templates, Inheritance, Qualifiers, and Categories</a></h3>
 <div class="paragraph">
 <p>At first glance, there seems to be some overlapping within the concepts of data specification templates, extensions, inheritance, qualifiers, and categories introduced in the metamodel. This clause explains the commonalities and differences and gives hints for good practices.</p>
 </div>
@@ -10970,7 +10978,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_notes_to_graphical_uml_representation">Notes to Graphical UML Representation</h3>
+<h3 id="_notes_to_graphical_uml_representation"><a class="link" href="#_notes_to_graphical_uml_representation">13.4. Notes to Graphical UML Representation</a></h3>
 <div class="paragraph">
 <p>Specific graphical modelling rules, which are used in this specification but not included in this form, are explained below <a href="#bib35">[35]</a>.</p>
 </div>
@@ -11070,10 +11078,10 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect1">
-<h2 id="_how_to_use_the_metamodel">How to Use the Metamodel</h2>
+<h2 id="_how_to_use_the_metamodel"><a class="link" href="#_how_to_use_the_metamodel">14. How to Use the Metamodel</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_composite_i4_0_components">Composite I4.0 Components</h3>
+<h3 id="_composite_i4_0_components"><a class="link" href="#_composite_i4_0_components">14.1. Composite I4.0 Components</a></h3>
 <div class="paragraph">
 <p>As described in Clause 4.2.1, there is a class of relationships between assets of different hierarchy levels. In this class of relationships, automation equipment is explained as a complex, interrelated graph of automation devices and products, performing intelligent production and self-learning/optimization tasks.</p>
 </div>
@@ -11130,7 +11138,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect1">
-<h2 id="_metamodel_uml_with_inherited_attributes">Metamodel UML with Inherited Attributes</h2>
+<h2 id="_metamodel_uml_with_inherited_attributes"><a class="link" href="#_metamodel_uml_with_inherited_attributes">15. Metamodel UML with Inherited Attributes</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>In this annex, some UML diagrams are shown together with all attributes inherited for a better overview.</p>
@@ -11157,10 +11165,10 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect1">
-<h2 id="_metamodel_changes">Metamodel Changes</h2>
+<h2 id="_metamodel_changes"><a class="link" href="#_metamodel_changes">16. Metamodel Changes</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_general_8">General</h3>
+<h3 id="_general_8"><a class="link" href="#_general_8">16.1. General</a></h3>
 <div class="paragraph">
 <p>This annex lists the changes from version to version of the metamodel, together with major changes in the overall document. Non-backward compatible changes (nc) are marked as such.</p>
 </div>
@@ -11201,7 +11209,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_changes_v3_0_vs_v2_0_1">Changes V3.0 vs. V2.0.1</h3>
+<h3 id="_changes_v3_0_vs_v2_0_1"><a class="link" href="#_changes_v3_0_vs_v2_0_1">16.2. Changes V3.0 vs. V2.0.1</a></h3>
 <div class="paragraph">
 <p>Major Changes:</p>
 </div>
@@ -11381,7 +11389,7 @@ Note: referables are abstract, i.e. if a key uses "Referable", the reference may
 </div>
 </div>
 <div class="sect2">
-<h3 id="_metamodel_changes_v3_0_vs_v2_0_1">Metamodel Changes V3.0 VS. V2.0.1</h3>
+<h3 id="_metamodel_changes_v3_0_vs_v2_0_1"><a class="link" href="#_metamodel_changes_v3_0_vs_v2_0_1">16.3. Metamodel Changes V3.0 VS. V2.0.1</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 13. Changes</caption>
 <colgroup>
@@ -12529,7 +12537,7 @@ New submodel element SubmodelElementList added, renamed submodel elements Event 
 </table>
 </div>
 <div class="sect2">
-<h3 id="_changes_v3_0_vs_v3_0rc02">Changes V3.0 Vs. V3.0RC02</h3>
+<h3 id="_changes_v3_0_vs_v3_0rc02"><a class="link" href="#_changes_v3_0_vs_v3_0rc02">16.4. Changes V3.0 Vs. V3.0RC02</a></h3>
 <div class="paragraph">
 <p>Major changes</p>
 </div>
@@ -12678,7 +12686,7 @@ New submodel element SubmodelElementList added, renamed submodel elements Event 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_metamodel_changes_v3_0_vs_v3_0rc02">Metamodel Changes V3.0 vs. V3.0RC02</h3>
+<h3 id="_metamodel_changes_v3_0_vs_v3_0rc02"><a class="link" href="#_metamodel_changes_v3_0_vs_v3_0rc02">16.5. Metamodel Changes V3.0 vs. V3.0RC02</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 16. Changes</caption>
 <colgroup>
@@ -13288,11 +13296,11 @@ New submodel element SubmodelElementList added, renamed submodel elements Event 
 </table>
 </div>
 <div class="sect2">
-<h3 id="_changes_v3_0rc02_vs_v2_0_1">Changes V3.0RC02 vs. V2.0.1</h3>
+<h3 id="_changes_v3_0rc02_vs_v2_0_1"><a class="link" href="#_changes_v3_0rc02_vs_v2_0_1">16.6. Changes V3.0RC02 vs. V2.0.1</a></h3>
 
 </div>
 <div class="sect2">
-<h3 id="_metamodel_changes_v3_0rc02_vs_v2_0_1_wo_security_part">Metamodel Changes V3.0RC02 vs. V2.0.1 w/o Security Part</h3>
+<h3 id="_metamodel_changes_v3_0rc02_vs_v2_0_1_wo_security_part"><a class="link" href="#_metamodel_changes_v3_0rc02_vs_v2_0_1_wo_security_part">16.7. Metamodel Changes V3.0RC02 vs. V2.0.1 w/o Security Part</a></h3>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
@@ -14361,7 +14369,7 @@ New submodel element SubmodelElementList added, renamed submodel elements Event 
 </table>
 </div>
 <div class="sect2">
-<h3 id="_metamodel_changes_v3_0rc02_vs_v2_0_1_data_specification_iec61360">Metamodel Changes V3.0RC02 vs. V2.0.1 – Data Specification IEC61360</h3>
+<h3 id="_metamodel_changes_v3_0rc02_vs_v2_0_1_data_specification_iec61360"><a class="link" href="#_metamodel_changes_v3_0rc02_vs_v2_0_1_data_specification_iec61360">16.8. Metamodel Changes V3.0RC02 vs. V2.0.1 – Data Specification IEC61360</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 22. Changes w.r.t. Data Specification IEC61360</caption>
 <colgroup>
@@ -14578,7 +14586,7 @@ See separate entries for individual changes.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_metamodel_changes_v3_0rc02_vs_v2_0_1_security_part">Metamodel Changes V3.0RC02 vs. V2.0.1 – Security Part</h3>
+<h3 id="_metamodel_changes_v3_0rc02_vs_v2_0_1_security_part"><a class="link" href="#_metamodel_changes_v3_0rc02_vs_v2_0_1_security_part">16.9. Metamodel Changes V3.0RC02 vs. V2.0.1 – Security Part</a></h3>
 <div class="paragraph">
 <p>Changes:</p>
 </div>
@@ -14777,11 +14785,11 @@ See separate entries for individual changes.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_changes_v3_0rc02_vs_v3_0rc01">Changes V3.0RC02 vs. V3.0RC01</h3>
+<h3 id="_changes_v3_0rc02_vs_v3_0rc01"><a class="link" href="#_changes_v3_0rc02_vs_v3_0rc01">16.10. Changes V3.0RC02 vs. V3.0RC01</a></h3>
 
 </div>
 <div class="sect2">
-<h3 id="_metamodel_changes_v3_0rc02_vs_v3_0rc01_wo_security_part">Metamodel Changes V3.0RC02 vs. V3.0RC01 w/o Security Part</h3>
+<h3 id="_metamodel_changes_v3_0rc02_vs_v3_0rc01_wo_security_part"><a class="link" href="#_metamodel_changes_v3_0rc02_vs_v3_0rc01_wo_security_part">16.11. Metamodel Changes V3.0RC02 vs. V3.0RC01 w/o Security Part</a></h3>
 <div class="paragraph">
 <p>Major changes:</p>
 </div>
@@ -16026,7 +16034,7 @@ shall be of kind=Template.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_metamodel_changes_v3_0rc02_vs_v3_0rc01_data_specification_iec61360">Metamodel Changes V3.0RC02 vs. V3.0RC01 – Data Specification IEC61360</h3>
+<h3 id="_metamodel_changes_v3_0rc02_vs_v3_0rc01_data_specification_iec61360"><a class="link" href="#_metamodel_changes_v3_0rc02_vs_v3_0rc01_data_specification_iec61360">16.12. Metamodel Changes V3.0RC02 vs. V3.0RC01 – Data Specification IEC61360</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 31. Changes w.r.t. Data Specification IEC61360</caption>
 <colgroup>
@@ -16256,7 +16264,7 @@ shall be of kind=Template.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_metamodel_changes_v3_0rc02_vs_v3_0rc01_security_part">Metamodel Changes V3.0RC02 vs. V3.0RC01 – Security Part</h3>
+<h3 id="_metamodel_changes_v3_0rc02_vs_v3_0rc01_security_part"><a class="link" href="#_metamodel_changes_v3_0rc02_vs_v3_0rc01_security_part">16.13. Metamodel Changes V3.0RC02 vs. V3.0RC01 – Security Part</a></h3>
 <div class="paragraph">
 <p>Changes:</p>
 </div>
@@ -16427,11 +16435,11 @@ shall be of kind=Template.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_changes_v3_0rc01_vs_v2_0_1">Changes V3.0RC01 vs. V2.0.1</h3>
+<h3 id="_changes_v3_0rc01_vs_v2_0_1"><a class="link" href="#_changes_v3_0rc01_vs_v2_0_1">16.14. Changes V3.0RC01 vs. V2.0.1</a></h3>
 
 </div>
 <div class="sect2">
-<h3 id="_metamodel_changes_v3_0rc01_wo_security_part">Metamodel Changes V3.0RC01 w/o Security Part</h3>
+<h3 id="_metamodel_changes_v3_0rc01_wo_security_part"><a class="link" href="#_metamodel_changes_v3_0rc01_wo_security_part">16.15. Metamodel Changes V3.0RC01 w/o Security Part</a></h3>
 <div class="paragraph">
 <p>Major changes:</p>
 </div>
@@ -16910,7 +16918,7 @@ shall be of kind=Template.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_metamodel_changes_v3_0rc01_security_part">Metamodel Changes V3.0RC01 – Security Part</h3>
+<h3 id="_metamodel_changes_v3_0rc01_security_part"><a class="link" href="#_metamodel_changes_v3_0rc01_security_part">16.16. Metamodel Changes V3.0RC01 – Security Part</a></h3>
 <div class="paragraph">
 <p>Major changes:</p>
 </div>
@@ -16991,11 +16999,11 @@ shall be of kind=Template.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_changes_v2_0_1_vs_v2_0">Changes V2.0.1 vs. V2.0</h3>
+<h3 id="_changes_v2_0_1_vs_v2_0"><a class="link" href="#_changes_v2_0_1_vs_v2_0">16.17. Changes V2.0.1 vs. V2.0</a></h3>
 
 </div>
 <div class="sect2">
-<h3 id="_metamodel_changes_v2_0_1_wo_security_part">Metamodel Changes V2.0.1 w/o Security Part</h3>
+<h3 id="_metamodel_changes_v2_0_1_wo_security_part"><a class="link" href="#_metamodel_changes_v2_0_1_wo_security_part">16.18. Metamodel Changes V2.0.1 w/o Security Part</a></h3>
 <div class="paragraph">
 <p>Major changes:</p>
 </div>
@@ -17094,11 +17102,11 @@ shall be of kind=Template.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_changes_v2_0_vs_v1_0">Changes V2.0 vs. V1.0</h3>
+<h3 id="_changes_v2_0_vs_v1_0"><a class="link" href="#_changes_v2_0_vs_v1_0">16.19. Changes V2.0 vs. V1.0</a></h3>
 
 </div>
 <div class="sect2">
-<h3 id="_metamodel_changes_v2_0_wo_security_part">Metamodel Changes V2.0 w/o Security Part</h3>
+<h3 id="_metamodel_changes_v2_0_wo_security_part"><a class="link" href="#_metamodel_changes_v2_0_wo_security_part">16.20. Metamodel Changes V2.0 w/o Security Part</a></h3>
 <div class="paragraph">
 <p>Major changes:</p>
 </div>
@@ -17486,7 +17494,7 @@ shall be of kind=Template.</p>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_metamodel_changes_v2_0_security_part">Metamodel Changes V2.0 – Security Part</h3>
+<h3 id="_metamodel_changes_v2_0_security_part"><a class="link" href="#_metamodel_changes_v2_0_security_part">16.21. Metamodel Changes V2.0 – Security Part</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 46. Changes Metamodel w.r.t. V1.0 Security</caption>
 <colgroup>
@@ -17616,7 +17624,7 @@ shall be of kind=Template.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_bibliography">Bibliography</h2>
+<h2 id="_bibliography"><a class="link" href="#_bibliography">17. Bibliography</a></h2>
 <div class="sectionbody">
 <div id="bib1" class="paragraph">
 <p>[1] "Recommendations for implementing the strategic initiative INDUSTRIE 4.0", acatech, April 2013. [Online]. Available: <a href="https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/" class="bare">https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/</a></p>

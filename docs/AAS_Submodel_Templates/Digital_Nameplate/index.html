@@ -48,6 +48,14 @@ a:hover, a:focus {
 h1, h2, h3, .sidebarblock > .content > .title, h4, h5, h6 {
   color: #3149cc;
 }
+#content h1 > a.link:hover, h2 > a.link:hover, h3 > a.link:hover, #toctitle > a.link:hover, .sidebarblock > .content > .title > a.link:hover, h4 > a.link:hover, h5 > a.link:hover, h6 > a.link:hover {
+	color: #ff500f;
+}
+
+#content h1 > a.link, h2 > a.link, h3 > a.link, #toctitle > a.link, .sidebarblock > .content > .title > a.link, h4 > a.link, h5 > a.link, h6 > a.link {
+	color: #3149cc;
+	text-decoration: none;
+}
 
 .subheader, .admonitionblock td.content > .title, .audioblock > .title, .exampleblock > .title, .imageblock > .title, .listingblock > .title, .literalblock > .title, .stemblock > .title, .openblock > .title, .paragraph > .title, .quoteblock > .title, table.tableblock > .title, .verseblock > .title, .videoblock > .title, .dlist > .title, .olist > .title, .ulist > .title, .qlist > .title, .hdlist > .title {
   color: #3149cc;
@@ -102,57 +110,57 @@ img {
 <div id="toc" class="toc2">
 <div id="toctitle">Digital Nameplate for Industrial Equipment</div>
 <ul class="sectlevel1">
-<li><a href="#_general">General</a>
+<li><a href="#_general">1. General</a>
 <ul class="sectlevel2">
-<li><a href="#_about_this_document">About this document</a></li>
-<li><a href="#_scope_of_the_submodel">Scope of the Submodel</a></li>
-<li><a href="#_relevant_standards_for_the_submodel_template">Relevant standards for the Submodel template</a></li>
-<li><a href="#_explanations_on_used_uml_diagrams">Explanations on used UML diagrams</a></li>
+<li><a href="#_about_this_document">1.1. About this document</a></li>
+<li><a href="#_scope_of_the_submodel">1.2. Scope of the Submodel</a></li>
+<li><a href="#_relevant_standards_for_the_submodel_template">1.3. Relevant standards for the Submodel template</a></li>
+<li><a href="#_explanations_on_used_uml_diagrams">1.4. Explanations on used UML diagrams</a></li>
 </ul>
 </li>
-<li><a href="#_information_set_for_submodel_nameplate">Information set for Submodel “Nameplate”</a></li>
-<li><a href="#_submodel_and_collections">Submodel and collections</a>
+<li><a href="#_information_set_for_submodel_nameplate">2. Information set for Submodel “Nameplate”</a></li>
+<li><a href="#_submodel_and_collections">3. Submodel and collections</a>
 <ul class="sectlevel2">
-<li><a href="#_properties_of_the_submodel_nameplate">Properties of the Submodel “Nameplate”</a></li>
-<li><a href="#_mandatory_properties_of_the_smc_contactinformation_for_physical_address">Mandatory properties of the SMC “ContactInformation” for physical address</a></li>
-<li><a href="#_properties_of_the_smc_markings">Properties of the SMC “Markings”</a></li>
-<li><a href="#_properties_of_the_smc_marking_for_product_marking">Properties of the SMC “Marking” for product marking</a></li>
-<li><a href="#_properties_of_the_smc_explosionsafeties">Properties of the SMC “ExplosionSafeties”</a></li>
-<li><a href="#_properties_of_the_smc_explosionsafety">Properties of the SMC “ExplosionSafety”</a></li>
-<li><a href="#_properties_of_the_smc_ambientconditions">Properties of the SMC “AmbientConditions”</a></li>
-<li><a href="#_properties_of_the_smc_processconditions">Properties of the SMC “ProcessConditions”</a></li>
-<li><a href="#_properties_of_the_smc_externalelectricalcircuit">Properties of the SMC “ExternalElectricalCircuit”</a></li>
-<li><a href="#_properties_of_the_smc_safetyrelatedpropertiesforpassivebehaviour">Properties of the SMC “SafetyRelatedPropertiesForPassiveBehaviour”</a></li>
-<li><a href="#_properties_of_the_smc_safetyrelatedpropertiesforactivebehaviour">Properties of the SMC “SafetyRelatedPropertiesForActiveBehaviour”</a></li>
-<li><a href="#_properties_of_the_smc_assetspecificproperties">Properties of the SMC “AssetSpecificProperties”</a></li>
-<li><a href="#_properties_of_the_smc_guidelinespecificproperties">Properties of the SMC “GuidelineSpecificProperties”</a></li>
+<li><a href="#_properties_of_the_submodel_nameplate">3.1. Properties of the Submodel “Nameplate”</a></li>
+<li><a href="#_mandatory_properties_of_the_smc_contactinformation_for_physical_address">3.2. Mandatory properties of the SMC “ContactInformation” for physical address</a></li>
+<li><a href="#_properties_of_the_smc_markings">3.3. Properties of the SMC “Markings”</a></li>
+<li><a href="#_properties_of_the_smc_marking_for_product_marking">3.4. Properties of the SMC “Marking” for product marking</a></li>
+<li><a href="#_properties_of_the_smc_explosionsafeties">3.5. Properties of the SMC “ExplosionSafeties”</a></li>
+<li><a href="#_properties_of_the_smc_explosionsafety">3.6. Properties of the SMC “ExplosionSafety”</a></li>
+<li><a href="#_properties_of_the_smc_ambientconditions">3.7. Properties of the SMC “AmbientConditions”</a></li>
+<li><a href="#_properties_of_the_smc_processconditions">3.8. Properties of the SMC “ProcessConditions”</a></li>
+<li><a href="#_properties_of_the_smc_externalelectricalcircuit">3.9. Properties of the SMC “ExternalElectricalCircuit”</a></li>
+<li><a href="#_properties_of_the_smc_safetyrelatedpropertiesforpassivebehaviour">3.10. Properties of the SMC “SafetyRelatedPropertiesForPassiveBehaviour”</a></li>
+<li><a href="#_properties_of_the_smc_safetyrelatedpropertiesforactivebehaviour">3.11. Properties of the SMC “SafetyRelatedPropertiesForActiveBehaviour”</a></li>
+<li><a href="#_properties_of_the_smc_assetspecificproperties">3.12. Properties of the SMC “AssetSpecificProperties”</a></li>
+<li><a href="#_properties_of_the_smc_guidelinespecificproperties">3.13. Properties of the SMC “GuidelineSpecificProperties”</a></li>
 </ul>
 </li>
-<li><a href="#_examples_for_using_smc_explosionsafety">Examples for using SMC “ExplosionSafety”</a>
+<li><a href="#_examples_for_using_smc_explosionsafety">4. Examples for using SMC “ExplosionSafety”</a>
 <ul class="sectlevel2">
-<li><a href="#_remote_io_module_9468_aiao_8_channels">Remote I/O Module 9468 (AI/AO, 8 channels)</a></li>
-<li><a href="#_load_disconnect_switch">Load disconnect switch</a></li>
-<li><a href="#_fisco_power_supply">FISCO Power supply</a></li>
-<li><a href="#_flow_meter_promag_300">Flow meter Promag 300</a></li>
+<li><a href="#_remote_io_module_9468_aiao_8_channels">4.1. Remote I/O Module 9468 (AI/AO, 8 channels)</a></li>
+<li><a href="#_load_disconnect_switch">4.2. Load disconnect switch</a></li>
+<li><a href="#_fisco_power_supply">4.3. FISCO Power supply</a></li>
+<li><a href="#_flow_meter_promag_300">4.4. Flow meter Promag 300</a></li>
 </ul>
 </li>
-<li><a href="#_explanations_on_used_table_formats">Explanations on used table formats</a>
+<li><a href="#_explanations_on_used_table_formats">5. Explanations on used table formats</a>
 <ul class="sectlevel2">
-<li><a href="#_general_2">General</a></li>
-<li><a href="#_tables_on_submodels_and_submodelelements">Tables on Submodels and SubmodelElements</a></li>
+<li><a href="#_general_2">5.1. General</a></li>
+<li><a href="#_tables_on_submodels_and_submodelelements">5.2. Tables on Submodels and SubmodelElements</a></li>
 </ul>
 </li>
-<li><a href="#_sample_eclass_definitions_for_product_marking">Sample ECLASS definitions for product marking</a></li>
-<li><a href="#_bibliography">Bibliography</a></li>
+<li><a href="#_sample_eclass_definitions_for_product_marking">6. Sample ECLASS definitions for product marking</a></li>
+<li><a href="#_bibliography">7. Bibliography</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_general">General</h2>
+<h2 id="_general"><a class="link" href="#_general">1. General</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_about_this_document">About this document</h3>
+<h3 id="_about_this_document"><a class="link" href="#_about_this_document">1.1. About this document</a></h3>
 <div class="paragraph">
 <p>This document is a part of a specification series. Each part specifies the contents of a Submodel template for the Asset Administration Shell (AAS). The AAS is described in <a href="#bib1">[1]</a>, <a href="#bib2">[2]</a>, <a href="#bib3">[3]</a> and <a href="#bib6">[6]</a>. First exemplary Submodel contents were described in <a href="#bib4">[4]</a>, while the actual format of this document was derived by the "Administration Shell in Practice" <a href="#bib5">[5]</a>. The format aims to be very concise, giving only minimal necessary information for applying a Submodel template, while leaving deeper descriptions and specification of concepts, structures and mapping to the respective documents <a href="#bib1">[1]</a> to <a href="#bib6">[6]</a>.</p>
 </div>
@@ -161,7 +169,7 @@ img {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_scope_of_the_submodel">Scope of the Submodel</h3>
+<h3 id="_scope_of_the_submodel"><a class="link" href="#_scope_of_the_submodel">1.2. Scope of the Submodel</a></h3>
 <div class="paragraph">
 <p>This Submodel template aims to provide asset nameplate information to the respective Asset Administration Shells in an interoperable manner. Central element is the provision of properties <a href="#bib7">[7]</a>, ideally interoperable by the means of dictionaries such as ECLASS and IEC CDD (Common Data Dictionary). While in the current version an IRI is provided for a small quantity of the specified properties as their semantic identifier, a complete harmonization of all properties is planned for the subsequent version 2.1. The purpose of this document is to make selected specifications of Submodels in such manner that information about assets and their nameplate can be exchanged in a meaningful way between partners in a value creation network. It targets equipment for process industry and factory automation by defining standardized meta data.</p>
 </div>
@@ -176,7 +184,7 @@ img {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_relevant_standards_for_the_submodel_template">Relevant standards for the Submodel template</h3>
+<h3 id="_relevant_standards_for_the_submodel_template"><a class="link" href="#_relevant_standards_for_the_submodel_template">1.3. Relevant standards for the Submodel template</a></h3>
 <div class="paragraph">
 <p>The current version of the Submodel template is considered to meet the minimum requirement for nameplate information, hence it concentrates on the requirements specified by EU directives according to the Blue Guide published in the Official Journal of the EU-Commission. Furthermore, the current version provides a concept for modelling nameplate information required in the field of explosion protection according to the Directive 2014/34/EU.</p>
 </div>
@@ -265,7 +273,7 @@ img {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_explanations_on_used_uml_diagrams">Explanations on used UML diagrams</h3>
+<h3 id="_explanations_on_used_uml_diagrams"><a class="link" href="#_explanations_on_used_uml_diagrams">1.4. Explanations on used UML diagrams</a></h3>
 <div class="paragraph">
 <p>For clarity and an improved legibility readers suggested to go through this section at first before reading the following chapters.</p>
 </div>
@@ -285,7 +293,7 @@ img {
 </div>
 </div>
 <div class="sect1">
-<h2 id="_information_set_for_submodel_nameplate">Information set for Submodel “Nameplate”</h2>
+<h2 id="_information_set_for_submodel_nameplate"><a class="link" href="#_information_set_for_submodel_nameplate">2. Information set for Submodel “Nameplate”</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The Submodel template was motivated by the prior ZVEI project “Digital Nameplate”. While defining Submodels the following three aspects must be considered as suggested in <a href="#bib5">[5]</a>:</p>
@@ -317,10 +325,10 @@ img {
 </div>
 </div>
 <div class="sect1">
-<h2 id="_submodel_and_collections">Submodel and collections</h2>
+<h2 id="_submodel_and_collections"><a class="link" href="#_submodel_and_collections">3. Submodel and collections</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_properties_of_the_submodel_nameplate">Properties of the Submodel “Nameplate”</h3>
+<h3 id="_properties_of_the_submodel_nameplate"><a class="link" href="#_properties_of_the_submodel_nameplate">3.1. Properties of the Submodel “Nameplate”</a></h3>
 <div class="paragraph">
 <p>Figure 2 shows the UML-diagram defining the relevant properties which need to be set. Table 2 describes the details of the Submodel structure combined with examples.</p>
 </div>
@@ -810,7 +818,7 @@ Markings</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_mandatory_properties_of_the_smc_contactinformation_for_physical_address">Mandatory properties of the SMC “ContactInformation” for physical address</h3>
+<h3 id="_mandatory_properties_of_the_smc_contactinformation_for_physical_address"><a class="link" href="#_mandatory_properties_of_the_smc_contactinformation_for_physical_address">3.2. Mandatory properties of the SMC “ContactInformation” for physical address</a></h3>
 <div class="paragraph">
 <p>In order to provide information about a physical address, the SMC “ContactInformation” defined by <a href="#bib11">[11]</a> is to be re-used in the context of digital nameplate.</p>
 </div>
@@ -1023,7 +1031,7 @@ NationalCode</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_properties_of_the_smc_markings">Properties of the SMC “Markings”</h3>
+<h3 id="_properties_of_the_smc_markings"><a class="link" href="#_properties_of_the_smc_markings">3.3. Properties of the SMC “Markings”</a></h3>
 <div class="paragraph">
 <p>Figure 2 shows the UML-diagram defining the relevant properties which need to be set. <span class="mark">#</span>#Table 4 describes the details of the SMC structure.</p>
 </div>
@@ -1122,7 +1130,7 @@ Marking{00}</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_properties_of_the_smc_marking_for_product_marking">Properties of the SMC “Marking” for product marking</h3>
+<h3 id="_properties_of_the_smc_marking_for_product_marking"><a class="link" href="#_properties_of_the_smc_marking_for_product_marking">3.4. Properties of the SMC “Marking” for product marking</a></h3>
 <div class="paragraph">
 <p>Figure 5 shows the UML-diagram defining the relevant properties which need to be set. Table 5 describes the details of the SMC structure combined with examples.</p>
 </div>
@@ -1367,7 +1375,7 @@ MarkingAdditionalText{00}</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_properties_of_the_smc_explosionsafeties">Properties of the SMC “ExplosionSafeties”</h3>
+<h3 id="_properties_of_the_smc_explosionsafeties"><a class="link" href="#_properties_of_the_smc_explosionsafeties">3.5. Properties of the SMC “ExplosionSafeties”</a></h3>
 <div class="paragraph">
 <p>Figure 5 shows the UML-diagram defining the relevant properties which need to be set. describes the details of the SMC structure</p>
 </div>
@@ -1439,7 +1447,7 @@ ExplosionSafety{00}</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_properties_of_the_smc_explosionsafety">Properties of the SMC “ExplosionSafety”</h3>
+<h3 id="_properties_of_the_smc_explosionsafety"><a class="link" href="#_properties_of_the_smc_explosionsafety">3.6. Properties of the SMC “ExplosionSafety”</a></h3>
 <div class="paragraph">
 <p>Figure 7 shows the UML-diagram defining the relevant properties which need to be set.</p>
 </div>
@@ -1773,7 +1781,7 @@ ExplosionSafety{00}</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_properties_of_the_smc_ambientconditions">Properties of the SMC “AmbientConditions”</h3>
+<h3 id="_properties_of_the_smc_ambientconditions"><a class="link" href="#_properties_of_the_smc_ambientconditions">3.7. Properties of the SMC “AmbientConditions”</a></h3>
 <div class="paragraph">
 <p>Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 8 describes the details of the SMC structure.</p>
 </div>
@@ -2080,7 +2088,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 </table>
 </div>
 <div class="sect2">
-<h3 id="_properties_of_the_smc_processconditions">Properties of the SMC “ProcessConditions”</h3>
+<h3 id="_properties_of_the_smc_processconditions"><a class="link" href="#_properties_of_the_smc_processconditions">3.8. Properties of the SMC “ProcessConditions”</a></h3>
 <div class="paragraph">
 <p>Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 9 describes the details of the SMC structure.</p>
 </div>
@@ -2365,7 +2373,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 </table>
 </div>
 <div class="sect2">
-<h3 id="_properties_of_the_smc_externalelectricalcircuit">Properties of the SMC “ExternalElectricalCircuit”</h3>
+<h3 id="_properties_of_the_smc_externalelectricalcircuit"><a class="link" href="#_properties_of_the_smc_externalelectricalcircuit">3.9. Properties of the SMC “ExternalElectricalCircuit”</a></h3>
 <div class="paragraph">
 <p>Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 10 describes the details of the SMC structure.</p>
 </div>
@@ -2672,7 +2680,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 </table>
 </div>
 <div class="sect2">
-<h3 id="_properties_of_the_smc_safetyrelatedpropertiesforpassivebehaviour">Properties of the SMC “SafetyRelatedPropertiesForPassiveBehaviour”</h3>
+<h3 id="_properties_of_the_smc_safetyrelatedpropertiesforpassivebehaviour"><a class="link" href="#_properties_of_the_smc_safetyrelatedpropertiesforpassivebehaviour">3.10. Properties of the SMC “SafetyRelatedPropertiesForPassiveBehaviour”</a></h3>
 <div class="paragraph">
 <p>Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 11 describes the details of the SMC structure.</p>
 </div>
@@ -2849,7 +2857,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 </table>
 </div>
 <div class="sect2">
-<h3 id="_properties_of_the_smc_safetyrelatedpropertiesforactivebehaviour">Properties of the SMC “SafetyRelatedPropertiesForActiveBehaviour”</h3>
+<h3 id="_properties_of_the_smc_safetyrelatedpropertiesforactivebehaviour"><a class="link" href="#_properties_of_the_smc_safetyrelatedpropertiesforactivebehaviour">3.11. Properties of the SMC “SafetyRelatedPropertiesForActiveBehaviour”</a></h3>
 <div class="paragraph">
 <p>Figure 7 shows the UML-diagram defining the relevant properties which need to be set. Table 12 describes the details of the SMC structure.</p>
 </div>
@@ -3047,7 +3055,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 </table>
 </div>
 <div class="sect2">
-<h3 id="_properties_of_the_smc_assetspecificproperties">Properties of the SMC “AssetSpecificProperties”</h3>
+<h3 id="_properties_of_the_smc_assetspecificproperties"><a class="link" href="#_properties_of_the_smc_assetspecificproperties">3.12. Properties of the SMC “AssetSpecificProperties”</a></h3>
 <div class="paragraph">
 <p>Figure 2 shows the UML-diagram defining the relevant properties which need to be set. Table 13 describes the details of the SMC structure.</p>
 </div>
@@ -3131,7 +3139,7 @@ According to the current nameplate, also the combination “GD” is permitted</
 </table>
 </div>
 <div class="sect2">
-<h3 id="_properties_of_the_smc_guidelinespecificproperties">Properties of the SMC “GuidelineSpecificProperties”</h3>
+<h3 id="_properties_of_the_smc_guidelinespecificproperties"><a class="link" href="#_properties_of_the_smc_guidelinespecificproperties">3.13. Properties of the SMC “GuidelineSpecificProperties”</a></h3>
 <div class="paragraph">
 <p>Figure 2 shows the UML-diagram defining the relevant properties which need to be set. Table 14 describes the details of the SMC structure combined with examples.</p>
 </div>
@@ -3220,13 +3228,13 @@ According to the current nameplate, also the combination “GD” is permitted</
 </div>
 </div>
 <div class="sect1">
-<h2 id="_examples_for_using_smc_explosionsafety">Examples for using SMC “ExplosionSafety”</h2>
+<h2 id="_examples_for_using_smc_explosionsafety"><a class="link" href="#_examples_for_using_smc_explosionsafety">4. Examples for using SMC “ExplosionSafety”</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Due to the complexity of SMC “ExplosionSafety” examples are offered in this section to show best practices based on real nameplates.</p>
 </div>
 <div class="sect2">
-<h3 id="_remote_io_module_9468_aiao_8_channels">Remote I/O Module 9468 (AI/AO, 8 channels)</h3>
+<h3 id="_remote_io_module_9468_aiao_8_channels"><a class="link" href="#_remote_io_module_9468_aiao_8_channels">4.1. Remote I/O Module 9468 (AI/AO, 8 channels)</a></h3>
 <div class="paragraph">
 <p>Figure 9 shows the nameplate of a Remote I/O module.</p>
 </div>
@@ -4029,7 +4037,7 @@ ActiveBehaviour”</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_load_disconnect_switch">Load disconnect switch</h3>
+<h3 id="_load_disconnect_switch"><a class="link" href="#_load_disconnect_switch">4.2. Load disconnect switch</a></h3>
 <div class="paragraph">
 <p>Figure 11 shows the nameplate of a load disconnect switch.</p>
 </div>
@@ -4212,7 +4220,7 @@ ActiveBehaviour”</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_fisco_power_supply">FISCO Power supply</h3>
+<h3 id="_fisco_power_supply"><a class="link" href="#_fisco_power_supply">4.3. FISCO Power supply</a></h3>
 <div class="paragraph">
 <p>Figure 13 shows the nameplate of a FISCO power supply.</p>
 </div>
@@ -4763,7 +4771,7 @@ ActiveBehaviour”</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_flow_meter_promag_300">Flow meter Promag 300</h3>
+<h3 id="_flow_meter_promag_300"><a class="link" href="#_flow_meter_promag_300">4.4. Flow meter Promag 300</a></h3>
 <div class="paragraph">
 <p>Figure 15 shows the nameplate of a flow meter Promag 300.</p>
 </div>
@@ -5442,16 +5450,16 @@ PassiveBehaviour”</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_explanations_on_used_table_formats">Explanations on used table formats</h2>
+<h2 id="_explanations_on_used_table_formats"><a class="link" href="#_explanations_on_used_table_formats">5. Explanations on used table formats</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_general_2">General</h3>
+<h3 id="_general_2"><a class="link" href="#_general_2">5.1. General</a></h3>
 <div class="paragraph">
 <p>The used tables in this document try to outline information as concise as possible. They do not convey all information on Submodels and SubmodelElements. For this purpose, the definitive definitions are given by a separate file in form of an AASX file of the Submodel template and its elements.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_tables_on_submodels_and_submodelelements">Tables on Submodels and SubmodelElements</h3>
+<h3 id="_tables_on_submodels_and_submodelelements"><a class="link" href="#_tables_on_submodels_and_submodelelements">5.2. Tables on Submodels and SubmodelElements</a></h3>
 <div class="paragraph">
 <p>For clarity and brevity, a set of rules is used for the tables for describing Submodels and SubmodelElements.</p>
 </div>
@@ -5540,7 +5548,7 @@ PassiveBehaviour”</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_sample_eclass_definitions_for_product_marking">Sample ECLASS definitions for product marking</h2>
+<h2 id="_sample_eclass_definitions_for_product_marking"><a class="link" href="#_sample_eclass_definitions_for_product_marking">6. Sample ECLASS definitions for product marking</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The following table provides sample ECLASS definitions for modelling product marking in SMC “Marking”. Further values will be provided by ECLASS or other repositories.</p>
@@ -5625,7 +5633,7 @@ PassiveBehaviour”</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_bibliography">Bibliography</h2>
+<h2 id="_bibliography"><a class="link" href="#_bibliography">7. Bibliography</a></h2>
 <div class="sectionbody">
 <div id="bib1" class="paragraph">
 <p>[1] “Recommendations for implementing the strategic initiative INDUSTRIE 4.0”, acatech, April 2013. [Online]. Available <a href="https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/" class="bare">https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/</a></p>

@@ -48,6 +48,14 @@ a:hover, a:focus {
 h1, h2, h3, .sidebarblock > .content > .title, h4, h5, h6 {
   color: #3149cc;
 }
+#content h1 > a.link:hover, h2 > a.link:hover, h3 > a.link:hover, #toctitle > a.link:hover, .sidebarblock > .content > .title > a.link:hover, h4 > a.link:hover, h5 > a.link:hover, h6 > a.link:hover {
+	color: #ff500f;
+}
+
+#content h1 > a.link, h2 > a.link, h3 > a.link, #toctitle > a.link, .sidebarblock > .content > .title > a.link, h4 > a.link, h5 > a.link, h6 > a.link {
+	color: #3149cc;
+	text-decoration: none;
+}
 
 .subheader, .admonitionblock td.content > .title, .audioblock > .title, .exampleblock > .title, .imageblock > .title, .listingblock > .title, .literalblock > .title, .stemblock > .title, .openblock > .title, .paragraph > .title, .quoteblock > .title, table.tableblock > .title, .verseblock > .title, .videoblock > .title, .dlist > .title, .olist > .title, .ulist > .title, .qlist > .title, .hdlist > .title {
   color: #3149cc;
@@ -102,38 +110,38 @@ img {
 <div id="toc" class="toc2">
 <div id="toctitle">Digital Nameplate for Industrial Equipment</div>
 <ul class="sectlevel1">
-<li><a href="#_general">General</a>
+<li><a href="#_general">1. General</a>
 <ul class="sectlevel2">
-<li><a href="#_about_this_document">About this document</a></li>
-<li><a href="#_scope_of_the_submodel">Scope of the Submodel</a></li>
-<li><a href="#_relevant_standards_for_the_submodel_template">Relevant standards for the Submodel template</a></li>
-<li><a href="#_use_cases_requirements_and_design_decisions">Use cases, requirements and design decisions</a></li>
+<li><a href="#_about_this_document">1.1. About this document</a></li>
+<li><a href="#_scope_of_the_submodel">1.2. Scope of the Submodel</a></li>
+<li><a href="#_relevant_standards_for_the_submodel_template">1.3. Relevant standards for the Submodel template</a></li>
+<li><a href="#_use_cases_requirements_and_design_decisions">1.4. Use cases, requirements and design decisions</a></li>
 </ul>
 </li>
-<li><a href="#_submodel_title">Submodel TITLE</a>
+<li><a href="#_submodel_title">2. Submodel TITLE</a>
 <ul class="sectlevel2">
-<li><a href="#_approach">Approach</a></li>
-<li><a href="#_title">Title</a></li>
-<li><a href="#_title_2">Title</a></li>
-<li><a href="#_attributes">Attributes</a></li>
+<li><a href="#_approach">2.1. Approach</a></li>
+<li><a href="#_title">2.2. Title</a></li>
+<li><a href="#_title_2">2.3. Title</a></li>
+<li><a href="#_attributes">2.4. Attributes</a></li>
 </ul>
 </li>
-<li><a href="#_explanations_on_used_table_formats">Explanations on used table formats</a>
+<li><a href="#_explanations_on_used_table_formats">3. Explanations on used table formats</a>
 <ul class="sectlevel2">
-<li><a href="#_general_2">General</a></li>
-<li><a href="#_tables_on_submodels_and_submodelelements">Tables on Submodels and SubmodelElements</a></li>
+<li><a href="#_general_2">3.1. General</a></li>
+<li><a href="#_tables_on_submodels_and_submodelelements">3.2. Tables on Submodels and SubmodelElements</a></li>
 </ul>
 </li>
-<li><a href="#_bibliography">Bibliography</a></li>
+<li><a href="#_bibliography">4. Bibliography</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_general">General</h2>
+<h2 id="_general"><a class="link" href="#_general">1. General</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_about_this_document">About this document</h3>
+<h3 id="_about_this_document"><a class="link" href="#_about_this_document">1.1. About this document</a></h3>
 <div class="paragraph">
 <p>This document is a part of a specification series. Each part specifies the contents of a Submodel template for the Asset Administration Shell (AAS). The AAS is described in <a href="#bib1">[1]</a>, <a href="#bib2">[2]</a>, <a href="#bib3">[3]</a> and <a href="#bib6">[6]</a>. First exemplary Submodel contents were described in <a href="#bib4">[4]</a>, while the actual format of this document was derived by the "Administration Shell in Practice" <a href="#bib5">[5]</a>. The format aims to be very concise, giving only minimal necessary information for applying a Submodel template, while leaving deeper descriptions and specification of concepts, structures and mapping to the respective documents <a href="#bib1">[1]</a> to <a href="#bib6">[6]</a>.</p>
 </div>
@@ -142,19 +150,19 @@ img {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_scope_of_the_submodel">Scope of the Submodel</h3>
+<h3 id="_scope_of_the_submodel"><a class="link" href="#_scope_of_the_submodel">1.2. Scope of the Submodel</a></h3>
 <div class="paragraph">
 <p>Description of the Scope</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_relevant_standards_for_the_submodel_template">Relevant standards for the Submodel template</h3>
+<h3 id="_relevant_standards_for_the_submodel_template"><a class="link" href="#_relevant_standards_for_the_submodel_template">1.3. Relevant standards for the Submodel template</a></h3>
 <div class="paragraph">
 <p>List of relevant standards with titel</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_use_cases_requirements_and_design_decisions">Use cases, requirements and design decisions</h3>
+<h3 id="_use_cases_requirements_and_design_decisions"><a class="link" href="#_use_cases_requirements_and_design_decisions">1.4. Use cases, requirements and design decisions</a></h3>
 <div class="paragraph">
 <p>List of relevant use cases.</p>
 </div>
@@ -162,16 +170,16 @@ img {
 </div>
 </div>
 <div class="sect1">
-<h2 id="_submodel_title">Submodel TITLE</h2>
+<h2 id="_submodel_title"><a class="link" href="#_submodel_title">2. Submodel TITLE</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_approach">Approach</h3>
+<h3 id="_approach"><a class="link" href="#_approach">2.1. Approach</a></h3>
 <div class="paragraph">
 <p>Please describe the approach</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_title">Title</h3>
+<h3 id="_title"><a class="link" href="#_title">2.2. Title</a></h3>
 <div class="paragraph">
 <p>If you need to use figures, pleas use the figure desciptions</p>
 </div>
@@ -183,7 +191,7 @@ img {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_title_2">Title</h3>
+<h3 id="_title_2"><a class="link" href="#_title_2">2.3. Title</a></h3>
 <div class="paragraph">
 <p>If you need to use general tables, pleasd use the table descriptions.</p>
 </div>
@@ -218,7 +226,7 @@ img {
 </table>
 </div>
 <div class="sect2">
-<h3 id="_attributes">Attributes</h3>
+<h3 id="_attributes"><a class="link" href="#_attributes">2.4. Attributes</a></h3>
 <div class="paragraph">
 <p>Table for attributes look like this. Please remember to use the table descriptions.</p>
 </div>
@@ -332,16 +340,16 @@ img {
 </div>
 </div>
 <div class="sect1">
-<h2 id="_explanations_on_used_table_formats">Explanations on used table formats</h2>
+<h2 id="_explanations_on_used_table_formats"><a class="link" href="#_explanations_on_used_table_formats">3. Explanations on used table formats</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_general_2">General</h3>
+<h3 id="_general_2"><a class="link" href="#_general_2">3.1. General</a></h3>
 <div class="paragraph">
 <p>The used tables in this document try to outline information as concise as possible. They do not convey all information on Submodels and SubmodelElements. For this purpose, the definitive definitions are given by a separate file in form of an AASX file of the Submodel template and its elements.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_tables_on_submodels_and_submodelelements">Tables on Submodels and SubmodelElements</h3>
+<h3 id="_tables_on_submodels_and_submodelelements"><a class="link" href="#_tables_on_submodels_and_submodelelements">3.2. Tables on Submodels and SubmodelElements</a></h3>
 <div class="paragraph">
 <p>For clarity and brevity, a set of rules is used for the tables for describing Submodels and SubmodelElements.</p>
 </div>
@@ -430,7 +438,7 @@ img {
 </div>
 </div>
 <div class="sect1">
-<h2 id="_bibliography">Bibliography</h2>
+<h2 id="_bibliography"><a class="link" href="#_bibliography">4. Bibliography</a></h2>
 <div class="sectionbody">
 <div id="bib1" class="paragraph">
 <p>[1] “Recommendations for implementing the strategic initiative INDUSTRIE 4.0”, acatech, April 2013. [Online]. Available <a href="https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/" class="bare">https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/</a></p>
