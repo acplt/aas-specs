@@ -4485,7 +4485,6 @@ Note1 : the mapping to the OPC UA are carried out in a joint working groupfootno
 Note 2: the different versions of the OPC UA Companion Specification for I4AAS can be found here: https://reference.opcfoundation.org/%3cversion%3e/I4AAS/%3cversion%3e/docs/[https://reference.opcfoundation.org/<version>/I4AAS/<version>/docs/], e.g. https://reference.opcfoundation.org/v104/I4AAS/v100/docs/ for release 1.00 link:#bib41[[41\]].
 ====
 
-
 == Summary and Outlook
 
 This document has defined the metamodel for the structural viewpoint of the Asset Administration Shell using the technology-neutral modelling language UML.
@@ -4504,6 +4503,7 @@ Additional parts of the document series cover (see link:#bib37[[37\]]):
 * the infrastructure, which hosts and interconnects multiple Asset Administration Shells, implementing registry, discovery services, endpoint handling, and more,
 * security aspects including access control, Part 4.
 
+[appendix]
 == Concepts of the Administration Shell
 
 === General
@@ -4692,7 +4692,7 @@ https://www.zvei.de/SG2/aas/1/1/demo11232322/maxtemp#0002
 Note: the last row of Table 12 is only used for completion; the metamodel does not foresee own unique identifiers for property/parameter/status instances.
 ====
 
-
+[appendix]
 == Requirements
 
 This annex collects the requirements from various documents that have impact on the specific structure of the Administration Shell. They serve as input for the specific description of the structures of the Administration Shell.
@@ -4971,6 +4971,7 @@ Functions in the sense of executable entities are represented as __operation__s.
 
 |===
 
+[appendix]
 == Backus-Naur-Form
 
 The Backus-Naur form (BNF) – a meta-syntax notation for context-free grammars – is used to define grammars. For more information see Wikipediafootnote:[https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form].
@@ -5026,6 +5027,7 @@ ____
 *Hugo@example.com*
 ____
 
+[appendix]
 == Templates for UML Tables
 
 === General
@@ -5156,7 +5158,7 @@ Constraints are prefixed with *AASd-* followed by a three-digit number. The "d" 
 Note: in the Annex listing the metamodel changes, constraints with prefix AASs- or AASc- are also listed. These are security or data specification constraints, and are now part of the split document parts.
 ====
 
-
+[appendix]
 == Legend for UML Modelling
 
 === OMG UML General
@@ -5372,7 +5374,7 @@ Figure 87 shows a class representing a template. It is marked by the stereotype 
 .Graphical Representation of a Template Class
 image::image87.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung]
 
-
+[appendix]
 == How to Use the Metamodel
 
 === Composite I4.0 Components
@@ -5402,6 +5404,7 @@ Figure 88 shows an extract of the metamodel containing the most important elemen
 .Extract From Metamodel for Composite I4.0 Components
 image::image88.png[]
 
+[appendix]
 == Metamodel UML with Inherited Attributes
 
 In this annex, some UML diagrams are shown together with all attributes inherited for a better overview.
@@ -5417,6 +5420,7 @@ Note: abstract classes are numbered h0_, h1_ etc. Their aliases however are defi
 .Model for Submodel Elements with Inherited Attributes
 image::image90.png[]
 
+[appendix]
 == Metamodel Changes
 
 === General
@@ -7342,6 +7346,7 @@ externalInformationPoint renamed to externalInformationPoints
 |PolicyDecisionPoint/externalPolicyDecisionPoint |
 |===
 
+[bibliography]
 == Bibliography
 
 [#bib1]

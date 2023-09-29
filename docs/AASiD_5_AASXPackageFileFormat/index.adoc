@@ -541,6 +541,7 @@ Additional parts of the document series cover (see link:#bib10[[10\]]):
 * data specification templates (Part 3 series),
 * security aspects of the Asset Administration Shell (Part 4)
 
+[appendix]
 == Background Information
 
 === Selection of the Reference Format for the Asset Administration Shell Package Format
@@ -559,6 +560,7 @@ The Open Packaging Conventionsfootnote:[Not to be confused with OPC (Open Platfo
 * Office Open XML (including the Open Packaging Conventions format) and Open Document Format are politically conflicting formats (see details in link:#bib2[[2\]] and link:#bib3[[3\]]). Choosing Open Packaging Conventions as the option for storing the Asset Administration Shell information had only technical reasons based on the arguments mentioned here.
 * Open Packaging Conventions was chosen in favor of iiRDS (v1.0). The scope of iiRDS might not be aligned with the requirements of the Asset Administration Shell, i.e. iiRDS is mainly a format for storing technical documentation of industry devices based on ontology concepts.
 
+[appendix]
 == Changes
 
 === General
@@ -579,6 +581,7 @@ Minor changes:
 
 * Update xml examples to follow new version of xml schema
 
+[bibliography]
 == Bibliography
 
 [#bib1]

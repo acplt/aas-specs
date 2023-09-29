@@ -126,6 +126,7 @@ Note: If the described Entity has an own Asset Administration Shell, the SelfMan
 |Entity for an important sealing or bearing of the quipment. |0..*
 |===
 
+[appendix]
 == Explanations on used table formats
 
 === General
@@ -160,6 +161,7 @@ For clarity and brevity, a set of rules is used for the tables for describing Su
 * Multi-language strings are represented by the text value, followed by '@'-character and the ISO 639 language code: example@EN.
 * The [valueType] is only given for Properties.
 
+[bibliography]
 == Bibliography
 
 [#bib1]

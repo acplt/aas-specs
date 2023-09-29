@@ -2802,6 +2802,7 @@ PropertiesFor +
 PassiveBehaviour” |0173-1#02-AAM639#003 |MaxInternalInductance |mH |0 |0 |0 |0
 |===
 
+[appendix]
 == Explanations on used table formats
 
 === General
@@ -2836,6 +2837,7 @@ For clarity and brevity, a set of rules is used for the tables for describing Su
 * Multi-language strings are represented by the text value, followed by '@'-character and the ISO 639 language code: example@EN.
 * The [valueType] is only given for Properties.
 
+[appendix]
 == Sample ECLASS definitions for product marking
 
 The following table provides sample ECLASS definitions for modelling product marking in SMC “Marking”. Further values will be provided by ECLASS or other repositories.
@@ -2858,6 +2860,7 @@ The following table provides sample ECLASS definitions for modelling product mar
 |12 |0173-1#07-AAA554#001 |VDE mark of conformity
 |===
 
+[bibliography]
 == Bibliography
 
 [#bib1]
