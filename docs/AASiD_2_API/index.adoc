@@ -7,6 +7,14 @@
 :imagesdir: media/
 :nofooter:
 
+= Part 2: Application Programming Interfaces
+:author: IDTA
+:version-label: Number
+:revnumber: 01002-3-0
+:revdate: April 2023
+:revremark: Specification of the Asset Administration Shell
+
+
 == Preamble
 
 === Editorial Notes
@@ -157,7 +165,7 @@ element of a Submodel
 
 === Abbreviations
 
-[cols="21%,79%",options="header",]
+[%autowidth, width="100%", cols="21%,79%",options="header",]
 |===
 |*Abbreviation* |*Description*
 |AAS |Asset Administration Shell
@@ -307,7 +315,7 @@ The following rules shall apply for the operation names in Asset Administration 
 ____
 
 [caption=]
-[cols="29%,6%,65%",grid=none,]
+[%autowidth, width="100%", cols="29%,6%,65%",grid=none,]
 |===
 |*<Interface Operation>* |*::=* |*<Method Verb><Model Element Name>[<Modifier>] +
 ["By"<By-Qualifier>]*
@@ -360,8 +368,6 @@ The following grammar is used to create valid identifiers:
 
 *+ ::= one or more*
 
-* +
-*
 
 Examples for valid identifiers:
 
@@ -393,7 +399,7 @@ Relative references do not start with a global unique id. Instead, it is assumed
 The following table describes special parameters used for consistency throughout the document.
 
 .Special Parameters
-[cols="20%,80%",options="header",]
+[%autowidth, width="100%", cols="20%,80%",options="header",]
 |===
 |*Parameter* |*Description*
 |path |IdShort-Path via relative Reference/Keys to a submodel element
@@ -508,7 +514,7 @@ AASX packages are stored and managed independently from instantiated Asset Admin
 
 ==== Asset Administration Shell Interface
 
-[options=header]
+[%autowidth, width="100%", options=header]
 |===
 2+|Interface: Asset Administration Shell
 h|*Operation Name* h|*Description*
@@ -526,15 +532,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation GetAssetAdministrationShell
 
-.Level Parameters
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAssetAdministrationShell
 |*Explanation* |Returns the Asset Administration Shell
 |*semanticId* |https://admin-shell.io/aas/API/GetAssetAdministrationShell/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -546,15 +551,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation PutAssetAdministrationShell
 
-.Content Parameters
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PutAssetAdministrationShell
 |*Explanation* |Replaces the Asset Administration Shell
 |*semanticId* |https://admin-shell.io/aas/API/PutAssetAdministrationShell/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -566,15 +570,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation GetAllSubmodelReferences
 
-.Extent Parameters
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllSubmodelReferences
 |*Explanation* |Returns all Submodel References
 |*semanticId* |https://admin-shell.io/aas/API/GetAllSubmodelReferences/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -587,15 +590,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation PostSubmodelReference
 
-.Applicability of SerializationModifiers
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PostSubmodelReference
 |*Explanation* |Creates a Submodel Reference at the Asset Administration Shell
 |*semanticId* |https://admin-shell.io/aas/API/PostSubmodelReference/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* | *Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -607,15 +609,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation DeleteSubmodelReference
 
-.Mapping of Data Types in ValueOnly-Serialization
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |DeleteSubmodelReference
 |*Explanation* |Deletes the Submodel Reference from the Asset Administration Shell
 |*semanticId* |https://admin-shell.io/aas/API/DeleteSubmodelReference/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* | *Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -626,15 +627,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation GetAssetInformation
 
-.Children of certain objects
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAssetInformation
 |*Explanation* |Returns the Asset Information
 |*semanticId* |https://admin-shell.io/aas/API/GetAssetInformation/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -645,15 +645,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation PutAssetInformation
 
-.Metadata Attributes
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PutAssetInformation
 |*Explanation* |Replaces the Asset Information
 |*semanticId* |https://admin-shell.io/aas/API/PutAssetInformation/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -664,15 +663,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation GetThumbnail
 
-.AssetAdministrationShell JSON Serialization Example
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetThumbnail
 |*Explanation* |Returns the thumbnail file
 |*semanticId* |https://admin-shell.io/aas/API/GetThumbnail/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -683,15 +681,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation PutThumbnail
 
-.AssetAdministrationShell Metadata JSON Serialization Example
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PutThumbnail
 |*Explanation* |Replaces the thumbnail file
 |*semanticId* |https://admin-shell.io/aas/API/PutThumbnail/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -702,15 +699,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation DeleteThumbnail
 
-.Parameters for Pagination
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |DeleteThumbnail
 |*Explanation* |Deletes the thumbnail file
 |*semanticId* |https://admin-shell.io/aas/API/DeleteThumbnail/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -722,9 +718,7 @@ h|*Operation Name* h|*Description*
 
 ==== Submodel Interface
 
-.Mapping of the generic Interface Operations to HTTP API Operations
-
-[cols="42%,58%",options="header",]
+[%autowidth, width="100%", cols="42%,58%",options="header",]
 |===
 2+|Interface: Submodel
 h|*Operation Name* h|*Description*
@@ -750,15 +744,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation GetSubmodel
 
-.Status Code Mapping for HTTP
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetSubmodel
 |*Explanation* |Returns the Submodel
 |*semanticId* |https://admin-shell.io/aas/API/GetSubmodel/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -770,15 +763,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation GetAllSubmodelElements
 
-.Overview of Service Specifications and the Contained APIs
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllSubmodelElements
 |*Explanation* |Returns all submodel elements including their hierarchy
 |*semanticId* |https://admin-shell.io/aas/API/GetAllSubmodelElements/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -792,15 +784,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation GetSubmodelElementByPath
 
-.Interface Description
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetSubmodelElementByPath
 |*Explanation* |Returns a specific submodel element from the Submodel at a specified path
 |*semanticId* |https://admin-shell.io/aas/API/GetSubmodelElementByPath/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -813,15 +804,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation GetFileByPath
 
-.Operation Description
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetFileByPath
 |*Explanation* |Returns a specific file from the Submodel at a specified path
 |*semanticId* |https://admin-shell.io/aas/API/GetFileByPath/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -833,15 +823,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation PutFileByPath
 
-.Data Types for Payload Description
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PutFileByPath
 |*Explanation* |Replaces the file of an existing submodel element at a specified path within the submodel element hierarchy
 |*semanticId* |https://admin-shell.io/aas/API/PutFileByPath/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -853,15 +842,14 @@ h|*Operation Name* h|*Description*
 
 ==== Operation DeleteFileByPath
 
-.Enumeration Description
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |DeleteFileByPath
 |*Explanation* |Deletes the file of an existing submodel element at a specified path within the submodel element hierarchy
 |*semanticId* |https://admin-shell.io/aas/API/DeleteFileByPath/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -873,13 +861,13 @@ h|*Operation Name* h|*Description*
 ==== Operation PutSubmodel
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PutSubmodel
 |*Explanation* |Replaces the Submodel
 |*semanticId* |https://admin-shell.io/aas/API/PutSubmodel/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -892,13 +880,13 @@ h|*Operation Name* h|*Description*
 ==== Operation PatchSubmodel
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PatchSubmodel
 |*Explanation* |Updates the Submodel
 |*semanticId* |https://admin-shell.io/aas/API/PatchSubmodel/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -921,7 +909,7 @@ Note: values remain unchanged with content=metadata.
 ==== Operation PostSubmodelElement
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PostSubmodelElement
 |*Explanation* a|
@@ -935,7 +923,7 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 
 |*semanticId* |https://admin-shell.io/aas/API/PostSubmodelElement/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -948,7 +936,7 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation PostSubmodelElementByPath
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PostSubmodelElementByPath
 |*Explanation* a|
@@ -962,7 +950,7 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 
 |*semanticId* |https://admin-shell.io/aas/API/PostSubmodelElementByPath/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -982,13 +970,13 @@ Note: if the PostSubmodelElementByPath is executed towards a SubmodelElementList
 ==== Operation PutSubmodelElementByPath
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PutSubmodelElementByPath
 |*Explanation* |Replaces an existing submodel element at a specified path within the submodel element hierarchy
 |*semanticId* |https://admin-shell.io/aas/API/PutSubmodelElementByPath/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1002,13 +990,13 @@ Note: if the PostSubmodelElementByPath is executed towards a SubmodelElementList
 ==== Operation PatchSubmodelElementByPath
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PatchSubmodelElementByPath
 |*Explanation* |Updates an existing submodel element at a specified path within the submodel element hierarchy
 |*semanticId* |https://admin-shell.io/aas/API/PatchSubmodelElementByPath/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1032,13 +1020,13 @@ Note: values remain unchanged with content=metadata.
 ==== Operation GetSubmodelElementValueByPath
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetSubmodelElementValueByPath
 |*Explanation* |Returns a specific submodel element value from the Submodel at a specified path according to the ValueOnly-serialization as defined in clause 11.4.1
 |*semanticId* |https://admin-shell.io/aas/API/GetSubmodelElementValueByPath/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1051,13 +1039,13 @@ Note: values remain unchanged with content=metadata.
 ==== Operation PatchSubmodelElementValueByPath
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PatchSubmodelElementValueByPath
 |*Explanation* |Sets the value of the submodel element at a specified path according to the ValueOnly-serialization as defined in clause 11.4.1
 |*semanticId* |https://admin-shell.io/aas/API/PatchSubmodelElementValueByPath/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1070,13 +1058,13 @@ Note: values remain unchanged with content=metadata.
 ==== Operation DeleteSubmodelElementByPath
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |DeleteSubmodelElementByPath
 |*Explanation* |Deletes a submodel element at a specified path within the submodel elements hierarchy
 |*semanticId* |https://admin-shell.io/aas/API/DeleteSubmodelElementByPath/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1088,13 +1076,13 @@ Note: values remain unchanged with content=metadata.
 ==== Operation InvokeOperationSync
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |InvokeOperationSync
 |*Explanation* |Synchronously invokes an Operation at a specified path
 |*semanticId* |https://admin-shell.io/aas/API/InvokeOperationSync/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1109,13 +1097,13 @@ Note: values remain unchanged with content=metadata.
 ==== Operation InvokeOperationAsync
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |InvokeOperationAsync
 |*Explanation* |Asynchronously invokes an Operation at a specified path
 |*semanticId* |https://admin-shell.io/aas/API/InvokeOperationAsync/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1131,13 +1119,13 @@ Note: values remain unchanged with content=metadata.
 ==== Operation GetOperationAsyncStatus
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetOperationAsyncStatus
 |*Explanation* |Returns the current status of an asynchronously invoked operation
 |*semanticId* |https://admin-shell.io/aas/API/GetOperationAsnycStatus/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1150,13 +1138,13 @@ Note: values remain unchanged with content=metadata.
 ==== Operation GetOperationAsyncResult
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetOperationAsyncResult
 |*Explanation* |Returns the OperationResult of an asynchronously invoked operation
 |*semanticId* |https://admin-shell.io/aas/API/GetOperationAsnycResult/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1171,7 +1159,7 @@ Note: values remain unchanged with content=metadata.
 ==== Serialization Interface
 
 
-[cols="27%,73%",options="header",]
+[%autowidth, width="100%", cols="27%,73%",options="header",]
 |===
 2+|Interface: Serialization
 h|*Operation Name* h|*Description*
@@ -1181,13 +1169,13 @@ h|*Operation Name* h|*Description*
 ==== Operation GenerateSerializationByIds
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GenerateSerializationByIds
 |*Explanation* |Returns an appropriate serialization based on the specified format (see SerializationFormat).
 |*semanticId* |https://admin-shell.io/aas/API/GenerateSerializationByIds/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1201,13 +1189,13 @@ h|*Operation Name* h|*Description*
 |===
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Enumeration:* |SerializationFormat
 |*Explanation:* |Determines the format of serialization, i.e. JSON, XML, RDF, AML, etc.RFC 6838, IANA Media Types, and defined custom content types; additional elements may be added in future versions
 |*Set of:* |--
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Literal* |*Explanation*
 |application/json |JSON serialization of the requested data object inside an AAS Environment structure
@@ -1220,7 +1208,7 @@ h|*Operation Name* h|*Description*
 ==== AASX File Server Interface
 
 
-[cols="33%,67%",options="header",]
+[%autowidth, width="100%", cols="33%,67%",options="header",]
 |===
 2+|Interface: AASX File Server
 h|*Operation Name* h|*Description*
@@ -1234,13 +1222,13 @@ h|*Operation Name* h|*Description*
 ==== Operation GetAllAASXPackageIds
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllAASXPackageIds
 |*Explanation* |Returns a list of available AASX packages at the server
 |*semanticId* |https://admin-shell.io/aas/API/GetAllAASXPackageIds/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1255,13 +1243,13 @@ h|*Operation Name* h|*Description*
 ==== Operation GetAASXByPackageId
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAASXByPackageId
 |*Explanation* |Returns a specific AASX package from the server
 |*semanticId* |https://admin-shell.io/aas/API/GetAASXByPackageId/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1275,13 +1263,13 @@ h|*Operation Name* h|*Description*
 ==== Operation PostAASXPackage
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PostAASXPackage
 |*Explanation* |Creates an AASX package at the server
 |*semanticId* |https://admin-shell.io/aas/API/PostAASXPackage/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1305,13 +1293,13 @@ Note: it is not mandatory for servers to read and parse AASX packages. Servers m
 ==== Operation PutAASXPackageById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PutAASXPackageById
 |*Explanation* |Replaces the AASX package at the server
 |*semanticId* |https://admin-shell.io/aas/API/PutAASXPackageById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1335,13 +1323,13 @@ Note: it is not mandatory for servers to read and parse AASX packages. Servers m
 ==== Operation DeleteAASXPackageById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |DeleteAASXPackageById
 |*Explanation* |Deletes a specific AASX package from the server
 |*semanticId* |https://admin-shell.io/aas/API/DeleteAASXPackageById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1363,7 +1351,7 @@ Lookup interfaces provide access to the registered descriptors by identifiers (A
 ==== Asset Administration Shell Registry Interface
 
 
-[cols="45%,55%",options="header",]
+[%autowidth, width="100%", cols="45%,55%",options="header",]
 |===
 2+|Interface: Asset Administration Shell Registry
 h|*Operation Name* h|*Description*
@@ -1377,13 +1365,13 @@ h|*Operation Name* h|*Description*
 ==== Operation GetAllAssetAdministrationShellDescriptors
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllAssetAdministrationShellDescriptors
 |*Explanation* |Returns all Asset Administration Shell Descriptors
 |*semanticId* |https://admin-shell.io/aas/API/GetAllAssetAdministrationShellDescriptors/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1399,13 +1387,13 @@ h|*Operation Name* h|*Description*
 ==== Operation GetAssetAdministrationShellDescriptorById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAssetAdministrationShellDescriptorById
 |*Explanation* |Returns a specific Asset Administration Shell Descriptor
 |*semanticId* |https://admin-shell.io/aas/API/GetAssetAdministrationShellDescriptorById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1418,13 +1406,13 @@ h|*Operation Name* h|*Description*
 ==== Operation PostAssetAdministrationShellDescriptor
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PostAssetAdministrationShellDescriptor
 |*Explanation* |Creates a new Asset Administration Shell Descriptor, i.e. registers an AAS
 |*semanticId* |https://admin-shell.io/aas/API/PostAssetAdministrationShellDescriptor/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1437,13 +1425,13 @@ h|*Operation Name* h|*Description*
 ==== Operation PutAssetAdministrationShellDescriptorById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PutAssetAdministrationShellDescriptorById
 |*Explanation* |Replaces an existing Asset Administration Shell Descriptor, i.e. replaces registration information
 |*semanticId* |https://admin-shell.io/aas/API/PutAssetAdministrationShellDescriptorById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1456,13 +1444,13 @@ h|*Operation Name* h|*Description*
 ==== Operation DeleteAssetAdministrationShellDescriptorById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |DeleteAssetAdministrationShellDescriptorById
 |*Explanation* |Deletes an Asset Administration Shell Descriptor, i.e. de-registers an AAS
 |*semanticId* |https://admin-shell.io/aas/API/DeleteAssetAdministrationShellDescriptorById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1476,7 +1464,7 @@ h|*Operation Name* h|*Description*
 ==== Submodel Registry Interface
 
 
-[cols="31%,69%",options="header",]
+[%autowidth, width="100%", cols="31%,69%",options="header",]
 |===
 2+|Interface:Submodel Registry
 h|*Operation Name* h|*Description*
@@ -1490,13 +1478,13 @@ h|*Operation Name* h|*Description*
 ==== Operation GetAllSubmodelDescriptors
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllSubmodelDescriptors
 |*Explanation* |Returns all submodel descriptors
 |*semanticId* |https://admin-shell.io/aas/API/GetAllSubmodelDescriptors/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1510,13 +1498,13 @@ h|*Operation Name* h|*Description*
 ==== Operation GetSubmodelDescriptorById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetSubmodelDescriptorById
 |*Explanation* |Returns a specific Submodel Descriptor
 |*semanticId* |https://admin-shell.io/aas/API/GetSubmodelDescriptorById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1529,13 +1517,13 @@ h|*Operation Name* h|*Description*
 ==== Operation PostSubmodelDescriptor
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PostSubmodelDescriptor
 |*Explanation* |Creates a new submodel descriptor, i.e. registers a submodel
 |*semanticId* |https://admin-shell.io/aas/API/PostSubmodelDescriptor/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1549,13 +1537,13 @@ Descriptor |Object containing the Submodel’s identification and endpoint infor
 ==== Operation PutSubmodelDescriptorById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PutSubmodelDescriptorById
 |*Explanation* |Replaces an existing submodel descriptor, i.e. replaces registration information
 |*semanticId* |https://admin-shell.io/aas/API/PutSubmodelDescriptorById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1569,13 +1557,13 @@ Descriptor |Object containing the Submodel’s identification and endpoint infor
 ==== Operation DeleteSubmodelDescriptorById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |DeleteSubmodelDescriptorById
 |*Explanation* |Deletes a Submodel Descriptor, i.e. de-registers a submodel
 |*semanticId* |https://admin-shell.io/aas/API/DeleteSubmodelDescriptorById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1599,7 +1587,7 @@ The interfaces that provide access to the entities (Asset Administration Shells,
 ==== Asset Administration Shell Repository Interface
 
 
-[cols="41%,59%",options="header",]
+[%autowidth, width="100%", cols="41%,59%",options="header",]
 |===
 2+|Interface: Asset Administration Shell Registry
 h|*Operation Name* h|*Description*
@@ -1623,13 +1611,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation GetAllAssetAdministrationShells
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllAssetAdministrationShells
 |*Explanation* |Returns all Asset Administration Shells
 |*semanticId* |https://admin-shell.io/aas/API/GetAllAssetAdministrationShells/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1644,13 +1632,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation GetAssetAdministrationShellById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAssetAdministrationShellById
 |*Explanation* |Returns a specific Asset Administration Shell
 |*semanticId* |https://admin-shell.io/aas/API/GetAssetAdministrationShellById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1666,13 +1654,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation GetAllAssetAdministrationShellsByAssetId
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllAssetAdministrationShellsByAssetId
 |*Explanation* |Returns all Asset Administration Shells that are linked to a globally unique asset identifier or to specific asset ids
 |*semanticId* |https://admin-shell.io/aas/API/GetAllAssetAdministrationShellsByAssetId/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1689,13 +1677,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation GetAllAssetAdministrationShellsByIdShort
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllAssetAdministrationShellsByIdShort
 |*Explanation* |Returns all Asset Administration Shells with a specific _idShort_
 |*semanticId* |https://admin-shell.io/aas/API/GetAllAssetAdministrationShellsByIdShort/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1711,7 +1699,7 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation PostAssetAdministrationShell
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PostAssetAdministrationShell
 |*Explanation* a|
@@ -1725,7 +1713,7 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 
 |*semanticId* |https://admin-shell.io/aas/API/PostAssetAdministrationShell/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1738,13 +1726,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation PutAssetAdministrationShellById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PutAssetAdministrationShellById
 |*Explanation* |Replaces an existing Asset Administration Shell
 |*semanticId* |https://admin-shell.io/aas/API/PutAssetAdministrationShellById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1757,13 +1745,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation DeleteAssetAdministrationShellById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |DeleteAssetAdministrationShellById
 |*Explanation* |Deletes an Asset Administration Shell
 |*semanticId* |https://admin-shell.io/aas/API/DeleteAssetAdministrationShellById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1777,7 +1765,7 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Submodel Repository Interface
 
 
-[cols="44%,56%",options="header",]
+[%autowidth, width="100%", cols="44%,56%",options="header",]
 |===
 2+|Interface: Submodel Repository
 h|*Operation Name* h|*Description*
@@ -1803,13 +1791,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation GetAllSubmodels
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllSubmodels
 |*Explanation* |Returns all Submodels
 |*semanticId* |https://admin-shell.io/aas/API/GetAllSubmodels/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1824,13 +1812,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation GetSubmodelById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetSubmodelById
 |*Explanation* |Returns a specific Submodel
 |*semanticId* |https://admin-shell.io/aas/API/GetSubmodelById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1844,13 +1832,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation GetAllSubmodelsBySemanticId
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllSubmodelsBySemanticId
 |*Explanation* |Returns all Submodels with a specific SemanticId or SupplementalSemanticId. If either the semanticId fits to the input parameter or at least one of the SupplementalSemanticIds, the submodel is returned.
 |*semanticId* |https://admin-shell.io/aas/API/GetAllSubmodelsBySemanticId/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1866,13 +1854,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation GetAllSubmodelsByIdShort
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllSubmodelsByIdShort
 |*Explanation* |Returns all Submodels with a specific _idShort_
 |*semanticId* |https://admin-shell.io/aas/API/GetAllSubmodelsByIdShort/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1888,7 +1876,7 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation PostSubmodel
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PostSubmodel
 |*Explanation* a|
@@ -1902,7 +1890,7 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 
 |*semanticId* |https://admin-shell.io/aas/API/PostSubmodel/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1915,13 +1903,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation PutSubmodelById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PutSubmodelById
 |*Explanation* |Replaces an existing Submodel
 |*semanticId* |https://admin-shell.io/aas/API/PutSubmodelById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1934,13 +1922,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation PatchSubmodelById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PatchSubmodelById
 |*Explanation* |Updates an existing Submodel
 |*semanticId* |https://admin-shell.io/aas/API/PatchSubmodelById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1963,13 +1951,13 @@ Note: values remain unchanged with content=metadata.
 ==== Operation DeleteSubmodelById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |DeleteSubmodelById
 |*Explanation* |Deletes a Submodel
 |*semanticId* |https://admin-shell.io/aas/API/DeleteSubmodelById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -1983,7 +1971,7 @@ Note: values remain unchanged with content=metadata.
 ==== Concept Description Repository Interface
 
 
-[cols="55%,45%",options="header",]
+[%autowidth, width="100%", cols="55%,45%",options="header",]
 |===
 2+|Interface: Concept Description Repository
 h|*Operation Name* h|*Description*
@@ -2008,13 +1996,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation GetAllConceptDescriptions
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllConceptDescriptions
 |*Explanation* |Returns all Concept Descriptions
 |*semanticId* |https://admin-shell.io/aas/API/GetAllConceptDescriptions/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -2028,13 +2016,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation GetConceptDescriptionById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetConceptDescriptionById
 |*Explanation* |Returns a specific Concept Description
 |*semanticId* |https://admin-shell.io/aas/API/GetConceptDescriptionById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -2047,13 +2035,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation GetAllConceptDescriptionsByIdShort
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllConceptDescriptionsByIdShort
 |*Explanation* |Returns all Concept Descriptions with a specific _idShort_
 |*semanticId* |https://admin-shell.io/aas/API/GetAllConceptDescriptionsByIdShort/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -2068,13 +2056,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation GetAllConceptDescriptionsByIsCaseOf
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllConceptDescriptionsByIsCaseOf
 |*Explanation* |Returns all Concept Descriptions with a specific _IsCaseOf_ reference
 |*semanticId* |https://admin-shell.io/aas/API/GetAllConceptDescriptionsByIsCaseOf/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -2089,13 +2077,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation GetAllConceptDescriptionsByDataSpecificationReference
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllConceptDescriptionsByDataSpecificationReference
 |*Explanation* |Returns all Concept Descriptions with a specific _dataSpecification_ reference
 |*semanticId* |https://admin-shell.io/aas/API/GetAllConceptDescriptionsByDataSpecificationReference/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -2110,7 +2098,7 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation PostConceptDescription
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PostConceptDescription
 |*Explanation* a|
@@ -2124,7 +2112,7 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 
 |*semanticId* |https://admin-shell.io/aas/API/PostConceptDescription/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -2137,13 +2125,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation PutConceptDescriptionById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PutConceptDescriptionById
 |*Explanation* |Replaces an existing Concept Description
 |*semanticId* |https://admin-shell.io/aas/API/PutConceptDescriptionById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -2156,13 +2144,13 @@ Note: the creation of the idShort is out of scope and must be handled in a propr
 ==== Operation DeleteConceptDescriptionById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |DeleteConceptDescriptionById
 |*Explanation* |Deletes a Concept Description
 |*semanticId* |https://admin-shell.io/aas/API/DeleteConceptDescriptionById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -2182,7 +2170,7 @@ These interfaces allow to publish information about Asset Administration Shells 
 ==== Asset Administration Shell Basic Discovery Interface
 
 
-[cols="45%,55%",options="header",]
+[%autowidth, width="100%", cols="45%,55%",options="header",]
 |===
 2+|Interface: Asset Administration Shell Basic Discovery
 h|*Operation Name* h|*Description*
@@ -2195,13 +2183,13 @@ h|*Operation Name* h|*Description*
 ==== Operation GetAllAssetAdministrationShellIdsByAssetLink
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllAssetAdministrationShellIdsByAssetLink
 |*Explanation* |Returns a list of Asset Administration Shell ids based on asset identifier key-value-pairs
 |*semanticId* |https://admin-shell.io/aas/API/GetAllAssetAdministrationShellIdsByAssetLink/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -2225,13 +2213,13 @@ Note: The key of the asset identifier key-value-pair for the globalAssetId is de
 ==== Operation GetAllAssetLinksById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetAllAssetLinksById
 |*Explanation* |Returns a list of asset identifier key-value-pairs based on an Asset Administration Shell id to edit discoverable content
 |*semanticId* |https://admin-shell.io/aas/API/AssetAdministrationShellBasicDiscoveryInterfae/GetAllAssetLinksById/1/0/RC02[https://admin-shell.io/aas/API/GetAllAssetLinksById/3/0]
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -2253,13 +2241,13 @@ Note: the name of the SpecificAssetId for the globalAssetId is defined in Clause
 ==== Operation PostAllAssetLinksById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |PostAllAssetLinksById
 |*Explanation* |Creates new asset identifier key-value-pairs linked to an Asset Administration Shell for discoverable content. The existing content might have to be deleted first.
 |*semanticId* |https://admin-shell.io/aas/API/PostAllAssetLinksById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -2282,13 +2270,13 @@ Note: the name for the globalAssetId is defined in Clause 4.5. It is the predefi
 ==== Operation DeleteAllAssetLinksById
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |DeleteAllAssetLinksById
 |*Explanation* |Deletes all asset identifier key-value-pairs linked to an Asset Administration Shell to edit discoverable content
 |*semanticId* |https://admin-shell.io/aas/API/DeleteAllAssetLinksById/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
@@ -2302,7 +2290,7 @@ Note: the name for the globalAssetId is defined in Clause 4.5. It is the predefi
 === Self-Description Interface
 
 
-[cols="19%,81%",options="header",]
+[%autowidth, width="100%", cols="19%,81%",options="header",]
 |===
 2+|Interface: Self-Description
 h|*Operation Name* h|*Description*
@@ -2312,13 +2300,13 @@ h|*Operation Name* h|*Description*
 === Operation GetSelfDescription
 
 [.table-with-appendix-table]
-[cols="h,d",]
+[%autowidth, width="100%", cols="h,d",]
 |===
 |*Operation Name* |GetSelfDescription
 |*Explanation* |Returns a description object containing the capabilities and supported features of the server.
 |*semanticId* |https://admin-shell.io/aas/API/GetSelfDescription/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Output Parameter
@@ -2351,14 +2339,14 @@ The following type definitions are used to describe specific metamodel elements 
 ==== Descriptor
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Class Name* |Descriptor
 |*Explanation* |The self-describing information of a network resource. This class is not part of the metamodel.
 |*Inherits from* |--
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/Descriptor/3/0
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Attribute* |*Explanation* |*Type* |*Card.*
 |description a|
@@ -2374,14 +2362,14 @@ The description can be provided in several languages
 ==== AssetAdministrationShellDescriptor
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Class Name* |AssetAdministrationShellDescriptor
 |*Explanation* |Descriptor of an Asset Administration Shell
 |*Inherits from* |Descriptor
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/AssetAdministrationShellDescriptor/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Attribute* |*Explanation* | *Type* |*Card.*
 |administration |Administrative information of the Asset Administration Shell |AdministrativeInformation |0..1
@@ -2404,14 +2392,14 @@ Note: the cardinality restriction for AssetAdministrationShellDescriptor/endpoin
 ==== SubmodelDescriptor
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Class Name* |SubmodelDescriptor
 |*Explanation* |A descriptor of a submodel
 |*Inherits from* |Descriptor
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/SubmodelDescriptor/3/0
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Attribute* |*Explanation* | *Type* |*Card.*
 |administration |Administrative information of the Submodel |AdministrativeInformation |0..1
@@ -2425,14 +2413,14 @@ Note: the cardinality restriction for AssetAdministrationShellDescriptor/endpoin
 ==== Endpoint
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Class Name* |Endpoint
 |*Explanation* |The endpoint description of a network resource. This class is not part of the metamodel.
 |*Inherits from* |-
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/Endpoint/3/0
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Attribute* |*Explanation* |*Type* |*Card.*
 |protocolInformation |Protocol information of the network resource endpoint |ProtocolInformation |1
@@ -2441,7 +2429,7 @@ Note: the cardinality restriction for AssetAdministrationShellDescriptor/endpoin
 
 The following names will be used for the interfaces:
 
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Interface* |*interface-shortName*
 |Asset Administration Shell Interface |AAS
@@ -2467,7 +2455,7 @@ image:image5.png[image5]
 ==== ProtocolInformation
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Class Name* |ProtocolInformation
 |*Explanation* a|
@@ -2479,7 +2467,7 @@ The information in this table is a 1:1 copy from DIN SPEC 16593-2. Required chan
 |*Inherits from* |--
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/ProtocolInformation/3/0
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Attribute* |*Explanation* |*Type* |*Card.*
 |href |The endpoint address as an URL |String 2048 |1
@@ -2507,7 +2495,7 @@ The securityAttribute objects are treated as possible alternatives (logical “o
 |===
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Class Name* |SecurityAttributeObject
 |*Explanation* a|
@@ -2519,7 +2507,7 @@ The information in this table is derived from DIN SPEC 16593-2. Required changes
 |*Inherits from* |--
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/SecurityAttributeObject/3/0
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Attribute* |*Explanation* |*Type* |*Card.*
 |type |Enum security type or standard |SecurityTypeEnum |1
@@ -2528,7 +2516,7 @@ The information in this table is derived from DIN SPEC 16593-2. Required changes
 |===
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Enumeration* |SecurityTypeEnum
 |*Explanation* a|
@@ -2538,7 +2526,7 @@ The information in this table is derived from DIN SPEC 16593-2. Required changes
 
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/ SecurityTypeEnum/3/0
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Literal* |*Explanation*
 |NONE |No predefined security type available
@@ -2549,7 +2537,7 @@ The information in this table is derived from DIN SPEC 16593-2. Required changes
 ==== ServiceDescription
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Class Name* |ServiceDescription
 |*Explanation* a|
@@ -2561,7 +2549,7 @@ This class is not part of the metamodel.
 |*Inherits from* |--
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/ServiceDescription/3/0
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Attribute* |*Explanation* |*Type* |*Card.*
 |profiles |List of implemented server specification profiles. |ServiceSpecificationProfileEnum |1..*
@@ -2569,13 +2557,13 @@ This class is not part of the metamodel.
 
 
 [.table-with-appendix-table]
-[cols="43%h,57%"]
+[%autowidth, width="100%", cols="43%h,57%"]
 |===
 |*Enumeration* |ServiceSpecificationProfileEnum
 |*Explanation* |The identifiers of the standardized service specification profiles. See also clause 12.12 for further details.
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/ ServiceSpecificationProfileEnum/3/0
 |===
-[options="header",cols="43%,57%"]
+[%autowidth, width="100%", options="header",cols="43%,57%"]
 |===
 |*Literal* |*Explanation*
 |https://admin-shell.io/aas/API/3/0/AssetAdministrationShellServiceSpecification/SSP-001 |Indicates that the server implemented all features of the Asset Administration Shell Service Specification Full Profile in version 3.0.
@@ -2610,7 +2598,7 @@ image:image6.png[image6]
 All simple data types from Part 1 link:#bib1[[1\]] apply also to the specifications described in this document. Additional data types are defined in Table 2.
 
 .Simple Data Types used for API-specific Classes
-[cols="22%,30%,48%",options="header",]
+[%autowidth, width="100%", cols="22%,30%,48%",options="header",]
 |===
 |*Primitive* |*Definition* |*Value Examples*
 |NonNegativeInteger |The _nonNegativeInteger_ datatype as defined by XML Schema Part 2 in version 1.0footnote:[https://www.w3.org/TR/xmlschema-2/] a|
@@ -2624,7 +2612,8 @@ All simple data types from Part 1 link:#bib1[[1\]] apply also to the specificati
 
 All primitive data types from Part 1 version 3.0 apply also to the specifications described in this document. All constraints and spelling patterns apply as well. In addition, the following data types are defined.
 
-[cols="14%,44%,42%",options="header",]
+.Primitive Data Types used for the API-specific Classes
+[%autowidth, width="100%", cols="14%,44%,42%",options="header",]
 |===
 |*Primitive* |*Definition* |*Value Examples*
 |CodeType |_string_ with max 32 and min 1 characters a|
@@ -2646,7 +2635,6 @@ a|
 
 “my-random-id”
 
-|
 |===
 
 ==== Status Code, Error Handling & Result Messages 
@@ -2661,7 +2649,8 @@ Successful operations return one of the success status codes and their respectiv
 
 Table 4 shows generic status codes returned to the requester. Additionally, the table indicates whether a specific status code comes with a result object in the returned payload.
 
-[cols="31%,61%,8%",options="header",]
+.Status Codes
+[%autowidth, width="100%", cols="31%,61%,8%",options="header",]
 |===
 |*Generic Status Code* |*Meaning* |*Has Result Object*
 |Success |Success |No
@@ -2683,28 +2672,28 @@ Table 4 shows generic status codes returned to the requester. Additionally, the 
 In case of a failed operation execution, a result object [.underline]#shall be returned# containing more information about the reasons why the operation failed to execute.
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Class Name* |Result
 |*Explanation* |The result object
 |*Inherits from* |--
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/Result/3/0
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Attribute* |*Explanation* |*Type* |*Card.*
 |message |Additional message containing information for the requester |Message |0..*
 |===
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Class Name* |Message
 |*Explanation* |A message containing more information for the requester about a certain happening in the backend
 |*Inherits from* |--
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/Message/3/0
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Attribute* |*Explanation* |*Type* |*Card.*
 |messageType |The message type |MessageTypeEnum |1
@@ -2715,13 +2704,13 @@ In case of a failed operation execution, a result object [.underline]#shall be r
 |===
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Enumeration* |MessageTypeEnum
 |*Explanation* |The message type
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/MessageTypeEnum/3/0
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Literal* |*Explanation*
 |Info |Used to inform the user about a certain fact
@@ -2737,14 +2726,14 @@ The following type definitions are used to call and handle the requests and resp
 ====== OperationRequest
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Class Name* |OperationRequest
 |*Explanation* |The operation request object
 |*Inherits from* |--
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/OperationRequest/3/0
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Attribute* |*Explanation* |*Type* |*Card.*
 |inputArguments |Input argument |OperationVariable |0..*
@@ -2755,14 +2744,14 @@ The following type definitions are used to call and handle the requests and resp
 ====== OperationResult
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Class Name* |OperationResult
 |*Explanation* |The operation’s invocation result object
 |*Inherits from* |Result
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/OperationResult/3/0
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Attribute +
 (* = mandatory)* |*Explanation* |*Type* |*Card.*
@@ -2775,13 +2764,13 @@ The following type definitions are used to call and handle the requests and resp
 ====== Enumeration ExecutionState 
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Enumeration* |ExecutionState
 |*Explanation* |The operation’s invocation result state
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/ExecutionState/3/0
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Literal* |*Explanation*
 |Initiated |The operation is ready to be executed (initial state)
@@ -2795,14 +2784,14 @@ The following type definitions are used to call and handle the requests and resp
 ====== OperationHandle 
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Class Name* |OperationHandle
 |*Explanation* |The returned handle of an operation’s asynchronous invocation used to request the current state of the operation’s execution
 |*Inherits from* |--
 |*semanticId* |https://admin-shell.io/aas/API/DataTypes/OperationHandle/3/0
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Attribute* |*Explanation* |*Type* |*Card.*
 |handleId |Handle id |ShortIdType |1
@@ -2835,7 +2824,8 @@ Note: values remain unchanged with content=metadata.
 
 The first enumeration _Level_ indicates the depth of the structure of the response or input content.
 
-[cols="29%,71%",options="header",]
+.Level Parameters
+[%autowidth, width="100%", cols="29%,71%",options="header",]
 |===
 |*Value* |*Explanation*
 |Deep (Default) |All elements of a requested hierarchy level and all children on all sublevels are returned. Children in this sense are SubmodelElements which are contained at the ‘submodelElements’ field of Submodels, the ‘value’ field of SubmodelElementCollections or SubmodelElementLists, the ‘statements’ field of Entities, or the ‘annotations’ field of AnnotatedRelationshipElements.
@@ -2855,7 +2845,8 @@ The second enumeration _Content_ indicates the kind of serialization of the resp
 
 For Content equal to Value see Clause 0 for details.
 
-[cols="29%,71%",options="header",]
+.Content Parameters
+[%autowidth, width="100%", cols="29%,71%",options="header",]
 |===
 |*Value* |*Explanation*
 |Normal (Default) |The standard serialization of the model element or child elements is applied.
@@ -2876,7 +2867,8 @@ Note: level parameters are mapped to path suffixes “/$<content>” in the HTTP
 
 The third enumeration _Extent_ indicates to which extent the response or input content is being serialized. At this stage, the listed values could also be represented as binary values on BLOB-elements. They are, however, kept as generic extent values for the sake of extension.
 
-[cols="30%,70%",options="header",]
+.Extent Parameters
+[%autowidth, width="100%", cols="30%,70%",options="header",]
 |===
 |*Value* |*Explanation*
 |WithoutBLOBValue (Default) |Only applicable to BLOB-elements; the BLOB content is not returned.
@@ -2895,7 +2887,8 @@ The defined SerializationModifiers are only valid for specific operations due to
 
 GET and PATCH operations may combine all SerializationModifiers as listed below. PUT operations may only use the Extent Modifier. POST operations do not use SerializationModifiers.
 
-[cols="37%,13%,28%,22%",options="header",]
+.Applicability of SerializationModifiers
+[%autowidth, width="100%", cols="37%,13%,28%,22%",options="header",]
 |===
 |*Resource Name* |*Level Modifier* |*Content Modifier* |*Extent Modifier*
 |Asset Administration Shell |No |Normal/Reference |No
@@ -3004,7 +2997,8 @@ The following rules shall be adhered to when serializing a submodel with the Ser
 
 The serialization of submodel element values is described in the following table. The left column “Data Type” shows the data types which can be used for submodel element values. The data types are defined according to the W3C XML Schema (https://www.w3.org/TR/xmlschema-2/#built-in-datatypes and https://www.w3.org/TR/xmlschema-2/#built-in-derived). “Value Range” further explains the possible range of data values for this data type. The right column comprises related examples of the serialization of submodel element values.
 
-[cols="15%,15%,9%,30%,31%",options="header",]
+.Mapping of Data Types in ValueOnly-Serialization
+[%autowidth, width="100%", cols="15%,15%,9%,30%,31%",options="header",]
 |===
 | |*Data Type* |*JSON Type* |*Value Range* |*Sample Values*
 |Core Types |xs:string |string |Character string |"Hello world", "Καλημέρα κόσμε", "コンニチハ"
@@ -3078,23 +3072,73 @@ Note 3: language-tagged strings (rdf:langString) containing single quotes (‘) 
 
 Full serialization of single submodel element _Property_:
 
-image:image7.png[image7]
+[source,json,linenums]
+----
+{
+  "idShort": "MaxRotationSpeed",
+  "category": "PARAMETER",
+  "kind": "Instance",
+  "semanticlId": {
+    "type": "ModelReference",
+    "keys": [
+      {
+        "type": "ConceptDescription",
+        "value": "0173-1#02-BAA120#008"
+      }
+    ]
+  },
+  "modelType": "Property",
+  "valueType": "xs:int",
+  "value": "5000"
+}
+----
 
 With the SerializationModifier set to _Value,_ the payload is minimized to the following:
 
-image:image8.png[image8]
+[source,json,linenums]
+----
+{
+  "MaxRotationSpeed": 5000
+}
+----
 
 For a _SubmodelElementCollection,_ the struct is serialized as objects denoted by curly brackets:
 
-image:image9.png[image9]
+[source,json,linenums]
+----
+{
+  "NamesOfFamilyMembers": {
+    "NameOfMother": "Martha ExampleFamily",
+    "NameOfFather": "Jonathan ExampleFamily",
+    "NameOfSon": "Clark ExampleFamily"
+  }
+}
+----
 
 For a _SubmodelElementList,_ the struct is serialized as array denoted by square brackets:
 
-image:image10.png[image10]
+[source,json,linenums]
+----
+{
+  "NamesOfFamilyMembers": [
+    "Martha ExampleFamily",
+    "Jonathan ExampleFamily",
+    "Clark ExampleFamily"
+  ]
+}
+----
 
 For a _MultiLanguageProperty_ named “Label”, the payload is minimized to the following:
 
-image:image11.png[image11]
+[source,json,linenums]
+----
+{
+  "Label": [
+    {"de": "Das ist ein deutscher Bezeichner"},
+    {"en": "That's an English label"}
+  ]
+}
+----
 
 
 ====
@@ -3106,46 +3150,218 @@ Note: in accordance with IETF https://tools.ietf.org/html/rfc5646#page-5[RFC 564
 
 For a _Range_ named “TorqueRange”, the payload is minimized to the following:
 
-image:image12.png[image12]
+[source,json,linenums]
+----
+{
+  "TorqueRange": {
+    "min": 3,
+    "max": 15
+  }
+}
+----
 
-For a _ReferenceElement_ named “MaxRotationSpeedReference”, the payload is minimized to the following:image:image13.png[image13]
+For a _ReferenceElement_ named “MaxRotationSpeedReference”, the payload is minimized to the following:
+
+[source,json,linenums]
+----
+{
+  "MaxRotationSpeedReference": {
+    "type": "ModelReference",
+    "keys": [
+      {
+        "type": "Submodel",
+        "value": "http://customer.com/demo/aas/1/1/1234859590"
+      },
+      {
+        "type": "Property",
+        "value": "MaxRotationSpeed"
+      }
+    ]
+  }
+}
+----
 
 For the same _ReferenceElement,_ the payload is minimized to the following in case the _Reference_ is of subtype _GlobalReference_:
 
-image:image14.png[image14]
+[source,json,linenums]
+----
+{
+  "MaxRotationSpeedReference": {
+    "type": "ExternalReference",
+    "keys": [
+      {
+        "type": "GlobalReference",
+        "value": "0173-1#02-BAA120#008"
+      }
+    ]
+  }
+}
+----
 
 For a _File_ named “Document”, the payload is minimized to the following:
 
-image:image15.png[image15]
+[source,json,linenums]
+----
+{
+  "Document": {
+    "contentType": "application/pdf",
+    "value": "SafetyInstructions.pdf"
+  }
+}
+----
 
 For a _Blob_ named “Library”, the payload is minimized to the following if the SerializationModifier _Extent_ is set to *_WithoutBLOBValue_*
 
-image:image16.png[image16]
+[source,json,linenums]
+----
+{
+  "Library": {
+    "contentType": "application/octet-stream"
+  }
+}
+----
 
 If the SerializationModifier Extent is set to *_WithBlobValue_*, there is an additional attribute containing the base64-encoded value:
 
-image:image17.png[image17]
+[source,json,linenums]
+----
+{
+  "Library": {
+    "contentType": "application/octet-stream",
+    "value": "VGhpcyBpcyBteSBibG9i"
+  }
+}
+----
 
-For a _RelationshipElement_ named “CurrentFlowsFrom”, the payload is minimized to the following:image:image18.png[image18]
+For a _RelationshipElement_ named “CurrentFlowsFrom”, the payload is minimized to the following:
+
+[source,json,linenums]
+----
+{
+  "CurrentFlowsFrom": {
+    "first": {
+      "type": "ModelReference",
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "http://customer.com/demo/aas/1/1/1234859590"
+        },
+        {
+          "type": "Property",
+          "value": "PlusPole"
+        }
+      ]
+    },
+    "second": {
+      "type": "ModelReference",
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "http://customer.com/demo/aas/1/0/1234859123490"
+        },
+        {
+          "type": "Property",
+          "value": "MinusPole"
+        }
+      ]
+    }
+  }
+}
+----
 
 For an _AnnotatedRelationshipElement_ named “CurrentFlowFrom”, with an annotated _Property_-DataElement “AppliedRule”, the payload is minimized to the following:
 
-image:image19.png[image19]
+[source,json,linenums]
+----
+{
+  "CurrentFlowsFrom": {
+    "first": {
+      "type": "ModelReference",
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "http://customer.com/demo/aas/1/1/1234859590"
+        },
+        {
+          "type": "Property",
+          "value": "PlusPole"
+        }
+      ]
+    },
+    "second": {
+      "type": "ModelReference",
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "http://customer.com/demo/aas/1/0/1234859123490"
+        },
+        {
+          "type": "Property",
+          "value": "MinusPole"
+        }
+      ]
+    },
+    "annotation": [
+      {
+        "AppliedRule": "TechnicalCurrentFlowDirection"
+      }
+    ]
+  }
+}
+----
 
 For an _Entity_ named “MySubAssetEntity”, the payload is minimized to the following:
 
-image:image20.png[image20]
+[source,json,linenums]
+----
+{
+  "MySubAssetEntity": {
+    "statements": {
+      "MaxRotationSpeed": 5000
+    },
+    "entityType": "SelfManagedEntity",
+    "globalAssetId": {
+      "type": "ExternalReference",
+      "keys": [
+        {
+          "type": "GlobalReference",
+          "value": "http://customer.com/demo/asset/1/1/MySubAsset"
+        }
+      ]
+    }
+  }
+}
+----
 
 For a BasicEventElement named “MyBasicEvent”, the payload is minimized to the following:
 
-image:image21.png[image21]
+[source,json,linenums]
+----
+{
+  "MyBasicEvent": {
+    "observed": {
+      "type": "ModelReference",
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "http://customer.com/demo/aas/1/1/1234859590"
+        },
+        {
+          "type": "Property",
+          "value": "CurrentValue"
+        }
+      ]
+    }
+  }
+}
+----
 
 ==== JSON-Schema for the ValueOnly-Serialization
 
 The following JSON-Schema represents the validation schema for the ValueOnly-Serialization of submodel elements. This holds true for all submodel elements mentioned in the previous clause except for _SubmodelElementCollections_. Since _SubmodelElementCollections_ are treated as objects containing submodel elements of any kind, the integration into the same validation schema would result in a circular reference or ambiguous results ignoring the actual validation of submodel elements other than _SubmodelElementCollections_. Hence, the same validation schema must be applied for each _SubmodelElementCollection_ within a submodel element hierarchy. In this case, it may be necessary to create a specific JSON-Schema for the individual use case. The _SubmodelElementCollection_ is added to the following schema for completeness and clarity. It is, however, not referenced from the _SubmodelElementValue_-oneOf-Enumeration due to the reasons mentioned above. +
 See Annex B for an example that validates against this schema.
 
-[source,json]
+[source,json,linenums]
 ----
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
@@ -3479,7 +3695,24 @@ Submodel: MySubmodel
 *** SML
 **** Property: “MySubTestValue3”
 
-image:image22.png[image22]
+
+[source,json,linenums]
+----
+[
+  "MySubmodelElementCollection",
+  "MySubmodelElementCollection.MySubProperty1",
+  "MySubmodelElementCollection.MySubProperty2",
+  "MySubmodelElementCollection.MySubmodelElementCollection",
+  "MySubmodelElementCollection.MySubmodelElementCollection.MySubProperty1",
+  "MySubmodelElementCollection.MySubmodelElementCollection.MySubProperty2",
+  "MySubmodelElementCollection.MySubSubmodelElementList1",
+  "MySubmodelElementCollection.MySubSubmodelElementList1[0]",
+  "MySubmodelElementCollection.MySubSubmodelElementList1[1]",
+  "MySubmodelElementCollection.MySubSubmodelElementList2",
+  "MySubmodelElementCollection.MySubSubmodelElementList2[0]",
+  "MySubmodelElementCollection.MySubSubmodelElementList2[0][0]"
+]
+----
 
 == HTTP/REST API
 
@@ -3567,15 +3800,12 @@ API versioning provides a way to deal with different versions of the same API at
 There are different solutions regarding API versioning involving URL-based versioning, query parameter-based versioning, as well as HTTP header-oriented solutions using custom or standard headers. +
 As different solutions also provide different advantages and disadvantages, *URL-based versioning* has been selected as the most suitable method for the AAS API. Among other advantages, implementation complexity on clients as well as servers is rather low and different versions can be easily accessed through browsers without the need for specific development tools or extensions.
 
-____
-image:image23.png[Ein Bild, das Dunkel enthält. Automatisch generierte Beschreibung,width=481,height=110]
-____
+.Generic URL Scheme for AAS API Versioning
+image::image23.png[Ein Bild, das Dunkel enthält. Automatisch generierte Beschreibung,width=481,height=110]
 
-Figure 4 - Generic URL Scheme for AAS API Versioning
 
 Upcoming implementations of AAS related servers need to implement the version prefix “*api/v<X.Y>/*” to provide information of the specific major version regarding AAS Part 2 version, where <X> denotes the implemented major version and <Y> denotes the minor version, e.g. “api/v3.0/” (see Figure 4).
 
-*
 ====
 Note:* all URLs mentioned in this document regarding the REST mapping of the AAS APIs have to be understood with this prefix in mind.
 ====
@@ -3607,7 +3837,8 @@ image::image24.jpeg[image24,width=642,height=367]
 
 The example hierarchy in Figure 5 shows a Submodel with a hierarchical structure of SubmodelElements. The submodel can be addressed by its global identifier “https://admin-shell.io/sampleSM”. The other elements in the figure do not have a global identifier; they are, however, uniquely identifiable and addressable by the submodel identifier and the idShort-path. The idShort-path in this example pointing to the Property p1 is “sme1.sme2[0].p1”. The hierarchy is built on parent-child relations between the elements. There are four elements which can aggregate SubmodelElements and create deeper hierarchal structures. The elements are Submodel, SubmodelElementCollection, SubmodelElementList, and Entity. The fields used to navigate to a deeper level of the hierarchy can be seen in the following table.
 
-[options="header",]
+.Children of certain objects
+[%autowidth, width="100%", options="header",]
 |===
 |*Element Name* |*Child aggregation field name*
 |Submodel |SubmodelElement
@@ -3643,7 +3874,8 @@ Metadata objects are defined for scenarios where a client only wants to access t
 
 A metadata object does not contain any additional fields in relation to its full object representation, only some fields are left off. The left off fields are fields which could be requested by an own API call and may consist of a recursive or potentially large substructure. The serialization of a metadata object is the same as for the original full object, but without the left off fields.
 
-[cols="48%,52%",options="header",]
+.Metadata Attributes
+[%autowidth, width="100%", cols="48%,52%",options="header",]
 |===
 |*Class Name* |*Fields not available in metadata representation*
 2+|*Identifiables*
@@ -3677,6 +3909,38 @@ The example shows a JSON serialization of an AssetAdministrationShell object in 
 Note: for editorial reasons, some fields which are the same for both representations are omitted.
 ====
 
+.AssetAdministrationShell JSON Serialization Example
+|===
+a|
+[source,json,linenums]
+----
+{
+    "idShort": "TestAssetAdministrationShell",
+    "description": [...],
+    "id": {...},
+     ...
+    "derivedFrom": {...}
+    "assetInformation": {...},
+    "submodels": [...]
+}
+----
+|===
+
+.AssetAdministrationShell Metadata JSON Serialization Example
+|===
+a|
+[source,json,linenums]
+----
+{
+  "idShort": "TestAssetAdministrationShell",
+  "description": [...],
+  "id": {...},
+  ...
+  "derivedFrom": {...},
+}
+----
+|===
+
 
 === Pagination
 
@@ -3688,7 +3952,8 @@ Pagination is currently only defined for the HTTP/REST API. Other APIs might int
 
 Pagination is controlled by the client via the query parameters “cursor” and “limit”. They can be combined with all other query parameters as defined in this document and listed in the following table:
 
-[cols="15%,19%,8%,58%",options="header",]
+.Parameters for Pagination
+[%autowidth, width="100%", cols="15%,19%,8%,58%",options="header",]
 |===
 |*Parameter* |*Values* |*Default* |*Explanation*
 |Cursor |string |- a|
@@ -3720,38 +3985,35 @@ Nevertheless, the inherent order of the result set must stay the same. Implement
 The server informs the client about pagination attributes through the Result object in the request response. In particular, the Result contains the cursor value for the next page. Additional information, e.g. the overall number of result items, may also be part of it.
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
-|*Class Name* |Result |
+|*Class Name* |Result
 |*Explanation* |An object connecting the actual list of returned items with metadata information to, e.g. fetch the next part of the result set.
 |*Inherits from* |--
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Attribute* |*Explanation* |*Type* |*Card.*
-|result |List of returned items. Any kind of Referables is possible, depending on the endpoint which has been requested. |Referable |0..* |
-|paging_metadata |Additional information for the client to, e.g. fetch the next part of the result set. |PagingMetadata |1 |
+|result |List of returned items. Any kind of Referables is possible, depending on the endpoint which has been requested. |Referable |0..*
+|paging_metadata |Additional information for the client to, e.g. fetch the next part of the result set. |PagingMetadata |1
 |===
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
-|*Class Name* |PagingMetadata |
-|*Explanation* a|
-Additional information for the client to, e.g. fetch the next part of the result set.
-
+|*Class Name* |PagingMetadata
+|*Explanation* a| Additional information for the client to, e.g. fetch the next part of the result set.
 
 ====
 Note: more attributes may be added to this class in future versions.
 ====
 
-
 |*Inherits from* |--
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Attribute* |*Explanation* |*Type* |*Card.*
-|cursor |The cursor for the next part of the result set. No cursor attribute means that the end of the result set has been reached. |string |0..1 |
+|cursor |The cursor for the next part of the result set. No cursor attribute means that the end of the result set has been reached. |string |0..1
 |===
 
 === Payload
@@ -3784,16 +4046,16 @@ Table 15 shows the mapping of the generic operations to the HTTP/REST API.
 
 The black entries correspond to the corresponding generic operations.
 
-The blue entries are operations which only exist in the HTTP/REST API.
+[.blue]#The blue entries are operations which only exist in the HTTP/REST API.#
 
-[cols="31%,7%,23%,39%",options="header",]
+.Mapping of the generic Interface Operations to HTTP API Operations
+[%autowidth, width="100%", cols="31%,7%,23%,39%",options="header",]
 |===
 |*Operation Name* |*HTTP +
-Verb* |*REST-Path* |*Comment (e.g. optional query parameters)*
-| |
-|*Asset Administration Shell Interface* |
+                    Verb* |*REST-Path* |*Comment (e.g. optional query parameters)*
+4+h|*Asset Administration Shell Interface*
 |GetAssetAdministrationShell |GET |/aas |content-suffix: $reference
-|PutAssetAdministrationShell |PUT
+|PutAssetAdministrationShell |PUT | |
 |GetAllSubmodelReferences |GET |/aas/submodel-refs |Pagination
 |PostSubmodelReference |POST |/aas/submodel-refs |
 |DeleteSubmodelReference |DELETE |/aas/submodel-refs/\{submodelIdentifier} |use base64url-encoded identifier
@@ -3803,8 +4065,7 @@ Verb* |*REST-Path* |*Comment (e.g. optional query parameters)*
 |PutThumbnail |PUT |/aas/asset-information/thumbnail |
 |DeleteThumbnail |DELETE |/aas/asset-information/thumbnail |
 | |* |/aas/submodels/\{submodel-identifier}/* |superpath as defined in service specification or profile
-| |
-|*Submodel Interface* |
+4+h|*Submodel Interface*
 |GetSubmodel |GET |/submodel a|
 ?level=deep/core
 
@@ -3906,8 +4167,7 @@ path-suffix=$value or no suffix for normal
 
 URL-encoded IdShortPath
 
-| |
-|*Shell Repository Interface* |
+4+h|*Shell Repository Interface*
 |GetAllAssetAdministrationShells |GET |/shells a|
 path-suffix=$reference or no suffix normal
 
@@ -4066,7 +4326,8 @@ Note: the invocation of the SubmodelElement “Operation” may also be conducte
 
 The following table shows the mapping of the generic status codes to HTTP status codes according to IETF RFC 7231 (see Clause 6.1 https://datatracker.ietf.org/doc/html/rfc7231#section-6)
 
-[width="99%",cols="29%,26%,18%,27%",options="header",]
+.Status Code Mapping for HTTP
+[%autowidth, width="100%", cols="29%,26%,18%,27%",options="header",]
 |===
 |*Generic status code* |*Meaning* |*HTTP status code* |*Explanation*
 |Success |Success |200 (OK) |Standard response for successful requests
@@ -4091,22 +4352,20 @@ In addition to the data types used in the technology-neutral specification, the 
 ==== PackageDescription
 
 [.table-with-appendix-table]
-[cols="h,d"]
+[%autowidth, width="100%", cols="h,d"]
 |===
-|*Class Name* |PackageDescription |
+|*Class Name* |PackageDescription
 |*Explanation* |The package description consists of a system-wide unique packageId and its corresponding Asset Administration Shell identifiers. The packageId is used to identify the AASX package at the AASX file server. The package description is used to list the Asset Administration Shells in a given AASX package. This class is not part of the metamodel.
 |*Inherits from* |--
 |===
-[options="header"]
+[%autowidth, width="100%", options="header"]
 |===
 |*Attribute* |*Explanation* |*Type* |*Card.*
-|packageId |File server specific package id |ShortIdType |1 |
-|aasId |Asset Administration Shell unique identifier |Identifier |0..* |
+|packageId |File server specific package id |ShortIdType |1
+|aasId |Asset Administration Shell unique identifier |Identifier |0..*
 |===
 
 === Service Specifications and Profiles
-
-* {blank}
 
 Figure 2 defines that a service specification contains at least one API and that an API contains at least one API Operation.
 
@@ -4114,7 +4373,8 @@ The profiles defined in this clause present complete service specifications and 
 
 For instance, the profile “RepositoryServiceSpecification/V3.0_SSP-002” contains the API Operation “GetAllSubmodels” but not “PostSubmodelElementByPath”, while the more comprehensive “RepositoryServiceSpecification/V3.0_SSP-001” contains both. Furthermore, profiles also define which of the SerializationModifiers (content, extent, level) or serialization formats (JSON) can be used or whether pagination or asynchronous operations are available.
 
-[cols="52%,4%,4%,4%,4%,5%,4%,4%,4%,5%,5%,5%",options="header",]
+.Overview of Service Specifications and the Contained APIs
+[%autowidth, width="100%", cols="52%,4%,4%,4%,4%,5%,4%,4%,4%,5%,5%,5%",options="header",]
 |===
 a|
 *Contained APIs:*
@@ -4157,25 +4417,22 @@ Note: in the following, only the last part (<name of service specification>/SSP-
 
 ==== Asset Administration Shell Service Specification
 
-[cols="45%,55%",options="header",]
+[%autowidth, width="100%", cols="45%,55%",options="header",]
 |===
 |*Service Specification / Profiles* |*Description*
-|AssetAdministrationShellServiceSpecification/ +
-SSP-001 |Full feature set
-|AssetAdministrationShellServiceSpecification/ +
-SSP-002 |Only read operations; is included in the profile AssetAdministrationShellServiceSpecification/SSP-001.
+|AssetAdministrationShellServiceSpecification/SSP-001 |Full feature set
+|AssetAdministrationShellServiceSpecification/SSP-002 |Only read operations; is included in the profile AssetAdministrationShellServiceSpecification/SSP-001.
 |===
 
 ===== Asset Administration Shell Service Specification – Full Profile
 
 The Asset Administration Shell service specification with all its features and endpoints is represented through the profile identifier *AssetAdministrationShellServiceSpecification/SSP-001*:
 
-[cols="27%,73%",options="header",]
+[%autowidth, width="100%", cols="27%,73%",options="header",]
 |===
-|*Name:* |AAS Full Profile
-|*Profile Identifier:* |https://admin-shell.io /aas/API/3/0/AssetAdministrationShellServiceSpecification/SSP-001
-|*Feature +
-* |Appearance
+h|*Name:* h|AAS Full Profile
+h|*Profile Identifier:* h|https://admin-shell.io/aas/API/3/0/AssetAdministrationShellServiceSpecification/SSP-001
+h|*Feature* h|Appearance
 |APIs and API Operations a|
 _Asset Administration Shell API:_ +
 GetAssetAdministrationShell +
@@ -4231,12 +4488,11 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellServi
 
 The Asset Administration Shell Service specification with the minimal feature set is represented through *AssetAdministrationShellServiceSpecification/SSP-002*:
 
-[cols="21%,79%",options="header",]
+[%autowidth, width="100%", cols="21%,79%",options="header",]
 |===
-|*Name:* |AAS Read Profile
-|*Profile Identifier:* |https://admin-shell.io /aas/API/3/0/AssetAdministrationShellServiceSpecification/V3.0_SSP-002
-|*Feature +
-* |Appearance
+h|*Name:* h|AAS Read Profile
+h|*Profile Identifier:* h|https://admin-shell.io/aas/API/3/0/AssetAdministrationShellServiceSpecification/V3.0_SSP-002
+h|*Feature* h|Appearance
 |API Operations a|
 _Asset Administration Shell API:_ +
 GetAssetAdministrationShell +
@@ -4268,10 +4524,9 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellServi
 
 ==== Submodel Service Specification
 
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
-|*Service Specification / Profiles +
-* |Description
+|*Service Specification / Profiles* |Description
 |SubmodelServiceSpecification/SSP-001 |Full feature set
 |SubmodelServiceSpecification/SSP-002 |Only reads operations; is included in the profile SubmodelServiceSpecification/SSP-001.
 |SubmodelServiceSpecification/SSP-003 |Limitation on the basic capabilities plus the option to execute synchronous operations and to read the submodel in the ValueOnly-serialization format to reduce required bandwidth; is included in the profile SubmodelServiceSpecification/SSP-001.
@@ -4281,12 +4536,11 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellServi
 
 The submodel service specification with all its features and endpoints is represented through *SubmodelServiceSpecification/SSP-001*:
 
-[cols="36%,64%",options="header",]
+[%autowidth, width="100%", cols="36%,64%",options="header",]
 |===
-|*Name:* |Submodel Full Profile
-|*Profile Identifier:* |https://admin-shell.io /aas/API/3/0/SubmodelServiceSpecification/SSP-001
-|*Feature +
-* |Appearance
+h|*Name:* h|Submodel Full Profile
+h|*Profile Identifier:* h|https://admin-shell.io/aas/API/3/0/SubmodelServiceSpecification/SSP-001
+h|*Feature* h|Appearance
 |APIs and API Operations a|
 _Submodel API:_ +
 GetSubmodel +
@@ -4330,12 +4584,11 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/SubmodelServiceSpecification/
 
 The submodel service specification with its minimal feature set is represented through *SubmodelServiceSpecification/SSP-002*:
 
-[cols="36%,64%",options="header",]
+[%autowidth, width="100%", cols="36%,64%",options="header",]
 |===
-|*Name:* |Submodel Read Profile
-|*Profile Identifier:* |https://admin-shell.io /aas/API/3/0/AssetAdministrationShellServiceSpecification/SSP-002
-|*Feature +
-* |Appearance
+h|*Name:* h|Submodel Read Profile
+h|*Profile Identifier:* h|https://admin-shell.io/aas/API/3/0/AssetAdministrationShellServiceSpecification/SSP-002
+h|*Feature* h|Appearance
 |API and API Operations a|
 _Submodel API:_ +
 GetSubmodel +
@@ -4366,13 +4619,11 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/SubmodelServiceSpecification/
 
 The submodel service specification with a reduced feature set is represented through *SubmodelServiceSpecification/SSP-003*:
 
-[cols="36%,64%",options="header",]
+[%autowidth, width="100%", cols="36%,64%",options="header",]
 |===
-|*Name:* |Submodel Value Profile
-|*Profile Identifier:* |https://admin-shell.io +
-/aas/API/3/0/SubmodelServiceSpecification/SSP-003
-|*Feature +
-* |Appearance
+h|*Name:* h|Submodel Value Profile
+h|*Profile Identifier:* h|https://admin-shell.io/aas/API/3/0/SubmodelServiceSpecification/SSP-003
+h|*Feature* h|Appearance
 |APIs and API Operations a|
 __Submodel API: +
 __GetSubmodel +
@@ -4396,7 +4647,7 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/SubmodelServiceSpecification/
 
 ==== AASX File Server Service Specification
 
-[cols="45%,55%",options="header",]
+[%autowidth, width="100%", cols="45%,55%",options="header",]
 |===
 |*Service Specification / Profiles* |*Description*
 |AasxFileServerServiceSpecification/SSP-001 |The full feature set of the AASX File Server Service Specification
@@ -4404,12 +4655,11 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/SubmodelServiceSpecification/
 
 ===== AASX File Server Service Specification – Full Profile
 
-[cols="36%,64%",options="header",]
+[%autowidth, width="100%", cols="36%,64%",options="header",]
 |===
 |*Name:* |AASX File Server Full Profile
-|*Profile Identifier* |https://admin-shell.io /aas/API/3/0/AasxFileServerServiceSpecification/SSP-001
-|*Feature +
-* |Appearance
+|*Profile Identifier* |https://admin-shell.io/aas/API/3/0/AasxFileServerServiceSpecification/SSP-001
+|*Feature* |Appearance
 |APIs and API Operations a|
 _File Server API:_ +
 GetAllAASXPackageIds +
@@ -4434,7 +4684,7 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/AasxFileServerServiceSpecific
 
 ==== Asset Administration Shell Registry Service Specification
 
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Service Specification / Profiles* |*Description*
 |AssetAdministrationShellRegistryServiceSpecification/SSP-001 |Full profile
@@ -4443,13 +4693,11 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/AasxFileServerServiceSpecific
 
 ===== Asset Administration Shell Registry Service Specification – Full Profile
 
-[cols="36%,64%",options="header",]
+[%autowidth, width="100%", cols="36%,64%",options="header",]
 |===
 |*Name:* |Asset Administration Shell Registry Full Profile
-|*Profile Identifier:* |https://admin-shell.io /aas/API/3/0/ +
-AssetAdministrationShellRegistryServiceSpecification/SSP-001
-|*Feature +
-* |Appearance
+|*Profile Identifier:* |https://admin-shell.io/aas/API/3/0/AssetAdministrationShellRegistryServiceSpecification/SSP-001
+|*Feature* |Appearance
 |APIs and API Operations a|
 _AAS Registry API:_ +
 GetAllAssetAdministrationShellDescriptors +
@@ -4477,12 +4725,11 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellRegis
 
 ===== Asset Administration Shell Registry Service Specification – Read Profile
 
-[cols="36%,64%",options="header",]
+[%autowidth, width="100%", cols="36%,64%",options="header",]
 |===
-|*Name:* |AAS Registry Read Profile
-|*Profile Identifier:* |https://admin-shell.io/aas/API/3/0/ AssetAdministrationShellRegistryServiceSpecification/SSP-002
-|*Feature +
-* |Appearance
+h|*Name:* h|AAS Registry Read Profile
+h|*Profile Identifier:* h|https://admin-shell.io/aas/API/3/0/AssetAdministrationShellRegistryServiceSpecification/SSP-002
+h|*Feature* h|Appearance
 |APIs and API Operations a|
 _AAS Registry API:_ +
 GetAllAssetAdministrationShellDescriptors +
@@ -4504,7 +4751,7 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellRegis
 
 ==== Submodel Registry Service Specification
 
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Service Specification / Profiles* |*Description*
 |SubmodelRegistryServiceSpecification/SSP-001 |Full profile
@@ -4513,13 +4760,11 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellRegis
 
 ===== Submodel Registry Service Specification – Full Profile
 
-[cols="36%,64%",options="header",]
+[%autowidth, width="100%", cols="36%,64%",options="header",]
 |===
-|*Name:* |Submodel Registry Full Profile
-|*Profile Identifier:* |https://admin-shell.io +
-/aas/API/3/0/SubmodelRegistryServiceSpecification/SSP-001
-|*Feature +
-* |Appearance
+h|*Name:* h|Submodel Registry Full Profile
+h|*Profile Identifier:* h|https://admin-shell.io/aas/API/3/0/SubmodelRegistryServiceSpecification/SSP-001
+h|*Feature* h|Appearance
 |APIs and API Operations a|
 __Submodel Registry API: +
 __GetAllSubmodelDescriptors +
@@ -4540,12 +4785,11 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/SubmodelRegistryServiceSpecif
 
 ===== Submodel Registry Profile – Read Profile
 
-[cols="36%,64%",options="header",]
+[%autowidth, width="100%", cols="36%,64%",options="header",]
 |===
-|*Name:* |Submodel Registry Read Profile
-|*Profile Identifier:* |https://admin-shell.io /aas/API/3/0/ SubmodelRegistryServiceSpecification/SSP-002
-|*Feature +
-* |Appearance
+h|*Name:* h|Submodel Registry Read Profile
+h|*Profile Identifier:* h|https://admin-shell.io/aas/API/3/0/SubmodelRegistryServiceSpecification/SSP-002
+h|*Feature* h|Appearance
 |APIs and API Operations a|
 __Submodel Registry API: +
 __GetAllSubmodelDescriptors +
@@ -4563,7 +4807,7 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/SubmodelRegistryServiceSpecif
 
 ==== Discovery Service Specification
 
-[cols="43%,57%",options="header",]
+[%autowidth, width="100%", cols="43%,57%",options="header",]
 |===
 |*Service Specification / Profiles* |*Description*
 |DiscoveryServiceSpecification/SSP-001 |Full feature set
@@ -4571,12 +4815,11 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/SubmodelRegistryServiceSpecif
 
 ===== Discovery Service Specification – Full Profile
 
-[cols="36%,64%",options="header",]
+[%autowidth, width="100%", cols="36%,64%",options="header",]
 |===
-|*Name:* |Discovery Service Full Profile
-|*Profile Identifier:* |https://admin-shell.io /aas/API/3/0/DiscoveryServiceSpecification/SSP-001
-|*Feature +
-* |Appearance
+h|*Name:* h|Discovery Service Full Profile
+h|*Profile Identifier:* h|https://admin-shell.io/aas/API/3/0/DiscoveryServiceSpecification/SSP-001
+h|*Feature* h|Appearance
 |API and API Operations a|
 __AAS Basic Discovery API: +
 __GetAllAssetAdministrationShellIdsByAssetLink +
@@ -4596,7 +4839,7 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/DiscoveryServiceSpecification
 
 ==== Asset Administration Shell Repository Service Specification
 
-[cols="42%,58%",options="header",]
+[%autowidth, width="100%", cols="42%,58%",options="header",]
 |===
 |*Service Specification / Profiles* |*Description*
 |AssetAdministrationShellRepository +
@@ -4607,12 +4850,11 @@ ServiceSpecification/SSP-002 |Only read operations; is included in the profile A
 
 ===== Asset Administration Shell Repository Service Specification – Full Profile
 
-[cols="30%,70%",options="header",]
+[%autowidth, width="100%", cols="30%,70%",options="header",]
 |===
-|*Name:* |AAS Repository Full Profile
-|*Profile Identifier:* |https://admin-shell.io /aas/API/3/0/AssetAdministrationShellRepositoryServiceSpecification/SSP-001
-|*Feature +
-* |Appearance
+h|*Name:* h|AAS Repository Full Profile
+h|*Profile Identifier:* h|https://admin-shell.io/aas/API/3/0/AssetAdministrationShellRepositoryServiceSpecification/SSP-001
+h|*Feature* h|Appearance
 |API and API Operations a|
 _AAS Repository API:_ +
 GetAllAssetAdministrationShells +
@@ -4684,12 +4926,11 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellRepos
 
 ===== Asset Administration Shell Repository Service Specification – Read Profile
 
-[cols="30%,70%",options="header",]
+[%autowidth, width="100%", cols="30%,70%",options="header",]
 |===
-|*Name:* |AAS Repository Read Profile
-|*Profile Identifier:* |https://admin-shell.io/aas/ API/3/0/AssetAdministrationShellRepositoryServiceSpecification/SSP-002
-|*Feature +
-* |Appearance
+h|*Name:* h|AAS Repository Read Profile
+h|*Profile Identifier:* h|https://admin-shell.io/aas/ API/3/0/AssetAdministrationShellRepositoryServiceSpecification/SSP-002
+h|*Feature* h|Appearance
 |API and API Operations a|
 _AAS Repository API:_ +
 GetAllAssetAdministrationShells +
@@ -4736,29 +4977,22 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellRepos
 
 ==== Submodel Repository Service Specification
 
-[cols="41%,59%",options="header",]
+[%autowidth, width="100%", cols="41%,59%",options="header",]
 |===
 |*Service Specification / Profiles* |*Description*
-|SubmodelRepositoryServiceSpecification/ +
-SSP-001 |Full feature set
-|SubmodelRepositoryServiceSpecification/ +
-SSP-002 |Only read operations; is included in the profile SubmodelRepositoryServiceSpecification/SSP-001
-|SubmodelRepositoryServiceSpecification/ +
-SSP-003 |Profile for a Submodel Repository which only contains Submodels with kind=Template; is _not_ included in the profile SubmodelRepositoryServiceSpecification/SSP-001 or the profile SubmodelRepositoryServiceSpecification/SSP-002
-|SubmodelRepositoryServiceSpecification/ +
-SSP-004 |Only read operations for a Submodel Repository which only contains Submodels with kind=Template; is included in the profile SubmodelRepositoryServiceSpecification/SSP-003 but _not_ in the profile SubmodelRepositoryServiceSpecification/ +
-SSP-001 or the profile SubmodelRepositoryService +
-Specification/SSP-002
+|SubmodelRepositoryServiceSpecification/SSP-001 |Full feature set
+|SubmodelRepositoryServiceSpecification/SSP-002 |Only read operations; is included in the profile SubmodelRepositoryServiceSpecification/SSP-001
+|SubmodelRepositoryServiceSpecification/SSP-003 |Profile for a Submodel Repository which only contains Submodels with kind=Template; is _not_ included in the profile SubmodelRepositoryServiceSpecification/SSP-001 or the profile SubmodelRepositoryServiceSpecification/SSP-002
+|SubmodelRepositoryServiceSpecification/SSP-004 |Only read operations for a Submodel Repository which only contains Submodels with kind=Template; is included in the profile SubmodelRepositoryServiceSpecification/SSP-003 but _not_ in the profile SubmodelRepositoryServiceSpecification/SSP-001 or the profile SubmodelRepositoryService Specification/SSP-002
 |===
 
 ===== Submodel Repository - Full Profile
 
-[cols="36%,64%",options="header",]
+[%autowidth, width="100%", cols="36%,64%",options="header",]
 |===
-|*Name:* |Submodel Repository Full Profile
-|*Profile Identifier:* |https://admin-shell.io /aas/API/3/0/SubmodelServiceSpecification/SSP-001
-|*Feature +
-* |Appearance
+h|*Name:* h|Submodel Repository Full Profile
+h|*Profile Identifier:* h|https://admin-shell.io/aas/API/3/0/SubmodelServiceSpecification/SSP-001
+h|*Feature* h|Appearance
 |API and API Operations a|
 __Submodel Repository API: +
 __GetAllSubmodels +
@@ -4810,12 +5044,11 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/SubmodelRepositoryServiceSpec
 
 ===== Submodel Repository – Read Profile
 
-[cols="36%,64%",options="header",]
+[%autowidth, width="100%", cols="36%,64%",options="header",]
 |===
 |*Name:* |Submodel Repository Read Profile
-|*Profile Identifier* |https://admin-shell.io /aas/API/3/0/SubmodelServiceSpecification/SSP-002
-|*Feature +
-* |Appearance
+|*Profile Identifier* |https://admin-shell.io/aas/API/3/0/SubmodelServiceSpecification/SSP-002
+|*Feature* |Appearance
 |API and API Operations a|
 _Submodel Repository API:_ +
 GetAllSubmodels +
@@ -4867,12 +5100,11 @@ Note 2: future versions may introduce a Submodel Repository Instance Profile.
 ====
 
 
-[cols="36%,64%",options="header",]
+[%autowidth, width="100%", cols="36%,64%",options="header",]
 |===
-|*Name:* |Submodel Repository Template Profile
-|*Profile Identifier:* |https://admin-shell.io /aas/API/3/0/SubmodelServiceSpecification/SSP-003
-|*Feature +
-* |Appearance
+h|*Name:* h|Submodel Repository Template Profile
+h|*Profile Identifier:* h|https://admin-shell.io/aas/API/3/0/SubmodelServiceSpecification/SSP-003
+h|*Feature* h|Appearance
 |API and API Operations a|
 __Submodel Repository API: +
 __GetAllSubmodels +
@@ -4931,12 +5163,11 @@ Note: due to Constraint AASa-004, SubmodelServiceSpecification/SSP-004 can not b
 
 Specification/SSP-001 or SubmodelServiceSpecification/SSP-002-compliant services may contain Submodel instances but SubmodelServiceSpecification/SSP-004 not.
 
-[cols="36%,64%",options="header",]
+[%autowidth, width="100%", cols="36%,64%",options="header",]
 |===
-|*Name:* |Submodel Repository Template Read Profile
-|*Profile Identifier:* |https://admin-shell.io /aas/API/3/0/SubmodelServiceSpecification/SSP-004
-|*Feature +
-* |Appearance
+h|*Name:* h|Submodel Repository Template Read Profile
+h|*Profile Identifier:* h|https://admin-shell.io/aas/API/3/0/SubmodelServiceSpecification/SSP-004
+h|*Feature* h|Appearance
 |API and API Operations a|
 __Submodel Repository API: +
 __GetAllSubmodels +
@@ -4971,7 +5202,7 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/SubmodelRepositoryServiceSpec
 
 ==== Concept Description Repository Service Specification
 
-[cols="59%,41%",options="header",]
+[%autowidth, width="100%", cols="59%,41%",options="header",]
 |===
 |*Service Specification / Profiles* |*Description*
 |ConceptDescriptionRepositoryServiceSpecification/SSP-001 |Full feature set
@@ -4979,12 +5210,11 @@ See: https://app.swaggerhub.com/apis/Plattform_i40/SubmodelRepositoryServiceSpec
 
 ===== Concept Description Repository Service Specification – Full Profile
 
-[cols="30%,70%",options="header",]
+[%autowidth, width="100%", cols="30%,70%",options="header",]
 |===
-|*Name:* |Concept Description Repository Full Profile
-|*Profile Identifier:* |https://admin-shell.io /aas/API/3/0/ConceptDescriptionRepositoryServiceSpecification/SSP-001
-|*Feature +
-* |Appearance
+h|*Name:* h|Concept Description Repository Full Profile
+h|*Profile Identifier:* h|https://admin-shell.io/aas/API/3/0/ConceptDescriptionRepositoryServiceSpecification/SSP-001
+h|*Feature* h|Appearance
 |API and API Operations a|
 _ConceptDescription Repository API_ +
 GetAllConceptDescriptions +
@@ -5052,7 +5282,8 @@ Authentication is mandatory. Depending on the ecosystem the AAS uses, different 
 
 The following paragraphs describe the most important steps for token-based authentication of the HTTP/REST APIs. For more details, see “Secure Downloadservice” (https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/secure_downloadservice.html). Figure 10 gives an overview.
 
-image:image29.png[Ein Bild, das Diagramm enthält. Automatisch generierte Beschreibung,width=608,height=356]Figure 10 The private_key_certchain_jwt Method [...download service]
+.The private_key_certchain_jwt Method [...download service]
+image::image29.png[Ein Bild, das Diagramm enthält. Automatisch generierte Beschreibung,width=608,height=356]
 
 A client application uses a client certificate to create a certificate chain. The certificate chain can be checked on the authentication server by the corresponding Root CA certificate, which is signed by a certification authority (CA). The client application sends the certificate chain to the authentication server as token request by a JSON Web Token (JWT). The JWT is signed by the client’s private key corresponding to the client certificate (JWT = Data + Signature).
 
@@ -5095,6 +5326,7 @@ Additionally, further interfaces, service specifications, and profiles may be de
 
 Another very important topic that will be looked at in upcoming versions of the specification in more detail is the definition of access control based on the information provided by an Asset Administration Shell to ensure the trustworthiness of the contained information across different system boundaries.
 
+[appendix]
 == Templates used for Specification
 
 This Annex explains the table templates used for documentation of interfaces, operations, data types, etc.
@@ -5107,8 +5339,8 @@ Note: attributes having a default value are always considered to be optional; th
 ====
 
 
-
-[cols="19%,81%",options="header",]
+.Interface Description
+[%autowidth, width="100%", cols="19%,81%",options="header",]
 |===
 2+|Interface: <Interface Name>
 h|*Operation Name* h|*Description*
@@ -5125,9 +5357,11 @@ Note: all words in the service operation name are written together in italics wi
 |operN (optional) |Human-understandable description of the operation n of the interface. Optional operations are to be marked by suffix (optional) after the operation name.
 |===
 
-[cols="21%,24%,19%,17%,19%",options="header",]
+.Operation Description
+[.table-with-appendix-table]
+[%autowidth, width="100%", cols="h,d"]
 |===
-|*Operation Name:* |Name of the operation: all individual words in the operation name are capitalized |
+|*Operation Name:* |Name of the operation: all individual words in the operation name are capitalized
 |*Explanation:* a|
 Human-understandable description of the functionality
 
@@ -5151,15 +5385,14 @@ If [.underline]#no# *_payload_* is mentioned as output parameter, the status cod
 
 Convention: all words in the interface name are written together in italics without a blank in between. The first letter of the first word and all other words are written in upper case letters.
 
-|
 |*semanticId* |The unique identifier of this operation
 |===
-[options="header",]
+[%autowidth, width="100%", options="header",]
 |===
 |*Name* |*Description* |*Mand.* |*Type* |*Card.*
 5+h|Input Parameter
 |inputParameter1 |Human-understandable description of the input parameter 1 of the operation. |States whether the inputParameter1 is mandatory (“yes”) or optional (“no”) |Type of the input parameter 1 |The cardinality of type of the inputParameter1, e.g. zero-to-one (“0..1”) or at-least-one (“1..*).
-|… | |
+|… | | | |
 |inputParameterN |Human-understandable description of the input parameter N of the operation. |States whether the inputParameterN is mandatory (“yes”) or optional (“no”) |Type of the input parameter N |The cardinality of type of the inputParameterN, e.g. zero-to-one (“0..1”) or at-least-one (“1..*).
 5+h|Output Parameter
 |outputParameter1 |Human-understandable description of the output parameter 1 of the operation. |States whether the outputParameter1 is mandatory (“yes”) or optional (“no”) a|
@@ -5172,9 +5405,11 @@ parameter 1
 |outputParameterN |Human-understandable description of the output parameter N of the operation. |States whether the outputParameterN is mandatory (“yes”) or optional (“no”) |Type of the output parameter N |The cardinality of type of the outputParameterN, e.g. zero-to-one (“0..1”) or at-least-one (“1..*).
 |===
 
-[cols="20%,33%,31%,16%,",options="header",]
+.Data Types for Payload Description
+[.table-with-appendix-table]
+[%autowidth, width="100%", cols="h,d"]
 |===
-|*Class Name* |Name of the class: all individual words in the class name are capitalized |
+|*Class Name* |Name of the class: all individual words in the class name are capitalized
 |*Explanation* a|
 Human-understandable description of the class
 
@@ -5188,17 +5423,21 @@ The Class has following attributes:
 
 Convention: all words in the class name are written together in italics without a blank in between. The first letter of the first word and all other words are written in upper case letters.
 
-|
 |*Inherits from* |Name of the class this class inherits from
 |*semanticId* |The unique identifier of this class
+|===
+[%autowidth, width="100%", options="header"]
+|===
 |*Attribute +
 (* = mandatory)* |*Explanation* |*Type* |*Card.*
-|attribute1 |Human-understandable description of the attribute 1 of the class. |Type of the attribute 1 |Cardinality of the attribute 1 |
-|… | |
-|attributeN |Human-understandable description of the attribute N of the class. |Type of the attribute N |Cardinality of the attribute N |
+|attribute1 |Human-understandable description of the attribute 1 of the class. |Type of the attribute 1 |Cardinality of the attribute 1
+|… | | |
+|attributeN |Human-understandable description of the attribute N of the class. |Type of the attribute N |Cardinality of the attribute N
 |===
 
-[cols="30%,70%",options="header",]
+.Enumeration Description
+[.table-with-appendix-table]
+[%autowidth, width="100%", cols="h,d"]
 |===
 |*Enumeration Name:* |Name of the enumeration: all individual words in the enumeration name are capitalized
 |*Explanation:* a|
@@ -5215,308 +5454,169 @@ The enumeration has following literals:
 Convention: all words in the enumeration name are written together in italics without a blank in between. The first letter of the first word and all other words are written in upper case letters.
 
 |*semanticId* |The unique identifier of this enumeration
+|===
+[%autowidth, width="100%", options="header",]
+|===
 |*Literal* |*Description*
 |Literal1 |Human-understandable description of the literal 1 of the enumeration.
 |… |
 |LiteralN |Human understandable description of the literal N of the enumeration.
 |===
 
+[appendix]
 == ValueOnly-Serialization Example 
 
 The following example shows the ValueOnly-Serialization for an entire Submodel that validates against the JSON-schema specified in Clause 11.4.3. +
 As mentioned in Clause 11.4.3, __SubmodelElementCollection__s cannot be validated within the same schema due to circularity reasons; instead they have their own specific validation schema. An exemplary _SubmodelElementCollection_ is added to the following JSON for completeness. It is, however, not validatable against the schema in Clause 11.4.3 due to the reasons mentioned above.
 
-[cols="100%",options="header",]
-|===
-a|
-\{
-
-"MyPropertyIdShortNumber": 5000,
-
-"MyPropertyIdShortString": "MyTestStringValue",
-
-"MyPropertyIdShortBoolean": *true*,
-
-"MyMultiLanguageProperty": [
-
-\{
-
-"de": "Das ist ein deutscher Bezeichner"
-
-},
-
-\{
-
-"en": "That's an English label"
-
+[source,json,linenums]
+----
+{
+  "MyPropertyIdShortNumber": 5000,
+  "MyPropertyIdShortString": "MyTestStringValue",
+  "MyPropertyIdShortBoolean": true,
+  "MyMultiLanguageProperty": [
+    {
+      "de": "Das ist ein deutscher Bezeichner"
+    },
+    {
+      "en": "That's an English label"
+    }
+  ],
+  "MyRange": {
+    "min": 3,
+    "max": 15
+  },
+  "MyFile": {
+    "contentType": "application/pdf",
+    "value": "SafetyInstructions.pdf"
+  },
+  "MyBlob": {
+    "contentType": "application/octet-stream",
+    "value": "VGhpcyBpcyBteSBibG9i"
+  },
+  "MyEntity": {
+    "statements": {
+      "MaxRotationSpeed": 5000
+    },
+    "entityType": "SelfManagedEntity",
+    "globalAssetId": "http://customer.com/demo/asset/1/1/MySubAsset"
+  },
+  "MyReference": {
+    "type": "ModelReference",
+    "keys": [
+      {
+        "type": "Submodel",
+        "value": "http://customer.com/demo/aas/1/1/1234859590"
+      },
+      {
+        "type": "Property",
+        "value": "MaxRotationSpeed"
+      }
+    ]
+  },
+  "MyBasicEvent": {
+    "observed": {
+      "type": "ModelReference",
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "http://customer.com/demo/aas/1/1/1234859590"
+        },
+        {
+          "type": "Property",
+          "value": "CurrentValue"
+        }
+      ]
+    }
+  },
+  "MyRelationship": {
+    "first": {
+      "type": "ModelReference",
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "http://customer.com/demo/aas/1/1/1234859590"
+        },
+        {
+          "type": "Property",
+          "value": "PlusPole"
+        }
+      ]
+    },
+    "second": {
+      "type": "ModelReference",
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "http://customer.com/demo/aas/1/0/1234859123490"
+        },
+        {
+          "type": "Property",
+          "value": "MinusPole"
+        }
+      ]
+    }
+  },
+  "MyAnnotatedRelationship": {
+    "first": {
+      "type": "ModelReference",
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "http://customer.com/demo/aas/1/1/1234859590"
+        },
+        {
+          "type": "Property",
+          "value": "PlusPole"
+        }
+      ]
+    },
+    "second": {
+      "type": "ModelReference",
+      "keys": [
+        {
+          "type": "Submodel",
+          "value": "http://customer.com/demo/aas/1/0/1234859123490"
+        },
+        {
+          "type": "Property",
+          "value": "MinusPole"
+        }
+      ]
+    },
+    "annotation": [
+      {
+        "AppliedRule": "TechnicalCurrentFlowDirection"
+      }
+    ]
+  },
+  "MySubmodelElementIntegerPropertyList": [
+    1,
+    2,
+    30,
+    50
+  ],
+  "MySubmodelElementFileList": [
+    {
+      "contentType": "application/pdf",
+      "value": "MyFirstFile.pdf"
+    },
+    {
+      "contentType": "application/pdf",
+      "value": "MySecondFile.pdf"
+    }
+  ],
+  "MySubmodelElementCollection":
+  {
+    "myStringElement": "That’s a string",
+    "myIntegerElement": 5,
+    "myBooleanElement": true
+  }
 }
+----
 
-],
-
-"MyRange": \{
-
-"min": 3,
-
-"max": 15
-
-},
-
-"MyFile": \{
-
-"contentType": "application/pdf",
-
-"value": "SafetyInstructions.pdf"
-
-},
-
-"MyBlob": \{
-
-"contentType": "application/octet-stream",
-
-"value": "VGhpcyBpcyBteSBibG9i"
-
-},
-
-"MyEntity": \{
-
-"statements": \{
-
-"MaxRotationSpeed": 5000
-
-},
-
-"entityType": "SelfManagedEntity",
-
-"globalAssetId": "http://customer.com/demo/asset/1/1/MySubAsset"
-
-},
-
-"MyReference": \{
-
-"type": "ModelReference",
-
-"keys": [
-
-\{
-
-"type": "Submodel",
-
-"value": "http://customer.com/demo/aas/1/1/1234859590"
-
-},
-
-\{
-
-"type": "Property",
-
-"value": "MaxRotationSpeed"
-
-}
-
-]
-
-},
-
-"MyBasicEvent": \{
-
-"observed": \{
-
-"type": "ModelReference",
-
-"keys": [
-
-\{
-
-"type": "Submodel",
-
-"value": "http://customer.com/demo/aas/1/1/1234859590"
-
-},
-
-\{
-
-"type": "Property",
-
-"value": "CurrentValue"
-
-}
-
-]
-
-}
-
-},
-
-"MyRelationship": \{
-
-"first": \{
-
-"type": "ModelReference",
-
-"keys": [
-
-\{
-
-"type": "Submodel",
-
-"value": "http://customer.com/demo/aas/1/1/1234859590"
-
-},
-
-\{
-
-"type": "Property",
-
-"value": "PlusPole"
-
-}
-
-]
-
-},
-
-"second": \{
-
-"type": "ModelReference",
-
-"keys": [
-
-\{
-
-"type": "Submodel",
-
-"value": "http://customer.com/demo/aas/1/0/1234859123490"
-
-},
-
-\{
-
-"type": "Property",
-
-"value": "MinusPole"
-
-}
-
-]
-
-}
-
-},
-
-"MyAnnotatedRelationship": \{
-
-"first": \{
-
-"type": "ModelReference",
-
-"keys": [
-
-\{
-
-"type": "Submodel",
-
-"value": "http://customer.com/demo/aas/1/1/1234859590"
-
-},
-
-\{
-
-"type": "Property",
-
-"value": "PlusPole"
-
-}
-
-]
-
-},
-
-"second": \{
-
-"type": "ModelReference",
-
-"keys": [
-
-\{
-
-"type": "Submodel",
-
-"value": "http://customer.com/demo/aas/1/0/1234859123490"
-
-},
-
-\{
-
-"type": "Property",
-
-"value": "MinusPole"
-
-}
-
-]
-
-},
-
-"annotation": [
-
-\{
-
-"AppliedRule": "TechnicalCurrentFlowDirection"
-
-}
-
-]
-
-},
-
-"MySubmodelElementIntegerPropertyList": [
-
-1,
-
-2,
-
-30,
-
-50
-
-],
-
-"MySubmodelElementFileList": [
-
-\{
-
-"contentType": "application/pdf",
-
-"value": "MyFirstFile.pdf"
-
-},
-
-\{
-
-"contentType": "application/pdf",
-
-"value": "MySecondFile.pdf"
-
-}
-
-],
-
-"MySubmodelElementCollection":
-
-\{
-
-"myStringElement": "That’s a string",
-
-"myIntegerElement": 5,
-
-"myBooleanElement": true
-
-}
-
-}
-
-|===
-
+[appendix]
 == SerializationModifier Examples
 
 === Description
@@ -5541,337 +5641,210 @@ Note: values remain unchanged with content=metadata.
 
 === Examples for GET Operations
 
-[cols="6%,44%,50%",options="header",]
+[%autowidth, width="100%", cols="h,d,d",options="header",]
 |===
 | |*Deep (default)* |*Core*
-a|
-____
-*Normal (default)*
-____
+|*Normal +
+(default)* a|
+If applied to the Submodel:
+
+[source,json,linenums]
+----
+{
+  "modelType": "Submodel",
+  "id": "http://i40.customer.com/type/1/1/7A7104BDAB57E184",
+  "idShort": "TechnicalData",
+  "semanticId": {
+    "keys": [ {
+        "type": "GlobalReference",
+        "value": "0173-1#01-AFZ615#016"
+    } ],
+    "type": "ExternalReference"
+  },
+  "submodelElements": [ {
+    "modelType":  "SubmodelElementCollection",
+    "idShort": "RotationSpeed",
+    "semanticId": {
+      "keys": [ {
+          "type": "GlobalReference",
+          "value": "http://purl.org/iot/vocab/iot-taxonomy-lite#RotationalSpeed"
+      } ],
+      "type": "ExternalReference"
+    },
+    "value": [ {
+        "modelType": "Property",
+        "idShort": "MaxRotationSpeed",
+        "category": "PARAMETER",
+        "semanticId": {
+          "keys": [ {
+              "type": "ConceptDescription",
+              "value": "0173-1#02-BAA120#008"
+          } ],
+          "type": "ExternalReference"
+        },
+        "valueType": "xs:int",
+        "value": "5000"
+      } ]
+  } ]
+}
+
+----
 
 a|
 If applied to the Submodel:
 
-*\{*
+[source,json,linenums]
+----
+{
+  "modelType": "Submodel",
+  "id": "http://i40.customer.com/type/1/1/7A7104BDAB57E184",
+  "idShort": "TechnicalData",
+  "semanticId": {
+    "keys": [ {
+        "type": "GlobalReference",
+        "value": "0173-1#01-AFZ615#016"
+    } ],
+    "type": "ExternalReference"
+  },
+  "submodelElements": [ {
+    "modelType":  "SubmodelElementCollection",
+    "idShort": "RotationSpeed",
+    "semanticId": {
+      "keys": [ {
+          "type": "GlobalReference",
+          "value": "http://purl.org/iot/vocab/iot-taxonomy-lite#RotationalSpeed"
+      } ],
+      "type": "ExternalReference"
+    }
+  } ]
+}
 
-"modelType"*:* "Submodel"*,*
+----
 
-"id"*:* "http://i40.customer.com/type/1/1/7A7104BDAB57E184"*,*
+|*Metadata* a|
+If applied to the Submodel:
 
-"idShort"*:* "TechnicalData"*,*
+[source,json,linenums]
+----
+{
+  "modelType": "Submodel",
+  "id": "http://i40.customer.com/type/1/1/7A7104BDAB57E184",
+  "idShort": "TechnicalData",
+  "semanticId": {
+    "keys": [ {
+        "type": "GlobalReference",
+        "value": "0173-1#01-AFZ615#016"
+    } ],
+    "type": "ExternalReference"
+  },
+  "submodelElements": [ {
+    "modelType":  "SubmodelElementCollection",
+    "idShort": "RotationSpeed",
+    "semanticId": {
+      "keys": [ {
+          "type": "GlobalReference",
+          "value": "http://purl.org/iot/vocab/iot-taxonomy-lite#RotationalSpeed"
+      } ],
+      "type": "ExternalReference"
+    },
+    "value": [ {
+        "modelType": "Property",
+        "idShort": "MaxRotationSpeed",
+        "category": "PARAMETER",
+        "semanticId": {
+          "keys": [ {
+              "type": "ConceptDescription",
+              "value": "0173-1#02-BAA120#008"
+          } ],
+          "type": "ExternalReference"
+        },
+        "valueType": "xs:int"
+      } ]
+  } ]
+}
 
-"semanticId"*:* *\{*
-
-"keys"*:* *[ \{*
-
-"type"*:* "GlobalReference"*,*
-
-"value"*:* "0173-1#01-AFZ615#016"
-
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*},*
-
-"submodelElements"*:* *[ \{*
-
-"modelType"*:* "SubmodelElementCollection"*,*
-
-"idShort"*:* "RotationSpeed"*,*
-
-"semanticId"*: \{*
-
-"keys"*:* *[ \{*
-
-"type"*:* "GlobalReference"*,*
-
-"value"*:* "http://purl.org/iot/vocab/iot-taxonomy-lite#RotationalSpeed"
-
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*},*
-
-"value"*:* *[ \{*
-
-"modelType"*:* "Property"*,*
-
-"idShort"*:* "MaxRotationSpeed"*,*
-
-"category"*:* "PARAMETER"*,*
-
-"semanticId"*: \{*
-
-"keys"*: [ \{*
-
-"type"*:* "ConceptDescription",
-
-"value"*:* "0173-1#02-BAA120#008"
-
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*},*
-
-"valueType"*:* "xs:int"*,*
-
-"value": "5000"
-
-*} ]*
-
-*} ]*
-
-*}*
+----
 
 a|
 If applied to the Submodel:
 
-\{
+[source,json,linenums]
+----
+{
+  "modelType": "Submodel",
+  "id": "http://i40.customer.com/type/1/1/7A7104BDAB57E184",
+  "idShort": "TechnicalData",
+  "semanticId": {
+    "keys": [ {
+        "type": "GlobalReference",
+        "value": "0173-1#01-AFZ615#016"
+    } ],
+    "type": "ExternalReference"
+  },
+  "submodelElements": [ {
+    "modelType":  "SubmodelElementCollection",
+    "idShort": "RotationSpeed",
+    "semanticId": {
+      "keys": [ {
+          "type": "GlobalReference",
+          "value": "http://purl.org/iot/vocab/iot-taxonomy-lite#RotationalSpeed"
+      } ],
+      "type": "ExternalReference"
+    }
+  } ]
+}
 
-"modelType": "Submodel",
+----
 
-"id"*:* "http://i40.customer.com/type/1/1/7A7104BDAB57E184"*,*
 
-"idShort"*:* "TechnicalData"*,*
+If applied to the Property, i.e. idShortPath “RotationSpeed.MaxRotationSpeed”:
 
-"semanticId"*: \{*
+[source,json,linenums]
+----
+{
+   "modelType": "Property",
+   "idShort": "DocumentId",
+   "category": "PARAMETER",
+   "semanticId": {
+       "keys": [ {
+           "type": "GlobalReference",
+           "value": "0173-1#02-BAA120#008"
+       } ] ,
+       "type": "ExternalReference"
+   },
+   "valueType": "xs:int"
+}
 
-"keys"*: [ \{*
+----
 
-"type"*:* "GlobalReference"*,*
+| *Value* a|
+If applied to the Submodel:
 
-"value"*:* "0173-1#01-AFZ615#016"
+[source,json,linenums]
+----
+{
+  "TechnicalData": {
+    "RotationSpeed": {
+      "MaxRotationSpeed": "5000"
+    }
+  }
 
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*},*
-
-"submodelElements"*: [ \{*
-
-"modelType"*:* "SubmodelElementCollection"*,*
-
-"idShort"*:* "RotationSpeed"*,*
-
-"semanticId"*: \{*
-
-"keys"*: [ \{*
-
-"type"*:* "GlobalReference"*,*
-
-"value"*:* "http://purl.org/iot/vocab/iot-taxonomy-lite#RotationalSpeed" +
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*}*
-
-*} ]*
-
-*}*
-
-a|
-____
-*Metadata*
-____
+----
 
 a|
 If applied to the Submodel:
 
-\{
-
-"modelType"*:* "Submodel"*,*
-
-"id"*:* "http://i40.customer.com/type/1/1/7A7104BDAB57E184"*,*
-
-"idShort"*:* "TechnicalData"*,*
-
-"semanticId"*: \{*
-
-"keys"*: [ \{*
-
-"type"*:* "GlobalReference"*,*
-
-"value"*:* "0173-1#01-AFZ615#016"
-
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*},*
-
-"submodelElements"*: [ \{*
-
-"modelType"*:* "SubmodelElementCollection"*,*
-
-"idShort"*:* "RotationSpeed"*,*
-
-"semanticId"*: \{*
-
-"keys"*: [ \{*
-
-"type"*:* "GlobalReference"*,*
-
-"value"*:* "http://purl.org/iot/vocab/iot-taxonomy-lite#RotationalSpeed"
-
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*},*
-
-"value"*: [ \{*
-
-"modelType"*:* "Property"*,*
-
-"idShort"*:* "MaxRotationSpeed"*,*
-
-"category"*:* "PARAMETER",
-
-"semanticId"*: \{*
-
-"keys"*: [ \{*
-
-"type"*:* "ConceptDescription"*,*
-
-"value"*:* "0173-1#02-BAA120#008"
-
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*},*
-
-"valueType"*:* "xs:int"
-
-*} ]*
-
-*} ]*
-
-*}*
-
-a|
-If applied to the Submodel:
-
-\{
-
-"modelType"*:* "Submodel"*,*
-
-"id"*:* "http://i40.customer.com/type/1/1/7A7104BDAB57E184"*,*
-
-"idShort"*:* "TechnicalData"*,*
-
-"semanticId"*: \{*
-
-"keys"*: [ \{*
-
-"type"*:* "GlobalReference"*,*
-
-"value"*:* "0173-1#01-AFZ615#016"
-
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*},*
-
-"submodelElements"*: [ \{*
-
-"modelType"*:* "SubmodelElementCollection"*,*
-
-"idShort"*:* "RotationSpeed"*,*
-
-"semanticId"*: \{*
-
-"keys"*: [ \{*
-
-"type"*:* "GlobalReference"*,*
-
-"value"*:* "http://purl.org/iot/vocab/iot-taxonomy-lite#RotationalSpeed"
-
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*}*
-
-*} ]*
-
-*}*
-
-| | a|
-If applied to the Property, i.e. idShortPath “RotationSpeed.MaxRotationSpeed”: +
-\{
-
-"modelType"*:* "Property"*,*
-
-"idShort": "DocumentId"*,*
-
-"category"*:* "PARAMETER"*,*
-
-"semanticId"*: \{*
-
-"keys"*: [ \{*
-
-"type"*:* "GlobalReference",
-
-"value"*:* "0173-1#02-BAA120#008"
-
-*} ] ,*
-
-"type"*:* "ExternalReference"
-
-*},*
-
-"valueType"*:* "xs:int"
-
-*}*
-
-a|
-____
-*Value*
-____
-
-a|
-If applied to the Submodel:
-
-\{
-
-"TechnicalData": *\{*
-
-"RotationSpeed": *\{*
-
-"MaxRotationSpeed"*:* "5000"
-
-*}*
-
-*}*
-
-*}*
-
-a|
-If applied to the Submodel:
-
-\{
-
-"TechnicalData"*:* *\{*
-
-"RotationSpeed"*:* *\{}*
-
-*}*
-
-*}*
-
-a|
-____
-*Reference*
-____
-
-a|
+[source,json,linenums]
+----
+{
+  "TechnicalData": {
+    "RotationSpeed": {}
+  }
+}
+
+----
+
+|*Reference* a|
 Not allowed, see Clause 12.8:
 
 “The combination of Level=Deep and Content=Reference is not allowed.”
@@ -5879,363 +5852,256 @@ Not allowed, see Clause 12.8:
 a|
 If applied to the Submodel:
 
-\{
+[source,json,linenums]
+----
+{
+  "keys": [ {
+     "type": "Submodel",
+     "value": "http://i40.customer.com/type/1/1/7A7104BDAB57E184"
+  } ],
+  "type": "ModelReference"
+}
+----
 
-"keys"*: [ \{*
 
-"type"*:* "Submodel"*,*
-
-"value"*:* "http://i40.customer.com/type/1/1/7A7104BDAB57E184"
-
-*} ],*
-
-"type"*:* "ModelReference"
-
-*}*
-
-| | a|
 If applied to the Property inside the SubmodelElementCollection, i.e. idShortPath “RotationSpeed.MaxRotationSpeed”:
 
-\{
+[source,json,linenums]
+----
+{
+  "keys": [ {
+     "type": "Submodel",
+     "value": "http://i40.customer.com/type/1/1/7A7104BDAB57E184"
+  }, {
+     "type": "SubmodelElementCollection",
+     "value": "RotationSpeed"
+  }, {
+     "type": "Property",
+     "value": "MaxRotationSpeed"
+  }],
+  "type": "ModelReference"
+}
 
-"keys"*: [ \{*
+----
 
-"type"*:* "Submodel"*,*
+|*Path* a|
+If applied to the Submodel:
 
-"value"*:* "http://i40.customer.com/type/1/1/7A7104BDAB57E184"
+[source,json,linenums]
+----
+[
+ "RotationSpeed",
+ "RotationSpeed.MaxRotationSpeed"
+]
 
-*}, \{*
-
-"type"*:* "SubmodelElementCollection"*,*
-
-"value"*:* "RotationSpeed"
-
-*}, \{*
-
-"type"*:* "Property"*,*
-
-"value"*:* "MaxRotationSpeed"
-
-*}],*
-
-"type"*:* "ModelReference"
-
-*}*
-
-a|
-____
-*Path*
-____
+----
 
 a|
 If applied to the Submodel:
 
+[source,json,linenums]
+----
 [
+  "RotationSpeed"
+]
 
-"RotationSpeed",
-
-"RotationSpeed.MaxRotationSpeed"
-
-*]*
-
-a|
-If applied to the Submodel:
-
-[
-
-"RotationSpeed"
-
-*]*
+----
 
 | | a|
 If applied to the Property inside the SubmodelElementCollection:
 
+[source,json,linenums]
+----
 [ ]
+----
 
 |===
 
 === Examples for PATCH Operations 
 
-[cols="6%,94%",options="header",]
+[%autowidth, width="100%", cols="h,d"]
 |===
 | |*Deep (default)*
-a|
-____
-*Normal (default)*
-____
-
-a|
+|*Normal (default)* a|
 If applied to the Submodel:
 
-\{
-
-"modelType"*:* "Submodel"*,*
-
-"id"*:* "http://i40.customer.com/type/1/1/7A7104BDAB57E184"*,*
-
-"idShort": "TechnicalData"*,*
-
-"semanticId"*: \{*
-
-"keys"*: [ \{*
-
-"type"*:* "GlobalReference"*,*
-
-"value"*:* "0173-1#01-AFZ615#016"
-
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*},*
-
-"submodelElements"*: [ \{*
-
-"modelType"*:* "SubmodelElementCollection"*,*
-
-"idShort"*:* "RotationSpeed"*,*
-
-"semanticId": \{
-
-"keys": [ \{
-
-"type": "GlobalReference",
-
-"value": "http://purl.org/iot/vocab/iot-taxonomy-lite#RotationalSpeed"
-
-} ],
-
-"type": "ExternalReference"
-
-},
-
-"value"*: [ \{*
-
-"modelType"*:* "Property"*,*
-
-"idShort"*:* "MaxRotationSpeed"*,*
-
-"category"*:* "PARAMETER"*,*
-
-"semanticId"*: \{*
-
-"keys"*: [ \{*
-
-"type": "ConceptDescription",
-
-"value": "0173-1#02-BAA120#008"
-
-*} ],*
-
-"type": "ExternalReference"
-
-*},*
-
-"valueType"*:* "xs:int"*,*
-
-"value": "5000"
-
-*} ]*
-
-*} ]*
-
-*}*
+[source,json,linenums]
+----
+{
+  "modelType": "Submodel",
+  "id": "http://i40.customer.com/type/1/1/7A7104BDAB57E184",
+  "idShort": "TechnicalData",
+  "semanticId": {
+    "keys": [ {
+        "type": "GlobalReference",
+        "value": "0173-1#01-AFZ615#016"
+    } ],
+    "type": "ExternalReference"
+  },
+  "submodelElements": [ {
+    "modelType":  "SubmodelElementCollection",
+    "idShort": "RotationSpeed",
+        "semanticId": {
+      "keys": [ {
+          "type": "GlobalReference",
+          "value": "http://purl.org/iot/vocab/iot-taxonomy-lite#RotationalSpeed"
+      } ],
+      "type": "ExternalReference"
+    },
+    "value": [ {
+        "modelType": "Property",
+        "idShort": "MaxRotationSpeed",
+        "category": "PARAMETER",
+        "semanticId": {
+          "keys": [ {
+              "type": "ConceptDescription",
+              "value": "0173-1#02-BAA120#008"
+          } ],
+          "type": "ExternalReference"
+        },
+        "valueType": "xs:int",
+        "value": "5000"
+      } ]
+  } ]
+}
+----
 
 If applied to the SubmodelElementCollection, i.e. idShortPath “OperatingManual”:
 
-\{
+[source,json,linenums]
+----
+{
+    "modelType":  "SubmodelElementCollection",
+    "idShort": "RotationSpeed",
+    "semanticId": {
+      "keys": [ {
+          "type": "GlobalReference",
+          "value": "http://purl.org/iot/vocab/iot-taxonomy-lite#RotationalSpeed"
+      } ],
+      "type": "ExternalReference"
+    },
+    "value": [ {
+        "modelType": "Property",
+        "idShort": "MaxRotationSpeed",
+        "category": "PARAMETER",
+        "semanticId": {
+          "keys": [ {
+              "type": "ConceptDescription",
+              "value": "0173-1#02-BAA120#008"
+          } ],
+          "type": "ExternalReference"
+        },
+        "valueType": "xs:int",
+        "value": "5000"
+   } ]
+}
 
-"modelType"*:* "SubmodelElementCollection"*,*
-
-"idShort"*:* "RotationSpeed"*,*
-
-"semanticId"*: \{*
-
-"keys"*: [ \{*
-
-"type"*:* "GlobalReference",
-
-"value"*:* "http://purl.org/iot/vocab/iot-taxonomy-lite#RotationalSpeed"
-
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*},*
-
-"value"*: [ \{*
-
-"modelType": "Property"*,*
-
-"idShort"*:* "MaxRotationSpeed"*,*
-
-"category"*:* "PARAMETER"*,*
-
-"semanticId"*: \{*
-
-"keys"*: [ \{*
-
-"type"*:* "ConceptDescription"*,*
-
-"value"*:* "0173-1#02-BAA120#008"
-
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*},*
-
-"valueType"*:* "xs:int"*,*
-
-"value"*:* "5000"
-
-*} ]*
-
-*}*
+----
 
 If applied to the Property, i.e. idShortPath “OperatingManual.DocumentId”:
 
-*\{*
+[source,json,linenums]
+----
+{
+  "modelType": "Property",
+  "idShort": "MaxRotationSpeed",
+  "category": "PARAMETER",
+  "semanticId": {
+    "keys": [ {
+      "type": "ConceptDescription",
+      "value": "0173-1#02-BAA120#008"
+    } ],
+    "type": "ExternalReference"
+  },
+  "valueType": "xs:int",
+  "value": "5000"
+}
+----
 
-"modelType"*:* "Property"*,*
-
-"idShort"*:* "MaxRotationSpeed"*,*
-
-"category"*:* "PARAMETER"*,*
-
-"semanticId"*: \{*
-
-"keys"*: [ \{*
-
-"type"*:* "ConceptDescription"*,*
-
-"value"*:* "0173-1#02-BAA120#008"
-
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*},*
-
-"valueType"*:* "xs:int"*,*
-
-"value"*:* "5000"
-
-*}*
-
-a|
-____
-*Metadata*
-____
-
-a|
+|*Metadata* a|
 If applied to the Submodel:
 
-\{
-
-"modelType"*:* "Submodel"*,*
-
-"id"*:* "http://i40.customer.com/type/1/1/7A7104BDAB57E184"*,*
-
-"idShort"*:* "TechnicalData"
-
-*}*
+[source,json,linenums]
+----
+{
+  "modelType": "Submodel",
+  "id": "http://i40.customer.com/type/1/1/7A7104BDAB57E184",
+  "idShort": "TechnicalData"
+}
+----
 
 If applied to the SubmodelElementCollection, i.e. idShortPath “RotationSpeed”:
 
-\{
-
-"modelType"*:* "SubmodelElementCollection"*,*
-
-"idShort"*:* "RotationSpeed"*,*
-
-"semanticId"*: \{*
-
-"keys"*: [ \{*
-
-"type"*:* "GlobalReference"*,*
-
-"value"*:* "http://purl.org/iot/vocab/iot-taxonomy-lite#RotationalSpeed"
-
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*}*
-
-*}*
+[source,json,linenums]
+----
+{
+    "modelType":  "SubmodelElementCollection",
+    "idShort": "RotationSpeed",
+    "semanticId": {
+      "keys": [ {
+          "type": "GlobalReference",
+          "value": "http://purl.org/iot/vocab/iot-taxonomy-lite#RotationalSpeed"
+      } ],
+      "type": "ExternalReference"
+    }
+}
+----
 
 If applied to the Property, i.e. idShortPath “RotationSpeed.MaxRotationSpeed”:
 
-*\{*
+[source,json,linenums]
+----
+{
+  "modelType": "Property",
+  "idShort": "MaxRotationSpeed",
+  "category": "PARAMETER",
+  "semanticId": {
+    "keys": [ {
+        "type": "ConceptDescription",
+        "value": "0173-1#02-BAA120#008"
+    } ],
+    "type": "ExternalReference"
+  }
+}
+----
 
-"modelType"*:* "Property"*,*
-
-"idShort"*:* "MaxRotationSpeed"*,*
-
-"category"*:* "PARAMETER"*,*
-
-"semanticId"*: \{*
-
-"keys"*: [ \{*
-
-"type"*:* "ConceptDescription"*,*
-
-"value"*:* "0173-1#02-BAA120#008"
-
-*} ],*
-
-"type"*:* "ExternalReference"
-
-*}*
-
-*}*
-
-
-a|
-____
-*Value*
-____
-
-a|
+|*Value* a|
 If applied to the Submodel:
 
-\{
-
-"TechnicalData"*: \{*
-
-"RotationSpeed"*: \{*
-
-"MaxRotationSpeed"*:* "5000"
-
-*}*
-
-*}*
-
-*}*
+[source,json,linenums]
+----
+{
+  "TechnicalData": {
+    "RotationSpeed": {
+      "MaxRotationSpeed": "5000"
+    }
+  }
+}
+----
 
 If applied to the SubmodelElementCollection, i.e. idShortPath “RotationSpeed”:
 
-\{
-
-"RotationSpeed"*: \{*
-
-"MaxRotationSpeed"*:* "5000"
-
-*}*
-
-*}*
+[source,json,linenums]
+----
+{
+    "RotationSpeed": {
+      "MaxRotationSpeed": "5000"
+    }
+}
+----
 
 If applied to the Property, i.e. idShortPath “RotationSpeed.MaxRotationSpeed”:
 
-\{
-
-"MaxRotationSpeed"*:* "5000"
-
-*}*
+[source,json,linenums]
+----
+{
+   "MaxRotationSpeed": "5000"
+}
+----
 
 |===
 
+[appendix]
 == Backus-Naur-Form
 
 The Backus-Naur form (BNF) – a meta-syntax notation for context-free grammars – is used to define grammars. For more information see Wikipediafootnote:[https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form].
@@ -6287,32 +6153,7 @@ Invalid contact addresses:
 *Hugo@example.com*
 ____
 
-== Bibliography
-
-[#bib1]
-[1] Specification of the Asset Administration Shell. Part 1: Metamodel, Version 3.0. Industrial Digital Twin Association (IDTA), March 2023. Online. Available: https://industrialdigitaltwin.org/en/content-hub
-
-[#bib2]
-[2] Specification of the Asset Administration Shell. Part 3a: Data Specification – IEC 61360, Version 3.0. Industrial Digital Twin Association (IDTA), March 2023. Online. Available: https://industrialdigitaltwin.org/en/content-hub
-
-[#bib3]
-[3] Specification of the Asset Administration Shell. Part 5: Package File Format, Version 3.0. Industrial Digital Twin Association (IDTA), March 2023. Online. Available: https://industrialdigitaltwin.org/en/content-hub
-
-[#bib4]
-[4] file:///C:/Users/sbader/AppData/Local/Temp/Tom%20Preston-Werner[Tom Preston-Werner]. Semantic Versioning. Version 2.0.0. Online. Available: https://semver.org/spec/v2.0.0.html
-
-[#bib5]
-[5] RFC 8820: URI Design and Ownership. Internet Engineering Task Force (IETF), 2020. Online. Available: https://tools.ietf.org/html/rfc8820
-
-[#bib6]
-[6] DIN SPEC 91406: “Automatic identification of physical objects and information on physical objects in IT systems, particularly IoT systems”. December 2019. Online. Available: https://www.beuth.de/de/technische-regel/din-spec-91406/314564057
-
-[#bib7]
-[7] Decentralized Identifiers (DIDs) v1.0. Edited by Manu Sporny, Amy Guy, Markus Sabadello, and Drummond Reed. W3C Recommendation. Online. Available: https://www.w3.org/TR/did-core/
-
-[#bib8]
-[8] OData Version 4.01 Part 1: Protocol. Edited by Michael Pizzo, Ralf Handl, and Martin Zurmuehl. OASIS Standard. Online. Available: https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html
-
+[appendix]
 == Change Notes
 
 === General
@@ -6330,15 +6171,15 @@ Major Changes:
 * SerializationModifier Content as path: $metadata, $value, $reference, $path
 * Introduction of length constraints for string attributes
 
-[cols="10%,,29%,10%,51%",options="header",]
+[%autowidth, width="100%", cols="10%,29%,10%,51%",options="header",]
 |===
-|*BWC* |*Interface Change* | |*Kind of Change* |*Comment*
-| | |Submodel |New a|
+|*BWC* |*Interface Change* |*Kind of Change* |*Comment*
+| |Submodel |New a|
 PatchSubmodel and PatchSubmodelElementByPath
 
 (PUT to completely replace and PATCH to update content)
 
-| | a|
+| a|
 Asset Administration Shell,
 
 Submodel,
@@ -6394,22 +6235,22 @@ GetAllAssetAdministrationShellIdsByAssetLink
 
 GetAllAASXPackageIds
 
-| | |Submodel |Changed |SerializationModifier Content as path: $metadata, $value, $reference, $path
-| | |Asset Administration Shell |New |GetThumbnail, PutThumbnail
-| | |Submodel Repository |New |PatchSubmodelForId was missing
-| | |Registry |New |Add extensions to descriptor
-| | |AssetAdministrationShellDescriptor |New |Add the attributes assetKind and assetType
-| | |SubmodelDescriptor |New |Add supplementalSemanticId
-| | |* |Changed |Rename GetDescriptor to GetDescription
-| | |* |Changed |API versioning with major + minor
-| | |* |New |Profiles
-| | |* |Changed |Clarify service specifications and APIs
-| | |CD Registry |Changed |Renaming parameter ‘cdIdentifier’ in GetConceptDescriptionById to ‘id’. Parameter has not been changed in the HTTP API.
+| |Submodel |Changed |SerializationModifier Content as path: $metadata, $value, $reference, $path
+| |Asset Administration Shell |New |GetThumbnail, PutThumbnail
+| |Submodel Repository |New |PatchSubmodelForId was missing
+| |Registry |New |Add extensions to descriptor
+| |AssetAdministrationShellDescriptor |New |Add the attributes assetKind and assetType
+| |SubmodelDescriptor |New |Add supplementalSemanticId
+| |* |Changed |Rename GetDescriptor to GetDescription
+| |* |Changed |API versioning with major + minor
+| |* |New |Profiles
+| |* |Changed |Clarify service specifications and APIs
+| |CD Registry |Changed |Renaming parameter ‘cdIdentifier’ in GetConceptDescriptionById to ‘id’. Parameter has not been changed in the HTTP API.
 |===
 
 === Operation Changes w.r.t. V1.0RC03 to V3.0
 
-[width="99%",cols="32%,34%,13%,21%",options="header",]
+[%autowidth, width="100%", cols="32%,34%,13%,21%",options="header",]
 |===
 |*Operation Change Old* |*Operation Change New* |*Kind of Change* |*Comment*
 |GetDescriptor |GetDescription |Changed |Rename, get profiles
@@ -6418,7 +6259,7 @@ GetAllAASXPackageIds
 
 === Interface Changes w.r.t. V1.0RC02 to V1.0RC03
 
-[cols="9%,29%,17%,45%",options="header",]
+[%autowidth, width="100%", cols="9%,29%,17%,45%",options="header",]
 |===
 |*BWC* |*Interface Change* |*Kind of Change* |*Comment*
 |* |Discovery |Changed |IndentifierKeyValuePair to SpecificAssetId
@@ -6435,7 +6276,7 @@ GetAllAASXPackageIds
 
 === Operation Changes w.r.t. V1.0RC02 to V1.0RC03
 
-[cols="32%,19%,13%,36%",options="header",]
+[%autowidth, width="100%", cols="32%,19%,13%,36%",options="header",]
 |===
 |*Operation Change Old* |*Operation Change New* |*Kind of Change* |*Comment*
 | | |Changed |inputArgument and inoutputArgument are OperationVariable
@@ -6446,7 +6287,7 @@ GetAllAASXPackageIds
 
 === Interface Changes w.r.t. V1.0RC01 to V1.0RC02
 
-[cols="10%,21%,13%,56%",options="header",]
+[%autowidth, width="100%", cols="10%,21%,13%,56%",options="header",]
 |===
 |*BWC* |*Interface Change* |*Kind of Change* |*Comment*
 |* |Asset Administration Shell |Changed a|
@@ -6541,7 +6382,7 @@ PostConceptDescription
 
 === Operation Changes w.r.t. V1.0RC01 to V1.0RC02
 
-[width="99%",cols="32%,34%,13%,21%",options="header",]
+[%autowidth, width="100%", cols="32%,34%,13%,21%",options="header",]
 |===
 |*Operation Change Old* |*Operation Change New* |*Kind of Change* |*Comment*
 |PatchAssetAdministrationShell | |Removed |
@@ -6585,4 +6426,29 @@ PostConceptDescription
 | |PostConceptDescription |New |
 |===
 
-www.industrialdigitaltwin.org
+[bibliography]
+== Bibliography
+
+[#bib1]
+[1] Specification of the Asset Administration Shell. Part 1: Metamodel, Version 3.0. Industrial Digital Twin Association (IDTA), March 2023. Online. Available: https://industrialdigitaltwin.org/en/content-hub
+
+[#bib2]
+[2] Specification of the Asset Administration Shell. Part 3a: Data Specification – IEC 61360, Version 3.0. Industrial Digital Twin Association (IDTA), March 2023. Online. Available: https://industrialdigitaltwin.org/en/content-hub
+
+[#bib3]
+[3] Specification of the Asset Administration Shell. Part 5: Package File Format, Version 3.0. Industrial Digital Twin Association (IDTA), March 2023. Online. Available: https://industrialdigitaltwin.org/en/content-hub
+
+[#bib4]
+[4] file:///C:/Users/sbader/AppData/Local/Temp/Tom%20Preston-Werner[Tom Preston-Werner]. Semantic Versioning. Version 2.0.0. Online. Available: https://semver.org/spec/v2.0.0.html
+
+[#bib5]
+[5] RFC 8820: URI Design and Ownership. Internet Engineering Task Force (IETF), 2020. Online. Available: https://tools.ietf.org/html/rfc8820
+
+[#bib6]
+[6] DIN SPEC 91406: “Automatic identification of physical objects and information on physical objects in IT systems, particularly IoT systems”. December 2019. Online. Available: https://www.beuth.de/de/technische-regel/din-spec-91406/314564057
+
+[#bib7]
+[7] Decentralized Identifiers (DIDs) v1.0. Edited by Manu Sporny, Amy Guy, Markus Sabadello, and Drummond Reed. W3C Recommendation. Online. Available: https://www.w3.org/TR/did-core/
+
+[#bib8]
+[8] OData Version 4.01 Part 1: Protocol. Edited by Michael Pizzo, Ralf Handl, and Martin Zurmuehl. OASIS Standard. Online. Available: https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html
