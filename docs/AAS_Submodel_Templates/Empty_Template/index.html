@@ -143,10 +143,15 @@ img {
 <div class="sect2">
 <h3 id="_about_this_document"><a class="link" href="#_about_this_document">1.1. About this document</a></h3>
 <div class="paragraph">
-<p>This document is a part of a specification series. Each part specifies the contents of a Submodel template for the Asset Administration Shell (AAS). The AAS is described in <a href="#bib1">[1]</a>, <a href="#bib2">[2]</a>, <a href="#bib3">[3]</a> and <a href="#bib6">[6]</a>. First exemplary Submodel contents were described in <a href="#bib4">[4]</a>, while the actual format of this document was derived by the "Administration Shell in Practice" <a href="#bib5">[5]</a>. The format aims to be very concise, giving only minimal necessary information for applying a Submodel template, while leaving deeper descriptions and specification of concepts, structures and mapping to the respective documents <a href="#bib1">[1]</a> to <a href="#bib6">[6]</a>.</p>
+<p>This document is a part of a specification series.
+Each part specifies the contents of a Submodel template for the Asset Administration Shell (AAS).
+The AAS is described in <a href="#bib1">[1]</a>, <a href="#bib2">[2]</a>, <a href="#bib3">[3]</a> and <a href="#bib6">[6]</a>.
+First exemplary Submodel contents were described in <a href="#bib4">[4]</a>, while the actual format of this document was derived by the "Administration Shell in Practice" <a href="#bib5">[5]</a>.
+The format aims to be very concise, giving only minimal necessary information for applying a Submodel template, while leaving deeper descriptions and specification of concepts, structures and mapping to the respective documents <a href="#bib1">[1]</a> to <a href="#bib6">[6]</a>.</p>
 </div>
 <div class="paragraph">
-<p>The target group of the specification are developers and editors of technical documentation and manufacturer information, which are describing assets in smart manufacturing by means of the Asset Administration Shell (AAS) and therefore need to create a Submodel instance with a hierarchy of SubmodelElements. This document especially details on the question, which SubmodelElements with which semantic identification shall be used for this purpose.</p>
+<p>The target group of the specification are developers and editors of technical documentation and manufacturer information, which are describing assets in smart manufacturing by means of the Asset Administration Shell (AAS) and therefore need to create a Submodel instance with a hierarchy of SubmodelElements.
+This document especially details on the question, which SubmodelElements with which semantic identification shall be used for this purpose.</p>
 </div>
 </div>
 <div class="sect2">
@@ -185,7 +190,7 @@ img {
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="media/image2.png" alt="Ein Bild" width="252" height="183">
+<img src="media/image2.png" alt="image2" width="252" height="183">
 </div>
 <div class="title">Figure 1. Example of a figure</div>
 </div>
@@ -193,7 +198,7 @@ img {
 <div class="sect2">
 <h3 id="_title_2"><a class="link" href="#_title_2">2.3. Title</a></h3>
 <div class="paragraph">
-<p>If you need to use general tables, pleasd use the table descriptions.</p>
+<p>If you need to use general tables, please use the table descriptions.</p>
 </div>
 <div class="paragraph">
 <p>Example of a table description</p>
@@ -228,7 +233,8 @@ img {
 <div class="sect2">
 <h3 id="_attributes"><a class="link" href="#_attributes">2.4. Attributes</a></h3>
 <div class="paragraph">
-<p>Table for attributes look like this. Please remember to use the table descriptions.</p>
+<p>Table for attributes look like this.
+Please remember to use the table descriptions.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
@@ -274,13 +280,15 @@ img {
 <col style="width: 25%;">
 <col style="width: 9%;">
 </colgroup>
-<tbody>
+<thead>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>[SME type]</strong></p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>semanticId = [idType]value</strong></p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>[valueType]</strong></p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock"><strong>card.</strong></p></th>
+<th class="tableblock halign-left valign-top"><strong>[SME type]</strong></th>
+<th class="tableblock halign-left valign-top"><strong>semanticId = [idType]value</strong></th>
+<th class="tableblock halign-left valign-top"><strong>[valueType]</strong></th>
+<th class="tableblock halign-left valign-top"><strong>card.</strong></th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock"><strong>idShort</strong></p></th>
 <th class="tableblock halign-left valign-top"><p class="tableblock"><strong>Description@en</strong></p></th>
@@ -288,9 +296,8 @@ img {
 <th class="tableblock halign-left valign-top"></th>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Document{00}</p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[SMC]
+Document{00}</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>[IRI] <a href="http://admin-shell.io/vdi/2770/1/0/Document" class="bare">http://admin-shell.io/vdi/2770/1/0/Document</a></p>
 </div>
@@ -301,9 +308,8 @@ img {
 <td class="tableblock halign-left valign-top"><p class="tableblock">0..*</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Entity{00}</p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[Entity]
+Entity{00}</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>[IRI] <a href="http://admin-shell.io/vdi/2770/1/0/EntityForDocumentation" class="bare">http://admin-shell.io/vdi/2770/1/0/EntityForDocumentation</a></p>
 </div>
@@ -320,7 +326,8 @@ img {
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>Note: these Entities are the target of the “DocumentedEntity"-ReferenceElements of the particular Documents contained in this Submodel. This mechanism substitutes the ObjectId-provision of VDI 2770 (see section 2.2).</p>
+<p>Note: these Entities are the target of the “DocumentedEntity"-ReferenceElements of the particular Documents contained in this Submodel.
+This mechanism substitutes the ObjectId-provision of VDI 2770 (see section 2.2).</p>
 </div>
 </div>
 </div>
@@ -345,7 +352,9 @@ img {
 <div class="sect2">
 <h3 id="_general_2"><a class="link" href="#_general_2">A.1. General</a></h3>
 <div class="paragraph">
-<p>The used tables in this document try to outline information as concise as possible. They do not convey all information on Submodels and SubmodelElements. For this purpose, the definitive definitions are given by a separate file in form of an AASX file of the Submodel template and its elements.</p>
+<p>The used tables in this document try to outline information as concise as possible.
+They do not convey all information on Submodels and SubmodelElements.
+For this purpose, the definitive definitions are given by a separate file in form of an AASX file of the Submodel template and its elements.</p>
 </div>
 </div>
 <div class="sect2">
@@ -362,7 +371,9 @@ img {
 <p>The table heads abbreviate 'cardinality' with 'card'.</p>
 </li>
 <li>
-<p>The tables often place two informations in different rows of the same table cell. In this case, the first information is marked out by sharp brackets [] form the second information. A special case are the semanticIds, which are marked out by the format: (type)(local)[idType]value.</p>
+<p>The tables often place two informations in different rows of the same table cell.
+In this case, the first information is marked out by sharp brackets [] form the second information.
+A special case are the semanticIds, which are marked out by the format: (type)(local)[idType]value.</p>
 </li>
 <li>
 <p>The types of SubmodelElements are abbreviated:</p>
@@ -418,13 +429,16 @@ img {
 <div class="ulist">
 <ul>
 <li>
-<p>If an idShort ends with '{00}', this indicates a suffix of the respective length (here: 2) of decimal digits, in order to make the idShort unique. A different idShort might be choosen, as long as it is unique in the parent’s context.</p>
+<p>If an idShort ends with '{00}', this indicates a suffix of the respective length (here: 2) of decimal digits, in order to make the idShort unique.
+A different idShort might be choosen, as long as it is unique in the parent’s context.</p>
 </li>
 <li>
-<p>The Keys of semanticId in the main section feature only idType and value, such as: [IRI]<a href="https://admin-shell.io/vdi/2770/1/0/DocumentId/Id" class="bare">https://admin-shell.io/vdi/2770/1/0/DocumentId/Id</a>. The attributes <code>type</code> and "local" (typically <code>ConceptDescription</code> and "(local)" or <code>GlobalReference</code> and (no-local)") need to be set accordingly; see <a href="#bib6">[6]</a>.</p>
+<p>The Keys of semanticId in the main section feature only idType and value, such as: [IRI]<a href="https://admin-shell.io/vdi/2770/1/0/DocumentId/Id" class="bare">https://admin-shell.io/vdi/2770/1/0/DocumentId/Id</a>.
+The attributes <code>type</code> and "local" (typically <code>ConceptDescription</code> and "(local)" or <code>GlobalReference</code> and (no-local)") need to be set accordingly; see <a href="#bib6">[6]</a>.</p>
 </li>
 <li>
-<p>If a table does not contain a column with <code>parent</code> heading, all represented attributes share the same parent. This parent is denoted in the head of the table.</p>
+<p>If a table does not contain a column with <code>parent</code> heading, all represented attributes share the same parent.
+This parent is denoted in the head of the table.</p>
 </li>
 <li>
 <p>Multi-language strings are represented by the text value, followed by '@'-character and the ISO 639 language code: example@EN.</p>
@@ -441,25 +455,28 @@ img {
 <h2 id="_bibliography"><a class="link" href="#_bibliography">Bibliography</a></h2>
 <div class="sectionbody">
 <div id="bib1" class="paragraph">
-<p>[1] “Recommendations for implementing the strategic initiative INDUSTRIE 4.0”, acatech, April 2013. [Online]. Available <a href="https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/" class="bare">https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/</a></p>
+<p>[1] “Recommendations for implementing the strategic initiative INDUSTRIE 4.0”, acatech, April 2013. [Online].
+Available <a href="https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/" class="bare">https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/</a></p>
 </div>
 <div id="bib2" class="paragraph">
-<p>[2] “Implementation Strategy Industrie 4.0: Report on the results of the Industrie 4.0 Platform”; BITKOM e.V. / VDMA e.V., /ZVEI e.V., April 2015. [Online]. Available: <a href="https://www.bitkom.org/noindex/Publikationen/2016/Sonstiges/Implementation-Strategy-Industrie-40/2016-01-Implementation-Strategy-Industrie40.pdf" class="bare">https://www.bitkom.org/noindex/Publikationen/2016/Sonstiges/Implementation-Strategy-Industrie-40/2016-01-Implementation-Strategy-Industrie40.pdf</a></p>
+<p>[2] “Implementation Strategy Industrie 4.0: Report on the results of the Industrie 4.0 Platform”; BITKOM e.V. / VDMA e.V., /ZVEI e.V., April 2015. [Online].
+Available: <a href="https://www.bitkom.org/noindex/Publikationen/2016/Sonstiges/Implementation-Strategy-Industrie-40/2016-01-Implementation-Strategy-Industrie40.pdf" class="bare">https://www.bitkom.org/noindex/Publikationen/2016/Sonstiges/Implementation-Strategy-Industrie-40/2016-01-Implementation-Strategy-Industrie40.pdf</a></p>
 </div>
 <div id="bib3" class="paragraph">
-<p>[3] “The Structure of the Administration Shell: TRILATERAL PERSPECTIVES from France, Italy and Germany”, March 2018, [Online]. Available: <a href="https://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/hm-2018-trilaterale-coop.html" class="bare">https://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/hm-2018-trilaterale-coop.html</a></p>
+<p>[3] “The Structure of the Administration Shell: TRILATERAL PERSPECTIVES from France, Italy and Germany”, March 2018, [Online].
+Available: <a href="https://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/hm-2018-trilaterale-coop.html" class="bare">https://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/hm-2018-trilaterale-coop.html</a></p>
 </div>
 <div id="bib4" class="paragraph">
-<p>[4] “Beispiele zur Verwaltungsschale der Industrie 4.0-Komponente – Basisteil (German)”; ZVEI e.V., Whitepaper, November 2016. [Online]. Available: <a href="https://www.zvei.org/presse-medien/publikationen/beispiele-zur-verwaltungsschale-der-industrie-40-komponente-basisteil/" class="bare">https://www.zvei.org/presse-medien/publikationen/beispiele-zur-verwaltungsschale-der-industrie-40-komponente-basisteil/</a></p>
+<p>[4] “Beispiele zur Verwaltungsschale der Industrie 4.0-Komponente – Basisteil (German)”; ZVEI e.V., Whitepaper, November 2016. [Online].
+Available: <a href="https://www.zvei.org/presse-medien/publikationen/beispiele-zur-verwaltungsschale-der-industrie-40-komponente-basisteil/" class="bare">https://www.zvei.org/presse-medien/publikationen/beispiele-zur-verwaltungsschale-der-industrie-40-komponente-basisteil/</a></p>
 </div>
 <div id="bib5" class="paragraph">
-<p>[5] “Verwaltungsschale in der Praxis. Wie definiere ich Teilmodelle, beispielhafte Teilmodelle und Interaktion zwischen Verwaltungsschalen (in German)”, Version 1.0, April 2019, Plattform Industrie 4.0 in Kooperation mit VDE GMA Fachausschuss 7.20, Federal Ministry for Economic Affairs and Energy (BMWi), Available: <a href="https://www.plattform-i40.de/PI40/Redaktion/DE/Downloads/Publikation/2019-verwaltungsschale-in-der-praxis.html" class="bare">https://www.plattform-i40.de/PI40/Redaktion/DE/Downloads/Publikation/2019-verwaltungsschale-in-der-praxis.html</a></p>
+<p>[5] “Verwaltungsschale in der Praxis.
+Wie definiere ich Teilmodelle, beispielhafte Teilmodelle und Interaktion zwischen Verwaltungsschalen (in German)”, Version 1.0, April 2019, Plattform Industrie 4.0 in Kooperation mit VDE GMA Fachausschuss 7.20, Federal Ministry for Economic Affairs and Energy (BMWi), Available: <a href="https://www.plattform-i40.de/PI40/Redaktion/DE/Downloads/Publikation/2019-verwaltungsschale-in-der-praxis.html" class="bare">https://www.plattform-i40.de/PI40/Redaktion/DE/Downloads/Publikation/2019-verwaltungsschale-in-der-praxis.html</a></p>
 </div>
 <div id="bib6" class="paragraph">
-<p>[6] “Details of the Asset Administration Shell; Part 1 - The exchange of information between partners in the value chain of Industrie 4.0 (Version 3.0RC01)”, November 2020, [Online]. Available: <a href="https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/Details-of-the-Asset-Administration-Shell-Part1.html" class="bare">https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/Details-of-the-Asset-Administration-Shell-Part1.html</a></p>
-</div>
-<div class="paragraph">
-<p>www.industrialdigitaltwin.org</p>
+<p>[6] “Details of the Asset Administration Shell; Part 1 - The exchange of information between partners in the value chain of Industrie 4.0 (Version 3.0RC01)”, November 2020, [Online].
+Available: <a href="https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/Details-of-the-Asset-Administration-Shell-Part1.html" class="bare">https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/Details-of-the-Asset-Administration-Shell-Part1.html</a></p>
 </div>
 </div>
 </div>
