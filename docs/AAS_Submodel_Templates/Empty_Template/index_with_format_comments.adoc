@@ -1,0 +1,192 @@
+// Table of Contents settings
+// Places the table of contents on the left
+:toc: left
+// Sets the title for the table of contents
+:toc-title: Digital Nameplate for Industrial Equipment
+
+// Section settings
+// Makes section headers into links
+:sectlinks:
+// Enables section numbering
+:sectnums:
+
+// Styling settings
+// Links to a CSS stylesheet file for custom styling
+:stylesheet: ../../style.css
+// Links to a favicon image
+:favicon: ../../favicon.png
+
+// Footer settings
+// Removes the footer from the page
+:nofooter:
+
+// Document Title
+= Submodel Template of the Asset Administration Shell
+
+// Document Revision Information
+// Author name
+:author: IDTA
+// Label for the version number
+:version-label: Number
+// Revision number
+:revnumber: 4711-1-0
+// Revision date
+:revdate: Month YEAR
+// Revision remark
+:revremark: Submodel Template of the Asset Administration Shell
+
+// Level 1 Section
+== General
+
+// Level 2 Section
+=== About this document
+
+This document is a part of a specification series.
+Each part specifies the contents of a Submodel template for the Asset Administration Shell (AAS).
+// link:#bib1[[1\]]: A link to a bibliographic reference labeled "1".
+The AAS is described in link:#bib1[[1\]], link:#bib2[[2\]], link:#bib3[[3\]] and link:#bib6[[6\]].
+First exemplary Submodel contents were described in link:#bib4[[4\]], while the actual format of this document was derived by the "Administration Shell in Practice" link:#bib5[[5\]].
+The format aims to be very concise, giving only minimal necessary information for applying a Submodel template, while leaving deeper descriptions and specification of concepts, structures and mapping to the respective documents link:#bib1[[1\]] to link:#bib6[[6\]].
+
+// Additional Level 2 Sections
+=== Scope of the Submodel
+
+Description of the Scope
+
+=== Relevant standards for the Submodel template
+
+List of relevant standards with title
+
+=== Use cases, requirements and design decisions
+
+List of relevant use cases.
+
+// Another Level 1 Section
+== Submodel TITLE
+
+// Additional Level 2 Sections
+=== Approach
+
+Please describe the approach
+
+=== Title
+
+If you need to use figures, please use the figure descriptions
+
+// Caption of the figure
+.Example of a figure
+// Figure block
+image::media/image2.png[width=252,height=183]
+
+=== Title
+
+If you need to use general tables, please use the table descriptions.
+
+// Table with specified column widths and header row
+[cols="14%,34%,52%",options="header",]
+|===
+|Table ID |ClassID |Description
+|01-01 |Identification |
+|02-01 |Technical specification |
+|===
+
+=== Attributes
+
+// Table with custom style "table-with-appendix-table".
+// The subsequent table will be visually attached to this one, creating a cohesive set of tables that appear as one unified element while maintaining separate structures.
+[.table-with-appendix-table]
+[cols="16%h,84%"]
+|===
+// A table row with a cell "a|" that spans multiple columns.
+|*idShort:* a| ManufacturerDocumentation\{00}
+
+// Note block
+====
+Note: a different idShort might be used, as long as it is unique in the Submodel.
+====
+
+|*Class:* |Submodel (SM)
+|*semanticId:* |[IRI] https://admin-shell.io/vdi/2770/1/1/Documentation
+|*Parent:* |Asset Administration Shell, to which the documents shall be associated to
+|*Explanation:* |The Submodel defines a set of manufacturer documentation to bring about information from manufacturer to operator of industrial equipment.
+|===
+
+// Additional table with specified column widths, header row and additional header row
+[cols="16%,50%,25%,9%",options="header"]
+|===
+|*[SME type]* |*semanticId = [idType]value* |*[valueType]* |*card.*
+// Additional header row. Each cell formatted as header cell.
+h|*idShort* h|*Description@en* h|*example* h|
+|[SMC]
+Document\{00}
+a|[IRI] http://admin-shell.io/vdi/2770/1/0/Document
+// A table row with a cell "a|" that spans multiple columns.
+
+Each SMC describes a Document (see IEC 82045-1 and IEC 8245-2), which is associated to the particular Asset Administration Shell.
+
+|n/a |0..*
+|[Entity]
+Entity\{00}
+a|[IRI] http://admin-shell.io/vdi/2770/1/0/EntityForDocumentation
+
+// Multiple Note blocks
+====
+Note: typically, such Entities are well-identified sub-parts of the Asset, such as supplier parts delivered to the manufacturer of the Asset.
+====
+
+====
+Note: these Entities are the target of the “DocumentedEntity"-ReferenceElements of the particular Documents contained in this Submodel.
+This mechanism substitutes the ObjectId-provision of VDI 2770 (see section 2.2).
+====
+
+====
+Note: If the described Entity has its own Asset Administration Shell, the SelfManaged-flag and AssetId-reference of the Entity shall be set accordingly.
+====
+
+|Entity for an important sealing or bearing of the equipment. |0..*
+
+|===
+
+// Appendix Section. It will add appendix numeration: A, B, C etc.
+[appendix]
+== Explanations on used table formats
+
+// Additional Level 2 Sections
+=== General
+
+The used tables in this document try to outline information as concise as possible.
+They do not convey all information on Submodels and SubmodelElements.
+For this purpose, the definitive definitions are given by a separate file in form of an AASX file of the Submodel template and its elements.
+
+=== Tables on Submodels and SubmodelElements
+
+// Additional content and tables...
+
+// Bibliography Section. It removes section numeration.
+[bibliography]
+== Bibliography
+
+// Bibliographic references
+[#bib1]
+[1] “Recommendations for implementing the strategic initiative INDUSTRIE 4.0”, acatech, April 2013. [Online].
+Available https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/
+
+[#bib2]
+[2] “Implementation Strategy Industrie 4.0: Report on the results of the Industrie 4.0 Platform”; BITKOM e.V. / VDMA e.V., /ZVEI e.V., April 2015. [Online].
+Available: https://www.bitkom.org/noindex/Publikationen/2016/Sonstiges/Implementation-Strategy-Industrie-40/2016-01-Implementation-Strategy-Industrie40.pdf
+
+[#bib3]
+[3] “The Structure of the Administration Shell: TRILATERAL PERSPECTIVES from France, Italy and Germany”, March 2018, [Online].
+Available: https://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/hm-2018-trilaterale-coop.html
+
+[#bib4]
+[4] “Beispiele zur Verwaltungsschale der Industrie 4.0-Komponente – Basisteil (German)”; ZVEI e.V., Whitepaper, November 2016. [Online].
+Available: https://www.zvei.org/presse-medien/publikationen/beispiele-zur-verwaltungsschale-der-industrie-40-komponente-basisteil/
+
+[#bib5]
+[5] “Verwaltungsschale in der Praxis.
+Wie definiere ich Teilmodelle, beispielhafte Teilmodelle und Interaktion zwischen Verwaltungsschalen (in German)”, Version 1.0, April 2019, Plattform Industrie 4.0 in Kooperation mit VDE GMA Fachausschuss 7.20, Federal Ministry for Economic Affairs and Energy (BMWi), Available: https://www.plattform-i40.de/PI40/Redaktion/DE/Downloads/Publikation/2019-verwaltungsschale-in-der-praxis.html
+
+[#bib6]
+[6] “Details of the Asset Administration Shell; Part 1 - The exchange of information between partners in the value chain of Industrie 4.0 (Version 3.0RC01)”, November 2020, [Online].
+Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/Details-of-the-Asset-Administration-Shell-Part1.html

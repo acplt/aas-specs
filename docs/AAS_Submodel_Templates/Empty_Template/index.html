@@ -5,7 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.16">
-<meta name="author" content="IDTA">
 <link rel="icon" type="image/png" href="../../favicon.png">
 <title>Submodel Template of the Asset Administration Shell</title>
 <style>
@@ -101,12 +100,6 @@ img {
 <body class="article toc2 toc-left">
 <div id="header">
 <h1>Submodel Template of the Asset Administration Shell</h1>
-<div class="details">
-<span id="author" class="author">IDTA</span><br>
-<span id="revnumber">number 4711-1-0,</span>
-<span id="revdate">Month YEAR</span>
-<br><span id="revremark">Submodel Template of the Asset Administration Shell</span>
-</div>
 <div id="toc" class="toc2">
 <div id="toctitle">Digital Nameplate for Industrial Equipment</div>
 <ul class="sectlevel1">
@@ -149,10 +142,6 @@ The AAS is described in <a href="#bib1">[1]</a>, <a href="#bib2">[2]</a>, <a hre
 First exemplary Submodel contents were described in <a href="#bib4">[4]</a>, while the actual format of this document was derived by the "Administration Shell in Practice" <a href="#bib5">[5]</a>.
 The format aims to be very concise, giving only minimal necessary information for applying a Submodel template, while leaving deeper descriptions and specification of concepts, structures and mapping to the respective documents <a href="#bib1">[1]</a> to <a href="#bib6">[6]</a>.</p>
 </div>
-<div class="paragraph">
-<p>The target group of the specification are developers and editors of technical documentation and manufacturer information, which are describing assets in smart manufacturing by means of the Asset Administration Shell (AAS) and therefore need to create a Submodel instance with a hierarchy of SubmodelElements.
-This document especially details on the question, which SubmodelElements with which semantic identification shall be used for this purpose.</p>
-</div>
 </div>
 <div class="sect2">
 <h3 id="_scope_of_the_submodel"><a class="link" href="#_scope_of_the_submodel">1.2. Scope of the Submodel</a></h3>
@@ -163,7 +152,7 @@ This document especially details on the question, which SubmodelElements with wh
 <div class="sect2">
 <h3 id="_relevant_standards_for_the_submodel_template"><a class="link" href="#_relevant_standards_for_the_submodel_template">1.3. Relevant standards for the Submodel template</a></h3>
 <div class="paragraph">
-<p>List of relevant standards with titel</p>
+<p>List of relevant standards with title</p>
 </div>
 </div>
 <div class="sect2">
@@ -186,7 +175,7 @@ This document especially details on the question, which SubmodelElements with wh
 <div class="sect2">
 <h3 id="_title"><a class="link" href="#_title">2.2. Title</a></h3>
 <div class="paragraph">
-<p>If you need to use figures, pleas use the figure desciptions</p>
+<p>If you need to use figures, please use the figure descriptions</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -200,9 +189,6 @@ This document especially details on the question, which SubmodelElements with wh
 <div class="paragraph">
 <p>If you need to use general tables, please use the table descriptions.</p>
 </div>
-<div class="paragraph">
-<p>Example of a table description</p>
-</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 14%;">
@@ -211,7 +197,7 @@ This document especially details on the question, which SubmodelElements with wh
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Tabel ID</th>
+<th class="tableblock halign-left valign-top">Table ID</th>
 <th class="tableblock halign-left valign-top">ClassID</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
@@ -224,7 +210,7 @@ This document especially details on the question, which SubmodelElements with wh
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">02-01</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Technical specifiction</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Technical specification</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
@@ -232,10 +218,6 @@ This document especially details on the question, which SubmodelElements with wh
 </div>
 <div class="sect2">
 <h3 id="_attributes"><a class="link" href="#_attributes">2.4. Attributes</a></h3>
-<div class="paragraph">
-<p>Table for attributes look like this.
-Please remember to use the table descriptions.</p>
-</div>
 <table class="tableblock frame-all grid-all stretch table-with-appendix-table">
 <colgroup>
 <col style="width: 16%;">
@@ -250,7 +232,7 @@ Please remember to use the table descriptions.</p>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>Note: a different idShort might be used, as long as it is unqiue in the Submodel.</p>
+<p>Note: a different idShort might be used, as long as it is unique in the Submodel.</p>
 </div>
 </div>
 </div></div></td>
@@ -302,7 +284,7 @@ Document{00}</p></td>
 <p>[IRI] <a href="http://admin-shell.io/vdi/2770/1/0/Document" class="bare">http://admin-shell.io/vdi/2770/1/0/Document</a></p>
 </div>
 <div class="paragraph">
-<p>Each SMC describes a Document (see IEC 82045-1 and IEC 8245-2), which is asscoated to the particular Asset Administration Shell.</p>
+<p>Each SMC describes a Document (see IEC 82045-1 and IEC 8245-2), which is associated to the particular Asset Administration Shell.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0..*</p></td>
@@ -312,9 +294,6 @@ Document{00}</p></td>
 Entity{00}</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>[IRI] <a href="http://admin-shell.io/vdi/2770/1/0/EntityForDocumentation" class="bare">http://admin-shell.io/vdi/2770/1/0/EntityForDocumentation</a></p>
-</div>
-<div class="paragraph">
-<p>States, that the described Entity is an important entity for documentation of the superordinate Asset of the Asset Administration Shell.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -334,11 +313,11 @@ This mechanism substitutes the ObjectId-provision of VDI 2770 (see section 2.2).
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>Note: If the described Entity has an own Asset Administration Shell, the SelfManaged-flag and AssetId-reference of the Entity shall be set accordingly.</p>
+<p>Note: If the described Entity has its own Asset Administration Shell, the SelfManaged-flag and AssetId-reference of the Entity shall be set accordingly.</p>
 </div>
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Entity for an important sealing or bearing of the quipment.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entity for an important sealing or bearing of the equipment.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0..*</p></td>
 </tr>
 </tbody>
@@ -359,95 +338,7 @@ For this purpose, the definitive definitions are given by a separate file in for
 </div>
 <div class="sect2">
 <h3 id="_tables_on_submodels_and_submodelelements"><a class="link" href="#_tables_on_submodels_and_submodelelements">A.2. Tables on Submodels and SubmodelElements</a></h3>
-<div class="paragraph">
-<p>For clarity and brevity, a set of rules is used for the tables for describing Submodels and SubmodelElements.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The tables follow in principle the same conventions as in <a href="#bib5">[5]</a>.</p>
-</li>
-<li>
-<p>The table heads abbreviate 'cardinality' with 'card'.</p>
-</li>
-<li>
-<p>The tables often place two informations in different rows of the same table cell.
-In this case, the first information is marked out by sharp brackets [] form the second information.
-A special case are the semanticIds, which are marked out by the format: (type)(local)[idType]value.</p>
-</li>
-<li>
-<p>The types of SubmodelElements are abbreviated:</p>
-</li>
-</ul>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 41%;">
-<col style="width: 59%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">SME type</th>
-<th class="tableblock halign-left valign-top">SubmodelElement type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Property</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Property</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">MLP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">MultiLanguageProperty</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Blob</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Blob</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ref</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ReferenceElement</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Rel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">RelationshipElement</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SMC</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SubmodelElementCollection</p></td>
-</tr>
-</tbody>
-</table>
-<div class="ulist">
-<ul>
-<li>
-<p>If an idShort ends with '{00}', this indicates a suffix of the respective length (here: 2) of decimal digits, in order to make the idShort unique.
-A different idShort might be choosen, as long as it is unique in the parent’s context.</p>
-</li>
-<li>
-<p>The Keys of semanticId in the main section feature only idType and value, such as: [IRI]<a href="https://admin-shell.io/vdi/2770/1/0/DocumentId/Id" class="bare">https://admin-shell.io/vdi/2770/1/0/DocumentId/Id</a>.
-The attributes <code>type</code> and "local" (typically <code>ConceptDescription</code> and "(local)" or <code>GlobalReference</code> and (no-local)") need to be set accordingly; see <a href="#bib6">[6]</a>.</p>
-</li>
-<li>
-<p>If a table does not contain a column with <code>parent</code> heading, all represented attributes share the same parent.
-This parent is denoted in the head of the table.</p>
-</li>
-<li>
-<p>Multi-language strings are represented by the text value, followed by '@'-character and the ISO 639 language code: example@EN.</p>
-</li>
-<li>
-<p>The [valueType] is only given for Properties.</p>
-</li>
-</ul>
-</div>
+
 </div>
 </div>
 </div>
