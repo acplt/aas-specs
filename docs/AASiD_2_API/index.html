@@ -855,16 +855,6 @@ Figure 2. They shall not be interpreted as new protocol methods, e.g. on HTTP le
 <div class="paragraph">
 <p>The following rules shall apply for the operation names in Asset Administration Shell Interface, Submodel Interface, Shell Repository Interface, Submodel Repository Interface, Concept Description Repository Interface:</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code>&lt;Interface Operation&gt;        ::=        &lt;Method Verb&gt;&lt;Model Element Name&gt;[&lt;Modifier&gt;] [&quot;By&quot;&lt;By-Qualifier&gt;]
-&lt;Method Verb&gt;        ::=        &quot;Get&quot; | &quot;GetAll&quot; | &quot;Put&quot; | &quot;Post&quot; | &quot;Patch&quot; | &quot;Delete&quot; | &quot;Set&quot; | &quot;Invoke&quot;
-&lt;Model Element Name&gt;        ::=        &quot;AssetAdministrationShell&quot;[&quot;s&quot;] | &quot;SubmodelReference&quot; [&quot;s&quot;] |
-&quot;AssetInformation&quot; | &quot;Submodel&quot;[&quot;s&quot;] | &quot;SubmodelElement&quot;[&quot;s&quot;] | &quot;ConceptDescription&quot;[&quot;s&quot;]
-&lt;Modifier&gt;        ::=        &quot;Value&quot; | &quot;IdShortPath&quot; | &quot;Reference&quot;
-&lt;By-Qualifier&gt;        ::=        &quot;Id&quot; | &quot;SemanticId&quot; | &quot;ParentPathAndSemanticId&quot; | &quot;Path&quot; | &quot;AssetId&quot; | &quot;IdShort&quot; | &quot;IsCaseOf&quot; | &quot;DataSpecificationReference&quot;</code></pre>
-</div>
-</div>
 </blockquote>
 </div>
 <table class="tableblock frame-all grid-none stretch">
@@ -923,7 +913,7 @@ Figure 2. They shall not be interpreted as new protocol methods, e.g. on HTTP le
 <p>The operations of this document need unique identifiers to reach a common understanding and allow all involved parties to reference the same things. These identifiers need to be globally unique and understandable by the community and implementing systems. Furthermore, the identifiers need to support a versioning scheme for future updates and extensions of the metamodel. The identifiers defined in this document are reused in related resources, for instance REST API operations or in self-descriptions of implementing services.</p>
 </div>
 <div class="paragraph">
-<p>Internationalized Resource Identifiers (IRIs), Uniform Resource Identifiers (URIs) <a href="#bib5">[5]</a> in particular, and the requirements of DIN SPEC 91406 <a href="#bib6">[6]</a>, serve as the basic format. Further design decisions include ‘https’ as the URI scheme, and the controlled domain name ‘admin-shell.io’ as the chosen authority. Both decisions guarantee the interoperability of the identifiers and their durability, since URIs are generally well-known and proven, while the domain is controlled and served through the Plattform Industrie 4.0. All identifiers included in the ‘admin-shell.io’ domain are described in a lightweight catalogue in the form of markdown documents; they are continuously maintained and updated<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>. The catalogue itself is structured in several sub-namespaces specified by the first path parameter. All URIs of this document reflect entities of the core metamodel, which are contained in the sub-namespace identified with the ‘/aas/API’ path.</p>
+<p>Internationalized Resource Identifiers (IRIs), Uniform Resource Identifiers (URIs) <a href="#bib5">[5]</a> in particular, and the requirements of DIN SPEC 91406 <a href="#bib6">[6]</a>, serve as the basic format. Further design decisions include ‘https’ as the URI scheme, and the controlled domain name ‘admin-shell.io’ as the chosen authority. Both decisions guarantee the interoperability of the identifiers and their durability, since URIs are generally well-known and proven, while the domain is controlled and served through the Plattform Industrie 4.0. All identifiers included in the ‘admin-shell.io’ domain are described in a lightweight catalogue in the form of markdown documents; they are continuously maintained and updated [<a href="https://github.com/admin-shell-io/id" class="bare">https://github.com/admin-shell-io/id</a>]. The catalogue itself is structured in several sub-namespaces specified by the first path parameter. All URIs of this document reflect entities of the core metamodel, which are contained in the sub-namespace identified with the ‘/aas/API’ path.</p>
 </div>
 <div class="paragraph">
 <p>The described identifiers appear mainly in the semanticId field of every class and operation. They are required since the class name is not necessarily constant over time. The respective semanticIds, however, guarantee the unique and certain relation between a reference and the referenced class or operation. The URIs are constructed as follows (compare to Clause Semantic Identifiers for Metamodel and Data Specifications in Part 1 <a href="#bib1">[1]</a>).</p>
@@ -964,14 +954,6 @@ Figure 2. They shall not be interpreted as new protocol methods, e.g. on HTTP le
 </div>
 <div class="paragraph">
 <p><strong>+ ::= one or more</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>+
-*</p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p>Examples for valid identifiers:</p>
@@ -1151,7 +1133,7 @@ The URI includes DIN SPEC 91406-reserved (#) and impermissible (%) characters</p
 <p>For an AAS repository, the combination <span class="gray">“Asset Administration Shell Repository Interface”</span>, <span class="red">“Asset Administration Shell Interface”</span>, <span class="blue">“Submodel Interface”</span>, “Serialization Interface”, and “Self-Description Interface” is proposed.</p>
 </div>
 <div class="paragraph">
-<p>This will result in the following HTTP/REST paths as described in a combined OpenAPI file (<a href="https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellRepositoryServiceSpecification/V3.0_SSP-001)footnote:">For easier reading only the standard paths are shown in the following: $metadata, $value, $reference and $path parameter paths are additionally contained in the OpenAPI file.</a>:</p>
+<p>This will result in the following HTTP/REST paths as described in a combined OpenAPI file (<a href="https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellRepositoryServiceSpecification/V3.0_SSP-001)">For easier reading only the standard paths are shown in the following: $metadata, $value, $reference and $path parameter paths are additionally contained in the OpenAPI file.</a>:</p>
 </div>
 <div class="paragraph">
 <p><span class="gray">/shells</span><br>
@@ -1172,7 +1154,7 @@ The URI includes DIN SPEC 91406-reserved (#) and impermissible (%) characters</p
 /description</p>
 </div>
 <div class="paragraph">
-<p>If the repository also supports AASX Packages, it shall be extended by additionally supporting a “AASX File Server” Profile<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>.</p>
+<p>If the repository also supports AASX Packages, it shall be extended by additionally supporting a “AASX File Server” Profile [Related OpenAPI file: <a href="https://app.swaggerhub.com/apis/Plattform_i40/AasxFileServerServiceSpecification/V3.0_SSP-001" class="bare">https://app.swaggerhub.com/apis/Plattform_i40/AasxFileServerServiceSpecification/V3.0_SSP-001</a>].</p>
 </div>
 <div class="paragraph">
 <p>The example of a device or container containing one AAS with its related submodels will result in the following HTTP/REST paths as described in the related OpenAPI file (<a href="https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellServiceSpecification/V3.0_SSP-001" class="bare">https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellServiceSpecification/V3.0_SSP-001</a>)<sup>2</sup>:</p>
@@ -8263,7 +8245,7 @@ Descriptor</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">NonNegativeInteger</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The <em>nonNegativeInteger</em> datatype as defined by XML Schema Part 2 in version 1.0<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <em>nonNegativeInteger</em> datatype as defined by XML Schema Part 2 in version 1.0 <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>0</p>
 </div>
@@ -9302,7 +9284,7 @@ Metadata/Value/Reference</p></td>
 </ul>
 </div>
 <div class="paragraph">
-<p>*Data type to value mapping*<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p>
+<p><strong>Data type to value mapping</strong> <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p>
 </div>
 <div class="paragraph">
 <p>The serialization of submodel element values is described in the following table. The left column “Data Type” shows the data types which can be used for submodel element values. The data types are defined according to the W3C XML Schema (<a href="https://www.w3.org/TR/xmlschema-2/#built-in-datatypes" class="bare">https://www.w3.org/TR/xmlschema-2/#built-in-datatypes</a> and <a href="https://www.w3.org/TR/xmlschema-2/#built-in-derived" class="bare">https://www.w3.org/TR/xmlschema-2/#built-in-derived</a>). “Value Range” further explains the possible range of data values for this data type. The right column comprises related examples of the serialization of submodel element values.</p>
@@ -9584,7 +9566,7 @@ Metadata/Value/Reference</p></td>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>Note 1: due to the limits in the representation of numbers in JSON, the maximum integer number that can be used without losing precision is 2⁵³-1 (defined as Number.MAX_SAFE_INTEGER). Even if the used data type would allow higher or lower values, they cannot be used if they cannot be represented in JSON. Affected data types are unbounded numeric types xs:decimal, xs:integer, xs:positiveInteger, xs:nonNegativeInteger, xs:negativeInteger, xs:nonPositiveInteger and the bounded type xs:unsignedLong. Other numeric types are not affected.<sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p>
+<p>Note 1: due to the limits in the representation of numbers in JSON, the maximum integer number that can be used without losing precision is 2⁵³-1 (defined as Number.MAX_SAFE_INTEGER). Even if the used data type would allow higher or lower values, they cannot be used if they cannot be represented in JSON. Affected data types are unbounded numeric types xs:decimal, xs:integer, xs:positiveInteger, xs:nonNegativeInteger, xs:negativeInteger, xs:nonPositiveInteger and the bounded type xs:unsignedLong. Other numeric types are not affected. <sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p>
 </div>
 </div>
 </div>
@@ -11063,7 +11045,7 @@ As different solutions also provide different advantages and disadvantages, <str
 </div>
 </div>
 <div class="paragraph">
-<p>The versioning scheme for AAS API related services follows semantic versioning<sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup>. Very briefly, this defines version numbers as a format following: &lt;MAJOR&gt;.&lt;MINOR&gt;.&lt;PATCH&gt;.</p>
+<p>The versioning scheme for AAS API related services follows semantic versioning <sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup>. Very briefly, this defines version numbers as a format following: &lt;MAJOR&gt;.&lt;MINOR&gt;.&lt;PATCH&gt;.</p>
 </div>
 <div class="paragraph">
 <p>The major version changes in case of breaking or incompatible changes that need to be addressed by clients. Minor versions add (new) functionality in a backwards compatible way and allow clients with lower minor versions to keep their existing functionality. Patch versions only include backwards compatible bug fixes.</p>
@@ -11343,7 +11325,7 @@ The idShort-path is a chain of idShorts or SubmodelElementList-indexes, which po
 <div class="sect2">
 <h3 id="_pagination"><a class="link" href="#_pagination">12.6. Pagination</a></h3>
 <div class="paragraph">
-<p>Pagination is a commonly used pattern to break down potentially long result lists into smaller pieces for a better control of the network and computational load on both the server and the client side. For instance, the OData protocol <a href="#bib8">[8]</a> provides guidelines for parameters and behavior on the client and server side. In addition, the proposals of the RFC 8977<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup> present a best practice for web APIs. In the scope of the AAS HTTP/REST API, the query parameter “cursor” controls, which part of a longer result set is returned.</p>
+<p>Pagination is a commonly used pattern to break down potentially long result lists into smaller pieces for a better control of the network and computational load on both the server and the client side. For instance, the OData protocol <a href="#bib8">[8]</a> provides guidelines for parameters and behavior on the client and server side. In addition, the proposals of the RFC 8977 <sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup> present a best practice for web APIs. In the scope of the AAS HTTP/REST API, the query parameter “cursor” controls, which part of a longer result set is returned.</p>
 </div>
 <div class="paragraph">
 <p>The AAS client may decide on the appropriate size of the result list through the limit parameter. If it is not specified, the server must comply to the default value or explicitly indicate it in the response object.</p>
@@ -15972,7 +15954,7 @@ As mentioned in Clause 11.4.3, <em>SubmodelElementCollection</em>s cannot be val
 <h2 id="_backus_naur_form"><a class="link" href="#_backus_naur_form">Appendix D: Backus-Naur-Form</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Backus-Naur form (BNF) – a meta-syntax notation for context-free grammars – is used to define grammars. For more information see Wikipedia<sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup>.</p>
+<p>The Backus-Naur form (BNF) – a meta-syntax notation for context-free grammars – is used to define grammars. For more information see Wikipedia <sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup>.</p>
 </div>
 <div class="paragraph">
 <p>A BNF specification is a set of derivation rules, written as</p>
@@ -16922,28 +16904,22 @@ PostSubmodelDescriptor</p>
 <div id="footnotes">
 <hr>
 <div class="footnote" id="_footnotedef_1">
-<a href="#_footnoteref_1">1</a>. <a href="https://github.com/admin-shell-io/id" class="bare">https://github.com/admin-shell-io/id</a>
+<a href="#_footnoteref_1">1</a>. <a href="https://www.w3.org/TR/xmlschema-2/" class="bare">https://www.w3.org/TR/xmlschema-2/</a>
 </div>
 <div class="footnote" id="_footnotedef_2">
-<a href="#_footnoteref_2">2</a>. Related OpenAPI file: <a href="https://app.swaggerhub.com/apis/Plattform_i40/AasxFileServerServiceSpecification/V3.0_SSP-001" class="bare">https://app.swaggerhub.com/apis/Plattform_i40/AasxFileServerServiceSpecification/V3.0_SSP-001</a>
+<a href="#_footnoteref_2">2</a>. cf. <a href="https://openmanufacturingplatform.github.io/sds-documentation/bamm-specification/2.0.0/datatypes.html" class="bare">https://openmanufacturingplatform.github.io/sds-documentation/bamm-specification/2.0.0/datatypes.html</a>
 </div>
 <div class="footnote" id="_footnotedef_3">
-<a href="#_footnoteref_3">3</a>. <a href="https://www.w3.org/TR/xmlschema-2/" class="bare">https://www.w3.org/TR/xmlschema-2/</a>
+<a href="#_footnoteref_3">3</a>. cf. <a href="https://openmanufacturingplatform.github.io/sds-documentation/bamm-specification/v1.0.0/datatypes.html" class="bare">https://openmanufacturingplatform.github.io/sds-documentation/bamm-specification/v1.0.0/datatypes.html</a> (with adjustments for +/-INF, NaN, and language-typed literal support)
 </div>
 <div class="footnote" id="_footnotedef_4">
-<a href="#_footnoteref_4">4</a>. cf. <a href="https://openmanufacturingplatform.github.io/sds-documentation/bamm-specification/2.0.0/datatypes.html" class="bare">https://openmanufacturingplatform.github.io/sds-documentation/bamm-specification/2.0.0/datatypes.html</a>
+<a href="#_footnoteref_4">4</a>. <a href="http://semver.org" class="bare">http://semver.org</a>
 </div>
 <div class="footnote" id="_footnotedef_5">
-<a href="#_footnoteref_5">5</a>. cf. <a href="https://openmanufacturingplatform.github.io/sds-documentation/bamm-specification/v1.0.0/datatypes.html" class="bare">https://openmanufacturingplatform.github.io/sds-documentation/bamm-specification/v1.0.0/datatypes.html</a> (with adjustments for +/-INF, NaN, and language-typed literal support)
+<a href="#_footnoteref_5">5</a>. see Chapter 2.4 of RFC 8977
 </div>
 <div class="footnote" id="_footnotedef_6">
-<a href="#_footnoteref_6">6</a>. <a href="http://semver.org" class="bare">http://semver.org</a>
-</div>
-<div class="footnote" id="_footnotedef_7">
-<a href="#_footnoteref_7">7</a>. see Chapter 2.4 of RFC 8977
-</div>
-<div class="footnote" id="_footnotedef_8">
-<a href="#_footnoteref_8">8</a>. <a href="https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form" class="bare">https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form</a>
+<a href="#_footnoteref_6">6</a>. <a href="https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form" class="bare">https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form</a>
 </div>
 </div>
 </body>

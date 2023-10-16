@@ -3898,7 +3898,7 @@ https://customer.com/demo/aas/1/1/1234859590
 
 
 ====
-Note: this is written in RDF/Turtle syntax, @end and ²de are the language tags.
+Note: this is written in RDF/Turtle syntax, @en and de are the language tags.
 ====
 
 
@@ -3927,12 +3927,12 @@ For more details see https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes
 |xs:decimal |see https://www.w3.org/TR/xmlschema11-2/#decimal
 |xs:double |see https://www.w3.org/TR/xmlschema11-2/#double
 |xs:duration |see https://www.w3.org/TR/xmlschema11-2/#duration
+|xs:float |see https://www.w3.org/TR/xmlschema11-2/#float
 |xs:gDay |see https://www.w3.org/TR/xmlschema11-2/#gDay
 |xs:gMonth |see https://www.w3.org/TR/xmlschema11-2/#gMonth
 |xs:gMonthDay |see https://www.w3.org/TR/xmlschema11-2/#gMonthDay
 |xs:gYear |see https://www.w3.org/TR/xmlschema11-2/#gYear
 |xs:gYearMonth |see https://www.w3.org/TR/xmlschema11-2/#gYearMonth
-|xs:float |see https://www.w3.org/TR/xmlschema11-2/#float
 |xs:hexBinary |see https://www.w3.org/TR/xmlschema11-2/#hexBinary
 |xs:int |see https://www.w3.org/TR/xmlschema11-2/#int
 |xs:integer |see https://www.w3.org/TR/xmlschema11-2/#integer
@@ -3949,16 +3949,6 @@ For more details see https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes
 |xs:unsignedLong |see: https://www.w3.org/TR/xmlschema11-2/#unsignedLong
 |xs:unsignedShort |see: https://www.w3.org/TR/xmlschema11-2/#unsignedShort
 |xs:yearMonthDuration |see: https://www.w3.org/TR/xmlschema11-2/#yearMonthDuration
-|xs:nonNegativeInteger |see: https://www.w3.org/TR/xmlschema11-2/#nonNegativeInteger
-|xs:nonPositiveInteger |see: https://www.w3.org/TR/xmlschema11-2/#nonPositiveInteger
-|xs:positiveInteger |see: https://www.w3.org/TR/xmlschema11-2/#positiveInteger
-|xs:short |see: https://www.w3.org/TR/xmlschema11-2/#short
-|xs:string |see: https://www.w3.org/TR/xmlschema-2/#string
-|xs:time |see: https://www.w3.org/TR/xmlschema-2/#time
-|xs:unsignedByte |see: https://www.w3.org/TR/xmlschema11-2/#unsignedShort
-|xs:unsignedInt |see: https://www.w3.org/TR/xmlschema11-2/#unsignedInt
-|xs:unsignedLong |see: https://www.w3.org/TR/xmlschema11-2/#unsignedLong
-|xs:unsignedShort |see: https://www.w3.org/TR/xmlschema11-2/#unsignedShort
 |===
 [.table-with-appendix-table]
 [cols="30%h,70%"]

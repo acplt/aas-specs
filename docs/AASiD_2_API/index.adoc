@@ -338,7 +338,7 @@ ____
 
 The operations of this document need unique identifiers to reach a common understanding and allow all involved parties to reference the same things. These identifiers need to be globally unique and understandable by the community and implementing systems. Furthermore, the identifiers need to support a versioning scheme for future updates and extensions of the metamodel. The identifiers defined in this document are reused in related resources, for instance REST API operations or in self-descriptions of implementing services.
 
-Internationalized Resource Identifiers (IRIs), Uniform Resource Identifiers (URIs) link:#bib5[[5\]] in particular, and the requirements of DIN SPEC 91406 link:#bib6[[6\]], serve as the basic format. Further design decisions include ‘https’ as the URI scheme, and the controlled domain name ‘admin-shell.io’ as the chosen authority. Both decisions guarantee the interoperability of the identifiers and their durability, since URIs are generally well-known and proven, while the domain is controlled and served through the Plattform Industrie 4.0. All identifiers included in the ‘admin-shell.io’ domain are described in a lightweight catalogue in the form of markdown documents; they are continuously maintained and updatedfootnote:[https://github.com/admin-shell-io/id]. The catalogue itself is structured in several sub-namespaces specified by the first path parameter. All URIs of this document reflect entities of the core metamodel, which are contained in the sub-namespace identified with the ‘/aas/API’ path.
+Internationalized Resource Identifiers (IRIs), Uniform Resource Identifiers (URIs) link:#bib5[[5\]] in particular, and the requirements of DIN SPEC 91406 link:#bib6[[6\]], serve as the basic format. Further design decisions include ‘https’ as the URI scheme, and the controlled domain name ‘admin-shell.io’ as the chosen authority. Both decisions guarantee the interoperability of the identifiers and their durability, since URIs are generally well-known and proven, while the domain is controlled and served through the Plattform Industrie 4.0. All identifiers included in the ‘admin-shell.io’ domain are described in a lightweight catalogue in the form of markdown documents; they are continuously maintained and updated [https://github.com/admin-shell-io/id]. The catalogue itself is structured in several sub-namespaces specified by the first path parameter. All URIs of this document reflect entities of the core metamodel, which are contained in the sub-namespace identified with the ‘/aas/API’ path.
 
 The described identifiers appear mainly in the semanticId field of every class and operation. They are required since the class name is not necessarily constant over time. The respective semanticIds, however, guarantee the unique and certain relation between a reference and the referenced class or operation. The URIs are constructed as follows (compare to Clause Semantic Identifiers for Metamodel and Data Specifications in Part 1 link:#bib1[[1\]]).
 
@@ -455,7 +455,7 @@ The separate interfaces of the HTTP/REST API allow many ways to support differen
 
 For an AAS repository, the combination [.gray]#“Asset Administration Shell Repository Interface”#, [.red]#“Asset Administration Shell Interface”#, [.blue]#“Submodel Interface”#, “Serialization Interface”, and “Self-Description Interface” is proposed.
 
-This will result in the following HTTP/REST paths as described in a combined OpenAPI file (https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellRepositoryServiceSpecification/V3.0_SSP-001)footnote:[For easier reading only the standard paths are shown in the following: $metadata, $value, $reference and $path parameter paths are additionally contained in the OpenAPI file.]:
+This will result in the following HTTP/REST paths as described in a combined OpenAPI file (https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellRepositoryServiceSpecification/V3.0_SSP-001)[For easier reading only the standard paths are shown in the following: $metadata, $value, $reference and $path parameter paths are additionally contained in the OpenAPI file.]:
 
 [.gray]#/shells# +
 [.gray]#/shells/\{aas-identifier}# +
@@ -474,7 +474,7 @@ This will result in the following HTTP/REST paths as described in a combined Ope
 /serialization +
 /description
 
-If the repository also supports AASX Packages, it shall be extended by additionally supporting a “AASX File Server” Profilefootnote:[Related OpenAPI file: https://app.swaggerhub.com/apis/Plattform_i40/AasxFileServerServiceSpecification/V3.0_SSP-001].
+If the repository also supports AASX Packages, it shall be extended by additionally supporting a “AASX File Server” Profile [Related OpenAPI file: https://app.swaggerhub.com/apis/Plattform_i40/AasxFileServerServiceSpecification/V3.0_SSP-001].
 
 The example of a device or container containing one AAS with its related submodels will result in the following HTTP/REST paths as described in the related OpenAPI file (https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellServiceSpecification/V3.0_SSP-001)^2^:
 
@@ -2601,7 +2601,7 @@ All simple data types from Part 1 link:#bib1[[1\]] apply also to the specificati
 [%autowidth, width="100%", cols="22%,30%,48%",options="header",]
 |===
 |*Primitive* |*Definition* |*Value Examples*
-|NonNegativeInteger |The _nonNegativeInteger_ datatype as defined by XML Schema Part 2 in version 1.0footnote:[https://www.w3.org/TR/xmlschema-2/] a|
+|NonNegativeInteger |The _nonNegativeInteger_ datatype as defined by XML Schema Part 2 in version 1.0 footnote:[https://www.w3.org/TR/xmlschema-2/] a|
 0
 
 42
@@ -2993,7 +2993,7 @@ The following rules shall be adhered to when serializing a submodel with the Ser
 
 * Submodel elements defined in the submodel other than the ones mentioned above are not subject to serialization of that SerializationModifier.
 
-*Data type to value mapping*footnote:[cf. https://openmanufacturingplatform.github.io/sds-documentation/bamm-specification/2.0.0/datatypes.html]
+*Data type to value mapping* footnote:[cf. https://openmanufacturingplatform.github.io/sds-documentation/bamm-specification/2.0.0/datatypes.html]
 
 The serialization of submodel element values is described in the following table. The left column “Data Type” shows the data types which can be used for submodel element values. The data types are defined according to the W3C XML Schema (https://www.w3.org/TR/xmlschema-2/#built-in-datatypes and https://www.w3.org/TR/xmlschema-2/#built-in-derived). “Value Range” further explains the possible range of data values for this data type. The right column comprises related examples of the serialization of submodel element values.
 
@@ -3051,7 +3051,7 @@ xs:language, xs:normalizedString, xs:token, xs:NMTOKEN, xs:Name, xs:NCName, xs:Q
 
 
 ====
-Note 1: due to the limits in the representation of numbers in JSON, the maximum integer number that can be used without losing precision is 2⁵³-1 (defined as Number.MAX_SAFE_INTEGER). Even if the used data type would allow higher or lower values, they cannot be used if they cannot be represented in JSON. Affected data types are unbounded numeric types xs:decimal, xs:integer, xs:positiveInteger, xs:nonNegativeInteger, xs:negativeInteger, xs:nonPositiveInteger and the bounded type xs:unsignedLong. Other numeric types are not affected.footnote:[cf. https://openmanufacturingplatform.github.io/sds-documentation/bamm-specification/v1.0.0/datatypes.html (with adjustments for +/-INF, NaN, and language-typed literal support)]
+Note 1: due to the limits in the representation of numbers in JSON, the maximum integer number that can be used without losing precision is 2⁵³-1 (defined as Number.MAX_SAFE_INTEGER). Even if the used data type would allow higher or lower values, they cannot be used if they cannot be represented in JSON. Affected data types are unbounded numeric types xs:decimal, xs:integer, xs:positiveInteger, xs:nonNegativeInteger, xs:negativeInteger, xs:nonPositiveInteger and the bounded type xs:unsignedLong. Other numeric types are not affected. footnote:[cf. https://openmanufacturingplatform.github.io/sds-documentation/bamm-specification/v1.0.0/datatypes.html (with adjustments for +/-INF, NaN, and language-typed literal support)]
 ====
 
 
@@ -3811,7 +3811,7 @@ Note:* all URLs mentioned in this document regarding the REST mapping of the AAS
 ====
 
 
-The versioning scheme for AAS API related services follows semantic versioningfootnote:[http://semver.org]. Very briefly, this defines version numbers as a format following: <MAJOR>.<MINOR>.<PATCH>.
+The versioning scheme for AAS API related services follows semantic versioning footnote:[http://semver.org]. Very briefly, this defines version numbers as a format following: <MAJOR>.<MINOR>.<PATCH>.
 
 The major version changes in case of breaking or incompatible changes that need to be addressed by clients. Minor versions add (new) functionality in a backwards compatible way and allow clients with lower minor versions to keep their existing functionality. Patch versions only include backwards compatible bug fixes.
 
@@ -3944,7 +3944,7 @@ a|
 
 === Pagination
 
-Pagination is a commonly used pattern to break down potentially long result lists into smaller pieces for a better control of the network and computational load on both the server and the client side. For instance, the OData protocol link:#bib8[[8\]] provides guidelines for parameters and behavior on the client and server side. In addition, the proposals of the RFC 8977footnote:[see Chapter 2.4 of RFC 8977] present a best practice for web APIs. In the scope of the AAS HTTP/REST API, the query parameter “cursor” controls, which part of a longer result set is returned.
+Pagination is a commonly used pattern to break down potentially long result lists into smaller pieces for a better control of the network and computational load on both the server and the client side. For instance, the OData protocol link:#bib8[[8\]] provides guidelines for parameters and behavior on the client and server side. In addition, the proposals of the RFC 8977 footnote:[see Chapter 2.4 of RFC 8977] present a best practice for web APIs. In the scope of the AAS HTTP/REST API, the query parameter “cursor” controls, which part of a longer result set is returned.
 
 The AAS client may decide on the appropriate size of the result list through the limit parameter. If it is not specified, the server must comply to the default value or explicitly indicate it in the response object.
 
@@ -6104,7 +6104,7 @@ If applied to the Property, i.e. idShortPath “RotationSpeed.MaxRotationSpeed�
 [appendix]
 == Backus-Naur-Form
 
-The Backus-Naur form (BNF) – a meta-syntax notation for context-free grammars – is used to define grammars. For more information see Wikipediafootnote:[https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form].
+The Backus-Naur form (BNF) – a meta-syntax notation for context-free grammars – is used to define grammars. For more information see Wikipedia footnote:[https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form].
 
 A BNF specification is a set of derivation rules, written as
 
