@@ -50,9 +50,16 @@ like [AsciiDocLive](https://asciidoclive.com/edit/scratch/1) are also available.
 Ensure you have an AsciiDoc Viewer/Editor installed.
 See [Installing an AsciiDoc Viewer/Editor](#installing-an-asciidoc-viewereditor).
 
-### Step 1: Convert Word to AsciiDoc using Pandoc
+### Step 1: Convert Word-Specification to AsciiDoc using Pandoc
 
-#### Variant A: Local Conversion
+#### Variant A: Online Conversion
+
+- Go to https://github.com/zrgt/aas_word2asciidoc/issues/new/choose and create a new issue in the Template "Transform Word Document to AsciiDoc". 
+- Upload your Word file and wait for the conversion to be done.
+- You will be notified when the conversion is done.
+- Follow the link in the comment to download the converted AsciiDoc file.
+
+#### Variant B: Local Conversion
 
 ##### 1. Install Pandoc
 
