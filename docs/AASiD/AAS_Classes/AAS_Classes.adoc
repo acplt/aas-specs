@@ -2,8 +2,8 @@
 :toc-title: Asset Administration Shell: Classes
 :toclevels: 3
 :sectlinks:
-:stylesheet: ../style.css
-:favicon: ../favicon.png
+:stylesheet: ../../style.css
+:favicon: ../../favicon.png
 :imagesdir: media/
 :nofooter:
 

@@ -10,9 +10,9 @@ We have generated the HTML documentation for the following parts:
 
 == Specifications
 
-* link:AASiD_1_Metamodel/index.html[Specification of the Asset Administration Shell. Part 1: Metamodel]
-* link:AASiD_2_API/index.html[Specification of the Asset Administration Shell. Part 2: Application Programming Interfaces]
-* link:AASiD_5_AASXPackageFileFormat/index.html[Specification of the Asset Administration Shell. Part 5: Package File Format (AASX)]
+* link:AASiD/AASiD_1_Metamodel/index.html[Specification of the Asset Administration Shell. Part 1: Metamodel]
+* link:AASiD/AASiD_2_API/index.html[Specification of the Asset Administration Shell. Part 2: Application Programming Interfaces]
+* link:AASiD/AASiD_5_AASXPackageFileFormat/index.html[Specification of the Asset Administration Shell. Part 5: Package File Format (AASX)]
 
 == Submodel Template Specifications
 * link:AAS_Submodel_Templates/Digital_Nameplate/index.html[Digital Nameplate for Industrial Equipment]
@@ -20,4 +20,4 @@ We have generated the HTML documentation for the following parts:
 
 == Others
 * link:AAS_Submodel_Templates/Empty_Template/index.html[Empty AAS Submodel Template]
-* link:AAS_Classes/index.html[Classes/Types in AAS Metamodel]
+* link:AASiD/AAS_Classes/index.html[Classes/Types in AAS Metamodel]
