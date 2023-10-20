@@ -7,7 +7,7 @@
 :imagesdir: media/
 :nofooter:
 
-= Part 2: Application Programming Interfaces
+= image:../../../idta-logo.png[] Part 2: Application Programming Interfaces
 :author: IDTA
 :version-label: Number
 :revnumber: 01002-3-0

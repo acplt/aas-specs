@@ -7,12 +7,13 @@
 :imagesdir: media/
 :nofooter:
 
-= Part 5: Package File Format (AASX)
-:author: IDTA
-:version-label: Number
-:revnumber: 01005
-:revdate: April 2023
-:revremark: Specification of the Asset Administration Shell
+= image:image1.png[width=100%]
+//= Part 5: Package File Format (AASX)
+//:author: IDTA
+//:version-label: Number
+//:revnumber: 01005
+//:revdate: April 2023
+//:revremark: Specification of the Asset Administration Shell
 
 == Preamble
 
