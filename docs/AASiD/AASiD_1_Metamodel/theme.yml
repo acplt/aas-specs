@@ -33,3 +33,13 @@ example:
   font-color: #404040
   background_color: #e5f0f7
   padding: 12
+  
+
+title-page: false
+
+cover:
+  front:
+    image: image:media/image1.png[page=1]
+    
+
+
