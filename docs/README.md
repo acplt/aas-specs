@@ -90,7 +90,7 @@ Execute the following command to generate a PDF file from your AsciiDoc document
  asciidoctor-pdf -a pdf-theme=theme.yml --doctype=book [Your_Folder_Path]/[YOUR_AAS_SPECIFICATION].adoc
 ```
 
-This approach presumes you have your theme specification theme.yml defined in the same directory as the adoc file. For this very project, this is always the case. Should that not be the case, you have to specify the directory where this theme is defined with the option ```pdf-themesdir=[PATH_TO_YOUR_THEME]```. Name of the theme would have to be specified accordingly as well in case it is different.
+This approach presumes you have your theme specification theme.yml defined in the same directory as the adoc file. For this very project, the theme file located at a higher directory. You can either make a copy of it in the same directory as the asciidoc you want to convert for your convenience or you can specify the directory where this theme is defined with the option ```pdf-themesdir=[PATH_TO_YOUR_THEME]```. Name of the theme would have to be specified accordingly as well in case it is different.
 
 ## Final Folder Structure
 
