@@ -17,7 +17,10 @@
 4. [Generating HTML from AsciiDoc](#generating-html-from-asciidoc)
     1. [Install Asciidoctor](#install-asciidoctor)
     2. [Generate HTML Output](#generate-html-output)
-5. [Final Folder Structure](#final-folder-structure)
+5. [Generating PDF from AsciiDoc](#generating-pdf-from-asciidoc)
+    1. [Install Asciidoctor-PDF](#install-asciidoctor-pdf)
+    2. [Generate HTML Output](#generate-pdf-output)
+6. [Final Folder Structure](#final-folder-structure)
 
 ## Introduction
 
@@ -61,7 +64,7 @@ For detailed instructions on converting Word documents to AsciiDoc format, pleas
 
 ### Install Asciidoctor
 
-To generate an HTML file from your AsciiDoc document, install [Asciidoctor](https://docs.asciidoctor.org/asciidoctor/latest/install/windows/).
+To generate an HTML file from your AsciiDoc document, install Asciidoctor for [Windows](https://docs.asciidoctor.org/asciidoctor/latest/install/windows/), [Linux](https://docs.asciidoctor.org/asciidoctor/latest/install/linux-packaging/) or [macOS](https://docs.asciidoctor.org/asciidoctor/latest/install/macos/)
 
 ### Generate HTML Output
 
@@ -72,6 +75,22 @@ asciidoctor -a [Your_Folder_Path]/[YOUR_AAS_SPECIFICATION].adoc
 ```
 
 Optionally, link your document in the 'docs/[YOUR_AAS_SPECIFICATION].adoc' file and generate an HTML file accordingly.
+
+## Generating PDF from AsciiDoc
+
+### Install Asciidoctor-PDF
+
+To generate a PDF file from your AsciiDoc document, install [Asciidoctor-PDF](https://docs.asciidoctor.org/pdf-converter/latest/install/)
+
+### Generate PDF Output
+
+Execute the following command to generate a PDF file from your AsciiDoc document:
+
+```shell
+ asciidoctor-pdf -a pdf-theme=theme.yml --doctype=book [Your_Folder_Path]/[YOUR_AAS_SPECIFICATION].adoc
+```
+
+This approach presumes you have your theme specification theme.yml defined in the same directory as the adoc file. For this very project, the theme file located at a higher directory. You can either make a copy of it in the same directory as the asciidoc you want to convert for your convenience or you can specify the directory where this theme is defined with the option ```pdf-themesdir=[PATH_TO_YOUR_THEME]```. Name of the theme would have to be specified accordingly as well in case it is different.
 
 ## Final Folder Structure
 
