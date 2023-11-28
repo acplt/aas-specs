@@ -1,3 +1,19 @@
+:toc: left
+:toc-title: Specification of the Asset Administration Shell. Part 3a: Data Specification
+:sectlinks:
+:sectnums:
+:stylesheet: ../../style.css
+:favicon: ../../favicon.png
+:imagesdir: media/
+:nofooter:
+
+= image:../../../idta-logo.png[] Part 3a: Data Specification
+:author: IDTA
+:version-label: Number
+:revnumber: 01003-a
+//:revdate: Match 2023
+:revremark: Specification of the Asset Administration Shell
+
 image:./media/image1.png[image,width=802,height=1145]
 
 Imprint
@@ -326,11 +342,7 @@ Clause 8 introduces categories for concept descriptions and how they are used in
 
 
 ====
-
-====
 Note: since categories are deprecated since V3.0, Clause 8 can also be skipped.
-====
-
 ====
 
 
@@ -372,11 +384,7 @@ software functional element specific to the solution of a problem in industrial-
 
 
 ====
-
-====
 Note 1 to entry: an application can be distributed among resources and may communicate with other applications.
-====
-
 ====
 
 
@@ -394,11 +402,7 @@ standardized digital representation of an asset
 
 
 ====
-
-====
 Note 1 to entry: Asset Administration Shell and Administration Shell are used synonymously.
-====
-
 ====
 
 
@@ -428,11 +432,7 @@ identity information that unambiguously distinguishes one entity from another on
 
 
 ====
-
-====
 Note 1 to entry: there are specific identifiers, e.g. UUID Universal unique identifier, IEC 15418 (GS1).
-====
-
 ====
 
 
@@ -444,11 +444,7 @@ lower bound of a range of values in which the said value is meaningful
 
 
 ====
-
-====
 EXAMPLE 1: lowest value specified of a quantity, established for a specified set of operating conditions at which a
-====
-
 ====
 
 
@@ -456,11 +452,7 @@ component, device, equipment, or system can operate and perform according to spe
 
 
 ====
-
-====
 Note 1 to entry: additional information about the nature of the value can be obtained from the definition of the
-====
-
 ====
 
 
@@ -474,21 +466,13 @@ upper bound of a range of values in which the said value is meaningful
 
 
 ====
-
-====
 EXAMPLE 1: highest value specified of a quantity, established for a specified set of operating conditions at which a component, device, equipment, or system can operate and perform according to specified requirements.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 1 to entry: additional information about the nature of the value can be obtained from the definition of the
-====
-
 ====
 
 
@@ -502,11 +486,7 @@ value of a quantity used to designate or identify an item with its value, and no
 
 
 ====
-
-====
 Note 1 to entry: additional information about the nature of the value can be obtained from the definition of the
-====
-
 ====
 
 
@@ -520,11 +500,7 @@ property that identifies or describes an object by means of codes, abbreviations
 
 
 ====
-
-====
 EXAMPLE 1: typical information content of non-quantitative properties is items such as codes, abbreviations,
-====
-
 ====
 
 
@@ -538,81 +514,49 @@ defined characteristic suitable for the description and differentiation of produ
 
 
 ====
-
-====
 Note 1 to entry: the concept of type and instance applies to properties.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2 to entry: this definition applies to properties as described in IEC 61360/ ISO 13584-42.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 3 to entry: the property types are defined in dictionaries (like IEC component data dictionary or ECLASS), they do not have a value. The property type is also called data element type in some standards.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 4 to entry: the property instances have a value and are provided by the manufacturers. A property instance is also called property-value pair in certain standards.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 5 to entry: properties include nominal value, actual value, runtime variables, measurement values, etc.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 6 to entry: a property describes one characteristic of a given object.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 7 to entry: a property can have attributes such as code, version, and revision.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 8 to entry: the specification of a property can include predefined choices of values.
-====
-
 ====
 
 
@@ -624,11 +568,7 @@ well-defined element associated with a _property_ instance or _submodel element_
 
 
 ====
-
-====
 Note 1 to entry: qualifier can have associated values.
-====
-
 ====
 
 
@@ -730,11 +670,7 @@ IEC 61360-1:2017 is largely compliant to IEC 61360-2:2012 and ISO 3584-42:2010.
 
 
 ====
-
-====
 Note: for details on how to use the data specifications and for further explanations, please refer directly to IEC 61360.
-====
-
 ====
 
 
@@ -791,11 +727,7 @@ The legend for understanding the UML diagrams and the table specification of the
 
 
 ====
-
-====
 Note: an xmi representation of the UML model can be found in the repository "aas-specs" in the github project admin-shell-io: https://github.com/admin-shell-io/aas-specs/.
-====
-
 ====
 
 
@@ -825,17 +757,13 @@ image::./media/image9.emf[image,width=473,height=440]
 
 [width="100%",cols="19%,47%,27%,7%",options="header",]
 |===
-|*Class:* |DataSpecificationIec61360 \\<<Template>> | |
+|*Class:* |DataSpecificationIec61360 \<<Template>> | |
 |*Explanation:* a|
 Content of data specification template for concept descriptions for properties, values, and value lists conformant to IEC 61360.
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], property, value_list and term
-====
-
 ====
 
 
@@ -843,21 +771,13 @@ Note: for details, please refer to [IEC61360-1], property, value_list and term
 
 
 ====
-
-====
 Note 1: it is also possible that both _DataSpecificationIec61360/value_ and _SpecificationIec61360/valueList_ are empty. This is the case for concept descriptions that define the semantics of a property but do not have an enumeration (_valueList)_ as data type.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: although it is possible to define a concept description for a value list, it is not possible to reuse this value list. It is only possible to directly add a value list as data type to a specific semantic definition of a property.
-====
-
 ====
 
 
@@ -871,11 +791,7 @@ Preferred name in different languages
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], preferred_name
-====
-
 ====
 
 
@@ -887,11 +803,7 @@ Short name
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], short_name
-====
-
 ====
 
 
@@ -901,21 +813,13 @@ Unit in case of a quantitative property
 
 
 ====
-
-====
 Note 1: for details, please refer to [IEC61360-1], unit_in_text
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: only the primary unit is supported.
-====
-
 ====
 
 
@@ -927,21 +831,13 @@ Unit and unitId need to be consistent if both attributes are set
 
 
 ====
-
-====
 Note 1: for details, please refer to [IEC61360-1], unit_of_measure
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: it is recommended to use an external reference ID.
-====
-
 ====
 
 
@@ -951,11 +847,7 @@ Source of definition
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], source_document_of_definition
-====
-
 ====
 
 
@@ -965,11 +857,7 @@ Symbol
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], preferred_letter_symbol
-====
-
 ====
 
 
@@ -979,11 +867,7 @@ Data Type
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], data_type
-====
-
 ====
 
 
@@ -993,11 +877,7 @@ Definition in different languages
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], definition
-====
-
 ====
 
 
@@ -1007,11 +887,7 @@ Value Format
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], value_format
-====
-
 ====
 
 
@@ -1021,21 +897,13 @@ Enumerated list of allowed values
 
 
 ====
-
-====
 Note 1: for details, please refer to [IEC61360-1], enumerated_list_of_terms.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: for ease of usage, the value list is modelled as value/valueId list in this data specification template.
-====
-
 ====
 
 
@@ -1045,11 +913,7 @@ Value (typically within a value list)
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], term/preferred_letter_symbol_in_text
-====
-
 ====
 
 
@@ -1059,58 +923,34 @@ Value represented by up to four variants of a numeric value in a specific role: 
 
 
 ====
-
-====
-
-====
 Note: for details, please refer to [IEC61360-1], LEVEL_TYPE
 ====
-
-====
 (MIN,NOM,TYP,MAX)
-====
-
 
 |LevelType |0..1
 |===
 
 
 ====
-
-====
 Note 1: IEC 61360 also requires a globally unique identifier for a concept description. This ID is not part of the data specification template. Instead, the _ConceptDescription/id_ as inherited via _Identifiable_ is used. The same applies to administrative information like the version and revision.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: _ConceptDescription/idShort_ and _DataSpecificationIec61360/shortName_ are very similar. However, in this case, _shortName_ is explicitly added to the data specification.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 3: the same applies to _ConceptDescription/displayName_ and _DataSpecificationIec61360/preferredName_.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 4: the same applies to _ConceptDescription/description_ and _DataSpecificationIec61360/definition_.
-====
-
 ====
 
 
@@ -1131,11 +971,7 @@ Format yyyy-mm-dd
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the DATE_TYPE.
-====
-
 ====
 
 
@@ -1146,21 +982,13 @@ values consisting of a sequence of characters, which cannot be translated into o
 
 
 ====
-
-====
 Note 1: for details, please refer to [IEC61360-1], specific STRING_TYPE, the NON_TRANSLATABLE_STRING_TYPE.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: IEC61360 does not request to use more specific string types like TRANSLATBLE_STRING_TYPE, NON_TRANSLATABLE_STRING_TYPE, DATE_TIME_TYPE, DATE_TYPE, TIME_TYPE, IRDI_STRING, URI_TYPE, and HTML5_TYPE. It is requested to use the more specific data types in the ASS, if applicablefootnote:[This is also requested in ECLASS, see https://eclass.eu/support/technical-specification/structure-and-elements/value].
-====
-
 ====
 
 
@@ -1169,11 +997,7 @@ values containing string, but which shall be represented as different strings in
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the TRANSLATABLE_STRING_TYPE
-====
-
 ====
 
 
@@ -1182,11 +1006,7 @@ values containing values that are a measure of the type INTEGER. In addition, su
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], specific INTEGER (or INT_TYPE) NUMBER_TYPE, the INT_MEASURE_TYPE
-====
-
 ====
 
 
@@ -1195,21 +1015,13 @@ values containing values of the type INTEGER, but which are no currencies or mea
 
 
 ====
-
-====
 Note 1: for details, please refer to [IEC61360-1], specific NUMBER_TYPE, the INT_TYPE (or just INTEGER). For more specific data types, INTEGER_MEASURE_TYPE or INTEGER_CURRENCY_TYPE may be used.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: it is requested to use the more specific data types in the ASS, if applicable.
-====
-
 ====
 
 
@@ -1218,11 +1030,7 @@ values containing values of the type INTEGER, which are currencies
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], specific INTEGER NUMBER_TYPE, the INT_CURRENCY_TYPE
-====
-
 ====
 
 
@@ -1231,11 +1039,7 @@ values containing values that are measures of the type REAL. In addition, such a
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], specific REAL NUMBER_TYPE, the REAL_MEASURE_TYPE
-====
-
 ====
 
 
@@ -1244,21 +1048,13 @@ values containing numbers that can be written as a terminating or non-terminatin
 
 
 ====
-
-====
 Note 1: for details, please refer to [IEC61360-1], specific NUMBER_TYPE, the REAL_TYPE. For more specific data types REAL_MEASURE_TYPE or REAL_CURRENCY_TYPE may be used.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: it is requested to use the more specific data types in the AAS, if applicable.
-====
-
 ====
 
 
@@ -1267,11 +1063,7 @@ values containing values of the type REAL, which are currencies
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], specific REAL NUMBER_TYPE, the REAL_CURRENCY_TYPE
-====
-
 ====
 
 
@@ -1280,21 +1072,13 @@ values representing truth of logic or Boolean algebra (TRUE, FALSE)
 
 
 ====
-
-====
 Note 1: for details, please refer to [IEC61360-1], BOOLEAN_TYPE.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: in IEC 61360, the values are Yes and No. In the AAS, the values are TRUE (for "Yes") and FALSE (for "No").
-====
-
 ====
 
 
@@ -1303,21 +1087,13 @@ values containing values of the type STRING conformant to Rfc 3987
 
 
 ====
-
-====
 Note 1: for details, please refer to [IEC61360-1], specific STRING_TYPE, the URI_TYPE.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: However, the AAS supports the more generic IRI. An IRI type particularly allows to express a URL or a URI. If the IRI represents an address to a file, FILE shall be used.
-====
-
 ====
 
 
@@ -1326,41 +1102,25 @@ values conforming to ISO/IEC 11179 series global identifier sequences
 
 
 ====
-
-====
 Note 1: for details, please refer to [IEC61360-1], specific STRING_TYPE, the IRDI_STRING.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: IRDI can be used instead of the more specific data types ICID or ISO29002_IRDI.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 3: ICID values are values conformant to an IRDI, where the delimiter between RAI and ID is "#", while the delimiter between DI and VI is confined to "##".
 ====
 
-====
 
-
-
-====
 
 ====
 Note 4: ISO29002_IRDI values are values containing a global identifier that identifies an administrated item in a registry. The structure of this identifier complies with the identifier syntax defined in ISO/TS 29002-5. The identifier shall fulfil the requirements specified in ISO/TS 29002-5 for an “international registration data identifier” (IRDI).
-====
-
 ====
 
 
@@ -1371,21 +1131,13 @@ Examples: ½, ¾ or 7/2
 
 
 ====
-
-====
 Note 1: for details, please refer to [IEC61360-1], specific NUMBER_TYPE, the RATIONAL_TYPE.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: it is requested to use the more specific data types in the AAS, if applicable.
-====
-
 ====
 
 
@@ -1394,11 +1146,7 @@ values containing values of the type RATIONAL. In addition, such a value comes w
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], specific RATIONAL NUMBER_TYPE, the RATIONAL_MEASURE_TYPE
-====
-
 ====
 
 
@@ -1411,11 +1159,7 @@ Example from IEC 61360-1:2017: "13:20:00-05:00" is the [TIME] representation of:
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the TIME_TYPE
-====
-
 ====
 
 
@@ -1426,11 +1170,7 @@ Format yyyy-mm-dd hh:mm (ECLASS)
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the DATE_TIME_TYPE.
-====
-
 ====
 
 
@@ -1439,11 +1179,7 @@ values containing an address to a file. The values are of the type URI and can r
 
 
 ====
-
-====
 Note: [IEC61360-1] does not explicitly support the file type. It would map to the URI_TYPE.
-====
-
 ====
 
 
@@ -1452,11 +1188,7 @@ Values containing string with any sequence of characters, using the syntax of HT
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the HTML5_TYPE.
-====
-
 ====
 
 
@@ -1469,11 +1201,7 @@ In IEC61360, _binary_ is a sequence of bits, each bit being represented by "0" a
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], BINARY_TYPE
-====
-
 ====
 
 
@@ -1491,21 +1219,13 @@ Value represented by up to four variants of a numeric value in a specific role: 
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], LEVEL_TYPE
-====
-
 ====
 
 
 EXAMPLE from [IEC61360-1]: in case of a property which is of the LEVEL_TYPE min/max − 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], LEVEL_TYPE
-====
-
 ====
 
 
@@ -1520,11 +1240,7 @@ Note: for details, please refer to [IEC61360-1], LEVEL_TYPE
 
 
 ====
-
-====
 Note: This is how the AAS deals with the following combinations of level types:
-====
-
 ====
 
 
@@ -1552,11 +1268,7 @@ A set of value reference pairs
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], value_list/enumerated_list_of_terms.
-====
-
 ====
 
 
@@ -1578,11 +1290,7 @@ Global unique ID of the value
 
 
 ====
-
-====
 Note: it is recommended to use a global reference.
-====
-
 ====
 
 
@@ -1599,11 +1307,7 @@ Examples for the different IEC 61360 data types can be found here: https://eclas
 |===
 |*Data Type IEC 61360* |*xsd Value Type*footnote:[_Property/valueType_, _Range/valueType,_ etc. are each of type _DataTypeDefXsd._ 
 ====
-
-====
 Note: for submodel elements like _Blob_ and _File_ or _MultiLanguageProperty and ReferenceElement,_ there is no explicitly defined _valueType_ attribute because the data type is implicitly defined and fix (_BlobType_, _PathType_ or _MultiLanguageTextType, Reference_).] |*Example Values IEC 61360*footnote:[Source for most examples for the different IEC 61360 data types: https://eclass.eu/support/technical-specification/structure-and-elements/value. The IRDI example for STRING was moved to IRDI.]
-====
-
 ====
 
 |DATE |xs:date |1979-01-15
@@ -1617,11 +1321,7 @@ _Mapped to MultiLanguageProperty, i.e. type MultiLanguageText_
 
 
 ====
-
-====
 Note: for details, please see Part 1 of the document series "Details of the Asset Administration Shell".
-====
-
 ====
 
 
@@ -1678,11 +1378,7 @@ xs:string _or mapped to ReferenceElement_
 
 
 ====
-
-====
 Note: for details, please see Part 1 of the document series "Details of the Asset Administration Shell".
-====
-
 ====
 
 
@@ -1704,11 +1400,7 @@ _Mapped to submodel element File, i.e. type PathType_
 
 
 ====
-
-====
 Note: for details, please see Part 1 of the document series "Details of the Asset Administration Shell".
-====
-
 ====
 
 
@@ -1718,11 +1410,7 @@ _Mapped to submodel element Blob, i.e. type BlobType_
 
 
 ====
-
-====
 Note: for details, please see Part 1 of the document series "Details of the Asset Administration Shell".
-====
-
 ====
 
 
@@ -1732,11 +1420,7 @@ _Mapped to submodel element Blob, i.e. type BlobType_
 
 
 ====
-
-====
 Note: for details, please see Part 1 of the document series "Details of the Asset Administration Shell".
-====
-
 ====
 
 
@@ -1749,11 +1433,7 @@ Figure 12 Mapping IEC 61360 Data Types to xsd Data Types
 
 
 ====
-
-====
 Note: the attribute category of referables was set to deprecated in V3.0 of Part 1. Hence this clause informs about the meaning, in case applications are still using the attribute category.
-====
-
 ====
 
 
@@ -1872,11 +1552,7 @@ https://sunye.github.io/ocl/[A class invariant is a constraint that must be true
 
 
 ====
-
-====
 Note: these constraints include elements of Part 1, V3.0 of the document series "Details of the Asset Administration Shell" [AAS-Part1].
-====
-
 ====
 
 
@@ -1886,11 +1562,7 @@ Note: these constraints include elements of Part 1, V3.0 of the document series 
 
 
 ====
-
-====
 Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
-====
-
 ====
 
 
@@ -1898,11 +1570,7 @@ Note: categories are deprecated since V3.0 of Part 1 of the document series "Det
 
 
 ====
-
-====
 Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
-====
-
 ====
 
 
@@ -1910,11 +1578,7 @@ Note: categories are deprecated since V3.0 of Part 1 of the document series "Det
 
 
 ====
-
-====
 Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
-====
-
 ====
 
 
@@ -1922,11 +1586,7 @@ Note: categories are deprecated since V3.0 of Part 1 of the document series "Det
 
 
 ====
-
-====
 Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
-====
-
 ====
 
 
@@ -1973,11 +1633,7 @@ a|
 
 
 ====
-
-====
 Note: see +
-====
-
 ====
 
 Figure 2
@@ -1987,21 +1643,13 @@ _Array of elements of type langString_
 
 
 ====
-
-====
 Note 1: langString is a RDF data type.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: a langString is a string value tagged with a language code.
-====
-
 ====
 
 
@@ -2009,11 +1657,7 @@ The realization of a technology depend on the serialization rules.
 
 
 ====
-
-====
 Note: as defined in Part 1, [AAS-Part1].
-====
-
 ====
 
 
@@ -2059,21 +1703,13 @@ Each _string_ with a length of maximum 255 and minimum of 1 characters.
 
 
 ====
-
-====
 Note 1: it is advised to keep the length of the name limited to 35 characters.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: for details, please refer to [IEC61360-1], preferred_name
-====
-
 ====
 
 
@@ -2082,11 +1718,7 @@ mailto:%22max.%20rotation%20speed%22@EN["max. rotation speed"@EN]
 
 
 ====
-
-====
 Note: see +
-====
-
 ====
 
 Figure 2.
@@ -2098,11 +1730,7 @@ Each _string_ with a length of maximum 18 and a minimum of 1 characters.
 
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], short_name
-====
-
 ====
 
 
@@ -2111,11 +1739,7 @@ a|
 
 
 ====
-
-====
 Note: See Figure 6
-====
-
 ====
 
 
@@ -2126,11 +1750,7 @@ _string_
 ====
 
 ====
-
-====
 Note: for details, please refer to [IEC61360-1], value_format
-====
-
 ====
 . The value format is based on ISO 13584-42 and IEC 61360-2.
 ====
@@ -2141,11 +1761,7 @@ a|
 
 
 ====
-
-====
 Note: see Figure 6
-====
-
 ====
 
 
@@ -2170,31 +1786,19 @@ The metamodel of an Asset Administration Shell needs to be serialized for import
 
 
 ====
-
-====
 Note 1: the xml schema (.xsd files) is maintained in the repository "aas-spec" of the github project admin-shell-io link:#bib25[[25\]]: aas-specs-3.0\schemas\xml.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: the mapping rules of how to derive the xml schema from the technology-neutral metamodel as defined in this specification can be found here: aas-specs-3.0\schemas\xml\Readme.md#xml-mappingrules.
 ====
 
-====
 
-
-
-====
 
 ====
 Note 3: example files can be found here: aas-specs-3.0\schemas\xml\examples.
-====
-
 ====
 
 
@@ -2206,31 +1810,19 @@ Additionally, JSON format is used to describe the payload in the http/REST API f
 
 
 ====
-
-====
 Note 1: the JSON schema (.json files) is maintained in the repository "aas-spec" of the github project admin-shell-io link:#bib25[[25\]]: h aas-specs-3.0\schemas\json
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: the mapping rules of how to derive the JSON schema from the technology-neutral metamodel as defined in this specification can be found here: aas-specs-3.0\schemas\json\Readme.md#json-mappingrules
 ====
 
-====
 
-
-
-====
 
 ====
 Note 3: example files can be found here: aas-specs-3.0\schemas\json\examples.
-====
-
 ====
 
 
@@ -2240,31 +1832,19 @@ The Resource Description Framework (RDF) link:#bib26[[26\]] is the recommended s
 
 
 ====
-
-====
 Note 1: the RDF scheme/OWL files (.ttl files) are maintained in the repository "aas-spec" of the github project admin-shell-io link:#bib25[[25\]]: aas-specs-3.0\schemas\rdf
 ====
 
-====
 
-
-
-====
 
 ====
 Note 2: the mapping rules of how to derive the RDF schema from the technology-neutral metamodel as defined in this specification can be found here: aas-specs-3.0\schemas\rdf\Readme.md#rdf-mappingrules
 ====
 
-====
 
-
-
-====
 
 ====
 Note 3: example files can be found here: aas-specs-3.0\schemas\rdf\examples
-====
-
 ====
 
 
@@ -2311,8 +1891,9 @@ image:./media/image16.png[image,width=565,height=730]Figure 16 Example Quantitat
 Figure 7 shows a property "CoolingType". Its semanticId references a concept description that defines a value list (_DataSpecificationIec612360/valueList_) with two values BAB657 and BAB611.
 
 .Example Property with Enumeration in AASX Package Explorer
-.shows the concept description for the value BAB657 that was used in the enumeration in Figure 17. Most attributes are not relevant (see Clause 8). However, it is mandatory to set the attribute _DataSpecificationIec61360/value_, the _preferredName_ (open circuit, external cooling), and the data type (for enumeration, the data type is typically just STRING).
-image:::./media/image17.png[image,width=545,height=770]
+image::./media/image17.png[image,width=545,height=770]
+
+Figure 18 shows the concept description for the value BAB657 that was used in the enumeration in Figure 17. Most attributes are not relevant (see Clause 8). However, it is mandatory to set the attribute _DataSpecificationIec61360/value_, the _preferredName_ (open circuit, external cooling), and the data type (for enumeration, the data type is typically just STRING).
 
 .Example Value Concept Description in AASX Package Explorer
 image::./media/image18.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=639,height=368]
@@ -2390,19 +1971,19 @@ Template for Classes:
 
 [width="100%",cols="36%,29%,23%,12%",options="header",]
 |===
-|*Class:* |<Class Name> [\\<<abstract>>] ["\\<<Experimental>>"] ["\\<<Deprecated>>"] ["\\<<Template>>"] | |
+|*Class:* |<Class Name> [\<<abstract>>] ["\<<Experimental>>"] ["\<<Deprecated>>"] ["\<<Template>>"] | |
 |*Explanation:* |<Explanatory text> | |
 |*Inherits from:* |\{<Class Name> ";" }+ | "-" | |
 |*Attribute* |*Explanation* |*Type* |*Card.*
-|<attribute or association name> ["\\<<ordered>>"] ["\\<<Experimental>>"] ["\\<<Deprecated>>"] |<Explanatory text> |<Type> |<Card>
+|<attribute or association name> ["\<<ordered>>"] ["\<<Experimental>>"] ["\<<Deprecated>>"] |<Explanatory text> |<Type> |<Card>
 |===
 
 The following stereotypes can be used:
 
-* \\<<abstract>>: Class cannot be instantiated but serves as superclass for inheriting classes
-* \\<<Experimental>>: Class is experimental, i.e. usage is only recommended for experimental purposes because non backward compatible changes may occur in future versions
-* \\<<Deprecated>>: Class is deprecated, i.e. it is recommended to not use the element any longer; it will be removed in a next major version of the model
-* \\<<Template>>: Class is a template only, i.e. class is not instantiated but used for additional specification purposes (for details see parts 3 of document series)
+* \<<abstract>>: Class cannot be instantiated but serves as superclass for inheriting classes
+* \<<Experimental>>: Class is experimental, i.e. usage is only recommended for experimental purposes because non backward compatible changes may occur in future versions
+* \<<Deprecated>>: Class is deprecated, i.e. it is recommended to not use the element any longer; it will be removed in a next major version of the model
+* \<<Template>>: Class is a template only, i.e. class is not instantiated but used for additional specification purposes (for details see parts 3 of document series)
 * The following kinds of _Types_ are distinguished:
 * _Primitive:_ Type is no object type (class) but a data type; it is just a value
 * _Class:_ Type is an object type (class); it is realized as composite aggregation (composition), and does not exist independent of its parent
@@ -2415,11 +1996,7 @@ The following stereotypes can be used:
 
 
 ====
-
-====
 Note: attributes having a default value are always considered to be optional; there is always a value for the attribute because the default value is used for initialization in this case.
-====
-
 ====
 
 
@@ -2451,16 +2028,16 @@ Template for Enumerations:
 
 [width="100%",cols="30%,70%",options="header",]
 |===
-|*Enumeration:* |<Enumeration Name> ["\\<<Experimental>>"] ["\\<<Deprecated>>"]
+|*Enumeration:* |<Enumeration Name> ["\<<Experimental>>"] ["\<<Deprecated>>"]
 |*Explanation:* |
 |*Set of:* |\{<Enumeration> ";" }+ | "-"
 |*Literal* |*Explanation*
-|<enumValue1>["\\<<Experimental>>"] ["\\<<Deprecated>>"] a|
+|<enumValue1>["\<<Experimental>>"] ["\<<Deprecated>>"] a|
 <Explanatory text>
 
 Value of enumeration
 
-|<enumValue2> ["\\<<Experimental>>"] ["\\<<Deprecated>>"] a|
+|<enumValue2> ["\<<Experimental>>"] ["\<<Deprecated>>"] a|
 <Explanatory text>
 
 Value of enumeration, also included in one of the enumerations listed in "Set of:"
@@ -2487,11 +2064,7 @@ Constraints are prefixed with *AASc-* followed by the number of the document in 
 
 
 ====
-
-====
 Note: in the Annex listing the metamodel changes, constraints with prefix AASs- or AASc- are also listed. These are security or data specification constraints and are now part of the split document Legend for UML Modelling.
-====
-
 ====
 
 
@@ -2502,8 +2075,9 @@ Note: in the Annex listing the metamodel changes, constraints with prefix AASs- 
 This annex explains the UML elements used in this specification. For more information, please refer to the comprehensive literature available for UML. The formal specification can be found in link:#bib12[[12\]].
 
 .Class
-.shows that _Class4_ inherits all member elements from _Class3_. Or in other word, _Class3_ is a generalization of _Class4, Class4_ is a specialization of _Class3_. This means that each instance of _Class4_ is also an instance of _Class3_. An instance of _Class4_ has the attributes _attr1_ and _attr2,_ whereas instances of _Class3_ only have the attribute _attr1_.
-image:::./media/image20.emf[image,width=86,height=80]Figure 20 shows a class with name "Class1" and an attribute with name "attr" of type _Class2_. Attributes are owned by the class. Some of these attributes may represents the end of binary associations, see also Figure 21. In this case, the instance of _Class2_ is navigable via the instance of the owning class _Class1_.footnote:[„Navigability notation was often used in the past according to an informal convention, whereby non-navigable ends were assumed to be owned by the Association whereas navigable ends were assumed to be owned by the Classifier at the opposite end. This convention is now deprecated. Aggregation type, navigability, and end ownership are separate concepts, each with their own explicit notation. Association ends owned by classes are always navigable, while those owned by associations may be navigable or not. link:#bib12[[12\]]”]
+image::./media/image20.emf[image,width=86,height=80]Figure 20 shows a class with name "Class1" and an attribute with name "attr" of type _Class2_. Attributes are owned by the class. Some of these attributes may represents the end of binary associations, see also Figure 21. In this case, the instance of _Class2_ is navigable via the instance of the owning class _Class1_.footnote:[„Navigability notation was often used in the past according to an informal convention, whereby non-navigable ends were assumed to be owned by the Association whereas navigable ends were assumed to be owned by the Classifier at the opposite end. This convention is now deprecated. Aggregation type, navigability, and end ownership are separate concepts, each with their own explicit notation. Association ends owned by classes are always navigable, while those owned by associations may be navigable or not. link:#bib12[[12\]]”]
+
+Figure 21 shows that _Class4_ inherits all member elements from _Class3_. Or in other word, _Class3_ is a generalization of _Class4, Class4_ is a specialization of _Class3_. This means that each instance of _Class4_ is also an instance of _Class3_. An instance of _Class4_ has the attributes _attr1_ and _attr2,_ whereas instances of _Class3_ only have the attribute _attr1_.
 
 image:./media/image21.emf[image,width=100,height=193]Figure 21 Inheritance/Generalization
 
@@ -2521,7 +2095,7 @@ The default is 1 for lower-bound and upper-bound.
 
 image:./media/image22.emf[image,width=200,height=80]Figure 22 Multiplicity
 
-image:./media/image23.emf[image,width=233,height=80]A multiplicity element represents a collection of values. The default is a set, i.e. it is not ordered and the elements within the collection are unique and contain no duplicates. Figure 23 shows an ordered collection: the instances of _Class2_ related to an instance of _Class1_. The stereotype \\<<ordered>> is used to denote that the relationship is ordered.
+image:./media/image23.emf[image,width=233,height=80]A multiplicity element represents a collection of values. The default is a set, i.e. it is not ordered and the elements within the collection are unique and contain no duplicates. Figure 23 shows an ordered collection: the instances of _Class2_ related to an instance of _Class1_. The stereotype \<<ordered>> is used to denote that the relationship is ordered.
 
 Figure 23 Ordered Multiplicity
 
@@ -2549,7 +2123,7 @@ image:./media/image28.emf[image,width=206,height=80]Figure 29 shows that there i
 
 Figure 29 Dependency
 
-image:./media/image29.emf[image,width=86,height=80]Figure 30 shows an abstract class. It uses the stereotype \\<<abstract>>. There are no instances of abstract classes. They are typically used for specific member elements that are inherited by non-abstract classes.
+image:./media/image29.emf[image,width=86,height=80]Figure 30 shows an abstract class. It uses the stereotype \<<abstract>>. There are no instances of abstract classes. They are typically used for specific member elements that are inherited by non-abstract classes.
 
 Figure 30 Abstract Class
 
@@ -2557,15 +2131,15 @@ image:./media/image30.emf[image,width=106,height=80]Figure 31 shows a package na
 
 Figure 31 Package
 
-image:./media/image31.emf[image,width=256,height=86]Figure 32 shows that all elements in _Package2_ are imported into the namespace defined by _Package1_. This is a special dependency relationship between the two packages with stereotype \\<<import>>.
+image:./media/image31.emf[image,width=256,height=86]Figure 32 shows that all elements in _Package2_ are imported into the namespace defined by _Package1_. This is a special dependency relationship between the two packages with stereotype \<<import>>.
 
 Figure 32 Imported Package
 
-image:./media/image32.emf[image,width=119,height=93]Figure _33_ shows an enumeration with the name "Enumeration1". An enumeration is a data type with its values enumerated as literals. It contains two literal values, "a" and "b". It is a class with stereotype \\<<enumeration>>. The literals owned by the enumeration are ordered.
+image:./media/image32.emf[image,width=119,height=93]Figure _33_ shows an enumeration with the name "Enumeration1". An enumeration is a data type with its values enumerated as literals. It contains two literal values, "a" and "b". It is a class with stereotype \<<enumeration>>. The literals owned by the enumeration are ordered.
 
-Figure _33_ Enumerationfootnote:[In Enterprise Architect, the single enumeration values also have a stereotype \\<<enum>> each.]
+Figure _33_ Enumerationfootnote:[In Enterprise Architect, the single enumeration values also have a stereotype \<<enum>> each.]
 
-image:./media/image33.emf[image,width=86,height=73]Figure 34 shows the definition of the data type with the name "DataType1". A data type has instances that are identified only by their value. It is a class with stereotype \\<<dataType>>.
+image:./media/image33.emf[image,width=86,height=73]Figure 34 shows the definition of the data type with the name "DataType1". A data type has instances that are identified only by their value. It is a class with stereotype \<<dataType>>.
 
 Figure 34 Data Type
 
@@ -2591,17 +2165,13 @@ The following rules are used for naming of classes, attributes etc.:
 * primitive types start with a capital letter; exception: predefined types of XSD like string,
 * enumerations start with a capital letter,
 * names of member ends of an association start with a capital letter,
-* all stereotypes specific to the Asset Administration Shell specification start with a capital letter, e.g. "\\<<Deprecated>>"; predefined stereotypes in UML start with a small letter, e.g. "\\<<abstract>>" or "\\<<enumeration>>".
+* all stereotypes specific to the Asset Administration Shell specification start with a capital letter, e.g. "\<<Deprecated>>"; predefined stereotypes in UML start with a small letter, e.g. "\<<abstract>>" or "\<<enumeration>>".
 
 In UML, the convention is to name associations and aggregations in singular form. The multiplicity is to be taken into account to decide on whether there are none, a single, or several elements in the corresponding association or aggregation.
 
 
 ====
-
-====
 Note: a plural form of the name of attributes with cardinality >=1 may be needed in some serializations (e.g. in JSON). In this case, it is recommended to add an "s". In case of resulting incorrect English (e.g. isCaseOf isCaseOfs), it must be decided whether or not to support such exceptions.
-====
-
 ====
 
 
@@ -2635,11 +2205,7 @@ Figure 41 depicts different graphical notations for enumerations in combination 
 
 image:./media/image40.emf[image,width=339,height=160]
 ====
-
-====
 Note: the direction of inheritance is opposite to the one for class inheritance. This can be seen in Variant C that defines the same enumerations but without inheritance. In Variant B, another graphical notation visualizes which literals are inherited by which enumeration. Since the literals within an enumeration are ordered, the order of classes it is inheriting from is important.
-====
-
 ====
 
 
@@ -2648,8 +2214,9 @@ Figure 41 Graphical Representation for Enumeration with Inheritance
 Figure 42 shows an experimental class, marked by the stereotype "Experimental".
 
 .Graphical Representation for Experimental Classes
-.depicts a deprecated class, which is marked by the stereotype "Deprecated".
-image:::./media/image41.png[image,width=119,height=96]
+image::./media/image41.png[image,width=119,height=96]
+
+Figure 43 depicts a deprecated class, which is marked by the stereotype "Deprecated".
 
 Figure 44 shows a class representing a template. It is marked by the stereotype "Template".
 
@@ -2680,11 +2247,7 @@ Each subclause consists of three parts:
 
 
 ====
-
-====
 Note: before V3.0RC03, the security metamodel was also part of this document. Therefore, security metamodel changes were also listed using the three subclauses as described above.
-====
-
 ====
 
 
@@ -2711,7 +2274,7 @@ Major Changes:
 |===
 |*nc* |*V3.0 vs. Part 1 V2.0.1* |*Comment*
 |x |DataSpecificationIEC61360 |Renamed to DataSpecificationIec61360
-| |DataSpecificationContent |Stereotype \\<<Template>> added
+| |DataSpecificationContent |Stereotype \<<Template>> added
 |x |DataTypeIEC61360 a|
 Renamed to DataTypeIec61360
 
@@ -2861,107 +2424,81 @@ New, Changed or Removed Constraints
 == Bibliography
 
 [#bib1]
-[#bib1]
 [1] "Recommendations for implementing the strategic initiative INDUSTRIE 4.0", acatech, April 2013. [Online]. Available: https://www.acatech.de/Publikation/recommendations-for-implementing-the-strategic-initiative-industrie-4-0-final-report-of-the-industrie-4-0-working-group/
 
-[#bib2]
 [#bib2]
 [2] "Implementation Strategy Industrie 4.0: Report on the results of the Industrie 4.0 Platform"; BITKOM e.V. / VDMA e.V., /ZVEI e.V., April 2015. [Online]. Available: https://www.bitkom.org/noindex/Publikationen/2016/Sonstiges/Implementation-Strategy-Industrie-40/2016-01-Implementation-Strategy-Industrie40.pdf
 
 [#bib3]
-[#bib3]
 [3] DIN SPEC 91345:2016-04 "Referenzarchitekturmodell Industrie 4.0 (RAMI4.0) / Reference Architecture Model Industrie 4.0 (RAMI4.0) / Modèle de reference de l’architecture de l’industrie 4.0 (RAMI4.0)", ICS 03.100.01; 25.040.01; 35.240.50, April 2016. [Online]. Available: https://www.beuth.de/en/technical-rule/din-spec-91345-en/250940128
 
 [#bib4]
-[#bib4]
 [4] "Structure of the Administration Shell, continuation of the development of the reference model for the Industrie 4.0 component", Plattform Industrie 4.0, Working Paper, April 2016. [Online]. Available: https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/structure-of-the-administration-shell.html
 
-[#bib5]
 [#bib5]
 [5] "Definition of terms relating to Industrie 4.0", Fraunhofer IOSB and VDI/VDE-GMA Fachausschuss 7.21. Accessed: 2020-11-14. [Online]. Availablefile:///C:/Users/Torben/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/V9OOP350/%20http/i40.iosb.fraunhofer.de/_search[: http://i40.iosb.fraunhofer.de/_search?patterns=FA7.21%20Begriffe]
 
 [6 DIN SPEC 92000:2019-09 "Data Exchange on the Base of Property Value Statements (PVSX)", 2019 September.
 
 [#bib7]
-[#bib7]
 [7] "Verwaltungsschale in der Praxis. Wie definiere ich Teilmodelle, beispielhafte Teilmodelle und Interaktion zwischen Verwaltungsschalen (in German)", Version 1.0, April 2019, Plattform Industrie 4.0 in Kooperation mit VDI/VDE-GMA Fachausschuss 7.20, Federal Ministry for Economic Affairs and Energy (BMWi). Available: https://www.plattform-i40.de/PI40/Redaktion/DE/Downloads/Publikation/2019-verwaltungsschale-in-der-praxis.html
 
-[#bib8]
 [#bib8]
 [8] "The Structure of the Administration Shell: TRILATERAL PERSPECTIVES from France, Italy and Germany", March 2018, [Online]. Available: https://www.plattform-i40.de/I40/Redaktion/EN/Downloads/Publikation/hm-2018-trilaterale-coop.html
 
 [#bib9]
-[#bib9]
 [9] "Industrial automation systems and integration — Exchange of characteristic data — Part 10: Characteristic data exchange format", Technical Specification ISO/TS 29002-10:2009(E), 2009
 
-[#bib10]
 [#bib10]
 [10] "Smart Manufacturing - Reference Architecture Model Industry 4.0 (RAMI4.0)", IEC PAS 63088, International Electrotechnical Commission (IEC), 2017
 
 [#bib11]
-[#bib11]
 [11] ISO/TS 29002-10:2009(E) "Industrial automation systems and integration — Exchange of characteristic data — Part 10: Characteristic data exchange format", First edition 2009-12-01
 
-[#bib12]
 [#bib12]
 [12] "OMG Unified Modelling Language (OMG UML)". Formal/2017-12-05. Version 2.5.1. December 2018. [Online] Available: file:///C:/Users/Torben/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/V9OOP350/https/www.omg.org/spec/UML/[https/www.omg.org/spec/UML/]
 
 [#bib13]
-[#bib13]
 [13] T. Preston-Werner "Semantic Versioning". Version 2.0.0. Accessed: 2020-11-13. [Online] Available: https://semver.org/spec/v2.0.0.html
 
-[#bib14]
 [#bib14]
 [14] "Details of the Asset Administration Shell – Interoperability at Runtime – Exchanging Information via Application Programming Interfaces". Part 2. See link:#bib22[[22\]].
 
 [#bib15]
-[#bib15]
 [15] "Asset Administration Shell. Reading Guide". Plattform Industrie 4.0 in cooperation with IDTA. November 2020. See link:#bib22[[22\]].
 
-[#bib16]
 [#bib16]
 [16] Top Level Project "Eclipse Digital Twin" Available: https://projects.eclipse.org/projects/dt
 
 [#bib17]
-[#bib17]
 [17] OPC 30270: OPC UA for Asset Administrastion Shell (AAS). 2021-06-04. [Online]. Available: https://reference.opcfoundation.org/v104/I4AAS/v100/docs/
 
-[#bib18]
 [#bib18]
 [18] OPC Unified Architecture Specification. Part 5 Information Model. [Online]. Available: https://opcfoundation.org/developer-tools/specifications-unified-architecture
 
 [#bib19]
-[#bib19]
 [19] OPC UA Information Models. [Online]. Available: https://opcfoundation.org/developer-tools/specifications-opc-ua-information-models
 
-[#bib20]
 [#bib20]
 [20] IEC 63278-1 "Asset Administration Shell for industrial applications – Part 1: Asset Administration Shell structure". 95/925/CDV
 
 [#bib21]
-[#bib21]
 [21] "Registered AAS Submodel Templates". Industrial Digital Twin Association. Available: https://industrialdigitaltwin.org/en/content-hub/submodels
 
-[#bib22]
 [#bib22]
 [22] "Asset Administration Shell Specifications – Quicklinks to Different Versions & Reading Guide". [Online]. Available: https://www.plattform-i40.de/IP/Redaktion/EN/Standardartikel/specification-administrationshell.html
 
 [#bib23]
-[#bib23]
 [23] (German) "I4.0-Sprache. Vokabular, Nachrichtenstruktur und semantische Interaktionsprotokolle der I4.0-Sprache", Discussion Paper. Plattform Industrie 4.0 [Online] Available: https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/hm-2018-sprache.html
 
-[#bib24]
 [#bib24]
 [24] "How to create a submodel template specification". Dec. 2022. Industrial Digital Twin Association. Available: https://industrialdigitaltwin.org/wp-content/uploads/2022/12/I40-IDTA-WS-Process-How-to-write-a-SMT-FINAL-.pdf
 
 [#bib25]
-[#bib25]
 [25] "AAS Repository. Repository for Information and Code for the Asset Administration Shell". https://github.com/admin-shell-io
 
 [#bib26]
-[#bib26]
 [26] F. Manola, E. Miller "RDF 1.1 Primer" W3C Recommendation, 2014, [Online]. Available: https://www.w3.org/TR/rdf11-primer/
 
-[#bib27]
 [#bib27]
 [27] Modelling the Semantics of Data of an Asset Administration Shell with Elements of ECLASS. June 2021. [Online]. Available: https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/Whitepaper_Plattform-Eclass.pdf
