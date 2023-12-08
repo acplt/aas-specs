@@ -1,5 +1,5 @@
 :toc: left
-:toc-title: Specification of the Asset Administration Shell. Part 3a: Data Specification
+:toc-title: Contents
 :sectlinks:
 :sectnums:
 :stylesheet: ../../style.css
@@ -7,270 +7,9 @@
 :imagesdir: media/
 :nofooter:
 
-= image::../../../idta-logo.png[] Part 3a: Data Specification
-:author: IDTA
-:version-label: Number
-:revnumber: 01003-a
-//:revdate: Match 2023
-:revremark: Specification of the Asset Administration Shell
+include::constraints.adoc[]
 
-image::./media/image1.png[image,width=802,height=1145]
-
-Imprint
-
-*Publisher*
-
-Industrial Digital Twin Association
-
-Lyoner Strasse 18
-
-60528 Frankfurt am Main
-
-Germany
-
-https://www.industrialdigitaltwin.org/
-
-*Status*
-
-March 2023
-
-*Illustrations*
-
-Publik. Agentur für Kommunikation GmbH, designed by Publik. Agentur für Kommunikation GmbH
-
-* +
-*
-
-Contents
-
-link:#preamble[1 Preamble link:#preamblelink:#bib8[[8\]]]
-
-link:#editorial-notes[1.1 Editorial Notes link:#editorial-noteslink:#bib8[[8\]]]
-
-link:#scope-of-this-document[1.2 Scope of This Document link:#scope-of-this-documentlink:#bib9[[9\]]]
-
-link:#normative-references[1.3 Normative References link:#normative-referenceslink:#bib9[[9\]]]
-
-link:#structure-of-the-document[1.4 Structure of the Document link:#structure-of-the-documentlink:#bib9[[9\]]]
-
-link:#working-principles[1.5 Working Principles link:#working-principleslink:#bib10[[10\]]]
-
-link:#terms-definitions-and-abbreviations[2 Terms, Definitions and Abbreviations link:#terms-definitions-and-abbreviationslink:#bib11[[11\]]]
-
-link:#terms-and-definitions[2.1 Terms and Definitions link:#terms-and-definitionslink:#bib11[[11\]]]
-
-link:#abbreviations-used-in-document[2.2 Abbreviations Used in Document link:#abbreviations-used-in-documentlink:#bib14[[14\]]]
-
-link:#introduction[3 Introduction link:#introductionlink:#bib16[[16\]]]
-
-link:#general[4 General link:#generallink:#bib17[[17\]]]
-
-link:#introduction-1[4.1 Introduction link:#introduction-1link:#bib17[[17\]]]
-
-link:#concept-descriptions-for-properties-and-values[4.2 Concept Descriptions for Properties and Values link:#concept-descriptions-for-properties-and-valueslink:#bib17[[17\]]]
-
-link:#predefined-data-specification-templates[5 Predefined Data Specification Templates link:#predefined-data-specification-templateslink:#bib20[[20\]]]
-
-link:#overview[5.1 Overview link:#overviewlink:#bib20[[20\]]]
-
-link:#predefined-template-for-iec61360-properties-value-lists-and-values-normative[6 Predefined Template for IEC61360 Properties, Value Lists, and Values (normative) link:#predefined-template-for-iec61360-properties-value-lists-and-values-normativelink:#bib21[[21\]]]
-
-link:#data-specification-iec61360-template-specification[6.1 Data Specification IEC61360 Template Specification link:#data-specification-iec61360-template-specificationlink:#bib21[[21\]]]
-
-link:#data-specification-iec61360-attributes[6.2 Data Specification IEC61360 Attributes link:#data-specification-iec61360-attributeslink:#bib21[[21\]]]
-
-link:#enumeration-data-type-iec61360[6.3 Enumeration Data Type IEC61360 link:#enumeration-data-type-iec61360link:#bib24[[24\]]]
-
-link:#level-type[6.4 Level Type link:#level-typelink:#bib27[[27\]]]
-
-link:#value-list-attributes[6.5 Value List Attributes link:#value-list-attributes[28]]
-
-link:#mapping-iec-61360-data-types-to-xsd-data-types[7 Mapping IEC 61360 Data Types to XSD Data Types link:#mapping-iec-61360-data-types-to-xsd-data-types[30]]
-
-link:#category-of-concept-descriptions[8 Category of Concept Descriptions link:#category-of-concept-descriptions[33]]
-
-link:#_Toc129945495[9 Cross-Constraints and Invariants for Predefined Data Specifications (normative) link:#_Toc129945495[38]]
-
-link:#general-1[9.1 General link:#general-1[38]]
-
-link:#constraints-for-data-specification-iec61360[9.2 Constraints for Data Specification IEC61360 link:#constraints-for-data-specification-iec61360[38]]
-
-link:#primitive-and-simple-data-types-normative[10 Primitive and Simple Data Types (normative) link:#primitive-and-simple-data-types-normative[40]]
-
-link:#predefined-simple-data-types[10.1 Predefined Simple Data Types link:#predefined-simple-data-types[40]]
-
-link:#basic-and-primitive-data-types[10.2 Basic and Primitive Data Types link:#basic-and-primitive-data-types[40]]
-
-link:#mappings-to-data-formats-to-share-i4.0-compliant-information-normative[11 Mappings to Data Formats to Share I4.0-Compliant Information (normative) link:#mappings-to-data-formats-to-share-i4.0-compliant-information-normative[42]]
-
-link:#general-2[11.1 General link:#general-2[42]]
-
-link:#xml[11.2 XML link:#xml[42]]
-
-link:#json[11.3 JSON link:#json[42]]
-
-link:#rdf[11.4 RDF link:#rdf[42]]
-
-link:#summary-and-outlook[12 Summary and Outlook link:#summary-and-outlook[43]]
-
-link:#background-information[Annex A. Background Information link:#background-information[44]]
-
-link:#general-3[General link:#general-3[44]]
-
-link:#data-elements-part-1[Data Elements (Part 1) link:#data-elements-part-1[44]]
-
-link:#examples[Examples link:#examples[44]]
-
-link:#referencing-part-1[Referencing (Part 1) link:#referencing-part-1[47]]
-
-link:#backus-naur-form[Annex B. Backus-Naur-Form link:#backus-naur-form[49]]
-
-link:#templates-for-uml-tables[Annex C. Templates for UML Tables link:#templates-for-uml-tables[50]]
-
-link:#general-4[General link:#general-4[50]]
-
-link:#template-for-classes[Template for Classes link:#template-for-classes[50]]
-
-link:#template-for-enumerations[Template for Enumerations link:#template-for-enumerations[51]]
-
-link:#template-for-primitives[Template for Primitives link:#template-for-primitives[52]]
-
-link:#_Toc129945518[Handling of Constraints link:#_Toc129945518[52]]
-
-link:#legend-for-uml-modelling[Annex D. Legend for UML Modelling link:#legend-for-uml-modelling[53]]
-
-link:#omg-uml-general[OMG UML General link:#omg-uml-general[53]]
-
-link:#uml-naming-rules[UML Naming Rules link:#uml-naming-rules[57]]
-
-link:#notes-to-graphical-uml-representation[Notes to Graphical UML Representation link:#notes-to-graphical-uml-representation[57]]
-
-link:#_Toc129945523[Annex E. Metamodel Changes link:#_Toc129945523[61]]
-
-link:#general-5[General link:#general-5[61]]
-
-link:#changes-v3.0-vs.-part-1-v2.0.1[Changes V3.0 vs. Part 1 V2.0.1 link:#changes-v3.0-vs.-part-1-v2.0.1[61]]
-
-link:#changes-v3.0-vs.-part-1-v3.0rc02[Changes V3.0 vs. Part 1 V3.0RC02 link:#changes-v3.0-vs.-part-1-v3.0rc02[64]]
-
-link:#bibliography[Annex F. Bibliography link:#bibliography[67]]
-
-Table of Tables
-
-link:#_Ref49713616[Table 1 IEC61360 Data Specification Template for Properties and Ranges link:#_Ref49713616[34]]
-
-link:#_Ref129944411[Table 2 IEC61360 Data Spec. Template for Other Data Elements, +
-Relationships Elements and Capabilities link:#_Ref129944411[35]]
-
-link:#_Toc129695227[Table 3 IEC612360 Data Specification Template for Other Submodel Elements link:#_Toc129695227[36]]
-
-link:#_Toc24314355[Table 4 Other Elements with semanticId link:#_Toc24314355[37]]
-
-link:#_Ref113744580[Table 5 Simple Data Types Used in Metamodel link:#_Ref113744580[40]]
-
-link:#_Toc122380103[Table 6 Primitive DataTypes Used in Metamodel link:#_Toc122380103[41]]
-
-link:#_Toc125981051[Table 7 Changes link:#_Toc125981051[62]]
-
-link:#_Toc125981052[Table 8 New Elements in Metamodel link:#_Toc125981052[63]]
-
-link:#_Toc125981053[Table 9 New, Changed or Removed Constraints link:#_Toc125981053[64]]
-
-link:#_Toc125981054[Table 10 Changes link:#_Toc125981054[64]]
-
-link:#_Toc125981055[Table 11 New Elements in Metamodel link:#_Toc125981055[65]]
-
-link:#_Toc124336684[Table 12 New, Changed or Removed Constraints link:#_Toc124336684[66]]
-
-Table of Figures
-
-link:#_Ref55938616[Figure 1 Types of Information Exchange via Asset Administration Shells link:#_Ref55938616link:#bib16[[16\]]]
-
-link:#_Ref129943925[Figure 2 Example Property From ECLASS link:#_Ref129943925link:#bib17[[17\]]]
-
-link:#_Toc129706727[Figure 3 Example Property Description with Value List from ECLASS link:#_Toc129706727link:#bib18[[18\]]]
-
-link:#_Toc129706728[Figure 4 Example Value Description from ECLASS link:#_Toc129706728link:#bib18[[18\]]]
-
-link:#_Ref129944093[Figure 5 Example Value Description from ECLASS Advanced (Editor Modus) link:#_Ref129944093link:#bib18[[18\]]]
-
-link:#_Ref129950722[Figure 6 Example for Property with Level Type from IEC CDD link:#_Ref129950722link:#bib19[[19\]]]
-
-link:#_Ref129879750[Figure 7 Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360 link:#_Ref129879750link:#bib20[[20\]]]
-
-link:#_Ref122380484[Figure 8 Metamodel of Data Specification IEC61360 link:#_Ref122380484link:#bib21[[21\]]]
-
-link:#_Toc129706733[Figure 9 Metamodel of Data Type IEC 61360 link:#_Toc129706733link:#bib24[[24\]]]
-
-link:#_Toc129706734[Figure 10 Metamodel of Level Type link:#_Toc129706734link:#bib27[[27\]]]
-
-link:#_Toc125981067[Figure 11 Metamodel of Value List link:#_Toc125981067[28]]
-
-link:#_Toc125981068[Figure 12 Mapping IEC 61360 Data Types to xsd Data Types link:#_Toc125981068[32]]
-
-link:#_Ref91684559[Figure 13 Categories of Concept Descriptions (non-normative) link:#_Ref91684559[33]]
-
-link:#_Ref129879837[Figure 14 Metamodel of Data Elements (Part 1) link:#_Ref129879837[44]]
-
-link:#_Ref129879773[Figure 15 Metamodel of HasSemantics (Part 1) link:#_Ref129879773[44]]
-
-link:#_Ref129950852[Figure 16 Example Quantitative Property MaxRotationSpeed in AASX Package Explorer link:#_Ref129950852[45]]
-
-link:#_Ref129950911[Figure 17 Example Property with Enumeration in AASX Package Explorer link:#_Ref129950911[46]]
-
-link:#_Ref129879857[Figure 18 Example Value Concept Description in AASX Package Explorer link:#_Ref129879857[47]]
-
-link:#_Ref129879893[Figure 19 Metamodel of Reference (Part 1) link:#_Ref129879893[48]]
-
-link:#_Ref125977549[Figure 20 Class link:#_Ref125977549[53]]
-
-link:#_Toc125537887[Figure 21 Inheritance/Generalization link:#_Toc125537887[53]]
-
-link:#_Ref129879956[Figure 22 Multiplicity link:#_Ref129879956[54]]
-
-link:#_Ref125977674[Figure 23 Ordered Multiplicity link:#_Ref125977674[54]]
-
-link:#_Ref125977687[Figure 24 Association link:#_Ref125977687[54]]
-
-link:#_Ref125977695[Figure 25 Composition (Composite Aggregation) link:#_Ref125977695[54]]
-
-link:#_Toc129706750[Figure 26 Aggregation link:#_Toc129706750[55]]
-
-link:#_Ref125977876[Figure 27 Navigable Attribute Notation for Associations link:#_Ref125977876[55]]
-
-link:#_Ref125977889[Figure 28 Default Value link:#_Ref125977889[55]]
-
-link:#_Ref125977898[Figure 29 Dependency link:#_Ref125977898[55]]
-
-link:#_Ref125977906[Figure 30 Abstract Class link:#_Ref125977906[55]]
-
-link:#_Ref125977915[Figure 31 Package link:#_Ref125977915[56]]
-
-link:#_Ref125977922[Figure 32 Imported Package link:#_Ref125977922[56]]
-
-link:#_Ref125977933[Figure 33 Enumeration link:#_Ref125977933[56]]
-
-link:#_Ref125977940[Figure 34 Data Type link:#_Ref125977940[56]]
-
-link:#_Ref125977948[Figure 35 Primitive Data Type link:#_Ref125977948[56]]
-
-link:#_Ref125977955[Figure 36 Note link:#_Ref125977955[57]]
-
-link:#_Ref125977964[Figure 37 Constraint link:#_Ref125977964[57]]
-
-link:#_Ref125545521[Figure 38 Graphical Representations of Composite Aggregation/Composition link:#_Ref125545521[58]]
-
-link:#_Ref125545522[Figure 39 Graphical Representation of Shared Aggregation link:#_Ref125545522[58]]
-
-link:#_Ref125545524[Figure 40 Graphical Representation of Generalization/Inheritance link:#_Ref125545524[59]]
-
-link:#_Ref129880067[Figure 41 Graphical Representation for Enumeration with Inheritance link:#_Ref129880067[59]]
-
-link:#_Ref129880077[Figure 42 Graphical Representation for Experimental Classes link:#_Ref129880077[59]]
-
-link:#_Ref129880119[Figure 43 Graphical Representation for Deprecated Elements link:#_Ref129880119[60]]
-
-link:#_Ref129880129[Figure 44 Graphical Representation of a Template Class link:#_Ref129880129[60]]
+image:ds/media/image1.png[image,width=802,height=1145]
 
 == Preamble
 
@@ -296,10 +35,10 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 . MAY This word, or the adjective "OPTIONAL", mean that an item is truly optional. One vendor may choose to include the item because a particular marketplace requires it or because the vendor feels that it enhances the product while another vendor may omit the same item. An implementation which does not include a particular option MUST be prepared to interoperate with another implementation which does include the option, though perhaps with reduced functionality. In the same vein, an implementation which does include a particular option MUST be prepared to interoperate with another implementation which does not include the option (except, of course, for the feature the option provides.)
 
 [arabic]
-. {blank}
-+
+
+
 ===  Scope of This Document
-+
+
 The Asset Administration Shell (see Part 1a of the document series) allows to define data specification templates. Data specification templates aim to enable interoperability between the partners that agree on the template. A template defines a set of attributes, with each attribute having a clear semantics. This set of attributes corresponds to a (sub-)schema.
 
 This document specifies data specification templates conformant to IEC 61360. IEC 61360 specifies how to define the semantics of single properties or values. The value range of a property can be defined as a value list – an enumeration -, while each of the (coded) values of the value list are treated as single concepts. They are thus suited to be used as data specifications for concept descriptions.
@@ -326,35 +65,35 @@ Part 1: Definitions – Principles and methods. Edition 4.0 2017-07
 
 All clauses that are normative have "(normative)" as a suffix in the heading of the clause.
 
-Clause 2 provides terms and definitions as well as abbreviations, both for abbreviations used in the document and for abbreviations that may be used for elements of the metamodel defined in this document.
+Subclause <<link:#terms-definitions-and-abbreviations,2>> provides terms and definitions as well as abbreviations, both for abbreviations used in the document and for abbreviations that may be used for elements of the metamodel defined in this document.
 
-Clause 3 gives a short introduction of Asset Administration Shell types and how this document is related to them.
+Subclause <<link:#introduction,3>> gives a short introduction of Asset Administration Shell types and how this document is related to them.
 
-Clause 4 explains the purpose of the data specification template specified in this document by giving examples of existing data dictionaries.
+Subclause <<link:#general,4>> explains the purpose of the data specification template specified in this document by giving examples of existing data dictionaries.
 
-Clause 5 shows how the data specification template is related to Part 1 and its elements.
+Subclause <<link:#predefined-data-specification-templates,5>> shows how the data specification template is related to Part 1 and its elements.
 
-Clause 6 is the main normative part of the document. It specifies the data specification templates supporting IEC 61360.
+Subclause <<link:#predefined-template-for-iec61360-properties-value-lists-and-values-normative,6>> is the main normative part of the document. It specifies the data specification templates supporting IEC 61360.
 
-Clause 7 explains how data types of IEC 61360 are mapped to data types of values as introduced in Part 1.
+Subclause <<link:#mapping-iec-61360-data-types-to-xsd-data-types,7>> explains how data types of IEC 61360 are mapped to data types of values as introduced in Part 1.
 
-Clause 8 introduces categories for concept descriptions and how they are used in combination with the data specification template IEC61360. The constraints as defined in Clause 0 also mainly refer to the rules on how these categories should be applied.
+Subclause <<link:#category-of-concept-descriptions,8>> introduces categories for concept descriptions and how they are used in combination with the data specification template IEC61360. The constraints as defined in Clause 0 also mainly refer to the rules on how these categories should be applied.
 
 
 ====
-Note: since categories are deprecated since V3.0, Clause 8 can also be skipped.
+Note: since categories are deprecated since V3.0, Subclause <<link:#category-of-concept-descriptions,8>> can also be skipped.
 ====
 
 
-Clause 10 specifies the data types used in the data specification.
+Subclause <<link:#primitive-and-simple-data-types-normative,10>> specifies the data types used in the data specification.
 
 Clause 0 provides information on the exchange of information compliant to this specification in existing data formats like XML, AutomationML, OPC UA information models, JSON or RDF.
 
-Finally, Clause 12 summarizes the content and gives an outlook on future work.
+Finally, Subclause <<link:#summary-and-outlook,12>> summarizes the content and gives an outlook on future work.
 
-The Annex contains additional background information on the Asset Administration Shell (Annex A). It also provides information about UML (Annex D) and the tables used to specify UML classes as used in this specification (Annex C). Annex B introduces the Backus-Naur-Form used in the document series.
+The Annex contains additional background information on the Asset Administration Shell (<<link:#background-information,Annex A>>). It also provides information about UML (<<link:#legend-for-uml-modelling,Annex D>>) and the tables used to specify UML classes as used in this specification (<<link:#templates-for-uml-tables,Annex C>>). <<link:#backus-naur-form,Annex B>> introduces the Backus-Naur-Form used in the document series.
 
-Metamodel changes compared to previous versions are described in Annex E.
+Metamodel changes compared to previous versions are described in <<link:#_Toc129945523,Annex E>>.
 
 The bibliography can be found in 0.
 
@@ -388,13 +127,13 @@ Note 1 to entry: an application can be distributed among resources and may commu
 ====
 
 
-* &#91;SOURCE: IEC TR 62390:2005-01, 3.1.2&#93;
+* [SOURCE: IEC TR 62390:2005-01, 3.1.2]
 
 attribute
 
 data element of a _property_, a relation, or a class in information technology
 
-* &#91;SOURCE: ISO/IEC Guide 77-2, ISO/IEC 27460, IEC 61360&#93;
+* [SOURCE: ISO/IEC Guide 77-2, ISO/IEC 27460, IEC 61360]
 
 Asset Administration Shell (AAS)
 
@@ -406,25 +145,25 @@ Note 1 to entry: Asset Administration Shell and Administration Shell are used sy
 ====
 
 
-* &#91;SOURCE: IEC 63278-1, note added&#93;
+* [SOURCE: IEC 63278-1, note added]
 
 class
 
 description of a set of objects that share the same _attributes_, _operations_, methods, relationships, and semantics
 
-* &#91;SOURCE: IEC TR 62390:2005-01, 3.1.4&#93;
+* [SOURCE: IEC TR 62390:2005-01, 3.1.4]
 
 concept
 
 unit of knowledge created by a unique combination of characteristics
 
-* &#91;SOURCE: EC 63278-1; IEC 61360-1:2016, 3.1.8; ISO 22274:2013, 3.7&#93;
+* [SOURCE: EC 63278-1; IEC 61360-1:2016, 3.1.8; ISO 22274:2013, 3.7]
 
 enumeration
 
 list of named constants called enumerators, each numerator name in the enumeration being unambiguous
 
-* &#91;SOURCE:IEC 61360-1_2017&#93;
+* [SOURCE:IEC 61360-1_2017]
 
 identifier (ID)
 
@@ -436,7 +175,7 @@ Note 1 to entry: there are specific identifiers, e.g. UUID Universal unique iden
 ====
 
 
-* &#91;SOURCE: Glossary Industrie 4.0&#93;
+* [SOURCE: Glossary Industrie 4.0]
 
 minimum value
 
@@ -458,7 +197,7 @@ Note 1 to entry: additional information about the nature of the value can be obt
 
 _Property_ information object to which the value belongs.
 
-* &#91;SOURCE:IEC 61360-1_2017&#93;
+* [SOURCE:IEC 61360-1_2017]
 
 maximum value
 
@@ -478,7 +217,7 @@ Note 1 to entry: additional information about the nature of the value can be obt
 
 _Property_ information object to which the value belongs.
 
-* &#91;SOURCE:IEC 61360-1_2017&#93;
+* [SOURCE:IEC 61360-1_2017]
 
 nominal value
 
@@ -492,7 +231,7 @@ Note 1 to entry: additional information about the nature of the value can be obt
 
 _Property_ information object to which the value belongs.
 
-* &#91;SOURCE:IEC 61360-1_2017&#93;
+* [SOURCE:IEC 61360-1_2017]
 
 non-quantitative property
 
@@ -506,7 +245,7 @@ EXAMPLE 1: typical information content of non-quantitative properties is items s
 
 names, references, or descriptions.
 
-* &#91;SOURCE: IEC 61360-2:201 7– based on IEC 61360-2:2012, 3.28, modified – "data element type" is replaced by "property" in the term and definition.&#93;
+* [SOURCE: IEC 61360-2:201 7– based on IEC 61360-2:2012, 3.28, modified – "data element type" is replaced by "property" in the term and definition.]
 
 property
 
@@ -560,7 +299,7 @@ Note 8 to entry: the specification of a property can include predefined choices 
 ====
 
 
-* &#91;SOURCE: according to ISO/IEC Guide 77-2&#93; as well as &#91;SOURCE: according Glossary Industrie 4.0&#93;
+* [SOURCE: according to ISO/IEC Guide 77-2] as well as [SOURCE: according Glossary Industrie 4.0]
 
 qualifier
 
@@ -572,28 +311,28 @@ Note 1 to entry: qualifier can have associated values.
 ====
 
 
-* &#91;SOURCE: according to IEC 62569-1&#93;
+* [SOURCE: according to IEC 62569-1]
 
 quantitative property
 
 property with a numerical value representing a physical quantity, a quantity of information or a count of objects
 
-* &#91;SOURCE: IEC 61360-1_2017 – based on IEC 61360-2:2012, 3.40, modified – "data element type" is replaced by "property"&#93;
+* [SOURCE: IEC 61360-1_2017 – based on IEC 61360-2:2012, 3.40, modified – "data element type" is replaced by "property"]
 
 Submodel
 
 container of SubmodelElements defining a hierarchical structure consisting of SubmodelElements
 
-* &#91;SOURCE: IEC 63278-1&#93;
+* [SOURCE: IEC 63278-1]
 
 SubmodelElement
 
 elements in a Submodel
 
-* &#91;SOURCE: IEC 63278-1&#93;
+* [SOURCE: IEC 63278-1]
 [arabic]
-. {blank}
-+
+
+
 ===  Abbreviations Used in Document
 
 [width="100%",cols="21%,79%",options="header",]
@@ -645,10 +384,13 @@ This document is part of the series "Details of the Asset Administration Shell" 
 
 This part of the series extends Part 1 and defines a technology-neutral specification of data specification templates, enabling the description of concept descriptions conformant to IEC 61360 in UML. This UML meta model serves as the basis for deriving several different formats for exchanging Asset Administration Shells, e.g. for XML, JSON, RDF, AutomationML, and OPC UA information models.
 
-Figure 1 shows the different ways of exchanging information via Asset Administration Shells. This part of the "Asset Administration Shell in Detail" series is the basis for all of these types of information exchange.
+<<link:#_Ref55938616,Figure 1>> shows the different ways of exchanging information via Asset Administration Shells. This part of the "Asset Administration Shell in Detail" series is the basis for all of these types of information exchange.
 
+[#_Ref55938616]
 .Types of Information Exchange via Asset Administration Shells
-image::../media/image2.jpeg[image,width=535,height=337]
+image:ds/media/image2.jpeg[image,width=535,height=337]
+
+
 
 File exchange (1) is described in Part 5 of this document series.
 
@@ -682,29 +424,42 @@ The data specification template IEC 61360 introduces additional attributes to de
 
 IEC 61360 requests to use IRDIs for the identification of a concept. The Asset Administration Shell allows to use other identifiers besides IRDI. The IRDI, the unique identifier of an IEC 61360 property or value, maps to ConceptDescription/id.
 
-Figure 2 to Figure 5 show examples from ECLASS +
-Figure 3 shows a property with enumeration type. One of the values in this enumeration is shown in +
+<<link:#_Ref129943925,Figure 2>> to <<link:#_Ref129944093,Figure 5>> show examples from ECLASS +
+<<link:#_Toc129706727,Figure 3>> shows a property with enumeration type. One of the values in this enumeration is shown in +
 Figure 4, each value has its own unique ID. The unique identifier of a value ( +
-Figure 4) is also used for _Property/valueId._
+<<link:#_Toc129706728,Figure 4>>) is also used for _Property/valueId._
 
-image::./media/image3.png[image,width=642,height=223]Figure 6 Example for Property with Level Type from IEC CDD shows an example from IEC CDD for a concept description of a _Property_ with usage of Level Type (in this example level type MIN, MAX and NOM, see data type). This is a short form of defining a collection of three properties with the same data type and semantics except for the level.
-
- +
-Figure 2 Example Property From ECLASS
+image:ds/media/image3.png[image,width=642,height=223].Example for Property with Level Type from IEC CDD shows an example from IEC CDD for a concept description of a _Property_ with usage of Level Type (in this example level type MIN, MAX and NOM, see data type). This is a short form of defining a collection of three properties with the same data type and semantics except for the level.
 
  +
-image::./media/image4.png[image,width=560,height=366]Figure 3 Example Property Description with Value List from ECLASS
-
-image::./media/image5.png[image,width=396,height=112]
+[#_Ref129943925]
+.Example Property From ECLASS
 
  +
-Figure 4 Example Value Description from ECLASS
+[#_Toc129706727]
+.Example Property Description with Value List from ECLASS
+image:ds/media/image4.png[image,width=560,height=366]
 
+
+
+
+image:ds/media/image5.png[image,width=396,height=112]
+
+ +
+[#_Toc129706728]
+.Example Value Description from ECLASS
+
+[#_Ref129944093]
 .Example Value Description from ECLASS Advanced (Editor Modus)
-image::../media/image6.png[image,width=406,height=296]
+image:ds/media/image6.png[image,width=406,height=296]
 
+
+
+[#_Ref129950722]
 .Example for Property with Level Type from IEC CDD
-image::../media/image7.png[image,width=642,height=632]
+image:ds/media/image7.png[image,width=642,height=632]
+
+
 
 == Predefined Data Specification Templates 
 
@@ -716,14 +471,17 @@ There is one data specification template supporting IEC 61360 [IEC61360-1]:
 
 * _DataSpecificationIec61360:_ defining concept descriptions for both properties and coded values.
 
-Figure 7 Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360 gives an overview of the data specification template and how it is used in combination with the information model as defined in Part 1 of the document series, namely _DataSpecification_, _DataSpecificationContent,_ and _ConceptDescription_.
+<<link:#_Ref129879750,Figure 7>> Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360 gives an overview of the data specification template and how it is used in combination with the information model as defined in Part 1 of the document series, namely _DataSpecification_, _DataSpecificationContent,_ and _ConceptDescription_.
 
+[#_Ref129879750]
 .Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360
-image::../media/image8.emf[image,width=593,height=438]
+image:ds/media/image8.emf[image,width=593,height=438]
+
+
 
 IEC 61360 is a standard that describes how to define the semantics of properties in a data dictionary. Part 1 does not prescribe how to define a concept description; it only supports the definition of concept descriptions. To do so, a data specification template needs to be assigned to the concept description. Which data specification is made available is defined via _HasDataSpecification/dataSpecification_.
 
-The legend for understanding the UML diagrams and the table specification of the classes is explained in Annex C and Annex D.
+The legend for understanding the UML diagrams and the table specification of the classes is explained in <<link:#templates-for-uml-tables,Annex C>> and <<link:#legend-for-uml-modelling,Annex D>>.
 
 
 ====
@@ -752,8 +510,9 @@ This ID will be used in _hasDataSpecification/dataSpecification_.
 
 This namespace has the qualifier "IEC:" Examples: _IEC:DataSpecificationIec61360/preferredName_ or _IEC: DataSpecificationIec61360/levelType/Min_ or _IEC:LevelType/Min_
 
-=== Data Specification IEC61360 Attributes._8_ Metamodel of Data Specification IEC61360
-image::../media/image9.emf[image,width=473,height=440]
+=== Data Specification IEC61360 Attributesimage:ds/media/image9.emf[image,width=473,height=440]
+
+[#_Ref122380484]####Figure _8_ Metamodel of Data Specification IEC61360
 
 [width="100%",cols="19%,47%,27%,7%",options="header",]
 |===
@@ -954,9 +713,11 @@ Note 4: the same applies to _ConceptDescription/description_ and _DataSpecificat
 ====
 
 
-=== image::./media/image10.emf[image,width=178,height=333]Enumeration Data Type IEC61360
+[#_Toc129706733]
+.Metamodel of Data Type IEC 61360
+=== image:ds/media/image10.emf[image,width=178,height=333]
 
-Figure 9 Metamodel of Data Type IEC 61360
+Enumeration Data Type IEC61360
 
 [width="100%",cols="30%,70%",options="header",]
 |===
@@ -1207,9 +968,11 @@ Note: for details, please refer to [IEC61360-1], BINARY_TYPE
 
 |===
 
-=== image::./media/image11.emf[image,width=103,height=108]Level Type
+[#_Toc129706734]
+.Metamodel of Level Type
+=== image:ds/media/image11.emf[image,width=103,height=108]
 
-Figure 10 Metamodel of Level Type
+Level Type
 
 [width="100%",cols="19%,47%,24%,10%",options="header",]
 |===
@@ -1256,9 +1019,11 @@ It is not recommended to use level type when defining concept descriptions for P
 
 === Value List Attributes
 
-image::./media/image12.emf[image,width=169,height=182] "_ValueList_" allows to define an enumeration type for a property. The value list is a set of value reference pairs.
+[#_Toc125981067]
+.Metamodel of Value List
+image:ds/media/image12.emf[image,width=169,height=182]
 
-Figure 11 Metamodel of Value List
+ "_ValueList_" allows to define an enumeration type for a property. The value list is a set of value reference pairs.
 
 [width="100%",cols="22%,44%,23%,11%",options="header",]
 |===
@@ -1427,7 +1192,8 @@ Note: for details, please see Part 1 of the document series "Details of the Asse
 |
 |===
 
-Figure 12 Mapping IEC 61360 Data Types to xsd Data Types
+[#_Toc125981068]
+.Mapping IEC 61360 Data Types to xsd Data Types
 
 == Category of Concept Descriptions 
 
@@ -1437,17 +1203,19 @@ Note: the attribute category of referables was set to deprecated in V3.0 of Part
 ====
 
 
-Although the IEC 61360 attributes listed in this template are defined for properties and values only, it is also possible to use the template for other definitions as long as no specific data specifications for concept descriptions for these elements are available. This is shown in Table 1, Table 2 and Table 4.
+Although the IEC 61360 attributes listed in this template are defined for properties and values only, it is also possible to use the template for other definitions as long as no specific data specifications for concept descriptions for these elements are available. This is shown in Table 1, <<link:#_Ref129944411,Table 2>> and <<link:#_Toc24314355,Table 4>>.
 
 For the meaning of the content attributes of the IEC 61360 data specification template, please refer to IEC 61360 and/or ECLASS.
 
 The data specification template can be used to describe both properties and values.
 
-See Figure 7 Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360 on how data specification templates are related to concept descriptions. Figure 13 lists all categories used for concept descriptionsfootnote:[Note: although the possible categories are listed as enumeration, no enumeration has been defined for Referable/category.].
+See <<link:#_Ref129879750,Figure 7>> Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360 on how data specification templates are related to concept descriptions. <<link:#_Ref91684559,Figure 13>> lists all categories used for concept descriptionsfootnote:[Note: although the possible categories are listed as enumeration, no enumeration has been defined for Referable/category.].
 
-image::./media/image13.png[image,width=255,height=343]The following tables recommend using specific categories to distinguish which kind of concept is described. They also give advice on which attributes need to be filled for which category of concept description.
+[#_Ref91684559]
+.Categories of Concept Descriptions (non-normative)
+image:ds/media/image13.png[image,width=255,height=343]
 
-Figure 13 Categories of Concept Descriptions (non-normative)
+The following tables recommend using specific categories to distinguish which kind of concept is described. They also give advice on which attributes need to be filled for which category of concept description.
 
 [width="100%",cols="31%,13%,13%,9%,18%,16%",options="header",]
 |===
@@ -1473,7 +1241,8 @@ Max = true
 
 |===
 
-IEC61360 Data Specification Template for Properties and Ranges
+[#_Ref49713616]
+.IEC61360 Data Specification Template for Properties and Ranges
 
 [width="100%",cols="22%,13%,13%,13%,13%,13%,13%",options="header",]
 |===
@@ -1495,7 +1264,8 @@ IEC61360 Data Specification Template for Properties and Ranges
 |levelType |-- |-- |-- |-- |-- |--
 |===
 
-IEC61360 Data Spec. Template for Other Data Elements, +
+[#_Ref129944411]
+.IEC61360 Data Spec. Template for Other Data Elements, +
 Relationships Elements and Capabilities
 
 [width="100%",cols="25%,19%,12%,16%,12%,16%",options="header",]
@@ -1518,7 +1288,8 @@ Relationships Elements and Capabilities
 |levelType |-- |-- |-- |-- |--
 |===
 
-IEC612360 Data Specification Template for Other Submodel Elements
+[#_Toc129695227]
+.IEC612360 Data Specification Template for Other Submodel Elements
 
 [width="100%",cols="32%,24%,22%,22%",options="header",]
 |===
@@ -1540,7 +1311,8 @@ IEC612360 Data Specification Template for Other Submodel Elements
 |levelType |-- |-- |--
 |===
 
-Other Elements with semanticId
+[#_Toc24314355]
+.Other Elements with semanticId
 
 == Cross-Constraints and Invariants for Predefined Data Specifications (normative)
 
@@ -1600,11 +1372,12 @@ Note: categories are deprecated since V3.0 of Part 1 of the document series "Det
 
 === Predefined Simple Data Types
 
-The metamodel of the Asset Administration Shell [AAS-Part1] uses basic data types as defined in the XML Schema Definition (XSD)footnote:[https://www.w3.org/XML/Core/, formerly https://www.w3.org/XML/Schema]. For an overview of the types used in this document, see Table 5. Their definition is outside the scope of this document.
+The metamodel of the Asset Administration Shell [AAS-Part1] uses basic data types as defined in the XML Schema Definition (XSD)footnote:[https://www.w3.org/XML/Core/, formerly https://www.w3.org/XML/Schema]. For an overview of the types used in this document, see <<link:#_Ref113744580,Table 5>>. Their definition is outside the scope of this document.
 
 The meaning and format of xsd types is specified in https://www.w3.org/XML/Schema. The simple type "langString" is specified in the Resource Description Framework (RDF)footnote:[see: https://www.w3.org/TR/rdf11-concepts/].
 
-Simple Data Types Used in Metamodel
+[#_Ref113744580]
+.Simple Data Types Used in Metamodel
 
 [width="100%",cols="12%,18%,40%,30%",options="header",]
 |===
@@ -1618,7 +1391,7 @@ Simple data types start with a small letter.
 
 === Basic and Primitive Data Types
 
-Table 6 lists the Primitives used in the metamodel. Primitive data types start with a capital letter.
+<<link:#_Toc122380103,Table 6>> lists the Primitives used in the metamodel. Primitive data types start with a capital letter.
 
 [width="100%",cols="27%,31%,42%",options="header",]
 |===
@@ -1721,7 +1494,7 @@ mailto:%22max.%20rotation%20speed%22@EN["max. rotation speed"@EN]
 Note: see +
 ====
 
-Figure 2.
+<<link:#_Ref129943925,Figure 2>>.
 
 |ShortNameTypeIec61360 a|
 _LangStringSet_
@@ -1772,7 +1545,8 @@ Note: see Figure 6
 
 |===
 
-Primitive DataTypes Used in Metamodel
+[#_Toc122380103]
+.Primitive DataTypes Used in Metamodel
 
 == Mappings to Data Formats to Share I4.0-Compliant Information (normative)
 
@@ -1870,41 +1644,67 @@ This clause provides general information about sources of information and releva
 
 === Data Elements (Part 1)
 
-image::./media/image14.png[image,width=642,height=231]Figure 14 Metamodel of Data Elements (Part 1)
+[#_Ref129879837]
+.Metamodel of Data Elements (Part 1)
+image:ds/media/image14.png[image,width=642,height=231]
 
-The data specification template IEC61360 is relevant for the definition of concept descriptions for data elements (Figure 14). Submodel Elements inherit from _hasSemantics_, i.e. they have a semanticId and optionally some additional supplementary semantic IDs (Figure _15_).
 
-Figure 7 Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360 gives an overview of the relationship of concept descriptions (_ConceptDescription_) and data specifications (DataSpecification, _DataSpecificationContent_ and _HasDataSpecification_) from Part 1 for this concrete data specification template.
 
-image::./media/image15.emf[image,width=232,height=93]Figure _15_ Metamodel of HasSemantics (Part 1)
 
-Clause 8 describes how to use the data specification template to describe further of the metamodel as specified in Part 1 that may also have semantics assigned to them (by inheriting from HasSemantics): Submodel, all other SubmodelElements, SpecificAssetId, Qualifier, and Extension. In these cases, the preferred name and the definition are mainly used to provide a minimum of information on what the corresponding value is about.
+The data specification template IEC61360 is relevant for the definition of concept descriptions for data elements (<<link:#_Ref129879837,Figure 14>>). Submodel Elements inherit from _hasSemantics_, i.e. they have a semanticId and optionally some additional supplementary semantic IDs (Figure _15_).
+
+<<link:#_Ref129879750,Figure 7>> Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360 gives an overview of the relationship of concept descriptions (_ConceptDescription_) and data specifications (DataSpecification, _DataSpecificationContent_ and _HasDataSpecification_) from Part 1 for this concrete data specification template.
+
+[#_Ref129879773]
+Figure _15_ Metamodel of HasSemantics (Part 1)
+image:ds/media/image15.emf[image,width=232,height=93]
+
+
+
+
+Subclause <<link:#category-of-concept-descriptions,8>> describes how to use the data specification template to describe further of the metamodel as specified in Part 1 that may also have semantics assigned to them (by inheriting from HasSemantics): Submodel, all other SubmodelElements, SpecificAssetId, Qualifier, and Extension. In these cases, the preferred name and the definition are mainly used to provide a minimum of information on what the corresponding value is about.
 
 === Examples
 
-Figure 16 shows an example of a property with idShort "MaxRotationSpeed" with a semantic ID referring to a concept description "MaxRotationSpeed". The concept description shows that MaxRotationSpeed is a quantitative property because the data type is one of *_MEASURE, namely INTEGER_MEASURE. In this case, the definition of a physical unit is mandatory. It is "1/min" for MaxRotationSpeed. A unique ID is also provided for this physical unit. Concept descriptions for physical units are described e.g. in Part 4b of this document series on the Details of the Asset Administration Shell.
+<<link:#_Ref129950852,Figure 16>> shows an example of a property with idShort "MaxRotationSpeed" with a semantic ID referring to a concept description "MaxRotationSpeed". The concept description shows that MaxRotationSpeed is a quantitative property because the data type is one of *_MEASURE, namely INTEGER_MEASURE. In this case, the definition of a physical unit is mandatory. It is "1/min" for MaxRotationSpeed. A unique ID is also provided for this physical unit. Concept descriptions for physical units are described e.g. in Part 4b of this document series on the Details of the Asset Administration Shell.
 
 The type INTEGER_MEASURE of the concept description is mapped to xs:integer of the property.
 
-image::./media/image16.png[image,width=565,height=730]Figure 16 Example Quantitative Property MaxRotationSpeed in AASX Package Explorer
+[#_Ref129950852]
+.Example Quantitative Property MaxRotationSpeed in AASX Package Explorer
+image:ds/media/image16.png[image,width=565,height=730]
 
-Figure 7 shows a property "CoolingType". Its semanticId references a concept description that defines a value list (_DataSpecificationIec612360/valueList_) with two values BAB657 and BAB611.
 
+
+
+<<link:#_Ref129879750,Figure 7>> shows a property "CoolingType". Its semanticId references a concept description that defines a value list (_DataSpecificationIec612360/valueList_) with two values BAB657 and BAB611.
+
+[#_Ref129950911]
 .Example Property with Enumeration in AASX Package Explorer
-image::../media/image17.png[image,width=545,height=770]
+image:ds/media/image17.png[image,width=545,height=770]
 
-Figure 18 shows the concept description for the value BAB657 that was used in the enumeration in Figure 17. Most attributes are not relevant (see Clause 8). However, it is mandatory to set the attribute _DataSpecificationIec61360/value_, the _preferredName_ (open circuit, external cooling), and the data type (for enumeration, the data type is typically just STRING).
 
+
+<<link:#_Ref129879857,Figure 18>> shows the concept description for the value BAB657 that was used in the enumeration in <<link:#_Ref129950911,Figure 17>>. Most attributes are not relevant (see Clause 8). However, it is mandatory to set the attribute _DataSpecificationIec61360/value_, the _preferredName_ (open circuit, external cooling), and the data type (for enumeration, the data type is typically just STRING).
+
+[#_Ref129879857]
 .Example Value Concept Description in AASX Package Explorer
-image::../media/image18.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=639,height=368]
+image:ds/media/image18.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=639,height=368]
+
+
 
 === Referencing (Part 1)
 
-Besides the abstract class _HasSemantics,_ the referencing concept explained in Part 1 is also relevant (type __Reference__Figure 19). In the case of the data specification template IEC61360, the only relevant key types are "GlobalReference" and "ConceptDescription". In case the concept description is a shadow copy of an existing data dictionary and uses the same ID, it is recommended to use the Global Reference for the _DataSpecificationIec61360/unitId_ or _ValueReferencePair/valueId_. Otherwise, a model reference with _Key/type_ equal to _ConceptDescription_ is used.
+Besides the abstract class _HasSemantics,_ the referencing concept explained in Part 1 is also relevant (type __Reference__<<link:#_Ref129879893,Figure 19>>). In the case of the data specification template IEC61360, the only relevant key types are "GlobalReference" and "ConceptDescription". In case the concept description is a shadow copy of an existing data dictionary and uses the same ID, it is recommended to use the Global Reference for the _DataSpecificationIec61360/unitId_ or _ValueReferencePair/valueId_. Otherwise, a model reference with _Key/type_ equal to _ConceptDescription_ is used.
 
 The same applies to _HasSemantics/semanticId_ and semantic IDs in _HasSemantics/supplementalSemanticIds._
 
-image::./media/image19.emf[image,width=424,height=502]Figure 19 Metamodel of Reference (Part 1)
+[#_Ref129879893]
+.Metamodel of Reference (Part 1)
+image:ds/media/image19.emf[image,width=424,height=502]
+
+
+
 
 == Backus-Naur-Form
 
@@ -2074,12 +1874,24 @@ Note: in the Annex listing the metamodel changes, constraints with prefix AASs- 
 
 This annex explains the UML elements used in this specification. For more information, please refer to the comprehensive literature available for UML. The formal specification can be found in link:#bib12[[12\]].
 
+[#_Ref125977549]
 .Class
-image::../media/image20.emf[image,width=86,height=80]Figure 20 shows a class with name "Class1" and an attribute with name "attr" of type _Class2_. Attributes are owned by the class. Some of these attributes may represents the end of binary associations, see also Figure 21. In this case, the instance of _Class2_ is navigable via the instance of the owning class _Class1_.footnote:[„Navigability notation was often used in the past according to an informal convention, whereby non-navigable ends were assumed to be owned by the Association whereas navigable ends were assumed to be owned by the Classifier at the opposite end. This convention is now deprecated. Aggregation type, navigability, and end ownership are separate concepts, each with their own explicit notation. Association ends owned by classes are always navigable, while those owned by associations may be navigable or not. link:#bib12[[12\]]”]
+image:ds/media/image20.emf[image,width=86,height=80]
 
-Figure 21 shows that _Class4_ inherits all member elements from _Class3_. Or in other word, _Class3_ is a generalization of _Class4, Class4_ is a specialization of _Class3_. This means that each instance of _Class4_ is also an instance of _Class3_. An instance of _Class4_ has the attributes _attr1_ and _attr2,_ whereas instances of _Class3_ only have the attribute _attr1_.
+.shows a class with name "Class1" and an attribute with name "attr" of type _Class2_. Attributes are owned by the class. Some of these attributes may represents the end of binary associations, see also <<link:#_Toc125537887,Figure 21>>. In this case, the instance of _Class2_ is navigable via the instance of the owning class _Class1_.footnote:[„Navigability notation was often used in the past according to an informal convention, whereby non-navigable ends were assumed to be owned by the Association whereas navigable ends were assumed to be owned by the Classifier at the opposite end. This convention is now deprecated. Aggregation type, navigability, and end ownership are separate concepts, each with their own explicit notation. Association ends owned by classes are always navigable, while those owned by associations may be navigable or not. link:#bib12[[12\]]
 
-image::./media/image21.emf[image,width=100,height=193]Figure 21 Inheritance/Generalization
+”]
+
+
+
+<<link:#_Toc125537887,Figure 21>> shows that _Class4_ inherits all member elements from _Class3_. Or in other word, _Class3_ is a generalization of _Class4, Class4_ is a specialization of _Class3_. This means that each instance of _Class4_ is also an instance of _Class3_. An instance of _Class4_ has the attributes _attr1_ and _attr2,_ whereas instances of _Class3_ only have the attribute _attr1_.
+
+[#_Toc125537887]
+.Inheritance/Generalization
+image:ds/media/image21.emf[image,width=100,height=193]
+
+
+
 
 Figure 22defines the required and allowed multiplicity/cardinality within an association between instances of _Class1_ and _Class2_. In this example, an instance of _Class2_ is always related to exactly one instance of _Class1_. An instance of _Class1_ is either related to none, one, or more (unlimited, i.e. no constraint on the upper bound) instances of _Class2_. The relationship can change over time.
 
@@ -2093,67 +1905,102 @@ where <lower-bound> is a value specification of type Integer - i.e. 0, 1, 2, …
 
 The default is 1 for lower-bound and upper-bound.
 
-image::./media/image22.emf[image,width=200,height=80]Figure 22 Multiplicity
+[#_Ref129879956]
+.Multiplicity
+image:ds/media/image22.emf[image,width=200,height=80]
 
-image::./media/image23.emf[image,width=233,height=80]A multiplicity element represents a collection of values. The default is a set, i.e. it is not ordered and the elements within the collection are unique and contain no duplicates. Figure 23 shows an ordered collection: the instances of _Class2_ related to an instance of _Class1_. The stereotype \<<ordered>> is used to denote that the relationship is ordered.
 
-Figure 23 Ordered Multiplicity
 
-image::./media/image23.emf[image,width=233,height=80]Figure 24 shows that the member ends of an association can be named as well, i.e. an instance of _Class1_ can be in relationship "relation" to an instance of _Class2_. Vice versa, the instance of _Class2_ is in relationship "reverseRelation" to the instance of _Class1_.
 
-Figure 24 Association
+[#_Ref125977674]
+.Ordered Multiplicity
+image:ds/media/image23.emf[image,width=233,height=80]
 
-image::./media/image24.emf[image,width=200,height=80]Figure 25 shows a composition, also called a composite aggregation. A composition is a binary association, grouping a set of instances. The individuals in the set are typed as specified by _Class2_. The multiplicity of instances of _Class2_ to _Class1_ is always 1 (i.e. upper-bound and lower-bound have value "1"). One instance of _Class2_ belongs to exactly one instance of _Class1_. There is no instance of _Class2_ without a relationship to an instance of _Class1_. Figure 26 shows the composition using an association relationship with a filled diamond as composition adornment.
+A multiplicity element represents a collection of values. The default is a set, i.e. it is not ordered and the elements within the collection are unique and contain no duplicates. <<link:#_Ref125977674,Figure 23>> shows an ordered collection: the instances of _Class2_ related to an instance of _Class1_. The stereotype \<<ordered>> is used to denote that the relationship is ordered.
 
-Figure 25 Composition (Composite Aggregation)
+[#_Ref125977687]
+.Association
+image:ds/media/image23.emf[image,width=233,height=80]
 
-Figure 26 shows an aggregation. An aggregation is a binary association. In contrast to a composition, an instance of _Class2_ can be shared by several instances of _Class1_. Figure 26 shows the shared aggregation using an association relationship with a hallow diamond as aggregation adornment.
+.shows that the member ends of an association can be named as well, i.e. an instance of _Class1_ can be in relationship "relation" to an instance of _Class2_. Vice versa, the instance of _Class2_ is in relationship "reverseRelation" to the instance of _Class1_.
 
-image::./media/image25.emf[image,width=200,height=80]Figure _26_ Aggregation
+[#_Ref125977695]
+.Composition (Composite Aggregation)
+image:ds/media/image24.emf[image,width=200,height=80]
 
-image::./media/image26.emf[image,width=163,height=80]Figure 27 illustrates that the attribute notation can be used for an association end owned by a class. In this example, the attribute name is "attr" and the elements of this attribute are typed with _Class2._ The multiplicity, here "0..*", is added in square brackets. If the aggregation is ordered, it is added in curly brackets like in this example.
+.shows a composition, also called a composite aggregation. A composition is a binary association, grouping a set of instances. The individuals in the set are typed as specified by _Class2_. The multiplicity of instances of _Class2_ to _Class1_ is always 1 (i.e. upper-bound and lower-bound have value "1"). One instance of _Class2_ belongs to exactly one instance of _Class1_. There is no instance of _Class2_ without a relationship to an instance of _Class1_. <<link:#_Toc129706750,Figure 26>> shows the composition using an association relationship with a filled diamond as composition adornment.
 
-Figure 27 Navigable Attribute Notation for Associations
+<<link:#_Toc129706750,Figure 26>> shows an aggregation. An aggregation is a binary association. In contrast to a composition, an instance of _Class2_ can be shared by several instances of _Class1_. <<link:#_Toc129706750,Figure 26>> shows the shared aggregation using an association relationship with a hallow diamond as aggregation adornment.
 
-image::./media/image27.emf[image,width=91,height=80]Figure 28 shows a class with three attributes with primitive types and default values. When a property with a default value is instantiated in the absence of a specific setting for the property, the default value is evaluated to provide the initial values of the property.
+[#_Toc129706750]
+Figure _26_ Aggregation
+image:ds/media/image25.emf[image,width=200,height=80]
 
-Figure 28 Default Value
 
-image::./media/image28.emf[image,width=206,height=80]Figure 29 shows that there is a dependency relationship between _Class1_ and _Class2_. In this case, the dependency means that _Class1_ depends on _Class2_ because the type of attribute _attr_ depends on the specification of class _Class2._ A dependency is depicted as dashed arrow between two model elements.
 
-Figure 29 Dependency
 
-image::./media/image29.emf[image,width=86,height=80]Figure 30 shows an abstract class. It uses the stereotype \<<abstract>>. There are no instances of abstract classes. They are typically used for specific member elements that are inherited by non-abstract classes.
+[#_Ref125977876]
+.Navigable Attribute Notation for Associations
+image:ds/media/image26.emf[image,width=163,height=80]
 
-Figure 30 Abstract Class
+.illustrates that the attribute notation can be used for an association end owned by a class. In this example, the attribute name is "attr" and the elements of this attribute are typed with _Class2._ The multiplicity, here "0..*", is added in square brackets. If the aggregation is ordered, it is added in curly brackets like in this example.
 
-image::./media/image30.emf[image,width=106,height=80]Figure 31 shows a package named "Package2". A package is a namespace for its members. In this example, the member belonging to _Package2_ is class _Class2_.
+[#_Ref125977889]
+.Default Value
+image:ds/media/image27.emf[image,width=91,height=80]
 
-Figure 31 Package
+.shows a class with three attributes with primitive types and default values. When a property with a default value is instantiated in the absence of a specific setting for the property, the default value is evaluated to provide the initial values of the property.
 
-image::./media/image31.emf[image,width=256,height=86]Figure 32 shows that all elements in _Package2_ are imported into the namespace defined by _Package1_. This is a special dependency relationship between the two packages with stereotype \<<import>>.
+[#_Ref125977898]
+.Dependency
+image:ds/media/image28.emf[image,width=206,height=80]
 
-Figure 32 Imported Package
+.shows that there is a dependency relationship between _Class1_ and _Class2_. In this case, the dependency means that _Class1_ depends on _Class2_ because the type of attribute _attr_ depends on the specification of class _Class2._ A dependency is depicted as dashed arrow between two model elements.
 
-image::./media/image32.emf[image,width=119,height=93]Figure _33_ shows an enumeration with the name "Enumeration1". An enumeration is a data type with its values enumerated as literals. It contains two literal values, "a" and "b". It is a class with stereotype \<<enumeration>>. The literals owned by the enumeration are ordered.
+[#_Ref125977906]
+.Abstract Class
+image:ds/media/image29.emf[image,width=86,height=80]
 
-Figure _33_ Enumerationfootnote:[In Enterprise Architect, the single enumeration values also have a stereotype \<<enum>> each.]
+.shows an abstract class. It uses the stereotype \<<abstract>>. There are no instances of abstract classes. They are typically used for specific member elements that are inherited by non-abstract classes.
 
-image::./media/image33.emf[image,width=86,height=73]Figure 34 shows the definition of the data type with the name "DataType1". A data type has instances that are identified only by their value. It is a class with stereotype \<<dataType>>.
+[#_Ref125977915]
+.Package
+image:ds/media/image30.emf[image,width=106,height=80]
 
-Figure 34 Data Type
+.shows a package named "Package2". A package is a namespace for its members. In this example, the member belonging to _Package2_ is class _Class2_.
 
-image::./media/image34.emf[image,width=86,height=73]Figure 35 shows a primitive data type with the name "int". Primitive data types are predefined data types, without any substructure. The primitive data types are defined outside UML.
+[#_Ref125977922]
+.Imported Package
+image:ds/media/image31.emf[image,width=256,height=86]
 
-Figure 35 Primitive Data Type
+.shows that all elements in _Package2_ are imported into the namespace defined by _Package1_. This is a special dependency relationship between the two packages with stereotype \<<import>>.
 
-image::./media/image35.emf[image,width=200,height=80]Figure 36 shows how a note can be attached to an element, in this example to class "Class1".
+[#_Ref125977933]####Figure _33_ Enumerationfootnote:[In Enterprise Architect, the single enumeration values also have a stereotype \<<enum>> each.]
+image:ds/media/image32.emf[image,width=119,height=93]
 
-Figure 36 Note
+Figure _33_ shows an enumeration with the name "Enumeration1". An enumeration is a data type with its values enumerated as literals. It contains two literal values, "a" and "b". It is a class with stereotype \<<enumeration>>. The literals owned by the enumeration are ordered.
+image:ds/media/image33.emf[image,width=86,height=73].shows the definition of the data type with the name "DataType1". A data type has instances that are identified only by their value. It is a class with stereotype \<<dataType>>.
 
-image::./media/image36.emf[image,width=213,height=80]Figure 37 shows how a constraint is attached to an element, in this example to class "Class1".
+[#_Ref125977940]
+.Data Type
 
-Figure 37 Constraint
+[#_Ref125977948]
+.Primitive Data Type
+image:ds/media/image34.emf[image,width=86,height=73]
+
+.shows a primitive data type with the name "int". Primitive data types are predefined data types, without any substructure. The primitive data types are defined outside UML.
+
+[#_Ref125977955]
+.Note
+image:ds/media/image35.emf[image,width=200,height=80]
+
+.shows how a note can be attached to an element, in this example to class "Class1".
+
+[#_Ref125977964]
+.Constraint
+image:ds/media/image36.emf[image,width=213,height=80]
+
+.shows how a constraint is attached to an element, in this example to class "Class1".
 
 === UML Naming Rules
 
@@ -2179,52 +2026,73 @@ Note: a plural form of the name of attributes with cardinality >=1 may be needed
 
 Specific graphical modelling rules, which are used in this specification but not included in this form, are explained below link:#bib12[[12\]].
 
-Figure 38 different graphical representations of a composition (composite aggregation). In Variant A, a relationship with a filled aggregation diamond is used. In Variant B, an attribute with the same semantics is defined. And in Variant C, the implicitly assumed default name of the attribute in Variant A is explicitly stated. This document uses notation B.
+<<link:#_Ref125545521,Figure 38>> different graphical representations of a composition (composite aggregation). In Variant A, a relationship with a filled aggregation diamond is used. In Variant B, an attribute with the same semantics is defined. And in Variant C, the implicitly assumed default name of the attribute in Variant A is explicitly stated. This document uses notation B.
 
 It is assumed that only the end member of the association is navigable per default, i.e. it is possible to navigate from an instance of _Class1_ to the owned instance of _Class2_ but not vice versa. If there is no name for the end member of the association given, it is assumed that the name is identical to the class name but starting with a small letter – compared to Variant C.
 
 _Class2_ instance only exists if the parent object of type _Class1_ exists.
 
-image::./media/image37.emf[image,width=410,height=205]Figure 38 Graphical Representations of Composite Aggregation/Composition
+[#_Ref125545521]
+.Graphical Representations of Composite Aggregation/Composition
+image:ds/media/image37.emf[image,width=410,height=205]
+
+
+
 
 Figure _39_ shows different representations of a shared aggregation: a _Class2_ instance can exist independently of a _Class1_ instance; it only references the instances of _Class2_. Now an attribute with the same semantics is defined In Variant B. The reference is denoted by a star added after the type of the attribute.
 
 It is assumed that only the end member of the aggregation association is navigable per default, i.e. it is possible to navigate from an instance of _Class1_ to the owned instance of _Class2_ but not vice versa. Otherwise, variant B would not be identical to Variant A.
 
-image::./media/image38.emf[image,width=368,height=220]A specialty in Figure _39_ is that the aggregated instances are referables in the sense of the Asset Administration Shell metamodel (i.e. they inherit from the predefined abstract class "Referable"). This is why Variant B is identical to Variant A. This would not be the case for non-referable elements in the metamodel. The structure of a reference to a model element of the Asset Administration Shell is explicitly defined. A model reference consists of an ordered list of keys. The last key in the key chain shall reference an instance of type _Class2_ (i.e. Reference/type equal to "Class2").
+[#_Ref125545522]####Figure _39_ Graphical Representation of Shared Aggregation
+image:ds/media/image38.emf[image,width=368,height=220]
 
-Figure _39_ Graphical Representation of Shared Aggregation
-
-Figure 40 show different graphical representations of generalization. Variant A is the classical graphical representation as defined in link:#bib12[[12\]]. Variant B is a short form, if _Class1_ is not on the same diagram. The name of the class that _Class3_ is inheriting from is depicted in the upper right corner.
+A specialty in Figure _39_ is that the aggregated instances are referables in the sense of the Asset Administration Shell metamodel (i.e. they inherit from the predefined abstract class "Referable"). This is why Variant B is identical to Variant A. This would not be the case for non-referable elements in the metamodel. The structure of a reference to a model element of the Asset Administration Shell is explicitly defined. A model reference consists of an ordered list of keys. The last key in the key chain shall reference an instance of type _Class2_ (i.e. Reference/type equal to "Class2").
+<<link:#_Ref125545524,Figure 40>> show different graphical representations of generalization. Variant A is the classical graphical representation as defined in link:#bib12[[12\]]. Variant B is a short form, if _Class1_ is not on the same diagram. The name of the class that _Class3_ is inheriting from is depicted in the upper right corner.
 
 Variant C not only shows which class Class3 instances are inheriting from, but also what they are inheriting. This is depicted by the class name it is inheriting from, followed by "::" and then the list of all inherited elements – here attribute _class2_. Typically, the inherited elements are not shown.
 
-image::./media/image39.emf[image,width=386,height=206]Figure 40 Graphical Representation of Generalization/Inheritance
+[#_Ref125545524]
+.Graphical Representation of Generalization/Inheritance
+image:ds/media/image39.emf[image,width=386,height=206]
 
-Figure 41 depicts different graphical notations for enumerations in combination with inheritance. In Variant A, "Enumeration1" additionally contains the literals as defined by "Enumeration2".
 
-image::./media/image40.emf[image,width=339,height=160]
+
+
+<<link:#_Ref129880067,Figure 41>> depicts different graphical notations for enumerations in combination with inheritance. In Variant A, "Enumeration1" additionally contains the literals as defined by "Enumeration2".
+
+[#_Ref129880067]
+.Graphical Representation for Enumeration with Inheritance
+image:ds/media/image40.emf[image,width=339,height=160]
+
+
 ====
 Note: the direction of inheritance is opposite to the one for class inheritance. This can be seen in Variant C that defines the same enumerations but without inheritance. In Variant B, another graphical notation visualizes which literals are inherited by which enumeration. Since the literals within an enumeration are ordered, the order of classes it is inheriting from is important.
 ====
 
 
-Figure 41 Graphical Representation for Enumeration with Inheritance
+<<link:#_Ref129880077,Figure 42>> shows an experimental class, marked by the stereotype "Experimental".
 
-Figure 42 shows an experimental class, marked by the stereotype "Experimental".
-
+[#_Ref129880077]
 .Graphical Representation for Experimental Classes
-image::../media/image41.png[image,width=119,height=96]
+image:ds/media/image41.png[image,width=119,height=96]
 
-Figure 43 depicts a deprecated class, which is marked by the stereotype "Deprecated".
 
-Figure 44 shows a class representing a template. It is marked by the stereotype "Template".
 
+<<link:#_Ref129880119,Figure 43>> depicts a deprecated class, which is marked by the stereotype "Deprecated".
+
+<<link:#_Ref129880129,Figure 44>> shows a class representing a template. It is marked by the stereotype "Template".
+
+[#_Ref129880119]
 .Graphical Representation for Deprecated Elements
-image::../media/image42.png[image,width=123,height=99]
+image:ds/media/image42.png[image,width=123,height=99]
 
+
+
+[#_Ref129880129]
 .Graphical Representation of a Template Class
-image::../media/image43.png[image,width=120,height=97]
+image:ds/media/image43.png[image,width=120,height=97]
+
+
 
 == Metamodel Changes
 
@@ -2286,7 +2154,8 @@ Some new values added: BLOB, FILE, HTML, IRDI; URL renamed to IRI
 |x |ValueReferencePair/value |Type changed from ValueDataType to string
 |===
 
-Changes
+[#_Toc125981051]
+.Changes
 
 [width="100%",cols="6%,46%,48%",options="header",]
 |===
@@ -2315,7 +2184,8 @@ Some attribute types changed, see separate entries
 | |ValueTypeIec61360 |New type for values
 |===
 
-New Elements in Metamodel
+[#_Toc125981052]
+.New Elements in Metamodel
 
 [width="100%",cols="7%,12%,15%,66%",options="header",]
 |===
@@ -2336,7 +2206,8 @@ Constraint AASc-3a-002: DataSpecificationIec61360/preferredName shall be provide
 | |AASc-3a-050 |New |Constraint AASc-050: If the DataSpecificationContent DataSpecificationIec61360 is used for an element, the value of HasDataSpecification/dataSpecification shall contain the global reference to the IRI of the corresponding data specification template https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0
 |===
 
-New, Changed or Removed Constraints
+[#_Toc125981053]
+.New, Changed or Removed Constraints
 
 === Changes V3.0 vs. Part 1 V3.0RC02
 
@@ -2366,7 +2237,8 @@ Bugfixes:
 |x |ValueReferencePair/value |Type changed from string to ShortNameTypeIec61360 with limited max. length
 |===
 
-Changes
+[#_Toc125981054]
+.Changes
 
 [width="100%",cols="5%,54%,41%",options="header",]
 |===
@@ -2382,7 +2254,8 @@ Changes
 |x |LevelType |Changed from enumeration to complex data type with four Boolean attributes because more than one value can be selected
 |===
 
-New Elements in Metamodel
+[#_Toc125981055]
+.New Elements in Metamodel
 
 [width="100%",cols="7%,12%,15%,66%",options="header",]
 |===
@@ -2419,7 +2292,8 @@ Renamed from AASd-050 to AASc-3a-050 + update renamed elements + version updated
 
 |===
 
-New, Changed or Removed Constraints
+[#_Toc124336684]
+.New, Changed or Removed Constraints
 
 [bibliography]
 == Bibliography
