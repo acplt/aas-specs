@@ -33,9 +33,8 @@ Types can also be derived from other types.
 
 .Overview Metamodel of the Asset Administration Shell
 [[image-overview-metamodel-of-the-asset-administration-shell]]
-[plantuml, 11-asset-administration-shell, svg]
 ....
-include::partial$diagrams/11-asset-administration-shell.puml[]
+plantuml::partial$diagrams/11-asset-administration-shell.puml[]
 ....
 
 
@@ -106,7 +105,6 @@ The environment’s purpose is to list all Asset Administration Shells, all subm
 
 .Metamodel of Environment
 [[image-metamodel-of-environment]]
-[plantuml, 12-environment, svg]
 ....
-include::partial$diagrams/12-environment.puml[]
+plantuml::partial$diagrams/12-environment.puml[]
 ....
