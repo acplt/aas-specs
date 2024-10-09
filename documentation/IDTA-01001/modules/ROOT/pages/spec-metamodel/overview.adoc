@@ -31,12 +31,11 @@ In case of an Asset Administration Shell of an instance asset, a reference to th
 The same holds true for the Asset Administration Shell of a type asset.
 Types can also be derived from other types.
 
-.Overview Metamodel of the Asset Administration Shell
-[[image-overview-metamodel-of-the-asset-administration-shell]]
 ....
 plantuml::partial$diagrams/11-asset-administration-shell.puml[]
 ....
 
+plantuml::partial$diagrams/11-asset-administration-shell.puml[]
 
 An asset may typically be represented by several different identification properties like the serial number, the manufacturer part ID or the different customer part IDs, its RFID code, etc.
 Such external identifiers are defined as specific asset IDs (xref:spec-metamodel/core.adoc#asset-information-attributes[AssetInformation/specificAssetId]), each characterized by a user-defined name, a value, and the user domain (tenant, subject in Attribute Based Access Control).
