@@ -26,7 +26,7 @@ They are represented in alphabetical order.
 .Metamodel of Administrative Information
 [plantuml, 14-administrative-information, svg]
 ....
-plantuml::partial$diagrams/14-administrative-information.puml[]
+include::partial$diagrams/14-administrative-information.puml[]
 ....
 
 
@@ -136,7 +136,7 @@ The creation of submodel templates can also be guided by another submodel templa
 .Metamodel of HasDataSpecification
 [plantuml, 15-has-data-specification, svg]
 ....
-plantuml::partial$diagrams/15-has-data-specification.puml[]
+include::partial$diagrams/15-has-data-specification.puml[]
 ....
 
 
@@ -174,7 +174,7 @@ For more details on data specifications, please see Clause xref:data-specificati
 .Metamodel of Has Extensions
 [plantuml, 16-has-extensions, svg]
 ....
-plantuml::partial$diagrams/16-has-extensions.puml[]
+include::partial$diagrams/16-has-extensions.puml[]
 ....
 
 
@@ -245,7 +245,7 @@ a|Reference to an element the extension refers to |ModelReference<xref:spec-meta
 .Metamodel of HasKind
 [plantuml, 17-has-kind, svg]
 ....
-plantuml::partial$diagrams/17-has-kind.puml[]
+include::partial$diagrams/17-has-kind.puml[]
 ....
 
 
@@ -304,7 +304,7 @@ Its creation and validation may be guided by a corresponding element template
 .Metamodel of Semantic References (HasSemantics)
 [plantuml, 18-has-semantics, svg]
 ....
-plantuml::partial$diagrams/18-has-semantics.puml[]
+include::partial$diagrams/18-has-semantics.puml[]
 ....
 
 
@@ -367,7 +367,7 @@ In future releases a constraint may be added that makes it mandatory to use exte
 .Metamodel of Identifiables
 [plantuml, 19-referable, svg]
 ....
-plantuml::partial$diagrams/19-referable.puml[]
+include::partial$diagrams/19-referable.puml[]
 ....
 
 
@@ -428,7 +428,7 @@ a|The globally unique identification of the element |xref:spec-metamodel/datatyp
 .Metamodel of Qualifiables
 [plantuml, 20-qualifiable, svg]
 ....
-plantuml::partial$diagrams/20-qualifiable.puml[]
+include::partial$diagrams/20-qualifiable.puml[]
 ....
 
 
@@ -462,7 +462,7 @@ a|Additional qualification of a qualifiable element |xref:spec-metamodel/common.
 .Metamodel of Qualifiers
 [plantuml, 21-qualifier, svg]
 ....
-plantuml::partial$diagrams/21-qualifier.puml[]
+include::partial$diagrams/21-qualifier.puml[]
 ....
 
 
@@ -583,7 +583,7 @@ image::image22.png[Example: Qualifier from IEC CDD]
 .Metamodel of Referables
 [plantuml, 23-referable, svg]
 ....
-plantuml::partial$diagrams/23-referable.puml[]
+include::partial$diagrams/23-referable.puml[]
 ....
 
 

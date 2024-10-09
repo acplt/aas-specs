@@ -32,7 +32,7 @@ xref:bibliography.adoc#bib35[[35\]]]
 [[image-64-class]]
 [plantuml, 64-class, svg]
 ....
-plantuml::partial$diagrams/uml-basics/64-class.puml[]
+include::partial$diagrams/uml-basics/64-class.puml[]
 ....
 
 
@@ -45,7 +45,7 @@ An instance of _Class4_ has the attributes _attr1_ and _attr2,_ whereas instance
 [[image-65-inheritance]]
 [plantuml, 65-inheritance, svg]
 ....
-plantuml::partial$diagrams/uml-basics/65-inheritance.puml[]
+include::partial$diagrams/uml-basics/65-inheritance.puml[]
 ....
 
 
@@ -69,7 +69,7 @@ The default is 1 for lower-bound and upper-bound.
 [[image-66-multiplicity]]
 [plantuml, 66-multiplicity, svg]
 ....
-plantuml::partial$diagrams/uml-basics/66-multiplicity.puml[]
+include::partial$diagrams/uml-basics/66-multiplicity.puml[]
 ....
 
 
@@ -82,7 +82,7 @@ The stereotype \<<ordered>> is used to denote that the relationship is ordered.
 [[image-67-ordered-multiplicity]]
 [plantuml, 67-ordered-multiplicity, svg]
 ....
-plantuml::partial$diagrams/uml-basics/67-ordered-multiplicity.puml[]
+include::partial$diagrams/uml-basics/67-ordered-multiplicity.puml[]
 ....
 
 
@@ -93,7 +93,7 @@ Vice versa, the instance of _Class2_ is in relationship "reverseRelation" to the
 [[image-67-2-association]]
 [plantuml, 67-2-association, svg]
 ....
-plantuml::partial$diagrams/uml-basics/67-2-association.puml[]
+include::partial$diagrams/uml-basics/67-2-association.puml[]
 ....
 
 
@@ -105,7 +105,7 @@ An instance of __Class1__ can be in a 'relation' with an instance of __Class2__,
 [[image-67-3-labeled-association]]
 [plantuml, 67-3-labeled-association, svg]
 ....
-plantuml::partial$diagrams/uml-basics/67-3-labeled-association.puml[]
+include::partial$diagrams/uml-basics/67-3-labeled-association.puml[]
 ....
 
 A specialty in <<image-67-3-labeled-association>>  is that the label 'Reference' indicates the relationship between __Class1__ and __Class2__ is of a __Reference__ type.
@@ -126,7 +126,7 @@ There is no instance of _Class2_ without a relationship to an instance of _Class
 [[image-68-composition]]
 [plantuml, 68-composition, svg]
 ....
-plantuml::partial$diagrams/uml-basics/68-composition.puml[]
+include::partial$diagrams/uml-basics/68-composition.puml[]
 ....
 
 
@@ -139,7 +139,7 @@ In contrast to a composition, an instance of _Class2_ can be shared by several i
 [[image-69-aggregation]]
 [plantuml, 69-aggregation, svg]
 ....
-plantuml::partial$diagrams/uml-basics/69-aggregation.puml[]
+include::partial$diagrams/uml-basics/69-aggregation.puml[]
 ....
 
 
@@ -151,7 +151,7 @@ If the aggregation is ordered, it is added in curly brackets like in this exampl
 [[image-70-navigable-attribute-notation-for-associations]]
 [plantuml, 70-navigable-attribute-notation-for-associations, svg]
 ....
-plantuml::partial$diagrams/uml-basics/70-navigable-attribute-notation-for-associations.puml[]
+include::partial$diagrams/uml-basics/70-navigable-attribute-notation-for-associations.puml[]
 ....
 
 
@@ -162,7 +162,7 @@ When a property with a default value is instantiated in the absence of a specifi
 [[image-71-default-value]]
 [plantuml, 71-default-value, svg]
 ....
-plantuml::partial$diagrams/uml-basics/71-default-value.puml[]
+include::partial$diagrams/uml-basics/71-default-value.puml[]
 ....
 
 
@@ -173,7 +173,7 @@ In this case, the dependency means that _Class1_ depends on _Class2_ because the
 [[image-72-dependency]]
 [plantuml, 72-dependency, svg]
 ....
-plantuml::partial$diagrams/uml-basics/72-dependency.puml[]
+include::partial$diagrams/uml-basics/72-dependency.puml[]
 ....
 
 
@@ -186,7 +186,7 @@ They are typically used for specific member elements that are inherited by non-a
 [[image-73-abstract-class]]
 [plantuml, 73-abstract-class, svg]
 ....
-plantuml::partial$diagrams/uml-basics/73-abstract-class.puml[]
+include::partial$diagrams/uml-basics/73-abstract-class.puml[]
 ....
 
 
@@ -198,7 +198,7 @@ In this example, the member belonging to _Package2_ is class _Class2_.
 [[image-74-package]]
 [plantuml, 74-package, svg]
 ....
-plantuml::partial$diagrams/uml-basics/74-package.puml[]
+include::partial$diagrams/uml-basics/74-package.puml[]
 ....
 
 
@@ -209,7 +209,7 @@ This is a special dependency relationship between the two packages with stereoty
 [[image-75-imported-package]]
 [plantuml, 75-imported-package, svg]
 ....
-plantuml::partial$diagrams/uml-basics/75-imported-package.puml[]
+include::partial$diagrams/uml-basics/75-imported-package.puml[]
 ....
 
 
@@ -222,7 +222,7 @@ The literals owned by the enumeration are ordered.
 [[image-76-enumeration]]
 [plantuml, 76-enumeration, svg]
 ....
-plantuml::partial$diagrams/uml-basics/76-enumeration.puml[]
+include::partial$diagrams/uml-basics/76-enumeration.puml[]
 ....
 
 
@@ -241,7 +241,7 @@ image::image78.png[]
 [[image-79-note]]
 [plantuml, 79-note, svg]
 ....
-plantuml::partial$diagrams/uml-basics/79-note.puml[]
+include::partial$diagrams/uml-basics/79-note.puml[]
 ....
 
 
@@ -251,7 +251,7 @@ plantuml::partial$diagrams/uml-basics/79-note.puml[]
 [[image-80-constraint]]
 [plantuml, 80-constraint, svg]
 ....
-plantuml::partial$diagrams/uml-basics/80-constraint.puml[]
+include::partial$diagrams/uml-basics/80-constraint.puml[]
 ....
 
 
@@ -339,7 +339,7 @@ _Class2_ instance only exists if the parent object of type _Class1_ exists.
 [[image-81-composite-aggregation-composition]]
 [plantuml, 81-composite-aggregation-composition, svg]
 ....
-plantuml::partial$diagrams/uml-basics/81-composite-aggregation-composition.puml[]
+include::partial$diagrams/uml-basics/81-composite-aggregation-composition.puml[]
 ....
 
 
@@ -349,7 +349,7 @@ plantuml::partial$diagrams/uml-basics/81-composite-aggregation-composition.puml[
 [[image-82-shared-aggregation]]
 [plantuml, 82-shared-aggregation, svg]
 ....
-plantuml::partial$diagrams/uml-basics/82-shared-aggregation.puml[]
+include::partial$diagrams/uml-basics/82-shared-aggregation.puml[]
 ....
 
 <<image-83-generalization-inheritance>> show different graphical representations of generalization.
@@ -365,7 +365,7 @@ Typically, the inherited elements are not shown.
 [[image-83-generalization-inheritance]]
 [plantuml, 83-generalization-inheritance, svg]
 ....
-plantuml::partial$diagrams/uml-basics/83-generalization-inheritance.puml[]
+include::partial$diagrams/uml-basics/83-generalization-inheritance.puml[]
 ....
 
 
@@ -381,7 +381,7 @@ This can be seen on the right side of <<image-84-enumeration-with-inheritance>> 
 [[image-84-enumeration-with-inheritance]]
 [plantuml, 84-enumeration-with-inheritance, svg]
 ....
-plantuml::partial$diagrams/uml-basics/84-enumeration-with-inheritance.puml[]
+include::partial$diagrams/uml-basics/84-enumeration-with-inheritance.puml[]
 ....
 
 
@@ -395,7 +395,7 @@ Note 2: in this specification all elements of an enumeration are ordered alphabe
 [[image-85-experimental-classes]]
 [plantuml, 85-experimental-classes, svg]
 ....
-plantuml::partial$diagrams/uml-basics/85-experimental-classes.puml[]
+include::partial$diagrams/uml-basics/85-experimental-classes.puml[]
 ....
 
 
@@ -405,7 +405,7 @@ plantuml::partial$diagrams/uml-basics/85-experimental-classes.puml[]
 [[image-86-deprecated-elements]]
 [plantuml, 86-deprecated-elements, svg]
 ....
-plantuml::partial$diagrams/uml-basics/86-deprecated-elements.puml[]
+include::partial$diagrams/uml-basics/86-deprecated-elements.puml[]
 ....
 
 
@@ -416,5 +416,5 @@ It is marked by the stereotype "Template".
 [[image-87-template-class]]
 [plantuml, 87-template-class, svg]
 ....
-plantuml::partial$diagrams/uml-basics/87-template-class.puml[]
+include::partial$diagrams/uml-basics/87-template-class.puml[]
 ....

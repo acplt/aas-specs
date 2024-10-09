@@ -19,11 +19,11 @@ In this annex, some UML diagrams are shown together with all attributes inherite
 .Selected Classes of Metamodel with Inherited Attributes
 [plantuml, 89-asset-administration-shell, svg]
 ....
-plantuml::partial$diagrams/89-asset-administration-shell.puml[]
+include::partial$diagrams/89-asset-administration-shell.puml[]
 ....
 
 .Model for Submodel Elements with Inherited Attributes
 [plantuml, 90-submodel-element, svg]
 ....
-plantuml::partial$diagrams/90-submodel-element.puml[]
+include::partial$diagrams/90-submodel-element.puml[]
 ....

@@ -35,7 +35,7 @@ Types can also be derived from other types.
 [[image-overview-metamodel-of-the-asset-administration-shell]]
 [plantuml, 11-asset-administration-shell, svg]
 ....
-plantuml::partial$diagrams/11-asset-administration-shell.puml[]
+include::partial$diagrams/11-asset-administration-shell.puml[]
 ....
 
 
@@ -97,7 +97,7 @@ Data specification templates are explained in Clause ref:data-specifications.ado
 [[image-metamodel-package-overview]]
 [plantuml, 13-structure, svg]
 ....
-plantuml::partial$diagrams/13-structure.puml[]
+include::partial$diagrams/13-structure.puml[]
 ....
 
 
@@ -108,5 +108,5 @@ The environment’s purpose is to list all Asset Administration Shells, all subm
 [[image-metamodel-of-environment]]
 [plantuml, 12-environment, svg]
 ....
-plantuml::partial$diagrams/12-environment.puml[]
+include::partial$diagrams/12-environment.puml[]
 ....
