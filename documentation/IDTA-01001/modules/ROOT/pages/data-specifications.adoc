@@ -26,7 +26,7 @@ Figure 55 shows the concept of data specification for a predefined data specific
 .Core Elements of Using Data Specifications (non-normative)
 [plantuml, 56-data-specification-content, svg]
 ....
-include::partial$diagrams/56-data-specification-content.puml[]
+plantuml::partial$diagrams/56-data-specification-content.puml[]
 ....
 
 
@@ -39,7 +39,7 @@ Figure 55 also shows how concept descriptions and the predefined data specificat
 .Data Specification Templates
 [plantuml, 57-data-specification-content, svg]
 ....
-include::partial$diagrams/57-data-specification-content.puml[]
+plantuml::partial$diagrams/57-data-specification-content.puml[]
 ....
 
 

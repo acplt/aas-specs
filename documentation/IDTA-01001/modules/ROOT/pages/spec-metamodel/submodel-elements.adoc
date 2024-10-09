@@ -17,7 +17,7 @@ include::../includes/constraints.adoc[]
 .Metamodel Overview for Submodel Element Subtypes
 [plantuml, 28-submodel-element, svg]
 ....
-include::partial$diagrams/28-submodel-element.puml[]
+plantuml::partial$diagrams/28-submodel-element.puml[]
 ....
 
 
@@ -37,7 +37,7 @@ Note: value-related attributes typically are optional to enable definition of Su
 .Metamodel of Annotated Relationship Elements
 [plantuml, 29-relationship-element, svg]
 ....
-include::partial$diagrams/29-relationship-element.puml[]
+plantuml::partial$diagrams/29-relationship-element.puml[]
 ....
 
 
@@ -65,7 +65,7 @@ a|A data element that represents an annotation that holds for the relationship b
 .Metamodel of Basic Event Element
 [plantuml, 30-basic-event-element, svg]
 ....
-include::partial$diagrams/30-basic-event-element.puml[]
+plantuml::partial$diagrams/30-basic-event-element.puml[]
 ....
 
 
@@ -190,7 +190,7 @@ Note: the payload is not part of the information model as exchanged via the AASX
 .Metamodel of Event Payload
 [plantuml, 31-event-payload, svg]
 ....
-include::partial$diagrams/31-event-payload.puml[]
+plantuml::partial$diagrams/31-event-payload.puml[]
 ....
 
 
@@ -265,7 +265,7 @@ The assumption is that every subject has a unique identifier.
 .Metamodel of Blobs
 [plantuml, 32-blob, svg]
 ....
-include::partial$diagrams/32-blob.puml[]
+plantuml::partial$diagrams/32-blob.puml[]
 ....
 
 
@@ -312,7 +312,7 @@ The allowed values are defined as in RFC2046.
 .Metamodel of Capabilities
 [plantuml, 33-capability, svg]
 ....
-include::partial$diagrams/33-capability.puml[]
+plantuml::partial$diagrams/33-capability.puml[]
 ....
 
 
@@ -343,7 +343,7 @@ h|Explanation h|Type h|Card.
 .Metamodel of Data Elements
 [plantuml, 34-data-element, svg]
 ....
-include::partial$diagrams/34-data-element.puml[]
+plantuml::partial$diagrams/34-data-element.puml[]
 ....
 
 
@@ -385,7 +385,7 @@ h|Explanation h|Type h|Card.
 .Metamodel of Entities
 [plantuml, 35-entity, svg]
 ....
-include::partial$diagrams/35-entity.puml[]
+plantuml::partial$diagrams/35-entity.puml[]
 ....
 
 
@@ -454,7 +454,7 @@ The asset of an I4.0 Component is a self-managed entity per definition.
 .Metamodel of Event Elements
 [plantuml, 36-event-element, svg]
 ....
-include::partial$diagrams/36-event-element.puml[]
+plantuml::partial$diagrams/36-event-element.puml[]
 ....
 
 
@@ -476,7 +476,7 @@ h|Explanation h|Type h|Card.
 .Metamodel of File Submodel Element
 [plantuml, 37-file, svg]
 ....
-include::partial$diagrams/37-file.puml[]
+plantuml::partial$diagrams/37-file.puml[]
 ....
 
 
@@ -519,7 +519,7 @@ a|Content type of the content of the file |xref:spec-metamodel/datatypes.adoc#Co
 .Metamodel of Multi Language Properties
 [plantuml, 38-multi-language-property, svg]
 ....
-include::partial$diagrams/38-multi-language-property.puml[]
+plantuml::partial$diagrams/38-multi-language-property.puml[]
 ....
 
 
@@ -560,7 +560,7 @@ Note: it is recommended to use an external reference, compare to xref:spec-metam
 .Metamodel of Operations
 [plantuml, 39-operation, svg]
 ....
-include::partial$diagrams/39-operation.puml[]
+plantuml::partial$diagrams/39-operation.puml[]
 ....
 
 
@@ -627,7 +627,7 @@ The same applies to two input variables or an input variable and an inoutputVari
 .Metamodel of Properties
 [plantuml, 40-property, svg]
 ....
-include::partial$diagrams/40-property.puml[]
+plantuml::partial$diagrams/40-property.puml[]
 ....
 
 
@@ -670,7 +670,7 @@ Note: it is recommended to use an external reference, compare to xref:spec-metam
 .Metamodel of Ranges
 [plantuml, 41-range, svg]
 ....
-include::partial$diagrams/41-range.puml[]
+plantuml::partial$diagrams/41-range.puml[]
 ....
 
 
@@ -710,7 +710,7 @@ If the max value is missing, the value is assumed to be positive infinite.
 .Metamodel of Reference Elements
 [plantuml, 42-reference-element, svg]
 ....
-include::partial$diagrams/42-reference-element.puml[]
+plantuml::partial$diagrams/42-reference-element.puml[]
 ....
 
 
@@ -740,7 +740,7 @@ If this semantic definition requires additional information not contained in the
 .Metamodel of Relationship Elements
 [plantuml, 43-relationship-element, svg]
 ....
-include::partial$diagrams/43-relationship-element.puml[]
+plantuml::partial$diagrams/43-relationship-element.puml[]
 ....
 
 
@@ -768,7 +768,7 @@ a|Reference to the second element in the relationship taking the role of the obj
 .Metamodel of Submodel Element Collections
 [plantuml, 44-submodel-element-collection, svg]
 ....
-include::partial$diagrams/44-submodel-element-collection.puml[]
+plantuml::partial$diagrams/44-submodel-element-collection.puml[]
 ....
 
 
@@ -815,7 +815,7 @@ h|Explanation h|Type h|Card.
 .Metamodel of Submodel Element Lists
 [plantuml, 45-submodel-element-list, svg]
 ....
-include::partial$diagrams/45-submodel-element-list.puml[]
+plantuml::partial$diagrams/45-submodel-element-list.puml[]
 ....
 
 

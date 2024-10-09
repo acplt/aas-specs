@@ -17,7 +17,7 @@ include::../includes/constraints.adoc[]
 .Metamodel of Concept Descriptions
 [plantuml, 46-concept-description, svg]
 ....
-include::partial$diagrams/46-concept-description.puml[]
+plantuml::partial$diagrams/46-concept-description.puml[]
 ....
 
 

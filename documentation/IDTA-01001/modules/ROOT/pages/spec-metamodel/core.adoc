@@ -16,7 +16,7 @@ include::../includes/constraints.adoc[]
 .Metamodel of an AssetAdministrationShell
 [plantuml, 24-asset-administration-shell, svg]
 ....
-include::partial$diagrams/24-asset-administration-shell.puml[]
+plantuml::partial$diagrams/24-asset-administration-shell.puml[]
 ....
 
 
@@ -61,7 +61,7 @@ Temporarily, no submodel might be assigned to the Asset Administration Shell.
 .Metamodel of Asset Information
 [plantuml, 25-asset-information, svg]
 ....
-include::partial$diagrams/25-asset-information.puml[]
+plantuml::partial$diagrams/25-asset-information.puml[]
 ....
 
 
@@ -243,7 +243,7 @@ The assumption is that every subject has a unique identifier.
 .Metamodel of Submodel
 [plantuml, 26-submodel, svg]
 ....
-include::partial$diagrams/26-submodel.puml[]
+plantuml::partial$diagrams/26-submodel.puml[]
 ....
 
 
@@ -285,7 +285,7 @@ a|A submodel consists of zero or more submodel elements. |xref:SubmodelElement[S
 .Metamodel of Submodel Element
 [plantuml, 27-submodel-element, svg]
 ....
-include::partial$diagrams/27-submodel-element.puml[]
+plantuml::partial$diagrams/27-submodel-element.puml[]
 ....
 
 

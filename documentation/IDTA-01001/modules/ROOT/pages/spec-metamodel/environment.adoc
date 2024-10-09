@@ -17,7 +17,7 @@ include::../includes/constraints.adoc[]
 .Metamodel for Environment
 [plantuml, 47-USE-PUML-12-INSTEAD, svg]
 ....
-include::partial$diagrams/12-environment.puml[]
+plantuml::partial$diagrams/12-environment.puml[]
 ....
 
 

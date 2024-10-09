@@ -13,6 +13,6 @@ However, there is only one reference allowed for _semanticId_, whereas a set of 
 .Realization of Embedded Data Specifications
 [plantuml, 59-concept-description, svg]
 ....
-include::partial$diagrams/59-concept-description.puml[]
+plantuml::partial$diagrams/59-concept-description.puml[]
 ....
 

@@ -47,5 +47,5 @@ Figure 88 shows an extract of the metamodel containing the most important elemen
 .Extract From Metamodel for Composite I4.0 Components
 [plantuml, 88-asset-information, svg]
 ....
-include::partial$diagrams/88-asset-information.puml[]
+plantuml::partial$diagrams/88-asset-information.puml[]
 ....

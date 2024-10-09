@@ -284,7 +284,7 @@ Note 2: additionally, the following RDF types are not supported in xref:DataType
 .DefTypeDefRdf Enumeration
 [plantuml, 53-data-type-def-rdf, svg]
 ....
-include::partial$diagrams/53-data-type-def-rdf.puml[]
+plantuml::partial$diagrams/53-data-type-def-rdf.puml[]
 ....
 
 The enumeration is derived from Figure 54.
@@ -292,7 +292,7 @@ The enumeration is derived from Figure 54.
 .Data TypeDefXsd Enumeration
 [plantuml, 54-data-type-def-xsd, svg]
 ....
-include::partial$diagrams/54-data-type-def-xsd.puml[]
+plantuml::partial$diagrams/54-data-type-def-xsd.puml[]
 ....
 
 
