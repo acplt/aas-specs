@@ -26,6 +26,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 // include::./includes/index.adoc[]
 
+* xref:index.adoc[Editorial Notes]
 
 * xref:terms-definitions-and-abbreviations.adoc[Terms and Definitions]
 
